@@ -26,3 +26,4 @@ mp_cg_rj_dept_raw.json
 # Launch film ships as a release asset, not in git
 press/*.mp4
 __pycache__/
+.impeccable/questions/
