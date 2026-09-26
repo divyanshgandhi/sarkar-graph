@@ -1,0 +1,3750 @@
+{
+ "segment": "state-depts-pb-hr-ch",
+ "asOf": "2026-09-25",
+ "notes": "Departments sourced from each government's official portal (punjab.gov.in/departments, haryana.gov.in/departments, chandigarh.gov.in/other-departments) as of 2026-09-25. GAP: the base state file for Punjab/Haryana/Chandigarh (st-pb-government / st-hr-government / st-ch-government, Governor/Administrator, Chief Minister, ministers, Chief Secretary, DGP) does NOT yet exist anywhere in data/raw/*.json as of this write (only district/local-government-tier entities for st-pb/st-hr/st-ch exist, in local-lgd.json) — confirmed by grep across all raw files for 'st-pb-pos-', 'st-hr-pos-', 'st-ch-pos-' and for the current CMs' names (Bhagwant Mann, Nayab Singh Saini), all of which returned nothing. Per the task's own instruction to reference minister IDs rather than redefine them, and the schema's 'never invent an ID' quality bar, headPositionId (minister -> department) was deliberately left OMITTED on every department entity here, and no 'heads' relations were written, rather than guess at st-pb-pos-minister-<n> / st-hr-pos-minister-<n> numbering that a future states-pb-hr-ch segment might not match. Likewise no 'oversees' relation from a Chief Secretary position was written (st-pb/hr/ch-pos-chief-secretary do not exist yet either), consistent with the task's own conditional on that relation. Ministerial portfolios for Punjab and Haryana ARE visible in the department-name text below via each department's assigned Administrative Secretary's official title where sourced from a live posting page, but the elected-minister layer itself is a prerequisite this segment does not own. RECOMMENDATION: once a states-pb-hr-ch(-r2) base segment lands with real st-pb-pos-minister-<n>/st-hr-pos-minister-<n>/st-pb-pos-chief-secretary/st-hr-pos-chief-secretary/st-ch-pos-administrator IDs, a follow-up pass should backfill headPositionId on these department entities and add the 'heads'/'oversees' relations — the department-to-minister-portfolio mapping is recoverable from the same official sources cited in each department's `sources`. sector: used 'federal' (not the task brief's literal 'executive') to match SCHEMA.md ('federal' = States/UTs and everything inside them) and the existing precedent in data/raw/states-ka-ap-tg.json, which already uses 'federal' for its state_department entities (Karnataka/AP/Telangana police) — using 'executive' would misplace ~140 entities into the Union-executive wedge of the radial layout. Chandigarh has no elected Council of Ministers (it is a UT with no legislature, administered by the Punjab Governor as Administrator via an IAS Adviser/Secretariat); its department entries reference 'st-ch-pos-administrator' as appointedBy on secretary positions (SCHEMA's own canonical ID for a UT Administrator) rather than any minister position, which does not exist for Chandigarh even in concept. Chandigarh's autonomous institutions (PGIMER, CITCO, Chandigarh Housing Board, government colleges), the Municipal Corporation, and quasi-judicial bodies (State Consumer Disputes Redressal Commission, Police Complaints Authority, State Election Commission) were excluded from this department list — they are not 'state_department' kind and belong to other segments/kinds. Secretary coverage: Punjab 48/52 departments (from the live punjab.gov.in/government/whos-who/admin-secretaries page, which gives full name + IAS batch + current portfolio for every officer; 4 depts — Employment Generation/Skill Development & Training, Information & Public Relation, Program Implementation — had no officer explicitly named against them on that page and were left without adminHeadPositionId per the 'omit rather than guess' instruction). Haryana 14/47 (haryanacmoffice.gov.in/administrative-secretaries only renders Chief Secretary + the 8 Additional Chief Secretaries in static HTML — the fuller Principal Secretary/Secretary tier appears to be client-rendered and was not retrievable via curl within this run's WebSearch budget, which was already exhausted by earlier sibling research segments in this session; the linked PDF of admin-secretary emails at cswww.haryana.gov.in did not resolve). Chandigarh 35/39 (from the chandigarh.gov.in/whos-who directory, which is unusually complete: Secretary-level for most, Joint-Secretary-level used only for Technical Education where no Secretary-rank officer was named). All secretary `since` dates omitted — none of the three source pages publish a posting date, only the current officer's name/batch/portfolio; per schema, guessing a date was avoided.",
+ "entities": [
+  {
+   "id": "st-pb-dept-agriculture",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Agriculture",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs extension services, input subsidies and crop-support schemes for farmers and oversees agricultural policy and marketing infrastructure.",
+   "officialUrl": "https://punjab.gov.in/department-of-agriculture/",
+   "sources": [
+    "https://punjab.gov.in/department-of-agriculture/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-agriculture"
+  },
+  {
+   "id": "st-pb-dept-animal-husbandry-dairy-development-and-fisheries",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Animal Husbandry, Dairy Development and Fisheries",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs veterinary services, dairy development and livestock health programmes to support animal-owning farmers.",
+   "officialUrl": "https://punjab.gov.in/department-of-animal-husbandry-dairy-development-and-fisheries/",
+   "sources": [
+    "https://punjab.gov.in/department-of-animal-husbandry-dairy-development-and-fisheries/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-animal-husbandry-dairy-development-and-fisheries"
+  },
+  {
+   "id": "st-pb-dept-civil-aviation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Civil Aviation",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Operates and licenses state-owned airstrips/heliports and coordinates air connectivity and VIP flight operations.",
+   "officialUrl": "https://punjab.gov.in/department-of-civil-aviation/",
+   "sources": [
+    "https://punjab.gov.in/department-of-civil-aviation/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-civil-aviation"
+  },
+  {
+   "id": "st-pb-dept-cooperation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Cooperation",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Registers and regulates cooperative societies, including credit, marketing and sugar-mill cooperatives, and audits their finances.",
+   "officialUrl": "https://punjab.gov.in/department-of-cooperation/",
+   "sources": [
+    "https://punjab.gov.in/department-of-cooperation/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-cooperation"
+  },
+  {
+   "id": "st-pb-dept-defence-services-welfare",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Defence Services Welfare",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs welfare schemes, pensions and land/job reservations for ex-servicemen, war widows and their families.",
+   "officialUrl": "https://punjab.gov.in/department-of-defence-services-welfare/",
+   "sources": [
+    "https://punjab.gov.in/department-of-defence-services-welfare/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-defence-services-welfare"
+  },
+  {
+   "id": "st-pb-dept-elections",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Elections",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Conducts and administers state and local-body elections, prepares electoral rolls and enforces the model code of conduct in coordination with the Election Commission.",
+   "officialUrl": "https://punjab.gov.in/department-of-elections/",
+   "sources": [
+    "https://punjab.gov.in/department-of-elections/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-elections"
+  },
+  {
+   "id": "st-pb-dept-employment-generation-skill-development-and-training",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Employment Generation, Skill Development and Training",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs skill-development, apprenticeship and employment-exchange programmes to match jobseekers with jobs.",
+   "officialUrl": "https://punjab.gov.in/department-of-employment-generation-and-training/",
+   "sources": [
+    "https://punjab.gov.in/department-of-employment-generation-and-training/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-dept-excise-and-taxation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Excise and Taxation",
+   "aliases": [
+    "Excise & Taxation Department",
+    "E&T"
+   ],
+   "parentId": "st-pb-government",
+   "description": "Collects state excise duty, VAT/GST and other indirect taxes, and licenses the liquor trade.",
+   "officialUrl": "https://punjab.gov.in/department-of-excise-and-taxation/",
+   "sources": [
+    "https://punjab.gov.in/department-of-excise-and-taxation/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-excise-and-taxation"
+  },
+  {
+   "id": "st-pb-dept-finance",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Finance",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Prepares the state budget, manages treasury and public debt, and controls government expenditure and pay/pension rules.",
+   "officialUrl": "https://punjab.gov.in/department-of-finance/",
+   "sources": [
+    "https://punjab.gov.in/department-of-finance/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-finance"
+  },
+  {
+   "id": "st-pb-dept-food-civil-supplies-and-consumer-affairs",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Food, Civil Supplies and Consumer Affairs",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs the public distribution system (ration shops), procures foodgrain and enforces consumer-protection and weights-and-measures law.",
+   "officialUrl": "https://punjab.gov.in/department-of-food-civil-supplies-and-consumer-affairs/",
+   "sources": [
+    "https://punjab.gov.in/department-of-food-civil-supplies-and-consumer-affairs/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-food-civil-supplies-and-consumer-affairs"
+  },
+  {
+   "id": "st-pb-dept-forest-and-wild-life-preservation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Forest and Wild Life Preservation",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Manages state forests and wildlife sanctuaries, enforces forest and wildlife protection law, and runs afforestation programmes.",
+   "officialUrl": "https://punjab.gov.in/department-of-forest-wild-life-preservation/",
+   "sources": [
+    "https://punjab.gov.in/department-of-forest-wild-life-preservation/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-forest-and-wild-life-preservation"
+  },
+  {
+   "id": "st-pb-dept-general-administration",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of General Administration",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs the secretariat's central administration, cadre management of officers, and coordination between departments.",
+   "officialUrl": "https://punjab.gov.in/department-of-general-administration/",
+   "sources": [
+    "https://punjab.gov.in/department-of-general-administration/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-general-administration"
+  },
+  {
+   "id": "st-pb-dept-health-and-family-welfare",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Health & Family Welfare",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs maternal, child-health and family-planning programmes through the public health system.",
+   "officialUrl": "https://punjab.gov.in/department-of-health-family-welfare/",
+   "sources": [
+    "https://punjab.gov.in/department-of-health-family-welfare/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-health-and-family-welfare"
+  },
+  {
+   "id": "st-pb-dept-higher-education-and-languages",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Higher Education and Languages",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Administers government colleges and universities and funds/regulates higher and university education in the state.",
+   "officialUrl": "https://punjab.gov.in/department-of-higher-education-and-languages/",
+   "sources": [
+    "https://punjab.gov.in/department-of-higher-education-and-languages/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-higher-education-and-languages"
+  },
+  {
+   "id": "st-pb-dept-home-affairs-and-justice",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Home Affairs and Justice",
+   "aliases": [
+    "Home Department"
+   ],
+   "parentId": "st-pb-government",
+   "description": "Oversees the state police, prisons, home guards and internal-security administration, and handles law-and-order policy.",
+   "officialUrl": "https://punjab.gov.in/department-of-home-affairs-and-justice/",
+   "sources": [
+    "https://punjab.gov.in/department-of-home-affairs-and-justice/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-home-affairs-and-justice"
+  },
+  {
+   "id": "st-pb-dept-horticulture",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Horticulture",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Promotes fruit, vegetable and flower cultivation through extension services, subsidies and post-harvest infrastructure for farmers.",
+   "officialUrl": "https://punjab.gov.in/department-of-horticulture/",
+   "sources": [
+    "https://punjab.gov.in/department-of-horticulture/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-horticulture"
+  },
+  {
+   "id": "st-pb-dept-housing-and-urban-development",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Housing and Urban Development",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Plans and funds urban infrastructure and municipal governance, and builds public housing through the state housing board.",
+   "officialUrl": "https://punjab.gov.in/department-of-housing-and-urban-development/",
+   "sources": [
+    "https://punjab.gov.in/department-of-housing-and-urban-development/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-housing-and-urban-development"
+  },
+  {
+   "id": "st-pb-dept-industries-and-commerce",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Industries and Commerce",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Promotes industrial investment, runs industrial estates and administers incentives for MSMEs and large industry.",
+   "officialUrl": "https://punjab.gov.in/department-of-industries-commerce/",
+   "sources": [
+    "https://punjab.gov.in/department-of-industries-commerce/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-industries-and-commerce"
+  },
+  {
+   "id": "st-pb-dept-information-and-public-relation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Information and Public Relation",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs the government's press, publicity and public-information machinery and manages official advertising.",
+   "officialUrl": "https://punjab.gov.in/department-of-information-and-public-relation/",
+   "sources": [
+    "https://punjab.gov.in/department-of-information-and-public-relation/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-dept-promotion-of-information-technology-industry",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Promotion of Information Technology Industry",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Drives e-governance, IT infrastructure and the promotion of the state's IT/ITeS industry.",
+   "officialUrl": "https://punjab.gov.in/government/departments/department-of-promotion-of-information-technology-industry/",
+   "sources": [
+    "https://punjab.gov.in/government/departments/department-of-promotion-of-information-technology-industry/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-promotion-of-information-technology-industry"
+  },
+  {
+   "id": "st-pb-dept-investment-promotion",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Investment Promotion",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Single-window facilitation of new industrial and business investment into the state.",
+   "officialUrl": "https://punjab.gov.in/department-of-investment-promotion/",
+   "sources": [
+    "https://punjab.gov.in/department-of-investment-promotion/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-investment-promotion"
+  },
+  {
+   "id": "st-pb-dept-labour",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Labour",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Enforces labour law, registers factories/establishments, runs the Employees' State Insurance and welfare boards, and resolves industrial disputes.",
+   "officialUrl": "https://punjab.gov.in/department-of-labour/",
+   "sources": [
+    "https://punjab.gov.in/department-of-labour/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-labour"
+  },
+  {
+   "id": "st-pb-dept-legal-and-legislative-affairs",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Legal and Legislative Affairs",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Drafts state legislation, vets government contracts and rules, and runs the state's legal/prosecution machinery.",
+   "officialUrl": "https://punjab.gov.in/department-of-legal-and-legislative-affairs/",
+   "sources": [
+    "https://punjab.gov.in/department-of-legal-and-legislative-affairs/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-legal-and-legislative-affairs"
+  },
+  {
+   "id": "st-pb-dept-local-government",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Local Government",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Oversees municipal corporations, councils and committees that run civic services in towns and cities.",
+   "officialUrl": "https://punjab.gov.in/department-of-local-government/",
+   "sources": [
+    "https://punjab.gov.in/department-of-local-government/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-local-government"
+  },
+  {
+   "id": "st-pb-dept-medical-education-and-research",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Medical Education and Research",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs government medical, dental and nursing colleges and their attached teaching hospitals.",
+   "officialUrl": "https://punjab.gov.in/department-of-medical-education-and-research/",
+   "sources": [
+    "https://punjab.gov.in/department-of-medical-education-and-research/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-medical-education-and-research"
+  },
+  {
+   "id": "st-pb-dept-new-and-renewable-energy-sources",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of New & Renewable Energy Sources",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Promotes solar, wind and other renewable-energy generation and energy-efficiency programmes.",
+   "officialUrl": "https://punjab.gov.in/government/departments/department-of-new-renewable-energy-sources/",
+   "sources": [
+    "https://punjab.gov.in/government/departments/department-of-new-renewable-energy-sources/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-new-and-renewable-energy-sources"
+  },
+  {
+   "id": "st-pb-dept-nri-affairs",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of NRI Affairs",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Addresses the grievances of and liaises with the state's non-resident diaspora, including emigration and property issues.",
+   "officialUrl": "https://punjab.gov.in/department-of-nri-affairs/",
+   "sources": [
+    "https://punjab.gov.in/department-of-nri-affairs/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-nri-affairs"
+  },
+  {
+   "id": "st-pb-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Parliamentary Affairs",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Coordinates government business, bills and question-hour replies in the state legislature.",
+   "officialUrl": "https://punjab.gov.in/department-of-parliamentary-affairs/",
+   "sources": [
+    "https://punjab.gov.in/department-of-parliamentary-affairs/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-parliamentary-affairs"
+  },
+  {
+   "id": "st-pb-dept-personnel",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Personnel",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Handles recruitment rules, service matters, transfers and cadre management of state government employees.",
+   "officialUrl": "https://punjab.gov.in/department-of-personnel/",
+   "sources": [
+    "https://punjab.gov.in/department-of-personnel/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-personnel"
+  },
+  {
+   "id": "st-pb-dept-planning",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Planning",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Prepares the state's development plans, allocates plan funds across departments and monitors scheme implementation.",
+   "officialUrl": "https://punjab.gov.in/department-of-planning/",
+   "sources": [
+    "https://punjab.gov.in/department-of-planning/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-planning"
+  },
+  {
+   "id": "st-pb-dept-power",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Power",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Oversees electricity generation, transmission and distribution utilities and state power policy.",
+   "officialUrl": "https://punjab.gov.in/department-of-power/",
+   "sources": [
+    "https://punjab.gov.in/department-of-power/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-power"
+  },
+  {
+   "id": "st-pb-dept-printing-and-stationery",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Printing and Stationery",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs government printing presses and supplies stationery and forms to government offices.",
+   "officialUrl": "https://punjab.gov.in/department-of-printing-and-stationery/",
+   "sources": [
+    "https://punjab.gov.in/department-of-printing-and-stationery/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-printing-and-stationery"
+  },
+  {
+   "id": "st-pb-dept-program-implementation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Program Implementation",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Monitors the physical and financial progress of government schemes and flagship programmes.",
+   "officialUrl": "https://punjab.gov.in/department-of-program-implementation/",
+   "sources": [
+    "https://punjab.gov.in/department-of-program-implementation/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-dept-public-works",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Public Works",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Builds and maintains government buildings, roads and bridges (Buildings & Roads).",
+   "officialUrl": "https://punjab.gov.in/department-of-public-works/",
+   "sources": [
+    "https://punjab.gov.in/department-of-public-works/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-public-works"
+  },
+  {
+   "id": "st-pb-dept-revenue-rehabilitation-and-disaster-management",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Revenue, Rehabilitation & Disaster Management",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Maintains land records and land revenue administration through the district/tehsil machinery, and coordinates disaster relief and rehabilitation across the state.",
+   "officialUrl": "https://punjab.gov.in/department-of-revenue-rehabilitation-disaster-management/",
+   "sources": [
+    "https://punjab.gov.in/department-of-revenue-rehabilitation-disaster-management/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-revenue-rehabilitation-and-disaster-management"
+  },
+  {
+   "id": "st-pb-dept-rural-development-and-panchayat",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Rural Development and Panchayat",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Funds and monitors rural infrastructure and livelihood schemes implemented through Panchayati Raj institutions.",
+   "officialUrl": "https://punjab.gov.in/department-of-rural-development-and-panchayat/",
+   "sources": [
+    "https://punjab.gov.in/department-of-rural-development-and-panchayat/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-rural-development-and-panchayat"
+  },
+  {
+   "id": "st-pb-dept-school-education",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of School Education",
+   "aliases": [
+    "Education Department"
+   ],
+   "parentId": "st-pb-government",
+   "description": "Runs government schools and administers the state's school curriculum, teacher recruitment and mid-day meal scheme.",
+   "officialUrl": "https://punjab.gov.in/department-of-school-education/",
+   "sources": [
+    "https://punjab.gov.in/department-of-school-education/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-school-education"
+  },
+  {
+   "id": "st-pb-dept-science-technology-and-environment",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Science, Technology & Environment",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Funds scientific research, technology promotion and pollution/environment regulation.",
+   "officialUrl": "https://punjab.gov.in/department-of-science-technology-environment/",
+   "sources": [
+    "https://punjab.gov.in/department-of-science-technology-environment/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-science-technology-and-environment"
+  },
+  {
+   "id": "st-pb-dept-social-justice-empowerment-and-minorities",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Social Justice, Empowerment and Minorities",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs welfare and scholarship schemes for Scheduled Castes, Backward Classes and minorities.",
+   "officialUrl": "https://punjab.gov.in/department-of-welfare-of-scs-bcs/",
+   "sources": [
+    "https://punjab.gov.in/department-of-welfare-of-scs-bcs/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-social-justice-empowerment-and-minorities"
+  },
+  {
+   "id": "st-pb-dept-social-security-and-women-and-child-development",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Social Security and Women & Child Development",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs anganwadi/ICDS child-nutrition centres, women's welfare and child-protection schemes.",
+   "officialUrl": "https://punjab.gov.in/government/departments/social-security-and-women-child-development/",
+   "sources": [
+    "https://punjab.gov.in/government/departments/social-security-and-women-child-development/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-social-security-and-women-and-child-development"
+  },
+  {
+   "id": "st-pb-dept-soil-and-water-conservation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Soil & Water Conservation",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs watershed development and soil- and water-conservation works for agricultural land.",
+   "officialUrl": "https://punjab.gov.in/department-of-soil-water-conservation/",
+   "sources": [
+    "https://punjab.gov.in/department-of-soil-water-conservation/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-soil-and-water-conservation"
+  },
+  {
+   "id": "st-pb-dept-sports-and-youth-services",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Sports and Youth Services",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs youth-development and volunteering programmes (e.g. NSS/NYKS coordination) alongside sports.",
+   "officialUrl": "https://punjab.gov.in/department-of-sports-and-youth-services/",
+   "sources": [
+    "https://punjab.gov.in/department-of-sports-and-youth-services/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-sports-and-youth-services"
+  },
+  {
+   "id": "st-pb-dept-technical-education-and-industrial-training",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Technical Education and Industrial Training",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs polytechnics and regulates technical/engineering education in the state.",
+   "officialUrl": "https://punjab.gov.in/department-of-technical-education-and-industrial-training/",
+   "sources": [
+    "https://punjab.gov.in/department-of-technical-education-and-industrial-training/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-technical-education-and-industrial-training"
+  },
+  {
+   "id": "st-pb-dept-tourism-and-cultural-affairs",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Tourism and Cultural Affairs",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Promotes the state's arts, language, heritage and cultural festivals.",
+   "officialUrl": "https://punjab.gov.in/department-of-tourism-and-cultural-affairs/",
+   "sources": [
+    "https://punjab.gov.in/department-of-tourism-and-cultural-affairs/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-tourism-and-cultural-affairs"
+  },
+  {
+   "id": "st-pb-dept-transport",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Transport",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Regulates road transport, runs the state road transport corporation/undertaking and issues driving licences and vehicle registrations.",
+   "officialUrl": "https://punjab.gov.in/department-of-transport/",
+   "sources": [
+    "https://punjab.gov.in/department-of-transport/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-transport"
+  },
+  {
+   "id": "st-pb-dept-vigilance",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Vigilance",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Investigates corruption and misconduct by government officials and enforces integrity in public service.",
+   "officialUrl": "https://punjab.gov.in/department-of-vigilance/",
+   "sources": [
+    "https://punjab.gov.in/department-of-vigilance/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-vigilance"
+  },
+  {
+   "id": "st-pb-dept-water-resources",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Water Resources",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Builds and maintains irrigation canals, dams and river-water infrastructure.",
+   "officialUrl": "https://punjab.gov.in/department-of-irrigation/",
+   "sources": [
+    "https://punjab.gov.in/department-of-irrigation/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-water-resources"
+  },
+  {
+   "id": "st-pb-dept-water-supply-and-sanitation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Water Supply and Sanitation",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Provides piped drinking water and sanitation infrastructure, mainly in rural areas.",
+   "officialUrl": "https://punjab.gov.in/department-of-water-supply-and-sanitation/",
+   "sources": [
+    "https://punjab.gov.in/department-of-water-supply-and-sanitation/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-water-supply-and-sanitation"
+  },
+  {
+   "id": "st-pb-dept-welfare-of-freedom-fighters",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Welfare of Freedom Fighters",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Administers pensions and welfare benefits for freedom fighters and their families.",
+   "officialUrl": "https://punjab.gov.in/department-of-welfare-of-freedom-fighters/",
+   "sources": [
+    "https://punjab.gov.in/department-of-welfare-of-freedom-fighters/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-welfare-of-freedom-fighters"
+  },
+  {
+   "id": "st-pb-dept-prisons-and-correctional-services",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Departments of Punjab Prisons and Correctional Services",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Runs the state's jails and correctional/rehabilitation services for prisoners.",
+   "officialUrl": "https://punjab.gov.in/government/departments/departments-of-punjab-prisons-and-correctional-services/",
+   "sources": [
+    "https://punjab.gov.in/government/departments/departments-of-punjab-prisons-and-correctional-services/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-prisons-and-correctional-services"
+  },
+  {
+   "id": "st-pb-dept-food-processing",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Food Processing",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Promotes food-processing industry investment and agro-based industrial infrastructure.",
+   "officialUrl": "https://punjab.gov.in/government/departments/department-of-food-processing/",
+   "sources": [
+    "https://punjab.gov.in/government/departments/department-of-food-processing/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-food-processing"
+  },
+  {
+   "id": "st-pb-dept-mines-and-geology",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Mines and Geology",
+   "aliases": [],
+   "parentId": "st-pb-government",
+   "description": "Regulates mining leases, mineral royalties and geological surveys in the state.",
+   "officialUrl": "https://punjab.gov.in/government/departments/department-of-mines-and-geology/",
+   "sources": [
+    "https://punjab.gov.in/government/departments/department-of-mines-and-geology/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-pb-pos-secretary-mines-and-geology"
+  },
+  {
+   "id": "st-hr-dept-home",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Home Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Oversees the state police, prisons, home guards and internal-security administration, and handles law-and-order policy.",
+   "officialUrl": "http://home.haryana.gov.in",
+   "sources": [
+    "http://home.haryana.gov.in"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-home"
+  },
+  {
+   "id": "st-hr-dept-agriculture-and-welfare",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Agriculture and Welfare",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs extension services, input subsidies and crop-support schemes for farmers and oversees agricultural policy and marketing infrastructure.",
+   "officialUrl": "http://agri.haryana.gov.in",
+   "sources": [
+    "http://agri.haryana.gov.in"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-agriculture-and-welfare"
+  },
+  {
+   "id": "st-hr-dept-animal-husbandry-and-dairying",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Animal Husbandry & Dairying",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs veterinary services, dairy development and livestock health programmes to support animal-owning farmers.",
+   "officialUrl": "http://pashudhan.haryana.gov.in",
+   "sources": [
+    "http://pashudhan.haryana.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-archaeology-and-museums",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Directorate of Archaeology & Museums",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Protects and maintains the state's archaeological sites, monuments and museums.",
+   "officialUrl": "http://archaeologyharyana.nic.in",
+   "sources": [
+    "http://archaeologyharyana.nic.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-higher-education",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Higher Education",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Administers government colleges and universities and funds/regulates higher and university education in the state.",
+   "officialUrl": "https://highereduhry.ac.in/",
+   "sources": [
+    "https://highereduhry.ac.in/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-higher-education"
+  },
+  {
+   "id": "st-hr-dept-school-education",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of School Education",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs government schools and administers the state's school curriculum, teacher recruitment and mid-day meal scheme.",
+   "officialUrl": "http://schooleducation.haryana.gov.in",
+   "sources": [
+    "http://schooleducation.haryana.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-elementary-education",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Elementary Education",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs government primary and elementary schools and universal-education programmes.",
+   "officialUrl": "http://harprathmik.gov.in",
+   "sources": [
+    "http://harprathmik.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-electronics-and-information-technology",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Electronics & Information Technology Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Drives e-governance, IT infrastructure and the promotion of the state's IT/ITeS industry.",
+   "officialUrl": "http://haryanait.gov.in",
+   "sources": [
+    "http://haryanait.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-environment",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Environment",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Regulates pollution control and environmental clearances and runs environment-protection programmes.",
+   "officialUrl": "http://harenvironment.gov.in",
+   "sources": [
+    "http://harenvironment.gov.in"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-environment"
+  },
+  {
+   "id": "st-hr-dept-excise-and-taxation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Excise & Taxation Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Collects state excise duty, VAT/GST and other indirect taxes, and licenses the liquor trade.",
+   "officialUrl": "http://haryanatax.gov.in",
+   "sources": [
+    "http://haryanatax.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-finance",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Finance Department Haryana",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Prepares the state budget, manages treasury and public debt, and controls government expenditure and pay/pension rules.",
+   "officialUrl": "http://finhry.gov.in",
+   "sources": [
+    "http://finhry.gov.in"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-finance"
+  },
+  {
+   "id": "st-hr-dept-fisheries",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Fisheries Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Promotes inland and aquaculture fisheries, issues fishing licences and runs fisherfolk welfare schemes.",
+   "officialUrl": "http://harfish.gov.in",
+   "sources": [
+    "http://harfish.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-food-civil-supplies-and-consumer-affairs",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Food, Civil Supplies & Consumer Affairs Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs the public distribution system (ration shops), procures foodgrain and enforces consumer-protection and weights-and-measures law.",
+   "officialUrl": "http://haryanafood.gov.in",
+   "sources": [
+    "http://haryanafood.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-forests",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Haryana Forests Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Manages state forests and wildlife sanctuaries, enforces forest and wildlife protection law, and runs afforestation programmes.",
+   "officialUrl": "http://haryanaforest.gov.in",
+   "sources": [
+    "http://haryanaforest.gov.in"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-forests"
+  },
+  {
+   "id": "st-hr-dept-health",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Health Department Haryana",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs government hospitals and primary health centres, public-health programmes and disease control for citizens.",
+   "officialUrl": "http://haryanahealth.gov.in",
+   "sources": [
+    "http://haryanahealth.gov.in"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-health"
+  },
+  {
+   "id": "st-hr-dept-irrigation-and-water-resources",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Irrigation & Water Resources Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Builds and maintains irrigation canals, dams and river-water infrastructure.",
+   "officialUrl": "http://hid.gov.in",
+   "sources": [
+    "http://hid.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-labour",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Labour Department Haryana",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Enforces labour law, registers factories/establishments, runs the Employees' State Insurance and welfare boards, and resolves industrial disputes.",
+   "officialUrl": "https://hrylabour.gov.in",
+   "sources": [
+    "https://hrylabour.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-police",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Haryana Police Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Maintains law and order, investigates crime and provides public safety and traffic policing.",
+   "officialUrl": "http://haryanapolice.gov.in/",
+   "sources": [
+    "http://haryanapolice.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-prisons",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Prisons Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs the state's jails and correctional/rehabilitation services for prisoners.",
+   "officialUrl": "http://haryanaprisons.gov.in",
+   "sources": [
+    "http://haryanaprisons.gov.in"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-prisons"
+  },
+  {
+   "id": "st-hr-dept-information-public-relations-and-languages",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Directorate of Information, Public Relations & Languages Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Promotes and regulates the teaching and official use of the state's languages.",
+   "officialUrl": "http://pr.haryana.gov.in",
+   "sources": [
+    "http://pr.haryana.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-public-works",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Public Works Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Builds and maintains government buildings, roads and bridges (Buildings & Roads).",
+   "officialUrl": "http://haryanapwd.gov.in",
+   "sources": [
+    "http://haryanapwd.gov.in"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-public-works"
+  },
+  {
+   "id": "st-hr-dept-revenue-and-disaster-management",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Revenue and Disaster Management Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Coordinates disaster preparedness, relief and rehabilitation across the state.",
+   "officialUrl": "http://revenue.haryana.gov.in",
+   "sources": [
+    "http://revenue.haryana.gov.in"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-revenue-and-disaster-management"
+  },
+  {
+   "id": "st-hr-dept-rural-development",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Rural Development Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Funds and monitors rural infrastructure and livelihood schemes implemented through Panchayati Raj institutions.",
+   "officialUrl": "http://haryanarural.gov.in",
+   "sources": [
+    "http://haryanarural.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-tourism",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Haryana Tourism Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Promotes tourist destinations, runs state tourism corporations/hotels and markets the state to visitors.",
+   "officialUrl": "http://haryanatourism.gov.in",
+   "sources": [
+    "http://haryanatourism.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-town-and-country-planning",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Town & Country Planning",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Prepares statutory master plans and regulates land use and urban estates.",
+   "officialUrl": "http://tcp.haryana.gov.in",
+   "sources": [
+    "http://tcp.haryana.gov.in"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-town-and-country-planning"
+  },
+  {
+   "id": "st-hr-dept-state-transport",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of State Transport",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Regulates road transport and issues driving licences and vehicle registrations.",
+   "officialUrl": "http://hartrans.gov.in",
+   "sources": [
+    "http://hartrans.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-treasuries-and-accounts",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Treasuries & Accounts Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Manages the state's treasury network that disburses government payments and pensions.",
+   "officialUrl": "http://hrtreasuries.gov.in",
+   "sources": [
+    "http://hrtreasuries.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-women-and-child-development",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Women and Child Development Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs anganwadi/ICDS child-nutrition centres, women's welfare and child-protection schemes.",
+   "officialUrl": "http://wcdhry.gov.in",
+   "sources": [
+    "http://wcdhry.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-public-health-engineering",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Public Health Engineering Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Provides piped drinking water and sanitation infrastructure, mainly in rural areas.",
+   "officialUrl": "https://services.phed.haryana.gov.in",
+   "sources": [
+    "https://services.phed.haryana.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-archives",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Haryana Archives Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Preserves the state's official archival records.",
+   "officialUrl": "http://haryanaarchives.gov.in",
+   "sources": [
+    "http://haryanaarchives.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-government-of-transport-regulatory-wing",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Government of Haryana Transport Department ( Regulatory Wing)",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Regulates road transport, runs the state road transport corporation/undertaking and issues driving licences and vehicle registrations.",
+   "officialUrl": "http://haryanatransport.gov.in",
+   "sources": [
+    "http://haryanatransport.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-civil-aviation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Civil Aviation Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Operates and licenses state-owned airstrips/heliports and coordinates air connectivity and VIP flight operations.",
+   "officialUrl": "http://haraviation.gov.in",
+   "sources": [
+    "http://haraviation.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-development-and-panchayats",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Development & Panchayats Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Oversees Panchayati Raj institutions (village, block and district panchayats) and rural local self-government.",
+   "officialUrl": "http://harpanchayats.gov.in",
+   "sources": [
+    "http://harpanchayats.gov.in"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-development-and-panchayats"
+  },
+  {
+   "id": "st-hr-dept-economic-and-statistical-analysis",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Economic and Statistical Analysis",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Compiles the state's official economic statistics, national/state income estimates and survey data.",
+   "officialUrl": "http://esa.haryana.gov.in",
+   "sources": [
+    "http://esa.haryana.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-horticulture",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Horticulture Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Promotes fruit, vegetable and flower cultivation through extension services, subsidies and post-harvest infrastructure for farmers.",
+   "officialUrl": "http://hort.haryana.gov.in",
+   "sources": [
+    "http://hort.haryana.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-home-guards-and-civil-defence",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Home Guards & Civil Defence",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Coordinates civil-defence preparedness for emergencies and disasters.",
+   "officialUrl": "http://homeguards.haryana.gov.in",
+   "sources": [
+    "http://homeguards.haryana.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-industries-and-commerce",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Industries & Commerce",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Promotes industrial investment, runs industrial estates and administers incentives for MSMEs and large industry.",
+   "officialUrl": "http://haryanaindustries.gov.in",
+   "sources": [
+    "http://haryanaindustries.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-skill-development-and-industrial-training",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Skill Development & Industrial Training Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs Industrial Training Institutes (ITIs) that provide vocational trade certification.",
+   "officialUrl": "http://iti.haryana.gov.in",
+   "sources": [
+    "http://iti.haryana.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-renewable-energy",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Renewable Energy",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Promotes solar, wind and other renewable-energy generation and energy-efficiency programmes.",
+   "officialUrl": "http://hareda.gov.in",
+   "sources": [
+    "http://hareda.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-social-justice-and-empowerment-welfare-of-scheduled-caste-and-backward-classes-and-antyodaya",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Social Justice & Empowerment, Welfare of Scheduled Caste & Backward Classes Department and Antyodaya Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs welfare and scholarship schemes for Scheduled Castes, Backward Classes and minorities.",
+   "officialUrl": "https://sewa.haryana.gov.in/",
+   "sources": [
+    "https://sewa.haryana.gov.in/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-social-justice-and-empowerment-welfare-of-scheduled-caste-and-backward-classes-and-antyodaya"
+  },
+  {
+   "id": "st-hr-dept-sports-and-youth-affairs",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Sports & Youth Affairs",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs youth-development and volunteering programmes alongside sports.",
+   "officialUrl": "http://haryanasports.gov.in",
+   "sources": [
+    "http://haryanasports.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-supplies-and-disposals",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Directorate of Supplies & Disposals",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Centrally procures and auctions/disposes of government stores and surplus material.",
+   "officialUrl": "http://dsnd.haryana.gov.in",
+   "sources": [
+    "http://dsnd.haryana.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-technical-education",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Technical Education",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs polytechnics and regulates technical/engineering education in the state.",
+   "officialUrl": "http://techeduhry.gov.in",
+   "sources": [
+    "http://techeduhry.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-chief-electrical-inspector",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Chief Electrical Inspector Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Certifies electrical installations and enforces electrical-safety regulations.",
+   "officialUrl": "http://ceiharyana.in",
+   "sources": [
+    "http://ceiharyana.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-citizen-resource-information",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Citizen Resource Information Department",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs the state's citizen data/resource information and e-governance service delivery platform.",
+   "officialUrl": "https://haryanait.gov.in/",
+   "sources": [
+    "https://haryanait.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-urban-local-bodies",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Urban Local Bodies",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Oversees municipal corporations, councils and committees that run civic services in towns and cities.",
+   "officialUrl": "https://ulbharyana.gov.in//",
+   "sources": [
+    "https://ulbharyana.gov.in//"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-dept-medical-education-and-research-dmer",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Department of Medical Education and Research (DMER)",
+   "aliases": [],
+   "parentId": "st-hr-government",
+   "description": "Runs government medical, dental and nursing colleges and their attached teaching hospitals.",
+   "officialUrl": "https://www.haryana.gov.in/department-of-medical-education-and-researchdmer-haryana/",
+   "sources": [
+    "https://www.haryana.gov.in/department-of-medical-education-and-researchdmer-haryana/"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-hr-pos-secretary-medical-education-and-research-dmer"
+  },
+  {
+   "id": "st-ch-dept-agriculture",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Agriculture",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Runs extension services, input subsidies and crop-support schemes for farmers and oversees agricultural policy and marketing infrastructure.",
+   "officialUrl": "https://chandigarh.gov.in/agriculture",
+   "sources": [
+    "https://chandigarh.gov.in/agriculture",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-agriculture"
+  },
+  {
+   "id": "st-ch-dept-animal-husbandry-and-fisheries",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Animal Husbandry & Fisheries",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Runs veterinary services, dairy development and livestock health programmes to support animal-owning farmers.",
+   "officialUrl": "http://chdanimalhusbandry.gov.in",
+   "sources": [
+    "http://chdanimalhusbandry.gov.in",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-animal-husbandry-and-fisheries"
+  },
+  {
+   "id": "st-ch-dept-art-and-culture",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Art & Culture",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Promotes the state's arts, language, heritage and cultural festivals.",
+   "officialUrl": "http://chdmuseum.nic.in",
+   "sources": [
+    "http://chdmuseum.nic.in",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-art-and-culture"
+  },
+  {
+   "id": "st-ch-dept-chandigarh-transport-undertaking",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Chandigarh Transport Undertaking",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Regulates road transport, runs the state road transport corporation/undertaking and issues driving licences and vehicle registrations.",
+   "officialUrl": "http://chdctu.gov.in",
+   "sources": [
+    "http://chdctu.gov.in",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-dept-cooperation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Cooperation",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Registers and regulates cooperative societies, including credit, marketing and sugar-mill cooperatives, and audits their finances.",
+   "officialUrl": "https://chandigarh.gov.in/cooperative-0",
+   "sources": [
+    "https://chandigarh.gov.in/cooperative-0",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-cooperation"
+  },
+  {
+   "id": "st-ch-dept-dc-office",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Deputy Commissioner's Office",
+   "aliases": [
+    "DC Office"
+   ],
+   "parentId": "st-ch-government",
+   "description": "Chandigarh's district administration: land revenue, magistracy, licensing and coordination of central schemes, headed by the Deputy Commissioner.",
+   "officialUrl": "https://chandigarhdistrict.nic.in/",
+   "sources": [
+    "https://chandigarhdistrict.nic.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-dc-office"
+  },
+  {
+   "id": "st-ch-dept-education",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Education",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Runs Chandigarh's government schools and administers the UT's school curriculum and teacher recruitment.",
+   "officialUrl": "http://chdeducation.gov.in",
+   "sources": [
+    "http://chdeducation.gov.in",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-education"
+  },
+  {
+   "id": "st-ch-dept-election",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Election",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Prepares electoral rolls and conducts Lok Sabha and municipal corporation elections in the Union Territory.",
+   "officialUrl": "https://ceochandigarh.gov.in/",
+   "sources": [
+    "https://ceochandigarh.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-election"
+  },
+  {
+   "id": "st-ch-dept-electrical-inspectorate",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Electrical Inspectorate",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Certifies electrical installations and enforces electrical-safety regulations.",
+   "officialUrl": "https://chandigarh.gov.in/electrical-inspectorate",
+   "sources": [
+    "https://chandigarh.gov.in/electrical-inspectorate",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-dept-employment",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Employment",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Runs employment exchanges that register jobseekers and match them to vacancies.",
+   "officialUrl": "http://reeut.chd.gov.in/",
+   "sources": [
+    "http://reeut.chd.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-employment"
+  },
+  {
+   "id": "st-ch-dept-engineering",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Engineering",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Designs, builds and maintains government buildings and public infrastructure.",
+   "officialUrl": "https://chdengineering.gov.in/",
+   "sources": [
+    "https://chdengineering.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-engineering"
+  },
+  {
+   "id": "st-ch-dept-environment",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Environment",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Regulates pollution control and environmental clearances and runs environment-protection programmes.",
+   "officialUrl": "http://chandigarhenvis.gov.in",
+   "sources": [
+    "http://chandigarhenvis.gov.in",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-environment"
+  },
+  {
+   "id": "st-ch-dept-estate-office",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Estate Office",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Allots and manages government residential and commercial estate property.",
+   "officialUrl": "https://estateoffice.chd.gov.in/",
+   "sources": [
+    "https://estateoffice.chd.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-estate-office"
+  },
+  {
+   "id": "st-ch-dept-excise-and-taxation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Excise & Taxation",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Collects state excise duty, VAT/GST and other indirect taxes, and licenses the liquor trade.",
+   "officialUrl": "http://etdut.gov.in/ExciseOnline/index.html",
+   "sources": [
+    "http://etdut.gov.in/ExciseOnline/index.html",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-excise-and-taxation"
+  },
+  {
+   "id": "st-ch-dept-finance",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Finance",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Prepares the state budget, manages treasury and public debt, and controls government expenditure and pay/pension rules.",
+   "officialUrl": "http://chdpeo.gov.in/",
+   "sources": [
+    "http://chdpeo.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-finance"
+  },
+  {
+   "id": "st-ch-dept-food-and-supplies-and-consumer-affairs-and-legal-metrology",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Food & Supplies and Consumer Affairs and Legal Metrology",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Runs the public distribution system (ration shops), and enforces consumer-protection and weights-and-measures law.",
+   "officialUrl": "http://chdfood.gov.in",
+   "sources": [
+    "http://chdfood.gov.in",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-food-and-supplies-and-consumer-affairs-and-legal-metrology"
+  },
+  {
+   "id": "st-ch-dept-forest-and-wildlife",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Forest & Wildlife",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Manages state forests and wildlife sanctuaries, enforces forest and wildlife protection law, and runs afforestation programmes.",
+   "officialUrl": "http://www.chandigarhforest.gov.in/",
+   "sources": [
+    "http://www.chandigarhforest.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-forest-and-wildlife"
+  },
+  {
+   "id": "st-ch-dept-health",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Health",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Runs government hospitals and primary health centres, public-health programmes and disease control for citizens.",
+   "officialUrl": "https://chandigarh.gov.in/health",
+   "sources": [
+    "https://chandigarh.gov.in/health",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-health"
+  },
+  {
+   "id": "st-ch-dept-hospitality",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Hospitality",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Runs official guest houses and manages hospitality for state government functions and VIP visits.",
+   "officialUrl": "https://chandigarh.gov.in/hospitality",
+   "sources": [
+    "https://chandigarh.gov.in/hospitality",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-hospitality"
+  },
+  {
+   "id": "st-ch-dept-industries",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Industries",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Promotes industrial investment, runs industrial estates and administers incentives for MSMEs and large industry.",
+   "officialUrl": "https://chandigarh.gov.in/industries",
+   "sources": [
+    "https://chandigarh.gov.in/industries",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-industries"
+  },
+  {
+   "id": "st-ch-dept-information-technology",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Information Technology",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Drives e-governance, IT infrastructure and the promotion of the state's IT/ITeS industry.",
+   "officialUrl": "http://chdit.gov.in/",
+   "sources": [
+    "http://chdit.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-information-technology"
+  },
+  {
+   "id": "st-ch-dept-labour",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Labour",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Enforces labour law, registers factories/establishments, runs the Employees' State Insurance and welfare boards, and resolves industrial disputes.",
+   "officialUrl": "https://labour.chd.gov.in/",
+   "sources": [
+    "https://labour.chd.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-labour"
+  },
+  {
+   "id": "st-ch-dept-law-and-prosecution",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Law & Prosecution",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Conducts criminal prosecution on behalf of the state in the courts.",
+   "officialUrl": "https://chandigarh.gov.in/law-prosecution",
+   "sources": [
+    "https://chandigarh.gov.in/law-prosecution",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-law-and-prosecution"
+  },
+  {
+   "id": "st-ch-dept-local-audit",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Local Audit",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Audits the accounts of local bodies and government-funded institutions in the Union Territory.",
+   "officialUrl": "https://chandigarh.gov.in/local-audit",
+   "sources": [
+    "https://chandigarh.gov.in/local-audit",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-local-audit"
+  },
+  {
+   "id": "st-ch-dept-local-government",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Local Government",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Oversees municipal corporations, councils and committees that run civic services in towns and cities.",
+   "officialUrl": "https://chandigarh.gov.in/other-departments",
+   "sources": [
+    "https://chandigarh.gov.in/other-departments",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-local-government"
+  },
+  {
+   "id": "st-ch-dept-personnel",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Personnel",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Handles recruitment rules, service matters, transfers and cadre management of state government employees.",
+   "officialUrl": "https://chandigarh.gov.in/personnel-department",
+   "sources": [
+    "https://chandigarh.gov.in/personnel-department",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-personnel"
+  },
+  {
+   "id": "st-ch-dept-police",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Police",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Maintains law and order, investigates crime and provides public safety and traffic policing.",
+   "officialUrl": "https://chandigarhpolice.gov.in/",
+   "sources": [
+    "https://chandigarhpolice.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-police"
+  },
+  {
+   "id": "st-ch-dept-printing-and-stationery",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Printing & Stationery",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Runs government printing presses and supplies stationery and forms to government offices.",
+   "officialUrl": "https://chandigarh.gov.in/printing-and-stationery",
+   "sources": [
+    "https://chandigarh.gov.in/printing-and-stationery",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-printing-and-stationery"
+  },
+  {
+   "id": "st-ch-dept-public-relations",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Public Relations",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Runs the administration's press, publicity and public-information machinery.",
+   "officialUrl": "http://chdpr.gov.in",
+   "sources": [
+    "http://chdpr.gov.in",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-public-relations"
+  },
+  {
+   "id": "st-ch-dept-revenue",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Revenue",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Administers land records, land revenue, tenancy law and disaster relief through the district revenue administration.",
+   "officialUrl": "https://revenue.chd.gov.in/",
+   "sources": [
+    "https://revenue.chd.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-revenue"
+  },
+  {
+   "id": "st-ch-dept-science-and-technology-and-renewable-energy",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Science & Technology & Renewable Energy",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Funds scientific research, technology promotion and pollution/environment regulation.",
+   "officialUrl": "https://chandigarh.gov.in/science-technology-and-renewable-energy",
+   "sources": [
+    "https://chandigarh.gov.in/science-technology-and-renewable-energy",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-science-and-technology-and-renewable-energy"
+  },
+  {
+   "id": "st-ch-dept-social-welfare-women-and-child-development",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Social Welfare, Women & Child Development",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Runs anganwadi/ICDS child-nutrition centres, women's welfare and child-protection schemes.",
+   "officialUrl": "http://chdsw.gov.in/",
+   "sources": [
+    "http://chdsw.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-social-welfare-women-and-child-development"
+  },
+  {
+   "id": "st-ch-dept-sports",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Sports",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Builds sports infrastructure and runs coaching, talent-promotion and youth-development schemes.",
+   "officialUrl": "http://www.sportsdeptt.chd.gov.in/",
+   "sources": [
+    "http://www.sportsdeptt.chd.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-sports"
+  },
+  {
+   "id": "st-ch-dept-technical-education",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Technical Education",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Runs polytechnics and regulates technical/engineering education in the state.",
+   "officialUrl": "http://chdtechnicaleducation.gov.in",
+   "sources": [
+    "http://chdtechnicaleducation.gov.in",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-technical-education"
+  },
+  {
+   "id": "st-ch-dept-transport",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Transport",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Regulates road transport, runs the state road transport corporation/undertaking and issues driving licences and vehicle registrations.",
+   "officialUrl": "http://chdtransport.gov.in",
+   "sources": [
+    "http://chdtransport.gov.in",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-transport"
+  },
+  {
+   "id": "st-ch-dept-tourism",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Tourism",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Promotes tourist destinations, runs state tourism corporations/hotels and markets the state to visitors.",
+   "officialUrl": "http://chandigarhtourism.gov.in",
+   "sources": [
+    "http://chandigarhtourism.gov.in",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-tourism"
+  },
+  {
+   "id": "st-ch-dept-urban-planning",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Urban Planning",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Prepares statutory master plans and building-control regulations for urban development.",
+   "officialUrl": "https://urbanplanning.chd.gov.in/",
+   "sources": [
+    "https://urbanplanning.chd.gov.in/",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-urban-planning"
+  },
+  {
+   "id": "st-ch-dept-vigilance",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Vigilance",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Investigates corruption and misconduct by government officials and enforces integrity in public service.",
+   "officialUrl": "https://evigilance.chd.gov.in/Home",
+   "sources": [
+    "https://evigilance.chd.gov.in/Home",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-vigilance"
+  },
+  {
+   "id": "st-ch-dept-sainik-welfare",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Sainik Welfare",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Runs welfare schemes and pensions for ex-servicemen and their families in the Union Territory.",
+   "officialUrl": "http://chandigarhsainikwelfare.org",
+   "sources": [
+    "http://chandigarhsainikwelfare.org",
+    "https://chandigarh.gov.in/other-departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-dept-home",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Home Department",
+   "aliases": [
+    "Department of Home Affairs, Chandigarh"
+   ],
+   "parentId": "st-ch-government",
+   "description": "Handles Union Territory home affairs administration for Chandigarh, including police oversight, jails and criminal-justice coordination, working under the Chandigarh Administration and MHA.",
+   "officialUrl": "https://chandigarh.gov.in/who-who",
+   "sources": [
+    "https://chandigarh.gov.in/who-who"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-home"
+  },
+  {
+   "id": "st-ch-dept-water-resources",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Water Resources",
+   "aliases": [],
+   "parentId": "st-ch-government",
+   "description": "Manages water supply infrastructure, groundwater regulation and water-resource planning for the Union Territory of Chandigarh.",
+   "officialUrl": "https://chandigarh.gov.in/who-who",
+   "sources": [
+    "https://chandigarh.gov.in/who-who"
+   ],
+   "confidence": "high",
+   "adminHeadPositionId": "st-ch-pos-secretary-water-resources"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-pb-pos-secretary-agriculture",
+   "title": "Administrative Secretary, Agriculture",
+   "orgId": "st-pb-dept-agriculture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Arshdeep Singh Thind",
+    "notes": "IAS 2004"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-animal-husbandry-dairy-development-and-fisheries",
+   "title": "Principal Secretary, Animal Husbandry, Dairy Development and Fisheries",
+   "orgId": "st-pb-dept-animal-husbandry-dairy-development-and-fisheries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Rahul Bhandari",
+    "notes": "IAS 1997"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-civil-aviation",
+   "title": "Administrative Secretary-cum-Director, Civil Aviation",
+   "orgId": "st-pb-dept-civil-aviation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Sonali Giri",
+    "notes": "IAS 2009"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-cooperation",
+   "title": "Administrative Secretary, Cooperation",
+   "orgId": "st-pb-dept-cooperation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Ajit Balaji Joshi",
+    "notes": "IAS 2003"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-defence-services-welfare",
+   "title": "Principal Secretary, Defence Services Welfare",
+   "orgId": "st-pb-dept-defence-services-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Sumer Singh Gurjar",
+    "notes": "IAS 1998"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-elections",
+   "title": "Administrative Secretary (Local Bodies Elections Wing), Elections",
+   "orgId": "st-pb-dept-elections",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Ajit Balaji Joshi",
+    "notes": "IAS 2003"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-excise-and-taxation",
+   "title": "Additional Chief Secretary-cum-Financial Commissioner, Excise and Taxation",
+   "orgId": "st-pb-dept-excise-and-taxation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Dhirendra Kumar Tiwari",
+    "notes": "IAS 1994"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-finance",
+   "title": "Additional Chief Secretary, Finance",
+   "orgId": "st-pb-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Alok Shekhar",
+    "notes": "IAS 1994"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-food-civil-supplies-and-consumer-affairs",
+   "title": "Principal Secretary, Food, Civil Supplies and Consumer Affairs",
+   "orgId": "st-pb-dept-food-civil-supplies-and-consumer-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Rahul Tiwari",
+    "notes": "IAS 2000"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-forest-and-wild-life-preservation",
+   "title": "Administrative Secretary, Forest and Wild Life Preservation",
+   "orgId": "st-pb-dept-forest-and-wild-life-preservation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Kamal Kishor Yadav",
+    "notes": "IAS 2003"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-general-administration",
+   "title": "Principal Secretary (Chief Secretary holding additional charge), General Administration",
+   "orgId": "st-pb-dept-general-administration",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "KAP Sinha",
+    "notes": "IAS 1992"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-health-and-family-welfare",
+   "title": "Principal Secretary, Health & Family Welfare",
+   "orgId": "st-pb-dept-health-and-family-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Kumar Rahul",
+    "notes": "IAS 2000"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-higher-education-and-languages",
+   "title": "Administrative Secretary, Higher Education and Languages",
+   "orgId": "st-pb-dept-higher-education-and-languages",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Sonali Giri",
+    "notes": "IAS 2009"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-home-affairs-and-justice",
+   "title": "Additional Chief Secretary, Home Affairs and Justice",
+   "orgId": "st-pb-dept-home-affairs-and-justice",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Alok Shekhar",
+    "notes": "IAS 1994"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-horticulture",
+   "title": "Administrative Secretary, Horticulture",
+   "orgId": "st-pb-dept-horticulture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Arshdeep Singh Thind",
+    "notes": "IAS 2004"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-housing-and-urban-development",
+   "title": "Principal Secretary, Housing and Urban Development",
+   "orgId": "st-pb-dept-housing-and-urban-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Vikas Garg",
+    "notes": "IAS 1998"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-industries-and-commerce",
+   "title": "Administrative Secretary, Industries and Commerce",
+   "orgId": "st-pb-dept-industries-and-commerce",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Basant Garg",
+    "notes": "IAS 2005"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-promotion-of-information-technology-industry",
+   "title": "Administrative Secretary, Promotion of Information Technology Industry",
+   "orgId": "st-pb-dept-promotion-of-information-technology-industry",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Basant Garg",
+    "notes": "IAS 2005"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-investment-promotion",
+   "title": "Administrative Secretary, Investment Promotion",
+   "orgId": "st-pb-dept-investment-promotion",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Basant Garg",
+    "notes": "IAS 2005"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-labour",
+   "title": "Administrative Secretary, Labour",
+   "orgId": "st-pb-dept-labour",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Manvesh Singh Sidhu",
+    "notes": "SCS 2004"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-legal-and-legislative-affairs",
+   "title": "Administrative Secretary (Chief Secretary holding additional charge), Legal and Legislative Affairs",
+   "orgId": "st-pb-dept-legal-and-legislative-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "KAP Sinha",
+    "notes": "IAS 1992"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-local-government",
+   "title": "Administrative Secretary, Local Government",
+   "orgId": "st-pb-dept-local-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Ghanshyam Thori",
+    "notes": "IAS 2010"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-medical-education-and-research",
+   "title": "Principal Secretary, Medical Education and Research",
+   "orgId": "st-pb-dept-medical-education-and-research",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Kumar Rahul",
+    "notes": "IAS 2000"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-new-and-renewable-energy-sources",
+   "title": "Principal Secretary, New & Renewable Energy Sources",
+   "orgId": "st-pb-dept-new-and-renewable-energy-sources",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Gurkirat Kirpal Singh",
+    "notes": "IAS 2001"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-nri-affairs",
+   "title": "Administrative Secretary, NRI Affairs",
+   "orgId": "st-pb-dept-nri-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Mohammad Tayyab",
+    "notes": "IAS 2007"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-parliamentary-affairs",
+   "title": "Additional Chief Secretary, Parliamentary Affairs",
+   "orgId": "st-pb-dept-parliamentary-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Dhirendra Kumar Tiwari",
+    "notes": "IAS 1994"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-personnel",
+   "title": "Principal Secretary (Chief Secretary holding additional charge), Personnel",
+   "orgId": "st-pb-dept-personnel",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "KAP Sinha",
+    "notes": "IAS 1992"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-planning",
+   "title": "Additional Chief Secretary, Planning",
+   "orgId": "st-pb-dept-planning",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Jaspreet Talwar",
+    "notes": "IAS 1995"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-power",
+   "title": "Principal Secretary, Power",
+   "orgId": "st-pb-dept-power",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Gurkirat Kirpal Singh",
+    "notes": "IAS 2001"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-printing-and-stationery",
+   "title": "Administrative Secretary, Printing and Stationery",
+   "orgId": "st-pb-dept-printing-and-stationery",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Amit Dhaka",
+    "notes": "IAS 2006"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-public-works",
+   "title": "Administrative Secretary (Buildings & Roads), Public Works",
+   "orgId": "st-pb-dept-public-works",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Ravi Bhagat",
+    "notes": "IAS 2006"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-rural-development-and-panchayat",
+   "title": "Administrative Secretary, Rural Development and Panchayat",
+   "orgId": "st-pb-dept-rural-development-and-panchayat",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Ajit Balaji Joshi",
+    "notes": "IAS 2003"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-school-education",
+   "title": "Administrative Secretary, School Education",
+   "orgId": "st-pb-dept-school-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Sonali Giri",
+    "notes": "IAS 2009"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-science-technology-and-environment",
+   "title": "Administrative Secretary, Science, Technology & Environment",
+   "orgId": "st-pb-dept-science-technology-and-environment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Kamal Kishor Yadav",
+    "notes": "IAS 2003"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-social-justice-empowerment-and-minorities",
+   "title": "Principal Secretary, Social Justice, Empowerment and Minorities",
+   "orgId": "st-pb-dept-social-justice-empowerment-and-minorities",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Veerendra Kumar Meena",
+    "notes": "IAS 1997"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-social-security-and-women-and-child-development",
+   "title": "Principal Secretary, Social Security and Women & Child Development",
+   "orgId": "st-pb-dept-social-security-and-women-and-child-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Gurkirat Kirpal Singh",
+    "notes": "IAS 2001"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-soil-and-water-conservation",
+   "title": "Principal Secretary, Soil & Water Conservation",
+   "orgId": "st-pb-dept-soil-and-water-conservation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Krishan Kumar",
+    "notes": "IAS 1997"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-sports-and-youth-services",
+   "title": "Administrative Secretary, Sports and Youth Services",
+   "orgId": "st-pb-dept-sports-and-youth-services",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Varun Roojam",
+    "notes": "IAS 2004"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-technical-education-and-industrial-training",
+   "title": "Additional Chief Secretary, Technical Education and Industrial Training",
+   "orgId": "st-pb-dept-technical-education-and-industrial-training",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Vikas Pratap",
+    "notes": "IAS 1994"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-tourism-and-cultural-affairs",
+   "title": "Administrative Secretary, Tourism and Cultural Affairs",
+   "orgId": "st-pb-dept-tourism-and-cultural-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Kumar Amit",
+    "notes": "IAS 2010"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-transport",
+   "title": "Administrative Secretary, Transport",
+   "orgId": "st-pb-dept-transport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Varun Roojam",
+    "notes": "IAS 2004"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-vigilance",
+   "title": "Principal Secretary (Chief Secretary holding additional charge), Vigilance",
+   "orgId": "st-pb-dept-vigilance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "KAP Sinha",
+    "notes": "IAS 1992"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-water-resources",
+   "title": "Principal Secretary, Water Resources",
+   "orgId": "st-pb-dept-water-resources",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Krishan Kumar",
+    "notes": "IAS 1997"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-water-supply-and-sanitation",
+   "title": "Administrative Secretary, Water Supply and Sanitation",
+   "orgId": "st-pb-dept-water-supply-and-sanitation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Ramvir",
+    "notes": "IAS 2009"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-welfare-of-freedom-fighters",
+   "title": "Special Chief Secretary, Welfare of Freedom Fighters",
+   "orgId": "st-pb-dept-welfare-of-freedom-fighters",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Raji P. Shrivastava",
+    "notes": "IAS 1992"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-prisons-and-correctional-services",
+   "title": "Principal Secretary, Prisons and Correctional Services",
+   "orgId": "st-pb-dept-prisons-and-correctional-services",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Bhawna Garg",
+    "notes": "IAS 1999"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-food-processing",
+   "title": "Principal Secretary, Food Processing",
+   "orgId": "st-pb-dept-food-processing",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Rakhee Gupta Bhandari",
+    "notes": "IAS 1997"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-mines-and-geology",
+   "title": "Additional Chief Secretary, Mines and Geology",
+   "orgId": "st-pb-dept-mines-and-geology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Jaspreet Talwar",
+    "notes": "IAS 1995"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-pos-secretary-home",
+   "title": "Additional Chief Secretary, Home",
+   "orgId": "st-hr-dept-home",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Sudhir Rajpal"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-agriculture-and-welfare",
+   "title": "Additional Chief Secretary, Agriculture and Welfare",
+   "orgId": "st-hr-dept-agriculture-and-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Vijayendra Kumar"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-higher-education",
+   "title": "Additional Chief Secretary, Higher Education",
+   "orgId": "st-hr-dept-higher-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Apoorva Kumar Singh"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-environment",
+   "title": "Additional Chief Secretary, Environment",
+   "orgId": "st-hr-dept-environment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Sudhir Rajpal"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-finance",
+   "title": "Additional Chief Secretary, Finance",
+   "orgId": "st-hr-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Arun Kumar Gupta"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-forests",
+   "title": "Additional Chief Secretary, Forests",
+   "orgId": "st-hr-dept-forests",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Sudhir Rajpal"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-health",
+   "title": "Financial Commissioner & Additional Chief Secretary, Health",
+   "orgId": "st-hr-dept-health",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Dr. Sumita Misra"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-prisons",
+   "title": "Additional Chief Secretary, Prisons",
+   "orgId": "st-hr-dept-prisons",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Sudhir Rajpal"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-public-works",
+   "title": "Additional Chief Secretary (PW, Buildings & Roads), Public Works",
+   "orgId": "st-hr-dept-public-works",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Apoorva Kumar Singh"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-revenue-and-disaster-management",
+   "title": "Financial Commissioner & Additional Chief Secretary, Revenue and Disaster Management",
+   "orgId": "st-hr-dept-revenue-and-disaster-management",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Dr. Sumita Misra"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-town-and-country-planning",
+   "title": "Additional Chief Secretary, Town & Country Planning",
+   "orgId": "st-hr-dept-town-and-country-planning",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Anurag Agarwal"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-development-and-panchayats",
+   "title": "Additional Chief Secretary, Development & Panchayats",
+   "orgId": "st-hr-dept-development-and-panchayats",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Vijayendra Kumar"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-social-justice-and-empowerment-welfare-of-scheduled-caste-and-backward-classes-and-antyodaya",
+   "title": "Additional Chief Secretary, Social Justice & Empowerment, Welfare of Scheduled Caste & Backward Classes  and Antyodaya",
+   "orgId": "st-hr-dept-social-justice-and-empowerment-welfare-of-scheduled-caste-and-backward-classes-and-antyodaya",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Dr. G. Anupama"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-secretary-medical-education-and-research-dmer",
+   "title": "Financial Commissioner & Additional Chief Secretary, Medical Education and Research (DMER)",
+   "orgId": "st-hr-dept-medical-education-and-research-dmer",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Dr. Sumita Misra"
+   },
+   "sources": [
+    "https://haryanacmoffice.gov.in/administrative-secretaries"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ch-pos-secretary-agriculture",
+   "title": "Secretary, Agriculture, Chandigarh",
+   "orgId": "st-ch-dept-agriculture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "D. Karthikeyan",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-animal-husbandry-and-fisheries",
+   "title": "Secretary, Animal Husbandry & Fisheries, Chandigarh",
+   "orgId": "st-ch-dept-animal-husbandry-and-fisheries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Pardeep Kumar",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-art-and-culture",
+   "title": "Secretary, Art & Culture, Chandigarh",
+   "orgId": "st-ch-dept-art-and-culture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Dr. Syed Abid Rasheed Shah",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-cooperation",
+   "title": "Secretary, Cooperation, Chandigarh",
+   "orgId": "st-ch-dept-cooperation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Mohamed Mansoor L.",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-dc-office",
+   "title": "Deputy Commissioner, Deputy Commissioner's Office, Chandigarh",
+   "orgId": "st-ch-dept-dc-office",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Nishant Kumar Yadav",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-education",
+   "title": "Secretary, Education, Chandigarh",
+   "orgId": "st-ch-dept-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Ms. Prerna Puri",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-election",
+   "title": "Secretary-cum-Chief Electoral Officer, Election, Chandigarh",
+   "orgId": "st-ch-dept-election",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Ms. Prerna Puri",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-employment",
+   "title": "Secretary, Employment, Chandigarh",
+   "orgId": "st-ch-dept-employment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Ms. Anuradha S. Chagti",
+    "notes": "CSS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-engineering",
+   "title": "Secretary, Engineering, Chandigarh",
+   "orgId": "st-ch-dept-engineering",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Ms. Prerna Puri",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-environment",
+   "title": "Home Secretary, Environment, Chandigarh",
+   "orgId": "st-ch-dept-environment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Mandip Singh Brar",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-estate-office",
+   "title": "Finance Secretary, Estate Office, Chandigarh",
+   "orgId": "st-ch-dept-estate-office",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Diprava Lakra",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-excise-and-taxation",
+   "title": "Finance Secretary, Excise & Taxation, Chandigarh",
+   "orgId": "st-ch-dept-excise-and-taxation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Diprava Lakra",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-finance",
+   "title": "Finance Secretary, Finance, Chandigarh",
+   "orgId": "st-ch-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Diprava Lakra",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-food-and-supplies-and-consumer-affairs-and-legal-metrology",
+   "title": "Secretary, Food & Supplies and Consumer Affairs and Legal Metrology, Chandigarh",
+   "orgId": "st-ch-dept-food-and-supplies-and-consumer-affairs-and-legal-metrology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Mohamed Mansoor L.",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-forest-and-wildlife",
+   "title": "Home Secretary, Forest & Wildlife, Chandigarh",
+   "orgId": "st-ch-dept-forest-and-wildlife",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Mandip Singh Brar",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-health",
+   "title": "Home Secretary, Health, Chandigarh",
+   "orgId": "st-ch-dept-health",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Mandip Singh Brar",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-hospitality",
+   "title": "Secretary, Hospitality, Chandigarh",
+   "orgId": "st-ch-dept-hospitality",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Swapnil M. Naik",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-industries",
+   "title": "Deputy Commissioner (Secretary Industries, additional charge), Industries, Chandigarh",
+   "orgId": "st-ch-dept-industries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Nishant Kumar Yadav",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-information-technology",
+   "title": "Secretary, Information Technology, Chandigarh",
+   "orgId": "st-ch-dept-information-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "D. Karthikeyan",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-labour",
+   "title": "Secretary, Labour, Chandigarh",
+   "orgId": "st-ch-dept-labour",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Ms. Anuradha S. Chagti",
+    "notes": "CSS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-law-and-prosecution",
+   "title": "Home Secretary, Law & Prosecution, Chandigarh",
+   "orgId": "st-ch-dept-law-and-prosecution",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Mandip Singh Brar",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-local-audit",
+   "title": "Finance Secretary, Local Audit, Chandigarh",
+   "orgId": "st-ch-dept-local-audit",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Diprava Lakra",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-local-government",
+   "title": "Home Secretary, Local Government, Chandigarh",
+   "orgId": "st-ch-dept-local-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Mandip Singh Brar",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-personnel",
+   "title": "Secretary, Personnel, Chandigarh",
+   "orgId": "st-ch-dept-personnel",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Swapnil M. Naik",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-printing-and-stationery",
+   "title": "Secretary, Printing & Stationery, Chandigarh",
+   "orgId": "st-ch-dept-printing-and-stationery",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Ms. Prerna Puri",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-public-relations",
+   "title": "Secretary, Public Relations, Chandigarh",
+   "orgId": "st-ch-dept-public-relations",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Ms. Prerna Puri",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-revenue",
+   "title": "Home Secretary, Revenue, Chandigarh",
+   "orgId": "st-ch-dept-revenue",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Mandip Singh Brar",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-science-and-technology-and-renewable-energy",
+   "title": "Secretary, Science & Technology & Renewable Energy, Chandigarh",
+   "orgId": "st-ch-dept-science-and-technology-and-renewable-energy",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Saurabh Kumar",
+    "notes": "IFS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-social-welfare-women-and-child-development",
+   "title": "Secretary, Social Welfare, Women & Child Development, Chandigarh",
+   "orgId": "st-ch-dept-social-welfare-women-and-child-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Harpreet Singh Sudan",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-sports",
+   "title": "Secretary, Sports, Chandigarh",
+   "orgId": "st-ch-dept-sports",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Ms. Prerna Puri",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-technical-education",
+   "title": "Joint Secretary, Technical Education, Chandigarh",
+   "orgId": "st-ch-dept-technical-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Ms. Radhika Singh",
+    "notes": "HCS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-transport",
+   "title": "Finance Secretary, Transport, Chandigarh",
+   "orgId": "st-ch-dept-transport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Diprava Lakra",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-tourism",
+   "title": "Secretary, Tourism, Chandigarh",
+   "orgId": "st-ch-dept-tourism",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Dr. Syed Abid Rasheed Shah",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-urban-planning",
+   "title": "Finance Secretary, Urban Planning, Chandigarh",
+   "orgId": "st-ch-dept-urban-planning",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Diprava Lakra",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-vigilance",
+   "title": "Secretary, Vigilance, Chandigarh",
+   "orgId": "st-ch-dept-vigilance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "D. Karthikeyan",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-secretary-revenue-rehabilitation-and-disaster-management",
+   "title": "Additional Chief Secretary-cum-Financial Commissioner, Revenue, Rehabilitation and Disaster Management",
+   "orgId": "st-pb-dept-revenue-rehabilitation-and-disaster-management",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Anurag Verma",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://punjab.gov.in/government/whos-who/admin-secretaries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-police",
+   "title": "Home Secretary, Police",
+   "orgId": "st-ch-dept-police",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Mandip Singh Brar",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/who-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-home",
+   "title": "Home Secretary",
+   "orgId": "st-ch-dept-home",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Mandip Singh Brar",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/who-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-secretary-water-resources",
+   "title": "Home Secretary, Water Resources",
+   "orgId": "st-ch-dept-water-resources",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ch-pos-administrator",
+   "holder": {
+    "name": "Mandip Singh Brar",
+    "notes": "IAS"
+   },
+   "sources": [
+    "https://chandigarh.gov.in/who-who"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [],
+ "verification": {
+  "verifiedAt": "2026-09-25",
+  "method": "Live-fetched official sources (curl + bs4, per SCHEMA.md 'do not use browser tools' rule): punjab.gov.in/government/whos-who/admin-secretaries/ (full raw HTML parse, all 31 officer blocks), haryanacmoffice.gov.in/administrative-secretaries (full raw HTML parse; page explicitly dated 'Page last updated on: 25-09-2026'), and chandigarh.gov.in who's-who (used the already-cached chd_whos_who.html in scratch/, which is the fuller JS-rendered version; a fresh curl of chandigarh.gov.in/who-who 404'd).",
+  "idAndStructureChecks": {
+   "duplicateIds": 0,
+   "idPatternViolations": 0,
+   "adminHeadPositionIdUnresolved": 0,
+   "orphanPositions": 0,
+   "positionOrgIdUnresolved": 0
+  },
+  "secretaryPostingsReVerified": 62,
+  "secretaryPostingsCorrectedOrAdded": 3,
+  "secretaryPostingsRemovedAsStale": 0,
+  "departmentsAdded": 2,
+  "notes": [
+   "Punjab: all 48 previously-sourced secretary postings confirmed unchanged against punjab.gov.in live page. One of the 4 'no officer named' departments was wrong: Department of Revenue, Rehabilitation & Disaster Management does have a sourced ACS (Anurag Verma) on the live page and has been added. The other 3 (Employment Generation/Skill Dev & Training, Information & Public Relation, Program Implementation) were re-checked and still have no officer named on the live page — correctly left without a secretary.",
+   "Haryana: all 14 previously-sourced secretary postings (Chief Secretary tier + 8 ACS) confirmed unchanged, including exact portfolio wording, against haryanacmoffice.gov.in, which is dated today (2026-09-25). Could not source the Principal Secretary/Secretary tier for the other 33 departments — that page renders it client-side via JS, and SCHEMA.md forbids browser tools, so per 'omit rather than guess' those remain without a secretary. Haryana's official department list (haryana_depts_list.json) has no standalone 'Power' department (only 'Department of Renewable Energy') — not added, since inventing one would violate the no-invention rule; flagging for a follow-up segment with browser access to confirm whether Power sits inside a board/corporation instead of a secretariat department.",
+   "Chandigarh: all 35 previously-sourced secretary postings confirmed unchanged against the who's-who page. Added Home and Water Resources departments (both missing despite being on the required major-department checklist) and added the Police department's secretary — all three sourced to Mandip Singh Brar, Home Secretary, per the same page.",
+   "Did not re-verify department lists against official portals beyond Home and Water Resources gaps found for Chandigarh; Punjab's and Haryana's existing department lists already cover the full required major-department checklist (Home, Finance, Revenue, Health, School/Higher Education, Agriculture, Rural Development, Urban Development, PWD, Power [Haryana caveat above], Water Resources, Social Welfare, Women & Child, Industries, Transport, Forest & Environment, Food & Civil Supplies, Labour, IT, Tourism, Panchayati Raj); no other missing major departments found."
+  ],
+  "changesApplied": [
+   "ADD st-pb-pos-secretary-revenue-rehabilitation-and-disaster-management (Anurag Verma) -> st-pb-dept-revenue-rehabilitation-and-disaster-management; was previously listed as having no sourced secretary, but the live punjab.gov.in admin-secretaries page names Anurag Verma, IAS as ACS-cum-Financial Commissioner for this portfolio.",
+   "ADD st-ch-pos-secretary-police (Mandip Singh Brar) -> st-ch-dept-police; was previously listed with no sourced secretary. chandigarh.gov.in who's-who page lists Police among the Home Secretary's departments (operational head is DGP, a separate armed_force/capf-style command, not a Secretariat 'secretary' position, so not modeled here).",
+   "ADD entity st-ch-dept-home + position st-ch-pos-secretary-home (Mandip Singh Brar); Home was entirely missing from the Chandigarh department list despite being on the required major-department checklist and explicitly listed on the official who's-who page.",
+   "ADD entity st-ch-dept-water-resources + position st-ch-pos-secretary-water-resources (Mandip Singh Brar); Water Resources was entirely missing despite being on the required major-department checklist and listed on the official who's-who page."
+  ]
+ }
+}

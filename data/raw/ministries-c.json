@@ -1,0 +1,3945 @@
+{
+ "segment": "ministries-c",
+ "asOf": "2026-09-25",
+ "notes": "Group C infrastructure ministries (Railways, Road Transport & Highways, Civil Aviation, Ports Shipping & Waterways, Housing & Urban Affairs, Jal Shakti, Communications). Cabinet/MoS minister positions themselves (in-pos-minister-*, in-pos-mos-*) are owned by the council-of-ministers segment and are only referenced here via headPositionId, not defined. Regulators TRAI/AERA (regulators segment) and tribunal TDSAT (judiciary segment) are referenced in relations, not redefined, per ownership rules.\n\nKNOWN GAPS / LOW-CONFIDENCE ITEMS (holder not confirmed against a 2025-2026 source at research time; position included per quality-bar instructions with confidence=low, holder=null):\n- All 12 Major Port Authority Chairmen (Deendayal, Mumbai, JNPA, Mormugao, New Mangalore, Cochin, Chennai, V.O. Chidambaranar, Visakhapatnam, Paradip, Syama Prasad Mookerjee) and Kamarajar Port CMD.\n- DFCCIL Managing Director.\n- NHSRCL Managing Director: Wikipedia infobox names Vivek Kumar Gupta, who is also the sitting Railway Board Member (Infrastructure) per the official 28-07-2026 roster -- likely stale/conflicting; unresolved.\n- Pawan Hans CMD, IAHE Director General, CGWB Chairman, NMCG Director General, Brahmaputra Board Chairman, NWDA Director General, WAPCOS CMD, CPWD Director General (only 'additional charge' name found), RLDA Vice Chairman.\n- Secretaries: Ports Shipping & Waterways; Water Resources/Ganga Rejuvenation; Drinking Water & Sanitation -- not found via Wikipedia/available sources in the time available; official ministry 'About Us' pages returned errors/403s during research.\n- Zonal-railway General Manager postings rotate frequently (officers were being reshuffled through 2026); all 18 GM names are sourced from the indianrailways.gov.in Board Members/General Managers page with 'Last Reviewed 28-07-2026' -- the single most authoritative and current source found, but should be re-checked close to publish since postings can change within weeks.\n- MTNL is shown with the same CMD as BSNL (A. Robert J. Ravi) reflecting BSNL's absorption of MTNL management; the formal legal-merger status of MTNL into BSNL was not independently confirmed here.\n- Budget figures were intentionally omitted (union-budget segment owns all budget numbers).\n- WebSearch quota was exhausted mid-research (shared session budget across parallel research segments); remaining research relied on WebFetch (Wikipedia parse API, official portals) and curl+python only, which limited cross-verification depth on some low-confidence items above.",
+ "entities": [
+  {
+   "id": "in-min-railways",
+   "kind": "ministry",
+   "name": "Ministry of Railways",
+   "abbr": "MoR",
+   "aliases": [
+    "Railway Ministry",
+    "Indian Railways",
+    "Railway Board"
+   ],
+   "parentId": "in-union-government",
+   "description": "Runs Indian Railways, one of the world's largest rail networks, through the Railway Board, which functions as both the ministry's executive board and its administrative apex; owns 18 zonal railways, production units, and a cluster of railway PSUs.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; Railways Act, 1989",
+   "officialUrl": "https://indianrailways.gov.in",
+   "established": "1905 (Railway Board); 1951 (nationalised zonal structure)",
+   "hq": "Rail Bhawan, New Delhi",
+   "headPositionId": "in-pos-minister-railways",
+   "adminHeadPositionId": "in-pos-chairman-ceo-railway-board",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-rpf",
+   "kind": "subordinate_office",
+   "name": "Railway Protection Force",
+   "abbr": "RPF",
+   "aliases": [
+    "RPF"
+   ],
+   "parentId": "in-min-railways",
+   "description": "Statutory security force of the Ministry of Railways responsible for protecting railway property, passenger area and passengers; has powers of arrest and investigation for railway-related offences.",
+   "legalBasis": "Railway Protection Force Act, 1957",
+   "established": "1872 (as a Force); 1957 (statutory)",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-rpf",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Railway_Protection_Force",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-rdso",
+   "kind": "subordinate_office",
+   "name": "Research Designs and Standards Organisation",
+   "abbr": "RDSO",
+   "parentId": "in-min-railways",
+   "description": "Railway Board's principal R&D arm, headquartered in Lucknow; sets technical standards, tests and approves rolling stock, signalling and civil engineering designs for Indian Railways.",
+   "hq": "Lucknow",
+   "established": "1957",
+   "headPositionId": "in-pos-dg-rdso",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-central-railway",
+   "kind": "subordinate_office",
+   "name": "Central Railway",
+   "abbr": "CR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Mumbai CSMT; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Mumbai CSMT",
+   "established": "1951",
+   "headPositionId": "in-pos-gm-central-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-eastern-railway",
+   "kind": "subordinate_office",
+   "name": "Eastern Railway",
+   "abbr": "ER",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Kolkata; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Kolkata",
+   "established": "1952",
+   "headPositionId": "in-pos-gm-eastern-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-east-central-railway",
+   "kind": "subordinate_office",
+   "name": "East Central Railway",
+   "abbr": "ECR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Hajipur; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Hajipur",
+   "established": "2002",
+   "headPositionId": "in-pos-gm-east-central-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-east-coast-railway",
+   "kind": "subordinate_office",
+   "name": "East Coast Railway",
+   "abbr": "ECoR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Bhubaneswar; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Bhubaneswar",
+   "established": "2003",
+   "headPositionId": "in-pos-gm-east-coast-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-metro-railway-kolkata",
+   "kind": "subordinate_office",
+   "name": "Metro Railway, Kolkata",
+   "abbr": "MRKol",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Kolkata; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Kolkata",
+   "established": "2010",
+   "headPositionId": "in-pos-gm-metro-railway-kolkata",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-northern-railway",
+   "kind": "subordinate_office",
+   "name": "Northern Railway",
+   "abbr": "NR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Delhi; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Delhi",
+   "established": "1952",
+   "headPositionId": "in-pos-gm-northern-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-north-central-railway",
+   "kind": "subordinate_office",
+   "name": "North Central Railway",
+   "abbr": "NCR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Prayagraj; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Prayagraj",
+   "established": "2003",
+   "headPositionId": "in-pos-gm-north-central-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-north-eastern-railway",
+   "kind": "subordinate_office",
+   "name": "North Eastern Railway",
+   "abbr": "NER",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Gorakhpur; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Gorakhpur",
+   "established": "1952",
+   "headPositionId": "in-pos-gm-north-eastern-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-northeast-frontier-railway",
+   "kind": "subordinate_office",
+   "name": "Northeast Frontier Railway",
+   "abbr": "NFR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Guwahati; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Guwahati",
+   "established": "1958",
+   "headPositionId": "in-pos-gm-northeast-frontier-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-north-western-railway",
+   "kind": "subordinate_office",
+   "name": "North Western Railway",
+   "abbr": "NWR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Jaipur; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Jaipur",
+   "established": "2002",
+   "headPositionId": "in-pos-gm-north-western-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-southern-railway",
+   "kind": "subordinate_office",
+   "name": "Southern Railway",
+   "abbr": "SR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Chennai; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Chennai",
+   "established": "1951",
+   "headPositionId": "in-pos-gm-southern-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-south-central-railway",
+   "kind": "subordinate_office",
+   "name": "South Central Railway",
+   "abbr": "SCR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Secunderabad; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Secunderabad",
+   "established": "1966",
+   "headPositionId": "in-pos-gm-south-central-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-south-coast-railway",
+   "kind": "subordinate_office",
+   "name": "South Coast Railway",
+   "abbr": "SCoR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Visakhapatnam; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Visakhapatnam",
+   "established": "2026",
+   "headPositionId": "in-pos-gm-south-coast-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-south-eastern-railway",
+   "kind": "subordinate_office",
+   "name": "South Eastern Railway",
+   "abbr": "SER",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Kolkata; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Kolkata",
+   "established": "1955",
+   "headPositionId": "in-pos-gm-south-eastern-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-south-east-central-railway",
+   "kind": "subordinate_office",
+   "name": "South East Central Railway",
+   "abbr": "SECR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Bilaspur; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Bilaspur",
+   "established": "2003",
+   "headPositionId": "in-pos-gm-south-east-central-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-south-western-railway",
+   "kind": "subordinate_office",
+   "name": "South Western Railway",
+   "abbr": "SWR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Hubballi; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Hubballi",
+   "established": "2003",
+   "headPositionId": "in-pos-gm-south-western-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-western-railway",
+   "kind": "subordinate_office",
+   "name": "Western Railway",
+   "abbr": "WR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Mumbai (Churchgate); runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Mumbai (Churchgate)",
+   "established": "1951",
+   "headPositionId": "in-pos-gm-western-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-west-central-railway",
+   "kind": "subordinate_office",
+   "name": "West Central Railway",
+   "abbr": "WCR",
+   "parentId": "in-min-railways",
+   "description": "One of the 18 operating zones of Indian Railways, headquartered at Jabalpur; runs train operations, infrastructure and commercial functions for its constituent divisions.",
+   "hq": "Jabalpur",
+   "established": "2003",
+   "headPositionId": "in-pos-gm-west-central-railway",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-clw",
+   "kind": "subordinate_office",
+   "name": "Chittaranjan Locomotive Works",
+   "parentId": "in-min-railways",
+   "description": "Railway Board production unit at Chittaranjan, West Bengal manufacturing locomotives/coaches/wheels for Indian Railways.",
+   "hq": "Chittaranjan, West Bengal",
+   "headPositionId": "in-pos-gm-clw",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-blw",
+   "kind": "subordinate_office",
+   "name": "Banaras Locomotive Works",
+   "parentId": "in-min-railways",
+   "description": "Railway Board production unit at Varanasi, Uttar Pradesh manufacturing locomotives/coaches/wheels for Indian Railways.",
+   "hq": "Varanasi, Uttar Pradesh",
+   "headPositionId": "in-pos-gm-blw",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-icf",
+   "kind": "subordinate_office",
+   "name": "Integral Coach Factory",
+   "parentId": "in-min-railways",
+   "description": "Railway Board production unit at Chennai, Tamil Nadu manufacturing locomotives/coaches/wheels for Indian Railways.",
+   "hq": "Chennai, Tamil Nadu",
+   "headPositionId": "in-pos-gm-icf",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-rwf",
+   "kind": "subordinate_office",
+   "name": "Rail Wheel Factory",
+   "parentId": "in-min-railways",
+   "description": "Railway Board production unit at Bengaluru, Karnataka manufacturing locomotives/coaches/wheels for Indian Railways.",
+   "hq": "Bengaluru, Karnataka",
+   "headPositionId": "in-pos-gm-rwf",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-rcf-kapurthala",
+   "kind": "subordinate_office",
+   "name": "Rail Coach Factory, Kapurthala",
+   "parentId": "in-min-railways",
+   "description": "Railway Board production unit at Kapurthala, Punjab manufacturing locomotives/coaches/wheels for Indian Railways.",
+   "hq": "Kapurthala, Punjab",
+   "headPositionId": "in-pos-gm-rcf-kapurthala",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-mcf-raebareli",
+   "kind": "subordinate_office",
+   "name": "Modern Coach Factory, Raebareli",
+   "parentId": "in-min-railways",
+   "description": "Railway Board production unit at Raebareli, Uttar Pradesh manufacturing locomotives/coaches/wheels for Indian Railways.",
+   "hq": "Raebareli, Uttar Pradesh",
+   "headPositionId": "in-pos-gm-mcf-raebareli",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nair",
+   "kind": "subordinate_office",
+   "name": "National Academy of Indian Railways",
+   "parentId": "in-min-railways",
+   "description": "Centralised Indian Railways training institute at Vadodara, Gujarat for officers of the Indian Railway Management Service and allied cadres.",
+   "hq": "Vadodara, Gujarat",
+   "headPositionId": "in-pos-head-nair",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-irimee",
+   "kind": "subordinate_office",
+   "name": "Indian Railways Institute of Mechanical and Electrical Engineering (IRIMEE)",
+   "parentId": "in-min-railways",
+   "description": "Centralised Indian Railways training institute at Jamalpur, Bihar for officers of the Indian Railway Management Service and allied cadres.",
+   "hq": "Jamalpur, Bihar",
+   "headPositionId": "in-pos-head-irimee",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iricen",
+   "kind": "subordinate_office",
+   "name": "Indian Railways Institute of Civil Engineering (IRICEN)",
+   "parentId": "in-min-railways",
+   "description": "Centralised Indian Railways training institute at Pune, Maharashtra for officers of the Indian Railway Management Service and allied cadres.",
+   "hq": "Pune, Maharashtra",
+   "headPositionId": "in-pos-head-iricen",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iriset",
+   "kind": "subordinate_office",
+   "name": "Indian Railways Institute of Signal Engineering and Telecommunications (IRISET)",
+   "parentId": "in-min-railways",
+   "description": "Centralised Indian Railways training institute at Secunderabad, Telangana for officers of the Indian Railway Management Service and allied cadres.",
+   "hq": "Secunderabad, Telangana",
+   "headPositionId": "in-pos-head-iriset",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iritm",
+   "kind": "subordinate_office",
+   "name": "Indian Railways Institute of Transport Management (IRITM)",
+   "parentId": "in-min-railways",
+   "description": "Centralised Indian Railways training institute at Lucknow, Uttar Pradesh for officers of the Indian Railway Management Service and allied cadres.",
+   "hq": "Lucknow, Uttar Pradesh",
+   "headPositionId": "in-pos-head-iritm",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-irifm",
+   "kind": "subordinate_office",
+   "name": "Indian Railways Institute of Financial Management (IRIFM)",
+   "parentId": "in-min-railways",
+   "description": "Centralised Indian Railways training institute at Secunderabad, Telangana for officers of the Indian Railway Management Service and allied cadres.",
+   "hq": "Secunderabad, Telangana",
+   "headPositionId": "in-pos-head-irifm",
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-irctc",
+   "kind": "cpse",
+   "name": "Indian Railway Catering and Tourism Corporation",
+   "abbr": "IRCTC",
+   "parentId": "in-min-railways",
+   "description": "Listed Railways PSU handling online ticketing, catering and tourism services for Indian Railways; monopoly operator of IRCTC's e-ticketing platform.",
+   "established": "1999",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cmd-irctc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Railway_Catering_and_Tourism_Corporation"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-irfc",
+   "kind": "cpse",
+   "name": "Indian Railway Finance Corporation",
+   "abbr": "IRFC",
+   "parentId": "in-min-railways",
+   "description": "Listed dedicated financing arm of Indian Railways; raises market borrowings to fund rolling stock and railway infrastructure acquisition.",
+   "established": "1986",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cmd-irfc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Railway_Finance_Corporation"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-rvnl",
+   "kind": "cpse",
+   "name": "Rail Vikas Nigam Limited",
+   "abbr": "RVNL",
+   "parentId": "in-min-railways",
+   "description": "Listed construction arm of the Ministry of Railways for project implementation of new lines, doubling, gauge conversion and electrification.",
+   "established": "2003",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cmd-rvnl",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rail_Vikas_Nigam"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ircon",
+   "kind": "cpse",
+   "name": "IRCON International Limited",
+   "abbr": "IRCON",
+   "parentId": "in-min-railways",
+   "description": "Railway PSU engineering-construction contractor executing railway and transport infrastructure projects in India and abroad.",
+   "established": "1976",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cmd-ircon",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ircon_International"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-rites",
+   "kind": "cpse",
+   "name": "RITES Limited",
+   "abbr": "RITES",
+   "parentId": "in-min-railways",
+   "description": "Listed transport-sector consultancy PSU providing engineering, project management and export of rolling stock services across railways, highways, metros, ports and airports.",
+   "established": "1974",
+   "hq": "Gurugram, Haryana",
+   "headPositionId": "in-pos-cmd-rites",
+   "sources": [
+    "https://en.wikipedia.org/wiki/RITES_Limited"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-concor",
+   "kind": "cpse",
+   "name": "Container Corporation of India Limited",
+   "abbr": "CONCOR",
+   "parentId": "in-min-railways",
+   "description": "Listed Railways PSU running container terminals and multimodal (rail-road) container logistics across India.",
+   "established": "1988",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cmd-concor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Container_Corporation_of_India"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-railtel",
+   "kind": "cpse",
+   "name": "RailTel Corporation of India Limited",
+   "abbr": "RailTel",
+   "parentId": "in-min-railways",
+   "description": "Listed Railways PSU that built and operates a pan-India optic-fibre telecom network along railway tracks, providing broadband, VPN and data-centre services.",
+   "established": "2000",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cmd-railtel",
+   "sources": [
+    "https://en.wikipedia.org/wiki/RailTel"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-krcl",
+   "kind": "cpse",
+   "name": "Konkan Railway Corporation Limited",
+   "abbr": "KRCL",
+   "parentId": "in-min-railways",
+   "description": "PSU jointly owned with the Konkan-coast state governments; owns and operates the Konkan Railway line across Maharashtra, Goa and Karnataka and undertakes railway EPC projects.",
+   "established": "1990",
+   "hq": "Navi Mumbai, Maharashtra",
+   "headPositionId": "in-pos-cmd-krcl",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Konkan_Railway_Corporation"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-mrvc",
+   "kind": "cpse",
+   "name": "Mumbai Railway Vikas Corporation Limited",
+   "abbr": "MRVC",
+   "parentId": "in-min-railways",
+   "description": "Joint venture executing Mumbai Urban Transport Project works to expand and modernise Mumbai's suburban rail network.",
+   "established": "1999",
+   "hq": "Mumbai, Maharashtra",
+   "headPositionId": "in-pos-cmd-mrvc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mumbai_Railway_Vikas_Corporation"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dfccil",
+   "kind": "cpse",
+   "name": "Dedicated Freight Corridor Corporation of India Limited",
+   "abbr": "DFCCIL",
+   "parentId": "in-min-railways",
+   "description": "Railways PSU building and operating the Eastern and Western Dedicated Freight Corridors for high-capacity freight movement.",
+   "established": "2006",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cmd-dfccil",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dedicated_freight_corridors_in_India"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nhsrcl",
+   "kind": "cpse",
+   "name": "National High Speed Rail Corporation Limited",
+   "abbr": "NHSRCL",
+   "parentId": "in-min-railways",
+   "description": "Special purpose vehicle implementing India's first high-speed rail (bullet train) corridor between Mumbai and Ahmedabad and planning further HSR corridors.",
+   "established": "2016",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cmd-nhsrcl",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_High_Speed_Rail_Corporation"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-road-transport-and-highways",
+   "kind": "ministry",
+   "name": "Ministry of Road Transport and Highways",
+   "abbr": "MoRTH",
+   "aliases": [
+    "Road Transport Ministry",
+    "Highways Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Formulates policy for national highways, road transport, motor vehicle regulation and road safety; executes highway construction mainly through NHAI and NHIDCL.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "hq": "Transport Bhawan, New Delhi",
+   "officialUrl": "https://morth.nic.in",
+   "headPositionId": "in-pos-minister-road-transport-and-highways",
+   "adminHeadPositionId": "in-pos-secretary-road-transport-and-highways",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://en.wikipedia.org/wiki/Ministry_of_Road_Transport_and_Highways"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nhai",
+   "kind": "statutory_body",
+   "name": "National Highways Authority of India",
+   "parentId": "in-min-road-transport-and-highways",
+   "description": "Statutory body that develops, maintains and manages India's National Highways network (50,000+ km), including via the Bharatmala programme and toll (FASTag) operations.",
+   "headPositionId": "in-pos-head-nhai",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Highways_Authority_of_India"
+   ],
+   "confidence": "medium",
+   "hq": "Sector-10, Dwarka, New Delhi",
+   "established": "1995",
+   "legalBasis": "National Highways Authority of India Act, 1988",
+   "abbr": "NHAI",
+   "officialUrl": "https://nhai.gov.in",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nhidcl",
+   "kind": "cpse",
+   "name": "National Highways and Infrastructure Development Corporation Limited",
+   "parentId": "in-min-road-transport-and-highways",
+   "description": "CPSU developing and maintaining national highways in border, hilly, Northeast and island regions where NHAI does not operate.",
+   "headPositionId": "in-pos-head-nhidcl",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Highways_and_Infrastructure_Development_Corporation_Limited"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "established": "2014",
+   "abbr": "NHIDCL",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iahe",
+   "kind": "autonomous_body",
+   "name": "Indian Academy of Highway Engineers",
+   "parentId": "in-min-road-transport-and-highways",
+   "description": "MoRTH's apex training institute for highway engineers, based in Noida, delivering technical and managerial training to central and state highway engineering staff.",
+   "headPositionId": "in-pos-head-iahe",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Road_Transport_and_Highways"
+   ],
+   "confidence": "medium",
+   "hq": "Sector 62, Noida, Uttar Pradesh",
+   "abbr": "IAHE",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-civil-aviation",
+   "kind": "ministry",
+   "name": "Ministry of Civil Aviation",
+   "abbr": "MoCA",
+   "aliases": [
+    "Aviation Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Formulates policy for civil aviation, airport infrastructure, air-safety and air-transport regulation, including the UDAN regional connectivity scheme.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "hq": "Rajiv Gandhi Bhawan, New Delhi",
+   "officialUrl": "https://www.civilaviation.gov.in",
+   "headPositionId": "in-pos-minister-civil-aviation",
+   "adminHeadPositionId": "in-pos-secretary-civil-aviation",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dgca",
+   "kind": "regulator",
+   "name": "Directorate General of Civil Aviation",
+   "parentId": "in-min-civil-aviation",
+   "description": "Statutory air-safety regulator: licenses pilots and aviation personnel, certifies aircraft airworthiness, and investigates regulatory compliance across Indian civil aviation.",
+   "headPositionId": "in-pos-head-dgca",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Directorate_General_of_Civil_Aviation_(India)"
+   ],
+   "confidence": "medium",
+   "hq": "Safdarjung Airport, New Delhi",
+   "legalBasis": "Aircraft (Amendment) Act, 2020",
+   "abbr": "DGCA",
+   "officialUrl": "https://www.dgca.gov.in",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bcas",
+   "kind": "regulator",
+   "name": "Bureau of Civil Aviation Security",
+   "parentId": "in-min-civil-aviation",
+   "description": "Regulates and enforces aviation-security standards at Indian airports and for Indian aircraft operators.",
+   "headPositionId": "in-pos-head-bcas",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bureau_of_Civil_Aviation_Security"
+   ],
+   "confidence": "medium",
+   "hq": "Janpath Bhawan, New Delhi",
+   "established": "1978 (cell); 1987 (independent department)",
+   "abbr": "BCAS",
+   "officialUrl": "https://www.bcasindia.gov.in",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aai",
+   "kind": "statutory_body",
+   "name": "Airports Authority of India",
+   "parentId": "in-min-civil-aviation",
+   "description": "Statutory body that builds, upgrades, maintains and manages civil aviation infrastructure and provides air navigation services (air traffic control) over Indian airspace; operates most non-privatised Indian airports.",
+   "headPositionId": "in-pos-head-aai",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Airports_Authority_of_India"
+   ],
+   "confidence": "medium",
+   "hq": "Rajiv Gandhi Bhawan, Safdarjung Airport, New Delhi",
+   "established": "1995",
+   "legalBasis": "Airports Authority of India Act, 1994",
+   "abbr": "AAI",
+   "officialUrl": "https://www.aai.aero",
+   "sector": "executive"
+  },
+  {
+   "id": "in-pawan-hans",
+   "kind": "cpse",
+   "name": "Pawan Hans Limited",
+   "parentId": "in-min-civil-aviation",
+   "description": "Government helicopter service provider for offshore oil-rig logistics, inter-island transport, heli-tourism and charter operations; Miniratna-I category PSU under the Ministry of Civil Aviation.",
+   "headPositionId": "in-pos-head-pawan-hans",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pawan_Hans"
+   ],
+   "confidence": "medium",
+   "hq": "Sector-1, Noida, Uttar Pradesh",
+   "established": "1985 (as Helicopter Corporation of India)",
+   "abbr": "Pawan Hans",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aaib",
+   "kind": "subordinate_office",
+   "name": "Aircraft Accident Investigation Bureau",
+   "parentId": "in-min-civil-aviation",
+   "description": "Independent accident-investigation body for Indian civil-aircraft accidents and serious incidents, separate from the safety regulator DGCA.",
+   "headPositionId": "in-pos-head-aaib",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Aircraft_Accident_Investigation_Bureau_(India)"
+   ],
+   "confidence": "medium",
+   "hq": "Safdarjung Airport, New Delhi",
+   "established": "2012",
+   "abbr": "AAIB",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-ports-shipping-and-waterways",
+   "kind": "ministry",
+   "name": "Ministry of Ports, Shipping and Waterways",
+   "abbr": "MoPSW",
+   "aliases": [
+    "Shipping Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Formulates policy for major ports, shipping, ship-building, inland waterways and the Sagarmala port-led development programme.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "hq": "Transport Bhawan, New Delhi",
+   "officialUrl": "https://shipmin.gov.in",
+   "headPositionId": "in-pos-minister-ports-shipping-and-waterways",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-deendayal-port-authority",
+   "kind": "statutory_body",
+   "name": "Deendayal Port Authority",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "One of India's 11 statutory Major Port Authorities (plus Kamarajar Port as a corporatised 12th major port), located at Kandla, Gujarat; governs port land, tariffs and operations under the Major Port Authorities Act.",
+   "headPositionId": "in-pos-head-deendayal-port-authority",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "medium",
+   "hq": "Kandla, Gujarat",
+   "legalBasis": "Major Port Authorities Act, 2021",
+   "sector": "executive"
+  },
+  {
+   "id": "in-mumbai-port-authority",
+   "kind": "statutory_body",
+   "name": "Mumbai Port Authority",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "One of India's 11 statutory Major Port Authorities (plus Kamarajar Port as a corporatised 12th major port), located at Mumbai, Maharashtra; governs port land, tariffs and operations under the Major Port Authorities Act.",
+   "headPositionId": "in-pos-head-mumbai-port-authority",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "medium",
+   "hq": "Mumbai, Maharashtra",
+   "legalBasis": "Major Port Authorities Act, 2021",
+   "sector": "executive"
+  },
+  {
+   "id": "in-jnpa",
+   "kind": "statutory_body",
+   "name": "Jawaharlal Nehru Port Authority",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "One of India's 11 statutory Major Port Authorities (plus Kamarajar Port as a corporatised 12th major port), located at Navi Mumbai, Maharashtra; governs port land, tariffs and operations under the Major Port Authorities Act.",
+   "headPositionId": "in-pos-head-jnpa",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "medium",
+   "hq": "Navi Mumbai, Maharashtra",
+   "legalBasis": "Major Port Authorities Act, 2021",
+   "sector": "executive"
+  },
+  {
+   "id": "in-mormugao-port-authority",
+   "kind": "statutory_body",
+   "name": "Mormugao Port Authority",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "One of India's 11 statutory Major Port Authorities (plus Kamarajar Port as a corporatised 12th major port), located at Mormugao, Goa; governs port land, tariffs and operations under the Major Port Authorities Act.",
+   "headPositionId": "in-pos-head-mormugao-port-authority",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "medium",
+   "hq": "Mormugao, Goa",
+   "legalBasis": "Major Port Authorities Act, 2021",
+   "sector": "executive"
+  },
+  {
+   "id": "in-new-mangalore-port-authority",
+   "kind": "statutory_body",
+   "name": "New Mangalore Port Authority",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "One of India's 11 statutory Major Port Authorities (plus Kamarajar Port as a corporatised 12th major port), located at Mangaluru, Karnataka; governs port land, tariffs and operations under the Major Port Authorities Act.",
+   "headPositionId": "in-pos-head-new-mangalore-port-authority",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "medium",
+   "hq": "Mangaluru, Karnataka",
+   "legalBasis": "Major Port Authorities Act, 2021",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cochin-port-authority",
+   "kind": "statutory_body",
+   "name": "Cochin Port Authority",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "One of India's 11 statutory Major Port Authorities (plus Kamarajar Port as a corporatised 12th major port), located at Kochi, Kerala; governs port land, tariffs and operations under the Major Port Authorities Act.",
+   "headPositionId": "in-pos-head-cochport-authority",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "medium",
+   "hq": "Kochi, Kerala",
+   "legalBasis": "Major Port Authorities Act, 2021",
+   "sector": "executive"
+  },
+  {
+   "id": "in-chennai-port-authority",
+   "kind": "statutory_body",
+   "name": "Chennai Port Authority",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "One of India's 11 statutory Major Port Authorities (plus Kamarajar Port as a corporatised 12th major port), located at Chennai, Tamil Nadu; governs port land, tariffs and operations under the Major Port Authorities Act.",
+   "headPositionId": "in-pos-head-chennai-port-authority",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "medium",
+   "hq": "Chennai, Tamil Nadu",
+   "legalBasis": "Major Port Authorities Act, 2021",
+   "sector": "executive"
+  },
+  {
+   "id": "in-vo-chidambaranar-port-authority",
+   "kind": "statutory_body",
+   "name": "V.O. Chidambaranar Port Authority",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "One of India's 11 statutory Major Port Authorities (plus Kamarajar Port as a corporatised 12th major port), located at Thoothukudi, Tamil Nadu; governs port land, tariffs and operations under the Major Port Authorities Act.",
+   "headPositionId": "in-pos-head-vo-chidambaranar-port-authority",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "medium",
+   "hq": "Thoothukudi, Tamil Nadu",
+   "legalBasis": "Major Port Authorities Act, 2021",
+   "sector": "executive"
+  },
+  {
+   "id": "in-visakhapatnam-port-authority",
+   "kind": "statutory_body",
+   "name": "Visakhapatnam Port Authority",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "One of India's 11 statutory Major Port Authorities (plus Kamarajar Port as a corporatised 12th major port), located at Visakhapatnam, Andhra Pradesh; governs port land, tariffs and operations under the Major Port Authorities Act.",
+   "headPositionId": "in-pos-head-visakhapatnam-port-authority",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "medium",
+   "hq": "Visakhapatnam, Andhra Pradesh",
+   "legalBasis": "Major Port Authorities Act, 2021",
+   "sector": "executive"
+  },
+  {
+   "id": "in-paradip-port-authority",
+   "kind": "statutory_body",
+   "name": "Paradip Port Authority",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "One of India's 11 statutory Major Port Authorities (plus Kamarajar Port as a corporatised 12th major port), located at Paradip, Odisha; governs port land, tariffs and operations under the Major Port Authorities Act.",
+   "headPositionId": "in-pos-head-paradip-port-authority",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "medium",
+   "hq": "Paradip, Odisha",
+   "legalBasis": "Major Port Authorities Act, 2021",
+   "sector": "executive"
+  },
+  {
+   "id": "in-syama-prasad-mookerjee-port-authority",
+   "kind": "statutory_body",
+   "name": "Syama Prasad Mookerjee Port Authority",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "One of India's 11 statutory Major Port Authorities (plus Kamarajar Port as a corporatised 12th major port), located at Kolkata, West Bengal (incl. Haldia Dock); governs port land, tariffs and operations under the Major Port Authorities Act.",
+   "headPositionId": "in-pos-head-syama-prasad-mookerjee-port-authority",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "medium",
+   "hq": "Kolkata, West Bengal (incl. Haldia Dock)",
+   "legalBasis": "Major Port Authorities Act, 2021",
+   "sector": "executive"
+  },
+  {
+   "id": "in-kamarajar-port",
+   "kind": "cpse",
+   "name": "Kamarajar Port Limited",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "India's 12th major port and the only one structured as a corporatised company (rather than a statutory port authority); located at Ennore, Tamil Nadu.",
+   "headPositionId": "in-pos-head-kamarajar-port",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kamarajar_Port"
+   ],
+   "confidence": "medium",
+   "hq": "Ennore, Tamil Nadu",
+   "established": "1999",
+   "abbr": "Kamarajar Port",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dg-shipping",
+   "kind": "subordinate_office",
+   "name": "Directorate General of Shipping",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "Maritime administration regulating Indian-flag shipping, seafarer certification, ship safety and India's compliance with international maritime conventions.",
+   "headPositionId": "in-pos-head-dg-shipping",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Directorate_General_of_Shipping"
+   ],
+   "confidence": "medium",
+   "hq": "Mumbai",
+   "established": "1949",
+   "abbr": "DG Shipping",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iwai",
+   "kind": "statutory_body",
+   "name": "Inland Waterways Authority of India",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "Statutory body developing and maintaining India's National Waterways for inland shipping and navigation.",
+   "headPositionId": "in-pos-head-iwai",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India"
+   ],
+   "confidence": "medium",
+   "hq": "Noida, Uttar Pradesh",
+   "established": "1986",
+   "legalBasis": "Inland Waterways Authority of India Act, 1985",
+   "abbr": "IWAI",
+   "officialUrl": "https://iwai.gov.in",
+   "sector": "executive"
+  },
+  {
+   "id": "in-sci",
+   "kind": "cpse",
+   "name": "Shipping Corporation of India Limited",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "Listed PSU operating India's largest shipping fleet across bulk, tanker, container and offshore-support segments; long-pending strategic-disinvestment candidate.",
+   "headPositionId": "in-pos-head-sci",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shipping_Corporation_of_India"
+   ],
+   "confidence": "medium",
+   "hq": "Mumbai",
+   "established": "1961",
+   "abbr": "SCI",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cochin-shipyard",
+   "kind": "cpse",
+   "name": "Cochin Shipyard Limited",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "Listed Miniratna PSU and India's largest shipyard; built INS Vikrant (India's first indigenous aircraft carrier) and undertakes ship-building, ship-repair and offshore-platform work.",
+   "headPositionId": "in-pos-head-cochshipyard",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cochin_Shipyard"
+   ],
+   "confidence": "medium",
+   "hq": "Kochi, Kerala",
+   "established": "1972",
+   "abbr": "CSL",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-housing-and-urban-affairs",
+   "kind": "ministry",
+   "name": "Ministry of Housing and Urban Affairs",
+   "abbr": "MoHUA",
+   "parentId": "in-union-government",
+   "description": "Formulates urban-development policy: housing, urban transport, urban planning, water/sanitation missions and central public-works construction.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "hq": "Nirman Bhawan, New Delhi",
+   "officialUrl": "https://mohua.gov.in",
+   "headPositionId": "in-pos-minister-housing-and-urban-affairs",
+   "adminHeadPositionId": "in-pos-secretary-housing-and-urban-affairs",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://en.wikipedia.org/wiki/Ministry_of_Housing_and_Urban_Affairs"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cpwd",
+   "kind": "subordinate_office",
+   "name": "Central Public Works Department",
+   "parentId": "in-min-housing-and-urban-affairs",
+   "description": "India's oldest central construction agency; designs, builds and maintains government buildings and central-government civil infrastructure nationwide.",
+   "headPositionId": "in-pos-head-cpwd",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Public_Works_Department"
+   ],
+   "confidence": "medium",
+   "hq": "Nirman Bhawan, New Delhi",
+   "established": "1854",
+   "abbr": "CPWD",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nbcc",
+   "kind": "cpse",
+   "name": "NBCC (India) Limited",
+   "parentId": "in-min-housing-and-urban-affairs",
+   "description": "Wholly government-owned, listed Navratna PSU providing project-management-consultancy, EPC construction and real-estate development/redevelopment services.",
+   "headPositionId": "in-pos-head-nbcc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/NBCC_(India)_Limited"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "established": "1960",
+   "abbr": "NBCC",
+   "sector": "executive"
+  },
+  {
+   "id": "in-hudco",
+   "kind": "cpse",
+   "name": "Housing and Urban Development Corporation Limited",
+   "parentId": "in-min-housing-and-urban-affairs",
+   "description": "Listed Navratna PSU providing long-term finance for housing and urban-infrastructure projects (water supply, sanitation, urban transport).",
+   "headPositionId": "in-pos-head-hudco",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Housing_and_Urban_Development_Corporation"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "established": "1970",
+   "abbr": "HUDCO",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dda",
+   "kind": "statutory_body",
+   "name": "Delhi Development Authority",
+   "parentId": "in-min-housing-and-urban-affairs",
+   "description": "Statutory planning and land-development authority for the National Capital Territory of Delhi; controls land acquisition, master planning and housing schemes in Delhi.",
+   "headPositionId": "in-pos-head-dda",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Delhi_Development_Authority"
+   ],
+   "confidence": "medium",
+   "hq": "Vikas Sadan, INA, New Delhi",
+   "established": "1957",
+   "legalBasis": "Delhi Development Act, 1957",
+   "abbr": "DDA",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncrtc",
+   "kind": "cpse",
+   "name": "National Capital Region Transport Corporation",
+   "parentId": "in-min-housing-and-urban-affairs",
+   "description": "Joint-venture company implementing the Regional Rapid Transit System (Namo Bharat/RapidX) connecting Delhi to NCR towns; jointly owned by the Union and the NCR states.",
+   "headPositionId": "in-pos-head-ncrtc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Capital_Region_Transport_Corporation"
+   ],
+   "confidence": "medium",
+   "hq": "GatiShakti Bhawan, INA, New Delhi",
+   "established": "2013",
+   "abbr": "NCRTC",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dmrc",
+   "kind": "cpse",
+   "name": "Delhi Metro Rail Corporation",
+   "parentId": "in-min-housing-and-urban-affairs",
+   "description": "50:50 Union-Delhi joint-venture company that built and operates the Delhi Metro and, under contract/consultancy, other city metros (Noida, Rapid Metro Gurgaon) in India and abroad.",
+   "headPositionId": "in-pos-head-dmrc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Delhi_Metro_Rail_Corporation"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "established": "1995",
+   "abbr": "DMRC",
+   "sector": "executive"
+  },
+  {
+   "id": "in-hindustan-prefab",
+   "kind": "cpse",
+   "name": "Hindustan Prefab Limited",
+   "abbr": "HPL",
+   "parentId": "in-min-housing-and-urban-affairs",
+   "description": "Small Central PSU under MoHUA engaged in prefabricated-construction technology and building-materials manufacturing.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Housing_and_Urban_Affairs"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-smart-cities-mission",
+   "kind": "mission",
+   "name": "Smart Cities Mission",
+   "parentId": "in-min-housing-and-urban-affairs",
+   "description": "Flagship urban-development mission (100 selected cities) funding smart-infrastructure, ICT-enabled services and area-based redevelopment through city-level Special Purpose Vehicles.",
+   "established": "2015-06-25",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Housing_and_Urban_Affairs",
+    "https://en.wikipedia.org/wiki/Pradhan_Mantri_Awas_Yojana",
+    "https://en.wikipedia.org/wiki/Swachh_Bharat_Mission"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-amrut",
+   "kind": "mission",
+   "name": "AMRUT (Atal Mission for Rejuvenation and Urban Transformation)",
+   "parentId": "in-min-housing-and-urban-affairs",
+   "description": "Mission funding basic urban infrastructure — water supply, sewerage, stormwater drainage, green spaces — in mission cities; AMRUT 2.0 launched 2021 targets universal water coverage.",
+   "established": "2015-06-25",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Housing_and_Urban_Affairs",
+    "https://en.wikipedia.org/wiki/Pradhan_Mantri_Awas_Yojana",
+    "https://en.wikipedia.org/wiki/Swachh_Bharat_Mission"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-pmay-u",
+   "kind": "mission",
+   "name": "Pradhan Mantri Awas Yojana - Urban",
+   "parentId": "in-min-housing-and-urban-affairs",
+   "description": "Central affordable-housing mission for urban poor and middle-income households via credit-linked subsidy, in-situ slum redevelopment, and beneficiary-led construction; PMAY-U 2.0 launched thereafter.",
+   "established": "2015-06-25",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Housing_and_Urban_Affairs",
+    "https://en.wikipedia.org/wiki/Pradhan_Mantri_Awas_Yojana",
+    "https://en.wikipedia.org/wiki/Swachh_Bharat_Mission"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-sbm-u",
+   "kind": "mission",
+   "name": "Swachh Bharat Mission - Urban",
+   "parentId": "in-min-housing-and-urban-affairs",
+   "description": "Urban sanitation mission for open-defecation-free cities and scientific solid/liquid waste management, run in parallel with the rural SBM-Gramin under Jal Shakti.",
+   "established": "2014-10-02",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Housing_and_Urban_Affairs",
+    "https://en.wikipedia.org/wiki/Pradhan_Mantri_Awas_Yojana",
+    "https://en.wikipedia.org/wiki/Swachh_Bharat_Mission"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-jal-shakti",
+   "kind": "ministry",
+   "name": "Ministry of Jal Shakti",
+   "abbr": "Jal Shakti",
+   "parentId": "in-union-government",
+   "description": "Umbrella water ministry combining water-resources/river management with rural and urban drinking-water and sanitation policy, through its two constituent departments.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961 (ministry formed 2019)",
+   "hq": "Shram Shakti Bhawan, New Delhi",
+   "officialUrl": "https://jalshakti.gov.in",
+   "headPositionId": "in-pos-minister-jal-shakti",
+   "established": "2019",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "kind": "department",
+   "name": "Department of Water Resources, River Development and Ganga Rejuvenation",
+   "abbr": "DoWR, RD & GR",
+   "parentId": "in-min-jal-shakti",
+   "description": "Handles national water-resources policy, inter-state river-water matters, irrigation/flood-management coordination, and the Namami Gange programme for Ganga rejuvenation.",
+   "headPositionId": "in-pos-secretary-water-resources",
+   "sources": [
+    "n/a"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-drinking-water-and-sanitation",
+   "kind": "department",
+   "name": "Department of Drinking Water and Sanitation",
+   "abbr": "DDWS",
+   "parentId": "in-min-jal-shakti",
+   "description": "Runs national rural drinking-water and sanitation policy, chiefly through the Jal Jeevan Mission and Swachh Bharat Mission-Gramin.",
+   "headPositionId": "in-pos-secretary-drinking-water-sanitation",
+   "sources": [
+    "n/a"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cwc",
+   "kind": "attached_office",
+   "name": "Central Water Commission",
+   "parentId": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "description": "India's premier technical organisation on water resources; advises on irrigation, flood control, hydropower and inter-state river schemes.",
+   "headPositionId": "in-pos-head-cwc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Water_Commission"
+   ],
+   "confidence": "medium",
+   "hq": "Sewa Bhawan, R.K. Puram, New Delhi",
+   "established": "1945",
+   "abbr": "CWC",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cgwb",
+   "kind": "subordinate_office",
+   "name": "Central Ground Water Board",
+   "parentId": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "description": "Scientific agency responsible for groundwater resource assessment, monitoring, exploration and regulation across India.",
+   "headPositionId": "in-pos-head-cgwb",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Ground_Water_Board"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "abbr": "CGWB",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nmcg",
+   "kind": "autonomous_body",
+   "name": "National Mission for Clean Ganga",
+   "parentId": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "description": "Implementation arm (registered society) of the Namami Gange programme for pollution abatement, conservation and rejuvenation of the Ganga river.",
+   "headPositionId": "in-pos-head-nmcg",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Namami_Gange"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "legalBasis": "Registered society; statutory powers from National Ganga River Basin Authority order under the Environment (Protection) Act, 1986",
+   "abbr": "NMCG",
+   "sector": "executive"
+  },
+  {
+   "id": "in-brahmaputra-board",
+   "kind": "statutory_body",
+   "name": "Brahmaputra Board",
+   "parentId": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "description": "Statutory body for integrated planning of flood control, drainage and water-resource development in the Brahmaputra and Barak valleys (Assam and neighbouring states).",
+   "headPositionId": "in-pos-head-brahmaputra-board",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Jal_Shakti"
+   ],
+   "confidence": "medium",
+   "hq": "Guwahati, Assam",
+   "established": "1982",
+   "legalBasis": "Brahmaputra Board Act, 1980",
+   "abbr": "Brahmaputra Board",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nwda",
+   "kind": "autonomous_body",
+   "name": "National Water Development Agency",
+   "parentId": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "description": "Registered society that studies and plans inter-basin water-transfer links under the National Perspective Plan (river-interlinking).",
+   "headPositionId": "in-pos-head-nwda",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Jal_Shakti"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "abbr": "NWDA",
+   "sector": "executive"
+  },
+  {
+   "id": "in-wapcos",
+   "kind": "cpse",
+   "name": "WAPCOS Limited",
+   "parentId": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "description": "Government-owned multidisciplinary consultancy in water-resources, power and infrastructure engineering, working in India and abroad.",
+   "headPositionId": "in-pos-head-wapcos",
+   "sources": [
+    "https://en.wikipedia.org/wiki/WAPCOS_Limited"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "abbr": "WAPCOS",
+   "sector": "executive"
+  },
+  {
+   "id": "in-jal-jeevan-mission",
+   "kind": "mission",
+   "name": "Jal Jeevan Mission",
+   "parentId": "in-dept-drinking-water-and-sanitation",
+   "description": "Flagship mission to provide functional household tap-water connections to every rural household; restructured in 2019 from the earlier National Rural Drinking Water Programme.",
+   "established": "2019",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jal_Jeevan_Mission"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-sbm-g",
+   "kind": "mission",
+   "name": "Swachh Bharat Mission - Gramin",
+   "abbr": "SBM-G",
+   "parentId": "in-dept-drinking-water-and-sanitation",
+   "description": "Rural arm of the national sanitation campaign launched 2 October 2014, focused on ending open defecation and (in Phase II) solid/liquid waste management in villages.",
+   "established": "2014-10-02",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Swachh_Bharat_Mission"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-communications",
+   "kind": "ministry",
+   "name": "Ministry of Communications",
+   "abbr": "MoC",
+   "parentId": "in-union-government",
+   "description": "Formulates telecommunications and postal policy through its two constituent departments; regulates spectrum, licensing and the national postal network.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "hq": "Sanchar Bhawan, New Delhi",
+   "officialUrl": "https://dot.gov.in",
+   "headPositionId": "in-pos-minister-communications",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-telecommunications",
+   "kind": "department",
+   "name": "Department of Telecommunications",
+   "abbr": "DoT",
+   "parentId": "in-min-communications",
+   "description": "Regulates telecom licensing, spectrum allocation/pricing, and oversees BSNL/MTNL and the telecom PSU/R&D ecosystem; secretariat for the (now-dissolved) Digital Communications Commission.",
+   "legalBasis": "Indian Telegraph Act, 1885; Telecommunications Act, 2023",
+   "hq": "Sanchar Bhawan, New Delhi",
+   "officialUrl": "https://dot.gov.in",
+   "headPositionId": "in-pos-secretary-telecommunications",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Telecommunications"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-digital-communications-commission",
+   "kind": "advisory_body",
+   "name": "Digital Communications Commission",
+   "abbr": "DCC",
+   "aliases": [
+    "Telecom Commission"
+   ],
+   "parentId": "in-dept-telecommunications",
+   "description": "DISSOLVED. Formerly the apex inter-departmental decision-making body of DoT (est. 1989 as the Telecom Commission, renamed 2018); held its final meeting 3 September 2026 on satellite-spectrum policy and was dissolved with effect from 19 September 2026, with its approval functions transferred to the Telecom Secretary, the Minister, or an Expenditure Finance Committee depending on the value involved.",
+   "established": "1989",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Telecommunications (citing The Hindu, 21 September 2026)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bsnl",
+   "kind": "cpse",
+   "name": "Bharat Sanchar Nigam Limited",
+   "parentId": "in-dept-telecommunications",
+   "description": "State-owned telecom operator providing mobile, landline, broadband and enterprise services nationwide; undergoing 4G/5G revival funded by successive government equity infusions.",
+   "headPositionId": "in-pos-head-bsnl",
+   "sources": [
+    "https://en.wikipedia.org/wiki/BSNL"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "established": "2000",
+   "abbr": "BSNL",
+   "sector": "executive"
+  },
+  {
+   "id": "in-mtnl",
+   "kind": "cpse",
+   "name": "Mahanagar Telephone Nigam Limited",
+   "parentId": "in-dept-telecommunications",
+   "description": "State-owned telecom operator for Mumbai and Delhi circles; now run under common management with BSNL as part of its revival/merger process.",
+   "headPositionId": "in-pos-head-mtnl",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mahanagar_Telephone_Nigam_Limited"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "established": "1986",
+   "abbr": "MTNL",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bbnl",
+   "kind": "cpse",
+   "name": "Bharat Broadband Network Limited",
+   "abbr": "BBNL",
+   "parentId": "in-dept-telecommunications",
+   "description": "DEFUNCT. Built India's National Optical Fibre Network (BharatNet) to villages/gram panchayats; merged into BSNL after a Cabinet decision of 27 July 2022 (merger completed later that year).",
+   "established": "2012",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bharat_Broadband_Network"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cdot",
+   "kind": "autonomous_body",
+   "name": "Centre for Development of Telematics",
+   "parentId": "in-dept-telecommunications",
+   "description": "Government-owned telecom-technology R&D centre that designs indigenous telecom/networking equipment (e.g. 4G/5G core, GPON) for Indian operators including BSNL.",
+   "headPositionId": "in-pos-head-cdot",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Centre_for_Development_of_Telematics"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "established": "1984",
+   "abbr": "C-DOT",
+   "sector": "executive"
+  },
+  {
+   "id": "in-tec",
+   "kind": "attached_office",
+   "name": "Telecommunication Engineering Centre",
+   "abbr": "TEC",
+   "parentId": "in-dept-telecommunications",
+   "description": "DoT's technical standards body: sets Generic Requirements and Interface Requirements for telecom equipment and coordinates testing/certification standards.",
+   "officialUrl": "https://www.tec.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Telecommunications"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-posts",
+   "kind": "department",
+   "name": "Department of Posts",
+   "abbr": "DoP",
+   "aliases": [
+    "India Post"
+   ],
+   "parentId": "in-min-communications",
+   "description": "Runs India Post, the country's postal service and (via its Postal Services Board) sets postal policy; operates the world's most extensive post-office network and India Post Payments Bank.",
+   "established": "1854",
+   "hq": "Dak Bhawan, Sansad Marg, New Delhi",
+   "officialUrl": "https://www.indiapost.gov.in",
+   "headPositionId": "in-pos-secretary-posts",
+   "sources": [
+    "https://en.wikipedia.org/wiki/India_Post"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-postal-services-board",
+   "kind": "attached_office",
+   "name": "Postal Services Board",
+   "parentId": "in-dept-posts",
+   "description": "Apex decision-making board of the Department of Posts, chaired ex officio by the Secretary (Posts), with Members for operations, personnel, technology and banking.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/India_Post"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ippb",
+   "kind": "public_sector_bank",
+   "name": "India Post Payments Bank",
+   "parentId": "in-dept-posts",
+   "description": "Payments bank wholly owned by the Department of Posts, using the postal network (including postmen/Grameen Dak Sevaks) to deliver banking and financial-inclusion services.",
+   "headPositionId": "in-pos-head-ippb",
+   "sources": [
+    "https://en.wikipedia.org/wiki/India_Post_Payments_Bank"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "established": "2017",
+   "abbr": "IPPB",
+   "sector": "executive"
+  },
+  {
+   "id": "in-rlda",
+   "kind": "statutory_body",
+   "name": "Rail Land Development Authority",
+   "parentId": "in-min-railways",
+   "description": "Statutory authority that commercially develops vacant railway land and redevelops railway stations (e.g. New Delhi, Bhopal); absorbed the Indian Railway Stations Development Corporation (IRSDC) in 2022.",
+   "headPositionId": "in-pos-head-rlda",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rail_Land_Development_Authority"
+   ],
+   "confidence": "medium",
+   "hq": "New Delhi",
+   "established": "2006",
+   "legalBasis": "Railways (Amendment) Act, 2005",
+   "abbr": "RLDA",
+   "sector": "executive"
+  },
+  {
+   "id": "in-core",
+   "kind": "subordinate_office",
+   "name": "Central Organisation for Railway Electrification",
+   "parentId": "in-min-railways",
+   "description": "Railway Board's specialised organisation executing electrification of railway routes across all zones.",
+   "headPositionId": "in-pos-head-core",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium",
+   "hq": "Prayagraj (Allahabad), Uttar Pradesh",
+   "abbr": "CORE",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bharatmala-pariyojana",
+   "kind": "mission",
+   "name": "Bharatmala Pariyojana",
+   "parentId": "in-min-road-transport-and-highways",
+   "description": "Umbrella national highway-development programme (launched 2017) for economic corridors, inter-corridor/feeder roads, border and coastal roads, and port connectivity, implemented mainly through NHAI.",
+   "established": "2017",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bharatmala"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-udan-rcs",
+   "kind": "mission",
+   "name": "UDAN (Ude Desh ka Aam Nagrik) - Regional Connectivity Scheme",
+   "abbr": "UDAN",
+   "parentId": "in-min-civil-aviation",
+   "description": "Regional Connectivity Scheme (launched 2016) subsidising airlines to fly under-served and unserved routes/airports to make air travel affordable, via viability-gap funding.",
+   "established": "2016",
+   "sources": [
+    "https://en.wikipedia.org/wiki/UDAN"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-sagarmala",
+   "kind": "mission",
+   "name": "Sagarmala Programme",
+   "parentId": "in-min-ports-shipping-and-waterways",
+   "description": "Flagship port-led development programme (launched 2015) for port modernisation, port connectivity, port-linked industrialisation and coastal community development.",
+   "established": "2015",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sagarmala"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-capital-development",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Capital Development",
+   "abbr": "DoCD",
+   "parentId": "in-min-housing-and-urban-affairs",
+   "description": "Carved out of the Ministry of Housing and Urban Affairs in July 2026 to run local capital governance for the National Capital Region, separating it from broader national urban-policy functions.",
+   "established": "2026-07",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-secretary-capital-development",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Housing_and_Urban_Affairs"
+   ],
+   "confidence": "medium",
+   "notes": "Found during adversarial re-verification (2026-09-25); MISSING from the original ministries-c segment. Only one source located (Wikipedia infobox/prose, no gazette notification or PIB release found in the time available) — confirm against the Allocation of Business Rules / a gazette notification before publish."
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-chairman-ceo-railway-board",
+   "title": "Chairman, Railway Board & Chief Executive Officer (CEO)",
+   "orgId": "in-min-railways",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Satish Kumar",
+    "acting": false,
+    "notes": "IRMS officer; ex-officio Principal Secretary to the Government of India; granted a one-year extension to August 2027. First CEO from the Dalit community to hold the post."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://egov.eletsonline.com/2026/07/satish-kumar-gets-one-year-extension-as-railway-board-chairman-ceo/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-infrastructure-railway-board",
+   "title": "Member (Infrastructure), Railway Board",
+   "orgId": "in-min-railways",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Vivek Kumar Gupta",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-traction-rolling-stock-railway-board",
+   "title": "Member (Traction & Rolling Stock), Railway Board",
+   "orgId": "in-min-railways",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "R Rajagopal",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-operations-business-dev-railway-board",
+   "title": "Member (Operations & Business Development), Railway Board",
+   "orgId": "in-min-railways",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Manoj Singh",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-finance-railway-board",
+   "title": "Member (Finance), Railway Board",
+   "orgId": "in-min-railways",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Manjusha Jain",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-rpf",
+   "title": "Director General, Railway Protection Force",
+   "orgId": "in-rpf",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sonali Mishra",
+    "notes": "IPS officer.",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-rdso",
+   "title": "Director General, RDSO",
+   "orgId": "in-rdso",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Prabhas Dansana",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-gm-central-railway",
+   "title": "General Manager, Central Railway",
+   "orgId": "in-central-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rajeev Shrivastava",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-eastern-railway",
+   "title": "General Manager, Eastern Railway",
+   "orgId": "in-eastern-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Gitika Pandey",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-east-central-railway",
+   "title": "General Manager, East Central Railway",
+   "orgId": "in-east-central-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Chhatrasal Singh",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-east-coast-railway",
+   "title": "General Manager, East Coast Railway",
+   "orgId": "in-east-coast-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Parmeshwar Funkwal",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-metro-railway-kolkata",
+   "title": "General Manager, Metro Railway, Kolkata",
+   "orgId": "in-metro-railway-kolkata",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Prem Sagar Gupta",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-northern-railway",
+   "title": "General Manager, Northern Railway",
+   "orgId": "in-northern-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rajesh Kumar Pandey",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-north-central-railway",
+   "title": "General Manager, North Central Railway",
+   "orgId": "in-north-central-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Naresh Pal Singh",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-north-eastern-railway",
+   "title": "General Manager, North Eastern Railway",
+   "orgId": "in-north-eastern-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Uday Borwankar",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-northeast-frontier-railway",
+   "title": "General Manager, Northeast Frontier Railway",
+   "orgId": "in-northeast-frontier-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Chetan Kumar Shrivastava",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-north-western-railway",
+   "title": "General Manager, North Western Railway",
+   "orgId": "in-north-western-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pankaj Sharma",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-southern-railway",
+   "title": "General Manager, Southern Railway",
+   "orgId": "in-southern-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "U Subba Rao",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-south-central-railway",
+   "title": "General Manager, South Central Railway",
+   "orgId": "in-south-central-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sanjay Kumar Srivastava",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-south-coast-railway",
+   "title": "General Manager, South Coast Railway",
+   "orgId": "in-south-coast-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sandeep Mathur",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-south-eastern-railway",
+   "title": "General Manager, South Eastern Railway",
+   "orgId": "in-south-eastern-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Anil Kumar Jain",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-south-east-central-railway",
+   "title": "General Manager, South East Central Railway",
+   "orgId": "in-south-east-central-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Tarun Prakash",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-south-western-railway",
+   "title": "General Manager, South Western Railway",
+   "orgId": "in-south-western-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "P Ananth",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-western-railway",
+   "title": "General Manager, Western Railway",
+   "orgId": "in-western-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ramasharay Pandey",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-west-central-railway",
+   "title": "General Manager, West Central Railway",
+   "orgId": "in-west-central-railway",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Dilip Kumar Singh",
+    "acting": false,
+    "notes": "Railway GM postings rotate frequently (often within months); reconfirm close to publish."
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-gm-clw",
+   "title": "General Manager, Chittaranjan Locomotive Works",
+   "orgId": "in-clw",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Mohit Chandra",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-gm-blw",
+   "title": "General Manager, Banaras Locomotive Works",
+   "orgId": "in-blw",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ashutosh Pant",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-gm-icf",
+   "title": "General Manager, Integral Coach Factory",
+   "orgId": "in-icf",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Manish Agarwal",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-gm-rwf",
+   "title": "General Manager, Rail Wheel Factory",
+   "orgId": "in-rwf",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Manoranjan Pradhan",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-gm-rcf-kapurthala",
+   "title": "General Manager, Rail Coach Factory, Kapurthala",
+   "orgId": "in-rcf-kapurthala",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ajay Nandan",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-gm-mcf-raebareli",
+   "title": "General Manager, Modern Coach Factory, Raebareli",
+   "orgId": "in-mcf-raebareli",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Raman Krishnan",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-head-nair",
+   "title": "Deputy Director General, National Academy of Indian Railways",
+   "orgId": "in-nair",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rakesh Rajpurohit",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-head-irimee",
+   "title": "Director General, Indian Railways Institute of Mechanical and Electrical Engineering (IRIMEE)",
+   "orgId": "in-irimee",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Animesh Kumar Sinha",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-head-iricen",
+   "title": "Director General, Indian Railways Institute of Civil Engineering (IRICEN)",
+   "orgId": "in-iricen",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Vijay Kumar Panjiar",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-head-iriset",
+   "title": "Principal CAO, Indian Railways Institute of Signal Engineering and Telecommunications (IRISET)",
+   "orgId": "in-iriset",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Piush Kumar Gupta",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-head-iritm",
+   "title": "Director General, Indian Railways Institute of Transport Management (IRITM)",
+   "orgId": "in-iritm",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ranjan Prakash Thakur",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-head-irifm",
+   "title": "Director General, Indian Railways Institute of Financial Management (IRIFM)",
+   "orgId": "in-irifm",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Richa Khare",
+    "acting": false
+   },
+   "sources": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cmd-irctc",
+   "title": "Chairman & Managing Director, Indian Railway Catering and Tourism Corporation",
+   "orgId": "in-irctc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sanjay Kumar Jain",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Railway_Catering_and_Tourism_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cmd-irfc",
+   "title": "Chairman & Managing Director, Indian Railway Finance Corporation",
+   "orgId": "in-irfc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Manoj Kumar Dubey",
+    "acting": false,
+    "notes": "UNRESOLVED CONFLICT at re-verification (2026-09-25): the IRFC Wikipedia infobox names Manoj Kumar Dubey as Chairman & MD, but the article's own Board of Directors prose names Uma Ranade in the same role, with no date to arbitrate. IRFC's official site (irfc.co.in) returned 403/redirect loops to curl and WebFetch during this verification pass. Holder kept as Manoj Kumar Dubey per infobox (more structured/citable field) but confidence lowered — recheck against irfc.co.in or a BSE/NSE corporate announcement before publish."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Railway_Finance_Corporation"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-cmd-rvnl",
+   "title": "Chairman & Managing Director, Rail Vikas Nigam Limited",
+   "orgId": "in-rvnl",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Salim Ahmad",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rail_Vikas_Nigam"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cmd-ircon",
+   "title": "Chairman & Managing Director, IRCON International Limited",
+   "orgId": "in-ircon",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Hari Mohan Gupta",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ircon_International"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cmd-rites",
+   "title": "Chairman & Managing Director, RITES Limited",
+   "orgId": "in-rites",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rahul Mithal",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/RITES_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cmd-concor",
+   "title": "Chairman & Managing Director, Container Corporation of India Limited",
+   "orgId": "in-concor",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ajit Kumar Panda",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Container_Corporation_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cmd-railtel",
+   "title": "Chairman & Managing Director, RailTel Corporation of India Limited",
+   "orgId": "in-railtel",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sanjai Kumar",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/RailTel"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cmd-krcl",
+   "title": "Chairman & Managing Director, Konkan Railway Corporation Limited",
+   "orgId": "in-krcl",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Santosh Kumar Jha",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Konkan_Railway_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cmd-mrvc",
+   "title": "Chairman & Managing Director, Mumbai Railway Vikas Corporation Limited",
+   "orgId": "in-mrvc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Subhash Chand Gupta",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mumbai_Railway_Vikas_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cmd-dfccil",
+   "title": "Managing Director, Dedicated Freight Corridor Corporation of India Limited",
+   "orgId": "in-dfccil",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dedicated_freight_corridors_in_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-cmd-nhsrcl",
+   "title": "Managing Director, National High Speed Rail Corporation Limited",
+   "orgId": "in-nhsrcl",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Vivek Kumar Gupta",
+    "acting": false,
+    "notes": "Wikipedia infobox lists Vivek Kumar Gupta as MD, but he is also listed as sitting Railway Board Member (Infrastructure) as of the 28-07-2026 official Railway Board roster — likely a stale infobox or a dual/additional charge; unresolved, treat as low confidence."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_High_Speed_Rail_Corporation"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-road-transport-and-highways",
+   "title": "Secretary, Road Transport and Highways",
+   "orgId": "in-min-road-transport-and-highways",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "V Umashankar",
+    "notes": "IAS officer.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Road_Transport_and_Highways"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-nhai",
+   "title": "Chairman, National Highways Authority of India",
+   "orgId": "in-nhai",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Santosh Kumar Yadav",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Highways_Authority_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-nhidcl",
+   "title": "Managing Director, National Highways and Infrastructure Development Corporation Limited",
+   "orgId": "in-nhidcl",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Krishan Kumar",
+    "acting": false,
+    "since": "2024-02-14"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Highways_and_Infrastructure_Development_Corporation_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-iahe",
+   "title": "Director General, Indian Academy of Highway Engineers",
+   "orgId": "in-iahe",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Road_Transport_and_Highways"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-civil-aviation",
+   "title": "Secretary, Civil Aviation",
+   "orgId": "in-min-civil-aviation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Samir Kumar Sinha",
+    "notes": "IAS officer.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Civil_Aviation_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-dgca",
+   "title": "Director General, Directorate General of Civil Aviation",
+   "orgId": "in-dgca",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Vir Vikram Yadav",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Directorate_General_of_Civil_Aviation_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-bcas",
+   "title": "Director General, Bureau of Civil Aviation Security",
+   "orgId": "in-bcas",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rajesh Nirwan",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bureau_of_Civil_Aviation_Security"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-aai",
+   "title": "Chairman, Airports Authority of India",
+   "orgId": "in-aai",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Vipin Kumar",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Airports_Authority_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-pawan-hans",
+   "title": "Chairman & Managing Director, Pawan Hans Limited",
+   "orgId": "in-pawan-hans",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pawan_Hans"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-aaib",
+   "title": "Director General, Aircraft Accident Investigation Bureau",
+   "orgId": "in-aaib",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "GVG Yugandhar",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Aircraft_Accident_Investigation_Bureau_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-deendayal-port-authority",
+   "title": "Chairman, Deendayal Port Authority",
+   "orgId": "in-deendayal-port-authority",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-mumbai-port-authority",
+   "title": "Chairman, Mumbai Port Authority",
+   "orgId": "in-mumbai-port-authority",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-jnpa",
+   "title": "Chairman, Jawaharlal Nehru Port Authority",
+   "orgId": "in-jnpa",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-mormugao-port-authority",
+   "title": "Chairman, Mormugao Port Authority",
+   "orgId": "in-mormugao-port-authority",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-new-mangalore-port-authority",
+   "title": "Chairman, New Mangalore Port Authority",
+   "orgId": "in-new-mangalore-port-authority",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-cochport-authority",
+   "title": "Chairman, Cochin Port Authority",
+   "orgId": "in-cochin-port-authority",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-chennai-port-authority",
+   "title": "Chairman, Chennai Port Authority",
+   "orgId": "in-chennai-port-authority",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-vo-chidambaranar-port-authority",
+   "title": "Chairman, V.O. Chidambaranar Port Authority",
+   "orgId": "in-vo-chidambaranar-port-authority",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-visakhapatnam-port-authority",
+   "title": "Chairman, Visakhapatnam Port Authority",
+   "orgId": "in-visakhapatnam-port-authority",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-paradip-port-authority",
+   "title": "Chairman, Paradip Port Authority",
+   "orgId": "in-paradip-port-authority",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-syama-prasad-mookerjee-port-authority",
+   "title": "Chairman, Syama Prasad Mookerjee Port Authority",
+   "orgId": "in-syama-prasad-mookerjee-port-authority",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Major_Port_Authorities_Act,_2021"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-kamarajar-port",
+   "title": "Chairman & Managing Director, Kamarajar Port Limited",
+   "orgId": "in-kamarajar-port",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kamarajar_Port"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-dg-shipping",
+   "title": "Director General, Directorate General of Shipping",
+   "orgId": "in-dg-shipping",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Shyam Jagannathan",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Directorate_General_of_Shipping"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-iwai",
+   "title": "Chairman, Inland Waterways Authority of India",
+   "orgId": "in-iwai",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sushil Kumar Lohani",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-sci",
+   "title": "Chairman, Shipping Corporation of India Limited",
+   "orgId": "in-sci",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Binesh Kumar Tyagi",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shipping_Corporation_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-cochshipyard",
+   "title": "Chairman, Cochin Shipyard Limited",
+   "orgId": "in-cochin-shipyard",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Madhu S. Nair",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cochin_Shipyard"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-housing-and-urban-affairs",
+   "title": "Secretary, Housing and Urban Affairs",
+   "orgId": "in-min-housing-and-urban-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Satendra Singh",
+    "notes": "IAS officer.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Housing_and_Urban_Affairs"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-cpwd",
+   "title": "Director General, Central Public Works Department",
+   "orgId": "in-cpwd",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Satinder Pal Singh",
+    "acting": false,
+    "notes": "Holding additional charge (confirmed via en.wikipedia.org/wiki/Central_Public_Works_Department, 2026-09-25 re-check)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Public_Works_Department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-nbcc",
+   "title": "Chairman, NBCC (India) Limited",
+   "orgId": "in-nbcc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "K. P. M. Swamy",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/NBCC_(India)_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-hudco",
+   "title": "Chairman, Housing and Urban Development Corporation Limited",
+   "orgId": "in-hudco",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sanjay Kulshrestha",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Housing_and_Urban_Development_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-dda",
+   "title": "Vice Chairman, Delhi Development Authority",
+   "orgId": "in-dda",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "N. Saravana Kumar",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Delhi_Development_Authority"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-ncrtc",
+   "title": "Managing Director, National Capital Region Transport Corporation",
+   "orgId": "in-ncrtc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Shalabh Goel",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Capital_Region_Transport_Corporation"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-dmrc",
+   "title": "Managing Director, Delhi Metro Rail Corporation",
+   "orgId": "in-dmrc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Vikas Kumar",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Delhi_Metro_Rail_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-water-resources",
+   "title": "Secretary, Water Resources, River Development and Ganga Rejuvenation",
+   "orgId": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "n/a"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-drinking-water-sanitation",
+   "title": "Secretary, Drinking Water and Sanitation",
+   "orgId": "in-dept-drinking-water-and-sanitation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "n/a"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-cwc",
+   "title": "Chairman, Central Water Commission",
+   "orgId": "in-cwc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Atul Jain",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Water_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-cgwb",
+   "title": "Chairman, Central Ground Water Board",
+   "orgId": "in-cgwb",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Ground_Water_Board"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-nmcg",
+   "title": "Director General, National Mission for Clean Ganga",
+   "orgId": "in-nmcg",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Namami_Gange"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-brahmaputra-board",
+   "title": "Chairman, Brahmaputra Board",
+   "orgId": "in-brahmaputra-board",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Jal_Shakti"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-nwda",
+   "title": "Director General, National Water Development Agency",
+   "orgId": "in-nwda",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Jal_Shakti"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-wapcos",
+   "title": "Chairman & Managing Director, WAPCOS Limited",
+   "orgId": "in-wapcos",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/WAPCOS_Limited"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-telecommunications",
+   "title": "Secretary, Telecommunications",
+   "orgId": "in-dept-telecommunications",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Amit Agrawal",
+    "notes": "IAS officer; post-dissolution of the Digital Communications Commission (19 Sep 2026), the Telecom Secretary directly exercises most DCC approval powers.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Telecommunications"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-bsnl",
+   "title": "Chairman & Managing Director, Bharat Sanchar Nigam Limited",
+   "orgId": "in-bsnl",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "A. Robert J. Ravi",
+    "acting": false,
+    "since": "2024-07-15"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/BSNL"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-mtnl",
+   "title": "Chairman & Managing Director, Mahanagar Telephone Nigam Limited",
+   "orgId": "in-mtnl",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "A. Robert J. Ravi",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mahanagar_Telephone_Nigam_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-cdot",
+   "title": "Executive Director, Centre for Development of Telematics",
+   "orgId": "in-cdot",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rajkumar Upadhyay",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Centre_for_Development_of_Telematics"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-posts",
+   "title": "Secretary, Posts (Chairperson, Postal Services Board)",
+   "orgId": "in-dept-posts",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Subrat Das",
+    "notes": "Indian Postal Service (IPoS) officer.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/India_Post"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-ippb",
+   "title": "Managing Director & CEO, India Post Payments Bank",
+   "orgId": "in-ippb",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "R. Viswesvaran",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/India_Post_Payments_Bank"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-head-rlda",
+   "title": "Vice Chairman, Rail Land Development Authority",
+   "orgId": "in-rlda",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rail_Land_Development_Authority"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-head-core",
+   "title": "General Manager, Central Organisation for Railway Electrification",
+   "orgId": "in-core",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ashok Kumar Verma",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Railways_organisational_structure",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-capital-development",
+   "title": "Secretary, Department of Capital Development",
+   "orgId": "in-dept-capital-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "D Thara",
+    "acting": false,
+    "notes": "IAS officer; named as Secretary, Department of Capital Development in the Ministry of Housing and Urban Affairs infobox."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Housing_and_Urban_Affairs"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-min-railways",
+   "to": "in-rpf",
+   "type": "administers",
+   "basis": "Railway Protection Force Act, 1957",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-rdso",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-central-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-eastern-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-east-central-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-east-coast-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-metro-railway-kolkata",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-northern-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-north-central-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-north-eastern-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-northeast-frontier-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-north-western-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-southern-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-south-central-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-south-coast-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-south-eastern-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-south-east-central-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-south-western-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-western-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-west-central-railway",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-clw",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-blw",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-icf",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-rwf",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-rcf-kapurthala",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-mcf-raebareli",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-nair",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-irimee",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-iricen",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-iriset",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-iritm",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-irifm",
+   "type": "administers",
+   "source": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-irctc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-irfc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-rvnl",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-ircon",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-rites",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-concor",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-railtel",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-krcl",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-mrvc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-dfccil",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-nhsrcl",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-road-transport-and-highways",
+   "to": "in-nhai",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-road-transport-and-highways",
+   "to": "in-nhidcl",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-road-transport-and-highways",
+   "to": "in-iahe",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-civil-aviation",
+   "to": "in-dgca",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-civil-aviation",
+   "to": "in-bcas",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-civil-aviation",
+   "to": "in-aai",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-civil-aviation",
+   "to": "in-pawan-hans",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-civil-aviation",
+   "to": "in-aaib",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-deendayal-port-authority",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-mumbai-port-authority",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-jnpa",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-mormugao-port-authority",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-new-mangalore-port-authority",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-cochin-port-authority",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-chennai-port-authority",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-vo-chidambaranar-port-authority",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-visakhapatnam-port-authority",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-paradip-port-authority",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-syama-prasad-mookerjee-port-authority",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-kamarajar-port",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-dg-shipping",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-iwai",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-sci",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-cochin-shipyard",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-housing-and-urban-affairs",
+   "to": "in-cpwd",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-housing-and-urban-affairs",
+   "to": "in-nbcc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-housing-and-urban-affairs",
+   "to": "in-hudco",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-housing-and-urban-affairs",
+   "to": "in-dda",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-housing-and-urban-affairs",
+   "to": "in-ncrtc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-housing-and-urban-affairs",
+   "to": "in-dmrc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-housing-and-urban-affairs",
+   "to": "in-hindustan-prefab",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-housing-and-urban-affairs",
+   "to": "in-smart-cities-mission",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-housing-and-urban-affairs",
+   "to": "in-amrut",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-housing-and-urban-affairs",
+   "to": "in-pmay-u",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-housing-and-urban-affairs",
+   "to": "in-sbm-u",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-jal-shakti",
+   "to": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-jal-shakti",
+   "to": "in-dept-drinking-water-and-sanitation",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "to": "in-cwc",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "to": "in-cgwb",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "to": "in-nmcg",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "to": "in-brahmaputra-board",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "to": "in-nwda",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "to": "in-wapcos",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-drinking-water-and-sanitation",
+   "to": "in-jal-jeevan-mission",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-drinking-water-and-sanitation",
+   "to": "in-sbm-g",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-communications",
+   "to": "in-dept-telecommunications",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-telecommunications",
+   "to": "in-digital-communications-commission",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-telecommunications",
+   "to": "in-bsnl",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-telecommunications",
+   "to": "in-mtnl",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-telecommunications",
+   "to": "in-bbnl",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-telecommunications",
+   "to": "in-cdot",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-telecommunications",
+   "to": "in-tec",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-communications",
+   "to": "in-dept-posts",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-posts",
+   "to": "in-postal-services-board",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-secretary-posts",
+   "to": "in-postal-services-board",
+   "type": "ex_officio",
+   "basis": "Chairperson by virtue of office"
+  },
+  {
+   "from": "in-dept-posts",
+   "to": "in-ippb",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-rlda",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-core",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-road-transport-and-highways",
+   "to": "in-bharatmala-pariyojana",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-civil-aviation",
+   "to": "in-udan-rcs",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ports-shipping-and-waterways",
+   "to": "in-sagarmala",
+   "type": "administers"
+  },
+  {
+   "from": "in-trai",
+   "to": "in-min-communications",
+   "type": "advises",
+   "basis": "TRAI Act, 1997, s.11(a) — advises DoT on telecom licensing/policy matters"
+  },
+  {
+   "from": "in-aera",
+   "to": "in-aai",
+   "type": "oversees",
+   "basis": "Airports Economic Regulatory Authority Act, 2008 — tariff & service-quality regulation of major airports"
+  },
+  {
+   "from": "in-tdsat",
+   "to": "in-dept-telecommunications",
+   "type": "oversees",
+   "basis": "TRAI Act, 1997 (as amended) — appellate/original jurisdiction over telecom, broadcasting and airport-tariff disputes"
+  },
+  {
+   "from": "in-min-housing-and-urban-affairs",
+   "to": "in-dept-capital-development",
+   "type": "administers",
+   "source": "https://en.wikipedia.org/wiki/Ministry_of_Housing_and_Urban_Affairs"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 38,
+  "corrections": [
+   "Structural/schema pass: loaded with python, checked IDs (kebab-case), duplicate IDs, kind/sector/rank/relation-type enums, and parentId/orgId/headPositionId dangling references within the segment. Zero violations found — all 110 original entities, 97 positions, 107 relations were already schema-clean.",
+   "in-pos-chairman-ceo-railway-board + 4 Railway Board Member positions: re-confirmed against the current indianrailways.gov.in Board Members page (fresh fetch, 2026-09-25) — all 5 names unchanged (Satish Kumar; Vivek Kumar Gupta; R Rajagopal; Manoj Singh; Manjusha Jain).",
+   "in-pos-dg-rpf: re-confirmed Sonali Mishra as DG, RPF via en.wikipedia.org/wiki/Railway_Protection_Force.",
+   "in-pos-head-nhai: re-confirmed Santosh Kumar Yadav (IAS) as NHAI Chairman via Wikipedia infobox.",
+   "in-pos-head-aai: re-confirmed Vipin Kumar as AAI Chairman via Wikipedia infobox (note: the same infobox lists a differently-named person against a DGCA ex-officio line, but the dedicated DGCA article confirms the JSON's DGCA holder is correct — see next item).",
+   "in-pos-head-dgca: re-confirmed Vir Vikram Yadav, IAS as DGCA Director General via en.wikipedia.org/wiki/Directorate_General_of_Civil_Aviation_(India) infobox, resolving an apparent conflict with a stale 'Key people' line on the AAI page.",
+   "in-pos-head-bcas: re-confirmed Rajesh Nirwan as DG, BCAS via Wikipedia.",
+   "in-pos-head-dmrc, in-pos-head-hudco, in-pos-head-nbcc, in-pos-head-dda, in-pos-head-cwc, in-pos-head-iwai, in-pos-head-cochshipyard, in-pos-head-cdot, in-pos-head-ippb, in-pos-head-sci, in-pos-cmd-rvnl, in-pos-cmd-irctc, in-pos-cmd-concor, in-pos-cmd-rites, in-pos-cmd-ircon, in-pos-cmd-railtel, in-pos-cmd-mrvc, in-pos-gm-south-coast-railway: each re-confirmed current holder against a fresh Wikipedia infobox fetch dated 2026-09-25 — no changes needed.",
+   "in-pos-secretary-road-transport-and-highways, in-pos-secretary-civil-aviation, in-pos-secretary-housing-and-urban-affairs, in-pos-secretary-telecommunications, in-pos-secretary-posts: all 5 re-confirmed current Secretaries against fresh Wikipedia ministry-page infoboxes (V Umashankar; Samir Kumar Sinha; Satendra Singh; Amit Agrawal; Subrat Das).",
+   "in-pos-cmd-irfc: CORRECTION — confidence downgraded high/medium->low. Fresh fetch of the IRFC Wikipedia article shows the infobox naming Manoj Kumar Dubey but the Board of Directors prose naming Uma Ranade, with no date to arbitrate; IRFC's own site (irfc.co.in) blocked automated access (403/redirect loop). Left holder as Manoj Kumar Dubey (higher-confidence field) but flagged as unresolved pending a direct-source recheck.",
+   "in-pos-head-bsnl: added holder.since=2024-07-15 (found on fresh Wikipedia fetch, not previously recorded).",
+   "in-pos-head-nhidcl: added holder.since=2024-02-14; fresh fetch also independently cross-validates the Secretary MoRT&H holder (V Umashankar) as NHIDCL's ex-officio Chairman.",
+   "in-pos-head-cpwd: confidence raised low->medium after independent Wikipedia re-confirmation of Satinder Pal Singh (still noted as holding additional charge).",
+   "Coverage check against the brief: identified one entity genuinely missing from the segment — 'Department of Capital Development', carved out of the Ministry of Housing and Urban Affairs in July 2026 to run National Capital Region capital governance (confirmed via a fresh en.wikipedia.org/wiki/Ministry_of_Housing_and_Urban_Affairs fetch, infobox + prose). Added entity in-dept-capital-development, position in-pos-secretary-capital-development (holder D Thara, confidence medium — single-source, could not locate a gazette/PIB notification in the time available), and an administers relation from in-min-housing-and-urban-affairs.",
+   "Attempted but could not independently confirm or refute (left as originally recorded, confidence low/vacant, matching the quality bar of not inventing holders): all 11 Major Port Authority Chairmen + Kamarajar Port CMD, DFCCIL MD, NHSRCL MD (the file's own noted Vivek Kumar Gupta conflict), Pawan Hans CMD, IAHE DG, CGWB Chairman, NMCG DG, Brahmaputra Board Chairman, NWDA DG, WAPCOS CMD, RLDA Vice Chairman, DG Shipping (page fetch 404s), Secretary Water Resources/Ganga Rejuvenation, Secretary Drinking Water & Sanitation. Official ministry/PSU 'About Us' pages remain largely JS-rendered and unreadable via curl/WebFetch, and this session's WebSearch quota was already exhausted at task start, matching the limitations the original agent flagged."
+  ]
+ }
+}

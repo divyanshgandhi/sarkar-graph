@@ -1,0 +1,14 @@
+[
+  {
+    "id": "st-jk-assembly",
+    "set": {
+      "seats": 95,
+      "stats.electedSeats": 90,
+      "stats.nominatedSeats": 5
+    },
+    "source": "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Legislative_Assembly",
+    "reason": "Coverage report flagged 'Jammu and Kashmir: 95 MLAs listed for 90 seats'. J&K's assembly has 90 directly elected seats plus up to 5 members the Lieutenant Governor may nominate under the 2023 amendment to the J&K Reorganisation Act 2019 (Woman x2, Kashmiri Migrants x2, PoJK-displaced x1) — data/raw/mlas-jk-ar-mn-ml.json already lists all 95 correctly (90 elected + 5 nominated, all 5 nominated seats vacant as the LG has not made any nominations as of 2026-09-25) with appointmentMode/appointedBy already set correctly. The mismatch was that the entity's own 'seats' field (owned by data/raw/states-dl-jk-la.json, which the build's first-value-wins merge always keeps over later segments' patches) was still 90, undercounting the 5 nominated seats. Setting seats=95 (= total members listed, elected + nominated, per research/india/SCHEMA.md's convention) and adding electedSeats/nominatedSeats to stats for clarity; the existing partyWiseStrength.nominated=5 in states-dl-jk-la.json's stats was already correct and unaffected by this correction.",
+    "by": "gov-graph-verification-agent",
+    "date": "2026-09-25"
+  }
+]

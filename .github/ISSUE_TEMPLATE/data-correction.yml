@@ -1,0 +1,57 @@
+name: "Data correction"
+description: "Something in the graph is wrong — a name, a date, a party, a vacancy, or any other factual error."
+title: "[correction] "
+labels: ["data", "correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep this accurate. Before filing, check `exports/people.csv` (or the app itself) to
+        confirm the current recorded value, and see `docs/SOURCING_POLICY.md` for what counts as a good source.
+        If you're comfortable with JSON, you can skip this form and open a PR directly against
+        `data/corrections/*.json` instead (see `data/corrections/README.md`).
+  - type: input
+    id: item
+    attributes:
+      label: "What's wrong (position or entity)"
+      description: "The seat, office, or body — e.g. \"Minister of Home Affairs\", \"Chief Minister of Maharashtra\", the node/position id from the CSVs if you know it (e.g. in-pos-minister-home-affairs)."
+      placeholder: "Minister of Home Affairs (in-pos-minister-home-affairs)"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: "What the graph currently shows"
+      description: "Copy the incorrect value(s) as they appear in the app or in exports/people.csv."
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: "What it should be"
+      description: "The correct name / date / party / vacancy status / whatever field is wrong."
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: "Source URL"
+      description: "Required. Prefer the Gazette of India, an official .gov.in/.nic.in portal, PIB, ECI, or a court site. See docs/SOURCING_POLICY.md for the full hierarchy."
+      placeholder: "https://pib.gov.in/..."
+    validations:
+      required: true
+  - type: input
+    id: source_date
+    attributes:
+      label: "Source date"
+      description: "The date on the source itself (YYYY-MM-DD, or as precise as the source gives)."
+      placeholder: "2026-10-01"
+    validations:
+      required: true
+  - type: checkboxes
+    id: personal_data
+    attributes:
+      label: "Personal data check"
+      options:
+        - label: "This correction is about a public official acting in their official capacity, and does not include a private address, phone number, or other personal detail beyond what the official source itself publishes."
+          required: true

@@ -1,0 +1,2875 @@
+{
+ "segment": "parliament-committees",
+ "asOf": "2026-09-25",
+ "notes": "Comprehensive as of 2026-09-25. All 24 Departmentally Related Standing Committees (16 Lok Sabha-serviced, 8 Rajya Sabha-serviced) and the 3 Financial Committees (PAC, Estimates, COPU) have verified current chairs sourced live from prsindia.org's parliamentary-committees pages, cross-checked for the 8 Rajya Sabha DRSCs against Rajya Sabha's own committee-integration API (perfect match on all 8). Six Joint Parliamentary Committees on specific bills (One Nation One Election / 129th Amendment, 130th Amendment on removal of arrested ministers, Viksit Bharat Shiksha Adhishthan Bill, Corporate Laws Amendment 2026, FCRA Amendment 2026, and the now-concluded Waqf Amendment 2024) are included with status and, where available, chair — sourced from PRS Legislative Research bill-track pages and Wikipedia. GAPS: (1) For most 'other' Lok Sabha standing/administrative committees (Privileges, Ethics, Government Assurances, Petitions, Subordinate Legislation, Papers Laid, House Committee, Absence of Members, Private Members' Bills, MPLADS) the current (18th Lok Sabha (2024-2029 term, so far in its 2024-26 span)) chairperson could NOT be confirmed from any 2025-2026 dated source reachable with the available tools (WebSearch budget was exhausted session-wide before this segment started; Wikipedia's only relevant table is explicitly dated to the 17th Lok Sabha, 2019-2024, and its names were deliberately NOT carried forward as current to avoid presenting stale office-holders as live data). The committees themselves, their function and composition rules are included and high-confidence; only the 'holder' is missing. (2) For several Rajya Sabha 'other' committees (Business Advisory, Rules, General Purposes, House, MPLADS, ICT Management) Rajya Sabha's own official committee-integration API returned two different chair names across two of its endpoints (GetCommitteeChairman vs GetMastercommittee?catid=1); both names are recorded with a low-confidence flag rather than picking one arbitrarily. (3) Corporate Laws Amendment Bill 2026 JPC and FCRA Amendment Bill 2026 JPC chairs could not be confirmed from any source found. (4) The 5 Joint standing committees (Empowerment of Women, Welfare of SC/ST, Library, Offices of Profit, MP Salaries & Allowances) likewise have unconfirmed current chairs. (5) Public Accounts and Public Undertakings Committees are cross-cutting (examine CAG reports / CPSEs across all ministries) so no 'oversees' relations to specific ministries were added for them; Estimates Committee's 22 'oversees' relations instead reflect its ROTATING current-cycle (2026-27) examination group — the Committee has no fixed jurisdiction and selects a different set of ministries/schemes each year, so these relations should not be read as permanent. (6) Select Committees on specific 2025 bills (Income-Tax Bill 2025, Insolvency and Bankruptcy Code Amendment 2025, Jan Vishwas Amendment 2025) exist per sansad.in's committee registry but were not researched in depth (out of core scope; flagged for potential follow-up). (7) DPIIT (Dept for Promotion of Industry and Internal Trade) does not appear explicitly under any DRSC's examined-ministries list in the source data gathered; likely falls under the Commerce DRSC in practice but this was not independently confirmed.",
+ "entities": [
+  {
+   "id": "in-com-drsc-agriculture",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Agriculture, Animal Husbandry and Food Processing",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Agriculture, Animal Husbandry and Food Processing",
+    "Parliamentary Committee on Agriculture, Animal Husbandry and Food Processing",
+    "Agriculture, Animal Husbandry and Food Processing"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines bills, budget demands, policy and performance of the ministries of Agriculture and Farmers Welfare, Fisheries Animal Husbandry and Dairying, Food Processing Industries, and Cooperation. One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/agriculture",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-chemicals-fertilizers",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Chemicals and Fertilizers",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Chemicals and Fertilizers",
+    "Parliamentary Committee on Chemicals and Fertilizers",
+    "Chemicals and Fertilizers"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the departments of Fertilizers, Chemicals and Petrochemicals, and Pharmaceuticals under the Ministry of Chemicals and Fertilizers. One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/chemicals-and-fertilizers",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-coal-mines-steel",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Coal, Mines and Steel",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Coal, Mines and Steel",
+    "Parliamentary Committee on Coal, Mines and Steel",
+    "Coal, Mines and Steel"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the ministries of Coal, Mines and Steel, including PSU performance and mining/mineral policy. One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/coal-and-steel",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-commerce",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Commerce",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Commerce",
+    "Parliamentary Committee on Commerce",
+    "Commerce"
+   ],
+   "parentId": "in-rajya-sabha",
+   "description": "Examines the Department of Commerce, including trade policy, exports and Special Economic Zones. One of the 24 Departmentally Related Standing Committees; serviced by the Rajya Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/rs/committees/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/commerce",
+    "https://sansad.in/rs/committees/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-defence",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Defence",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Defence",
+    "Parliamentary Committee on Defence",
+    "Defence"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the Ministry of Defence including the armed forces' budget, defence production and modernization (excluding matters of national security strategy handled by the Cabinet Committee on Security). One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/defence",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-education-women-children-youth-sports",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Education, Women, Children, Youth and Sports",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Education, Women, Children, Youth and Sports",
+    "Parliamentary Committee on Education, Women, Children, Youth and Sports",
+    "Education, Women, Children, Youth and Sports"
+   ],
+   "parentId": "in-rajya-sabha",
+   "description": "Examines the Department of Higher Education, Department of School Education and Literacy, Ministry of Women and Child Development, and the departments of Sports and Youth Affairs. One of the 24 Departmentally Related Standing Committees; serviced by the Rajya Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/rs/committees/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/education-women-children-youth-and-sports",
+    "https://sansad.in/rs/committees/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-energy",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Energy",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Energy",
+    "Parliamentary Committee on Energy",
+    "Energy"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the ministries of Power and New and Renewable Energy. One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/energy",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-external-affairs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on External Affairs",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on External Affairs",
+    "Parliamentary Committee on External Affairs",
+    "External Affairs"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the Ministry of External Affairs, India's foreign policy and diplomatic missions. One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/external-affairs",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-finance",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Finance",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Finance",
+    "Parliamentary Committee on Finance",
+    "Finance"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the Ministry of Finance (Economic Affairs, Expenditure, Revenue, Financial Services, Public Enterprises, DIPAM), the Ministry of Corporate Affairs, the Ministry of Statistics and Programme Implementation, and reviews the role of the Ministry of Planning (NITI Aayog). One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/finance",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-consumer-affairs-food-public-distribution",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Food, Consumer Affairs and Public Distribution",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Food, Consumer Affairs and Public Distribution",
+    "Parliamentary Committee on Food, Consumer Affairs and Public Distribution",
+    "Food, Consumer Affairs and Public Distribution"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the Ministry of Consumer Affairs, Food and Public Distribution, covering the departments of Food and Public Distribution and Consumer Affairs. One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/food-consumer-affairs-and-public-distribution",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-health-family-welfare",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Health and Family Welfare",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Health and Family Welfare",
+    "Parliamentary Committee on Health and Family Welfare",
+    "Health and Family Welfare"
+   ],
+   "parentId": "in-rajya-sabha",
+   "description": "Examines the Ministry of Health and Family Welfare and the Ministry of Ayush. One of the 24 Departmentally Related Standing Committees; serviced by the Rajya Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/rs/committees/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/health-and-family-welfare",
+    "https://sansad.in/rs/committees/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-home-affairs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Home Affairs",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Home Affairs",
+    "Parliamentary Committee on Home Affairs",
+    "Home Affairs"
+   ],
+   "parentId": "in-rajya-sabha",
+   "description": "Examines the Ministry of Home Affairs, internal security, Centre-State relations and Union Territories administration. One of the 24 Departmentally Related Standing Committees; serviced by the Rajya Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/rs/committees/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/home-affairs",
+    "https://sansad.in/rs/committees/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-industry",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Industry",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Industry",
+    "Parliamentary Committee on Industry",
+    "Industry"
+   ],
+   "parentId": "in-rajya-sabha",
+   "description": "Examines the Ministry of Micro, Small and Medium Enterprises and the Ministry of Heavy Industries. One of the 24 Departmentally Related Standing Committees; serviced by the Rajya Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/rs/committees/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/industry",
+    "https://sansad.in/rs/committees/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-communications-it",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Communications and Information Technology",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Communications and Information Technology",
+    "Parliamentary Committee on Communications and Information Technology",
+    "Communications and Information Technology"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the ministries of Information and Broadcasting, Electronics and Information Technology, and Communications (Departments of Posts and Telecommunications). One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/information-technology",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-labour-textiles-skill-development",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Labour, Textiles and Skill Development",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Labour, Textiles and Skill Development",
+    "Parliamentary Committee on Labour, Textiles and Skill Development",
+    "Labour, Textiles and Skill Development"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the Ministry of Labour and Employment, the Ministry of Textiles, and the Ministry of Skill Development and Entrepreneurship. One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/labour",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-personnel-public-grievances-law-justice",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Personnel, Public Grievances, Law and Justice",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Personnel, Public Grievances, Law and Justice",
+    "Parliamentary Committee on Personnel, Public Grievances, Law and Justice",
+    "Personnel, Public Grievances, Law and Justice"
+   ],
+   "parentId": "in-rajya-sabha",
+   "description": "Examines the Ministry of Personnel, Public Grievances and Pensions (DoPT, Administrative Reforms) and the Ministry of Law and Justice (Legal Affairs, Justice). One of the 24 Departmentally Related Standing Committees; serviced by the Rajya Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/rs/committees/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/personnel-public-grievances-law-and-justice",
+    "https://sansad.in/rs/committees/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-petroleum-natural-gas",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Petroleum and Natural Gas",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Petroleum and Natural Gas",
+    "Parliamentary Committee on Petroleum and Natural Gas",
+    "Petroleum and Natural Gas"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the Ministry of Petroleum and Natural Gas, including oil and gas exploration, pricing and PSUs. One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/petroleum-natural-gas",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-railways",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Railways",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Railways",
+    "Parliamentary Committee on Railways",
+    "Railways"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the Ministry of Railways, including Railway Board policy, safety and finances. One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/railways",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-rural-development-panchayati-raj",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Rural Development and Panchayati Raj",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Rural Development and Panchayati Raj",
+    "Parliamentary Committee on Rural Development and Panchayati Raj",
+    "Rural Development and Panchayati Raj"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the Ministry of Rural Development (Rural Development and Land Resources departments) and the Ministry of Panchayati Raj. One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/rural-development",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-science-tech-environment-forests",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Science and Technology, Environment and Forests",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Science and Technology, Environment and Forests",
+    "Parliamentary Committee on Science and Technology, Environment and Forests",
+    "Science and Technology, Environment and Forests"
+   ],
+   "parentId": "in-rajya-sabha",
+   "description": "Examines the Ministry of Science and Technology, the Ministry of Earth Sciences, and the Ministry of Environment, Forest and Climate Change. One of the 24 Departmentally Related Standing Committees; serviced by the Rajya Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/rs/committees/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/science-technology-environment-forests",
+    "https://sansad.in/rs/committees/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-social-justice-empowerment",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Social Justice and Empowerment",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Social Justice and Empowerment",
+    "Parliamentary Committee on Social Justice and Empowerment",
+    "Social Justice and Empowerment"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the Ministry of Social Justice and Empowerment (incl. Persons with Disabilities), the Ministry of Tribal Affairs, and the Ministry of Minority Affairs. One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/social-justice-and-empowerment",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-transport-tourism-culture",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Transport, Tourism and Culture",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Transport, Tourism and Culture",
+    "Parliamentary Committee on Transport, Tourism and Culture",
+    "Transport, Tourism and Culture"
+   ],
+   "parentId": "in-rajya-sabha",
+   "description": "Examines the ministries of Road Transport and Highways, Ports Shipping and Waterways, Civil Aviation, Culture, and Tourism. One of the 24 Departmentally Related Standing Committees; serviced by the Rajya Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/rs/committees/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/transport-culture-and-tourism",
+    "https://sansad.in/rs/committees/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-housing-urban-affairs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Housing and Urban Affairs",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Housing and Urban Affairs",
+    "Parliamentary Committee on Housing and Urban Affairs",
+    "Housing and Urban Affairs"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the Ministry of Housing and Urban Affairs, including urban infrastructure missions. One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/urban-development",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-drsc-water-resources",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Department-Related Standing Committee on Water Resources",
+   "abbr": "DRSC",
+   "aliases": [
+    "Standing Committee on Water Resources",
+    "Parliamentary Committee on Water Resources",
+    "Water Resources"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the Ministry of Jal Shakti (Water Resources, River Development and Ganga Rejuvenation; Drinking Water and Sanitation). One of the 24 Departmentally Related Standing Committees; serviced by the Lok Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (DRSC system restructured July 2004; 31 members — 21 from Lok Sabha, 10 from Rajya Sabha)",
+   "officialUrl": "https://sansad.in/ls/committee/departmentally-related-standing-committees",
+   "established": "1993 (restructured 2004)",
+   "seats": 31,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/water-resources",
+    "https://sansad.in/ls/committee/departmentally-related-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-pac",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Public Accounts Committee",
+   "abbr": "PAC",
+   "aliases": [
+    "Public Accounts Committee",
+    "PAC"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the accounts of the Union Government and the reports of the Comptroller and Auditor General (CAG) on public expenditure across all ministries; by convention chaired by a member of the Opposition. Cross-cutting — not tied to a single ministry.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (Financial Committee)",
+   "officialUrl": "https://prsindia.org/parliamentary-committees/public-accounts",
+   "seats": 22,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/public-accounts",
+    "https://en.wikipedia.org/wiki/List_of_committees_of_the_Parliament_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-estimates",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Estimates Committee",
+   "abbr": "EC",
+   "aliases": [
+    "Estimates Committee",
+    "EC"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the estimates in the Union Budget and suggests economies in public expenditure; reports on whether policy is being carried out efficiently. Lok Sabha members only; has no fixed ministerial jurisdiction — selects a rotating group of ministries/schemes each year.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (Financial Committee)",
+   "officialUrl": "https://prsindia.org/parliamentary-committees/estimates",
+   "seats": 30,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/estimates",
+    "https://en.wikipedia.org/wiki/List_of_committees_of_the_Parliament_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-copu",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Public Undertakings",
+   "abbr": "COPU",
+   "aliases": [
+    "Committee on Public Undertakings",
+    "COPU"
+   ],
+   "parentId": "in-lok-sabha",
+   "description": "Examines the reports and accounts of Central Public Sector Enterprises (CPSEs) and CAG reports on them, and reviews whether they are managed in accordance with sound business principles. Cross-cutting — not tied to a single ministry.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha (Financial Committee)",
+   "officialUrl": "https://prsindia.org/parliamentary-committees/public-undertakings",
+   "seats": 22,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/public-undertakings",
+    "https://en.wikipedia.org/wiki/List_of_committees_of_the_Parliament_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-jpc-one-nation-one-election",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Joint Committee on the Constitution (One Hundred and Twenty-Ninth Amendment) Bill, 2024 and the Union Territories Laws (Amendment) Bill, 2024",
+   "abbr": "JPC",
+   "aliases": [
+    "JPC on One Nation One Election",
+    "JPC on Simultaneous Elections",
+    "ONOE JPC"
+   ],
+   "parentId": "in-parliament",
+   "description": "Examines the Constitution (129th Amendment) Bill, 2024 and the Union Territories Laws (Amendment) Bill, 2024, which together propose to hold simultaneous ('one nation, one election') elections to the Lok Sabha and all State Legislative Assemblies. Introduced in Lok Sabha 17 December 2024 and referred to this JPC on 19 December 2024; enlarged to 39 members (27 Lok Sabha + 12 Rajya Sabha) after cross-party demands. As of September 2026 the JPC is still consulting stakeholders (including state Chief Ministers) and has not yet presented its report; chairman P. P. Chaudhary has indicated it is examining feasibility for the 2029 general elections.",
+   "legalBasis": "Motion of reference adopted by both Houses of Parliament (Joint Committee on a Bill)",
+   "officialUrl": "https://prsindia.org/billtrack/the-constitution-one-hundred-and-twenty-ninth-amendment-bill-2024",
+   "stats": {
+    "status": "active"
+   },
+   "sources": [
+    "https://prsindia.org/billtrack/the-constitution-one-hundred-and-twenty-ninth-amendment-bill-2024",
+    "https://en.wikipedia.org/wiki/One_Nation,_One_Election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-jpc-removal-of-ministers-130th-amendment",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Joint Committee on the Constitution (130th Amendment) Bill, 2025, the Jammu and Kashmir Reorganisation (Amendment) Bill, 2025, and the Government of Union Territories (Amendment) Bill, 2025",
+   "abbr": "JPC",
+   "aliases": [
+    "JPC on Removal of Arrested Ministers",
+    "130th Amendment JPC"
+   ],
+   "parentId": "in-parliament",
+   "description": "Examines bills that would provide for the automatic removal of a Prime Minister, Chief Minister or other Minister (including in Delhi, Puducherry and Jammu & Kashmir) who is arrested and held in custody for 30 consecutive days on a serious criminal charge. Introduced in Lok Sabha on 20 August 2025 and referred to this JPC the same day. As of September 2026 the bills remain with the JPC; no report has been presented.",
+   "legalBasis": "Motion of reference adopted by both Houses of Parliament (Joint Committee on a Bill)",
+   "officialUrl": "https://prsindia.org/billtrack/the-constitution-one-hundred-and-thirtieth-amendment-bill-2025",
+   "stats": {
+    "status": "active"
+   },
+   "sources": [
+    "https://prsindia.org/billtrack/the-constitution-one-hundred-and-thirtieth-amendment-bill-2025"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-jpc-viksit-bharat-shiksha-adhishthan",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Joint Committee on the Viksit Bharat Shiksha Adhishthan Bill, 2025",
+   "abbr": "JPC",
+   "aliases": [
+    "JPC on VBSA Bill"
+   ],
+   "parentId": "in-parliament",
+   "description": "Examines the Viksit Bharat Shiksha Adhishthan Bill, 2025, which replaces the UGC, AICTE and NCTE with a single higher-education regulatory Commission. Introduced in Lok Sabha on 15 December 2025 and referred to this JPC on 16 December 2025. As of September 2026 the bill remains in committee; no report has been presented.",
+   "legalBasis": "Motion of reference adopted by both Houses of Parliament (Joint Committee on a Bill)",
+   "officialUrl": "https://prsindia.org/billtrack/the-viksit-bharat-shiksha-adhishthan-bill-2025",
+   "stats": {
+    "status": "active"
+   },
+   "sources": [
+    "https://prsindia.org/billtrack/the-viksit-bharat-shiksha-adhishthan-bill-2025"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-jpc-corporate-laws-amendment-2026",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Joint Committee on the Corporate Laws (Amendment) Bill, 2026",
+   "abbr": "JPC",
+   "aliases": [
+    "JPC on Corporate Laws Amendment"
+   ],
+   "parentId": "in-parliament",
+   "description": "Examined the Corporate Laws (Amendment) Bill, 2026, which amends the Companies Act, 2013 and the LLP Act, 2008 (decriminalisation of offences, civil penalties). Introduced in Lok Sabha 23 March 2026 and referred to this JPC the same day; the JPC presented its report on 3 August 2026. Chairperson not independently confirmed from a public source as of research date.",
+   "legalBasis": "Motion of reference adopted by both Houses of Parliament (Joint Committee on a Bill)",
+   "officialUrl": "https://prsindia.org/billtrack/the-corporate-laws-amendment-bill-2026",
+   "stats": {
+    "status": "report_submitted"
+   },
+   "sources": [
+    "https://prsindia.org/billtrack/the-corporate-laws-amendment-bill-2026"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-jpc-fcra-amendment-2026",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Joint Committee on the Foreign Contribution (Regulation) Amendment Bill, 2026",
+   "abbr": "JPC",
+   "aliases": [
+    "JPC on FCRA Amendment"
+   ],
+   "parentId": "in-parliament",
+   "description": "Examines the Foreign Contribution (Regulation) Amendment Bill, 2026, which creates a framework for supervision, management and disposal of foreign contributions/assets of organisations that cease to hold an FCRA certificate. Introduced in Lok Sabha 25 March 2026; referred to this JPC (per PRS bill-track status) 12 August 2026. As of September 2026 the bill remains in committee. Chairperson not independently confirmed from a public source as of research date.",
+   "legalBasis": "Motion of reference adopted by both Houses of Parliament (Joint Committee on a Bill)",
+   "officialUrl": "https://prsindia.org/billtrack/the-foreign-contribution-regulation-amendment-bill-2026",
+   "stats": {
+    "status": "active"
+   },
+   "sources": [
+    "https://prsindia.org/billtrack/the-foreign-contribution-regulation-amendment-bill-2026"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-jpc-waqf-amendment-2024",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Joint Committee on the Waqf (Amendment) Bill, 2024",
+   "abbr": "JPC",
+   "aliases": [
+    "JPC on Waqf",
+    "Waqf JPC"
+   ],
+   "parentId": "in-parliament",
+   "description": "Examined the Waqf (Amendment) Bill, 2024. Introduced in Lok Sabha 8 August 2024 and referred to this JPC the same day; the JPC presented its report on 30 January 2025. The Bill (incorporating the JPC's recommendations) was passed by Lok Sabha on 2 April 2025 and by Rajya Sabha on 3 April 2025, enacted as the Waqf (Amendment) Act, 2025. The JPC's mandate is concluded; it is not active as of September 2026.",
+   "legalBasis": "Motion of reference adopted by both Houses of Parliament (Joint Committee on a Bill)",
+   "officialUrl": "https://prsindia.org/billtrack/the-waqf-amendment-bill-2024",
+   "stats": {
+    "status": "concluded"
+   },
+   "sources": [
+    "https://prsindia.org/billtrack/the-waqf-amendment-bill-2024"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-bac-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Business Advisory Committee (Lok Sabha)",
+   "parentId": "in-lok-sabha",
+   "description": "Recommends the time to be allotted for discussion of government business and bills before the House; effectively sets the legislative agenda/calendar.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-absence-of-members-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Absence of Members from the Sittings of the House",
+   "parentId": "in-lok-sabha",
+   "description": "Considers applications from members for leave of absence from sittings of the House.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-ethics-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Ethics Committee (Lok Sabha)",
+   "parentId": "in-lok-sabha",
+   "description": "Examines complaints of unethical conduct against Members of the Lok Sabha (became a standing committee in 2015, having earlier operated as an ad hoc committee from 2000). Notably recommended the December 2023 expulsion of MP Mahua Moitra.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-gpc-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "General Purposes Committee (Lok Sabha)",
+   "parentId": "in-lok-sabha",
+   "description": "Considers and advises on matters concerning the affairs of the House referred to it by the Speaker, which do not fall within the jurisdiction of any other Parliamentary Committee.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-government-assurances-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Government Assurances (Lok Sabha)",
+   "parentId": "in-lok-sabha",
+   "description": "Scrutinises assurances, promises and undertakings given by Ministers on the floor of the Lok Sabha and reports on the extent to which they have been implemented.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-house-committee-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "House Committee (Lok Sabha)",
+   "parentId": "in-lok-sabha",
+   "description": "Deals with residential accommodation and other amenities for Lok Sabha Members.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 12,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-papers-laid-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Papers Laid on the Table (Lok Sabha)",
+   "parentId": "in-lok-sabha",
+   "description": "Examines papers laid on the Table of the Lok Sabha by Ministers to see that they conform to the Constitution, an Act, rule or regulation under which they are laid, and are laid within the prescribed time.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-petitions-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Petitions (Lok Sabha)",
+   "parentId": "in-lok-sabha",
+   "description": "Examines petitions on bills and on matters of general public interest presented to, or introduced in, the Lok Sabha.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-private-members-bills-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Private Members' Bills and Resolutions (Lok Sabha)",
+   "parentId": "in-lok-sabha",
+   "description": "Allots time to Private Members' Bills and Resolutions, classifies Bills, and examines their constitutionality before they are taken up in the House.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-privileges-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee of Privileges (Lok Sabha)",
+   "parentId": "in-lok-sabha",
+   "description": "Examines cases involving breach of privilege of the House or of its Members and recommends appropriate action.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-rules-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Rules Committee (Lok Sabha)",
+   "parentId": "in-lok-sabha",
+   "description": "Considers matters of procedure and conduct of business in the House and recommends amendments to the Rules of Procedure.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-com-subordinate-legislation-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Subordinate Legislation (Lok Sabha)",
+   "parentId": "in-lok-sabha",
+   "description": "Scrutinises delegated/subordinate legislation (rules, regulations, bye-laws) framed by the Executive under powers conferred by Acts of Parliament, to ensure it stays within the bounds of the parent Act.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-mplads-ls",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on MPLADS (Lok Sabha)",
+   "parentId": "in-lok-sabha",
+   "description": "Reviews the implementation of the Members of Parliament Local Area Development Scheme (MPLADS) by Lok Sabha MPs.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-bac-rs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Business Advisory Committee (Rajya Sabha)",
+   "parentId": "in-rajya-sabha",
+   "description": "Recommends the time to be allotted for discussion of government business and bills before the Rajya Sabha.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "officialUrl": "https://sansad.in/rs/committees/standing-committees",
+   "seats": 11,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-com-ethics-rs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Ethics Committee (Rajya Sabha)",
+   "parentId": "in-rajya-sabha",
+   "description": "Examines complaints of unethical conduct against Members of the Rajya Sabha (constituted 1997, the first standing Ethics Committee in Indian Parliament).",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "officialUrl": "https://sansad.in/rs/committees/standing-committees",
+   "seats": 10,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-gpc-rs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "General Purposes Committee (Rajya Sabha)",
+   "parentId": "in-rajya-sabha",
+   "description": "Considers and advises on matters concerning the affairs of the Rajya Sabha referred to it by the Chairman.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "officialUrl": "https://sansad.in/rs/committees/standing-committees",
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-com-government-assurances-rs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Government Assurances (Rajya Sabha)",
+   "parentId": "in-rajya-sabha",
+   "description": "Scrutinises assurances, promises and undertakings given by Ministers on the floor of the Rajya Sabha and reports on their implementation.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "officialUrl": "https://sansad.in/rs/committees/standing-committees",
+   "seats": 10,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-house-committee-rs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "House Committee (Rajya Sabha)",
+   "parentId": "in-rajya-sabha",
+   "description": "Deals with residential accommodation and other amenities for Rajya Sabha Members.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "officialUrl": "https://sansad.in/rs/committees/standing-committees",
+   "seats": 10,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-com-mplads-rs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on MPLADS (Rajya Sabha)",
+   "parentId": "in-rajya-sabha",
+   "description": "Reviews implementation of the Members of Parliament Local Area Development Scheme (MPLADS) by Rajya Sabha MPs.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "officialUrl": "https://sansad.in/rs/committees/standing-committees",
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-com-papers-laid-rs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Papers Laid on the Table (Rajya Sabha)",
+   "parentId": "in-rajya-sabha",
+   "description": "Examines papers laid on the Table of the Rajya Sabha by Ministers for conformity with the Constitution, the parent Act, rule or regulation, and timeliness.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "officialUrl": "https://sansad.in/rs/committees/standing-committees",
+   "seats": 10,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-petitions-rs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Petitions (Rajya Sabha)",
+   "parentId": "in-rajya-sabha",
+   "description": "Examines petitions on bills and on matters of general public interest presented to the Rajya Sabha.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "officialUrl": "https://sansad.in/rs/committees/standing-committees",
+   "seats": 10,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-privileges-rs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee of Privileges (Rajya Sabha)",
+   "parentId": "in-rajya-sabha",
+   "description": "Examines cases involving breach of privilege of the Rajya Sabha or of its Members.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "officialUrl": "https://sansad.in/rs/committees/standing-committees",
+   "seats": 10,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-rules-rs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Rules Committee (Rajya Sabha)",
+   "parentId": "in-rajya-sabha",
+   "description": "Considers matters of procedure and conduct of business in the Rajya Sabha and recommends amendments to the Rules.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "officialUrl": "https://sansad.in/rs/committees/standing-committees",
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-com-subordinate-legislation-rs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Subordinate Legislation (Rajya Sabha)",
+   "parentId": "in-rajya-sabha",
+   "description": "Scrutinises delegated/subordinate legislation framed by the Executive under powers conferred by Acts of Parliament.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "officialUrl": "https://sansad.in/rs/committees/standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-ict-management-rs",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Information and Communication Technology Management in Rajya Sabha",
+   "parentId": "in-rajya-sabha",
+   "description": "Advises on the use and management of information and communication technology within the Rajya Sabha Secretariat.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "officialUrl": "https://sansad.in/rs/committees/standing-committees",
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-com-empowerment-of-women",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on Empowerment of Women",
+   "parentId": "in-parliament",
+   "description": "Joint committee reviewing the status and empowerment of women, and recommending measures to remove disparities; examines the working of ministries/departments on women's welfare. Composition: 20 Lok Sabha + 10 Rajya Sabha.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha / in the Council of States (Joint Committee)",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 30,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+    "https://en.wikipedia.org/wiki/List_of_committees_of_the_Parliament_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-welfare-sc-st",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Committee on the Welfare of Scheduled Castes and Scheduled Tribes",
+   "parentId": "in-parliament",
+   "description": "Joint committee overseeing the welfare of Scheduled Castes and Scheduled Tribes across ministries, and reviewing implementation of constitutional safeguards for SCs/STs. Composition: 20 Lok Sabha + 10 Rajya Sabha.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha / in the Council of States (Joint Committee)",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 30,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+    "https://en.wikipedia.org/wiki/List_of_committees_of_the_Parliament_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-library-committee",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Library Committee",
+   "parentId": "in-parliament",
+   "description": "Joint committee overseeing the Parliament Library and considering its development. Composition: 6 Lok Sabha + 3 Rajya Sabha.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha / in the Council of States (Joint Committee)",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 9,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+    "https://en.wikipedia.org/wiki/List_of_committees_of_the_Parliament_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-offices-of-profit",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Joint Committee on Offices of Profit",
+   "parentId": "in-parliament",
+   "description": "Examines the composition and character of committees/bodies appointed by central and state governments and recommends whether membership of such bodies should disqualify a person from being an MP under the office-of-profit rules. Composition: 10 Lok Sabha + 5 Rajya Sabha.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha / in the Council of States (Joint Committee)",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+    "https://en.wikipedia.org/wiki/List_of_committees_of_the_Parliament_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-com-mp-salaries-allowances",
+   "kind": "parliamentary_committee",
+   "sector": "legislative",
+   "name": "Joint Committee on Salaries and Allowances of Members of Parliament",
+   "parentId": "in-parliament",
+   "description": "Administers the Salary, Allowances and Pension of Members of Parliament Act, 1954, and frames rules on MPs' salaries, allowances and amenities. Composition: 10 Lok Sabha + 5 Rajya Sabha.",
+   "legalBasis": "Rules of Procedure and Conduct of Business in Lok Sabha / in the Council of States (Joint Committee)",
+   "officialUrl": "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+   "seats": 15,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees",
+    "https://en.wikipedia.org/wiki/List_of_committees_of_the_Parliament_of_India"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-chair-drsc-agriculture",
+   "title": "Chairperson, DRSC on Agriculture, Animal Husbandry and Food Processing",
+   "orgId": "in-com-drsc-agriculture",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Charanjit Singh Channi",
+    "party": "Indian National Congress",
+    "house": "Lok Sabha",
+    "constituency": "Jalandhar",
+    "notes": "Chairperson of the DRSC on Agriculture, Animal Husbandry and Food Processing as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Charanjit_Singh_Channi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/agriculture"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-chemicals-fertilizers",
+   "title": "Chairperson, DRSC on Chemicals and Fertilizers",
+   "orgId": "in-com-drsc-chemicals-fertilizers",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Azad Kirti Jha",
+    "party": "All India Trinamool Congress",
+    "house": "Lok Sabha",
+    "constituency": "Bardhaman-Durgapur",
+    "notes": "Chairperson of the DRSC on Chemicals and Fertilizers as reconstituted for the 18th Lok Sabha (2026 cycle)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/chemicals-and-fertilizers"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-coal-mines-steel",
+   "title": "Chairperson, DRSC on Coal, Mines and Steel",
+   "orgId": "in-com-drsc-coal-mines-steel",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Anurag Singh Thakur",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "constituency": "Hamirpur",
+    "notes": "Chairperson of the DRSC on Coal, Mines and Steel as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Anurag_Thakur"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/coal-and-steel"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-commerce",
+   "title": "Chairperson, DRSC on Commerce",
+   "orgId": "in-com-drsc-commerce",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-chairman-rajya-sabha",
+   "holder": {
+    "name": "Dola Sen",
+    "party": "All India Trinamool Congress",
+    "house": "Rajya Sabha",
+    "notes": "Chairperson of the DRSC on Commerce as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dola_Sen"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/commerce"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-defence",
+   "title": "Chairperson, DRSC on Defence",
+   "orgId": "in-com-drsc-defence",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Radha Mohan Singh",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "constituency": "Purvi Champaran",
+    "notes": "Chairperson of the DRSC on Defence as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Radha_Mohan_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/defence"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-education-women-children-youth-sports",
+   "title": "Chairperson, DRSC on Education, Women, Children, Youth and Sports",
+   "orgId": "in-com-drsc-education-women-children-youth-sports",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-chairman-rajya-sabha",
+   "holder": {
+    "name": "Mukul Balkrishna Wasnik",
+    "party": "Indian National Congress",
+    "house": "Rajya Sabha",
+    "notes": "Chairperson of the DRSC on Education, Women, Children, Youth and Sports as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mukul_Wasnik"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/education-women-children-youth-and-sports"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-energy",
+   "title": "Chairperson, DRSC on Energy",
+   "orgId": "in-com-drsc-energy",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Shrirang Appa Barne",
+    "party": "Shiv Sena",
+    "house": "Lok Sabha",
+    "constituency": "Maval",
+    "notes": "Chairperson of the DRSC on Energy as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shrirang_Barne"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/energy"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-external-affairs",
+   "title": "Chairperson, DRSC on External Affairs",
+   "orgId": "in-com-drsc-external-affairs",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Shashi Tharoor",
+    "party": "Indian National Congress",
+    "house": "Lok Sabha",
+    "constituency": "Thiruvananthapuram",
+    "notes": "Chairperson of the DRSC on External Affairs as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shashi_Tharoor"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/external-affairs"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-finance",
+   "title": "Chairperson, DRSC on Finance",
+   "orgId": "in-com-drsc-finance",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Bhartruhari Mahtab",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "constituency": "Cuttack",
+    "notes": "Chairperson of the DRSC on Finance as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bhartruhari_Mahtab"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/finance"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-consumer-affairs-food-public-distribution",
+   "title": "Chairperson, DRSC on Food, Consumer Affairs and Public Distribution",
+   "orgId": "in-com-drsc-consumer-affairs-food-public-distribution",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Kanimozhi Karunanidhi",
+    "party": "Dravida Munnetra Kazhagam",
+    "house": "Lok Sabha",
+    "constituency": "Thoothukkudi",
+    "notes": "Chairperson of the DRSC on Food, Consumer Affairs and Public Distribution as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kanimozhi_Karunanidhi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/food-consumer-affairs-and-public-distribution"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-health-family-welfare",
+   "title": "Chairperson, DRSC on Health and Family Welfare",
+   "orgId": "in-com-drsc-health-family-welfare",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-chairman-rajya-sabha",
+   "holder": {
+    "name": "Ram Gopal Yadav",
+    "party": "Samajwadi Party",
+    "house": "Rajya Sabha",
+    "notes": "Chairperson of the DRSC on Health and Family Welfare as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ram_Gopal_Yadav"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/health-and-family-welfare"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-home-affairs",
+   "title": "Chairperson, DRSC on Home Affairs",
+   "orgId": "in-com-drsc-home-affairs",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-chairman-rajya-sabha",
+   "holder": {
+    "name": "Radha Mohan Das Agarwal",
+    "party": "Bharatiya Janata Party",
+    "house": "Rajya Sabha",
+    "notes": "Chairperson of the DRSC on Home Affairs as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Radha_Mohan_Das_Agarwal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/home-affairs"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-industry",
+   "title": "Chairperson, DRSC on Industry",
+   "orgId": "in-com-drsc-industry",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-chairman-rajya-sabha",
+   "holder": {
+    "name": "Tiruchi Siva",
+    "party": "Dravida Munnetra Kazhagam",
+    "house": "Rajya Sabha",
+    "notes": "Chairperson of the DRSC on Industry as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tiruchi_Siva"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/industry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-communications-it",
+   "title": "Chairperson, DRSC on Communications and Information Technology",
+   "orgId": "in-com-drsc-communications-it",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Nishikant Dubey",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "constituency": "Godda",
+    "notes": "Chairperson of the DRSC on Communications and Information Technology as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nishikant_Dubey"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/information-technology"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-labour-textiles-skill-development",
+   "title": "Chairperson, DRSC on Labour, Textiles and Skill Development",
+   "orgId": "in-com-drsc-labour-textiles-skill-development",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Basavaraj Bommai",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "constituency": "Haveri",
+    "notes": "Chairperson of the DRSC on Labour, Textiles and Skill Development as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Basavaraj_Bommai"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/labour"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-personnel-public-grievances-law-justice",
+   "title": "Chairperson, DRSC on Personnel, Public Grievances, Law and Justice",
+   "orgId": "in-com-drsc-personnel-public-grievances-law-justice",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-chairman-rajya-sabha",
+   "holder": {
+    "name": "Brijlal",
+    "party": "Bharatiya Janata Party",
+    "house": "Rajya Sabha",
+    "notes": "Chairperson of the DRSC on Personnel, Public Grievances, Law and Justice as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Brij_Lal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/personnel-public-grievances-law-and-justice"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-petroleum-natural-gas",
+   "title": "Chairperson, DRSC on Petroleum and Natural Gas",
+   "orgId": "in-com-drsc-petroleum-natural-gas",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Tatkare Sunil Dattatray",
+    "party": "Nationalist Congress Party",
+    "house": "Lok Sabha",
+    "constituency": "Raigad",
+    "notes": "Chairperson of the DRSC on Petroleum and Natural Gas as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sunil_Tatkare"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/petroleum-natural-gas"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-railways",
+   "title": "Chairperson, DRSC on Railways",
+   "orgId": "in-com-drsc-railways",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "C.M. Ramesh",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "constituency": "Anakapalle",
+    "notes": "Chairperson of the DRSC on Railways as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._M._Ramesh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/railways"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-rural-development-panchayati-raj",
+   "title": "Chairperson, DRSC on Rural Development and Panchayati Raj",
+   "orgId": "in-com-drsc-rural-development-panchayati-raj",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Saptagiri Sankar Ulaka",
+    "party": "Indian National Congress",
+    "house": "Lok Sabha",
+    "constituency": "Koraput",
+    "notes": "Chairperson of the DRSC on Rural Development and Panchayati Raj as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Saptagiri_Sankar_Ulaka"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/rural-development"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-science-tech-environment-forests",
+   "title": "Chairperson, DRSC on Science and Technology, Environment and Forests",
+   "orgId": "in-com-drsc-science-tech-environment-forests",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-chairman-rajya-sabha",
+   "holder": {
+    "name": "Medha Vishram Kulkarni",
+    "party": "Bharatiya Janata Party",
+    "house": "Rajya Sabha",
+    "notes": "Chairperson of the DRSC on Science and Technology, Environment and Forests as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Medha_Kulkarni"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/science-technology-environment-forests"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-social-justice-empowerment",
+   "title": "Chairperson, DRSC on Social Justice and Empowerment",
+   "orgId": "in-com-drsc-social-justice-empowerment",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "P C Mohan",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "constituency": "Bangalore Central",
+    "notes": "Chairperson of the DRSC on Social Justice and Empowerment as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/P._C._Mohan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/social-justice-and-empowerment"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-transport-tourism-culture",
+   "title": "Chairperson, DRSC on Transport, Tourism and Culture",
+   "orgId": "in-com-drsc-transport-tourism-culture",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-chairman-rajya-sabha",
+   "holder": {
+    "name": "Sanjay Kumar Jha",
+    "party": "Janata Dal (United)",
+    "house": "Rajya Sabha",
+    "notes": "Chairperson of the DRSC on Transport, Tourism and Culture as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sanjay_Kumar_Jha"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/transport-culture-and-tourism"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-housing-urban-affairs",
+   "title": "Chairperson, DRSC on Housing and Urban Affairs",
+   "orgId": "in-com-drsc-housing-urban-affairs",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Magunta Srinivasulu Reddy",
+    "party": "Telugu Desam Party",
+    "house": "Lok Sabha",
+    "constituency": "Ongole",
+    "notes": "Chairperson of the DRSC on Housing and Urban Affairs as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Magunta_Sreenivasulu_Reddy"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/urban-development"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-drsc-water-resources",
+   "title": "Chairperson, DRSC on Water Resources",
+   "orgId": "in-com-drsc-water-resources",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "holder": {
+    "name": "Rajiv Pratap Rudy",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "constituency": "Saran",
+    "notes": "Chairperson of the DRSC on Water Resources as reconstituted for the 18th Lok Sabha (2026 cycle).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rajiv_Pratap_Rudy"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/water-resources"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-pac",
+   "title": "Chairperson, Public Accounts Committee",
+   "orgId": "in-com-pac",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "holder": {
+    "name": "K. C. Venugopal",
+    "party": "Indian National Congress",
+    "constituency": "Alappuzha",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._C._Venugopal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/public-accounts",
+    "https://en.wikipedia.org/wiki/List_of_committees_of_the_Parliament_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-estimates",
+   "title": "Chairperson, Estimates Committee",
+   "orgId": "in-com-estimates",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "holder": {
+    "name": "Sanjay Jaiswal",
+    "party": "Bharatiya Janata Party",
+    "constituency": "Paschim Champaran",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sanjay_Jaiswal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/estimates",
+    "https://en.wikipedia.org/wiki/List_of_committees_of_the_Parliament_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-copu",
+   "title": "Chairperson, Committee on Public Undertakings",
+   "orgId": "in-com-copu",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "holder": {
+    "name": "Baijayant Panda",
+    "party": "Bharatiya Janata Party",
+    "constituency": "Kendrapara",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Baijayant_Panda"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/parliamentary-committees/public-undertakings",
+    "https://en.wikipedia.org/wiki/List_of_committees_of_the_Parliament_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-jpc-one-nation-one-election",
+   "title": "Chairperson, JPC on One Nation One Election",
+   "orgId": "in-com-jpc-one-nation-one-election",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "P. P. Chaudhary",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/P._P._Chaudhary"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/billtrack/the-constitution-one-hundred-and-twenty-ninth-amendment-bill-2024",
+    "https://en.wikipedia.org/wiki/One_Nation,_One_Election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-jpc-removal-of-ministers-130th-amendment",
+   "title": "Chairperson, JPC on Removal of Arrested Ministers",
+   "orgId": "in-com-jpc-removal-of-ministers-130th-amendment",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "Aparajita Sarangi",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Aparajita_Sarangi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/billtrack/the-constitution-one-hundred-and-thirtieth-amendment-bill-2025"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-jpc-viksit-bharat-shiksha-adhishthan",
+   "title": "Chairperson, JPC on VBSA Bill",
+   "orgId": "in-com-jpc-viksit-bharat-shiksha-adhishthan",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "Daggubati Purandeswari",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Daggubati_Purandeswari"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/billtrack/the-viksit-bharat-shiksha-adhishthan-bill-2025"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-jpc-waqf-amendment-2024",
+   "title": "Chairperson, JPC on Waqf",
+   "orgId": "in-com-jpc-waqf-amendment-2024",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "Jagdambika Pal",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jagdambika_Pal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://prsindia.org/billtrack/the-waqf-amendment-bill-2024"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-bac-ls",
+   "title": "Chairperson, Business Advisory Committee (Lok Sabha)",
+   "orgId": "in-com-bac-ls",
+   "rank": "other",
+   "appointmentMode": "ex_officio",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Om Birla",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "notes": "Chaired ex officio by the Speaker of Lok Sabha (re-elected Speaker of the 18th Lok Sabha, June 2024).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Om_Birla"
+   }
+  },
+  {
+   "id": "in-pos-chair-absence-of-members-ls",
+   "title": "Chairperson, Committee on Absence of Members from the Sittings of the House",
+   "orgId": "in-com-absence-of-members-ls",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low",
+   "holder": null,
+   "notes": "Current (18th Lok Sabha) chairperson not independently confirmed from a 2025–26 dated source."
+  },
+  {
+   "id": "in-pos-chair-ethics-ls",
+   "title": "Chairperson, Ethics Committee (Lok Sabha)",
+   "orgId": "in-com-ethics-ls",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low",
+   "holder": null,
+   "notes": "Current (18th Lok Sabha) chairperson not independently confirmed from a 2025–26 dated source."
+  },
+  {
+   "id": "in-pos-chair-gpc-ls",
+   "title": "Chairperson, General Purposes Committee (Lok Sabha)",
+   "orgId": "in-com-gpc-ls",
+   "rank": "other",
+   "appointmentMode": "ex_officio",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Om Birla",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "notes": "Chaired ex officio by the Speaker; all Lok Sabha standing-committee chairpersons and floor leaders of recognised parties/groups are ex-officio members.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Om_Birla"
+   }
+  },
+  {
+   "id": "in-pos-chair-government-assurances-ls",
+   "title": "Chairperson, Committee on Government Assurances (Lok Sabha)",
+   "orgId": "in-com-government-assurances-ls",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low",
+   "holder": null,
+   "notes": "Current (18th Lok Sabha) chairperson not independently confirmed from a 2025–26 dated source."
+  },
+  {
+   "id": "in-pos-chair-house-committee-ls",
+   "title": "Chairperson, House Committee (Lok Sabha)",
+   "orgId": "in-com-house-committee-ls",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low",
+   "holder": null,
+   "notes": "Current (18th Lok Sabha) chairperson not independently confirmed from a 2025–26 dated source."
+  },
+  {
+   "id": "in-pos-chair-papers-laid-ls",
+   "title": "Chairperson, Committee on Papers Laid on the Table (Lok Sabha)",
+   "orgId": "in-com-papers-laid-ls",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low",
+   "holder": null,
+   "notes": "Current (18th Lok Sabha) chairperson not independently confirmed from a 2025–26 dated source."
+  },
+  {
+   "id": "in-pos-chair-petitions-ls",
+   "title": "Chairperson, Committee on Petitions (Lok Sabha)",
+   "orgId": "in-com-petitions-ls",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low",
+   "holder": null,
+   "notes": "Current (18th Lok Sabha) chairperson not independently confirmed from a 2025–26 dated source."
+  },
+  {
+   "id": "in-pos-chair-private-members-bills-ls",
+   "title": "Chairperson, Committee on Private Members' Bills and Resolutions (Lok Sabha)",
+   "orgId": "in-com-private-members-bills-ls",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low",
+   "holder": null,
+   "notes": "Current (18th Lok Sabha) chairperson not independently confirmed from a 2025–26 dated source."
+  },
+  {
+   "id": "in-pos-chair-privileges-ls",
+   "title": "Chairperson, Committee of Privileges (Lok Sabha)",
+   "orgId": "in-com-privileges-ls",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low",
+   "holder": null,
+   "notes": "Current (18th Lok Sabha) chairperson not independently confirmed from a 2025–26 dated source."
+  },
+  {
+   "id": "in-pos-chair-rules-ls",
+   "title": "Chairperson, Rules Committee (Lok Sabha)",
+   "orgId": "in-com-rules-ls",
+   "rank": "other",
+   "appointmentMode": "ex_officio",
+   "appointedBy": "in-pos-speaker-lok-sabha",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Om Birla",
+    "party": "Bharatiya Janata Party",
+    "house": "Lok Sabha",
+    "notes": "Chaired ex officio by the Speaker of Lok Sabha.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Om_Birla"
+   }
+  },
+  {
+   "id": "in-pos-chair-subordinate-legislation-ls",
+   "title": "Chairperson, Committee on Subordinate Legislation (Lok Sabha)",
+   "orgId": "in-com-subordinate-legislation-ls",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low",
+   "holder": null,
+   "notes": "Current (18th Lok Sabha) chairperson not independently confirmed from a 2025–26 dated source."
+  },
+  {
+   "id": "in-pos-chair-mplads-ls",
+   "title": "Chairperson, Committee on MPLADS (Lok Sabha)",
+   "orgId": "in-com-mplads-ls",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "vacant": false,
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low",
+   "holder": null,
+   "notes": "Current (18th Lok Sabha) chairperson not independently confirmed from a 2025–26 dated source."
+  },
+  {
+   "id": "in-pos-chair-bac-rs",
+   "title": "Chairperson, Business Advisory Committee (Rajya Sabha)",
+   "orgId": "in-com-bac-rs",
+   "rank": "other",
+   "appointmentMode": "ex_officio",
+   "appointedBy": "in-pos-chairman-rajya-sabha",
+   "holder": {
+    "name": "C.P Radhakrishnan",
+    "house": "Rajya Sabha",
+    "notes": "Rajya Sabha's own committee-integration API gives two different chairs for this committee across its endpoints: 'C.P Radhakrishnan' (https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman) vs 'Harivansh' (https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1). Not resolved from a third source; treat with caution.",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._P._Radhakrishnan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-ethics-rs",
+   "title": "Chairperson, Ethics Committee (Rajya Sabha)",
+   "orgId": "in-com-ethics-rs",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "Ghanshyam Tiwari",
+    "party": "Bharatiya Janata Party",
+    "house": "Rajya Sabha",
+    "notes": "Chair confirmed consistently as Ghanshyam Tiwari across both official Rajya Sabha committee-integration endpoints.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ghanshyam_Tiwari"
+   },
+   "vacant": false,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-gpc-rs",
+   "title": "Chairperson, General Purposes Committee (Rajya Sabha)",
+   "orgId": "in-com-gpc-rs",
+   "rank": "other",
+   "appointmentMode": "ex_officio",
+   "appointedBy": "in-pos-chairman-rajya-sabha",
+   "holder": {
+    "name": "C.P Radhakrishnan",
+    "house": "Rajya Sabha",
+    "notes": "Rajya Sabha's own committee-integration API gives two different chairs for this committee across its endpoints: 'C.P Radhakrishnan' (https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman) vs 'Harivansh' (https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1). Not resolved from a third source; treat with caution.",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._P._Radhakrishnan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-government-assurances-rs",
+   "title": "Chairperson, Committee on Government Assurances (Rajya Sabha)",
+   "orgId": "in-com-government-assurances-rs",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "M. Thambi Durai",
+    "party": "All India Anna Dravida Munnetra Kazhagam",
+    "house": "Rajya Sabha",
+    "notes": "Chair confirmed consistently as M. Thambi Durai across both official Rajya Sabha committee-integration endpoints.",
+    "wikipedia": "https://en.wikipedia.org/wiki/M._Thambi_Durai"
+   },
+   "vacant": false,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-house-committee-rs",
+   "title": "Chairperson, House Committee (Rajya Sabha)",
+   "orgId": "in-com-house-committee-rs",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "K. Laxman",
+    "house": "Rajya Sabha",
+    "notes": "Rajya Sabha's own committee-integration API gives two different chairs for this committee across its endpoints: 'K. Laxman' (https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman) vs 'G.C. Chandrashekhar' (https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1). Not resolved from a third source; treat with caution.",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._Laxman"
+   },
+   "vacant": false,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-mplads-rs",
+   "title": "Chairperson, Committee on MPLADS (Rajya Sabha)",
+   "orgId": "in-com-mplads-rs",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "Harivansh",
+    "party": "Independent",
+    "house": "Rajya Sabha",
+    "notes": "Rajya Sabha's own committee-integration API gives two different chairs for this committee across its endpoints: 'Harivansh' (https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman) vs 'Mithlesh Kumar' (https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1). Not resolved from a third source; treat with caution. CORRECTION 2026-09-25: source 'party' field for Harivansh was wrong/stale (showed 'Bharatiya Janata Party' / 'Nominated (Deputy Chairman)', neither a real party). Verified via Wikipedia (fresh fetch): his Bihar JD(U)-held Rajya Sabha seat ended 10 Apr 2026 (succeeded by Nitish Kumar in that seat); he was renominated the same day as an Independent MP (Nominated, Journalism quota) and continues as the 13th Deputy Chairperson of Rajya Sabha (office held continuously since 9 Aug 2018, unaffected by the change in seat/party). Party corrected to 'Independent'.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Harivansh_Narayan_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-papers-laid-rs",
+   "title": "Chairperson, Committee on Papers Laid on the Table (Rajya Sabha)",
+   "orgId": "in-com-papers-laid-rs",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "Laxmi Kant Bajpai",
+    "party": "Bharatiya Janata Party",
+    "house": "Rajya Sabha",
+    "notes": "Chair confirmed consistently as Laxmi Kant Bajpai across both official Rajya Sabha committee-integration endpoints.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Laxmikant_Bajpai"
+   },
+   "vacant": false,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-petitions-rs",
+   "title": "Chairperson, Committee on Petitions (Rajya Sabha)",
+   "orgId": "in-com-petitions-rs",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "Raghav Chadha",
+    "party": "Aam Aadmi Party",
+    "house": "Rajya Sabha",
+    "notes": "Chair confirmed consistently as Raghav Chadha across both official Rajya Sabha committee-integration endpoints.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Raghav_Chadha"
+   },
+   "vacant": false,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-privileges-rs",
+   "title": "Chairperson, Committee of Privileges (Rajya Sabha)",
+   "orgId": "in-com-privileges-rs",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "Harivansh",
+    "party": "Independent",
+    "house": "Rajya Sabha",
+    "notes": "Chair confirmed consistently as Harivansh across both official Rajya Sabha committee-integration endpoints. CORRECTION 2026-09-25: source 'party' field for Harivansh was wrong/stale (showed 'Bharatiya Janata Party' / 'Nominated (Deputy Chairman)', neither a real party). Verified via Wikipedia (fresh fetch): his Bihar JD(U)-held Rajya Sabha seat ended 10 Apr 2026 (succeeded by Nitish Kumar in that seat); he was renominated the same day as an Independent MP (Nominated, Journalism quota) and continues as the 13th Deputy Chairperson of Rajya Sabha (office held continuously since 9 Aug 2018, unaffected by the change in seat/party). Party corrected to 'Independent'.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Harivansh_Narayan_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-rules-rs",
+   "title": "Chairperson, Rules Committee (Rajya Sabha)",
+   "orgId": "in-com-rules-rs",
+   "rank": "other",
+   "appointmentMode": "ex_officio",
+   "appointedBy": "in-pos-chairman-rajya-sabha",
+   "holder": {
+    "name": "C.P Radhakrishnan",
+    "house": "Rajya Sabha",
+    "notes": "Rajya Sabha's own committee-integration API gives two different chairs for this committee across its endpoints: 'C.P Radhakrishnan' (https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman) vs 'Harivansh' (https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1). Not resolved from a third source; treat with caution.",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._P._Radhakrishnan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-subordinate-legislation-rs",
+   "title": "Chairperson, Committee on Subordinate Legislation (Rajya Sabha)",
+   "orgId": "in-com-subordinate-legislation-rs",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "Milind Murli Deora",
+    "party": "Shiv Sena",
+    "house": "Rajya Sabha",
+    "notes": "Chair confirmed consistently as Milind Murli Deora across both official Rajya Sabha committee-integration endpoints.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Milind_Deora"
+   },
+   "vacant": false,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-ict-management-rs",
+   "title": "Chairperson, Committee on Information and Communication Technology Management in Rajya Sabha",
+   "orgId": "in-com-ict-management-rs",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": {
+    "name": "Ranjeet Ranjan",
+    "party": "Bharatiya Janata Party",
+    "house": "Rajya Sabha",
+    "notes": "Rajya Sabha's own committee-integration API gives two different chairs for this committee across its endpoints: 'Ranjeet Ranjan' (https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman) vs 'Gulam Ali' (https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1). Not resolved from a third source; treat with caution."
+   },
+   "vacant": false,
+   "sources": [
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetCommitteeChairman",
+    "https://integration.rajyasabha.digital/committee-integration/api/v1/web/GetMastercommittee?catid=1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-empowerment-of-women",
+   "title": "Chairperson, Committee on Empowerment of Women",
+   "orgId": "in-com-empowerment-of-women",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": null,
+   "vacant": false,
+   "notes": "Current (18th Lok Sabha, 2024–) chairperson not independently confirmed from a 2025–26 dated source. A Wikipedia table dated to the 17th Lok Sabha (2019–2024) names a different holder for this committee; that data is stale and deliberately NOT carried forward as current.",
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-welfare-sc-st",
+   "title": "Chairperson, Committee on the Welfare of Scheduled Castes and Scheduled Tribes",
+   "orgId": "in-com-welfare-sc-st",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": null,
+   "vacant": false,
+   "notes": "Current (18th Lok Sabha, 2024–) chairperson not independently confirmed from a 2025–26 dated source. A Wikipedia table dated to the 17th Lok Sabha (2019–2024) names a different holder for this committee; that data is stale and deliberately NOT carried forward as current.",
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-library-committee",
+   "title": "Chairperson, Library Committee",
+   "orgId": "in-com-library-committee",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": null,
+   "vacant": false,
+   "notes": "Current (18th Lok Sabha, 2024–) chairperson not independently confirmed from a 2025–26 dated source. A Wikipedia table dated to the 17th Lok Sabha (2019–2024) names a different holder for this committee; that data is stale and deliberately NOT carried forward as current.",
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-offices-of-profit",
+   "title": "Chairperson, Joint Committee on Offices of Profit",
+   "orgId": "in-com-offices-of-profit",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": null,
+   "vacant": false,
+   "notes": "Current (18th Lok Sabha, 2024–) chairperson not independently confirmed from a 2025–26 dated source. A Wikipedia table dated to the 17th Lok Sabha (2019–2024) names a different holder for this committee; that data is stale and deliberately NOT carried forward as current.",
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-mp-salaries-allowances",
+   "title": "Chairperson, Joint Committee on Salaries and Allowances of Members of Parliament",
+   "orgId": "in-com-mp-salaries-allowances",
+   "rank": "other",
+   "appointmentMode": "nominated",
+   "holder": null,
+   "vacant": false,
+   "notes": "Current (18th Lok Sabha, 2024–) chairperson not independently confirmed from a 2025–26 dated source. A Wikipedia table dated to the 17th Lok Sabha (2019–2024) names a different holder for this committee; that data is stale and deliberately NOT carried forward as current.",
+   "sources": [
+    "https://sansad.in/ls/committee/other-parliamentary-standing-committees"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-com-drsc-agriculture",
+   "to": "in-min-agriculture-and-farmers-welfare",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/agriculture"
+  },
+  {
+   "from": "in-com-drsc-agriculture",
+   "to": "in-min-fisheries-animal-husbandry-and-dairying",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/agriculture"
+  },
+  {
+   "from": "in-com-drsc-agriculture",
+   "to": "in-min-food-processing-industries",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/agriculture"
+  },
+  {
+   "from": "in-com-drsc-agriculture",
+   "to": "in-min-cooperation",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/agriculture"
+  },
+  {
+   "from": "in-com-drsc-chemicals-fertilizers",
+   "to": "in-min-chemicals-and-fertilizers",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/chemicals-and-fertilizers"
+  },
+  {
+   "from": "in-com-drsc-coal-mines-steel",
+   "to": "in-min-coal",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/coal-and-steel"
+  },
+  {
+   "from": "in-com-drsc-coal-mines-steel",
+   "to": "in-min-mines",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/coal-and-steel"
+  },
+  {
+   "from": "in-com-drsc-coal-mines-steel",
+   "to": "in-min-steel",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/coal-and-steel"
+  },
+  {
+   "from": "in-com-drsc-commerce",
+   "to": "in-dept-commerce",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/commerce"
+  },
+  {
+   "from": "in-com-drsc-defence",
+   "to": "in-min-defence",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/defence"
+  },
+  {
+   "from": "in-com-drsc-education-women-children-youth-sports",
+   "to": "in-min-education",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/education-women-children-youth-and-sports"
+  },
+  {
+   "from": "in-com-drsc-education-women-children-youth-sports",
+   "to": "in-min-women-and-child-development",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/education-women-children-youth-and-sports"
+  },
+  {
+   "from": "in-com-drsc-education-women-children-youth-sports",
+   "to": "in-min-youth-affairs-and-sports",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/education-women-children-youth-and-sports"
+  },
+  {
+   "from": "in-com-drsc-energy",
+   "to": "in-min-power",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/energy"
+  },
+  {
+   "from": "in-com-drsc-energy",
+   "to": "in-min-new-and-renewable-energy",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/energy"
+  },
+  {
+   "from": "in-com-drsc-external-affairs",
+   "to": "in-min-external-affairs",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/external-affairs"
+  },
+  {
+   "from": "in-com-drsc-finance",
+   "to": "in-min-finance",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/finance"
+  },
+  {
+   "from": "in-com-drsc-finance",
+   "to": "in-min-corporate-affairs",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/finance"
+  },
+  {
+   "from": "in-com-drsc-finance",
+   "to": "in-min-statistics-and-programme-implementation",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/finance"
+  },
+  {
+   "from": "in-com-drsc-finance",
+   "to": "in-min-planning",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/finance"
+  },
+  {
+   "from": "in-com-drsc-consumer-affairs-food-public-distribution",
+   "to": "in-min-consumer-affairs-food-and-public-distribution",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/food-consumer-affairs-and-public-distribution"
+  },
+  {
+   "from": "in-com-drsc-health-family-welfare",
+   "to": "in-min-health-and-family-welfare",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/health-and-family-welfare"
+  },
+  {
+   "from": "in-com-drsc-health-family-welfare",
+   "to": "in-min-ayush",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/health-and-family-welfare"
+  },
+  {
+   "from": "in-com-drsc-home-affairs",
+   "to": "in-min-home-affairs",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/home-affairs"
+  },
+  {
+   "from": "in-com-drsc-industry",
+   "to": "in-min-micro-small-and-medium-enterprises",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/industry"
+  },
+  {
+   "from": "in-com-drsc-industry",
+   "to": "in-min-heavy-industries",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/industry"
+  },
+  {
+   "from": "in-com-drsc-communications-it",
+   "to": "in-min-information-and-broadcasting",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/information-technology"
+  },
+  {
+   "from": "in-com-drsc-communications-it",
+   "to": "in-min-electronics-and-information-technology",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/information-technology"
+  },
+  {
+   "from": "in-com-drsc-communications-it",
+   "to": "in-min-communications",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/information-technology"
+  },
+  {
+   "from": "in-com-drsc-labour-textiles-skill-development",
+   "to": "in-min-labour-and-employment",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/labour"
+  },
+  {
+   "from": "in-com-drsc-labour-textiles-skill-development",
+   "to": "in-min-textiles",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/labour"
+  },
+  {
+   "from": "in-com-drsc-labour-textiles-skill-development",
+   "to": "in-min-skill-development-and-entrepreneurship",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/labour"
+  },
+  {
+   "from": "in-com-drsc-personnel-public-grievances-law-justice",
+   "to": "in-min-personnel-public-grievances-and-pensions",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/personnel-public-grievances-law-and-justice"
+  },
+  {
+   "from": "in-com-drsc-personnel-public-grievances-law-justice",
+   "to": "in-min-law-and-justice",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/personnel-public-grievances-law-and-justice"
+  },
+  {
+   "from": "in-com-drsc-petroleum-natural-gas",
+   "to": "in-min-petroleum-and-natural-gas",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/petroleum-natural-gas"
+  },
+  {
+   "from": "in-com-drsc-railways",
+   "to": "in-min-railways",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/railways"
+  },
+  {
+   "from": "in-com-drsc-rural-development-panchayati-raj",
+   "to": "in-min-rural-development",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/rural-development"
+  },
+  {
+   "from": "in-com-drsc-rural-development-panchayati-raj",
+   "to": "in-min-panchayati-raj",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/rural-development"
+  },
+  {
+   "from": "in-com-drsc-science-tech-environment-forests",
+   "to": "in-min-science-and-technology",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/science-technology-environment-forests"
+  },
+  {
+   "from": "in-com-drsc-science-tech-environment-forests",
+   "to": "in-min-earth-sciences",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/science-technology-environment-forests"
+  },
+  {
+   "from": "in-com-drsc-science-tech-environment-forests",
+   "to": "in-min-environment-forest-and-climate-change",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/science-technology-environment-forests"
+  },
+  {
+   "from": "in-com-drsc-social-justice-empowerment",
+   "to": "in-min-social-justice-and-empowerment",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/social-justice-and-empowerment"
+  },
+  {
+   "from": "in-com-drsc-social-justice-empowerment",
+   "to": "in-min-tribal-affairs",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/social-justice-and-empowerment"
+  },
+  {
+   "from": "in-com-drsc-social-justice-empowerment",
+   "to": "in-min-minority-affairs",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/social-justice-and-empowerment"
+  },
+  {
+   "from": "in-com-drsc-transport-tourism-culture",
+   "to": "in-min-road-transport-and-highways",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/transport-culture-and-tourism"
+  },
+  {
+   "from": "in-com-drsc-transport-tourism-culture",
+   "to": "in-min-ports-shipping-and-waterways",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/transport-culture-and-tourism"
+  },
+  {
+   "from": "in-com-drsc-transport-tourism-culture",
+   "to": "in-min-civil-aviation",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/transport-culture-and-tourism"
+  },
+  {
+   "from": "in-com-drsc-transport-tourism-culture",
+   "to": "in-min-culture",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/transport-culture-and-tourism"
+  },
+  {
+   "from": "in-com-drsc-transport-tourism-culture",
+   "to": "in-min-tourism",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in the Council of States",
+   "source": "https://prsindia.org/parliamentary-committees/transport-culture-and-tourism"
+  },
+  {
+   "from": "in-com-drsc-housing-urban-affairs",
+   "to": "in-min-housing-and-urban-affairs",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/urban-development"
+  },
+  {
+   "from": "in-com-drsc-water-resources",
+   "to": "in-min-jal-shakti",
+   "type": "oversees",
+   "basis": "Rules of Procedure and Conduct of Business in Lok Sabha",
+   "source": "https://prsindia.org/parliamentary-committees/water-resources"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-power",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-new-and-renewable-energy",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-civil-aviation",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-tourism",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-culture",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-health-and-family-welfare",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-education",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-home-affairs",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-communications",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-youth-affairs-and-sports",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-finance",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-railways",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-petroleum-and-natural-gas",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-electronics-and-information-technology",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-heavy-industries",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-steel",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-textiles",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-road-transport-and-highways",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-mines",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-chemicals-and-fertilizers",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-coal",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  },
+  {
+   "from": "in-com-estimates",
+   "to": "in-min-environment-forest-and-climate-change",
+   "type": "oversees",
+   "basis": "Current (2026-27) examination group selected by the Estimates Committee; NOT a fixed jurisdiction — the Committee has none and rotates across ministries year to year.",
+   "source": "https://prsindia.org/parliamentary-committees/estimates"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 43,
+  "corrections": [
+   "in-pos-chair-mplads-rs: holder.party 'Bharatiya Janata Party' -> 'Independent' (Harivansh's Bihar/JD(U) RS term ended 2026-04-10; renominated Independent, Journalism quota, same day; verified via Wikipedia fresh fetch)",
+   "in-pos-chair-privileges-rs: holder.party 'Nominated (Deputy Chairman)' -> 'Independent' (Harivansh's Bihar/JD(U) RS term ended 2026-04-10; renominated Independent, Journalism quota, same day; verified via Wikipedia fresh fetch)",
+   "top-level notes: '18th Lok Sabha, 2024-26 term' -> '18th Lok Sabha (2024-2029 term, so far in its 2024-26 span)' (18th LS's constitutional term runs to 2029, not 2026; avoids implying the House itself expires in 2026)",
+   "Added holder.wikipedia for 44 positions (schema requires this field 'when a page exists'; 0 of 46 named holders had it before verification). Each URL was checked live via curl (HTTP 200) and cross-checked against the person's infobox to rule out same-name collisions (e.g. rejected en.wikipedia.org/wiki/Sanjay_Jha_(politician) — a Congress spokesperson from Bhagalpur, Bihar — as a false match for DRSC Transport/Tourism/Culture chair Sanjay Kumar Jha, a JD(U) Rajya Sabha MP from Bihar since 2024-04-04; used Sanjay_Kumar_Jha instead). Could not find a Wikipedia page for 'Azad Kirti Jha' (TMC, DRSC Chemicals & Fertilizers chair, Bardhaman-Durgapur, per PRS profile prsindia.org/mptrack/18-lok-sabha/azad-kirti-jha) — left without a wikipedia URL rather than guessing."
+  ]
+ }
+}

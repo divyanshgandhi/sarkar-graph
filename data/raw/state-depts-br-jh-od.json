@@ -1,0 +1,3087 @@
+{
+ "segment": "state-depts-br-jh-od",
+ "asOf": "2026-09-25",
+ "notes": "State-department entities for Bihar, Jharkhand and Odisha, sourced from each state's official portal navigation (state.bihar.gov.in, jharkhand.gov.in Department Directory, odisha.gov.in/government/department-list) cross-checked against the existing states-br-jh-od.json ministers file for portfolio->minister mapping, plus Wikipedia 'Government of Bihar' / 'Government of Odisha' pages for Chief-Minister-held portfolios. No administrative secretary (Principal Secretary / Secretary) positions are included in this run: this session's WebSearch budget was exhausted by earlier parallel research segments, state.bihar.gov.in department sub-pages return infinite HTTP redirects to curl/WebFetch (session-routed CMS, no stable page title to scrape), and Jharkhand/Odisha do not appear to publish a browsable current secretary-posting directory reachable via curl/WebFetch alone -- so no secretary name/posting could be confirmed to the quality bar (2025-2026 dated source). This needs a follow-up pass with WebSearch (for GAD/Cabinet Secretariat posting-order PDFs and press coverage of IAS transfers) rather than being guessed. Bihar: omitted 3 nav slugs (cad, csd, had) whose official department name could not be confirmed from any accessible source -- flagging as unresolved rather than inventing a name. Where a department's current minister could not be confirmed from the existing verified ministers file or from Wikipedia, headPositionId is omitted (Jharkhand: Building Construction, Energy, Forest/Environment/Climate Change, Higher & Technical Education, Industries, Information & Public Relations, IT & e-Governance, Labour/Employment/Training/Skill Development, Law, Mines & Geology, Tourism/Arts/Culture/Sports/Youth Affairs, Women/Child Development & Social Security) and confidence is set low/medium on CM-by-convention assignments (Home, GAD/GA, Vigilance, Cabinet Secretariat, Personnel, Road Construction) that follow standard Indian state-government practice but are not individually press-confirmed for the current 2025-2026 cabinet. Odisha is the most complete: all 39 identified departments map cleanly onto the CM, 2 Deputy CMs and 13 ministers already in states-br-jh-od.json with no gaps.",
+ "entities": [
+  {
+   "id": "st-br-dept-animal-and-fisheries-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Animal & Fisheries Resources Department",
+   "aliases": [
+    "AHD",
+    "Dairy, Fisheries and Animal Resources Department"
+   ],
+   "description": "Runs veterinary services, dairy development and fisheries programmes for Bihar's livestock and fish-farming sector.",
+   "officialUrl": "https://state.bihar.gov.in/ahd/",
+   "headPositionId": "st-br-pos-minister-24",
+   "sources": [
+    "https://state.bihar.gov.in/ahd/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-building-construction",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Building Construction Department",
+   "aliases": [
+    "BCD"
+   ],
+   "description": "Designs, builds and maintains government office buildings, hospitals and other state-owned civil works in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/bcd/",
+   "headPositionId": "st-br-pos-minister-5",
+   "sources": [
+    "https://state.bihar.gov.in/bcd/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-bc-and-ebc-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Backward Classes and Extremely Backward Classes Welfare Department",
+   "aliases": [
+    "BC-EBC Welfare Department"
+   ],
+   "description": "Runs scholarships, hostels and welfare schemes for Backward Classes and Extremely Backward Classes students and communities in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/bcebcwelfare/",
+   "headPositionId": "st-br-pos-minister-15",
+   "sources": [
+    "https://state.bihar.gov.in/bcebcwelfare/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-commercial-taxes",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Commercial Taxes Department",
+   "aliases": [
+    "Commercial Tax Department"
+   ],
+   "description": "Administers GST and other state commercial/sales tax collection in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/biharcommercialtax/",
+   "headPositionId": "st-br-pos-deputy-cm-2",
+   "sources": [
+    "https://state.bihar.gov.in/biharcommercialtax/",
+    "https://en.wikipedia.org/wiki/Government_of_Bihar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Tourism Department",
+   "aliases": [
+    "Bihar Tourism"
+   ],
+   "description": "Develops and promotes tourist sites, circuits and hospitality infrastructure across Bihar, including Bodh Gaya and the Buddhist circuit.",
+   "officialUrl": "https://state.bihar.gov.in/bihartourism/",
+   "headPositionId": "st-br-pos-minister-19",
+   "sources": [
+    "https://state.bihar.gov.in/bihartourism/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-cooperative",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Cooperative Department",
+   "aliases": [],
+   "description": "Regulates and promotes cooperative societies, including PACS and dairy/sugar cooperatives, across Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/cooperative/",
+   "headPositionId": "st-br-pos-minister-6",
+   "sources": [
+    "https://state.bihar.gov.in/cooperative/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Disaster Management Department",
+   "aliases": [],
+   "description": "Coordinates flood, drought and other disaster relief, mitigation and response across Bihar, a state highly exposed to annual flooding.",
+   "officialUrl": "https://state.bihar.gov.in/disastermgmt/",
+   "headPositionId": "st-br-pos-minister-16",
+   "sources": [
+    "https://state.bihar.gov.in/disastermgmt/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Information Technology Department",
+   "aliases": [
+    "DIT"
+   ],
+   "description": "Runs e-governance projects, state data centres and digital service delivery for Bihar citizens.",
+   "officialUrl": "https://state.bihar.gov.in/dit/",
+   "headPositionId": "st-br-pos-minister-7",
+   "sources": [
+    "https://state.bihar.gov.in/dit/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-science-and-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Science, Technology & Technical Education Department",
+   "aliases": [
+    "DST"
+   ],
+   "description": "Oversees polytechnics, engineering colleges and science promotion programmes in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/dst/",
+   "headPositionId": "st-br-pos-minister-18",
+   "sources": [
+    "https://state.bihar.gov.in/dst/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Education Department",
+   "aliases": [
+    "Shiksha Vibhag"
+   ],
+   "description": "Runs Bihar's school system, teacher recruitment and state education boards; the Higher Education portfolio within this department is currently held separately by the Minister for Higher Education & Law.",
+   "officialUrl": "https://state.bihar.gov.in/educationbihar/",
+   "headPositionId": "st-br-pos-minister-28",
+   "sources": [
+    "https://state.bihar.gov.in/educationbihar/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-br-dept-energy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Energy Department",
+   "aliases": [],
+   "description": "Oversees Bihar's state power generation, transmission and distribution companies and rural electrification.",
+   "officialUrl": "https://state.bihar.gov.in/energy/",
+   "headPositionId": "st-br-pos-minister-25",
+   "sources": [
+    "https://state.bihar.gov.in/energy/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-prohibition-excise-and-registration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Prohibition, Excise and Registration Department",
+   "aliases": [
+    "Excise Department",
+    "Registration Department"
+   ],
+   "description": "Enforces Bihar's liquor prohibition law, collects excise revenue, and registers property deeds and documents across the state.",
+   "officialUrl": "https://state.bihar.gov.in/excise/",
+   "headPositionId": "st-br-pos-minister-13",
+   "sources": [
+    "https://state.bihar.gov.in/excise/",
+    "https://state.bihar.gov.in/registration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-food-and-consumer-protection",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Food and Consumer Protection Department",
+   "aliases": [],
+   "description": "Runs the public distribution system (ration shops), food-grain procurement and consumer-protection enforcement in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/fcp/",
+   "headPositionId": "st-br-pos-minister-10",
+   "sources": [
+    "https://state.bihar.gov.in/fcp/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Finance Department",
+   "aliases": [],
+   "description": "Prepares the state budget, manages treasury, borrowing and pay/pension disbursal for the Government of Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/finance/",
+   "headPositionId": "st-br-pos-deputy-cm-2",
+   "sources": [
+    "https://state.bihar.gov.in/finance/",
+    "https://en.wikipedia.org/wiki/Government_of_Bihar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-environment-forest-and-climate-change",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Environment, Forest and Climate Change Department",
+   "aliases": [],
+   "description": "Manages Bihar's forests, wildlife sanctuaries, pollution control and state climate-action programmes.",
+   "officialUrl": "https://state.bihar.gov.in/forest/",
+   "headPositionId": "st-br-pos-minister-29",
+   "sources": [
+    "https://state.bihar.gov.in/forest/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "General Administration Department",
+   "aliases": [
+    "GAD"
+   ],
+   "description": "Coordinates the state secretariat's administrative functions, protocol, and cabinet-level administrative orders; conventionally held by the Chief Minister.",
+   "officialUrl": "https://state.bihar.gov.in/gad/",
+   "headPositionId": "st-br-pos-chief-minister",
+   "sources": [
+    "https://state.bihar.gov.in/gad/",
+    "https://en.wikipedia.org/wiki/Government_of_Bihar"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-br-dept-health",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Health Department",
+   "aliases": [],
+   "description": "Runs Bihar's public hospitals, primary health centres and state health programmes.",
+   "officialUrl": "https://state.bihar.gov.in/health/",
+   "headPositionId": "st-br-pos-minister-4",
+   "sources": [
+    "https://state.bihar.gov.in/health/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Home Department",
+   "aliases": [],
+   "description": "Oversees the Bihar Police, prisons, home guards and internal security; conventionally held by the Chief Minister.",
+   "officialUrl": "https://state.bihar.gov.in/home/",
+   "headPositionId": "st-br-pos-chief-minister",
+   "sources": [
+    "https://state.bihar.gov.in/home/",
+    "https://en.wikipedia.org/wiki/Government_of_Bihar"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-br-dept-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Industries Department",
+   "aliases": [],
+   "description": "Promotes industrial investment, MSMEs and industrial infrastructure (industrial areas, single-window clearance) in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/industries/",
+   "headPositionId": "st-br-pos-minister-22",
+   "sources": [
+    "https://state.bihar.gov.in/industries/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Agriculture Department",
+   "aliases": [
+    "Krishi Vibhag"
+   ],
+   "description": "Runs farm-input subsidies, crop-advisory and agricultural extension services for Bihar's farmers.",
+   "officialUrl": "https://state.bihar.gov.in/krishi/",
+   "headPositionId": "st-br-pos-minister-2",
+   "sources": [
+    "https://state.bihar.gov.in/krishi/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-labour-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Labour Resources Department",
+   "aliases": [],
+   "description": "Enforces labour laws, registers establishments and runs welfare boards for workers and migrant labourers from Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/labour/",
+   "headPositionId": "st-br-pos-minister-12",
+   "sources": [
+    "https://state.bihar.gov.in/labour/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-law",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Law Department",
+   "aliases": [],
+   "description": "Provides legal advice to the state government, drafts legislation, and administers subordinate courts' infrastructure in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/law/",
+   "headPositionId": "st-br-pos-minister-9",
+   "sources": [
+    "https://state.bihar.gov.in/law/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-revenue-and-land-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Revenue and Land Reforms Department",
+   "aliases": [],
+   "description": "Maintains land records, conducts land surveys/settlements and manages government (revenue) land across Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/lrc/",
+   "headPositionId": "st-br-pos-minister-3",
+   "sources": [
+    "https://state.bihar.gov.in/lrc/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-mines-and-geology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Mines and Geology Department",
+   "aliases": [],
+   "description": "Regulates mineral extraction, sand-mining leases and mining royalty collection in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/mines/",
+   "headPositionId": "st-br-pos-minister-26",
+   "sources": [
+    "https://state.bihar.gov.in/mines/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-minority-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Minority Welfare Department",
+   "aliases": [],
+   "description": "Runs scholarships, madrasa modernisation and welfare schemes for Bihar's religious minority communities.",
+   "officialUrl": "https://state.bihar.gov.in/minoritywelfare/",
+   "headPositionId": "st-br-pos-minister-23",
+   "sources": [
+    "https://state.bihar.gov.in/minoritywelfare/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-minor-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Minor Water Resources Department",
+   "aliases": [],
+   "description": "Builds and maintains small irrigation schemes, check-dams and lift-irrigation for Bihar farmers, distinct from the major Water Resources Department.",
+   "officialUrl": "https://state.bihar.gov.in/mwrd/",
+   "headPositionId": "st-br-pos-minister-14",
+   "sources": [
+    "https://state.bihar.gov.in/mwrd/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-personnel-and-administrative-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Personnel and Administrative Reforms Department",
+   "aliases": [
+    "PAD"
+   ],
+   "description": "Handles state civil-service recruitment rules, cadre management and administrative reform for Bihar government employees; conventionally with the Chief Minister.",
+   "officialUrl": "https://state.bihar.gov.in/pad/",
+   "headPositionId": "st-br-pos-chief-minister",
+   "sources": [
+    "https://state.bihar.gov.in/pad/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-br-dept-public-health-engineering",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Public Health Engineering Department",
+   "aliases": [
+    "PHED"
+   ],
+   "description": "Supplies piped drinking water and sanitation infrastructure across Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/phed/",
+   "headPositionId": "st-br-pos-minister-30",
+   "sources": [
+    "https://state.bihar.gov.in/phed/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-planning-and-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Planning and Development Department",
+   "aliases": [],
+   "description": "Prepares Bihar's five-year and annual development plans and monitors scheme implementation across departments.",
+   "officialUrl": "https://state.bihar.gov.in/planning/",
+   "headPositionId": "st-br-pos-minister-11",
+   "sources": [
+    "https://state.bihar.gov.in/planning/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-panchayati-raj",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Panchayati Raj Department",
+   "aliases": [],
+   "description": "Oversees Bihar's three-tier panchayat system, panchayat elections coordination and local rural governance funding.",
+   "officialUrl": "https://state.bihar.gov.in/prdbihar/",
+   "headPositionId": "st-br-pos-minister-32",
+   "sources": [
+    "https://state.bihar.gov.in/prdbihar/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-road-construction",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Road Construction Department",
+   "aliases": [
+    "RCD"
+   ],
+   "description": "Builds and maintains state highways and major district roads in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/rcd/",
+   "headPositionId": "st-br-pos-minister-17",
+   "sources": [
+    "https://state.bihar.gov.in/rcd/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Rural Development Department",
+   "aliases": [],
+   "description": "Implements MGNREGA, rural housing (PMAY-G) and poverty-alleviation schemes across Bihar's villages.",
+   "officialUrl": "https://state.bihar.gov.in/rdd/",
+   "headPositionId": "st-br-pos-minister-1",
+   "sources": [
+    "https://state.bihar.gov.in/rdd/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-rural-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Rural Works Department",
+   "aliases": [
+    "RWD"
+   ],
+   "description": "Builds and maintains rural roads (PMGSY) connecting Bihar's villages.",
+   "officialUrl": "https://state.bihar.gov.in/rwdbihar/",
+   "headPositionId": "st-br-pos-minister-21",
+   "sources": [
+    "https://state.bihar.gov.in/rwdbihar/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-sc-and-st-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Scheduled Caste and Scheduled Tribe Welfare Department",
+   "aliases": [],
+   "description": "Runs scholarships, hostels and welfare schemes for Scheduled Caste and Scheduled Tribe students and communities in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/scstwelfare/",
+   "headPositionId": "st-br-pos-minister-20",
+   "sources": [
+    "https://state.bihar.gov.in/scstwelfare/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Social Welfare Department",
+   "aliases": [],
+   "description": "Runs women- and child-welfare schemes, old-age/disability pensions and anganwadi services across Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/socialwelfare/",
+   "headPositionId": "st-br-pos-minister-27",
+   "sources": [
+    "https://state.bihar.gov.in/socialwelfare/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-sports",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Sports Department",
+   "aliases": [],
+   "description": "Develops sports infrastructure and supports athletes and sporting events in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/sport/",
+   "headPositionId": "st-br-pos-minister-22",
+   "sources": [
+    "https://state.bihar.gov.in/sport/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-sugarcane-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Sugarcane Industries Department",
+   "aliases": [],
+   "description": "Regulates sugarcane pricing, procurement and the state's sugar-mill industry.",
+   "officialUrl": "https://state.bihar.gov.in/sugarcane/",
+   "headPositionId": "st-br-pos-minister-31",
+   "sources": [
+    "https://state.bihar.gov.in/sugarcane/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Transport Department",
+   "aliases": [],
+   "description": "Regulates motor vehicles, driving licences, road-safety enforcement and public bus transport in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/transport/",
+   "headPositionId": "st-br-pos-minister-8",
+   "sources": [
+    "https://state.bihar.gov.in/transport/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-housing-and-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Housing and Urban Development Department",
+   "aliases": [
+    "UDHD"
+   ],
+   "description": "Oversees municipal governance, urban planning, housing schemes and civic infrastructure in Bihar's towns and cities.",
+   "officialUrl": "https://state.bihar.gov.in/urban/",
+   "headPositionId": "st-br-pos-minister-7",
+   "sources": [
+    "https://state.bihar.gov.in/urban/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-vigilance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Vigilance Department",
+   "aliases": [],
+   "description": "Investigates corruption and disproportionate-assets cases against Bihar government officials; conventionally held by the Chief Minister.",
+   "officialUrl": "https://state.bihar.gov.in/vigilance/",
+   "headPositionId": "st-br-pos-chief-minister",
+   "sources": [
+    "https://state.bihar.gov.in/vigilance/",
+    "https://en.wikipedia.org/wiki/Government_of_Bihar"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-br-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Water Resources Department",
+   "aliases": [
+    "WRD"
+   ],
+   "description": "Manages Bihar's major irrigation canals, river embankments and flood-control infrastructure.",
+   "officialUrl": "https://state.bihar.gov.in/wrd/",
+   "headPositionId": "st-br-pos-deputy-cm-1",
+   "sources": [
+    "https://state.bihar.gov.in/wrd/",
+    "https://en.wikipedia.org/wiki/Government_of_Bihar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-art-culture-and-youth",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Art, Culture and Youth Department",
+   "aliases": [
+    "YAC"
+   ],
+   "description": "Promotes Bihar's museums, archives, fine arts and youth cultural programmes.",
+   "officialUrl": "https://state.bihar.gov.in/yac/",
+   "headPositionId": "st-br-pos-minister-26",
+   "sources": [
+    "https://state.bihar.gov.in/yac/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-br-dept-youth-employment-and-skill-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-br-government",
+   "name": "Youth, Employment and Skill Development Department",
+   "aliases": [
+    "YESD"
+   ],
+   "description": "Runs skill-training centres (Kushal Yuva Programme) and employment-linkage schemes for young people in Bihar.",
+   "officialUrl": "https://state.bihar.gov.in/yesd/",
+   "headPositionId": "st-br-pos-minister-12",
+   "sources": [
+    "https://state.bihar.gov.in/yesd/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-agriculture-animal-husbandry-and-cooperative",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Agriculture, Animal Husbandry & Co-operative",
+   "aliases": [],
+   "description": "Runs farm-input subsidies, veterinary services and cooperative societies for Jharkhand's farmers.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-9",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Jharkhand"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-building-construction",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Building Construction",
+   "aliases": [],
+   "description": "Designs, builds and maintains government office buildings and other state civil works in Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "sources": [
+    "https://www.jharkhand.gov.in/",
+    "https://en.wikipedia.org/wiki/Government_of_Jharkhand"
+   ],
+   "confidence": "medium",
+   "headPositionId": "st-jh-pos-chief-minister"
+  },
+  {
+   "id": "st-jh-dept-cabinet-election",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Cabinet (Election)",
+   "aliases": [],
+   "description": "Handles cabinet coordination matters relating to elections for the Government of Jharkhand; conventionally with the Chief Minister.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-chief-minister",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-jh-dept-cabinet-secretariat-and-vigilance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Cabinet Secretariat and Vigilance",
+   "aliases": [],
+   "description": "Services state Cabinet meetings and investigates corruption/vigilance cases against Jharkhand government officials; conventionally held by the Chief Minister.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-chief-minister",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jh-dept-commercial-taxes",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Commercial Taxes",
+   "aliases": [],
+   "description": "Administers GST and other state commercial/sales tax collection in Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-1",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-drinking-water-and-sanitation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Drinking Water and Sanitation",
+   "aliases": [],
+   "description": "Supplies piped drinking water and sanitation infrastructure across Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-8",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-energy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Energy",
+   "aliases": [],
+   "description": "Oversees Jharkhand's state power generation, transmission and distribution and rural electrification.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-jh-dept-excise-and-prohibition",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Excise and Prohibition",
+   "aliases": [],
+   "description": "Regulates liquor sale and collects excise revenue in Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-8",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Finance",
+   "aliases": [],
+   "description": "Prepares the state budget, manages treasury, borrowing and pay/pension disbursal for the Government of Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-1",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-food-public-distribution-and-consumer-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Food, Public Distribution & Consumer Affairs",
+   "aliases": [],
+   "description": "Runs the public distribution system (ration shops) and consumer-protection enforcement in Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-5",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-forest-environment-and-climate-change",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Forest, Environment & Climate Change",
+   "aliases": [],
+   "description": "Manages Jharkhand's forests, wildlife sanctuaries, pollution control and state climate-action programmes.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-jh-dept-health-medical-education-and-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Health, Medical Education & Family Welfare",
+   "aliases": [],
+   "description": "Runs Jharkhand's public hospitals, medical colleges and state health programmes.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-5",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-higher-and-technical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Higher and Technical Education",
+   "aliases": [],
+   "description": "Oversees universities, colleges and technical/engineering education institutions in Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "sources": [
+    "https://www.jharkhand.gov.in/",
+    "https://en.wikipedia.org/wiki/Government_of_Jharkhand"
+   ],
+   "confidence": "medium",
+   "headPositionId": "st-jh-pos-minister-10"
+  },
+  {
+   "id": "st-jh-dept-home-jail-and-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Home, Jail & Disaster Management",
+   "aliases": [],
+   "description": "Oversees the Jharkhand Police, prisons and internal security, and coordinates disaster relief; the Chief Minister holds Home and Jail, while the Disaster Management subject is currently held by Minister Irfan Ansari.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-chief-minister",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jh-dept-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Industries",
+   "aliases": [],
+   "description": "Promotes industrial investment, MSMEs and industrial infrastructure in Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-jh-dept-information-and-public-relations",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Information & Public Relations",
+   "aliases": [],
+   "description": "Handles Jharkhand government press releases, advertising and public communication.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-jh-dept-information-technology-and-e-governance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Information Technology & e-Governance",
+   "aliases": [],
+   "description": "Runs e-governance projects and digital service delivery for Jharkhand citizens.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-jh-dept-labour-employment-training-and-skill-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Labour, Employment, Training and Skill Development",
+   "aliases": [],
+   "description": "Enforces labour laws and runs skill-training and employment-linkage programmes in Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-jh-dept-law",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Law",
+   "aliases": [],
+   "description": "Provides legal advice to the state government and drafts legislation for Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-jh-dept-mines-and-geology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Mines & Geology",
+   "aliases": [],
+   "description": "Regulates mineral extraction and mining royalty collection in mineral-rich Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-jh-dept-panchayati-raj",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Panchayati Raj",
+   "aliases": [],
+   "description": "Oversees Jharkhand's panchayat system and local rural governance funding.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-7",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-personnel-administrative-reforms-and-rajbhasha",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Personnel, Administrative Reforms & Rajbhasha",
+   "aliases": [],
+   "description": "Handles state civil-service recruitment rules, cadre management and official-language policy for Jharkhand; conventionally held by the Chief Minister.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-chief-minister",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jh-dept-planning-and-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Planning & Development",
+   "aliases": [],
+   "description": "Prepares Jharkhand's development plans and monitors scheme implementation across departments.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-1",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-revenue-registration-and-land-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Revenue, Registration & Land Reforms",
+   "aliases": [],
+   "description": "Maintains land records and manages government land across Jharkhand; the Registration subject is currently held by Minister Deepak Birua.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-2",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jh-dept-road-construction",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Road Construction",
+   "aliases": [],
+   "description": "Builds and maintains state highways and major roads in Jharkhand; held by the Chief Minister in the previous ministry, not independently re-confirmed for the current cabinet.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-chief-minister",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-jh-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Rural Development",
+   "aliases": [],
+   "description": "Implements MGNREGA, rural housing and poverty-alleviation schemes across Jharkhand's villages.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-7",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-scheduled-tribe-scheduled-caste-minority-and-backward-class-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Scheduled Tribe, Scheduled Caste, Minority and Backward Class Welfare",
+   "aliases": [],
+   "description": "Runs scholarships, hostels and welfare schemes for ST, SC, minority and backward-class communities in Jharkhand; the Minority Welfare subject is currently held by Minister Hafizul Hasan.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-4",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jh-dept-school-education-and-literacy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of School Education & Literacy",
+   "aliases": [],
+   "description": "Runs Jharkhand's school system, teacher recruitment and adult-literacy programmes.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-3",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-tourism-arts-culture-sports-and-youth-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Tourism, Arts, Culture, Sports & Youth Affairs",
+   "aliases": [],
+   "description": "Develops tourist sites and supports arts, culture, sport and youth programmes in Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "sources": [
+    "https://www.jharkhand.gov.in/",
+    "https://en.wikipedia.org/wiki/Government_of_Jharkhand"
+   ],
+   "confidence": "medium",
+   "headPositionId": "st-jh-pos-minister-10"
+  },
+  {
+   "id": "st-jh-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Transport",
+   "aliases": [],
+   "description": "Regulates motor vehicles, driving licences and public bus transport in Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-2",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-urban-development-and-housing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Urban Development & Housing",
+   "aliases": [],
+   "description": "Oversees municipal governance, urban planning and housing schemes in Jharkhand's towns and cities; the ministerial seat is currently vacant.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-10",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jh-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Water Resources",
+   "aliases": [],
+   "description": "Manages Jharkhand's major irrigation canals, dams and flood-control infrastructure.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "headPositionId": "st-jh-pos-minister-6",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jh-dept-women-child-development-and-social-security",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jh-government",
+   "name": "Department of Women, Child Development & Social Security",
+   "aliases": [],
+   "description": "Runs women- and child-welfare schemes and social-security pensions across Jharkhand.",
+   "officialUrl": "https://www.jharkhand.gov.in/",
+   "sources": [
+    "https://www.jharkhand.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-od-dept-agriculture-and-farmers-empowerment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Agriculture & Farmers' Empowerment Department",
+   "aliases": [],
+   "description": "Runs farm-input subsidies, crop-advisory and agricultural extension services for Odisha's farmers.",
+   "officialUrl": "https://agri.odisha.gov.in/",
+   "headPositionId": "st-od-pos-deputy-cm-1",
+   "sources": [
+    "https://agri.odisha.gov.in/",
+    "https://en.wikipedia.org/wiki/Government_of_Odisha"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-commerce-and-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Commerce & Transport Department",
+   "aliases": [],
+   "description": "Regulates motor vehicles and road transport, and oversees state commerce and trade promotion in Odisha.",
+   "officialUrl": "http://ct.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-7",
+   "sources": [
+    "http://ct.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Cooperation Department",
+   "aliases": [],
+   "description": "Regulates and promotes cooperative societies, including PACS, across Odisha.",
+   "officialUrl": "https://coop.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-11",
+   "sources": [
+    "https://coop.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-electronics-and-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Electronics & Information Technology Department",
+   "aliases": [],
+   "description": "Runs e-governance projects and IT/electronics-sector promotion for Odisha.",
+   "officialUrl": "https://it.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-6",
+   "sources": [
+    "https://it.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-energy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Energy Department",
+   "aliases": [],
+   "description": "Oversees Odisha's state power generation, transmission and distribution and rural electrification.",
+   "officialUrl": "http://energy.odisha.gov.in/",
+   "headPositionId": "st-od-pos-deputy-cm-1",
+   "sources": [
+    "http://energy.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Excise Department",
+   "aliases": [],
+   "description": "Regulates liquor sale and collects excise revenue in Odisha.",
+   "officialUrl": "http://excise.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-5",
+   "sources": [
+    "http://excise.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Finance Department",
+   "aliases": [],
+   "description": "Prepares the state budget, manages treasury, borrowing and pay/pension disbursal for the Government of Odisha; held by the Chief Minister.",
+   "officialUrl": "http://finance.odisha.gov.in/",
+   "headPositionId": "st-od-pos-chief-minister",
+   "sources": [
+    "http://finance.odisha.gov.in/",
+    "https://en.wikipedia.org/wiki/Government_of_Odisha"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-fisheries-and-animal-resources-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Fisheries & Animal Resources Development Department",
+   "aliases": [],
+   "description": "Runs veterinary services, dairy development and fisheries programmes for Odisha's livestock and fish-farming sector.",
+   "officialUrl": "https://fard.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-12",
+   "sources": [
+    "https://fard.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-food-supplies-and-consumer-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Food Supplies & Consumer Welfare Department",
+   "aliases": [],
+   "description": "Runs the public distribution system (ration shops) and consumer-protection enforcement in Odisha.",
+   "officialUrl": "http://food.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-4",
+   "sources": [
+    "http://food.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-forest-environment-and-climate-change",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Forest, Environment & Climate Change Department",
+   "aliases": [],
+   "description": "Manages Odisha's forests, wildlife sanctuaries, pollution control and state climate-action programmes.",
+   "officialUrl": "http://forest.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-9",
+   "sources": [
+    "http://forest.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-general-administration-and-public-grievance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "General Administration & Public Grievance Department",
+   "aliases": [
+    "GA Department"
+   ],
+   "description": "Coordinates the state secretariat's administrative functions, IAS/IPS cadre postings and public-grievance redressal; held by the Chief Minister.",
+   "officialUrl": "https://ga.odisha.gov.in/",
+   "headPositionId": "st-od-pos-chief-minister",
+   "sources": [
+    "https://ga.odisha.gov.in/",
+    "https://en.wikipedia.org/wiki/Government_of_Odisha"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-handloom-textiles-and-handicrafts",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Handloom, Textiles & Handicrafts Department",
+   "aliases": [],
+   "description": "Promotes Odisha's handloom weaving, textile industry and traditional handicrafts.",
+   "officialUrl": "http://handloom.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-11",
+   "sources": [
+    "http://handloom.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-health-and-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Health & Family Welfare Department",
+   "aliases": [],
+   "description": "Runs Odisha's public hospitals, primary health centres and state health programmes.",
+   "officialUrl": "https://health.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-6",
+   "sources": [
+    "https://health.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-higher-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Higher Education Department",
+   "aliases": [],
+   "description": "Oversees universities and colleges in Odisha.",
+   "officialUrl": "http://dhe.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-10",
+   "sources": [
+    "http://dhe.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Home Department",
+   "aliases": [],
+   "description": "Oversees the Odisha Police, prisons, fire services and internal security; held by the Chief Minister.",
+   "officialUrl": "https://home.odisha.gov.in/",
+   "headPositionId": "st-od-pos-chief-minister",
+   "sources": [
+    "https://home.odisha.gov.in/",
+    "https://en.wikipedia.org/wiki/Government_of_Odisha"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-housing-and-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Housing & Urban Development Department",
+   "aliases": [],
+   "description": "Oversees municipal governance, urban planning, housing schemes and civic infrastructure in Odisha's towns and cities.",
+   "officialUrl": "https://urban.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-8",
+   "sources": [
+    "https://urban.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Industries Department",
+   "aliases": [],
+   "description": "Promotes industrial investment, MSMEs and industrial infrastructure in Odisha.",
+   "officialUrl": "http://industries.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-13",
+   "sources": [
+    "http://industries.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-information-and-public-relations",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Information & Public Relations Department",
+   "aliases": [],
+   "description": "Handles Odisha government press releases, advertising and public communication; held by the Chief Minister.",
+   "officialUrl": "https://inpr.odisha.gov.in/",
+   "headPositionId": "st-od-pos-chief-minister",
+   "sources": [
+    "https://inpr.odisha.gov.in/",
+    "https://en.wikipedia.org/wiki/Government_of_Odisha"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-labour-and-employees-state-insurance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Labour & Employees' State Insurance Department",
+   "aliases": [],
+   "description": "Enforces labour laws and administers the Employees' State Insurance scheme for Odisha's workers.",
+   "officialUrl": "http://labour.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-9",
+   "sources": [
+    "http://labour.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-micro-small-and-medium-enterprises",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Micro, Small & Medium Enterprises Department",
+   "aliases": [
+    "MSME Department"
+   ],
+   "description": "Promotes and supports micro, small and medium enterprises across Odisha.",
+   "officialUrl": "http://msme.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-12",
+   "sources": [
+    "http://msme.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-law",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Law Department",
+   "aliases": [],
+   "description": "Provides legal advice to the state government, drafts legislation and oversees subordinate courts' administration in Odisha.",
+   "officialUrl": "https://law.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-5",
+   "sources": [
+    "https://law.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-odia-language-literature-and-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Odia Language, Literature & Culture Department",
+   "aliases": [],
+   "description": "Promotes the Odia language, literature, museums and cultural heritage of Odisha.",
+   "officialUrl": "https://culture.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-10",
+   "sources": [
+    "https://culture.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-panchayati-raj-and-drinking-water",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Panchayati Raj & Drinking Water Department",
+   "aliases": [],
+   "description": "Oversees Odisha's panchayat system, local rural governance and rural drinking-water supply.",
+   "officialUrl": "https://panchayat.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-2",
+   "sources": [
+    "https://panchayat.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Parliamentary Affairs Department",
+   "aliases": [],
+   "description": "Coordinates the state government's business in the Odisha Legislative Assembly.",
+   "officialUrl": "http://pa.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-6",
+   "sources": [
+    "http://pa.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-planning-and-coordination",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Planning & Coordination Department",
+   "aliases": [],
+   "description": "Prepares Odisha's development plans and coordinates scheme implementation across departments; held by the Chief Minister.",
+   "officialUrl": "http://pc.odisha.gov.in/",
+   "headPositionId": "st-od-pos-chief-minister",
+   "sources": [
+    "http://pc.odisha.gov.in/",
+    "https://en.wikipedia.org/wiki/Government_of_Odisha"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-public-enterprises",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Public Enterprises Department",
+   "aliases": [],
+   "description": "Oversees Odisha's state public-sector undertakings and enterprises.",
+   "officialUrl": "http://pe.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-8",
+   "sources": [
+    "http://pe.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-revenue-and-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Revenue & Disaster Management Department",
+   "aliases": [],
+   "description": "Maintains land records, collects revenue and coordinates cyclone/flood disaster relief across cyclone-prone Odisha.",
+   "officialUrl": "https://revenue.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-1",
+   "sources": [
+    "https://revenue.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Rural Development Department",
+   "aliases": [],
+   "description": "Implements MGNREGA, rural housing and poverty-alleviation schemes across Odisha's villages.",
+   "officialUrl": "https://rd.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-2",
+   "sources": [
+    "https://rd.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-school-and-mass-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "School & Mass Education Department",
+   "aliases": [],
+   "description": "Runs Odisha's school system, teacher recruitment and adult/mass-literacy programmes.",
+   "officialUrl": "http://sme.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-3",
+   "sources": [
+    "http://sme.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-science-and-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Science & Technology Department",
+   "aliases": [],
+   "description": "Promotes scientific research and technology programmes in Odisha.",
+   "officialUrl": "http://st.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-4",
+   "sources": [
+    "http://st.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-skill-development-and-technical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Skill Development & Technical Education Department",
+   "aliases": [
+    "SDTE"
+   ],
+   "description": "Runs polytechnics, ITIs and skill-training programmes for Odisha's workforce.",
+   "officialUrl": "https://sdte.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-13",
+   "sources": [
+    "https://sdte.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-social-security-and-empowerment-of-persons-with-disabilities",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Social Security & Empowerment of Persons with Disabilities Department",
+   "aliases": [
+    "SSEPD"
+   ],
+   "description": "Runs old-age/disability pensions and welfare schemes for persons with disabilities in Odisha.",
+   "officialUrl": "https://ssepd.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-3",
+   "sources": [
+    "https://ssepd.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-sports-and-youth-services",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Sports & Youth Services Department",
+   "aliases": [],
+   "description": "Develops sports infrastructure and youth programmes in Odisha.",
+   "officialUrl": "https://sports.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-10",
+   "sources": [
+    "https://sports.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-st-and-sc-development-minorities-and-backward-classes-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "ST & SC Development, Minorities & Backward Classes Welfare Department",
+   "aliases": [
+    "ST-SC Development Dept"
+   ],
+   "description": "Runs scholarships, hostels and welfare schemes for Scheduled Tribe, Scheduled Caste, minority and backward-class communities in Odisha.",
+   "officialUrl": "http://stsc.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-3",
+   "sources": [
+    "http://stsc.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-steel-and-mines",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Steel & Mines Department",
+   "aliases": [],
+   "description": "Regulates mineral extraction and mining royalty collection in mineral-rich Odisha, and promotes the state's steel industry.",
+   "officialUrl": "https://steelmines.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-7",
+   "sources": [
+    "https://steelmines.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Tourism Department",
+   "aliases": [],
+   "description": "Develops and promotes tourist sites and hospitality infrastructure across Odisha, including Puri and Konark.",
+   "officialUrl": "https://dot.odisha.gov.in/",
+   "headPositionId": "st-od-pos-deputy-cm-2",
+   "sources": [
+    "https://dot.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Water Resources Department",
+   "aliases": [],
+   "description": "Manages Odisha's major irrigation canals, dams and flood-control infrastructure; held by the Chief Minister.",
+   "officialUrl": "https://dowr.odisha.gov.in/",
+   "headPositionId": "st-od-pos-chief-minister",
+   "sources": [
+    "https://dowr.odisha.gov.in/",
+    "https://en.wikipedia.org/wiki/Government_of_Odisha"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-women-and-child-development-and-mission-shakti",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Women & Child Development and Mission Shakti Department",
+   "aliases": [],
+   "description": "Runs women- and child-welfare schemes, anganwadi services and Odisha's self-help-group (Mission Shakti) programme.",
+   "officialUrl": "https://wcd.odisha.gov.in/",
+   "headPositionId": "st-od-pos-deputy-cm-2",
+   "sources": [
+    "https://wcd.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-od-dept-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-od-government",
+   "name": "Works Department",
+   "aliases": [],
+   "description": "Builds and maintains state government roads and public buildings in Odisha.",
+   "officialUrl": "https://works.odisha.gov.in/",
+   "headPositionId": "st-od-pos-minister-5",
+   "sources": [
+    "https://works.odisha.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-br-dept-higher-education",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Higher Education Department",
+   "parentId": "st-br-government",
+   "description": "Administers Bihar's universities and higher-education institutions, distinct from the school-level Education Department.",
+   "headPositionId": "st-br-pos-minister-9",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Bihar"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-br-dept-civil-aviation",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Civil Aviation Department",
+   "parentId": "st-br-government",
+   "description": "Handles Bihar's airport infrastructure and civil-aviation policy coordination with the Union government.",
+   "headPositionId": "st-br-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Bihar"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-br-dept-elections",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Elections Department",
+   "parentId": "st-br-government",
+   "description": "State-level coordination of electoral rolls and elections in conjunction with the Election Commission of India.",
+   "headPositionId": "st-br-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Bihar"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-br-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Parliamentary Affairs Department",
+   "parentId": "st-br-government",
+   "description": "Coordinates government business in the Bihar Legislative Assembly and Legislative Council.",
+   "headPositionId": "st-br-pos-deputy-cm-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Bihar"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-br-dept-information-and-public-relations",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Information and Public Relations Department",
+   "parentId": "st-br-government",
+   "description": "Handles Bihar government publicity, press releases and public-information campaigns; distinct from the Information Technology Department.",
+   "headPositionId": "st-br-pos-minister-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Bihar"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "positions": [],
+ "relations": [
+  {
+   "from": "st-br-pos-minister-24",
+   "to": "st-br-dept-animal-and-fisheries-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-animal-and-fisheries-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-5",
+   "to": "st-br-dept-building-construction",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-building-construction",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-15",
+   "to": "st-br-dept-bc-and-ebc-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-bc-and-ebc-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-deputy-cm-2",
+   "to": "st-br-dept-commercial-taxes",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-commercial-taxes",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-19",
+   "to": "st-br-dept-tourism",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-6",
+   "to": "st-br-dept-cooperative",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-cooperative",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-16",
+   "to": "st-br-dept-disaster-management",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-7",
+   "to": "st-br-dept-information-technology",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-18",
+   "to": "st-br-dept-science-and-technology",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-science-and-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-28",
+   "to": "st-br-dept-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-25",
+   "to": "st-br-dept-energy",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-energy",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-13",
+   "to": "st-br-dept-prohibition-excise-and-registration",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-prohibition-excise-and-registration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-10",
+   "to": "st-br-dept-food-and-consumer-protection",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-food-and-consumer-protection",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-deputy-cm-2",
+   "to": "st-br-dept-finance",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-29",
+   "to": "st-br-dept-environment-forest-and-climate-change",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-environment-forest-and-climate-change",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-chief-minister",
+   "to": "st-br-dept-general-administration",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-general-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-4",
+   "to": "st-br-dept-health",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-health",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-chief-minister",
+   "to": "st-br-dept-home",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-22",
+   "to": "st-br-dept-industries",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-2",
+   "to": "st-br-dept-agriculture",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-12",
+   "to": "st-br-dept-labour-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-labour-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-9",
+   "to": "st-br-dept-law",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-law",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-3",
+   "to": "st-br-dept-revenue-and-land-reforms",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-revenue-and-land-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-26",
+   "to": "st-br-dept-mines-and-geology",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-mines-and-geology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-23",
+   "to": "st-br-dept-minority-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-minority-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-14",
+   "to": "st-br-dept-minor-water-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-minor-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-chief-minister",
+   "to": "st-br-dept-personnel-and-administrative-reforms",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-personnel-and-administrative-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-30",
+   "to": "st-br-dept-public-health-engineering",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-public-health-engineering",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-11",
+   "to": "st-br-dept-planning-and-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-planning-and-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-32",
+   "to": "st-br-dept-panchayati-raj",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-panchayati-raj",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-17",
+   "to": "st-br-dept-road-construction",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-road-construction",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-1",
+   "to": "st-br-dept-rural-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-21",
+   "to": "st-br-dept-rural-works",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-rural-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-20",
+   "to": "st-br-dept-sc-and-st-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-sc-and-st-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-27",
+   "to": "st-br-dept-social-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-22",
+   "to": "st-br-dept-sports",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-sports",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-31",
+   "to": "st-br-dept-sugarcane-industries",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-sugarcane-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-8",
+   "to": "st-br-dept-transport",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-7",
+   "to": "st-br-dept-housing-and-urban-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-housing-and-urban-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-chief-minister",
+   "to": "st-br-dept-vigilance",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-vigilance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-deputy-cm-1",
+   "to": "st-br-dept-water-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-26",
+   "to": "st-br-dept-art-culture-and-youth",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-art-culture-and-youth",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-12",
+   "to": "st-br-dept-youth-employment-and-skill-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-youth-employment-and-skill-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-9",
+   "to": "st-jh-dept-agriculture-animal-husbandry-and-cooperative",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-agriculture-animal-husbandry-and-cooperative",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-building-construction",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-minister",
+   "to": "st-jh-dept-cabinet-election",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-cabinet-election",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-minister",
+   "to": "st-jh-dept-cabinet-secretariat-and-vigilance",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-cabinet-secretariat-and-vigilance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-1",
+   "to": "st-jh-dept-commercial-taxes",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-commercial-taxes",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-8",
+   "to": "st-jh-dept-drinking-water-and-sanitation",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-drinking-water-and-sanitation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-energy",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-8",
+   "to": "st-jh-dept-excise-and-prohibition",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-excise-and-prohibition",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-1",
+   "to": "st-jh-dept-finance",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-5",
+   "to": "st-jh-dept-food-public-distribution-and-consumer-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-food-public-distribution-and-consumer-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-forest-environment-and-climate-change",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-5",
+   "to": "st-jh-dept-health-medical-education-and-family-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-health-medical-education-and-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-higher-and-technical-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-minister",
+   "to": "st-jh-dept-home-jail-and-disaster-management",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-home-jail-and-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-information-and-public-relations",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-information-technology-and-e-governance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-labour-employment-training-and-skill-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-law",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-mines-and-geology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-7",
+   "to": "st-jh-dept-panchayati-raj",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-panchayati-raj",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-minister",
+   "to": "st-jh-dept-personnel-administrative-reforms-and-rajbhasha",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-personnel-administrative-reforms-and-rajbhasha",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-1",
+   "to": "st-jh-dept-planning-and-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-planning-and-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-2",
+   "to": "st-jh-dept-revenue-registration-and-land-reforms",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-revenue-registration-and-land-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-minister",
+   "to": "st-jh-dept-road-construction",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-road-construction",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-7",
+   "to": "st-jh-dept-rural-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-4",
+   "to": "st-jh-dept-scheduled-tribe-scheduled-caste-minority-and-backward-class-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-scheduled-tribe-scheduled-caste-minority-and-backward-class-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-3",
+   "to": "st-jh-dept-school-education-and-literacy",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-school-education-and-literacy",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-tourism-arts-culture-sports-and-youth-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-2",
+   "to": "st-jh-dept-transport",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-10",
+   "to": "st-jh-dept-urban-development-and-housing",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-urban-development-and-housing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-minister-6",
+   "to": "st-jh-dept-water-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jh-pos-chief-secretary",
+   "to": "st-jh-dept-women-child-development-and-social-security",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-deputy-cm-1",
+   "to": "st-od-dept-agriculture-and-farmers-empowerment",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-agriculture-and-farmers-empowerment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-7",
+   "to": "st-od-dept-commerce-and-transport",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-commerce-and-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-11",
+   "to": "st-od-dept-cooperation",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-6",
+   "to": "st-od-dept-electronics-and-information-technology",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-electronics-and-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-deputy-cm-1",
+   "to": "st-od-dept-energy",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-energy",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-5",
+   "to": "st-od-dept-excise",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-excise",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-chief-minister",
+   "to": "st-od-dept-finance",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-12",
+   "to": "st-od-dept-fisheries-and-animal-resources-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-fisheries-and-animal-resources-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-4",
+   "to": "st-od-dept-food-supplies-and-consumer-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-food-supplies-and-consumer-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-9",
+   "to": "st-od-dept-forest-environment-and-climate-change",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-forest-environment-and-climate-change",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-chief-minister",
+   "to": "st-od-dept-general-administration-and-public-grievance",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-general-administration-and-public-grievance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-11",
+   "to": "st-od-dept-handloom-textiles-and-handicrafts",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-handloom-textiles-and-handicrafts",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-6",
+   "to": "st-od-dept-health-and-family-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-health-and-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-10",
+   "to": "st-od-dept-higher-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-higher-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-chief-minister",
+   "to": "st-od-dept-home",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-8",
+   "to": "st-od-dept-housing-and-urban-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-housing-and-urban-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-13",
+   "to": "st-od-dept-industries",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-chief-minister",
+   "to": "st-od-dept-information-and-public-relations",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-information-and-public-relations",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-9",
+   "to": "st-od-dept-labour-and-employees-state-insurance",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-labour-and-employees-state-insurance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-12",
+   "to": "st-od-dept-micro-small-and-medium-enterprises",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-micro-small-and-medium-enterprises",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-5",
+   "to": "st-od-dept-law",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-law",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-10",
+   "to": "st-od-dept-odia-language-literature-and-culture",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-odia-language-literature-and-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-2",
+   "to": "st-od-dept-panchayati-raj-and-drinking-water",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-panchayati-raj-and-drinking-water",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-6",
+   "to": "st-od-dept-parliamentary-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-chief-minister",
+   "to": "st-od-dept-planning-and-coordination",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-planning-and-coordination",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-8",
+   "to": "st-od-dept-public-enterprises",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-public-enterprises",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-1",
+   "to": "st-od-dept-revenue-and-disaster-management",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-revenue-and-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-2",
+   "to": "st-od-dept-rural-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-3",
+   "to": "st-od-dept-school-and-mass-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-school-and-mass-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-4",
+   "to": "st-od-dept-science-and-technology",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-science-and-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-13",
+   "to": "st-od-dept-skill-development-and-technical-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-skill-development-and-technical-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-3",
+   "to": "st-od-dept-social-security-and-empowerment-of-persons-with-disabilities",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-social-security-and-empowerment-of-persons-with-disabilities",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-10",
+   "to": "st-od-dept-sports-and-youth-services",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-sports-and-youth-services",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-3",
+   "to": "st-od-dept-st-and-sc-development-minorities-and-backward-classes-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-st-and-sc-development-minorities-and-backward-classes-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-7",
+   "to": "st-od-dept-steel-and-mines",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-steel-and-mines",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-deputy-cm-2",
+   "to": "st-od-dept-tourism",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-chief-minister",
+   "to": "st-od-dept-water-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-deputy-cm-2",
+   "to": "st-od-dept-women-and-child-development-and-mission-shakti",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-women-and-child-development-and-mission-shakti",
+   "type": "oversees"
+  },
+  {
+   "from": "st-od-pos-minister-5",
+   "to": "st-od-dept-works",
+   "type": "heads"
+  },
+  {
+   "from": "st-od-pos-chief-secretary",
+   "to": "st-od-dept-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-higher-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-9",
+   "to": "st-br-dept-higher-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-civil-aviation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-chief-minister",
+   "to": "st-br-dept-civil-aviation",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-elections",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-chief-minister",
+   "to": "st-br-dept-elections",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-deputy-cm-1",
+   "to": "st-br-dept-parliamentary-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-br-pos-chief-secretary",
+   "to": "st-br-dept-information-and-public-relations",
+   "type": "oversees"
+  },
+  {
+   "from": "st-br-pos-minister-1",
+   "to": "st-br-dept-information-and-public-relations",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-chief-minister",
+   "to": "st-jh-dept-building-construction",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-minister-10",
+   "to": "st-jh-dept-higher-and-technical-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-jh-pos-minister-10",
+   "to": "st-jh-dept-tourism-arts-culture-sports-and-youth-affairs",
+   "type": "heads"
+  }
+ ],
+ "verification": {
+  "verifiedAt": "2026-09-25",
+  "verifiedBy": "adversarial-verifier-pass-1",
+  "checks": {
+   "jsonParses": true,
+   "idPatternValid": true,
+   "duplicateIdsWithinFile": 0,
+   "idCollisionsWithOtherRawFiles": 0,
+   "danglingHeadPositionIdRefs": 0,
+   "totalHeadPositionIdRefsChecked": 111,
+   "danglingRelationEndpoints": 0
+  },
+  "secretaryPostingsReVerified": 0,
+  "secretaryPostingsNote": "File contains 0 Position records (positions:[] by design per the segment's own notes) -- there are no secretary/administrative-head postings in this segment to re-verify. Department->minister headPositionId links were spot-checked instead (see below); administrative Secretary postings for BR/JH/OD are not yet researched anywhere in data/raw and would need a new segment.",
+  "departmentCoverageCheck": {
+   "method": "Cross-checked each state's department roster against a live fetch of its Wikipedia 'Government of <State>' Council-of-Ministers table (state.bihar.gov.in and jharkhand.gov.in/Home/DeptDirectory sub-pages still redirect-loop or are JS-rendered and unscrapable by curl/WebFetch, confirming the original researcher's note; odisha.gov.in/government/department-list is also JS-rendered beyond ~29 of 39 rows so could not be independently re-confirmed in full).",
+   "checklistDepartments": [
+    "Home",
+    "Finance",
+    "Revenue",
+    "Health",
+    "School Education",
+    "Higher Education",
+    "Agriculture",
+    "Rural Development",
+    "Urban Development",
+    "PWD",
+    "Power/Energy",
+    "Water Resources",
+    "Social Welfare",
+    "Women & Child",
+    "Industries",
+    "Transport",
+    "Forest & Environment",
+    "Tribal/SC welfare",
+    "Food & Civil Supplies",
+    "Labour",
+    "IT",
+    "Tourism",
+    "Panchayati Raj"
+   ],
+   "bihar": {
+    "missingBeforeFix": [
+     "Higher Education",
+     "Civil Aviation",
+     "Elections",
+     "Parliamentary Affairs",
+     "Information and Public Relations"
+    ],
+    "added": [
+     "st-br-dept-higher-education",
+     "st-br-dept-civil-aviation",
+     "st-br-dept-elections",
+     "st-br-dept-parliamentary-affairs",
+     "st-br-dept-information-and-public-relations"
+    ],
+    "note": "PWD is legitimately split across Building Construction / Road Construction / Rural Works (confirmed Bihar convention); Women & Child has no standalone department and sits inside Social Welfare (confirmed against the current Wikipedia cabinet table, which has no separate Women & Child portfolio) -- not a gap."
+   },
+   "jharkhand": {
+    "missingDepartments": [],
+    "note": "All 33 departments match jharkhand.gov.in/Home/DeptDirectory exactly (name-for-name). headPositionId filled in for 3 of the 12 previously-unassigned departments where the current Wikipedia Council-of-Ministers table corroborated an already-present sibling assignment (Building Construction and Road Construction share the CM's portfolio; Higher & Technical Education and Tourism/Arts/Culture/Sports/Youth Affairs share minister-10's portfolio with the already-linked Urban Development & Housing).",
+    "headPositionIdFilled": [
+     "st-jh-dept-building-construction",
+     "st-jh-dept-higher-and-technical-education",
+     "st-jh-dept-tourism-arts-culture-sports-and-youth-affairs"
+    ],
+    "unresolvedConflictFlagged": "Wikipedia's current Jharkhand Council-of-Ministers table attributes Industry + Labour/Employment/Training/Skill Development to minister Sanjay Prasad Yadav and does not list School Education under any minister besides the CM's combined portfolio -- this conflicts with data/raw/states-br-jh-od.json, which records minister-2 (Sanjay Prasad Yadav) holding Revenue/Transport and minister-3 (Deepak Birua) holding School Education and Literacy. Left unresolved rather than guessed: this is a states-br-jh-od.json holder/portfolio question, not a state-depts entity question, and the two sources disagree on specifics for these two ministers. Flagging for a dedicated re-check of Jharkhand ministers' current portfolio list (e.g. via jharkhand.gov.in cabinet page or a 2026 press source) rather than trusting either source alone."
+   },
+   "odisha": {
+    "missingDepartments": [],
+    "note": "Spot-checked: Higher Education Department, Forest/Environment & Climate Change Department, and Odia Language Literature & Culture Department confirmed present verbatim on odisha.gov.in/en/government/department-list. Could not fetch the full department listing (page is JS-rendered / paginated beyond curl+WebFetch's reach) to independently confirm all 39, but no discrepancy found in what was checked, consistent with the original researcher's note that Odisha maps cleanly with no gaps."
+   }
+  }
+ }
+}

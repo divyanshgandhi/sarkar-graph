@@ -1,0 +1,6 @@
+# Supply-chain posture (npm Shai-Hulud freeze, see ~/Work/.claude/skills/work-folder-maintenance):
+# only resolve versions that have been public for 7+ days, and never run dependency lifecycle scripts.
+minimumReleaseAge: 10080
+blockExoticSubdeps: true
+strictDepBuilds: false
+dangerouslyAllowAllBuilds: false

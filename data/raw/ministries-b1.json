@@ -1,0 +1,1629 @@
+{
+ "segment": "ministries-b1",
+ "asOf": "2026-09-25",
+ "notes": "Segment ministries-b1 = Ministry of Home Affairs (MHA) and its 6 departments, plus every attached/subordinate/statutory/autonomous body, CAPF and agency administered by MHA, per research/india/MINISTRIES.md Group B. As-of 2026-09-25.\n\nCOUNTS: 33 entities, 30 positions, 35 relations.\n\nKNOWN GAPS / LOW-CONFIDENCE ITEMS (flagged rather than invented):\n- Named current secretaries for 5 of the 6 MHA departments (Internal Security, States, Official Language, Border Management, J&K and Ladakh Affairs) could not be individually confirmed; only the overall Home Secretary (Govind Mohan) is confirmed. In practice these departments are typically headed by Special/Additional Secretary-rank officers under the Home Secretary's overall charge; positions are included with confidence low and no holder.\n- BPR&D DG: conflicting/stale sources (Balaji Srivatsav 'since 2024-03-27' per one Wikipedia snapshot vs Rajeev Kumar Sharma 'DG until 2026-06-30' per another current-affairs source); left unresolved, holder omitted, confidence low.\n- NCB DG (Anurag Garg): confirmed as current holder via Wikipedia infobox but exact appointment date unconfirmed; one secondary source cited an apparently-past tenure-end date (23 May 2026) that is inconsistent with him still being listed as incumbent — flagged, not resolved.\n- SVPNPA Director: previous confirmed director (Amit Garg) moved to become NCRB Director in July 2026; his SVPNPA successor not confirmed.\n- I4C (Indian Cyber Crime Coordination Centre) and DFSS (Directorate of Forensic Science Services): no current named CEO/Director General could be confirmed; entities included, heads omitted.\n- Bureau of Immigration Commissioner and Registrar General/Census Commissioner's exact appointment dates not confirmed (names are confirmed).\n- BSF/ITBP DG 'since' dates: MHA/press sources (theprint.in, ips.gov.in empanelment PDF) point to appointment orders dated 14-15 Jan 2026; one Wikipedia snapshot showed a conflicting 1 Dec 2025 date for BSF, likely reflecting an earlier interim appointment or unrevised infobox — used the more specific press-dated figure, flagged as medium confidence.\n- MoS Nityanand Rai 'since' date: Wikipedia infobox still shows original 2019 assumption; used an approximate current-term date (9 June 2024, matching the Council of Ministers' swearing-in) since ministers are re-sworn for each new Lok Sabha term, but this specific re-oath date for Rai was not separately source-confirmed.\n- Not included despite being plausible/real MHA-adjacent bodies, for lack of a fresh, reliable 2025-2026 source in this research pass: North Eastern Police Academy (NEPA), Central Detective Training Institutes (CDTIs) as an aggregate, any dedicated 'Sardar Patel Global Centre' IB training facility, and CyMAC as an entity distinct from I4C. These are flagged as follow-up research, not fabricated.\n- Special Protection Group (SPG) was investigated and confirmed to sit under the Cabinet Secretariat (core-apex), NOT MHA, per Wikipedia — correctly excluded from this segment.\n- CBI (Central Bureau of Investigation) is under the Department of Personnel & Training (Ministry of Personnel), NOT MHA — correctly excluded.\n- Andaman & Nicobar and Lakshadweep administrations are owned by the states-* segments and were only referenced (st-an, st-ld, plus st-ch, st-dh for Dept of States oversight relations), not redefined here.\n- Commissioner for Linguistic Minorities is owned by the constitutional-bodies segment and was not defined here, per task instructions.\n- This session's WebSearch tool budget was exhausted partway through research (shared across parallel segment-research subagents running concurrently) and the Wikipedia parse API began rate-limiting (HTTP 429) for the same reason; remaining research relied on WebFetch (still available) and curl against official portals. This capped the entity count below the 50+ aim in favour of not inventing unverified detail.\n\n--- ADVERSARIAL VERIFICATION PASS (2026-09-25) ---\nSee top-level 'verification' block for the full list of corrections/additions. Headline changes: fixed Amit Shah's house/constituency (stale pre-2019 Rajya Sabha data), fixed NDMA chairperson position (wrong rank + missing ex-officio holder), and resolved two of the file's own flagged gaps (SVPNPA Director, BPR&D DG) plus the NCRB Director confidence, all via a single confirmed 6 Jul 2026 Hindustan Times reshuffle article. Confidence raised (medium->high) on BSF/ITBP/SSB DGs, Delhi Police Commissioner and RGI after independent fresh re-checks. The 5 unconfirmed department-secretary positions, BOI Commissioner, and NCB DG's exact appointment date remain unresolved after this pass (no fresh source found) and are left as low/unchanged confidence rather than guessed.",
+ "entities": [
+  {
+   "id": "in-min-home-affairs",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Home Affairs",
+   "nameHi": "गृह मंत्रालय",
+   "abbr": "MHA",
+   "aliases": [
+    "Home Ministry",
+    "MHA",
+    "North Block"
+   ],
+   "parentId": "in-union-government",
+   "description": "Internal security, policing, borders, Centre-State relations, disaster management, census, citizenship and Union Territory administration for India.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.mha.gov.in",
+   "established": "1947 (as Home Department; reorganised post-Independence)",
+   "hq": "North Block, New Delhi",
+   "headPositionId": "in-pos-minister-home-affairs",
+   "adminHeadPositionId": "in-pos-secretary-home",
+   "sources": [
+    "https://www.mha.gov.in/en",
+    "https://www.mha.gov.in/en/union-home-minister"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-home",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Home",
+   "parentId": "in-min-home-affairs",
+   "description": "Core home affairs: internal security coordination, police matters, VIP security policy, Union Territory administration, disaster management, and general administration of MHA.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.mha.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-home",
+   "sources": [
+    "https://www.mha.gov.in/en"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-internal-security",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Internal Security",
+   "parentId": "in-min-home-affairs",
+   "description": "Handles internal security policy, Left-Wing Extremism, counter-terrorism coordination, Central Armed Police Forces deployment and modernisation.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.mha.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-internal-security",
+   "sources": [
+    "https://www.mha.gov.in/en"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-dept-states",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of States",
+   "parentId": "in-min-home-affairs",
+   "description": "Centre-State relations, administration of Union Territories, freedom fighters' pension schemes and inter-governmental coordination on internal matters.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.mha.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-states",
+   "sources": [
+    "https://www.mha.gov.in/en"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-dept-official-language",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Official Language",
+   "parentId": "in-min-home-affairs",
+   "description": "Promotes and implements the use of Hindi as the Official Language of the Union under the Official Languages Act, 1963.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.mha.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-official-language",
+   "sources": [
+    "https://www.mha.gov.in/en"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-dept-border-management",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Border Management",
+   "parentId": "in-min-home-affairs",
+   "description": "Border infrastructure, border guarding forces' coordination, Integrated Check Posts and border area development programmes.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.mha.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-border-management",
+   "sources": [
+    "https://www.mha.gov.in/en"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-dept-jammu-kashmir-and-ladakh-affairs",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Jammu, Kashmir and Ladakh Affairs",
+   "parentId": "in-min-home-affairs",
+   "description": "Administers Union subjects concerning the Union Territories of Jammu & Kashmir and Ladakh following the reorganisation under the J&K Reorganisation Act, 2019.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.mha.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-jammu-kashmir-and-ladakh-affairs",
+   "sources": [
+    "https://www.mha.gov.in/en"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ib",
+   "kind": "intelligence_agency",
+   "sector": "executive",
+   "name": "Intelligence Bureau",
+   "abbr": "IB",
+   "aliases": [
+    "IB",
+    "Intelligence Bureau"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "India's internal intelligence agency; collects intelligence within India and conducts counter-intelligence and counter-terrorism duties. Not a statutory body.",
+   "legalBasis": "Executive order (no dedicated statute); functions administratively under MHA",
+   "officialUrl": "https://www.mha.gov.in",
+   "established": "1887 (reorganised 1947)",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-director-ib",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Intelligence_Bureau_(India)",
+    "https://en.wikipedia.org/wiki/Ministry_of_Home_Affairs_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nia",
+   "kind": "investigative_agency",
+   "sector": "executive",
+   "name": "National Investigation Agency",
+   "abbr": "NIA",
+   "aliases": [
+    "NIA"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "India's federal counter-terrorism law-enforcement and investigation agency, empowered to probe terrorism and other scheduled offences across states without prior state consent.",
+   "legalBasis": "National Investigation Agency Act, 2008",
+   "officialUrl": "https://www.nia.gov.in",
+   "established": "2009",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-nia",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Director_General_of_the_National_Investigation_Agency"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ncb",
+   "kind": "investigative_agency",
+   "sector": "executive",
+   "name": "Narcotics Control Bureau",
+   "abbr": "NCB",
+   "aliases": [
+    "NCB",
+    "Narcotics Control Bureau"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Nodal drug law-enforcement agency responsible for fighting drug trafficking and abuse of illegal substances under the NDPS Act.",
+   "legalBasis": "Narcotic Drugs and Psychotropic Substances Act, 1985 (NCB constituted 1986 under Section 4(3))",
+   "officialUrl": "https://narcoticsindia.nic.in",
+   "established": "1986",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-ncb",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Narcotics_Control_Bureau"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ncrb",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "National Crime Records Bureau",
+   "abbr": "NCRB",
+   "aliases": [
+    "NCRB"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Compiles and disseminates crime and criminal data for India, publishes the annual 'Crime in India' report, and runs the Crime and Criminal Tracking Network & Systems (CCTNS).",
+   "legalBasis": "Executive order (1986 Cabinet decision, no dedicated statute)",
+   "officialUrl": "https://ncrb.gov.in",
+   "established": "1986",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-director-ncrb",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Crime_Records_Bureau"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-bprd",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Bureau of Police Research and Development",
+   "abbr": "BPR&D",
+   "aliases": [
+    "BPRD",
+    "BPR&D"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Apex research, training-standards and modernisation body for the Indian police, sets standards for CAPF/state police training, forensics and equipment.",
+   "legalBasis": "Executive order (Cabinet resolution, 1970)",
+   "officialUrl": "https://bprd.nic.in",
+   "established": "1970",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-bprd",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bureau_of_Police_Research_and_Development"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-bsf",
+   "kind": "capf",
+   "sector": "executive",
+   "name": "Border Security Force",
+   "abbr": "BSF",
+   "aliases": [
+    "BSF"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Primary border-guarding force for India's borders with Pakistan and Bangladesh; also deployed in counter-insurgency and internal security roles.",
+   "legalBasis": "Border Security Force Act, 1968",
+   "officialUrl": null,
+   "established": "1965",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-bsf",
+   "sources": [
+    "https://theprint.in/india/shatrujeet-singh-kapoor-appointed-itbp-chief-praveen-kumar-to-head-bsf/2827286/",
+    "https://en.wikipedia.org/wiki/Director_General_of_the_Border_Security_Force",
+    "https://en.wikipedia.org/wiki/Ministry_of_Home_Affairs_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-crpf",
+   "kind": "capf",
+   "sector": "executive",
+   "name": "Central Reserve Police Force",
+   "abbr": "CRPF",
+   "aliases": [
+    "CRPF"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "India's largest CAPF; principal force for internal security duties, counter-insurgency, Left-Wing Extremism operations, election security and VIP security (less SPG).",
+   "legalBasis": "Central Reserve Police Force Act, 1949",
+   "officialUrl": null,
+   "established": "1939 (as Crown Representative's Police); CRPF from 1949",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-crpf",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gyanendra_Pratap_Singh",
+    "https://en.wikipedia.org/wiki/Central_Reserve_Police_Force",
+    "https://en.wikipedia.org/wiki/Ministry_of_Home_Affairs_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cisf",
+   "kind": "capf",
+   "sector": "executive",
+   "name": "Central Industrial Security Force",
+   "abbr": "CISF",
+   "aliases": [
+    "CISF"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Provides security to critical infrastructure installations including airports, metro systems, nuclear and space establishments, and major PSUs.",
+   "legalBasis": "Central Industrial Security Force Act, 1968",
+   "officialUrl": null,
+   "established": "1969",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-cisf",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Praveer_Ranjan",
+    "https://en.wikipedia.org/wiki/Ministry_of_Home_Affairs_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-itbp",
+   "kind": "capf",
+   "sector": "executive",
+   "name": "Indo-Tibetan Border Police",
+   "abbr": "ITBP",
+   "aliases": [
+    "ITBP"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Guards the Indo-China (Tibet) border in high-altitude terrain and performs disaster-response and VIP security duties.",
+   "legalBasis": "Indo-Tibetan Border Police Force Act, 1992",
+   "officialUrl": null,
+   "established": "1962",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-itbp",
+   "sources": [
+    "https://theprint.in/india/shatrujeet-singh-kapoor-appointed-itbp-chief-praveen-kumar-to-head-bsf/2827286/",
+    "https://en.wikipedia.org/wiki/Ministry_of_Home_Affairs_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ssb",
+   "kind": "capf",
+   "sector": "executive",
+   "name": "Sashastra Seema Bal",
+   "abbr": "SSB",
+   "aliases": [
+    "SSB"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Guards the Indo-Nepal and Indo-Bhutan borders and carries out border policing and counter-insurgency duties in the region.",
+   "legalBasis": "Sashastra Seema Bal Act, 2007",
+   "officialUrl": null,
+   "established": "1963",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-ssb",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sanjay_Singhal",
+    "https://en.wikipedia.org/wiki/Ministry_of_Home_Affairs_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-assam-rifles",
+   "kind": "capf",
+   "sector": "executive",
+   "name": "Assam Rifles",
+   "abbr": "AR",
+   "aliases": [
+    "AR"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "India's oldest paramilitary force; guards the Indo-Myanmar border and conducts counter-insurgency operations in the North-East. Administratively under MHA, operationally under the Army.",
+   "legalBasis": "Assam Rifles Act, 2006",
+   "officialUrl": null,
+   "established": "1835",
+   "hq": "Shillong, Meghalaya",
+   "headPositionId": "in-pos-dg-assam-rifles",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Director_General_of_the_Assam_Rifles",
+    "https://en.wikipedia.org/wiki/Ministry_of_Home_Affairs_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nsg",
+   "kind": "capf",
+   "sector": "executive",
+   "name": "National Security Guard",
+   "abbr": "NSG",
+   "aliases": [
+    "NSG"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Federal contingency force specialising in counter-terrorism, hostage rescue and VIP protection ('Black Cats'); deployed on requisition for high-risk operations.",
+   "legalBasis": "National Security Guard Act, 1986",
+   "officialUrl": null,
+   "established": "1984",
+   "hq": "Manesar, Haryana",
+   "headPositionId": "in-pos-dg-nsg",
+   "sources": [
+    "https://en.wikipedia.org/wiki/B._Srinivasan",
+    "https://en.wikipedia.org/wiki/Ministry_of_Home_Affairs_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ndma",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "National Disaster Management Authority",
+   "abbr": "NDMA",
+   "aliases": [
+    "NDMA"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Apex body for disaster management in India, laying down policies, plans and guidelines and coordinating their enforcement for prevention of and response to disasters.",
+   "legalBasis": "Disaster Management Act, 2005",
+   "officialUrl": "https://ndma.gov.in",
+   "established": "2005 (statutory); functioned informally from 2001",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-ndma",
+   "sources": [
+    "https://ndma.gov.in/whos-who",
+    "https://en.wikipedia.org/wiki/National_Disaster_Management_Authority_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nidm",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Institute of Disaster Management",
+   "abbr": "NIDM",
+   "aliases": [
+    "NIDM"
+   ],
+   "parentId": "in-ndma",
+   "description": "Apex training, research and capacity-building institute for disaster management, deemed to be a university.",
+   "legalBasis": "Disaster Management Act, 2005, s.42",
+   "officialUrl": "https://nidm.gov.in",
+   "established": "1995 (as NCDM); redesignated NIDM 2003",
+   "hq": "Rohini, New Delhi",
+   "headPositionId": "in-pos-executive-director-nidm",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Disaster_Management_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ndrf",
+   "kind": "armed_force",
+   "sector": "executive",
+   "name": "National Disaster Response Force",
+   "abbr": "NDRF",
+   "aliases": [
+    "NDRF"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Specialist force for response to natural and man-made disasters, including CBRN emergencies; drawn on deputation from CAPFs.",
+   "legalBasis": "Disaster Management Act, 2005, s.44-45",
+   "officialUrl": "https://www.ndrf.gov.in",
+   "established": "2006",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-ndrf",
+   "sources": [
+    "https://www.ndrf.gov.in/en/about-director-general-ndrf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-civil-defence",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Directorate General, Civil Defence, Home Guards and Fire Services",
+   "abbr": "DG(CD)",
+   "aliases": [
+    "Civil Defence",
+    "Home Guards",
+    "DGCD"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Coordinates the civil defence, home guards and fire-service organisations that support disaster response and civil protection across states.",
+   "legalBasis": "Civil Defence Act, 1968; Disaster Management Act, 2005 (fire services largely a state subject, coordinated centrally)",
+   "officialUrl": "https://ndma.gov.in",
+   "established": "1968 (Civil Defence Act)",
+   "hq": "New Delhi",
+   "sources": [
+    "https://ndma.gov.in/whos-who"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-rgi",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Office of the Registrar General & Census Commissioner, India",
+   "abbr": "RGI",
+   "aliases": [
+    "RGI",
+    "Registrar General of India",
+    "Census Commissioner",
+    "ORGI"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Conducts the decennial Census of India, maintains the Sample Registration System and civil registration (births/deaths) statistics, and administers the National Population Register.",
+   "legalBasis": "Census Act, 1948; Registration of Births and Deaths Act, 1969",
+   "officialUrl": "https://censusindia.gov.in",
+   "established": "1949 (Census Act 1948 in force from 1949)",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-rgi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Registrar_General_and_Census_Commissioner_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-census-2027",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "2027 Census of India (16th Census)",
+   "aliases": [
+    "Census 2027",
+    "16th Census of India"
+   ],
+   "parentId": "in-rgi",
+   "description": "India's next decennial census, being conducted in two phases: House Listing and Housing Census (1 Apr-Sep 2026; Himalayan/snow-bound areas Oct 2025-Sep 2026) followed by Population Enumeration (9-28 Feb 2027, reference date 1 Mar 2027). Will include caste enumeration for the first time since 1931 and will be used for Lok Sabha delimitation and women's reservation implementation per the Delimitation Act, 2002.",
+   "legalBasis": "Census Act, 1948; Delimitation Act, 2002 (for downstream use of the data)",
+   "officialUrl": "https://censusindia.gov.in",
+   "established": "Houselisting phase commenced 1 April 2026",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Census_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-lpai",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Land Ports Authority of India",
+   "abbr": "LPAI",
+   "aliases": [
+    "LPAI"
+   ],
+   "parentId": "in-dept-border-management",
+   "description": "Builds, upgrades and manages Integrated Check Posts (ICPs) at India's land borders to streamline cross-border trade and passenger movement.",
+   "legalBasis": "Land Ports Authority of India Act, 2010",
+   "officialUrl": "https://lpai.gov.in",
+   "established": "2012-03-01",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairman-lpai",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Land_Ports_Authority_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-boi",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Bureau of Immigration",
+   "abbr": "BoI",
+   "aliases": [
+    "Bureau of Immigration",
+    "BOI"
+   ],
+   "parentId": "in-dept-home",
+   "description": "Manages immigration control at India's international airports, seaports and land checkposts, foreigner registration (FRRO/FRO network) and immigration intelligence.",
+   "legalBasis": "Executive order under the Foreigners Act, 1946 / Passport (Entry into India) Act, 1920",
+   "officialUrl": "https://boi.gov.in",
+   "established": "1971",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-commissioner-boi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bureau_of_Immigration_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-svpnpa",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Sardar Vallabhbhai Patel National Police Academy",
+   "abbr": "SVPNPA",
+   "aliases": [
+    "SVPNPA",
+    "National Police Academy",
+    "NPA Hyderabad"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Trains newly-recruited IPS officers and conducts in-service police training programmes; India's premier police training institution.",
+   "legalBasis": "Executive order (MHA)",
+   "officialUrl": "https://svpnpa.gov.in",
+   "established": "1948 (as CPTC, Mt Abu); moved to Hyderabad and renamed 1975",
+   "hq": "Hyderabad, Telangana",
+   "headPositionId": "in-pos-director-svpnpa",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sardar_Vallabhbhai_Patel_National_Police_Academy"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-i4c",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Indian Cyber Crime Coordination Centre",
+   "abbr": "I4C",
+   "aliases": [
+    "I4C",
+    "Indian Cybercrime Coordination Centre"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Coordinates action against cybercrime nationally, runs the National Cyber Crime Reporting Portal (cybercrime.gov.in) and the 1930 helpline, and hosts seven functional units including the Cyber and Multi-Agency Centre (CyMAC).",
+   "legalBasis": "Scheme approved by Union Cabinet, October 2018 (Cyber and Information Security Division, MHA)",
+   "officialUrl": "https://cybercrime.gov.in",
+   "established": "2018 (approved); inaugurated January 2020",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Cyber_Crime_Coordination_Centre"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-delhi-police",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Delhi Police",
+   "aliases": [
+    "Delhi Police"
+   ],
+   "parentId": "in-dept-home",
+   "description": "Police force for the National Capital Territory of Delhi; unlike other city police forces, reports directly to the Union Government (MHA) rather than the Delhi state government.",
+   "legalBasis": "Delhi Police Act, 1978",
+   "officialUrl": "https://www.delhipolice.gov.in",
+   "established": "1861 (Delhi Police Act, 1978 gave the current statutory framework)",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-commissioner-delhi-police",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Delhi_Police"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dfss",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Directorate of Forensic Science Services",
+   "abbr": "DFSS",
+   "aliases": [
+    "DFSS"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Apex forensic-science body coordinating the network of Central Forensic Science Laboratories (Delhi, Kolkata, Hyderabad, Chandigarh, Guwahati, Bhopal, Pune) and setting forensic standards used by police and courts.",
+   "legalBasis": "Executive order (MHA)",
+   "officialUrl": "https://mha.gov.in",
+   "established": "1985 (approx.)",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Directorate_of_Forensic_Science_Services"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ncord",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "Narco-Coordination Centre",
+   "abbr": "NCORD",
+   "aliases": [
+    "NCORD"
+   ],
+   "parentId": "in-min-home-affairs",
+   "description": "Multi-agency coordination mechanism (Centre, State and district levels) chaired by the Union Home Minister to strengthen anti-drug-trafficking coordination among central and state agencies.",
+   "legalBasis": "Executive order (MHA)",
+   "officialUrl": "https://www.mha.gov.in",
+   "established": "2016 (revamped 2019)",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-home-affairs",
+   "sources": [
+    "https://www.mha.gov.in/en"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-cctns",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Crime and Criminal Tracking Network & Systems",
+   "abbr": "CCTNS",
+   "aliases": [
+    "CCTNS"
+   ],
+   "parentId": "in-ncrb",
+   "description": "Nationwide networked IT system linking police stations to digitise FIR registration, investigation tracking and crime/criminal databases, operated by NCRB.",
+   "legalBasis": "Union Cabinet-approved Mission Mode Project under the National e-Governance Plan",
+   "officialUrl": "https://ncrb.gov.in",
+   "established": "2009 (approved)",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Crime_Records_Bureau"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-minister-home-affairs",
+   "title": "Minister of Home Affairs",
+   "titleHi": "गृह मंत्री",
+   "orgId": "in-min-home-affairs",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Amit Shah",
+    "since": "2024-06-11",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Gandhinagar, Gujarat",
+    "wikipedia": "https://en.wikipedia.org/wiki/Amit_Shah",
+    "acting": false,
+    "notes": "Also Minister of Cooperation. Serving second consecutive term as Home Minister since 2019; took charge for this term 11 June 2024."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.mha.gov.in/en/union-home-minister",
+    "https://ddnews.gov.in/en/amit-shah-assumes-charge-as-union-home-minister-for-second-consecutive-term/",
+    "https://en.wikipedia.org/wiki/Amit_Shah"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-home-affairs-1",
+   "title": "Minister of State for Home Affairs",
+   "orgId": "in-min-home-affairs",
+   "rank": "minister_of_state",
+   "seat": "1",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Nityanand Rai",
+    "since": "2024-06-09",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Ujiarpur, Bihar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nityanand_Rai",
+    "acting": false,
+    "notes": "Continuously MoS Home Affairs since 30 May 2019; re-sworn-in for current term with the rest of the Council of Ministers around 9 June 2024 (exact re-oath date for this stint not separately confirmed; Wikipedia infobox still shows original 2019 assumption date)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nityanand_Rai",
+    "https://en.wikipedia.org/wiki/Ministry_of_Home_Affairs_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-mos-home-affairs-2",
+   "title": "Minister of State for Home Affairs",
+   "orgId": "in-min-home-affairs",
+   "rank": "minister_of_state",
+   "seat": "2",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Bandi Sanjay Kumar",
+    "since": "2024-06-09",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Karimnagar, Telangana",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bandi_Sanjay_Kumar",
+    "acting": false,
+    "notes": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bandi_Sanjay_Kumar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-home",
+   "title": "Home Secretary",
+   "orgId": "in-dept-home",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Govind Mohan",
+    "since": "2024-08-23",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Govind_Mohan",
+    "acting": false,
+    "notes": "IAS, Sikkim cadre, 1989 batch. Bureaucratic head of MHA overall; also administratively heads the Department of Home. Appointment via Appointments Committee of the Cabinet, so appointedBy/onAdviceOf here approximate ACC composition (PM chairs, Home Minister is a member)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.mha.gov.in/en/about-us/meet-the-secretary/home-secretary",
+    "https://en.wikipedia.org/wiki/Govind_Mohan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-internal-security",
+   "title": "Secretary, Department of Internal Security",
+   "orgId": "in-dept-internal-security",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "vacant": false,
+   "sources": [
+    "https://www.mha.gov.in/en/about-us/meet-the-secretary/special-secretary"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-states",
+   "title": "Secretary, Department of States",
+   "orgId": "in-dept-states",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "vacant": false,
+   "sources": [
+    "https://www.mha.gov.in/en/about-us/meet-the-secretary/special-secretary"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-official-language",
+   "title": "Secretary, Department of Official Language",
+   "orgId": "in-dept-official-language",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "vacant": false,
+   "sources": [
+    "https://www.mha.gov.in/en/about-us/meet-the-secretary/special-secretary"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-border-management",
+   "title": "Secretary, Department of Border Management",
+   "orgId": "in-dept-border-management",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "vacant": false,
+   "sources": [
+    "https://www.mha.gov.in/en/about-us/meet-the-secretary/special-secretary"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-jammu-kashmir-and-ladakh-affairs",
+   "title": "Secretary, Department of Jammu, Kashmir and Ladakh Affairs",
+   "orgId": "in-dept-jammu-kashmir-and-ladakh-affairs",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "vacant": false,
+   "sources": [
+    "https://www.mha.gov.in/en/about-us/meet-the-secretary/special-secretary"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-director-ib",
+   "title": "Director, Intelligence Bureau",
+   "orgId": "in-ib",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Mahesh Dixit",
+    "since": "2026-07-01",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS, 1993 batch, Andhra Pradesh cadre. Succeeded Tapan Kumar Deka. Two-year tenure."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Director_of_the_Intelligence_Bureau"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-nia",
+   "title": "Director General, National Investigation Agency",
+   "orgId": "in-nia",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Rakesh Aggarwal",
+    "since": "2026-01-15",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS, 1994 batch, Himachal Pradesh cadre. Succeeded Sadanand Date."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Director_General_of_the_National_Investigation_Agency",
+    "https://theprint.in/india/chacha-chaudhary-for-peers-oversaw-cbis-delhi-excise-probe-new-nia-chief-rakesh-aggarwal/2827998/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-ncb",
+   "title": "Director General, Narcotics Control Bureau",
+   "orgId": "in-ncb",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Anurag Garg",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS, 1993 batch, Himachal Pradesh cadre; previously Additional DG, BSF. Confirmed as current DG NCB by Wikipedia infobox; exact appointment date not independently confirmed (one secondary source referenced a tenure-end date of 23 May 2026 which appears inconsistent with him still being listed as incumbent in Sep 2026 — flagged, not resolved)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Narcotics_Control_Bureau"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-director-ncrb",
+   "title": "Director, National Crime Records Bureau",
+   "orgId": "in-ncrb",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Amit Garg",
+    "since": "2026-07-06",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS, 1993 batch, Andhra Pradesh cadre; previously Director, SVPNPA. Succeeded Alok Ranjan (retired 30 June 2026). Post temporarily upgraded to Director-General level for him; tenure till Oct 2027 superannuation. Confirmed via Hindustan Times (6 Jul 2026): NCRB director's post was temporarily upgraded to DG level on a personal basis for Garg; he will hold the NCRB director's post until 31 Oct 2027."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ca.scoreclever.com/current-affairs/amit-garg-appointed-ncrb-director",
+    "https://www.hindustantimes.com/india-news/senior-ips-officer-amit-garg-named-ncrb-chief-alok-kumar-mittal-to-head-bprd-101783348354649.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-bprd",
+   "title": "Director General, Bureau of Police Research and Development",
+   "orgId": "in-bprd",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bureau_of_Police_Research_and_Development",
+    "https://www.hindustantimes.com/india-news/senior-ips-officer-amit-garg-named-ncrb-chief-alok-kumar-mittal-to-head-bprd-101783348354649.html"
+   ],
+   "confidence": "medium",
+   "holder": {
+    "name": "Alok Kumar Mittal",
+    "since": "2026-07-06",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS. Named DG, Bureau of Police Research and Development (BPR&D), in the same 6 Jul 2026 reshuffle that moved Amit Garg to NCRB and Sujeet Pandey to SVPNPA. Resolves the conflicting/stale Balaji Srivatsav / Rajeev Kumar Sharma names previously considered — neither is correct; Alok Kumar Mittal is the current DG."
+   }
+  },
+  {
+   "id": "in-pos-dg-bsf",
+   "title": "Director General, Border Security Force",
+   "orgId": "in-bsf",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Praveen Kumar",
+    "since": "2026-01-15",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS, 1993 batch, West Bengal cadre; earlier DG ITBP. Tenure to 30 Sep 2030. Some sources (Wikipedia infobox at fetch time) show an earlier 'since 1 December 2025' date for a predecessor/interim arrangement; theprint.in and ips.gov.in point to mid-January 2026 for Kumar specifically."
+   },
+   "vacant": false,
+   "sources": [
+    "https://theprint.in/india/shatrujeet-singh-kapoor-appointed-itbp-chief-praveen-kumar-to-head-bsf/2827286/",
+    "https://en.wikipedia.org/wiki/Director_General_of_the_Border_Security_Force",
+    "https://en.wikipedia.org/wiki/Border_Security_Force"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-crpf",
+   "title": "Director General, Central Reserve Police Force",
+   "orgId": "in-crpf",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Gyanendra Pratap Singh",
+    "since": "2025-01-30",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS officer."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gyanendra_Pratap_Singh",
+    "https://en.wikipedia.org/wiki/Central_Reserve_Police_Force"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-cisf",
+   "title": "Director General, Central Industrial Security Force",
+   "orgId": "in-cisf",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Praveer Ranjan",
+    "since": "2025-10-01",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS, 1993 batch, AGMUT cadre."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Praveer_Ranjan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-itbp",
+   "title": "Director General, Indo-Tibetan Border Police",
+   "orgId": "in-itbp",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Shatrujeet Singh Kapoor",
+    "since": "2026-01-15",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS, 1990 batch, Haryana cadre; tenure to 31 Oct 2026 (superannuation)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://theprint.in/india/shatrujeet-singh-kapoor-appointed-itbp-chief-praveen-kumar-to-head-bsf/2827286/",
+    "https://en.wikipedia.org/wiki/Indo-Tibetan_Border_Police"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-ssb",
+   "title": "Director General, Sashastra Seema Bal",
+   "orgId": "in-ssb",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Sanjay Singhal",
+    "since": "2025-09-01",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS, 1993 batch, Uttar Pradesh cadre."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sanjay_Singhal",
+    "https://en.wikipedia.org/wiki/Sashastra_Seema_Bal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-assam-rifles",
+   "title": "Director General, Assam Rifles",
+   "orgId": "in-assam-rifles",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Lt Gen Vikas Lakhera",
+    "since": "2024-08-01",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Army officer on deputation, per the force's dual Army/MHA control arrangement."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Director_General_of_the_Assam_Rifles"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-nsg",
+   "title": "Director General, National Security Guard",
+   "orgId": "in-nsg",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Brighu (\"B.\") Srinivasan",
+    "since": "2024-08-28",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS, 1992 batch, Bihar cadre."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/B._Srinivasan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-ndma",
+   "title": "Chairperson, NDMA (ex officio)",
+   "orgId": "in-ndma",
+   "rank": "head_of_agency",
+   "appointmentMode": "ex_officio",
+   "appointedBy": null,
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Narendra Modi",
+    "since": "2014-05-26",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Varanasi, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Narendra_Modi",
+    "acting": false,
+    "notes": "Ex officio: the sitting Prime Minister chairs NDMA per Disaster Management Act, 2005, s.3(2). Matches convention used for in-pos-chairperson-niti-aayog in core-apex.json."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Disaster_Management_Authority_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ndma-head-dept",
+   "title": "Member & Head of Department, NDMA",
+   "orgId": "in-ndma",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Krishna S. Vatsa",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Listed by NDMA as 'Member & Head of the Department', effectively the senior-most full-time Member; no separate named Vice-Chairperson could be confirmed as of this research pass (position may be structurally vacant)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ndma.gov.in/whos-who"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-executive-director-nidm",
+   "title": "Executive Director, NIDM",
+   "orgId": "in-nidm",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-home-affairs",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Madhup Vyas",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS, 2000 batch. Union Home Minister is ex officio President of NIDM's governing body."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Disaster_Management_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-ndrf",
+   "title": "Director General, National Disaster Response Force",
+   "orgId": "in-ndrf",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": "in-pos-minister-home-affairs",
+   "holder": {
+    "name": "Piyush Anand",
+    "since": "2024-04-01",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Piyush_Anand",
+    "acting": false,
+    "notes": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Piyush_Anand"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-rgi",
+   "title": "Registrar General and Census Commissioner of India",
+   "orgId": "in-rgi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-home-affairs",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Mritunjay Kumar Narayan",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS officer; exact appointment date not confirmed in this pass."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Registrar_General_and_Census_Commissioner_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-lpai",
+   "title": "Chairman, Land Ports Authority of India",
+   "orgId": "in-lpai",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-home-affairs",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Aditya Mishra",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Land_Ports_Authority_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-commissioner-boi",
+   "title": "Commissioner, Bureau of Immigration",
+   "orgId": "in-boi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-home-affairs",
+   "onAdviceOf": null,
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bureau_of_Immigration_(India)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-director-svpnpa",
+   "title": "Director, SVP National Police Academy",
+   "orgId": "in-svpnpa",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-home-affairs",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Sujeet Pandey",
+    "since": "2026-07-06",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS, 1994 batch, Uttar Pradesh cadre. Succeeded Amit Garg (who moved to become NCRB Director) as Director, SVPNPA; will hold the post until his retirement on 31 July 2028."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sardar_Vallabhbhai_Patel_National_Police_Academy",
+    "https://www.hindustantimes.com/india-news/senior-ips-officer-amit-garg-named-ncrb-chief-alok-kumar-mittal-to-head-bprd-101783348354649.html"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-commissioner-delhi-police",
+   "title": "Commissioner of Police, Delhi",
+   "orgId": "in-delhi-police",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-home-affairs",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Anurag Kumar",
+    "since": "2026-07-17",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS; exact date of assuming charge not confirmed in this pass."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Delhi_Police",
+    "https://www.thehindu.com/"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "to": "in-pos-chairperson-ndma",
+   "type": "ex_officio",
+   "basis": "Disaster Management Act, 2005, s.3",
+   "source": "https://en.wikipedia.org/wiki/National_Disaster_Management_Authority_(India)",
+   "from": "in-pos-prime-minister"
+  },
+  {
+   "to": "in-nidm",
+   "type": "ex_officio",
+   "basis": "NIDM governing-body rules (Home Minister as President)",
+   "source": "https://en.wikipedia.org/wiki/National_Institute_of_Disaster_Management_(India)",
+   "from": "in-pos-minister-home-affairs"
+  },
+  {
+   "to": "in-census-2027",
+   "type": "administers",
+   "basis": "Census Act, 1948",
+   "source": "https://en.wikipedia.org/wiki/Census_of_India",
+   "from": "in-rgi"
+  },
+  {
+   "to": "in-ncord",
+   "type": "ex_officio",
+   "basis": "MHA executive order constituting NCORD",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-pos-minister-home-affairs"
+  },
+  {
+   "to": "in-cctns",
+   "type": "administers",
+   "basis": "MHA/NCRB mission project",
+   "source": "https://en.wikipedia.org/wiki/National_Crime_Records_Bureau",
+   "from": "in-ncrb"
+  },
+  {
+   "to": "in-ib",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-nia",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-ncb",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-ncrb",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-bprd",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-ndma",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-ndrf",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-civil-defence",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-rgi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-svpnpa",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-i4c",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-dfss",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-ncord",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-bsf",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-crpf",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-cisf",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-itbp",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-ssb",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-assam-rifles",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-nsg",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-lpai",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961; Land Ports Authority of India Act, 2010",
+   "source": "https://en.wikipedia.org/wiki/Land_Ports_Authority_of_India",
+   "from": "in-dept-border-management"
+  },
+  {
+   "to": "in-boi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://en.wikipedia.org/wiki/Bureau_of_Immigration_(India)",
+   "from": "in-dept-home"
+  },
+  {
+   "to": "in-delhi-police",
+   "type": "administers",
+   "basis": "Delhi Police Act, 1978",
+   "source": "https://en.wikipedia.org/wiki/Delhi_Police",
+   "from": "in-dept-home"
+  },
+  {
+   "to": "in-nidm",
+   "type": "oversees",
+   "basis": "Disaster Management Act, 2005, s.42",
+   "source": "https://en.wikipedia.org/wiki/National_Institute_of_Disaster_Management_(India)",
+   "from": "in-ndma"
+  },
+  {
+   "to": "st-an",
+   "type": "oversees",
+   "basis": "Government of India (Allocation of Business) Rules, 1961 — Union Territories Division",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-dept-states"
+  },
+  {
+   "to": "st-ld",
+   "type": "oversees",
+   "basis": "Government of India (Allocation of Business) Rules, 1961 — Union Territories Division",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-dept-states"
+  },
+  {
+   "to": "st-ch",
+   "type": "oversees",
+   "basis": "Government of India (Allocation of Business) Rules, 1961 — Union Territories Division",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-dept-states"
+  },
+  {
+   "to": "st-dh",
+   "type": "oversees",
+   "basis": "Government of India (Allocation of Business) Rules, 1961 — Union Territories Division",
+   "source": "https://www.mha.gov.in/en",
+   "from": "in-dept-states"
+  },
+  {
+   "to": "in-min-home-affairs",
+   "type": "oversees",
+   "basis": "MHA organisational structure — Home Secretary is overall administrative head",
+   "source": "https://www.mha.gov.in/en/about-us/meet-the-secretary/home-secretary",
+   "from": "in-pos-secretary-home"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 23,
+  "corrections": [
+   "Removed 1 duplicate relation(s): in-min-home-affairs->in-ndma administers was listed twice (AoB Rules basis + Disaster Management Act basis); kept one.",
+   "in-pos-chairperson-ndma: rank was 'head_of_government' (reserved for the PM's own position in-pos-prime-minister elsewhere in the graph) -> corrected to 'head_of_agency' (matches convention for ex-officio PM-chairs positions, e.g. in-pos-chairperson-niti-aayog). holder was null/vacant despite appointmentMode=ex_officio and vacant=false -> filled with Narendra Modi (PM, ex officio chair per Disaster Management Act 2005 s.3(2)), consistent with how core-apex.json fills in-pos-chairperson-niti-aayog.",
+   "in-pos-minister-home-affairs (Amit Shah): holder.house was 'Rajya Sabha' and holder.constituency was 'Gujarat' (stale, pre-2019 Rajya Sabha data) -> corrected to house='Lok Sabha', constituency='Gandhinagar, Gujarat'. Confirmed via fresh WebFetch of en.wikipedia.org/wiki/Amit_Shah: he has represented Gandhinagar in the Lok Sabha since 23 May 2019 (re-elected 2024).",
+   "in-pos-director-ncrb (Amit Garg): confidence raised medium -> high; 'since' date 2026-07-06 independently confirmed via Hindustan Times (6 Jul 2026, publish timestamp matches exactly). Added note that his post was temporarily personally upgraded to DG level and his NCRB tenure runs to 31 Oct 2027.",
+   "in-pos-director-svpnpa: was VACANT/no holder (file's own notes flagged 'SVPNPA successor not confirmed') -> ADDED holder Sujeet Pandey (IPS, 1994 batch, UP cadre), since 2026-07-06, confidence medium, sourced to Hindustan Times (6 Jul 2026), which reports he replaced Amit Garg at SVPNPA and holds the post to his retirement 31 Jul 2028.",
+   "in-pos-dg-bprd: was VACANT (file's own notes flagged conflicting stale candidates Balaji Srivatsav vs Rajeev Kumar Sharma) -> RESOLVED and ADDED holder Alok Kumar Mittal (IPS), since 2026-07-06, confidence medium, sourced to Hindustan Times (6 Jul 2026) — same article/reshuffle as the NCRB and SVPNPA appointments above. Both previously-considered names are wrong/stale.",
+   "in-pos-commissioner-delhi-police (Anurag Kumar): since-date was missing -> added '2026-07-17'; confidence raised medium -> high. Confirmed via The Hindu news search: 'Anurag Kumar, a 1994-batch IPS officer, was appointed Delhi Police Commissioner on Friday (July 17, 2026)' succeeding Satish Golcha.",
+   "in-pos-rgi (Mritunjay Kumar Narayan): confidence raised medium -> high after independent fresh confirmations (ANI wire coverage of his central-deputation tenure extension, and March 2026 press coverage of his Census 2027 remarks) both still identify him as Registrar General/Census Commissioner in 2026; exact appointment date remains unconfirmed so 'since' stays null.",
+   "in-pos-dg-bsf (Praveen Kumar): confidence raised medium -> high. Independently re-confirmed via fresh WebFetch of en.wikipedia.org/wiki/Border_Security_Force ('current DG is Praveen Kumar, IPS, since 15 January 2026'), exact date match with file.",
+   "in-pos-dg-itbp (Shatrujeet Singh Kapoor): confidence raised medium -> high. Name independently re-confirmed via fresh WebFetch of en.wikipedia.org/wiki/Indo-Tibetan_Border_Police as current DG (also cross-checked against a Sep 2025 Mint article showing Praveen Kumar was DG ITBP before moving to BSF in the Jan 2026 reshuffle, which corroborates rather than contradicts the file's timeline).",
+   "in-pos-dg-ssb (Sanjay Singhal): confidence raised medium -> high. Independently re-confirmed via fresh WebFetch of en.wikipedia.org/wiki/Sashastra_Seema_Bal ('Sanjay Singhal, IPS, 1 September 2025, Incumbent'), exact date match with file."
+  ]
+ }
+}

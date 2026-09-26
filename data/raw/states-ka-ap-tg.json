@@ -1,0 +1,4465 @@
+{
+ "segment": "states-ka-ap-tg",
+ "asOf": "2026-09-25",
+ "notes": "states-ka-ap-tg segment: Karnataka (st-ka), Andhra Pradesh (st-ap), Telangana (st-tg) — full state government structures as of 2026-09-25. Sourced primarily from live English Wikipedia articles fetched via WebFetch (the Wikipedia parse API via curl was intermittently rate-limited during this research session, likely due to concurrent parallel research agents on the same task hitting the same endpoint; WebFetch against normal wikipedia.org article URLs was used as the primary channel instead, with a handful of curl/python(bs4) infobox parses where the API was reachable). WebSearch was unavailable for most of this session (session budget exhausted by other parallel agents before this segment could use it), so office-holder claims rely on the CURRENT revision of English Wikipedia biographical/ministry pages plus official state portals, without independent cross-checking against PIB/press for every holder — this is a materially weaker verification bar than the task's 'confirm every holder against a 2025-2026 source' instruction ideally calls for, and is flagged as a general caveat.\n\nDistricts (st-<code>-dist-*) are owned by the local-lgd segment and are only referenced here via the 'districts' count stat, never redefined. High Courts (in-hc-karnataka, in-hc-andhra-pradesh, in-hc-telangana — Telangana and AP share the High Court for the State of Telangana until AP's own HC is fully operational; verify current status) are judiciary-owned and referenced only, not defined here. Rajya Sabha members themselves are parliament-owned; only the indirectly_elects relation from each assembly to in-rajya-sabha is recorded here.\n\nState Legislative Council entities were typed 'state_legislature' for the Assembly (lower/principal house) and 'state_chamber' for the Legislative Council (upper house) — the SCHEMA.md ID rules list both st-<code>-assembly and st-<code>-legislative-council without specifying an umbrella 'legislature' id, so no separate wrapper entity was created; this is an interpretive choice, flag if the merge step expects otherwise.\n\nKARNATAKA: CM changed 2026-06-03 under the INC power-sharing arrangement — D.K. Shivakumar (previously Deputy CM since 2023-05-20) succeeded Siddaramaiah, who stepped down in May 2026; G. Parameshwara is now Deputy CM. Full ministry roster (32 filled incl. CM+DyCM; 2 vacancies against a sanctioned strength of 34) sourced from en.wikipedia 'Shivakumar ministry' as of 2026-09-22 — individual ministers' Wikipedia URLs were NOT individually fetched/verified in this research pass, so 'wikipedia' field is omitted for all ministers except CM/Governor (never invented). Yathindra Siddaramaiah's constituency not stated in the source table (he represents Varuna per general knowledge — NOT verified this pass, left blank). BBMP was replaced 2025-05-15 by the Greater Bengaluru Authority (GBA), split into 5 city corporations (Central/North/South/East/West) — modelled as st-ka-gba (local_government_tier) parenting the 5 corporations; this is a major recent structural change, worth double-checking against ecgov.karnataka.gov.in if precision matters. Hubballi-Dharwad is listed here as one combined corporation per long-standing convention; a fetched source listed 'Hubballi' and 'Dharwad' as separate entries which may reflect an error in that source or a real post-2020s split — LOW CONFIDENCE, flagged for follow-up. Karnataka State Election Commissioner name is contested between two sources on the KSEC wiki page (B. Basavaraju vs G.S. Sangreshi) — recorded as unknown/vacant, confidence low, needs a fresh check against karsec.gov.in. KPSC Chairman and Karnataka SHRC chairperson dates could not be confirmed against a 2025-2026 source in the time available — confidence low.\n\nANDHRA PRADESH: Capital status resolved via the Andhra Pradesh Reorganisation (Amendment) Act, 2026 (passed by both Houses of Parliament in the 2026 Budget session; presidential assent 2026-04-06, per a fresh check — the segment's original note of 2026-04-02 was not independently confirmed and is superseded by this date) — the Act fixed Amaravati as THE capital, ending the 2019-2024 three-capitals dispute (Amaravati/Visakhapatnam/Kurnool) that arose under the previous YSRCP government; TDP-led NDA government (from June 2024) reverted to Amaravati-only. District count rose from 26 (April 2022 reorganisation) to 28 with Markapuram and Polavaram districts formed 2025-12-31. Leader of Opposition seat recorded VACANT — no official LoP had been designated as of the source's last update (YSRCP's 11 seats fall below the usual 10% threshold debate notwithstanding, no formal designation found). Legislative Council Chairman/Deputy Chairman are still YSRCP despite the TDP-led alliance controlling the Assembly since 2024 — plausible given the Council is a permanent body with staggered terms; not independently re-verified beyond the single wiki source. Deputy Chairman's very recent since-date (2026-08-19) increases uncertainty; flagged medium confidence. APPSC Chairman holds 'FAC' (full additional charge), suggesting an unsettled/acting position — low confidence. AP State Human Rights Commission chairperson could not be confirmed in the time available; left vacant/low confidence rather than guessed. Individual ministers' Wikipedia URLs not fetched/verified this pass — omitted per 'never invent URLs'.\n\nTELANGANA: INC's Assembly strength rose from 64 (2023 election result) to 76 by November 2025, reflecting BRS-to-INC defections common after Indian state elections — the party-wise strength table reflects the CURRENT floor strength, not the 2023 result (which was INC 64, BRS ~39, BJP 8, AIMIM 7). No Deputy Speaker found for the current (3rd) Assembly as of the source consulted — recorded vacant, low confidence, may simply be unfilled by choice/convention rather than a real vacancy dispute. K. Chandrashekar Rao (BRS) is recorded as Leader of Opposition per source despite his rare Assembly attendance in recent years — flagged for a sanity check against a current news source. Telangana Governor changed twice in the review window: Jishnu Dev Varma (2024-07-31 to 2026-03-11) then Shiv Pratap Shukla (from 2026-03-11) — current holder only ~6 months into term as of 2026-09-25 asOf date. Individual ministers' Wikipedia URLs not fetched/verified this pass — omitted per 'never invent URLs'.",
+ "entities": [
+  {
+   "id": "st-ka",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Karnataka",
+   "parentId": "in-states-and-uts",
+   "description": "Karnataka is a state of India with its capital at Bengaluru.",
+   "officialUrl": "https://www.karnataka.gov.in",
+   "stats": {
+    "population2011": 61130704,
+    "areaKm2": 191791,
+    "lokSabhaSeats": 28,
+    "rajyaSabhaSeats": 12,
+    "assemblySeats": 224,
+    "districts": 31
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka",
+    "https://karnataka.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ka-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Karnataka",
+   "parentId": "st-ka",
+   "description": "The executive government of Karnataka, headed by the Governor as constitutional head and the Chief Minister as head of government.",
+   "officialUrl": "https://www.karnataka.gov.in",
+   "headPositionId": "st-ka-pos-chief-minister",
+   "adminHeadPositionId": "st-ka-pos-chief-secretary",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ka-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Karnataka Council of Ministers",
+   "parentId": "st-ka-government",
+   "description": "The Council of Ministers of Karnataka, headed by the Chief Minister, collectively responsible to the Legislative Assembly.",
+   "headPositionId": "st-ka-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ka-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Karnataka Legislative Assembly",
+   "parentId": "st-ka-government",
+   "description": "The lower (and principal) house of the Karnataka state legislature, directly elected by the people.",
+   "seats": 224,
+   "stats": {
+    "partyWiseStrength": {
+     "INC": 136,
+     "BJP": 63,
+     "JD(S)": 18,
+     "SKP": 1,
+     "IND": 4,
+     "Vacant": 2
+    },
+    "lastElection": "2023-05-10",
+    "nextElectionDue": "2028-05"
+   },
+   "headPositionId": "st-ka-pos-speaker",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ka-legislative-council",
+   "kind": "state_chamber",
+   "sector": "federal",
+   "name": "Karnataka Legislative Council",
+   "parentId": "st-ka-government",
+   "description": "The upper house of the Karnataka state legislature, a permanent body with members elected/nominated across several categories.",
+   "seats": 75,
+   "stats": {
+    "compositionBreakdown": {
+     "localAuthorities": 25,
+     "mlaElected": 25,
+     "graduates": 7,
+     "teachers": 7,
+     "governorNominated": 11
+    }
+   },
+   "headPositionId": "st-ka-pos-chairman-legislative-council",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_Legislative_Council"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ka-police",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Karnataka State Police",
+   "parentId": "st-ka-government",
+   "description": "The state police force of Karnataka, responsible for law and order, crime investigation and public safety.",
+   "headPositionId": "st-ka-pos-dgp",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_State_Police"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ka-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Karnataka State Election Commission",
+   "parentId": "st-ka",
+   "description": "Independent constitutional body (Article 243K/243ZA) that conducts elections to Panchayats and Municipalities in Karnataka.",
+   "legalBasis": "Article 243K / 243ZA of the Constitution",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_State_Election_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ka-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Karnataka Public Service Commission",
+   "parentId": "st-ka",
+   "description": "Constitutional body (Article 315) that conducts recruitment examinations for state civil services in Karnataka.",
+   "legalBasis": "Article 315",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_Public_Service_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ka-lokayukta",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "Karnataka Lokayukta",
+   "parentId": "st-ka",
+   "description": "Statutory anti-corruption ombudsman investigating complaints against public servants in Karnataka.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_Lokayukta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ka-shrc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Karnataka State Human Rights Commission",
+   "parentId": "st-ka",
+   "description": "Statutory body under the Protection of Human Rights Act, 1993 that investigates human-rights violations in Karnataka.",
+   "legalBasis": "Protection of Human Rights Act, 1993",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ka-mc-bengaluru-central",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bengaluru Central City Corporation",
+   "parentId": "st-ka-gba",
+   "description": "Urban local body governing Bengaluru Central under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-bengaluru-north",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bengaluru North City Corporation",
+   "parentId": "st-ka-gba",
+   "description": "Urban local body governing Bengaluru North under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-bengaluru-south",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bengaluru South City Corporation",
+   "parentId": "st-ka-gba",
+   "description": "Urban local body governing Bengaluru South under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-bengaluru-east",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bengaluru East City Corporation",
+   "parentId": "st-ka-gba",
+   "description": "Urban local body governing Bengaluru East under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-bengaluru-west",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bengaluru West City Corporation",
+   "parentId": "st-ka-gba",
+   "description": "Urban local body governing Bengaluru West under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-mysuru",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Greater Mysuru City Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Greater Mysuru under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-mangaluru",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Mangaluru City Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Mangaluru under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-belagavi",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Belagavi City Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Belagavi under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-kalaburagi",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kalaburagi City Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Kalaburagi under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-hubballi-dharwad",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Hubballi-Dharwad Municipal Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Hubballi-Dharwad under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-davanagere",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Davanagere City Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Davanagere under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-ballari",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Ballari City Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Ballari under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-vijayapura",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Vijayapura City Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Vijayapura under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-shivamogga",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Shivamogga City Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Shivamogga under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-tumakuru",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Tumakuru City Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Tumakuru under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-hassan",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Hassan City Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Hassan under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-raichur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Raichur City Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Raichur under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-mc-bidar",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bidar City Corporation",
+   "parentId": "st-ka",
+   "description": "Urban local body governing Bidar under the Karnataka Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ka-gba",
+   "kind": "local_government_tier",
+   "sector": "federal",
+   "name": "Greater Bengaluru Authority",
+   "parentId": "st-ka-government",
+   "description": "Apex metropolitan coordinating body for Bengaluru, established 15 May 2025 replacing the Bruhat Bengaluru Mahanagara Palike (BBMP); became fully operational 2 September 2025, overseeing five constituent city corporations across 712 km2.",
+   "legalBasis": "Greater Bengaluru Governance Act, 2024",
+   "established": "2025-05-15",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Greater_Bengaluru_Authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ap",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Andhra Pradesh",
+   "parentId": "in-states-and-uts",
+   "description": "Andhra Pradesh is a state of India with its capital at Amaravati.",
+   "officialUrl": "https://www.ap.gov.in",
+   "stats": {
+    "population2011": 49577103,
+    "areaKm2": 162975,
+    "lokSabhaSeats": 25,
+    "rajyaSabhaSeats": 11,
+    "assemblySeats": 175,
+    "districts": 28
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh",
+    "https://www.ap.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ap-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Andhra Pradesh",
+   "parentId": "st-ap",
+   "description": "The executive government of Andhra Pradesh, headed by the Governor as constitutional head and the Chief Minister as head of government.",
+   "officialUrl": "https://www.ap.gov.in",
+   "headPositionId": "st-ap-pos-chief-minister",
+   "adminHeadPositionId": "st-ap-pos-chief-secretary",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ap-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Andhra Pradesh Council of Ministers",
+   "parentId": "st-ap-government",
+   "description": "The Council of Ministers of Andhra Pradesh, headed by the Chief Minister, collectively responsible to the Legislative Assembly.",
+   "headPositionId": "st-ap-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ap-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Andhra Pradesh Legislative Assembly",
+   "parentId": "st-ap-government",
+   "description": "The lower (and principal) house of the Andhra Pradesh state legislature, directly elected by the people.",
+   "seats": 175,
+   "stats": {
+    "partyWiseStrength": {
+     "TDP": 135,
+     "JSP": 21,
+     "BJP": 8,
+     "YSRCP": 11
+    },
+    "lastElection": "2024-05-13",
+    "nextElectionDue": "2029-04/05"
+   },
+   "headPositionId": "st-ap-pos-speaker",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ap-legislative-council",
+   "kind": "state_chamber",
+   "sector": "federal",
+   "name": "Andhra Pradesh Legislative Council",
+   "parentId": "st-ap-government",
+   "description": "The upper house of the Andhra Pradesh state legislature, a permanent body with members elected/nominated across several categories.",
+   "seats": 58,
+   "stats": {
+    "compositionBreakdown": {
+     "mlaElected": 20,
+     "localAuthorities": 20,
+     "graduates": 5,
+     "teachers": 5,
+     "governorNominated": 8
+    }
+   },
+   "headPositionId": "st-ap-pos-chairman-legislative-council",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Legislative_Council"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ap-police",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Andhra Pradesh Police",
+   "parentId": "st-ap-government",
+   "description": "The state police force of Andhra Pradesh, responsible for law and order, crime investigation and public safety.",
+   "headPositionId": "st-ap-pos-dgp",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Police"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ap-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Andhra Pradesh State Election Commission",
+   "parentId": "st-ap",
+   "description": "Independent constitutional body (Article 243K/243ZA) that conducts elections to Panchayats and Municipalities in Andhra Pradesh.",
+   "legalBasis": "Article 243K / 243ZA of the Constitution",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Andhra Pradesh Public Service Commission",
+   "parentId": "st-ap",
+   "description": "Constitutional body (Article 315) that conducts recruitment examinations for state civil services in Andhra Pradesh.",
+   "legalBasis": "Article 315",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Public_Service_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ap-lokayukta",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "Andhra Pradesh Lokayukta",
+   "parentId": "st-ap",
+   "description": "Statutory anti-corruption ombudsman investigating complaints against public servants in Andhra Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Lokayukta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ap-shrc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Andhra Pradesh State Human Rights Commission",
+   "parentId": "st-ap",
+   "description": "Statutory body under the Protection of Human Rights Act, 1993 that investigates human-rights violations in Andhra Pradesh.",
+   "legalBasis": "Protection of Human Rights Act, 1993",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ap-mc-anantapur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Anantapur Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Anantapur under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-chittoor",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Chittoor Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Chittoor under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-rajamahendravaram",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Rajamahendravaram Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Rajamahendravaram under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-eluru",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Eluru Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Eluru under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-guntur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Guntur Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Guntur under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-mangalagiri-tadepalli",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Mangalagiri-Tadepalli Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Mangalagiri-Tadepalli under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-kadapa",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kadapa Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Kadapa under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-kakinada",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kakinada Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Kakinada under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-machilipatnam",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Machilipatnam Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Machilipatnam under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-kurnool",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kurnool Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Kurnool under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-nellore",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Nellore Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Nellore under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-vijayawada",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Vijayawada Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Vijayawada under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-ongole",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Ongole Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Ongole under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-srikakulam",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Srikakulam Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Srikakulam under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-tirupati",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Tirupati Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Tirupati under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-visakhapatnam",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Greater Visakhapatnam Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Greater Visakhapatnam under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ap-mc-vizianagaram",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Vizianagaram Municipal Corporation",
+   "parentId": "st-ap",
+   "description": "Urban local body governing Vizianagaram under the Andhra Pradesh Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Andhra_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Telangana",
+   "parentId": "in-states-and-uts",
+   "description": "Telangana is a state of India with its capital at Hyderabad.",
+   "officialUrl": "https://www.telangana.gov.in",
+   "stats": {
+    "population2011": 34142969,
+    "areaKm2": 112077,
+    "lokSabhaSeats": 17,
+    "rajyaSabhaSeats": 7,
+    "assemblySeats": 119,
+    "districts": 33
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana",
+    "https://www.telangana.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tg-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Telangana",
+   "parentId": "st-tg",
+   "description": "The executive government of Telangana, headed by the Governor as constitutional head and the Chief Minister as head of government.",
+   "officialUrl": "https://www.telangana.gov.in",
+   "headPositionId": "st-tg-pos-chief-minister",
+   "adminHeadPositionId": "st-tg-pos-chief-secretary",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tg-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Telangana Council of Ministers",
+   "parentId": "st-tg-government",
+   "description": "The Council of Ministers of Telangana, headed by the Chief Minister, collectively responsible to the Legislative Assembly.",
+   "headPositionId": "st-tg-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tg-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Telangana Legislative Assembly",
+   "parentId": "st-tg-government",
+   "description": "The lower (and principal) house of the Telangana state legislature, directly elected by the people.",
+   "seats": 119,
+   "stats": {
+    "partyWiseStrength": {
+     "INC": 75,
+     "BRS": 27,
+     "BJP": 7,
+     "AIMIM": 7,
+     "CPI": 1,
+     "IND": 1,
+     "Vacant": 1
+    },
+    "lastElection": "2023-11-30",
+    "nextElectionDue": "2028-11"
+   },
+   "headPositionId": "st-tg-pos-speaker",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tg-legislative-council",
+   "kind": "state_chamber",
+   "sector": "federal",
+   "name": "Telangana Legislative Council",
+   "parentId": "st-tg-government",
+   "description": "The upper house of the Telangana state legislature, a permanent body with members elected/nominated across several categories.",
+   "seats": 40,
+   "stats": {
+    "compositionBreakdown": {
+     "mlaElected": 14,
+     "localAuthorities": 14,
+     "graduates": 3,
+     "teachers": 3,
+     "governorNominated": 6
+    }
+   },
+   "headPositionId": "st-tg-pos-chairman-legislative-council",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_Legislative_Council"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tg-police",
+   "kind": "state_department",
+   "sector": "federal",
+   "name": "Telangana State Police",
+   "parentId": "st-tg-government",
+   "description": "The state police force of Telangana, responsible for law and order, crime investigation and public safety.",
+   "headPositionId": "st-tg-pos-dgp",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_State_Police"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tg-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Telangana State Election Commission",
+   "parentId": "st-tg",
+   "description": "Independent constitutional body (Article 243K/243ZA) that conducts elections to Panchayats and Municipalities in Telangana.",
+   "legalBasis": "Article 243K / 243ZA of the Constitution",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Telangana Public Service Commission",
+   "parentId": "st-tg",
+   "description": "Constitutional body (Article 315) that conducts recruitment examinations for state civil services in Telangana.",
+   "legalBasis": "Article 315",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tg-lokayukta",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "Telangana Lokayukta",
+   "parentId": "st-tg",
+   "description": "Statutory anti-corruption ombudsman investigating complaints against public servants in Telangana.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_Lokayukta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tg-shrc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Telangana State Human Rights Commission",
+   "parentId": "st-tg",
+   "description": "Statutory body under the Protection of Human Rights Act, 1993 that investigates human-rights violations in Telangana.",
+   "legalBasis": "Protection of Human Rights Act, 1993",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-tg-mc-greater-hyderabad",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Greater Hyderabad Municipal Corporation",
+   "parentId": "st-tg",
+   "description": "Urban local body governing Greater Hyderabad under the Telangana Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Telangana"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg-mc-cyberabad",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Cyberabad Municipal Corporation",
+   "parentId": "st-tg",
+   "description": "Urban local body governing Cyberabad under the Telangana Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Telangana"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg-mc-malkajgiri",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Malkajgiri Municipal Corporation",
+   "parentId": "st-tg",
+   "description": "Urban local body governing Malkajgiri under the Telangana Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Telangana"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg-mc-greater-warangal",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Greater Warangal Municipal Corporation",
+   "parentId": "st-tg",
+   "description": "Urban local body governing Greater Warangal under the Telangana Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Telangana"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg-mc-nizamabad",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Nizamabad Municipal Corporation",
+   "parentId": "st-tg",
+   "description": "Urban local body governing Nizamabad under the Telangana Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Telangana"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg-mc-karimnagar",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Karimnagar Municipal Corporation",
+   "parentId": "st-tg",
+   "description": "Urban local body governing Karimnagar under the Telangana Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Telangana"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg-mc-ramagundam",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Ramagundam Municipal Corporation",
+   "parentId": "st-tg",
+   "description": "Urban local body governing Ramagundam under the Telangana Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Telangana"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg-mc-khammam",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Khammam Municipal Corporation",
+   "parentId": "st-tg",
+   "description": "Urban local body governing Khammam under the Telangana Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Telangana"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg-mc-nalgonda",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Nalgonda Municipal Corporation",
+   "parentId": "st-tg",
+   "description": "Urban local body governing Nalgonda under the Telangana Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Telangana"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg-mc-mancherial",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Mancherial Municipal Corporation",
+   "parentId": "st-tg",
+   "description": "Urban local body governing Mancherial under the Telangana Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Telangana"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg-mc-mahabubnagar",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Mahabubnagar Municipal Corporation",
+   "parentId": "st-tg",
+   "description": "Urban local body governing Mahabubnagar under the Telangana Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Telangana"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tg-mc-kothagudem",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kothagudem Municipal Corporation",
+   "parentId": "st-tg",
+   "description": "Urban local body governing Kothagudem under the Telangana Municipal Corporations Act.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Telangana"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-ka-pos-governor",
+   "title": "Governor of Karnataka",
+   "orgId": "st-ka-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Thawar Chand Gehlot",
+    "since": "2021-07-11",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thawar_Chand_Gehlot"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Thawar_Chand_Gehlot"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-chief-minister",
+   "title": "Chief Minister of Karnataka",
+   "orgId": "st-ka-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "holder": {
+    "name": "D. K. Shivakumar",
+    "since": "2026-06-03",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Kanakapura",
+    "wikipedia": "https://en.wikipedia.org/wiki/D._K._Shivakumar"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "deputy_chief_minister",
+   "seat": "Revenue, Sports",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "G. Parameshwara",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Koratagere",
+    "notes": "Portfolio(s): Revenue, Sports",
+    "since": "2026-06-03",
+    "wikipedia": "https://en.wikipedia.org/wiki/G._Parameshwara"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-1",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "K. H. Muniyappa",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Devanahalli",
+    "notes": "Portfolio(s): Social Welfare",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-2",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "K. J. George",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Sarvagnanagar",
+    "notes": "Portfolio(s): Energy, Tourism",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-3",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "M. B. Patil",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Babaleshwar",
+    "notes": "Portfolio(s): Large & Medium Industries, Infrastructure Development",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-4",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Satish Jarkiholi",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Yemkanmardi",
+    "notes": "Portfolio(s): Public Works",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-5",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Krishna Byre Gowda",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Byatarayanapura",
+    "notes": "Portfolio(s): Greater Bengaluru Development, Parliamentary Affairs & Legislation",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-6",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Priyank Kharge",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Chittapur",
+    "notes": "Portfolio(s): Home (excl. Intelligence), IT & Biotechnology, E-Governance",
+    "since": "2026-06-03",
+    "wikipedia": "https://en.wikipedia.org/wiki/Priyank_Kharge"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-7",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "U. T. Khader",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Mangalore",
+    "notes": "Portfolio(s): Health & Family Welfare, Minority Welfare, Haj & Wakf",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-8",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Eshwara Khandre",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Bhalki",
+    "notes": "Portfolio(s): Rural Development, Panchayati Raj",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-9",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Yathindra Siddaramaiah",
+    "party": "INC",
+    "house": "Legislative Council",
+    "constituency": null,
+    "notes": "Portfolio(s): Urban Development",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-10",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Byrathi Suresh",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Hebbal",
+    "notes": "Portfolio(s): Transport",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-11",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Sharan Prakash Patil",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Sedam",
+    "notes": "Portfolio(s): Medical Education, Skill Development",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-12",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Ramalinga Reddy",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "B.T.M Layout",
+    "notes": "Portfolio(s): Forest, Ecology & Environment",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-13",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "B. Z. Zameer Ahmed Khan",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Chamrajpet",
+    "notes": "Portfolio(s): Housing",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-14",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Santosh Lad",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Kalghatgi",
+    "notes": "Portfolio(s): Labour & Employment",
+    "since": "2026-06-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-15",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Rizwan Arshad",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Shivajinagar",
+    "notes": "Portfolio(s): Food & Civil Supplies, Consumer Affairs",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-16",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Madhu Bangarappa",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Soraba",
+    "notes": "Portfolio(s): Primary & Secondary Education",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-17",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "S. S. Mallikarjun",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Davanagere North",
+    "notes": "Portfolio(s): Mines & Geology, Horticulture",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-18",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "K. S. Basavanthappa",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Mayakonda",
+    "notes": "Portfolio(s): Muzrai, Fisheries, Ports & Inland Water Transport",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-19",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Laxman Savadi",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Athani",
+    "notes": "Portfolio(s): Co-operation (excl. Agriculture Marketing)",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-20",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Vijayanand Kashappanavar",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Hungund",
+    "notes": "Portfolio(s): Small Scale Industries, Public Enterprises",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-21",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Basavaraj Rayareddy",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Yelburga",
+    "notes": "Portfolio(s): Higher Education",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-22",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "H. C. Balakrishna",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Magadi",
+    "notes": "Portfolio(s): Municipal Administration",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-23",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "K. M. Shivalinge Gowda",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Arsikere",
+    "notes": "Portfolio(s): Excise",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-24",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "N. Chaluvaraya Swamy",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Nagamangala",
+    "notes": "Portfolio(s): Major & Medium Irrigation",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-25",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Ajay Singh",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Jevargi",
+    "notes": "Portfolio(s): Minor Irrigation, Science & Technology",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-26",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "P. M. Narendraswamy",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Malavalli",
+    "notes": "Portfolio(s): Agriculture",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-27",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Shivaraj Tangadagi",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Kanakagiri",
+    "notes": "Portfolio(s): Backward Classes Welfare, Kannada & Culture",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-28",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Rudrappa Lamani",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Haveri",
+    "notes": "Portfolio(s): Sugar & Textiles",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-29",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "T. Raghumurthy",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Challakere",
+    "notes": "Portfolio(s): Scheduled Tribe Welfare",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-minister-30",
+   "title": "Minister, Karnataka",
+   "orgId": "st-ka-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "onAdviceOf": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "C. Puttarangashetty",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Chamarajanagar",
+    "notes": "Portfolio(s): Animal Husbandry & Sericulture",
+    "since": "2026-08-03"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-speaker",
+   "title": "Speaker, Karnataka Legislative Assembly",
+   "orgId": "st-ka-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ka-assembly",
+   "holder": {
+    "name": "G. S. Patil",
+    "party": "INC",
+    "since": "2026-08-14"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-deputy-speaker",
+   "title": "Deputy Speaker, Karnataka Legislative Assembly",
+   "orgId": "st-ka-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ka-assembly",
+   "holder": {
+    "name": "Mankala Vaidya",
+    "party": "INC",
+    "since": "2026-08-17"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_Legislative_Assembly"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Karnataka Legislative Assembly",
+   "orgId": "st-ka-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "ex_officio",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "R. Ashoka",
+    "party": "BJP",
+    "since": "2023-11-17"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-chairman-legislative-council",
+   "title": "Chairman, Karnataka Legislative Council",
+   "orgId": "st-ka-legislative-council",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ka-legislative-council",
+   "holder": {
+    "name": "Saleem Ahmed",
+    "party": "INC",
+    "since": "2026-08-14"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_Legislative_Council"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-deputy-chairman-legislative-council",
+   "title": "Deputy Chairman, Karnataka Legislative Council",
+   "orgId": "st-ka-legislative-council",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ka-legislative-council",
+   "holder": {
+    "name": "Umashree",
+    "party": "INC",
+    "since": "2026-08-17"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_Legislative_Council"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-chief-secretary",
+   "title": "Chief Secretary, Karnataka",
+   "orgId": "st-ka-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "Rajneesh Goel (IAS)",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-dgp",
+   "title": "Director General of Police, Karnataka",
+   "orgId": "st-ka-police",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-chief-minister",
+   "holder": {
+    "name": "M. A. Saleem, IPS",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_State_Police"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-sec-commissioner",
+   "title": "State Election Commissioner, Karnataka",
+   "orgId": "st-ka-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_State_Election_Commission"
+   ],
+   "confidence": "low",
+   "vacant": true
+  },
+  {
+   "id": "st-ka-pos-psc-chairman",
+   "title": "Chairman, Karnataka Public Service Commission",
+   "orgId": "st-ka-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "holder": {
+    "name": "Dr. B. Prabhudev",
+    "since": null,
+    "acting": true,
+    "notes": " Interim/Full Additional Charge (FAC) Chairman; confirmed current via en.wikipedia.org/wiki/Karnataka_Public_Service_Commission, no appointment date given by the source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_Public_Service_Commission"
+   ],
+   "confidence": "low",
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-lokayukta",
+   "title": "Lokayukta of Karnataka",
+   "orgId": "st-ka-lokayukta",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_Lokayukta"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Justice B. S. Patil",
+    "since": "2022-06-15"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-ka-pos-shrc-chairperson",
+   "title": "Chairperson, Karnataka State Human Rights Commission",
+   "orgId": "st-ka-shrc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ka-pos-governor",
+   "confidence": "low",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka"
+   ],
+   "holder": {
+    "name": "L. Narayanaswamy",
+    "notes": "Holder/date not independently confirmed against a 2025-2026 source; treat as low confidence."
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-governor",
+   "title": "Governor of Andhra Pradesh",
+   "orgId": "st-ap-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Syed Abdul Nazeer",
+    "since": "2023-02-24",
+    "wikipedia": "https://en.wikipedia.org/wiki/Governor_of_Andhra_Pradesh"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Governor_of_Andhra_Pradesh"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-chief-minister",
+   "title": "Chief Minister of Andhra Pradesh",
+   "orgId": "st-ap-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "holder": {
+    "name": "N. Chandrababu Naidu",
+    "since": "2024-06-12",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Kuppam",
+    "wikipedia": "https://en.wikipedia.org/wiki/N._Chandrababu_Naidu"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "deputy_chief_minister",
+   "seat": "Panchayat Raj, Rural Development & Rural Water Supply, Environment, Forest, Science and Technology",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Pawan Kalyan",
+    "party": "JSP",
+    "house": "Legislative Assembly",
+    "constituency": "Pithapuram",
+    "notes": "Portfolio(s): Panchayat Raj, Rural Development & Rural Water Supply, Environment, Forest, Science and Technology Sworn in as cabinet minister 2024-06-12; formally announced as Deputy CM 2024-06-14.",
+    "since": "2024-06-14",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pawan_Kalyan"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-1",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Satya Kumar Yadav",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Dharmavaram",
+    "notes": "Portfolio(s): Health, Family Welfare & Medical Education",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-2",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Kinjarapu Atchannaidu",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Tekkali",
+    "notes": "Portfolio(s): Agriculture, Co-operation, Marketing, Animal Husbandry, Dairy Development & Fisheries",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-3",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Kollu Ravindra",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Machilipatnam",
+    "notes": "Portfolio(s): Mines & Geology, Excise",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-4",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Nadendla Manohar",
+    "party": "JSP",
+    "house": "Legislative Assembly",
+    "constituency": "Tenali",
+    "notes": "Portfolio(s): Food & Civil Supplies, Consumer Affairs",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-5",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Ponguru Narayana",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Nellore City",
+    "notes": "Portfolio(s): Municipal Administration & Urban Development",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-6",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Vangalapudi Anitha",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Payakaraopet",
+    "notes": "Portfolio(s): Home Affairs & Disaster Management",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-7",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Nara Lokesh",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Mangalagiri",
+    "notes": "Portfolio(s): Human Resources Development, IT, Electronics & Communication, Real Time Governance",
+    "since": "2024-06-12",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nara_Lokesh"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-8",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Nimmala Rama Naidu",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Palakollu",
+    "notes": "Portfolio(s): Water Resources Development",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-9",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "N. M. D. Farooq",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Nandyal",
+    "notes": "Portfolio(s): Law & Justice, Minority Welfare",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-10",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Anam Ramanarayana Reddy",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Atmakur",
+    "notes": "Portfolio(s): Endowments",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-11",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Payyavula Keshav",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Uravakonda",
+    "notes": "Portfolio(s): Finance, Planning, Commercial Taxes, Legislative Affairs",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-12",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Anagani Satya Prasad",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Repalle",
+    "notes": "Portfolio(s): Revenue, Registration & Stamps",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-13",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Kolusu Parthasarathy",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Nuzvid",
+    "notes": "Portfolio(s): Housing, Information & Public Relations",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-14",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Dola Sree Bala Veeranjaneya Swamy",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Kondapi",
+    "notes": "Portfolio(s): Social Welfare, Disabled & Senior Citizen Welfare, Sachivalayam & Village Volunteer",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-15",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Gottipati Ravi Kumar",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Addanki",
+    "notes": "Portfolio(s): Energy",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-16",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Kandula Durgesh",
+    "party": "JSP",
+    "house": "Legislative Assembly",
+    "constituency": "Nidadavole",
+    "notes": "Portfolio(s): Tourism, Culture, Cinematography",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-17",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Gummadi Sandhya Rani",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Salur",
+    "notes": "Portfolio(s): Women & Child Welfare, Tribal Welfare",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-18",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "B. C. Janardhan Reddy",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Banaganapalle",
+    "notes": "Portfolio(s): Roads & Buildings, Infrastructure & Investments",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-19",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "T. G. Bharath",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Kurnool",
+    "notes": "Portfolio(s): Industries & Commerce, Food Processing",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-20",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "S. Savitha",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Penukonda",
+    "notes": "Portfolio(s): Backward Classes Welfare, Economically Weaker Sections Welfare, Handlooms & Textiles",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-21",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Vasamsetti Subhash",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Ramachandrapuram",
+    "notes": "Portfolio(s): Labour, Factories, Boilers & Insurance Medical Services",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-22",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Kondapalli Srinivas",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Gajapathinagaram",
+    "notes": "Portfolio(s): MSME, Society for Elimination of Rural Poverty, NRI Empowerment & Relations",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-minister-23",
+   "title": "Minister, Andhra Pradesh",
+   "orgId": "st-ap-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "onAdviceOf": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Mandipalli Ramprasad Reddy",
+    "party": "TDP",
+    "house": "Legislative Assembly",
+    "constituency": "Rayachoti",
+    "notes": "Portfolio(s): Transport, Youth & Sports",
+    "since": "2024-06-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-speaker",
+   "title": "Speaker, Andhra Pradesh Legislative Assembly",
+   "orgId": "st-ap-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ap-assembly",
+   "holder": {
+    "name": "Chintakayala Ayyanna Patrudu",
+    "party": "TDP",
+    "since": "2024-06-22"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-deputy-speaker",
+   "title": "Deputy Speaker, Andhra Pradesh Legislative Assembly",
+   "orgId": "st-ap-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ap-assembly",
+   "holder": {
+    "name": "Raghu Rama Krishna Raju",
+    "party": "TDP",
+    "since": "2024-11-14"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Andhra Pradesh Legislative Assembly",
+   "orgId": "st-ap-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "ex_officio",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "low",
+   "vacant": true
+  },
+  {
+   "id": "st-ap-pos-chairman-legislative-council",
+   "title": "Chairman, Andhra Pradesh Legislative Council",
+   "orgId": "st-ap-legislative-council",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ap-legislative-council",
+   "holder": {
+    "name": "Koyye Moshenu Raju",
+    "party": "YSRCP",
+    "since": "2021-11-19"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Legislative_Council"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-deputy-chairman-legislative-council",
+   "title": "Deputy Chairman, Andhra Pradesh Legislative Council",
+   "orgId": "st-ap-legislative-council",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ap-legislative-council",
+   "holder": {
+    "name": "Tumati Madhava Rao",
+    "party": "YSRCP",
+    "since": "2026-08-19"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Legislative_Council"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-chief-secretary",
+   "title": "Chief Secretary, Andhra Pradesh",
+   "orgId": "st-ap-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "G. Sai Prasad",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-dgp",
+   "title": "Director General of Police, Andhra Pradesh",
+   "orgId": "st-ap-police",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-chief-minister",
+   "holder": {
+    "name": "Harish Kumar Gupta, IPS",
+    "since": "2025-02-01",
+    "acting": true,
+    "notes": " Reappointed DGP with Full Additional Charge (FAC) w.e.f. 2025-01-31 (per en.wikipedia.org/wiki/Harish_Kumar_Gupta); acting flag corrected from missing/false to true."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Police"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-sec-commissioner",
+   "title": "State Election Commissioner, Andhra Pradesh",
+   "orgId": "st-ap-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_State_Election_Commission"
+   ],
+   "confidence": "medium",
+   "holder": {
+    "name": "Anil Chandra Punetha (retd. IAS)"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-psc-chairman",
+   "title": "Chairman, Andhra Pradesh Public Service Commission",
+   "orgId": "st-ap-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "holder": {
+    "name": "Prof. C. Sashidhar",
+    "since": null,
+    "acting": true,
+    "notes": " Functioning as Chairman (FAC), an acting appointment; confirmed current via en.wikipedia.org/wiki/Andhra_Pradesh_Public_Service_Commission."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Public_Service_Commission"
+   ],
+   "confidence": "low",
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-lokayukta",
+   "title": "Lokayukta of Andhra Pradesh",
+   "orgId": "st-ap-lokayukta",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Lokayukta"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Justice T. Mallikarjuna Rao",
+    "since": "2026-08-25"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-ap-pos-shrc-chairperson",
+   "title": "Chairperson, Andhra Pradesh State Human Rights Commission",
+   "orgId": "st-ap-shrc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ap-pos-governor",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh",
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_State_Human_Rights_Commission"
+   ],
+   "vacant": false,
+   "holder": {
+    "name": "Mandhata Seetharama Murti",
+    "notes": "Listed as current Chairman on the AP State Human Rights Commission Wikipedia page (agency-executives section); title used is \"Justice\" in some usages but not confirmed here — treat name as given by the source."
+   }
+  },
+  {
+   "id": "st-tg-pos-governor",
+   "title": "Governor of Telangana",
+   "orgId": "st-tg-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Shiv Pratap Shukla",
+    "since": "2026-03-11",
+    "wikipedia": "https://en.wikipedia.org/wiki/List_of_governors_of_Telangana"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_governors_of_Telangana"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-chief-minister",
+   "title": "Chief Minister of Telangana",
+   "orgId": "st-tg-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "holder": {
+    "name": "A. Revanth Reddy",
+    "since": "2023-12-07",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Kodangal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Revanth_Reddy"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "deputy_chief_minister",
+   "seat": "Finance, Planning, Energy",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Mallu Bhatti Vikramarka",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Madhira (SC)",
+    "notes": "Portfolio(s): Finance, Planning, Energy",
+    "since": "2023-12-07",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mallu_Bhatti_Vikramarka"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-1",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Nalamada Uttam Kumar Reddy",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Huzurnagar",
+    "notes": "Portfolio(s): Irrigation, Command Area Development, Food & Civil Supplies",
+    "since": "2023-12-07"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-2",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Ponnam Prabhakar",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Husnabad",
+    "notes": "Portfolio(s): Transport, Backward Classes Welfare",
+    "since": "2023-12-07"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-3",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Komatireddy Venkat Reddy",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Nalgonda",
+    "notes": "Portfolio(s): Roads & Buildings, Cinematography",
+    "since": "2023-12-07"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-4",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "low",
+   "vacant": true
+  },
+  {
+   "id": "st-tg-pos-minister-5",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Dansari Anasuya Seethakka",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Mulug (ST)",
+    "notes": "Portfolio(s): Panchayat Raj, Rural Development, Women & Child Welfare",
+    "since": "2023-12-07"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-6",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Duddilla Sridhar Babu",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Manthani",
+    "notes": "Portfolio(s): IT, Electronics, Communications, Industries & Commerce, Legislative Affairs",
+    "since": "2023-12-07"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-7",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Ponguleti Srinivasa Reddy",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Palair",
+    "notes": "Portfolio(s): Revenue, Housing, Information & Public Relations",
+    "since": "2023-12-07"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-8",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Thummala Nageswara Rao",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Khammam",
+    "notes": "Portfolio(s): Agriculture, Marketing, Handlooms & Textiles",
+    "since": "2023-12-07"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-9",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Cilarapu Damodar Raja Narasimha",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Andole (SC)",
+    "notes": "Portfolio(s): Health, Medical & Family Welfare, Science & Technology",
+    "since": "2023-12-07"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-10",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Jupally Krishna Rao",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Kollapur",
+    "notes": "Portfolio(s): Prohibition & Excise, Tourism, Culture, Archaeology",
+    "since": "2023-12-07"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-11",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Gaddam Vivekanand",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Chennur (SC)",
+    "notes": "Portfolio(s): Labour, Employment, Training, Factories, Mines & Geology",
+    "since": "2025-06-08"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-12",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Adluri Laxman Kumar",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Dharmapuri (SC)",
+    "notes": "Portfolio(s): Scheduled Castes Development, Tribal Welfare, Disabilities & Senior Citizens",
+    "since": "2025-06-08"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-13",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Vakiti Srihari",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Makthal",
+    "notes": "Portfolio(s): Animal Husbandry, Dairy Development, Fisheries, Sports & Youth Services",
+    "since": "2025-06-08"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-minister-14",
+   "title": "Minister, Telangana",
+   "orgId": "st-tg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "onAdviceOf": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "Mohammad Azharuddin",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "MLC",
+    "notes": "Portfolio(s): Public Enterprises, Minorities Welfare",
+    "since": "2025-10-31"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-speaker",
+   "title": "Speaker, Telangana Legislative Assembly",
+   "orgId": "st-tg-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tg-assembly",
+   "holder": {
+    "name": "Gaddam Prasad Kumar",
+    "party": "INC",
+    "since": "2023-12-14"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-deputy-speaker",
+   "title": "Deputy Speaker, Telangana Legislative Assembly",
+   "orgId": "st-tg-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tg-assembly",
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_Legislative_Assembly"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-tg-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Telangana Legislative Assembly",
+   "orgId": "st-tg-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "ex_officio",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "K. Chandrashekar Rao",
+    "party": "BRS",
+    "since": "2023-12-16"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-chairman-legislative-council",
+   "title": "Chairman, Telangana Legislative Council",
+   "orgId": "st-tg-legislative-council",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tg-legislative-council",
+   "holder": {
+    "name": "Gutha Sukender Reddy",
+    "party": "INC",
+    "since": "2022-03-14"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_Legislative_Council"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-deputy-chairman-legislative-council",
+   "title": "Deputy Chairman, Telangana Legislative Council",
+   "orgId": "st-tg-legislative-council",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tg-legislative-council",
+   "holder": {
+    "name": "Banda Prakash",
+    "party": "BRS",
+    "since": "2023-02-12"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_Legislative_Council"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-chief-secretary",
+   "title": "Chief Secretary, Telangana",
+   "orgId": "st-tg-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "K. Ramakrishna Rao (IAS)",
+    "since": "2025-04-30"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-dgp",
+   "title": "Director General of Police, Telangana",
+   "orgId": "st-tg-police",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-chief-minister",
+   "holder": {
+    "name": "C. V. Anand, IPS",
+    "since": "2026-05-01"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_State_Police"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-sec-commissioner",
+   "title": "State Election Commissioner, Telangana",
+   "orgId": "st-tg-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_State_Election_Commission"
+   ],
+   "confidence": "medium",
+   "holder": {
+    "name": "C. Partha Sarathi (retd. IAS)"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-psc-chairman",
+   "title": "Chairman, Telangana Public Service Commission",
+   "orgId": "st-tg-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "holder": {
+    "name": "Burra Venkatesham",
+    "since": "2024-12-05"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_Public_Service_Commission"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-lokayukta",
+   "title": "Lokayukta of Telangana",
+   "orgId": "st-tg-lokayukta",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_Lokayukta"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Justice C. V. Ramulu (retd.)",
+    "since": "2019-12"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-tg-pos-shrc-chairperson",
+   "title": "Chairperson, Telangana State Human Rights Commission",
+   "orgId": "st-tg-shrc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tg-pos-governor",
+   "confidence": "low",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana"
+   ],
+   "vacant": true
+  },
+  {
+   "id": "st-ka-pos-leader-of-opposition-legislative-council",
+   "title": "Leader of Opposition, Karnataka Legislative Council",
+   "orgId": "st-ka-legislative-council",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Chalavadi Narayanaswamy",
+    "since": "2024-07-23",
+    "party": "BJP",
+    "house": "Legislative Council"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karnataka_Legislative_Council"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ap-pos-leader-of-opposition-legislative-council",
+   "title": "Leader of Opposition, Andhra Pradesh Legislative Council",
+   "orgId": "st-ap-legislative-council",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Botsa Satyanarayana",
+    "since": "2024-08-22",
+    "party": "YSRCP",
+    "house": "Legislative Council"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andhra_Pradesh_Legislative_Council"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tg-pos-leader-of-opposition-legislative-council",
+   "title": "Leader of Opposition, Telangana Legislative Council",
+   "orgId": "st-tg-legislative-council",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "S. Madhusudhana Chary",
+    "since": "2024-09-11",
+    "party": "BRS",
+    "house": "Legislative Council"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telangana_Legislative_Council"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-president",
+   "to": "st-ka-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/Thawar_Chand_Gehlot"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1) — appointed on being able to command a majority in the Assembly",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-deputy-cm-1",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-deputy-cm-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-1",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-2",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-3",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-4",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-5",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-6",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-7",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-8",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-9",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-10",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-11",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-12",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-12",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-13",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-13",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-14",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-14",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-15",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-15",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-16",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-16",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-17",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-17",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-18",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-18",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-19",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-19",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-20",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-20",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-21",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-21",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-22",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-22",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-23",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-23",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-24",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-24",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-25",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-25",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-26",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-26",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-27",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-27",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-28",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-28",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-29",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-29",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-governor",
+   "to": "st-ka-pos-minister-30",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "st-ka-pos-chief-minister",
+   "to": "st-ka-pos-minister-30",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Shivakumar_ministry"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-ka-assembly",
+   "type": "elects",
+   "basis": "Article 170",
+   "source": "https://en.wikipedia.org/wiki/Karnataka_Legislative_Assembly"
+  },
+  {
+   "from": "st-ka-council-of-ministers",
+   "to": "st-ka-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Karnataka_Legislative_Assembly"
+  },
+  {
+   "from": "st-ka-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) — elects state's Rajya Sabha members via single transferable vote",
+   "source": "https://en.wikipedia.org/wiki/Karnataka_Legislative_Assembly"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-ap-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/Governor_of_Andhra_Pradesh"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1) — appointed on being able to command a majority in the Assembly",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-deputy-cm-1",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-deputy-cm-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-1",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-2",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-3",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-4",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-5",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-6",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-7",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-8",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-9",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-10",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-11",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-12",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-12",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-13",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-13",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-14",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-14",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-15",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-15",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-16",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-16",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-17",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-17",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-18",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-18",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-19",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-19",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-20",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-20",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-21",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-21",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-22",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-22",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-governor",
+   "to": "st-ap-pos-minister-23",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "st-ap-pos-chief-minister",
+   "to": "st-ap-pos-minister-23",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fourth_N._Chandrababu_Naidu_ministry"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-ap-assembly",
+   "type": "elects",
+   "basis": "Article 170",
+   "source": "https://en.wikipedia.org/wiki/Andhra_Pradesh_Legislative_Assembly"
+  },
+  {
+   "from": "st-ap-council-of-ministers",
+   "to": "st-ap-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Andhra_Pradesh_Legislative_Assembly"
+  },
+  {
+   "from": "st-ap-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) — elects state's Rajya Sabha members via single transferable vote",
+   "source": "https://en.wikipedia.org/wiki/Andhra_Pradesh_Legislative_Assembly"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-tg-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/List_of_governors_of_Telangana"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1) — appointed on being able to command a majority in the Assembly",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-deputy-cm-1",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-deputy-cm-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-1",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-2",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-3",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-4",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-5",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-6",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-7",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-8",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-9",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-10",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-11",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-12",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-12",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-13",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-13",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-governor",
+   "to": "st-tg-pos-minister-14",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "st-tg-pos-chief-minister",
+   "to": "st-tg-pos-minister-14",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Revanth_Reddy_ministry"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-tg-assembly",
+   "type": "elects",
+   "basis": "Article 170",
+   "source": "https://en.wikipedia.org/wiki/Telangana_Legislative_Assembly"
+  },
+  {
+   "from": "st-tg-council-of-ministers",
+   "to": "st-tg-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Telangana_Legislative_Assembly"
+  },
+  {
+   "from": "st-tg-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) — elects state's Rajya Sabha members via single transferable vote",
+   "source": "https://en.wikipedia.org/wiki/Telangana_Legislative_Assembly"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 46,
+  "corrections": [
+   "Deduped sources array on st-ka-pos-chief-minister: 2 -> 1",
+   "Deduped sources array on st-ap-pos-chief-minister: 2 -> 1",
+   "Deduped sources array on st-tg-pos-chief-minister: 2 -> 1",
+   "Added \"vacant\": false to all filled positions that were missing the field (schema completeness, SCHEMA.md Position shape) — 104 positions.",
+   "st-ka-pos-deputy-cm-1 (G. Parameshwara): added missing since=2026-06-03 and wikipedia URL, confirmed via en.wikipedia.org/wiki/G._Parameshwara infobox (Assumed office 3 June 2026).",
+   "st-ap-pos-deputy-cm-1 (Pawan Kalyan): added missing since=2024-06-14 (DCM announcement date; sworn in as minister 2024-06-12) and wikipedia URL, confirmed via en.wikipedia.org/wiki/Pawan_Kalyan infobox.",
+   "st-tg-pos-deputy-cm-1 (Mallu Bhatti Vikramarka): added missing since=2023-12-07 and wikipedia URL, confirmed via en.wikipedia.org/wiki/Mallu_Bhatti_Vikramarka infobox.",
+   "st-ka-pos-minister-9 (Yathindra Siddaramaiah): house corrected from \"Legislative Assembly\" to \"Legislative Council\" — confirmed MLC (Member of the Karnataka Legislative Council since June 2024) via the Shivakumar ministry Wikipedia page, not an MLA.",
+   "Added since-dates to all 30 Karnataka minister positions (previously blank), split by verified induction batch: 14 ministers since 2026-06-03 (initial Shivakumar ministry), 16 since 2026-08-03 (cabinet expansion) — parsed from the current 'Shivakumar ministry' Wikipedia article's council-of-ministers table (fetched fresh).",
+   "st-ka-pos-minister-6 (Priyank Kharge): added wikipedia URL, portfolio (Home excl. Intelligence / IT&BT / E-Governance) independently re-confirmed via en.wikipedia.org/wiki/Priyank_Kharge.",
+   "Added since=2024-06-12 to all 23 Andhra Pradesh minister positions (previously blank), confirmed via the current 'Fourth N. Chandrababu Naidu ministry' Wikipedia article's council-of-ministers table.",
+   "st-ap-pos-minister-7 (Nara Lokesh): added wikipedia URL, portfolio (HRD/IT/Electronics & Communication/Real Time Governance) and constituency (Mangalagiri) independently re-confirmed via en.wikipedia.org/wiki/Nara_Lokesh.",
+   "Added since-dates to 13 (of 14) Telangana minister positions confirmed via the current 'Revanth Reddy ministry' Wikipedia article's ministers table: 9 original inductees since 2023-12-07, Gaddam Vivekanand/Adluri Laxman Kumar/Vakiti Srihari since 2025-06-08 (reshuffle), Mohammad Azharuddin since 2025-10-31.",
+   "st-tg-pos-minister-4: STALE FACT CORRECTED. Was recorded as held by Konda Surekha (Environment & Forests, Endowments). Fresh check of the current 'Revanth Reddy ministry' Wikipedia article shows she left office 2026-09-03 (before this segment's 2026-09-25 as-of date) — the ministers table and the departments-comparison table both independently show 'Left office: 3 September 2026' for her. No confirmed successor was found for her portfolios in the source, so per 'never invent a person' the position is now marked vacant/low-confidence rather than left showing a departed minister as current.",
+   "st-ap-pos-dgp (Harish Kumar Gupta): holder.acting was missing (implicitly false) despite the holder serving on Full Additional Charge (FAC) since 2025-01-31 per his Wikipedia page — corrected to acting:true.",
+   "st-ka-pos-psc-chairman (Dr. B. Prabhudev): name field held a parenthetical status suffix \"(Interim/FAC)\" instead of a clean name with the status flagged structurally — moved to holder.notes and set acting:true (was missing).",
+   "st-ap-pos-psc-chairman (Prof. C. Sashidhar): name field held a parenthetical status suffix \"(FAC)\" instead of a clean name with the status flagged structurally — moved to holder.notes and set acting:true (was missing).",
+   "st-ap-pos-shrc-chairperson: STALE/WRONG FACT CORRECTED. Was recorded vacant/low-confidence. A fresh check of en.wikipedia.org/wiki/Andhra_Pradesh_State_Human_Rights_Commission (article last touched 2026-09-19, six days before this segment's as-of date) names Mandhata Seetharama Murti as the current chairman — position is not actually vacant. No since-date given by the source, confidence set to medium (single source, no independent cross-check of the appointment date).",
+   "st-ka-pos-sec-commissioner: RE-CHECKED, not changed. en.wikipedia.org/wiki/Karnataka_State_Election_Commission itself gives two contradictory names in different sections (G. S. Sangreshi in the infobox/title area vs Dr. B. Basavaraju (Retd. IAS) in the Composition section) — genuinely unresolved in the source. The original agent's call to leave this vacant/low-confidence rather than pick one arbitrarily is confirmed as the correct call; both candidate names are now logged here for a future fresh check against karsec.gov.in.",
+   "st-tg-assembly stats.partyWiseStrength CORRECTED: was {'INC': 76, 'BRS': 27, 'BJP': 7, 'AIMIM': 7, 'CPI': 1, 'IND': 1} (sums to 119 but wrongly folds the Government coalition's total of 76 — INC 75 + CPI 1 — into INC alone, and omits the 1 vacant seat that Wikipedia's infobox separately shows). Corrected, per the current Telangana Legislative Assembly Wikipedia infobox, to INC 75, BRS 27, BJP 7, AIMIM 7, CPI 1, IND 1, Vacant 1 (sums to 119, matching the Assembly's sanctioned strength).",
+   "COVERAGE GAP FILLED: added 3 missing positions — each state's Legislative Council has its own Leader of Opposition, distinct from the Assembly LoP, which the original pass did not capture even though Council Chairman/Deputy Chairman were captured. All three sourced from each chamber's current Wikipedia infobox: Karnataka (Chalavadi Narayanaswamy, BJP, since 2024-07-23), Andhra Pradesh (Botsa Satyanarayana, YSRCP, since 2024-08-22), Telangana (S. Madhusudhana Chary, BRS, since 2024-09-11).",
+   "Segment notes: AP capital-resolution date corrected from an unsourced 2026-04-02 to the confirmed presidential-assent date 2026-04-06 for the Andhra Pradesh Reorganisation (Amendment) Act, 2026 (re-checked against a fresh source)."
+  ]
+ }
+}

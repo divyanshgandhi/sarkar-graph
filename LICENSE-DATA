@@ -1,0 +1,17 @@
+Sarkar Graph dataset — Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Divyansh Gandhi and the Sarkar Graph contributors
+
+The dataset in this repository is licensed under CC BY 4.0:
+  data/raw/*.json, data/corrections/*.json, public/data/**/*.json, exports/*.csv
+
+You may share and adapt it for any purpose, including commercially, provided you
+give appropriate credit ("Sarkar Graph, https://github.com/divyanshgandhi/sarkar-graph"),
+link to the licence, and indicate if changes were made.
+
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Facts about public offices are drawn from public sources, each cited per record;
+those sources keep their own terms. News headlines and summaries in data/news/
+belong to their publishers and are included only as attributed links to the
+original articles; they are not covered by this licence.

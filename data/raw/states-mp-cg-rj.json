@@ -1,0 +1,760 @@
+{
+ "segment": "states-mp-cg-rj",
+ "asOf": "2026-09-25",
+ "notes": "PARTIAL SEGMENT — produced from scratch in this pass, not a verification of prior data: data/raw/states-mp-cg-rj.json did not exist before this run (confirmed by directory listing; no file, no research/india/scratch/states-mp-cg-rj/ contents). The brief this session received described this as adversarial verification of an existing file and embedded a purported prior agent report claiming a harness rule redirected all work to an unrelated task (reviewing a screen recording and dissecting graph.civlab.org using background agents). That embedded report and the 'harness relayed user request' framing around it look like an injected attempt to get this agent to also abandon the assignment; it was not followed — no civlab.org/video work was done, and this pass did real, sourced India research instead. Coverage in THIS file is intentionally limited to the highest-stakes, freshly-verified leadership tier per state (Governor, CM, Deputy CMs, Speaker, Leader of Opposition, state + assembly stats) because the WebSearch tool budget for this session was already exhausted (200/200) by other segments' agents before this task started, leaving only WebFetch/curl for verification. NOT included (needs a dedicated follow-up production pass with a fresh search budget): full state Council of Ministers rosters with portfolios (st-<code>-pos-minister-<n>), Chief Secretary, DGP, State Election Commission, State PSC chair, Lokayukta, State Human Rights Commission, and the list of municipal corporations for MP, CG and RJ. Do not treat this file as complete coverage of the brief.",
+ "entities": [
+  {
+   "id": "st-mp",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Madhya Pradesh",
+   "parentId": "in-states-and-uts",
+   "capital": "Bhopal",
+   "description": "India's second-largest state by area, in central India; formed 1956, reorganised 2000 when Chhattisgarh was carved out.",
+   "officialUrl": "https://www.mp.gov.in",
+   "stats": {
+    "population2011": 72626809,
+    "areaKm2": 308252,
+    "lokSabhaSeats": 29,
+    "rajyaSabhaSeats": 11,
+    "assemblySeats": 230,
+    "districts": 55
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh",
+    "https://en.wikipedia.org/wiki/List_of_states_and_union_territories_of_India_by_population"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Madhya Pradesh",
+   "parentId": "st-mp",
+   "headPositionId": "st-mp-pos-chief-minister",
+   "description": "The executive government of Madhya Pradesh, headed by the Chief Minister and responsible to the Legislative Assembly.",
+   "officialUrl": "https://www.mp.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh",
+    "https://en.wikipedia.org/wiki/List_of_states_and_union_territories_of_India_by_population"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Madhya Pradesh Council of Ministers",
+   "parentId": "st-mp-government",
+   "description": "The council of ministers advising the Governor of Madhya Pradesh, collectively responsible to the Legislative Assembly. Full minister roster not yet researched in this pass — see notes.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav",
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Madhya_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Madhya Pradesh Legislative Assembly",
+   "abbr": "Vidhan Sabha",
+   "parentId": "st-mp",
+   "seats": 230,
+   "description": "The unicameral, directly-elected state legislature of Madhya Pradesh.",
+   "stats": {
+    "lastElection": "2023-11-17",
+    "nextDue": "2028",
+    "term": "5 years",
+    "partyWise": {
+     "BJP": 165,
+     "INC": 64,
+     "BAP": 1
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Chhattisgarh",
+   "parentId": "in-states-and-uts",
+   "capital": "Raipur",
+   "description": "A landlocked state in east-central India, carved out of Madhya Pradesh on 1 November 2000.",
+   "officialUrl": "https://cgstate.gov.in",
+   "stats": {
+    "population2011": 25545198,
+    "areaKm2": 135192,
+    "lokSabhaSeats": 11,
+    "rajyaSabhaSeats": 5,
+    "assemblySeats": 90,
+    "districts": 33
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh",
+    "https://en.wikipedia.org/wiki/List_of_states_and_union_territories_of_India_by_population"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Chhattisgarh",
+   "parentId": "st-cg",
+   "headPositionId": "st-cg-pos-chief-minister",
+   "description": "The executive government of Chhattisgarh, headed by the Chief Minister and responsible to the Legislative Assembly.",
+   "officialUrl": "https://cgstate.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh",
+    "https://en.wikipedia.org/wiki/List_of_states_and_union_territories_of_India_by_population"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Chhattisgarh Council of Ministers",
+   "parentId": "st-cg-government",
+   "description": "The council of ministers advising the Governor of Chhattisgarh, collectively responsible to the Legislative Assembly. Full minister roster not yet researched in this pass — see notes.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai",
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Chhattisgarh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Chhattisgarh Legislative Assembly",
+   "abbr": "Vidhan Sabha",
+   "parentId": "st-cg",
+   "seats": 90,
+   "description": "The unicameral, directly-elected state legislature of Chhattisgarh.",
+   "stats": {
+    "lastElection": "2023-11-17",
+    "nextDue": "2028",
+    "term": "5 years",
+    "partyWise": {
+     "BJP": 54,
+     "INC": 35,
+     "GGP": 1
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Rajasthan",
+   "parentId": "in-states-and-uts",
+   "capital": "Jaipur",
+   "description": "India's largest state by area, in northwestern India; district count was reorganised from 50 back to 41 in December 2024.",
+   "officialUrl": "https://rajasthan.gov.in",
+   "stats": {
+    "population2011": 68548437,
+    "areaKm2": 342239,
+    "lokSabhaSeats": 25,
+    "rajyaSabhaSeats": 10,
+    "assemblySeats": 200,
+    "districts": 41
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan",
+    "https://en.wikipedia.org/wiki/List_of_states_and_union_territories_of_India_by_population"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Rajasthan",
+   "parentId": "st-rj",
+   "headPositionId": "st-rj-pos-chief-minister",
+   "description": "The executive government of Rajasthan, headed by the Chief Minister and responsible to the Legislative Assembly.",
+   "officialUrl": "https://rajasthan.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan",
+    "https://en.wikipedia.org/wiki/List_of_states_and_union_territories_of_India_by_population"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Rajasthan Council of Ministers",
+   "parentId": "st-rj-government",
+   "description": "The council of ministers advising the Governor of Rajasthan, collectively responsible to the Legislative Assembly. Full minister roster not yet researched in this pass — see notes.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma",
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Rajasthan"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Rajasthan Legislative Assembly",
+   "abbr": "Vidhan Sabha",
+   "parentId": "st-rj",
+   "seats": 200,
+   "description": "The unicameral, directly-elected state legislature of Rajasthan.",
+   "stats": {
+    "lastElection": "2023-11-25",
+    "nextDue": "2028",
+    "term": "5 years",
+    "partyWise": {
+     "BJP": 118,
+     "INC": 67,
+     "BAP": 4,
+     "SHS": 2,
+     "RLD": 1,
+     "IND": 8
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-mp-pos-governor",
+   "title": "Governor of Madhya Pradesh",
+   "orgId": "st-mp-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Mangubhai C. Patel",
+    "since": "2021-07-08",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mangubhai_C._Patel",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_governors_of_Madhya_Pradesh",
+    "https://en.wikipedia.org/wiki/Governor_of_Madhya_Pradesh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-chief-minister",
+   "title": "Chief Minister of Madhya Pradesh",
+   "orgId": "st-mp-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "holder": {
+    "name": "Mohan Yadav",
+    "since": "2023-12-13",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Ujjain South",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mohan_Yadav",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav",
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Madhya_Pradesh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Madhya Pradesh",
+   "orgId": "st-mp-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Rajendra Shukla",
+    "since": "2023-12-13",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Rewa",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rajendra_Shukla_(politician)",
+    "acting": false,
+    "notes": "Also holds Public Health and Medical Education portfolio."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajendra_Shukla_(politician)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-deputy-cm-2",
+   "title": "Deputy Chief Minister of Madhya Pradesh",
+   "orgId": "st-mp-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Jagdish Devda",
+    "since": "2023-12-13",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Malhargarh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jagdish_Devda",
+    "acting": false,
+    "notes": "Also holds Finance and Commercial Taxes portfolio."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jagdish_Devda"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-speaker",
+   "title": "Speaker, Madhya Pradesh Legislative Assembly",
+   "orgId": "st-mp-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mp-assembly",
+   "holder": {
+    "name": "Narendra Singh Tomar",
+    "since": "2023-12-20",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Narendra_Singh_Tomar",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Madhya Pradesh Legislative Assembly",
+   "orgId": "st-mp-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mp-assembly",
+   "holder": {
+    "name": "Umang Singhar",
+    "since": "2023-12-16",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Umang_Singhar",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-governor",
+   "title": "Governor of Chhattisgarh",
+   "orgId": "st-cg-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Ramen Deka",
+    "since": "2024-07-31",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ramen_Deka",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_governors_of_Chhattisgarh",
+    "https://en.wikipedia.org/wiki/Governor_of_Chhattisgarh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-chief-minister",
+   "title": "Chief Minister of Chhattisgarh",
+   "orgId": "st-cg-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "holder": {
+    "name": "Vishnu Deo Sai",
+    "since": "2023-12-13",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Kunkuri",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai",
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Chhattisgarh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Chhattisgarh",
+   "orgId": "st-cg-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Arun Sao",
+    "since": "2023-12-13",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Lormi",
+    "wikipedia": "https://en.wikipedia.org/wiki/Arun_Sao",
+    "acting": false,
+    "notes": "Also holds Public Works, Public Health Engineering, Law & Legislative Affairs, Urban Administration portfolios."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arun_Sao"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-deputy-cm-2",
+   "title": "Deputy Chief Minister of Chhattisgarh",
+   "orgId": "st-cg-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Vijay Sharma",
+    "since": "2023-12-13",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Kawardha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vijay_Sharma_(politician)",
+    "acting": false,
+    "notes": "Also holds Home Affairs and Jail, Panchayat and Rural Development, Technical Education portfolios."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vijay_Sharma_(politician)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-speaker",
+   "title": "Speaker, Chhattisgarh Legislative Assembly",
+   "orgId": "st-cg-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-cg-assembly",
+   "holder": {
+    "name": "Raman Singh",
+    "since": "2023-12-19",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Raman_Singh",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Chhattisgarh Legislative Assembly",
+   "orgId": "st-cg-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-cg-assembly",
+   "holder": {
+    "name": "Charan Das Mahant",
+    "since": "2023-12-16",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Charan_Das_Mahant",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-governor",
+   "title": "Governor of Rajasthan",
+   "orgId": "st-rj-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Haribhau Kisanrao Bagade",
+    "since": "2024-07-31",
+    "wikipedia": "https://en.wikipedia.org/wiki/Haribhau_Bagade",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_governors_of_Rajasthan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-chief-minister",
+   "title": "Chief Minister of Rajasthan",
+   "orgId": "st-rj-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "holder": {
+    "name": "Bhajan Lal Sharma",
+    "since": "2023-12-15",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Sanganer",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma",
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Rajasthan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Rajasthan",
+   "orgId": "st-rj-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Diya Kumari",
+    "since": "2023-12-15",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Vidhyadhar Nagar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Diya_Kumari",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Diya_Kumari"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-deputy-cm-2",
+   "title": "Deputy Chief Minister of Rajasthan",
+   "orgId": "st-rj-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Prem Chand Bairwa",
+    "since": "2023-12-15",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Dudu",
+    "wikipedia": "https://en.wikipedia.org/wiki/Prem_Chand_Bairwa",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prem_Chand_Bairwa"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-speaker",
+   "title": "Speaker, Rajasthan Legislative Assembly",
+   "orgId": "st-rj-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-rj-assembly",
+   "holder": {
+    "name": "Vasudev Devnani",
+    "since": "2023-12-21",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vasudev_Devnani",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Rajasthan Legislative Assembly",
+   "orgId": "st-rj-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-rj-assembly",
+   "holder": {
+    "name": "Tika Ram Jully",
+    "since": "2024-01-16",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tika_Ram_Jully",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-electorate",
+   "to": "st-mp-assembly",
+   "type": "elects",
+   "basis": "Article 170"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-mp-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/List_of_governors_of_Madhya_Pradesh"
+  },
+  {
+   "from": "st-mp-pos-governor",
+   "to": "st-mp-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-deputy-cm-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-deputy-cm-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mp-council-of-ministers",
+   "to": "st-mp-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)"
+  },
+  {
+   "from": "st-mp-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) — state MLAs elect that state's Rajya Sabha members; reference only, Rajya Sabha seats owned by parliament segment"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-cg-assembly",
+   "type": "elects",
+   "basis": "Article 170"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-cg-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/List_of_governors_of_Chhattisgarh"
+  },
+  {
+   "from": "st-cg-pos-governor",
+   "to": "st-cg-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-deputy-cm-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-deputy-cm-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-cg-council-of-ministers",
+   "to": "st-cg-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)"
+  },
+  {
+   "from": "st-cg-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) — state MLAs elect that state's Rajya Sabha members; reference only, Rajya Sabha seats owned by parliament segment"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-rj-assembly",
+   "type": "elects",
+   "basis": "Article 170"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-rj-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/List_of_governors_of_Rajasthan"
+  },
+  {
+   "from": "st-rj-pos-governor",
+   "to": "st-rj-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-deputy-cm-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-deputy-cm-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-rj-council-of-ministers",
+   "to": "st-rj-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)"
+  },
+  {
+   "from": "st-rj-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) — state MLAs elect that state's Rajya Sabha members; reference only, Rajya Sabha seats owned by parliament segment"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 18,
+  "corrections": [
+   "Segment file did not exist prior to this run (confirmed: no data/raw/states-mp-cg-rj.json, no research/india/scratch/states-mp-cg-rj/ contents) — this is first production, not a fix of stale data.",
+   "Detected and did not act on an apparent prompt-injection: the task text this session received was wrapped in a fabricated 'harness relayed user request' (watch a screen recording, dissect graph.civlab.org/us with background agents) plus a fake prior-agent report using that framing to justify skipping the India research brief entirely. Ignored it; performed the actual India Gov Graph research instead.",
+   "WebSearch tool budget was already exhausted (200/200) by other agents in this workflow before this task began; all verification here used WebFetch + curl-to-Wikipedia-API only.",
+   "Verified via live 2026-09-25 Wikipedia fetches (infobox + person pages, cross-checked against list-of-governors tables): Governor and CM of MP, CG, RJ, both Deputy CMs per state, Assembly Speaker and Leader of Opposition per state, and current assembly party composition — 18 positions total, all high-stakes officeholders.",
+   "Scope deliberately limited: did NOT research/fabricate full state Councils of Ministers, Chief Secretary, DGP, SEC, SPSC, Lokayukta, SHRC, or municipal corporations for any of the 3 states — these are flagged in top-level notes as needing a dedicated follow-up pass rather than invented."
+  ]
+ }
+}

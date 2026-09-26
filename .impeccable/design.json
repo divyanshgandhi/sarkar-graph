@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-25T11:00:38Z",
+  "title": "Design System: Sarkar Graph",
+  "extensions": {
+    "colorMeta": {
+      "saffron": {
+        "role": "primary",
+        "displayName": "Flag Saffron",
+        "canonical": "#e3741b",
+        "tonalRamp": ["#442308", "#773d0e", "#a95614", "#db701a", "#e99049", "#f0b17f", "#f6d3b6", "#fcf1e8"]
+      },
+      "navy": {
+        "role": "sector-executive",
+        "displayName": "Chakra Navy",
+        "canonical": "#34419a",
+        "tonalRamp": ["#131839", "#212a63", "#303c8d", "#3e4db7", "#6673cc", "#949ddb", "#c2c7ea", "#eceef9"]
+      },
+      "green": {
+        "role": "sector-legislative",
+        "displayName": "Flag Green",
+        "canonical": "#1f7a3c",
+        "tonalRamp": ["#0f3d1e", "#1b6a34", "#26964a", "#32c360", "#5cd683", "#8de2a8", "#beeecd", "#ebfaef"]
+      },
+      "ochre": {
+        "role": "sector-judicial",
+        "displayName": "Court Ochre",
+        "canonical": "#86650f",
+        "tonalRamp": ["#453408", "#775a0d", "#aa8013", "#dca619", "#eabd48", "#f1d17f", "#f7e5b6", "#fcf7e8"]
+      },
+      "slate": {
+        "role": "sector-constitutional",
+        "displayName": "Independent Slate",
+        "canonical": "#3e6d72",
+        "tonalRamp": ["#1b2f32", "#2f5256", "#42757a", "#56989f", "#7bb1b7", "#a3c9cd", "#cae0e2", "#eef5f6"]
+      },
+      "maroon": {
+        "role": "sector-local",
+        "displayName": "Council Maroon",
+        "canonical": "#9b3140",
+        "tonalRamp": ["#3a1218", "#65202a", "#8f2d3b", "#ba3b4d", "#ce6473", "#dd939d", "#ebc1c7", "#f9eced"]
+      },
+      "plum": {
+        "role": "sector-federal",
+        "displayName": "State Plum",
+        "canonical": "#6e4687",
+        "tonalRamp": ["#291a32", "#472d57", "#65407c", "#8354a1", "#a079b9", "#bda1ce", "#d9c9e3", "#f3eef6"]
+      },
+      "paper": {
+        "role": "neutral-canvas",
+        "displayName": "Khadi Paper",
+        "canonical": "#ece8df",
+        "tonalRamp": ["#302a1c", "#534931", "#766846", "#9a865b", "#b3a37f", "#cabfa5", "#e1dacc", "#f6f3ef"]
+      },
+      "ink-1": {
+        "role": "neutral-text",
+        "displayName": "Near-Black Ink",
+        "canonical": "#1c1a16",
+        "tonalRamp": ["#2b2822", "#4a453a", "#6a6253", "#897f6c", "#a59d8d", "#c0baaf", "#dbd8d1", "#f4f3f1"]
+      },
+      "saffron-ink": { "role": "on-wash-text", "displayName": "Deep Saffron", "canonical": "#a44f0a" },
+      "green-ink": { "role": "on-wash-text", "displayName": "Deep Green", "canonical": "#1a6632" },
+      "navy-ink": { "role": "on-wash-text", "displayName": "Deep Navy", "canonical": "#2b3683" },
+      "ochre-ink": { "role": "on-wash-text", "displayName": "Deep Ochre", "canonical": "#6f540c" },
+      "slate-ink": { "role": "on-wash-text", "displayName": "Deep Slate", "canonical": "#2f5a5f" },
+      "card": { "role": "neutral-surface", "displayName": "Warm White Card", "canonical": "#fbf9f5" },
+      "card-2": { "role": "neutral-surface-hover", "displayName": "Soft Card", "canonical": "#f5f2ec" },
+      "well": { "role": "neutral-track", "displayName": "Well Grey", "canonical": "#e3dfd5" },
+      "rule": { "role": "neutral-divider", "displayName": "Hairline Rule", "canonical": "#e2ddd3" }
+    },
+    "typographyMeta": {
+      "t-display": { "displayName": "Display", "purpose": "Entity-panel page titles only (e.g. a ministry's name)." },
+      "t-title": { "displayName": "Title", "purpose": "The home panel's single headline sentence." },
+      "t-head": { "displayName": "Head", "purpose": "Card section headings inside the rail." },
+      "t-body": { "displayName": "Body", "purpose": "Base document size: descriptions, news summaries, prose." },
+      "t-small": { "displayName": "Small", "purpose": "Secondary paragraph copy, captions, source notes." },
+      "t-ui": { "displayName": "UI", "purpose": "Interactive labels: buttons, rows, tabs, inputs." },
+      "t-meta": { "displayName": "Meta", "purpose": "Timestamps, counts, breadcrumbs, stat sub-labels." },
+      "t-label": { "displayName": "Label", "purpose": "Uppercase section eyebrows; structural only, never emphasis." },
+      "wheel-arc-label": { "displayName": "Wheel Arc Label", "purpose": "Sector names set on curved textPath arcs around the wheel's rim." },
+      "wheel-ring-label": { "displayName": "Wheel Ring Label", "purpose": "Tier captions (Cabinet, Ministries...) along the executive wedge." },
+      "wheel-anchor": { "displayName": "Wheel Anchor", "purpose": "Upright landmark seat names drawn over the map, paper-stroked for legibility." }
+    },
+    "shadows": [
+      { "name": "card", "value": "0 1px 2px rgb(40 30 15 / 0.05); dark: inset 0 1px 0 rgb(255 255 255 / 0.03)", "purpose": "Resting elevation for every Card, the Chrome bar, and segmented-control pills. In dark mode this becomes a one-pixel top highlight instead of a cast shadow." },
+      { "name": "pop", "value": "0 10px 30px -8px rgb(40 30 15 / 0.22), 0 2px 6px -2px rgb(40 30 15 / 0.12); dark: 0 12px 36px -8px rgb(0 0 0 / 0.6), 0 2px 8px -2px rgb(0 0 0 / 0.4)", "purpose": "Floating chrome that leaves the surface: Search modal, government switcher, Legend popover, hover tooltips, zoom control." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Default easing for reveals and panel/card transitions (the survey-reveal clip, entity panel swap, dropdown open)." },
+      { "name": "ease-std", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Default easing for state/opacity transitions (wheel-node hover, landmark-label fade)." },
+      { "name": "wheel-turn-spring", "value": "type: spring, stiffness 58, damping 17, mass 1, restDelta 0.08", "purpose": "Turns the whole wheel so a selected seat rests at 6 o'clock; the build's signature ~700ms memorable moment. Falls back to an instant jump under prefers-reduced-motion or on first paint of a deep link." },
+      { "name": "survey-reveal", "value": "circle clip-path radius: seal → extent+40, duration 0.95s, ease-out", "purpose": "First sight of any government: the wheel is surveyed outward from the People rather than appearing all at once." },
+      { "name": "live-pulse", "value": "2.4s ease-out infinite box-shadow ring", "purpose": "The live-status dot's pulse; disabled under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Full-width call to action, e.g. \"Open the [X] government\" on a linked State node.",
+      "html": "<button class=\"ds-btn-primary\">Open the Ministry of Railways government</button>",
+      "css": ".ds-btn-primary { display:flex; align-items:center; justify-content:center; gap:8px; height:40px; width:100%; padding:0 20px; background:var(--ink-1,#1c1a16); color:var(--card,#fbf9f5); border:none; border-radius:12px; font-size:14px; font-weight:520; cursor:pointer; transition:opacity 0.15s ease; } .ds-btn-primary:hover { opacity:0.9; } .ds-btn-primary:focus-visible { outline:2px solid var(--focus,#1c1a16); outline-offset:2px; border-radius:6px; }"
+    },
+    {
+      "name": "Segmented Tabs",
+      "kind": "nav",
+      "refersTo": "tab-active",
+      "description": "Graph / Power map / States view switch, and the entity panel's Connections/Members/News/Budget tabs. A spring-animated pill marks the active choice.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\"><button class=\"ds-tab\" role=\"tab\">Graph</button><button class=\"ds-tab ds-tab-active\" role=\"tab\" aria-selected=\"true\">Power map</button><button class=\"ds-tab\" role=\"tab\">States</button></div>",
+      "css": ".ds-tabs { display:flex; gap:0; background:var(--well,#e3dfd5); border-radius:12px; padding:4px; box-shadow:0 1px 2px rgb(40 30 15 / 0.05); } .ds-tab { height:32px; padding:0 16px; border:none; background:transparent; border-radius:8px; font-size:14px; font-weight:520; color:var(--ink-3,#5b554c); cursor:pointer; transition:color 0.15s ease; } .ds-tab:hover { color:var(--ink-1,#1c1a16); } .ds-tab-active, .ds-tab[aria-selected=\"true\"] { background:var(--card,#fbf9f5); color:var(--ink-1,#1c1a16); box-shadow:0 1px 2px rgb(40 30 15 / 0.05); } .ds-tab:focus-visible { outline:2px solid var(--focus,#1c1a16); outline-offset:2px; }"
+    },
+    {
+      "name": "Search Trigger",
+      "kind": "button",
+      "refersTo": "search-trigger",
+      "description": "Opens the full-screen command-palette search (⌘K or /). Floats top-left over the map.",
+      "html": "<button class=\"ds-search-trigger\"><svg class=\"ds-search-icon\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg><span>Search bodies, offices, people</span><kbd class=\"ds-kbd\">/</kbd></button>",
+      "css": ".ds-search-trigger { display:flex; align-items:center; gap:8px; height:40px; padding:0 12px; background:var(--card,#fbf9f5); color:var(--ink-3,#5b554c); border:none; border-radius:12px; box-shadow:0 1px 2px rgb(40 30 15 / 0.05); font-size:14px; font-weight:520; cursor:pointer; } .ds-search-trigger:hover { background:var(--card-2,#f5f2ec); color:var(--ink-1,#1c1a16); } .ds-kbd { margin-left:8px; border:1px solid var(--rule,#e2ddd3); border-radius:4px; padding:0 6px; font-size:11px; color:var(--ink-4,#6f685d); }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card-panel",
+      "description": "The base rail surface: home panel, entity panel, news, changes, budget sections all compose from this.",
+      "html": "<section class=\"ds-card\"><h2 class=\"ds-card-title\">Latest changes</h2><p class=\"ds-card-body\">Appointments, elections and departures, as they are recorded against official sources.</p></section>",
+      "css": ".ds-card { background:var(--card,#fbf9f5); border-radius:14px; padding:20px 16px; box-shadow:0 1px 2px rgb(40 30 15 / 0.05); } .ds-card-title { margin:0 0 8px; font-size:17px; font-weight:600; line-height:1.2; letter-spacing:-0.005em; color:var(--ink-1,#1c1a16); } .ds-card-body { margin:0; font-size:13.5px; line-height:1.4; color:var(--ink-3,#5b554c); }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Borderless field on a slightly-recessed card-2 fill; used for the government switcher and member search.",
+      "html": "<input class=\"ds-input\" type=\"text\" placeholder=\"Find a state or UT\" />",
+      "css": ".ds-input { height:36px; width:100%; padding:0 12px; background:var(--card-2,#f5f2ec); border:none; border-radius:12px; font-size:14px; font-weight:520; color:var(--ink-1,#1c1a16); } .ds-input::placeholder { color:var(--ink-4,#6f685d); opacity:1; } .ds-input:focus-visible { outline:2px solid var(--focus,#1c1a16); outline-offset:0; }"
+    },
+    {
+      "name": "Party Chip",
+      "kind": "chip",
+      "description": "The only chrome element permitted to carry party colour: a dot in the holder's party ink plus the party name.",
+      "html": "<span class=\"ds-chip\"><span class=\"ds-chip-dot\"></span>BJP</span>",
+      "css": ".ds-chip { display:inline-flex; align-items:center; gap:6px; background:var(--card-2,#f5f2ec); color:var(--ink-2,#3b3731); border-radius:6px; padding:2px 6px; font-size:12.5px; font-weight:500; } .ds-chip-dot { width:8px; height:8px; border-radius:50%; background:#ff9933; }"
+    },
+    {
+      "name": "Sector Badge",
+      "kind": "chip",
+      "description": "Change-log kind tag (Elected / Appointed / Acting / Left office), tinted 12% into transparency from the sector ink.",
+      "html": "<span class=\"ds-badge\">Appointed</span>",
+      "css": ".ds-badge { display:inline-block; border-radius:4px; padding:2px 6px; font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--navy,#34419a); background:color-mix(in oklab, var(--navy,#34419a) 12%, transparent); }"
+    },
+    {
+      "name": "Seat Glyph States",
+      "kind": "custom",
+      "description": "Signature map primitive: the same office glyph in its four seat states (held, acting, vacant, unverified) — state is always a stroke/fill pattern, never colour alone.",
+      "html": "<div class=\"ds-glyph-row\"><svg class=\"ds-glyph\" viewBox=\"-9 -9 18 18\"><circle r=\"8\" fill=\"var(--navy-wash,#e2e3f0)\" stroke=\"var(--navy,#34419a)\" stroke-width=\"1.5\"/></svg><svg class=\"ds-glyph\" viewBox=\"-9 -9 18 18\"><circle r=\"8\" fill=\"var(--navy-wash,#e2e3f0)\" stroke=\"var(--navy,#34419a)\" stroke-width=\"1.5\" stroke-dasharray=\"2.4 1.6\"/></svg><svg class=\"ds-glyph\" viewBox=\"-9 -9 18 18\"><circle r=\"8\" fill=\"var(--card,#fbf9f5)\" stroke=\"var(--navy,#34419a)\" stroke-width=\"1.9\" stroke-dasharray=\"0.2 2.2\"/></svg><svg class=\"ds-glyph\" viewBox=\"-9 -9 18 18\"><circle r=\"8\" fill=\"var(--navy-wash,#e2e3f0)\" stroke=\"var(--navy,#34419a)\" stroke-width=\"1.5\"/><circle cx=\"7.2\" cy=\"-7.2\" r=\"1.6\" fill=\"var(--card,#fbf9f5)\" stroke=\"var(--navy,#34419a)\" stroke-width=\"0.8\"/></svg></div>",
+      "css": ".ds-glyph-row { display:flex; gap:12px; align-items:center; } .ds-glyph { width:28px; height:28px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Surveyed Wheel",
+    "overview": "Sarkar Graph draws the Government of India as one wheel, surveyed outward from the People at its centre. The THESIS the build carries out literally: a 24-spoke Ashoka Chakra sits at the hub as the People; every seat of power is placed by its distance from that hub; every wedge is a branch of the state (Parliament, the executive, the judiciary, independent bodies, States & UTs), rendered as territory on a khadi-paper sheet with the stepped, sourced authority of a Survey of India map rather than the boxes-and-lines of an org chart. First contact with any government is literal survey: a circular reveal grows from the seal outward over ~950ms before a single mark is legible. Flag colour is rationed to hairlines, washes and marks — saffron never decorates, it only ever means the People, \"elects,\" or the live chain of authority currently being traced.\n\nThe system refuses two things by construction: the org-chart tree (there are no boxes-and-arrows; everything is polar, placed by angle and radius) and the card dashboard (the map is the primary surface; the left rail is commentary on what the map already shows). It also refuses ornament as camouflage — the \"clean without any noticeable AI slop\" brand commitment lands as flat inks, no gradients, no drop shadows outside a small, deliberate set of floating-chrome elevations, and a fixed glyph alphabet where every institution kind gets exactly one silhouette, never a stock icon.",
+    "keyCharacteristics": [
+      "A living radial instrument, not a poster: click any seat and the whole wheel spring-turns it to 6 o'clock, then draws its chain of authority home in saffron.",
+      "Two palettes that never touch: sector ink marks territory (which branch of the state), party ink marks incumbency (who currently holds it) — the map is politically neutral by construction.",
+      "Zero overlapping marks, enforced by a track-and-pack layout engine and a regression script, not by hand-tuning.",
+      "Paper by day, warm near-black by night — the same flat-ink grammar, re-inked rather than dimmed."
+    ],
+    "rules": [
+      { "name": "The Territory, Not State, Rule", "body": "Sector ink marks which branch of government a body belongs to. It never marks selection, hover, or authority. Those always render in saffron regardless of the selected seat's own sector — a judiciary seat's chain of authority is drawn in saffron, not ochre.", "section": "colors" },
+      { "name": "The Party Colour Is Data Rule", "body": "A second, disjoint palette (partyInk) exists solely for incumbency — avatar rings, hemicycle seat-dots, party chips, and the States cartogram's tile fills. It appears only where party affiliation is literally the fact on screen; it never substitutes for or blends with sector ink.", "section": "colors" },
+      { "name": "The Uppercase-Is-Structure Rule", "body": "text-transform: uppercase with wide letter-spacing (0.08em–0.24em) marks only wayfinding and structural labels — section eyebrows and wheel labels. Body copy, titles, and button labels are always set in normal case; uppercase never carries emphasis on its own.", "section": "typography" },
+      { "name": "The Overlap-Free Invariant", "body": "layout.ts's layoutWheel places every drawn mark on a track sized to its largest occupant, then uses a 1-D least-squares packer to space marks along that track with a guaranteed minimum gap. scripts/check-layout.ts lays out every government in the dataset and fails the build if any pair of marks overlaps or a mark lands inside the seal. Any change to sizing, tiering, or sector allocation must keep check-layout green.", "section": "elevation" },
+      { "name": "The Flat-Map, Lifted-Chrome Rule", "body": "Nothing on the wheel itself ever casts a shadow — depth there is opacity and tone only. Shadow is reserved for UI that is temporarily floating above the page; once something is part of the permanent layout it gets shadow-card at most.", "section": "elevation" },
+      { "name": "The Glyph Alphabet Rule", "body": "Every institution kind has exactly one fixed silhouette, shared across every government and every sector colour. The same shape means the same kind of thing on every wheel; new institution kinds get a new silhouette, never a re-use of an existing one with a different colour.", "section": "elevation" },
+      { "name": "The Seat State Is Never Colour-Only Rule", "body": "A seat's state (held / acting / vacant / unverified) is always encoded in stroke and fill pattern, on top of and independent of its sector colour. State must be legible in grayscale or under colour-blindness; colour alone never carries it.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the seven sector inks mapped one-to-one to branch/territory (people, executive, legislative, judicial, constitutional, federal, local) across every government; never reassign one for a single view.",
+      "Do give any new seat state or institution kind its own shape or stroke pattern, not just a new colour — see the Glyph Alphabet and Seat State rules.",
+      "Do run scripts/check-layout.ts after any change to layout.ts, sizeOf, or the node dataset; a nonzero exit blocks the change.",
+      "Do route new panel copy through Card + the t-* role classes rather than ad hoc Tailwind text sizes, so the type ramp stays closed.",
+      "Do treat dark mode as a parallel, hand-tuned palette swap via [data-theme=\"dark\"] (including re-balanced sector inks and an inset-highlight shadow), not a filter or opacity trick over the light tokens."
+    ],
+    "donts": [
+      "Don't use saffron for anything except the People/root, \"elects\" edges, the active chain of authority, and live/fresh indicators — its rarity is what makes the chain readable against seven other inks.",
+      "Don't apply party colour to anything that isn't literally displaying a party affiliation (no party-tinted chrome, sector wedges, or navigation).",
+      "Don't add a box-shadow beyond --shadow-card / --shadow-pop; the map itself never casts a shadow, and only genuinely floating chrome gets shadow-pop.",
+      "Don't hard-code a wedge, tier, or mark radius on the map; every size must come from sizeOf() / layoutWheel() so the overlap-free invariant holds.",
+      "Don't rotate a glyph or its label with the wheel's turn; only the unrotated structural layers spin — marks and text stay upright via .upright / --wr counter-rotation."
+    ]
+  }
+}

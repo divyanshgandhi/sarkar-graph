@@ -1,0 +1,4061 @@
+{
+ "segment": "ministries-a",
+ "asOf": "2026-09-25",
+ "notes": "Segment ministries-a covers: Ministry of Finance and its 6 departments (Economic Affairs, Expenditure, Revenue [CBDT/CBIC], Financial Services, DIPAM, Public Enterprises); Ministry of Corporate Affairs; Ministry of Commerce and Industry and its 2 departments (Commerce, DPIIT); Ministry of Statistics and Programme Implementation; Ministry of Planning; Ministry of MSME; plus their attached/subordinate offices, statutory/autonomous bodies, CPSEs, all 12 public sector banks and the public sector insurers (incl. LIC) under DFS.\n\nKNOWN GAPS / LOW-CONFIDENCE ITEMS (do not treat these as confirmed):\n- 'Finance Secretary' as a distinct honorific title: Ajay Seth held it Mar-Jun 2025, then moved to IRDAI (Sept 2025); could not confirm whether/who currently holds the formal re-designation as of Sept 2026, so no separate in-pos-finance-secretary position was created — Anuradha Thakur (DEA Secretary) is recorded as the conventional senior-most Finance Ministry secretary, flagged with a note.\n- Secretary, Department of Public Enterprises and Secretary, MoSPI: could not confirm current holders at all (marked vacant:false, holder:null, confidence low) — the posts are very likely occupied, just unconfirmed by available sources within this research pass.\n- Secretary/CEO, Ministry of Planning: Ministry of Planning has had no distinct executing machinery since NITI Aayog replaced the Planning Commission in 2015; convention suggests the NITI Aayog CEO (Anurag Jain, per a Feb 2026 source) may also carry the Secretary, Planning charge, but this dual-hat was not independently confirmed, so no holder was recorded.\n- CMD/Chairman not found for: MMTC, STC, PEC Limited, SPMCIL, SFIO Director, IEPFA Chairperson, Rubber Board, Tobacco Board, Coir Board, DGTR Director General, PESB Chairperson, FSIB Chairman, Oriental Insurance CMD, AIC (Agriculture Insurance) CMD — positions are included per the quality bar ('include the position, set confidence low') rather than omitted.\n- Spices Board Chairman: Wikipedia lists Amardeep Singh Bhatia IAS — identical to the confirmed DPIIT Secretary — flagged as likely stale/duplicated wiki data, confidence low.\n- Several single-source Wikipedia-infobox names (e.g. National Insurance Co. 'Rajeshwari Singh Muni', United India Insurance 'Bhupesh Sushil Rahul') could not be cross-verified against a second 2025-2026 source; recorded at low/medium confidence rather than omitted.\n- Not enumerated (acknowledged gap, not fabricated): the ~14 individual sector Export Promotion Councils beyond APEDA/MPEDA (only the apex FIEO and the 5 statutory commodity boards were modelled); the ~22 state-level Registrars of Companies (only the Central Registration Centre was modelled); ICAI/ICSI/ICMAI Presidents (these rotate annually by election within each institute and were judged low-value to record); Regional Rural Banks (sponsored by specific PSU banks, not modelled individually).\n- 'administers' relations from ministries-a bodies to regulator entities owned by the 'regulators' segment (RBI, SEBI, IRDAI, PFRDA, NABARD, SIDBI, EXIM Bank, NHB, CCI, IBBI) were added by this segment to capture the real administrative-ministry link; the regulator entities themselves are NOT redefined here and should be defined only by the regulators segment.\n- Money/budget figures were intentionally left out per segment-ownership rules (union-budget segment owns all budget numbers).\n\nADVERSARIAL VERIFICATION PASS (2026-09-25): structural JSON/schema validated (no duplicate IDs, no bad kinds/sectors/ranks/relation types found; parentId/headPositionId/orgId/relation-endpoint references outside this segment's own IDs were checked and are legitimate cross-segment references per SCHEMA.md ownership rules — in-union-government (core-apex), in-pos-minister-* (council-of-ministers), in-rbi/in-sebi/in-irdai/in-pfrda/in-nabard/in-sidbi/in-exim-bank/in-nhb/in-cci/in-ibbi (regulators)). 9 corrections applied after fresh 2025-2026 source checks (see top-level 'verification.corrections'); the pre-existing KNOWN GAPS list above was independently re-attempted (MMTC/STC/PEC/SPMCIL CMDs, Rubber/Tobacco/Coir Board chairs, DGTR DG, PESB chair, FSIB chair, Secretary MoSPI, Secretary Planning) and none could be additionally confirmed via Wikipedia within this pass — left as-is (holder:null, confidence:low), consistent with the 'never invent' rule.",
+ "entities": [
+  {
+   "id": "in-min-finance",
+   "kind": "ministry",
+   "name": "Ministry of Finance",
+   "abbr": "MoF",
+   "aliases": [
+    "Finance Ministry",
+    "FinMin",
+    "North Block"
+   ],
+   "parentId": "in-union-government",
+   "description": "The Union ministry responsible for government revenue, expenditure, public debt, financial regulation, banking and insurance policy, and the annual Union Budget. Organised into six departments, each with its own administrative Secretary.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.finmin.nic.in",
+   "established": "1947",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-finance",
+   "sources": [
+    "https://www.finmin.nic.in",
+    "https://en.wikipedia.org/wiki/Ministry_of_Finance_(India)"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-economic-affairs",
+   "kind": "department",
+   "name": "Department of Economic Affairs",
+   "abbr": "DEA",
+   "aliases": [
+    "DEA"
+   ],
+   "parentId": "in-min-finance",
+   "description": "Prepares the Union Budget, formulates fiscal and macroeconomic policy, manages market borrowing and public debt, and handles India's relations with the IMF, World Bank and G20. Houses the Chief Economic Adviser, who authors the annual Economic Survey.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; Second Schedule",
+   "officialUrl": "https://dea.gov.in",
+   "hq": "New Delhi",
+   "adminHeadPositionId": "in-pos-secretary-economic-affairs",
+   "sources": [
+    "https://dea.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-expenditure",
+   "kind": "department",
+   "name": "Department of Expenditure",
+   "aliases": [
+    "DoE",
+    "Department of Expenditure"
+   ],
+   "parentId": "in-min-finance",
+   "description": "Oversees the public financial management system, releases and monitors government spending, implements Finance Commission and Pay Commission awards, and issues General Financial Rules. Houses the Controller General of Accounts.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://doe.gov.in",
+   "hq": "New Delhi",
+   "adminHeadPositionId": "in-pos-secretary-expenditure",
+   "sources": [
+    "https://doe.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-revenue",
+   "kind": "department",
+   "name": "Department of Revenue",
+   "aliases": [
+    "DoR",
+    "Department of Revenue"
+   ],
+   "parentId": "in-min-finance",
+   "description": "Administers direct taxes through the Central Board of Direct Taxes (CBDT) and indirect taxes (GST, customs) through the Central Board of Indirect Taxes and Customs (CBIC), and oversees the Enforcement Directorate, Financial Intelligence Unit and other anti-evasion agencies.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; Central Boards of Revenue Act, 1963",
+   "officialUrl": "https://dor.gov.in",
+   "hq": "New Delhi",
+   "adminHeadPositionId": "in-pos-secretary-revenue",
+   "sources": [
+    "https://dor.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-financial-services",
+   "kind": "department",
+   "name": "Department of Financial Services",
+   "abbr": "DFS",
+   "aliases": [
+    "DFS"
+   ],
+   "parentId": "in-min-finance",
+   "description": "Administers the Union government's ownership of public sector banks, insurers and financial institutions; sets policy on banking reform, financial inclusion (Jan Dhan, credit guarantee schemes) and coordinates with financial-sector regulators.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://financialservices.gov.in",
+   "hq": "New Delhi",
+   "adminHeadPositionId": "in-pos-secretary-financial-services",
+   "sources": [
+    "https://financialservices.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-investment-and-public-asset-management",
+   "kind": "department",
+   "name": "Department of Investment and Public Asset Management",
+   "abbr": "DIPAM",
+   "aliases": [
+    "DIPAM"
+   ],
+   "parentId": "in-min-finance",
+   "description": "Manages the Union government's equity holdings in central public sector enterprises and executes disinvestment, strategic sale and asset-monetisation transactions.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://dipam.gov.in",
+   "hq": "New Delhi",
+   "adminHeadPositionId": "in-pos-secretary-dipam",
+   "sources": [
+    "https://dipam.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-public-enterprises",
+   "kind": "department",
+   "name": "Department of Public Enterprises",
+   "abbr": "DPE",
+   "aliases": [
+    "DPE",
+    "Bureau of Public Enterprises"
+   ],
+   "parentId": "in-min-finance",
+   "description": "Formulates policy for central public sector enterprises (CPSEs), including the Maharatna/Navratna/Miniratna classification, corporate-governance guidelines, pay scales and performance (MoU) evaluation. Administratively placed under the Ministry of Finance.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://dpe.gov.in",
+   "hq": "New Delhi",
+   "adminHeadPositionId": "in-pos-secretary-public-enterprises",
+   "sources": [
+    "https://dpe.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-corporate-affairs",
+   "kind": "ministry",
+   "name": "Ministry of Corporate Affairs",
+   "abbr": "MCA",
+   "aliases": [
+    "MCA",
+    "Corporate Affairs Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Administers the Companies Act 2013 and the Limited Liability Partnership Act 2008 — company incorporation and registration (via MCA21), corporate governance, insolvency policy, and regulation of the accounting and company-secretary professions.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; Companies Act, 2013; Limited Liability Partnership Act, 2008",
+   "officialUrl": "https://www.mca.gov.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-corporate-affairs",
+   "adminHeadPositionId": "in-pos-secretary-corporate-affairs",
+   "sources": [
+    "https://www.mca.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-commerce-and-industry",
+   "kind": "ministry",
+   "name": "Ministry of Commerce and Industry",
+   "aliases": [
+    "Commerce Ministry",
+    "Commerce & Industry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Formulates and negotiates India's foreign trade policy and trade agreements, promotes exports and domestic/foreign investment, and drives industrial policy, through its two departments.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://commerce.gov.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-commerce-and-industry",
+   "sources": [
+    "https://commerce.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-commerce",
+   "kind": "department",
+   "name": "Department of Commerce",
+   "parentId": "in-min-commerce-and-industry",
+   "description": "Negotiates bilateral and multilateral trade agreements, administers export-promotion schemes and commodity boards (tea, coffee, rubber, spices, tobacco), and regulates foreign trade through the DGFT and DGTR.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://commerce.gov.in",
+   "hq": "New Delhi",
+   "adminHeadPositionId": "in-pos-secretary-commerce",
+   "sources": [
+    "https://commerce.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-promotion-of-industry-and-internal-trade",
+   "kind": "department",
+   "name": "Department for Promotion of Industry and Internal Trade",
+   "abbr": "DPIIT",
+   "aliases": [
+    "DPIIT",
+    "DIPP"
+   ],
+   "parentId": "in-min-commerce-and-industry",
+   "description": "Formulates industrial and FDI policy, drives Ease of Doing Business and Make in India, administers intellectual-property administration (patents, designs, trademarks, GIs) through the CGPDTM, and runs the Startup India initiative.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://dpiit.gov.in",
+   "hq": "New Delhi",
+   "adminHeadPositionId": "in-pos-secretary-dpiit",
+   "sources": [
+    "https://dpiit.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-statistics-and-programme-implementation",
+   "kind": "ministry",
+   "name": "Ministry of Statistics and Programme Implementation",
+   "abbr": "MoSPI",
+   "aliases": [
+    "MoSPI",
+    "Statistics Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Produces India's official statistics — GDP and national accounts, the Consumer Price Index, periodic labour-force and household surveys — through the National Statistical Office, and monitors the physical and financial progress of central infrastructure projects.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; Collection of Statistics Act, 2008",
+   "officialUrl": "https://mospi.gov.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-statistics-and-programme-implementation",
+   "sources": [
+    "https://mospi.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-planning",
+   "kind": "ministry",
+   "name": "Ministry of Planning",
+   "aliases": [
+    "Planning Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Nominal successor to the erstwhile Planning Commission's ministerial function. Since the Planning Commission's 2015 replacement by NITI Aayog (owned by core segment, see in-niti-aayog), the Ministry of Planning has no separate executing machinery of its own and is held by the same Minister of State (Independent Charge) as Statistics & Programme Implementation.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "headPositionId": "in-pos-minister-planning",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Planning_(India)",
+    "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2025056"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-micro-small-and-medium-enterprises",
+   "kind": "ministry",
+   "name": "Ministry of Micro, Small and Medium Enterprises",
+   "abbr": "MSME",
+   "aliases": [
+    "MSME Ministry",
+    "Ministry of MSME"
+   ],
+   "parentId": "in-union-government",
+   "description": "Formulates policy and implements credit, technology-upgradation and cluster-development schemes for India's micro, small and medium enterprises, and promotes khadi and village industries.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; Micro, Small and Medium Enterprises Development Act, 2006",
+   "officialUrl": "https://msme.gov.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-micro-small-and-medium-enterprises",
+   "adminHeadPositionId": "in-pos-secretary-msme",
+   "sources": [
+    "https://msme.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cbdt",
+   "kind": "attached_office",
+   "name": "Central Board of Direct Taxes",
+   "abbr": "CBDT",
+   "aliases": [
+    "CBDT",
+    "Income Tax Department"
+   ],
+   "parentId": "in-dept-revenue",
+   "description": "Apex statutory body that administers direct taxes (income tax, corporate tax) in India, formulates policy, and oversees the Income Tax Department's field administration.",
+   "legalBasis": "Central Boards of Revenue Act, 1963",
+   "officialUrl": "https://incometaxindia.gov.in",
+   "headPositionId": "in-pos-chairman-cbdt",
+   "sources": [
+    "https://incometaxindia.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cbic",
+   "kind": "attached_office",
+   "name": "Central Board of Indirect Taxes and Customs",
+   "abbr": "CBIC",
+   "aliases": [
+    "CBIC",
+    "Central Board of Excise and Customs",
+    "CBEC"
+   ],
+   "parentId": "in-dept-revenue",
+   "description": "Apex statutory body that administers GST (Union component), customs duties and central excise, and enforces trade-facilitation and anti-smuggling law.",
+   "legalBasis": "Central Boards of Revenue Act, 1963",
+   "officialUrl": "https://www.cbic.gov.in",
+   "headPositionId": "in-pos-chairman-cbic",
+   "sources": [
+    "https://www.cbic.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dggi",
+   "kind": "subordinate_office",
+   "name": "Directorate General of GST Intelligence",
+   "abbr": "DGGI",
+   "aliases": [
+    "DGGI"
+   ],
+   "parentId": "in-cbic",
+   "description": "CBIC's intelligence and enforcement arm against GST evasion, fake invoicing and input-tax-credit fraud.",
+   "legalBasis": "Central Goods and Services Tax Act, 2017",
+   "sources": [
+    "https://www.cbic.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dri",
+   "kind": "subordinate_office",
+   "name": "Directorate of Revenue Intelligence",
+   "abbr": "DRI",
+   "aliases": [
+    "DRI"
+   ],
+   "parentId": "in-cbic",
+   "description": "India's premier anti-smuggling intelligence and investigation agency, enforcing the Customs Act against smuggling of contraband, gold, narcotics and commercial fraud.",
+   "legalBasis": "Customs Act, 1962",
+   "officialUrl": "https://dri.nic.in",
+   "sources": [
+    "https://dri.nic.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ed",
+   "kind": "investigative_agency",
+   "name": "Enforcement Directorate",
+   "abbr": "ED",
+   "aliases": [
+    "ED",
+    "Enforcement Directorate"
+   ],
+   "parentId": "in-dept-revenue",
+   "description": "Investigates and prosecutes offences of money laundering under the Prevention of Money Laundering Act and violations of foreign-exchange law under FEMA; also handles fugitive economic offender proceedings.",
+   "legalBasis": "Prevention of Money Laundering Act, 2002; Foreign Exchange Management Act, 1999",
+   "officialUrl": "https://enforcementdirectorate.gov.in",
+   "sources": [
+    "https://enforcementdirectorate.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-fiu-ind",
+   "kind": "subordinate_office",
+   "name": "Financial Intelligence Unit - India",
+   "abbr": "FIU-IND",
+   "aliases": [
+    "FIU-IND",
+    "FIU India"
+   ],
+   "parentId": "in-dept-revenue",
+   "description": "National central agency that receives, analyses and disseminates information on suspicious financial transactions to law-enforcement and intelligence agencies to combat money laundering and terror financing.",
+   "legalBasis": "Prevention of Money Laundering Act, 2002",
+   "officialUrl": "https://fiuindia.gov.in",
+   "sources": [
+    "https://fiuindia.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ceib",
+   "kind": "subordinate_office",
+   "name": "Central Economic Intelligence Bureau",
+   "abbr": "CEIB",
+   "aliases": [
+    "CEIB"
+   ],
+   "parentId": "in-dept-revenue",
+   "description": "Apex coordinating agency for economic intelligence among revenue and enforcement agencies (Income Tax, Customs, ED, DRI, FIU) under the Department of Revenue.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "sources": [
+    "https://dor.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nacin",
+   "kind": "autonomous_body",
+   "name": "National Academy of Customs, Indirect Taxes and Narcotics",
+   "abbr": "NACIN",
+   "aliases": [
+    "NACIN"
+   ],
+   "parentId": "in-cbic",
+   "description": "Apex training institute for CBIC (customs, GST) officers and for capacity-building in partner countries.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.nacin.gov.in",
+   "sources": [
+    "https://www.nacin.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nadt",
+   "kind": "autonomous_body",
+   "name": "National Academy of Direct Taxes",
+   "abbr": "NADT",
+   "aliases": [
+    "NADT"
+   ],
+   "parentId": "in-cbdt",
+   "description": "Apex training institute for Indian Revenue Service (Income Tax) officers, based in Nagpur.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.nadt.gov.in",
+   "sources": [
+    "https://www.nadt.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-gstn",
+   "kind": "statutory_body",
+   "name": "Goods and Services Tax Network",
+   "abbr": "GSTN",
+   "aliases": [
+    "GSTN",
+    "GST Network"
+   ],
+   "parentId": "in-dept-revenue",
+   "description": "Non-profit, non-government company that builds and operates the IT backbone for GST registration, returns and invoice matching for the Union and all states.",
+   "legalBasis": "Companies Act, 2013 (Section 8 company); GST Council decisions",
+   "officialUrl": "https://www.gstn.org.in",
+   "sources": [
+    "https://www.gstn.org.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dgft",
+   "kind": "attached_office",
+   "name": "Directorate General of Foreign Trade",
+   "abbr": "DGFT",
+   "aliases": [
+    "DGFT"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Implements India's Foreign Trade Policy — issues import-export codes, export/import licences and incentive scrips, and regulates foreign trade.",
+   "legalBasis": "Foreign Trade (Development and Regulation) Act, 1992",
+   "officialUrl": "https://www.dgft.gov.in",
+   "headPositionId": "in-pos-dg-dgft",
+   "sources": [
+    "https://www.dgft.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dgtr",
+   "kind": "attached_office",
+   "name": "Directorate General of Trade Remedies",
+   "abbr": "DGTR",
+   "aliases": [
+    "DGTR",
+    "Directorate General of Anti-Dumping and Allied Duties"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Investigates and recommends anti-dumping, countervailing and safeguard duties to protect Indian industry from injurious/unfair imports.",
+   "legalBasis": "Customs Tariff Act, 1975",
+   "officialUrl": "https://www.dgtr.gov.in",
+   "sources": [
+    "https://www.dgtr.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dgcis",
+   "kind": "subordinate_office",
+   "name": "Directorate General of Commercial Intelligence and Statistics",
+   "abbr": "DGCI&S",
+   "aliases": [
+    "DGCI&S"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Compiles and publishes India's official foreign-trade statistics (exports/imports by commodity and country) based on customs data.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "sources": [
+    "https://www.eaindustry.nic.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cgpdtm",
+   "kind": "attached_office",
+   "name": "Office of the Controller General of Patents, Designs and Trade Marks",
+   "abbr": "CGPDTM",
+   "aliases": [
+    "CGPDTM",
+    "Indian Patent Office",
+    "IP India"
+   ],
+   "parentId": "in-dept-promotion-of-industry-and-internal-trade",
+   "description": "India's national intellectual-property office — administers the grant of patents, trademarks, designs and geographical indications.",
+   "legalBasis": "Patents Act, 1970; Trade Marks Act, 1999; Designs Act, 2000; Geographical Indications of Goods (Registration and Protection) Act, 1999",
+   "officialUrl": "https://ipindia.gov.in",
+   "headPositionId": "in-pos-cgpdtm",
+   "sources": [
+    "https://ipindia.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nso",
+   "kind": "attached_office",
+   "name": "National Statistical Office",
+   "abbr": "NSO",
+   "aliases": [
+    "NSO",
+    "National Sample Survey Office",
+    "NSSO",
+    "Central Statistics Office",
+    "CSO"
+   ],
+   "parentId": "in-min-statistics-and-programme-implementation",
+   "description": "Produces India's official statistics — GDP and national-accounts estimates, the Consumer Price Index, Periodic Labour Force Survey and other household surveys. Merger of the former Central Statistics Office (CSO) and National Sample Survey Office (NSSO).",
+   "legalBasis": "Collection of Statistics Act, 2008",
+   "officialUrl": "https://mospi.gov.in",
+   "sources": [
+    "https://mospi.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nsc",
+   "kind": "advisory_body",
+   "name": "National Statistical Commission",
+   "abbr": "NSC",
+   "aliases": [
+    "NSC"
+   ],
+   "parentId": "in-min-statistics-and-programme-implementation",
+   "description": "Apex advisory body created to review, coordinate and improve the statistical system, and to set priorities and standards for statistical work across the government.",
+   "legalBasis": "Cabinet Resolution (2005), following the Rangarajan Commission recommendations",
+   "sources": [
+    "https://mospi.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-isi",
+   "kind": "autonomous_body",
+   "name": "Indian Statistical Institute",
+   "abbr": "ISI",
+   "aliases": [
+    "ISI"
+   ],
+   "parentId": "in-min-statistics-and-programme-implementation",
+   "description": "Institute of national importance for research, teaching and application of statistics, headquartered in Kolkata; administratively under MoSPI.",
+   "legalBasis": "Indian Statistical Institute Act, 1959",
+   "officialUrl": "https://www.isical.ac.in",
+   "sources": [
+    "https://www.isical.ac.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-icai",
+   "kind": "statutory_body",
+   "name": "Institute of Chartered Accountants of India",
+   "abbr": "ICAI",
+   "aliases": [
+    "ICAI"
+   ],
+   "parentId": "in-min-corporate-affairs",
+   "description": "Statutory regulator and professional body for chartered accountants in India — conducts the CA examinations, sets accounting/auditing standards guidance, and enforces professional discipline.",
+   "legalBasis": "Chartered Accountants Act, 1949",
+   "officialUrl": "https://www.icai.org",
+   "sources": [
+    "https://www.icai.org"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-icsi",
+   "kind": "statutory_body",
+   "name": "Institute of Company Secretaries of India",
+   "abbr": "ICSI",
+   "aliases": [
+    "ICSI"
+   ],
+   "parentId": "in-min-corporate-affairs",
+   "description": "Statutory regulator and professional body for company secretaries in India.",
+   "legalBasis": "Company Secretaries Act, 1980",
+   "officialUrl": "https://www.icsi.edu",
+   "sources": [
+    "https://www.icsi.edu"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-icmai",
+   "kind": "statutory_body",
+   "name": "Institute of Cost Accountants of India",
+   "abbr": "ICMAI",
+   "aliases": [
+    "ICMAI",
+    "ICWAI"
+   ],
+   "parentId": "in-min-corporate-affairs",
+   "description": "Statutory regulator and professional body for cost and management accountants in India.",
+   "legalBasis": "Cost and Works Accountants Act, 1959",
+   "officialUrl": "https://icmai.in",
+   "sources": [
+    "https://icmai.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nfra",
+   "kind": "regulator",
+   "name": "National Financial Reporting Authority",
+   "abbr": "NFRA",
+   "aliases": [
+    "NFRA"
+   ],
+   "parentId": "in-min-corporate-affairs",
+   "description": "Independent regulator overseeing auditing standards and audit quality for listed and large companies, with powers to investigate and discipline auditors — created after major corporate-fraud/audit-failure cases.",
+   "legalBasis": "Companies Act, 2013, Section 132",
+   "officialUrl": "https://nfra.gov.in",
+   "headPositionId": "in-pos-chairperson-nfra",
+   "sources": [
+    "https://nfra.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-sfio",
+   "kind": "investigative_agency",
+   "name": "Serious Fraud Investigation Office",
+   "abbr": "SFIO",
+   "aliases": [
+    "SFIO"
+   ],
+   "parentId": "in-min-corporate-affairs",
+   "description": "Multi-disciplinary investigative agency that probes serious and complex corporate fraud under the Companies Act.",
+   "legalBasis": "Companies Act, 2013, Sections 211-212",
+   "officialUrl": "https://sfio.nic.in",
+   "sources": [
+    "https://sfio.nic.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iepfa",
+   "kind": "statutory_body",
+   "name": "Investor Education and Protection Fund Authority",
+   "abbr": "IEPFA",
+   "aliases": [
+    "IEPFA",
+    "IEPF Authority"
+   ],
+   "parentId": "in-min-corporate-affairs",
+   "description": "Administers the Investor Education and Protection Fund — holds unclaimed dividends, matured deposits and shares transferred from companies, refunds claims to investors, and runs investor-awareness programmes.",
+   "legalBasis": "Companies Act, 2013, Section 125",
+   "officialUrl": "https://www.iepf.gov.in",
+   "sources": [
+    "https://www.iepf.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iica",
+   "kind": "autonomous_body",
+   "name": "Indian Institute of Corporate Affairs",
+   "abbr": "IICA",
+   "aliases": [
+    "IICA"
+   ],
+   "parentId": "in-min-corporate-affairs",
+   "description": "Think-tank, training and research institute of the Ministry of Corporate Affairs on corporate governance, CSR, competition law and insolvency.",
+   "legalBasis": "Registered as a Section 8 (not-for-profit) company",
+   "officialUrl": "https://iica.nic.in",
+   "sources": [
+    "https://iica.nic.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-tea-board",
+   "kind": "statutory_body",
+   "name": "Tea Board of India",
+   "aliases": [
+    "Tea Board"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Regulates and promotes the Indian tea industry — production, quality, research and export promotion.",
+   "legalBasis": "Tea Act, 1953",
+   "officialUrl": "https://www.teaboard.gov.in",
+   "headPositionId": "in-pos-chairman-tea-board",
+   "hq": "Kolkata",
+   "sources": [
+    "https://www.teaboard.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-coffee-board",
+   "kind": "statutory_body",
+   "name": "Coffee Board of India",
+   "aliases": [
+    "Coffee Board"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Regulates and promotes the Indian coffee industry — research, development, extension and export/market promotion.",
+   "legalBasis": "Coffee Act, 1942",
+   "officialUrl": "https://www.indiacoffee.org",
+   "headPositionId": "in-pos-chairman-coffee-board",
+   "hq": "Bengaluru",
+   "sources": [
+    "https://www.indiacoffee.org"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-rubber-board",
+   "kind": "statutory_body",
+   "name": "Rubber Board (India)",
+   "aliases": [
+    "Rubber Board"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Regulates and promotes the Indian natural-rubber industry — research, extension, replanting subsidies and market intervention.",
+   "legalBasis": "Rubber Act, 1947",
+   "officialUrl": "https://rubberboard.org.in",
+   "hq": "Kottayam",
+   "sources": [
+    "https://rubberboard.org.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-spices-board",
+   "kind": "statutory_body",
+   "name": "Spices Board of India",
+   "aliases": [
+    "Spices Board"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Promotes export and quality development of Indian spices and administers spice-export regulation.",
+   "legalBasis": "Spices Board Act, 1986",
+   "officialUrl": "https://www.indianspices.com",
+   "hq": "Kochi",
+   "headPositionId": "in-pos-chairman-spices-board",
+   "sources": [
+    "https://www.indianspices.com"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-tobacco-board",
+   "kind": "statutory_body",
+   "name": "Tobacco Board",
+   "aliases": [
+    "Tobacco Board"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Regulates tobacco production and export, and administers auction platforms for Virginia tobacco.",
+   "legalBasis": "Tobacco Board Act, 1975",
+   "officialUrl": "https://tobaccoboard.com",
+   "hq": "Guntur",
+   "sources": [
+    "https://tobaccoboard.com"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-apeda",
+   "kind": "statutory_body",
+   "name": "Agricultural and Processed Food Products Export Development Authority",
+   "abbr": "APEDA",
+   "aliases": [
+    "APEDA"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Promotes export of agricultural and processed-food products, sets quality/packaging standards, and registers exporters.",
+   "legalBasis": "Agricultural and Processed Food Products Export Development Authority Act, 1985",
+   "officialUrl": "https://apeda.gov.in",
+   "headPositionId": "in-pos-chairman-apeda",
+   "sources": [
+    "https://apeda.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-mpeda",
+   "kind": "statutory_body",
+   "name": "Marine Products Export Development Authority",
+   "abbr": "MPEDA",
+   "aliases": [
+    "MPEDA"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Promotes export of marine products (shrimp, fish) — quality control, infrastructure development and market promotion.",
+   "legalBasis": "Marine Products Export Development Authority Act, 1972",
+   "officialUrl": "https://mpeda.gov.in",
+   "hq": "Kochi",
+   "headPositionId": "in-pos-chairman-mpeda",
+   "sources": [
+    "https://mpeda.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iift",
+   "kind": "autonomous_body",
+   "name": "Indian Institute of Foreign Trade",
+   "abbr": "IIFT",
+   "aliases": [
+    "IIFT"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Deemed-to-be university and training/research institute on international trade, under the Department of Commerce.",
+   "legalBasis": "Societies Registration Act, 1860 (registered society); deemed university status under UGC Act",
+   "officialUrl": "https://iift.ac.in",
+   "sources": [
+    "https://iift.ac.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nid",
+   "kind": "autonomous_body",
+   "name": "National Institute of Design",
+   "abbr": "NID",
+   "aliases": [
+    "NID"
+   ],
+   "parentId": "in-dept-promotion-of-industry-and-internal-trade",
+   "description": "Institute of national importance for design education and research, with its main campus in Ahmedabad.",
+   "legalBasis": "National Institute of Design Act, 2014",
+   "officialUrl": "https://www.nid.edu",
+   "sources": [
+    "https://www.nid.edu"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-fddi",
+   "kind": "autonomous_body",
+   "name": "Footwear Design and Development Institute",
+   "abbr": "FDDI",
+   "aliases": [
+    "FDDI"
+   ],
+   "parentId": "in-dept-promotion-of-industry-and-internal-trade",
+   "description": "Autonomous institute for footwear design, leather-goods and retail-management education under DPIIT.",
+   "legalBasis": "Footwear Design and Development Institute Act, 2017",
+   "officialUrl": "https://www.fddiindia.com",
+   "sources": [
+    "https://www.fddiindia.com"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-qci",
+   "kind": "autonomous_body",
+   "name": "Quality Council of India",
+   "abbr": "QCI",
+   "aliases": [
+    "QCI"
+   ],
+   "parentId": "in-dept-promotion-of-industry-and-internal-trade",
+   "description": "National accreditation body set up jointly by government and industry associations to establish and operate accreditation and quality-certification structures across sectors.",
+   "legalBasis": "Registered as a not-for-profit autonomous society",
+   "officialUrl": "https://www.qcin.org",
+   "headPositionId": "in-pos-chairman-qci",
+   "sources": [
+    "https://www.qcin.org"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-npc",
+   "kind": "autonomous_body",
+   "name": "National Productivity Council",
+   "abbr": "NPC",
+   "aliases": [
+    "NPC"
+   ],
+   "parentId": "in-dept-promotion-of-industry-and-internal-trade",
+   "description": "National productivity-promotion body providing consultancy, training and research to industry and government; the Commerce & Industry Minister is ex officio President and the DPIIT Secretary is ex officio Chairman.",
+   "legalBasis": "Registered society",
+   "officialUrl": "https://www.npcindia.gov.in",
+   "sources": [
+    "https://www.npcindia.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-invest-india",
+   "kind": "autonomous_body",
+   "name": "Invest India",
+   "aliases": [
+    "Invest India"
+   ],
+   "parentId": "in-dept-promotion-of-industry-and-internal-trade",
+   "description": "India's national investment-promotion and facilitation agency, operated as a not-for-profit venture between DPIIT, industry associations and state governments.",
+   "legalBasis": "Registered as a Section 8 (not-for-profit) company",
+   "officialUrl": "https://www.investindia.gov.in",
+   "sources": [
+    "https://www.investindia.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-kvic",
+   "kind": "statutory_body",
+   "name": "Khadi and Village Industries Commission",
+   "abbr": "KVIC",
+   "aliases": [
+    "KVIC"
+   ],
+   "parentId": "in-min-micro-small-and-medium-enterprises",
+   "description": "Statutory body that plans, promotes, organises and finances khadi and village industries and supports their development.",
+   "legalBasis": "Khadi and Village Industries Commission Act, 1956",
+   "officialUrl": "https://www.kviconline.gov.in",
+   "headPositionId": "in-pos-chairman-kvic",
+   "sources": [
+    "https://www.kviconline.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-coir-board",
+   "kind": "statutory_body",
+   "name": "Coir Board",
+   "aliases": [
+    "Coir Board"
+   ],
+   "parentId": "in-min-micro-small-and-medium-enterprises",
+   "description": "Promotes development of the coir industry — research, export promotion, and welfare of coir workers.",
+   "legalBasis": "Coir Industry Act, 1953",
+   "officialUrl": "https://coirboard.gov.in",
+   "hq": "Kochi",
+   "sources": [
+    "https://coirboard.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ni-msme",
+   "kind": "autonomous_body",
+   "name": "National Institute for Micro, Small and Medium Enterprises",
+   "abbr": "ni-msme",
+   "aliases": [
+    "ni-msme",
+    "National Institute for MSME"
+   ],
+   "parentId": "in-min-micro-small-and-medium-enterprises",
+   "description": "National-level training, research, consultancy and extension organisation for the MSME sector, based in Hyderabad.",
+   "legalBasis": "Registered society",
+   "officialUrl": "https://www.nimsme.gov.in",
+   "sources": [
+    "https://www.nimsme.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-mgiri",
+   "kind": "autonomous_body",
+   "name": "Mahatma Gandhi Institute for Rural Industrialization",
+   "abbr": "MGIRI",
+   "aliases": [
+    "MGIRI"
+   ],
+   "parentId": "in-min-micro-small-and-medium-enterprises",
+   "description": "Research institute under KVIC/MSME for rural-industry technology development, based in Wardha.",
+   "legalBasis": "Registered society",
+   "officialUrl": "https://mgiri.org",
+   "sources": [
+    "https://mgiri.org"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cgtmse",
+   "kind": "statutory_body",
+   "name": "Credit Guarantee Fund Trust for Micro and Small Enterprises",
+   "abbr": "CGTMSE",
+   "aliases": [
+    "CGTMSE"
+   ],
+   "parentId": "in-min-micro-small-and-medium-enterprises",
+   "description": "Trust set up jointly by the Ministry of MSME and SIDBI to provide collateral-free credit guarantees to lenders financing micro and small enterprises.",
+   "legalBasis": "Trust established under Indian Trusts Act, 1882",
+   "officialUrl": "https://www.cgtmse.in",
+   "sources": [
+    "https://www.cgtmse.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-pesb",
+   "kind": "advisory_body",
+   "name": "Public Enterprises Selection Board",
+   "abbr": "PESB",
+   "aliases": [
+    "PESB"
+   ],
+   "parentId": "in-dept-public-enterprises",
+   "description": "Recommends candidates for top-management posts (Chairman, Managing Director, functional Director) in central public sector enterprises, for final appointment by the government.",
+   "legalBasis": "Government of India Resolution (1987, as amended)",
+   "officialUrl": "https://pesb.gov.in",
+   "sources": [
+    "https://pesb.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-fsib",
+   "kind": "advisory_body",
+   "name": "Financial Services Institutions Bureau",
+   "abbr": "FSIB",
+   "aliases": [
+    "FSIB",
+    "Banks Board Bureau",
+    "BBB"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Recommends candidates for top-management posts (Chairman, MD & CEO, Executive Director) in public sector banks, financial institutions and public sector insurers; successor to the Banks Board Bureau (BBB).",
+   "legalBasis": "Government of India Resolution (2022, superseding the 2016 BBB resolution)",
+   "officialUrl": "https://fsib.co.in",
+   "sources": [
+    "https://fsib.co.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-scope",
+   "kind": "advisory_body",
+   "name": "Standing Conference of Public Enterprises",
+   "abbr": "SCOPE",
+   "aliases": [
+    "SCOPE"
+   ],
+   "parentId": "in-dept-public-enterprises",
+   "description": "Apex professional body/registered society of central public sector enterprises that advises government on CPSE policy and provides a forum for CPSEs.",
+   "legalBasis": "Registered society",
+   "officialUrl": "https://scopeonline.in",
+   "sources": [
+    "https://scopeonline.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-mmtc",
+   "kind": "cpse",
+   "name": "MMTC Limited",
+   "aliases": [
+    "MMTC"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Miniratna CPSE trading company — India's largest bullion importer and a canalising agency for select mineral, metal and agri-commodity trade.",
+   "legalBasis": "Companies Act",
+   "officialUrl": "https://www.mmtclimited.com",
+   "sources": [
+    "https://www.mmtclimited.com"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-stc",
+   "kind": "cpse",
+   "name": "State Trading Corporation of India",
+   "abbr": "STC",
+   "aliases": [
+    "STC"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "CPSE trading company historically canalising bulk import/export of essential commodities; now diversified into trading and leasing.",
+   "legalBasis": "Companies Act",
+   "officialUrl": "https://stclimited.co.in",
+   "sources": [
+    "https://stclimited.co.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-pec-limited",
+   "kind": "cpse",
+   "name": "PEC Limited",
+   "aliases": [
+    "PEC",
+    "Project and Equipment Corporation"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "CPSE trading company engaged in international trade of agricultural commodities, metals, coal and general goods.",
+   "legalBasis": "Companies Act",
+   "officialUrl": "https://www.pec-india.co.in",
+   "sources": [
+    "https://www.pec-india.co.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ecgc",
+   "kind": "cpse",
+   "name": "Export Credit Guarantee Corporation of India",
+   "abbr": "ECGC",
+   "aliases": [
+    "ECGC"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Provides export-credit insurance and guarantee cover to Indian exporters and banks against payment-default risk on overseas trade.",
+   "legalBasis": "Companies Act (wholly government-owned)",
+   "officialUrl": "https://www.ecgc.in",
+   "headPositionId": "in-pos-cmd-ecgc",
+   "sources": [
+    "https://www.ecgc.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-itpo",
+   "kind": "autonomous_body",
+   "name": "India Trade Promotion Organisation",
+   "abbr": "ITPO",
+   "aliases": [
+    "ITPO"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Premier trade-promotion body — organises India's international trade fairs and exhibitions (e.g. India International Trade Fair) and runs Pragati Maidan.",
+   "legalBasis": "Registered as a Section 8 (not-for-profit) company",
+   "officialUrl": "https://www.indiatradefair.com",
+   "headPositionId": "in-pos-cmd-itpo",
+   "hq": "New Delhi",
+   "established": "1977",
+   "sources": [
+    "https://en.wikipedia.org/wiki/India_Trade_Promotion_Organisation"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nsic",
+   "kind": "cpse",
+   "name": "National Small Industries Corporation",
+   "abbr": "NSIC",
+   "aliases": [
+    "NSIC"
+   ],
+   "parentId": "in-min-micro-small-and-medium-enterprises",
+   "description": "Miniratna CPSE promoting the growth of micro and small enterprises through credit, raw-material, marketing and technology support.",
+   "legalBasis": "Companies Act",
+   "officialUrl": "https://www.nsic.co.in",
+   "headPositionId": "in-pos-cmd-nsic",
+   "established": "1955",
+   "sources": [
+    "https://www.nsic.co.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-spmcil",
+   "kind": "cpse",
+   "name": "Security Printing and Minting Corporation of India Limited",
+   "abbr": "SPMCIL",
+   "aliases": [
+    "SPMCIL"
+   ],
+   "parentId": "in-dept-economic-affairs",
+   "description": "Miniratna CPSE that produces currency and bank notes, security paper, coins, non-judicial stamp papers and passports/travel documents through its mints and presses.",
+   "legalBasis": "Companies Act",
+   "officialUrl": "https://www.spmcil.com",
+   "established": "2006",
+   "sources": [
+    "https://www.spmcil.com"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ifci",
+   "kind": "cpse",
+   "name": "IFCI Limited",
+   "aliases": [
+    "IFCI",
+    "Industrial Finance Corporation of India"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "India's oldest development finance institution, now a government-owned NBFC financing industrial and infrastructure projects.",
+   "legalBasis": "Companies Act (formerly a statutory corporation under the IFCI Act, 1948, corporatised in 1993)",
+   "officialUrl": "https://www.ifciltd.com",
+   "established": "1948",
+   "sources": [
+    "https://www.ifciltd.com"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iifcl",
+   "kind": "cpse",
+   "name": "India Infrastructure Finance Company Limited",
+   "abbr": "IIFCL",
+   "aliases": [
+    "IIFCL"
+   ],
+   "parentId": "in-dept-economic-affairs",
+   "description": "Wholly government-owned company providing long-term debt finance for infrastructure projects.",
+   "legalBasis": "Companies Act",
+   "officialUrl": "https://www.iifcl.in",
+   "established": "2006",
+   "sources": [
+    "https://www.iifcl.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nabfid",
+   "kind": "statutory_body",
+   "name": "National Bank for Financing Infrastructure and Development",
+   "abbr": "NaBFID",
+   "aliases": [
+    "NaBFID",
+    "NBFID"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Development financial institution set up to fund long-term infrastructure projects, catalyse private infrastructure investment and develop the bond market for infrastructure financing.",
+   "legalBasis": "National Bank for Financing Infrastructure and Development Act, 2021",
+   "officialUrl": "https://www.nabfid.org",
+   "established": "2021",
+   "sources": [
+    "https://www.nabfid.org"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-niif",
+   "kind": "cpse",
+   "name": "National Investment and Infrastructure Fund",
+   "abbr": "NIIF",
+   "aliases": [
+    "NIIF"
+   ],
+   "parentId": "in-dept-economic-affairs",
+   "description": "India's quasi-sovereign wealth fund that invests, alongside domestic and global institutional investors, in infrastructure and other sectors.",
+   "legalBasis": "Category-II Alternative Investment Fund registered with SEBI",
+   "officialUrl": "https://niifindia.in",
+   "established": "2015",
+   "sources": [
+    "https://niifindia.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncgtc",
+   "kind": "cpse",
+   "name": "National Credit Guarantee Trustee Company",
+   "abbr": "NCGTC",
+   "aliases": [
+    "NCGTC"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Government-owned trustee company that manages several credit-guarantee trust funds (for education loans, skill-development loans, MSME/start-up credit, and Covid-era emergency credit schemes).",
+   "legalBasis": "Companies Act",
+   "officialUrl": "https://www.ncgtc.in",
+   "established": "2014",
+   "sources": [
+    "https://www.ncgtc.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dicgc",
+   "kind": "statutory_body",
+   "name": "Deposit Insurance and Credit Guarantee Corporation",
+   "abbr": "DICGC",
+   "aliases": [
+    "DICGC"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Insures bank deposits up to a statutory limit (₹5 lakh per depositor per bank) for all commercial and most cooperative banks. Wholly owned subsidiary of the Reserve Bank of India; included here for its close administrative interface with DFS on bank depositor-protection policy.",
+   "legalBasis": "Deposit Insurance and Credit Guarantee Corporation Act, 1961",
+   "officialUrl": "https://www.dicgc.org.in",
+   "sources": [
+    "https://www.dicgc.org.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-sbi",
+   "kind": "public_sector_bank",
+   "name": "State Bank of India",
+   "abbr": "SBI",
+   "aliases": [
+    "SBI"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector bank, majority-owned by the Government of India through the Department of Financial Services.",
+   "legalBasis": "State Bank of India Act, 1955",
+   "officialUrl": "https://bank.sbi",
+   "established": "1955",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-ceo-sbi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/State_Bank_of_India"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-pnb",
+   "kind": "public_sector_bank",
+   "name": "Punjab National Bank",
+   "abbr": "PNB",
+   "aliases": [
+    "PNB"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector bank, majority-owned by the Government of India through the Department of Financial Services.",
+   "legalBasis": "Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 or 1980 (bank was nationalised in the 1969 or 1980 tranche; exact tranche not verified per-bank in this pass), consolidated through subsequent bank mergers (2017-2020)",
+   "officialUrl": "https://www.pnbindia.in",
+   "established": "1894",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-ceo-pnb",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab_National_Bank"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bob",
+   "kind": "public_sector_bank",
+   "name": "Bank of Baroda",
+   "abbr": "BoB",
+   "aliases": [
+    "BoB"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector bank, majority-owned by the Government of India through the Department of Financial Services.",
+   "legalBasis": "Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 or 1980 (bank was nationalised in the 1969 or 1980 tranche; exact tranche not verified per-bank in this pass), consolidated through subsequent bank mergers (2017-2020)",
+   "officialUrl": "https://www.bankofbaroda.in",
+   "established": "1908",
+   "hq": "Vadodara",
+   "headPositionId": "in-pos-ceo-bob",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bank_of_Baroda"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-canara-bank",
+   "kind": "public_sector_bank",
+   "name": "Canara Bank",
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector bank, majority-owned by the Government of India through the Department of Financial Services.",
+   "legalBasis": "Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 or 1980 (bank was nationalised in the 1969 or 1980 tranche; exact tranche not verified per-bank in this pass), consolidated through subsequent bank mergers (2017-2020)",
+   "officialUrl": "https://canarabank.com",
+   "established": "1906",
+   "hq": "Bengaluru",
+   "headPositionId": "in-pos-ceo-canara-bank",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Canara_Bank"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-union-bank-of-india",
+   "kind": "public_sector_bank",
+   "name": "Union Bank of India",
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector bank, majority-owned by the Government of India through the Department of Financial Services.",
+   "legalBasis": "Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 or 1980 (bank was nationalised in the 1969 or 1980 tranche; exact tranche not verified per-bank in this pass), consolidated through subsequent bank mergers (2017-2020)",
+   "officialUrl": "https://www.unionbankofindia.co.in",
+   "established": "1919",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-ceo-union-bank-of-india",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Bank_of_India"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-indian-bank",
+   "kind": "public_sector_bank",
+   "name": "Indian Bank",
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector bank, majority-owned by the Government of India through the Department of Financial Services.",
+   "legalBasis": "Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 or 1980 (bank was nationalised in the 1969 or 1980 tranche; exact tranche not verified per-bank in this pass), consolidated through subsequent bank mergers (2017-2020)",
+   "officialUrl": "https://www.indianbank.in",
+   "established": "1907",
+   "hq": "Chennai",
+   "headPositionId": "in-pos-ceo-indian-bank",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Bank"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bank-of-india",
+   "kind": "public_sector_bank",
+   "name": "Bank of India",
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector bank, majority-owned by the Government of India through the Department of Financial Services.",
+   "legalBasis": "Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 or 1980 (bank was nationalised in the 1969 or 1980 tranche; exact tranche not verified per-bank in this pass), consolidated through subsequent bank mergers (2017-2020)",
+   "officialUrl": "https://www.bankofindia.co.in",
+   "established": "1906",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-ceo-bank-of-india",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bank_of_India"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-central-bank-of-india",
+   "kind": "public_sector_bank",
+   "name": "Central Bank of India",
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector bank, majority-owned by the Government of India through the Department of Financial Services.",
+   "legalBasis": "Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 or 1980 (bank was nationalised in the 1969 or 1980 tranche; exact tranche not verified per-bank in this pass), consolidated through subsequent bank mergers (2017-2020)",
+   "officialUrl": "https://www.centralbankofindia.co.in",
+   "established": "1911",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-ceo-central-bank-of-india",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Bank_of_India"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-indian-overseas-bank",
+   "kind": "public_sector_bank",
+   "name": "Indian Overseas Bank",
+   "abbr": "IOB",
+   "aliases": [
+    "IOB"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector bank, majority-owned by the Government of India through the Department of Financial Services.",
+   "legalBasis": "Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 or 1980 (bank was nationalised in the 1969 or 1980 tranche; exact tranche not verified per-bank in this pass), consolidated through subsequent bank mergers (2017-2020)",
+   "officialUrl": "https://www.iob.in",
+   "established": "1937",
+   "hq": "Chennai",
+   "headPositionId": "in-pos-ceo-indian-overseas-bank",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Overseas_Bank"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-uco-bank",
+   "kind": "public_sector_bank",
+   "name": "UCO Bank",
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector bank, majority-owned by the Government of India through the Department of Financial Services.",
+   "legalBasis": "Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 or 1980 (bank was nationalised in the 1969 or 1980 tranche; exact tranche not verified per-bank in this pass), consolidated through subsequent bank mergers (2017-2020)",
+   "officialUrl": "https://www.ucobank.com",
+   "established": "1943",
+   "hq": "Kolkata",
+   "headPositionId": "in-pos-ceo-uco-bank",
+   "sources": [
+    "https://en.wikipedia.org/wiki/UCO_Bank"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bank-of-maharashtra",
+   "kind": "public_sector_bank",
+   "name": "Bank of Maharashtra",
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector bank, majority-owned by the Government of India through the Department of Financial Services.",
+   "legalBasis": "Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 or 1980 (bank was nationalised in the 1969 or 1980 tranche; exact tranche not verified per-bank in this pass), consolidated through subsequent bank mergers (2017-2020)",
+   "officialUrl": "https://bankofmaharashtra.in",
+   "established": "1935",
+   "hq": "Pune",
+   "headPositionId": "in-pos-ceo-bank-of-maharashtra",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bank_of_Maharashtra"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-punjab-and-sind-bank",
+   "kind": "public_sector_bank",
+   "name": "Punjab & Sind Bank",
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector bank, majority-owned by the Government of India through the Department of Financial Services.",
+   "legalBasis": "Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 or 1980 (bank was nationalised in the 1969 or 1980 tranche; exact tranche not verified per-bank in this pass), consolidated through subsequent bank mergers (2017-2020)",
+   "officialUrl": "https://punjabandsindbank.co.in",
+   "established": "1908",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-ceo-punjab-and-sind-bank",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab_%26_Sind_Bank"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-lic",
+   "kind": "cpse",
+   "name": "Life Insurance Corporation of India",
+   "abbr": "LIC",
+   "aliases": [
+    "LIC"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "India's largest life insurer, a statutory corporation wholly owned by the Government of India; also one of India's largest institutional investors.",
+   "legalBasis": "Life Insurance Corporation Act, 1956",
+   "officialUrl": "https://licindia.in",
+   "established": "1956",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-ceo-lic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Life_Insurance_Corporation_of_India"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-gic-re",
+   "kind": "cpse",
+   "name": "General Insurance Corporation of India",
+   "abbr": "GIC Re",
+   "aliases": [
+    "GIC Re"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "India's national reinsurer, providing reinsurance capacity to domestic non-life insurers; also holds residual equity in the public-sector general insurers it formerly held as subsidiaries.",
+   "legalBasis": "General Insurance Business (Nationalisation) Act, 1972",
+   "officialUrl": "https://www.gicofindia.com",
+   "established": "1972",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-ceo-gic-re",
+   "sources": [
+    "https://en.wikipedia.org/wiki/General_Insurance_Corporation_of_India"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-new-india-assurance",
+   "kind": "cpse",
+   "name": "New India Assurance Company Limited",
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector general/life insurer, wholly or majority-owned by the Government of India.",
+   "legalBasis": "General Insurance Business (Nationalisation) Act, 1972",
+   "officialUrl": "https://www.newindia.co.in",
+   "established": "1919",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-ceo-new-india-assurance",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_India_Assurance"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-national-insurance-company",
+   "kind": "cpse",
+   "name": "National Insurance Company Limited",
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector general/life insurer, wholly or majority-owned by the Government of India.",
+   "legalBasis": "General Insurance Business (Nationalisation) Act, 1972",
+   "officialUrl": "https://nationalinsurance.nic.in",
+   "established": "1906",
+   "hq": "Kolkata",
+   "headPositionId": "in-pos-ceo-national-insurance-company",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Insurance_Company_Limited"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-oriental-insurance",
+   "kind": "cpse",
+   "name": "Oriental Insurance Company Limited",
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector general/life insurer, wholly or majority-owned by the Government of India.",
+   "legalBasis": "General Insurance Business (Nationalisation) Act, 1972",
+   "officialUrl": "https://orientalinsurance.org.in",
+   "established": "1947",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-ceo-oriental-insurance",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Oriental_Insurance_Company"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-united-india-insurance",
+   "kind": "cpse",
+   "name": "United India Insurance Company Limited",
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-dept-financial-services",
+   "description": "Public sector general/life insurer, wholly or majority-owned by the Government of India.",
+   "legalBasis": "General Insurance Business (Nationalisation) Act, 1972",
+   "officialUrl": "https://uiic.co.in",
+   "established": "1938",
+   "hq": "Chennai",
+   "headPositionId": "in-pos-ceo-united-india-insurance",
+   "sources": [
+    "https://en.wikipedia.org/wiki/United_India_Insurance_Company"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aic",
+   "kind": "cpse",
+   "name": "Agriculture Insurance Company of India Limited",
+   "abbr": "AIC",
+   "aliases": [
+    "AIC"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Specialised public sector insurer implementing crop-insurance schemes (Pradhan Mantri Fasal Bima Yojana and predecessors).",
+   "legalBasis": "General Insurance Business (Nationalisation) Act, 1972",
+   "officialUrl": "https://www.aicofindia.com",
+   "established": "2002",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-ceo-aic",
+   "sources": [
+    "https://www.aicofindia.com"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-board-of-trade",
+   "kind": "advisory_body",
+   "name": "Board of Trade",
+   "aliases": [
+    "Board of Trade"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Apex advisory body, chaired by the Commerce & Industry Minister, that advises government on foreign trade policy issues raised by export/industry associations and state governments.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "sources": [
+    "https://commerce.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-fieo",
+   "kind": "autonomous_body",
+   "name": "Federation of Indian Export Organisations",
+   "abbr": "FIEO",
+   "aliases": [
+    "FIEO"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Apex body of India's export-promotion councils and export organisations; works closely with the Department of Commerce on trade-policy advocacy, though it is industry-run rather than a government body.",
+   "legalBasis": "Registered society (industry-government partnership)",
+   "officialUrl": "https://www.fieo.org",
+   "sources": [
+    "https://www.fieo.org"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-startup-india",
+   "kind": "mission",
+   "name": "Startup India",
+   "aliases": [
+    "Startup India"
+   ],
+   "parentId": "in-dept-promotion-of-industry-and-internal-trade",
+   "description": "Flagship DPIIT initiative to build a start-up ecosystem — DPIIT recognition, tax benefits, the Fund of Funds for Startups (via SIDBI), and simplified compliance for registered start-ups.",
+   "legalBasis": "Government scheme (2016 Action Plan)",
+   "officialUrl": "https://www.startupindia.gov.in",
+   "established": "2016",
+   "sources": [
+    "https://www.startupindia.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-pm-gatishakti",
+   "kind": "mission",
+   "name": "PM GatiShakti National Master Plan",
+   "aliases": [
+    "PM GatiShakti",
+    "Gati Shakti"
+   ],
+   "parentId": "in-dept-promotion-of-industry-and-internal-trade",
+   "description": "National multi-modal connectivity master plan coordinating infrastructure planning across ministries via a GIS platform; the Network Planning Group is housed in DPIIT.",
+   "legalBasis": "Government initiative (launched 2021)",
+   "officialUrl": "https://www.pmgatishakti.gov.in",
+   "established": "2021",
+   "sources": [
+    "https://www.pmgatishakti.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-pm-vishwakarma",
+   "kind": "mission",
+   "name": "PM Vishwakarma Scheme",
+   "aliases": [
+    "PM Vishwakarma"
+   ],
+   "parentId": "in-min-micro-small-and-medium-enterprises",
+   "description": "Central sector scheme providing recognition, skill training, toolkit incentives and collateral-free credit to traditional artisans and craftspeople (18 trades).",
+   "legalBasis": "Government scheme (launched 2023)",
+   "officialUrl": "https://pmvishwakarma.gov.in",
+   "established": "2023",
+   "sources": [
+    "https://pmvishwakarma.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-pmegp",
+   "kind": "mission",
+   "name": "Prime Minister's Employment Generation Programme",
+   "abbr": "PMEGP",
+   "aliases": [
+    "PMEGP"
+   ],
+   "parentId": "in-min-micro-small-and-medium-enterprises",
+   "description": "Credit-linked subsidy scheme for setting up new micro-enterprises, implemented through KVIC, KVI Boards and District Industries Centres.",
+   "legalBasis": "Government scheme (2008, merger of REGP and PMRY)",
+   "established": "2008",
+   "sources": [
+    "https://www.kviconline.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bnpmipl",
+   "kind": "cpse",
+   "name": "Bank Note Paper Mill India Private Limited",
+   "abbr": "BNPMIPL",
+   "aliases": [
+    "BNPMIPL"
+   ],
+   "parentId": "in-dept-economic-affairs",
+   "description": "Joint-venture company between SPMCIL and the Reserve Bank of India (via Bharatiya Reserve Bank Note Mudran) that manufactures currency-note paper at Mysuru.",
+   "legalBasis": "Companies Act (50:50 JV)",
+   "established": "2009",
+   "sources": [
+    "https://www.spmcil.com"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nifm",
+   "kind": "autonomous_body",
+   "name": "National Institute of Financial Management",
+   "abbr": "NIFM",
+   "aliases": [
+    "NIFM"
+   ],
+   "parentId": "in-dept-expenditure",
+   "description": "Autonomous training and research institute for public financial management, training officers of the Indian Civil Accounts Service and other central/state finance officials.",
+   "legalBasis": "Registered society",
+   "officialUrl": "https://www.nifm.ac.in",
+   "sources": [
+    "https://www.nifm.ac.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-pmla-adjudicating-authority",
+   "kind": "tribunal",
+   "name": "Adjudicating Authority (PMLA)",
+   "aliases": [
+    "PMLA Adjudicating Authority"
+   ],
+   "parentId": "in-dept-revenue",
+   "description": "Quasi-judicial authority that confirms or releases provisional attachment of proceeds of crime made by the Enforcement Directorate under the Prevention of Money Laundering Act, before appeal lies to the Appellate Tribunal (SAFEMA).",
+   "legalBasis": "Prevention of Money Laundering Act, 2002, Section 6",
+   "sources": [
+    "https://enforcementdirectorate.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-crc",
+   "kind": "subordinate_office",
+   "name": "Central Registration Centre",
+   "abbr": "CRC",
+   "aliases": [
+    "CRC"
+   ],
+   "parentId": "in-min-corporate-affairs",
+   "description": "Processes company and LLP incorporation applications filed through the MCA21 portal on a centralised, jurisdiction-free basis.",
+   "legalBasis": "Companies (Incorporation) Rules, 2014",
+   "sources": [
+    "https://www.mca.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-sez-boa",
+   "kind": "advisory_body",
+   "name": "Board of Approval (Special Economic Zones)",
+   "aliases": [
+    "SEZ Board of Approval",
+    "BoA"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "Inter-ministerial body chaired by the Secretary, Department of Commerce, that approves setting up of Special Economic Zones and units within them.",
+   "legalBasis": "Special Economic Zones Act, 2005",
+   "sources": [
+    "https://commerce.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nia-insurance",
+   "kind": "autonomous_body",
+   "name": "National Insurance Academy",
+   "abbr": "NIA",
+   "aliases": [
+    "NIA"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Apex training, research and education institute for the insurance and pension sector, jointly promoted by public sector insurers, LIC and GIC.",
+   "legalBasis": "Registered society",
+   "officialUrl": "https://niapune.org.in",
+   "hq": "Pune",
+   "sources": [
+    "https://niapune.org.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iip",
+   "kind": "autonomous_body",
+   "name": "Indian Institute of Packaging",
+   "abbr": "IIP",
+   "aliases": [
+    "IIP"
+   ],
+   "parentId": "in-dept-commerce",
+   "description": "National research, training and testing institute for the packaging industry, supporting export-quality packaging standards.",
+   "legalBasis": "Registered society",
+   "officialUrl": "https://iip-in.com",
+   "hq": "Mumbai",
+   "sources": [
+    "https://iip-in.com"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-gem",
+   "kind": "statutory_body",
+   "name": "Government e-Marketplace",
+   "abbr": "GeM",
+   "aliases": [
+    "GeM"
+   ],
+   "parentId": "in-dept-expenditure",
+   "description": "National online public-procurement platform for goods and services used by central and state government buyers, run as a Section 8 not-for-profit company.",
+   "legalBasis": "General Financial Rules, 2017 (Rule 149); registered as a Section 8 company",
+   "officialUrl": "https://gem.gov.in",
+   "established": "2016",
+   "sources": [
+    "https://gem.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cpao",
+   "kind": "subordinate_office",
+   "name": "Central Pension Accounting Office",
+   "abbr": "CPAO",
+   "aliases": [
+    "CPAO"
+   ],
+   "parentId": "in-dept-expenditure",
+   "description": "Authorises and monitors disbursement of pensions to central civil pensioners through banks, and maintains their pension accounts.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://cpao.nic.in",
+   "sources": [
+    "https://cpao.nic.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nsi-savings",
+   "kind": "subordinate_office",
+   "name": "National Savings Institute",
+   "abbr": "NSI",
+   "aliases": [
+    "NSI"
+   ],
+   "parentId": "in-dept-economic-affairs",
+   "description": "Promotes and administers small-savings schemes (e.g. PPF, National Savings Certificates) on behalf of the Department of Economic Affairs.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "hq": "Nagpur",
+   "sources": [
+    "https://dea.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ingaf",
+   "kind": "autonomous_body",
+   "name": "Institute of Government Accounts and Finance",
+   "abbr": "INGAF",
+   "aliases": [
+    "INGAF"
+   ],
+   "parentId": "in-dept-expenditure",
+   "description": "Training institute of the Controller General of Accounts for officers of the Indian Civil Accounts Service and government accounting staff.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://ingaf.nic.in",
+   "sources": [
+    "https://ingaf.nic.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-icegate",
+   "kind": "subordinate_office",
+   "name": "ICEGATE",
+   "abbr": "ICEGATE",
+   "aliases": [
+    "ICEGATE",
+    "Indian Customs EDI Gateway"
+   ],
+   "parentId": "in-cbic",
+   "description": "CBIC's national e-filing portal for customs clearance — bills of entry, shipping bills, e-payment of duty, and exchange of trade data with other government agencies.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.icegate.gov.in",
+   "sources": [
+    "https://www.icegate.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bharatkosh",
+   "kind": "subordinate_office",
+   "name": "Bharatkosh (Non-Tax Receipt Portal)",
+   "aliases": [
+    "Bharatkosh",
+    "NTRP"
+   ],
+   "parentId": "in-dept-economic-affairs",
+   "description": "Centralised online portal for collection of the Union government's non-tax revenue receipts across ministries.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://bharatkosh.gov.in",
+   "sources": [
+    "https://bharatkosh.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-caar",
+   "kind": "tribunal",
+   "name": "Customs Authority for Advance Rulings",
+   "abbr": "CAAR",
+   "aliases": [
+    "CAAR"
+   ],
+   "parentId": "in-cbic",
+   "description": "Quasi-judicial authority that issues binding advance rulings on classification, valuation and applicability of customs notifications, to give importers/exporters certainty before a transaction.",
+   "legalBasis": "Customs Act, 1962 (as amended, 2018)",
+   "sources": [
+    "https://www.cbic.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bar-income-tax",
+   "kind": "tribunal",
+   "name": "Board for Advance Rulings (Income Tax)",
+   "abbr": "BAR",
+   "aliases": [
+    "Board for Advance Rulings"
+   ],
+   "parentId": "in-cbdt",
+   "description": "Quasi-judicial board that issues binding advance rulings on income-tax liability for a proposed transaction; replaced the Authority for Advance Rulings (Income Tax) from 2021.",
+   "legalBasis": "Income-tax Act, 1961, Section 245-O (as amended by Finance Act, 2021)",
+   "sources": [
+    "https://incometaxindia.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-mudra",
+   "kind": "cpse",
+   "name": "Micro Units Development and Refinance Agency Limited",
+   "abbr": "MUDRA",
+   "aliases": [
+    "MUDRA"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Refinances and supports last-mile lenders (banks, NBFCs, MFIs) making collateral-free micro-loans to non-corporate small business units under the Pradhan Mantri Mudra Yojana; incorporated as a subsidiary of SIDBI.",
+   "legalBasis": "Companies Act (SIDBI subsidiary)",
+   "officialUrl": "https://www.mudra.org.in",
+   "established": "2015",
+   "sources": [
+    "https://www.mudra.org.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-pmjdy",
+   "kind": "mission",
+   "name": "Pradhan Mantri Jan Dhan Yojana",
+   "abbr": "PMJDY",
+   "aliases": [
+    "PMJDY",
+    "Jan Dhan Yojana"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "National financial-inclusion mission ensuring access to a basic bank account, RuPay debit card, overdraft facility and insurance cover for every unbanked household, delivered through public sector banks.",
+   "legalBasis": "Government scheme (launched 2014)",
+   "officialUrl": "https://pmjdy.gov.in",
+   "established": "2014",
+   "sources": [
+    "https://pmjdy.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-stand-up-india",
+   "kind": "mission",
+   "name": "Stand-Up India Scheme",
+   "aliases": [
+    "Stand-Up India"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Facilitates bank loans between ₹10 lakh and ₹1 crore to at least one Scheduled Caste/Scheduled Tribe borrower and one woman borrower per bank branch for setting up a greenfield enterprise.",
+   "legalBasis": "Government scheme (launched 2016)",
+   "officialUrl": "https://www.standupmitra.in",
+   "established": "2016",
+   "sources": [
+    "https://www.standupmitra.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-pfms",
+   "kind": "subordinate_office",
+   "name": "Public Financial Management System",
+   "abbr": "PFMS",
+   "aliases": [
+    "PFMS"
+   ],
+   "parentId": "in-dept-expenditure",
+   "description": "Central government's IT platform tracking real-time release, disbursement and utilisation of funds across all central schemes, from the Controller General of Accounts down to the last-mile beneficiary.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://pfms.nic.in",
+   "sources": [
+    "https://pfms.nic.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cersai",
+   "kind": "statutory_body",
+   "name": "Central Registry of Securitisation Asset Reconstruction and Security Interest of India",
+   "abbr": "CERSAI",
+   "aliases": [
+    "CERSAI"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Maintains the central online registry of security interests over property created by banks/financial institutions to prevent multiple, fraudulent lending against the same asset; also operates the Central KYC Records Registry (CKYCR).",
+   "legalBasis": "Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest (SARFAESI) Act, 2002",
+   "officialUrl": "https://www.cersai.org.in",
+   "established": "2011",
+   "sources": [
+    "https://www.cersai.org.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-fsdc",
+   "kind": "advisory_body",
+   "name": "Financial Stability and Development Council",
+   "abbr": "FSDC",
+   "aliases": [
+    "FSDC"
+   ],
+   "parentId": "in-dept-economic-affairs",
+   "description": "Apex inter-regulatory coordination body chaired by the Finance Minister, bringing together RBI, SEBI, IRDAI, PFRDA and other regulators to monitor macro-prudential and financial-stability risk and coordinate financial-sector development and literacy.",
+   "legalBasis": "Government of India decision (2010)",
+   "established": "2010",
+   "sources": [
+    "https://dea.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-secretary-economic-affairs",
+   "title": "Secretary, Department of Economic Affairs",
+   "orgId": "in-dept-economic-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Anuradha Thakur",
+    "since": "2025-07-01",
+    "notes": "Conventionally the senior-most Secretary in the Ministry of Finance; the honorific 'Finance Secretary' has not been reliably confirmed as formally re-designated to a specific officer as of Sept 2026 (Ajay Seth held the formal 'Finance Secretary' title Mar-Jun 2025 before moving to IRDAI)."
+   },
+   "sources": [
+    "https://www.dnaindia.com/india/report-meet-ias-anuradha-thakur-chief-architect-of-budget-2026-who-serves-as-secretary-of-the-department-of-economic-affairs-3198867",
+    "https://dea.gov.in/whos-who/anuradha-thakur"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-cea",
+   "title": "Chief Economic Adviser",
+   "titleHi": "मुख्य आर्थिक सलाहकार",
+   "orgId": "in-dept-economic-affairs",
+   "rank": "other",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "V. Anantha Nageswaran",
+    "since": "2022-01-28",
+    "wikipedia": "https://en.wikipedia.org/wiki/V._Anantha_Nageswaran",
+    "notes": "Authors the annual Economic Survey."
+   },
+   "sources": [
+    "https://dea.gov.in/whos-who/v-anantha-nageswaran",
+    "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1793311&reg=48&lang=2"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-secretary-expenditure",
+   "title": "Secretary, Department of Expenditure",
+   "orgId": "in-dept-expenditure",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "V. Vualnam",
+    "since": null,
+    "notes": "Confirmed active as Secretary (Expenditure) as of Feb 2026 budget commentary; exact start date not confirmed."
+   },
+   "sources": [
+    "https://www.tribuneindia.com/news/budget-2026/budget-2026-stresses-whole-of-country-industrial-strategy-expenditure-secretary"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-cga",
+   "title": "Controller General of Accounts",
+   "titleHi": "महालेखा नियंत्रक",
+   "orgId": "in-dept-expenditure",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-expenditure",
+   "holder": {
+    "name": "TCA Kalyani",
+    "since": null,
+    "notes": "ICAS 1991-batch officer; described as the 29th woman to hold the post. Exact appointment date not confirmed."
+   },
+   "sources": [
+    "https://www.sanskritiias.com/current-affairs/tca-kalyani-takes-over-as-controller-general-of-accounts-cga",
+    "https://cga.gov.in"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-secretary-revenue",
+   "title": "Secretary, Department of Revenue (Revenue Secretary)",
+   "orgId": "in-dept-revenue",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Arvind Shrivastava",
+    "since": "2025-05-01"
+   },
+   "sources": [
+    "https://www.business-standard.com/economy/news/arvind-shrivastava-named-revenue-secretary-in-major-finmin-rejig-125041800933_1.html",
+    "https://dor.gov.in/revenue-secretary"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-chairman-cbdt",
+   "title": "Chairman, Central Board of Direct Taxes",
+   "orgId": "in-cbdt",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ravi Agrawal",
+    "since": "2024-07-01",
+    "notes": "1988-batch IRS officer; retained on contract past superannuation, tenure extended to 31 Dec 2026."
+   },
+   "sources": [
+    "https://www.business-standard.com/amp/finance/news/govt-extends-cbdt-chairman-ravi-agrawal-s-tenure-by-6-months-till-dec-2026-126063000856_1.html"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-chairman-cbic",
+   "title": "Chairman, Central Board of Indirect Taxes and Customs",
+   "orgId": "in-cbic",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Vivek Chaturvedi",
+    "since": "2025-12-01",
+    "notes": "1990-batch IRS officer; succeeded Sanjay Kumar Agarwal."
+   },
+   "sources": [
+    "https://www.business-standard.com/industry/news/vivek-chaturvedi-appointed-cbic-chairman-to-take-charge-on-december-1-125113000575_1.html"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-secretary-financial-services",
+   "title": "Secretary, Department of Financial Services",
+   "orgId": "in-dept-financial-services",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sanjay Lohiya",
+    "since": "2026-06-01",
+    "notes": "1994-batch IAS officer; previously Special Secretary, DFS; succeeded M. Nagaraju."
+   },
+   "sources": [
+    "https://egov.eletsonline.com/2026/06/sanjay-lohiya-assumes-charge-as-secretary-department-of-financial-services/"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-secretary-dipam",
+   "title": "Secretary, Department of Investment and Public Asset Management",
+   "orgId": "in-dept-investment-and-public-asset-management",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Arunish Chawla",
+    "since": null,
+    "notes": "Succeeded Tuhin Kanta Pandey (who moved to SEBI in Jan 2025); exact DIPAM start date not independently confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tuhin_Kanta_Pandey",
+    "https://dipam.gov.in"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-secretary-public-enterprises",
+   "title": "Secretary, Department of Public Enterprises",
+   "orgId": "in-dept-public-enterprises",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "K Moses Chalai",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://dpe.gov.in",
+    "https://en.wikipedia.org/wiki/Ministry_of_Finance_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-corporate-affairs",
+   "title": "Secretary, Ministry of Corporate Affairs",
+   "orgId": "in-min-corporate-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pallavi Jain Govil",
+    "since": null,
+    "notes": "IAS, Madhya Pradesh cadre, 1994 batch."
+   },
+   "sources": [
+    "https://www.sarkaritel.com/government-appointments-india-2026-new-appointment/"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-secretary-commerce",
+   "title": "Secretary, Department of Commerce",
+   "orgId": "in-dept-commerce",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rajesh Agrawal",
+    "since": "2025-10-01",
+    "notes": "1994-batch IAS officer, Manipur cadre; succeeded Sunil Barthwal."
+   },
+   "sources": [
+    "https://www.business-standard.com/india-news/rajesh-agrawal-takes-over-as-commerce-secretary-125093000890_1.html"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-secretary-dpiit",
+   "title": "Secretary, Department for Promotion of Industry and Internal Trade",
+   "orgId": "in-dept-promotion-of-industry-and-internal-trade",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Amardeep Singh Bhatia",
+    "since": "2026-05-01",
+    "notes": "1993-batch IAS officer, Nagaland cadre; also serves ex officio as Chairman, National Productivity Council."
+   },
+   "sources": [
+    "https://whispersinthecorridors.com/detail/124218-Amardeep+Singh+Bhatia+joins+as+Secretary,+DPIIT.html"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-secretary-statistics-and-programme-implementation",
+   "title": "Secretary, Ministry of Statistics and Programme Implementation",
+   "orgId": "in-min-statistics-and-programme-implementation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://mospi.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-planning",
+   "title": "Secretary, Ministry of Planning",
+   "orgId": "in-min-planning",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Planning_(India)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-msme",
+   "title": "Secretary, Ministry of Micro, Small and Medium Enterprises",
+   "orgId": "in-min-micro-small-and-medium-enterprises",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Bharat Khera",
+    "since": "2026-05-01",
+    "notes": "1995-batch IAS officer, Himachal Pradesh cadre."
+   },
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2257224&reg=3&lang=1"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-dg-dgft",
+   "title": "Director General of Foreign Trade",
+   "orgId": "in-dgft",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-commerce",
+   "holder": {
+    "name": "Santosh Kumar Sarangi",
+    "since": null,
+    "notes": "Source dated mid-2025; not independently re-confirmed for Sept 2026."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Directorate_General_of_Foreign_Trade"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-cgpdtm",
+   "title": "Controller General of Patents, Designs and Trade Marks",
+   "orgId": "in-cgpdtm",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-dpiit",
+   "holder": {
+    "name": "Unnat P. Pandit",
+    "since": "2022-04",
+    "notes": "Wikipedia lists him as having 'taken charge in April 2022'; not independently re-confirmed as still in post for Sept 2026 — treat with caution."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Controller_General_of_Patents,_Designs_and_Trade_Marks"
+   ],
+   "confidence": "low",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-chairperson-nfra",
+   "title": "Chairperson, National Financial Reporting Authority",
+   "orgId": "in-nfra",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Nitin Gupta",
+    "since": "2025-07-17"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Financial_Reporting_Authority"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-chairman-tea-board",
+   "title": "Chairman, Tea Board of India",
+   "orgId": "in-tea-board",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-commerce",
+   "holder": {
+    "name": "Nitin Kumar Yadav",
+    "since": null,
+    "notes": "IAS, HY:2000."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tea_Board_of_India"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-chairman-coffee-board",
+   "title": "Chairman, Coffee Board of India",
+   "orgId": "in-coffee-board",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-commerce",
+   "holder": {
+    "name": "M. J. Dinesh",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coffee_Board_of_India"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-chairman-spices-board",
+   "title": "Chairman, Spices Board of India",
+   "orgId": "in-spices-board",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-commerce",
+   "holder": {
+    "name": "Amardeep Singh Bhatia",
+    "since": null,
+    "notes": "Wikipedia lists Amardeep Singh Bhatia, IAS as Chairman — the same officer confirmed as DPIIT Secretary in 2026; likely stale/duplicated wiki data or a dual/interim charge. Flagged for cross-check."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Spices_Board_of_India"
+   ],
+   "confidence": "low",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-chairman-apeda",
+   "title": "Chairman, APEDA",
+   "orgId": "in-apeda",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-commerce",
+   "holder": {
+    "name": "Abhishek Dev",
+    "since": null,
+    "notes": "IAS."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Agricultural_and_Processed_Food_Products_Export_Development_Authority"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-chairman-mpeda",
+   "title": "Chairman, MPEDA",
+   "orgId": "in-mpeda",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-commerce",
+   "holder": {
+    "name": "P. Jawahar",
+    "since": null,
+    "notes": "IAS."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marine_Products_Export_Development_Authority"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-chairman-qci",
+   "title": "Chairman, Quality Council of India",
+   "orgId": "in-qci",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-dpiit",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Quality_Council_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairman-kvic",
+   "title": "Chairman, Khadi and Village Industries Commission",
+   "orgId": "in-kvic",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Manoj Kumar",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Khadi_and_Village_Industries_Commission"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-cmd-ecgc",
+   "title": "Chairman and Managing Director, ECGC",
+   "orgId": "in-ecgc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-financial-services",
+   "holder": {
+    "name": "Sristiraj Ambastha",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Export_Credit_Guarantee_Corporation_of_India"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-cmd-itpo",
+   "title": "Chairman and Managing Director, ITPO",
+   "orgId": "in-itpo",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-commerce",
+   "holder": {
+    "name": "Jawed Ashraf",
+    "since": null,
+    "notes": "IFS (Retd.)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/India_Trade_Promotion_Organisation"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-cmd-nsic",
+   "title": "Chairman and Managing Director, NSIC",
+   "orgId": "in-nsic",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-msme",
+   "holder": {
+    "name": "Subhransu Sekhar Acharya",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Small_Industries_Corporation"
+   ],
+   "confidence": "medium",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-sbi",
+   "title": "Chairman, State Bank of India",
+   "orgId": "in-sbi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Challa Sreenivasulu Setty",
+    "since": null,
+    "notes": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/State_Bank_of_India"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-pnb",
+   "title": "Managing Director & CEO, Punjab National Bank",
+   "orgId": "in-pnb",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Ashok Chandra",
+    "since": null,
+    "notes": "Non-executive Chairman: K G Ananthakrishnan (Non-Executive Chairman)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab_National_Bank"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-bob",
+   "title": "Managing Director & CEO, Bank of Baroda",
+   "orgId": "in-bob",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Debadatta Chand",
+    "since": null,
+    "notes": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bank_of_Baroda"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-canara-bank",
+   "title": "Managing Director & CEO, Canara Bank",
+   "orgId": "in-canara-bank",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Brajesh Kumar Singh",
+    "since": null,
+    "notes": "Non-executive Chairman: Vijay Srirangan (Non-Executive Chairman)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Canara_Bank"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-union-bank-of-india",
+   "title": "Managing Director & CEO, Union Bank of India",
+   "orgId": "in-union-bank-of-india",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Ashish Pandey",
+    "since": null,
+    "notes": "Non-executive Chairman: Srinivasan Varadarajan (Non-Executive Chairman)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Bank_of_India"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-indian-bank",
+   "title": "Managing Director & CEO, Indian Bank",
+   "orgId": "in-indian-bank",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Binod Kumar",
+    "since": null,
+    "notes": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Bank"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-bank-of-india",
+   "title": "Managing Director & CEO, Bank of India",
+   "orgId": "in-bank-of-india",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Rajneesh Karnatak",
+    "since": null,
+    "notes": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bank_of_India"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-central-bank-of-india",
+   "title": "Managing Director & CEO, Central Bank of India",
+   "orgId": "in-central-bank-of-india",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Kalyan Kumar",
+    "since": "2025-10-01",
+    "notes": "Non-executive Chairman: Tapan Ray (Non-Executive Chairman)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Bank_of_India"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-indian-overseas-bank",
+   "title": "Managing Director & CEO, Indian Overseas Bank",
+   "orgId": "in-indian-overseas-bank",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Ajay Kumar Srivastava",
+    "since": null,
+    "notes": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Overseas_Bank"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-uco-bank",
+   "title": "Managing Director & CEO, UCO Bank",
+   "orgId": "in-uco-bank",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Ashwani Kumar",
+    "since": null,
+    "notes": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/UCO_Bank"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-bank-of-maharashtra",
+   "title": "Managing Director & CEO, Bank of Maharashtra",
+   "orgId": "in-bank-of-maharashtra",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Nidhu Saxena",
+    "since": "2024-03-28",
+    "notes": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bank_of_Maharashtra"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-punjab-and-sind-bank",
+   "title": "Managing Director & CEO, Punjab & Sind Bank",
+   "orgId": "in-punjab-and-sind-bank",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Swarup Kumar Saha",
+    "since": null,
+    "notes": "Non-executive Chairman: Charan Singh (Non-Executive Chairman)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab_%26_Sind_Bank"
+   ],
+   "confidence": "high",
+   "vacant": false
+  },
+  {
+   "id": "in-pos-ceo-lic",
+   "title": "Chief Executive Officer & Managing Director, LIC",
+   "orgId": "in-lic",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "R. Doraiswamy",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Life_Insurance_Corporation_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-ceo-gic-re",
+   "title": "Chairman and Managing Director, GIC Re",
+   "orgId": "in-gic-re",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Hitesh Rameshchandra Joshi",
+    "since": "2026-06-16",
+    "notes": "Re-appointed as regular CMD effective 2026-06-16, succeeding Ramaswamy Narayanan (CMD from 2023-10-01)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/General_Insurance_Corporation_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-ceo-new-india-assurance",
+   "title": "Chairman and Managing Director, New India Assurance",
+   "orgId": "in-new-india-assurance",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Girija Subramanian",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_India_Assurance"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-ceo-national-insurance-company",
+   "title": "Chairman and Managing Director, National Insurance Company",
+   "orgId": "in-national-insurance-company",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Rajeshwari Singh Muni",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Insurance_Company_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-ceo-oriental-insurance",
+   "title": "Chairman and Managing Director, Oriental Insurance Company",
+   "orgId": "in-oriental-insurance",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Oriental_Insurance_Company"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-ceo-united-india-insurance",
+   "title": "Chairman and Managing Director, United India Insurance",
+   "orgId": "in-united-india-insurance",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Bhupesh Sushil Rahul",
+    "since": "2024-06"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/United_India_Insurance_Company"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-ceo-aic",
+   "title": "Chairman and Managing Director, AIC",
+   "orgId": "in-aic",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-fsib",
+   "holder": {
+    "name": "Girija Subramanian",
+    "since": null,
+    "notes": "Also recorded as CMD of New India Assurance (in-pos-ceo-new-india-assurance) in this same source; likely holds AIC in an additional-charge capacity — not independently cross-verified, treat as tentative."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.aicofindia.com",
+    "https://en.wikipedia.org/wiki/Agriculture_Insurance_Company_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-cmd-mmtc",
+   "title": "Chairman and Managing Director, MMTC",
+   "orgId": "in-mmtc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-cmd-stc",
+   "title": "Chairman and Managing Director, STC",
+   "orgId": "in-stc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-cmd-pec",
+   "title": "Chairman and Managing Director, PEC Limited",
+   "orgId": "in-pec-limited",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-cmd-spmcil",
+   "title": "Chairman and Managing Director, SPMCIL",
+   "orgId": "in-spmcil",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-director-sfio",
+   "title": "Director, Serious Fraud Investigation Office",
+   "orgId": "in-sfio",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Keshav Chandra",
+    "since": null,
+    "notes": "Source page's currency is ambiguous (also shows a prior director's 2022 end-date without clearly dating the update); treat as tentative."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Serious_Fraud_Investigation_Office"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chairperson-iepfa",
+   "title": "Chairperson, Investor Education and Protection Fund Authority",
+   "orgId": "in-iepfa",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chairman-rubber-board",
+   "title": "Chairman, Rubber Board",
+   "orgId": "in-rubber-board",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chairman-tobacco-board",
+   "title": "Chairman, Tobacco Board",
+   "orgId": "in-tobacco-board",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chairman-coir-board",
+   "title": "Chairman, Coir Board",
+   "orgId": "in-coir-board",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-dg-dgtr",
+   "title": "Director General, Directorate General of Trade Remedies",
+   "orgId": "in-dgtr",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chairperson-pesb",
+   "title": "Chairperson, Public Enterprises Selection Board",
+   "orgId": "in-pesb",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chairman-fsib",
+   "title": "Chairman, Financial Services Institutions Bureau",
+   "orgId": "in-fsib",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": false,
+   "sources": [],
+   "confidence": "low"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-secretary-dpiit",
+   "to": "in-npc",
+   "type": "ex_officio",
+   "basis": "NPC constitution"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-sbi",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/State_Bank_of_India"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-pnb",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/Punjab_National_Bank"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-bob",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/Bank_of_Baroda"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-canara-bank",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/Canara_Bank"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-union-bank-of-india",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/Union_Bank_of_India"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-indian-bank",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/Indian_Bank"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-bank-of-india",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/Bank_of_India"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-central-bank-of-india",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/Central_Bank_of_India"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-indian-overseas-bank",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/Indian_Overseas_Bank"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-uco-bank",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/UCO_Bank"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-bank-of-maharashtra",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/Bank_of_Maharashtra"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-punjab-and-sind-bank",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/Punjab_%26_Sind_Bank"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-lic",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/Life_Insurance_Corporation_of_India"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-gic-re",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/General_Insurance_Corporation_of_India"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-new-india-assurance",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/New_India_Assurance"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-national-insurance-company",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/National_Insurance_Company_Limited"
+  },
+  {
+   "from": "in-fsib",
+   "to": "in-pos-ceo-united-india-insurance",
+   "type": "advises_appointment",
+   "basis": "FSIB Resolution, 2022",
+   "source": "https://en.wikipedia.org/wiki/United_India_Insurance_Company"
+  },
+  {
+   "from": "in-dept-revenue",
+   "to": "in-cbdt",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-revenue",
+   "to": "in-cbic",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-cbic",
+   "to": "in-dggi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-cbic",
+   "to": "in-dri",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-revenue",
+   "to": "in-ed",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-revenue",
+   "to": "in-fiu-ind",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-revenue",
+   "to": "in-ceib",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-cbic",
+   "to": "in-nacin",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-cbdt",
+   "to": "in-nadt",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-revenue",
+   "to": "in-gstn",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-dgft",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-dgtr",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-dgcis",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-promotion-of-industry-and-internal-trade",
+   "to": "in-cgpdtm",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-statistics-and-programme-implementation",
+   "to": "in-nso",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-statistics-and-programme-implementation",
+   "to": "in-nsc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-statistics-and-programme-implementation",
+   "to": "in-isi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-corporate-affairs",
+   "to": "in-icai",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-corporate-affairs",
+   "to": "in-icsi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-corporate-affairs",
+   "to": "in-icmai",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-corporate-affairs",
+   "to": "in-nfra",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-corporate-affairs",
+   "to": "in-sfio",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-corporate-affairs",
+   "to": "in-iepfa",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-corporate-affairs",
+   "to": "in-iica",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-tea-board",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-coffee-board",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-rubber-board",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-spices-board",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-tobacco-board",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-apeda",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-mpeda",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-iift",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-promotion-of-industry-and-internal-trade",
+   "to": "in-nid",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-promotion-of-industry-and-internal-trade",
+   "to": "in-fddi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-promotion-of-industry-and-internal-trade",
+   "to": "in-qci",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-promotion-of-industry-and-internal-trade",
+   "to": "in-npc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-promotion-of-industry-and-internal-trade",
+   "to": "in-invest-india",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-micro-small-and-medium-enterprises",
+   "to": "in-kvic",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-micro-small-and-medium-enterprises",
+   "to": "in-coir-board",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-micro-small-and-medium-enterprises",
+   "to": "in-ni-msme",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-micro-small-and-medium-enterprises",
+   "to": "in-mgiri",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-micro-small-and-medium-enterprises",
+   "to": "in-cgtmse",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-public-enterprises",
+   "to": "in-pesb",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-fsib",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-public-enterprises",
+   "to": "in-scope",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-mmtc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-stc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-pec-limited",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-ecgc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-itpo",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-micro-small-and-medium-enterprises",
+   "to": "in-nsic",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-economic-affairs",
+   "to": "in-spmcil",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-ifci",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-economic-affairs",
+   "to": "in-iifcl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-nabfid",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-economic-affairs",
+   "to": "in-niif",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-ncgtc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-dicgc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-sbi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-pnb",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-bob",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-canara-bank",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-union-bank-of-india",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-indian-bank",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-bank-of-india",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-central-bank-of-india",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-indian-overseas-bank",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-uco-bank",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-bank-of-maharashtra",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-punjab-and-sind-bank",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-lic",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-gic-re",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-new-india-assurance",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-national-insurance-company",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-oriental-insurance",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-united-india-insurance",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-aic",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-board-of-trade",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-fieo",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-promotion-of-industry-and-internal-trade",
+   "to": "in-startup-india",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-promotion-of-industry-and-internal-trade",
+   "to": "in-pm-gatishakti",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-micro-small-and-medium-enterprises",
+   "to": "in-pm-vishwakarma",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-micro-small-and-medium-enterprises",
+   "to": "in-pmegp",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-economic-affairs",
+   "to": "in-bnpmipl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-expenditure",
+   "to": "in-nifm",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-revenue",
+   "to": "in-pmla-adjudicating-authority",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-corporate-affairs",
+   "to": "in-crc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-sez-boa",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-nia-insurance",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-commerce",
+   "to": "in-iip",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-expenditure",
+   "to": "in-gem",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-expenditure",
+   "to": "in-cpao",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-economic-affairs",
+   "to": "in-nsi-savings",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-expenditure",
+   "to": "in-ingaf",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-cbic",
+   "to": "in-icegate",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-economic-affairs",
+   "to": "in-bharatkosh",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-cbic",
+   "to": "in-caar",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-cbdt",
+   "to": "in-bar-income-tax",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-mudra",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-pmjdy",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-stand-up-india",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-expenditure",
+   "to": "in-pfms",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-cersai",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-economic-affairs",
+   "to": "in-fsdc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-economic-affairs",
+   "to": "in-rbi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-economic-affairs",
+   "to": "in-sebi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-irdai",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-pfrda",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-nabard",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-sidbi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-exim-bank",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-nhb",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-corporate-affairs",
+   "to": "in-cci",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-corporate-affairs",
+   "to": "in-ibbi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 43,
+  "corrections": [
+   "in-pos-secretary-public-enterprises: added holder K Moses Chalai (was unconfirmed/null), confidence low->medium, source Wikipedia Ministry of Finance page (fetched 2026-09-25)",
+   "in-pos-director-sfio: added tentative holder Keshav Chandra (was unconfirmed/null), confidence low, source Wikipedia SFIO page — flagged as ambiguous currency in holder.notes",
+   "in-pos-ceo-gic-re: CORRECTED holder Ramaswamy Narayanan -> Hitesh Rameshchandra Joshi (since 2026-06-16, re-appointed as regular CMD) per Wikipedia GIC Re page — the previous holder was stale relative to the 2026-09-25 as-of date",
+   "in-pos-chairperson-nfra: added since-date 2025-07-17 for Nitin Gupta (was null), per Wikipedia NFRA page",
+   "in-pos-ceo-central-bank-of-india: added since-date 2025-10-01 for Kalyan Kumar (was null), per Wikipedia Central Bank of India page",
+   "in-pos-ceo-bank-of-maharashtra: added since-date 2024-03-28 for Nidhu Saxena (was null), per Wikipedia Bank of Maharashtra page",
+   "in-pos-ceo-united-india-insurance: added since-date 2024-06 (month precision) for Bhupesh Sushil Rahul, per Wikipedia United India Insurance page",
+   "in-pos-ceo-aic: added tentative holder Girija Subramanian (was unconfirmed/null) per Wikipedia AIC page, flagged as possible additional-charge duplicate of New India Assurance CMD role, confidence low",
+   "in-pos-ceo-national-insurance-company: confidence raised low->medium — holder Rajeshwari Singh Muni re-confirmed against a fresh 2026-09-25 Wikipedia fetch"
+  ]
+ }
+}

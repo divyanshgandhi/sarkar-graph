@@ -1,0 +1,2901 @@
+{
+ "segment": "state-depts-dl-jk-la",
+ "asOf": "2026-09-25",
+ "notes": "Scope: administrative departments and administrative secretaries of the Delhi (NCT), Jammu & Kashmir and Ladakh governments, as of 2026-09-25. Delhi department list and portfolio-to-minister mapping is sourced from the Rekha Gupta ministry Wikipedia page's current portfolio-allocation table (Feb 2025 order, still current per the existing st-dl minister positions), cross-checked against individual department websites under delhi.gov.in (e.g. gad.delhi.gov.in, finance.delhi.gov.in); administrative secretaries were taken from each department's own 'Who's Who'/'Directory of Officers' page where the page had current data (9 of 36 Delhi departments; the rest showed 'No Data Available' or the page's listed officer contradicted other current postings (e.g. Transport's who's-who still names Ashish Kundra, who this same research shows currently posted as Ladakh's Home/Finance Secretary and Advisor -- so Delhi Transport's secretary was omitted as stale rather than guessed). Delhi's 'Law & Justice' vs 'Legislative Affairs' portfolio split across two ministers for one notified department, and the merger of 'Art & Culture' + 'Language' into one department, are both flagged inline. J&K: jk.gov.in was unreachable from this session (connection refused on every attempt, including via an alternate DNS path); the department list instead comes from a 2024-12-17 Wayback Machine snapshot of the portal's own department directory (39 named departments, with 'Education Department' split into School Education / Higher Education and 'Youth Services and Sports' added to match the current ministers' portfolios from the existing states-dl-jk-la.json), for 40 total. No live or archived current (2025-26) administrative-secretary posting list was found for J&K, so all J&K secretary positions are omitted per instructions rather than guessed. Ladakh: sourced live from ladakh.gov.in/departments/ (31 departments) plus each department's own page. Ladakh has no elected Council of Ministers, so headPositionId for every Ladakh department points to the Lieutenant Governor (st-la-pos-lieutenant-governor) rather than a minister, and no chief-secretary 'oversees' relation was added since no st-la-pos-chief-secretary exists in the reference file. This session's WebSearch budget was already exhausted by sibling research segments before this segment started, so all research here relied on WebFetch/curl against official portals, the Wayback Machine and Wikipedia's MediaWiki API only.",
+ "entities": [
+  {
+   "id": "st-dl-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "General Administration Department",
+   "aliases": [
+    "GAD"
+   ],
+   "description": "Handles Delhi government's internal administration, personnel, cadre management and coordination between departments.",
+   "officialUrl": "https://gad.delhi.gov.in",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://gad.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance Deptt"
+   ],
+   "description": "Prepares the Delhi budget, controls government expenditure and manages the NCT's accounts and treasury.",
+   "officialUrl": "https://finance.delhi.gov.in",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://finance.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-planning",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Planning Department",
+   "description": "Prepares Delhi's five-year and annual plans, coordinates scheme outlays across departments and compiles socio-economic statistics.",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Revenue Department",
+   "description": "Administers land revenue records, district administration (Deputy Commissioners/SDMs), land acquisition and disaster relief certification.",
+   "officialUrl": "https://revenue.delhi.gov.in",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://revenue.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-women-and-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Department of Women and Child Development",
+   "aliases": [
+    "WCD Delhi"
+   ],
+   "description": "Runs women's welfare, child protection and nutrition schemes (anganwadis, ICDS) for the NCT.",
+   "officialUrl": "https://wcd.delhi.gov.in",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://wcd.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-land-and-building",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Land and Building Department",
+   "aliases": [
+    "L&B Department"
+   ],
+   "description": "Manages allotment, lease and conversion of government land and built government properties in Delhi.",
+   "officialUrl": "https://land.delhi.gov.in",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://land.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-services",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Services Department",
+   "description": "Handles postings, transfers and service matters of DANICS/DASS and other Delhi government cadre officials.",
+   "officialUrl": "https://services.delhi.gov.in",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://services.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-information-and-publicity",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Directorate of Information and Publicity",
+   "aliases": [
+    "DIP",
+    "Information & Public Relations"
+   ],
+   "description": "Publicises Delhi government schemes and policies to citizens and manages government advertising.",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-dept-vigilance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Vigilance Department",
+   "description": "Examines complaints of corruption and irregularities against Delhi government officials and processes disciplinary references.",
+   "officialUrl": "https://vigilance.delhi.gov.in",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://vigilance.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-administrative-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Administrative Reforms Department",
+   "aliases": [
+    "ARD"
+   ],
+   "description": "Drives e-governance, service-delivery reform and citizen charter/right-to-service implementation across Delhi government departments.",
+   "officialUrl": "https://ard.delhi.gov.in",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://ard.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Public Works Department",
+   "aliases": [
+    "PWD Delhi"
+   ],
+   "description": "Builds and maintains Delhi's government roads, flyovers, bridges and government buildings.",
+   "officialUrl": "https://pwd.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://pwd.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-law-justice-and-legislative-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Department of Law, Justice and Legislative Affairs",
+   "aliases": [
+    "Law Department"
+   ],
+   "description": "Provides legal advice to the Delhi government, handles litigation and drafts/vets legislation and rules including business before the Assembly. Note: the Feb 2025 portfolio order lists \"Legislative Affairs\" separately under Parvesh Verma while \"Law & Justice\" is under Kapil Mishra, even though both sit within this one notified department; headPositionId here follows the \"Law & Justice\" allocation.",
+   "officialUrl": "https://law.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-5",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://law.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-gurdwara-elections",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Directorate of Gurdwara Elections",
+   "aliases": [
+    "Gurudwara Elections"
+   ],
+   "description": "Conducts elections to the Delhi Sikh Gurdwara Management Committee under the Delhi Sikh Gurdwaras Act.",
+   "officialUrl": "https://gurudwara.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://gurudwara.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-irrigation-and-flood-control",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Irrigation and Flood Control Department",
+   "aliases": [
+    "I&FC"
+   ],
+   "description": "Maintains the Yamuna flood embankments, drains and irrigation channels and runs Delhi's flood control operations.",
+   "officialUrl": "https://ifc.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://ifc.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-water",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Water Department",
+   "description": "Administrative department overseeing water-supply and sewerage policy for Delhi, under which the statutory Delhi Jal Board operates.",
+   "headPositionId": "st-dl-pos-minister-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Home Department",
+   "description": "Handles jails, home guards, civil defence and other internal-security-adjacent administrative matters; day-to-day policing in Delhi is controlled by the Lieutenant Governor/MHA through the Delhi Police Commissioner, not this department, under Article 239AA(3)(a).",
+   "officialUrl": "https://home.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://home.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-power",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Power Department",
+   "description": "Regulates Delhi's privatised power distribution companies (BSES, Tata Power-DDL) and administers electricity subsidy schemes.",
+   "officialUrl": "https://power.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://power.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Directorate of Education",
+   "aliases": [
+    "School Education Department",
+    "DoE Delhi"
+   ],
+   "description": "Runs Delhi government schools and regulates recognised private schools up to Class XII.",
+   "officialUrl": "https://edudel.nic.in",
+   "headPositionId": "st-dl-pos-minister-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://edudel.nic.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-higher-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Department of Higher Education",
+   "description": "Oversees Delhi government/aided colleges and the state universities under the NCT (e.g. Delhi Skill and Entrepreneurship University administration lies elsewhere).",
+   "headPositionId": "st-dl-pos-minister-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-dept-training-and-technical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Department of Training and Technical Education",
+   "aliases": [
+    "DTTE"
+   ],
+   "description": "Runs ITIs, polytechnics and skill-development/technical-education programmes in Delhi.",
+   "headPositionId": "st-dl-pos-minister-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-dept-food-and-supplies",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Department of Food, Supplies and Consumer Affairs",
+   "aliases": [
+    "Food & Supplies Department"
+   ],
+   "description": "Administers the public distribution system (ration cards, fair price shops) and consumer-protection matters in Delhi.",
+   "headPositionId": "st-dl-pos-minister-3",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-dept-forests-and-wildlife",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Department of Forests and Wildlife",
+   "aliases": [
+    "Forest Department"
+   ],
+   "description": "Protects Delhi's forest cover, ridge area and wildlife, and enforces forest and wildlife protection laws.",
+   "officialUrl": "https://forest.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-3",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://forest.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-environment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Department of Environment",
+   "aliases": [
+    "DoE"
+   ],
+   "description": "Coordinates Delhi's air/water pollution control and climate action policy, working with the Delhi Pollution Control Committee.",
+   "officialUrl": "https://environment.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-3",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://environment.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Department of Industries",
+   "description": "Regulates industrial areas, MSME registration and industrial policy in Delhi.",
+   "officialUrl": "https://industries.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-3",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://industries.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Department of Social Welfare",
+   "description": "Runs old-age, disability and other welfare pensions and homes/shelters for the destitute in Delhi.",
+   "officialUrl": "https://socialwelfare.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-4",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://socialwelfare.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-sc-st-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Department of Welfare of SC/ST/OBC and Minorities",
+   "aliases": [
+    "SC/ST Welfare Department"
+   ],
+   "description": "Implements scholarships, hostels and welfare schemes for Scheduled Castes, Scheduled Tribes, OBCs and minorities in Delhi.",
+   "officialUrl": "https://scstwelfare.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-4",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://scstwelfare.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-cooperative",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Cooperative Department",
+   "description": "Registers and regulates cooperative societies, including group housing and consumer cooperatives, in Delhi.",
+   "headPositionId": "st-dl-pos-minister-4",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-dept-elections",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Elections Department",
+   "description": "Coordinates the Delhi government's administrative role in electoral matters distinct from the CEO Delhi's Election Commission of India functions.",
+   "headPositionId": "st-dl-pos-minister-4",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Labour Department",
+   "description": "Enforces labour laws, registers establishments/construction workers and runs the Delhi Building and Other Construction Workers Welfare Board.",
+   "officialUrl": "https://labour.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-5",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://labour.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-employment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Directorate of Employment",
+   "description": "Runs employment exchanges and job-placement/career-counselling services for Delhi.",
+   "officialUrl": "https://employment.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-5",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://employment.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Development Department",
+   "description": "Looks after rural/village-level development works in Delhi's rural areas and panchayats.",
+   "officialUrl": "https://development.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-5",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://development.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-art-culture-and-language",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Department of Art, Culture and Language",
+   "aliases": [
+    "Art & Culture Department",
+    "Department of Language"
+   ],
+   "description": "Promotes Delhi's art, culture, heritage and Urdu/Punjabi/Sanskrit language academies.",
+   "officialUrl": "https://language.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-5",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://language.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Tourism Department",
+   "description": "Promotes Delhi as a tourist destination and runs Delhi Tourism and Transportation Development Corporation oversight.",
+   "officialUrl": "https://tourism.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-5",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://tourism.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-health-and-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Department of Health and Family Welfare",
+   "aliases": [
+    "Health Department"
+   ],
+   "description": "Runs Delhi government hospitals, dispensaries and public-health/family-welfare programmes.",
+   "officialUrl": "https://health.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-6",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://health.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Transport Department",
+   "description": "Regulates public and private transport, vehicle registration/licensing and bus operations (DTC) in Delhi.",
+   "officialUrl": "https://transport.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-6",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://transport.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dl-government",
+   "name": "Information Technology Department",
+   "aliases": [
+    "IT Department"
+   ],
+   "description": "Drives Delhi government's e-governance platforms, digital service delivery and IT infrastructure.",
+   "officialUrl": "https://it.delhi.gov.in",
+   "headPositionId": "st-dl-pos-minister-6",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://it.delhi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-dept-agriculture-production",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Agriculture Production and Farmers' Welfare Department",
+   "aliases": [
+    "Agriculture Department"
+   ],
+   "description": "Runs farm-input support, crop schemes and agricultural extension services for J&K's farmers.",
+   "headPositionId": "st-jk-pos-minister-2",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-animal-sheep-husbandry",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Animal/Sheep Husbandry Department",
+   "description": "Runs veterinary services and livestock/sheep development programmes in J&K.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-ari-and-trainings",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "ARI and Trainings Department",
+   "aliases": [
+    "Administrative Reforms, Inspection and Trainings"
+   ],
+   "description": "Handles administrative reforms, inspection of government offices and civil-service training in J&K.",
+   "headPositionId": "st-jk-pos-minister-4",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-civil-aviation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Civil Aviation Department",
+   "description": "Oversees airport-related civic infrastructure and civil aviation coordination for J&K.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-cooperative",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Co-operative Department",
+   "description": "Registers and regulates cooperative societies, including agricultural and consumer cooperatives, in J&K.",
+   "headPositionId": "st-jk-pos-minister-2",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Department of Culture",
+   "aliases": [
+    "Culture Department"
+   ],
+   "description": "Promotes J&K's art, heritage, language academies and cultural institutions.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-food-civil-supplies-consumer-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Department of Food, Civil Supplies and Consumer Affairs",
+   "aliases": [
+    "FCS&CA"
+   ],
+   "description": "Administers the public distribution system and consumer-protection matters in J&K.",
+   "headPositionId": "st-jk-pos-minister-4",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-horticulture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Department of Horticulture",
+   "description": "Supports fruit and horticulture production (notably apple, saffron) through extension and marketing schemes.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-law-justice-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Department of Law, Justice and Parliamentary Affairs",
+   "aliases": [
+    "Law Department"
+   ],
+   "description": "Provides legal advice to the J&K government, conducts litigation and manages legislative business before the Assembly.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-mining",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Department of Mining",
+   "description": "Regulates mineral extraction, mining leases and royalty collection in J&K.",
+   "headPositionId": "st-jk-pos-deputy-cm-1",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-skill-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Department of Skill Development",
+   "description": "Runs vocational training and skilling programmes for J&K's youth.",
+   "headPositionId": "st-jk-pos-deputy-cm-1",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-disaster-management-relief-rehabilitation-reconstruction",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Disaster Management, Relief, Rehabilitation and Reconstruction Department",
+   "aliases": [
+    "DMRRR"
+   ],
+   "description": "Coordinates disaster response, relief distribution and post-disaster reconstruction in J&K, including for conflict/security-affected families.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "School Education Department",
+   "aliases": [
+    "Education Department"
+   ],
+   "description": "Runs government schools and regulates school education across J&K.",
+   "headPositionId": "st-jk-pos-minister-1",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-higher-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Higher Education Department",
+   "description": "Oversees J&K government degree colleges and higher-education policy.",
+   "headPositionId": "st-jk-pos-minister-1",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-election",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Election Department",
+   "description": "Coordinates the J&K government's administrative role in local-body and panchayat elections.",
+   "headPositionId": "st-jk-pos-minister-2",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-estates",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Estates Department",
+   "description": "Manages allotment and upkeep of government residential and office accommodation in J&K.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Finance Department",
+   "description": "Prepares the J&K budget, controls expenditure and manages the UT's accounts and treasury.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-forest",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Forest Department",
+   "aliases": [
+    "Forest, Ecology and Environment Department"
+   ],
+   "description": "Protects J&K's forests and wildlife and implements ecology/environment and climate programmes.",
+   "headPositionId": "st-jk-pos-minister-3",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "General Administration Department",
+   "aliases": [
+    "GAD"
+   ],
+   "description": "Handles J&K government's internal administration, cadre management (IAS/KAS/JKAS) and inter-department coordination.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-health-medical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Health and Medical Education Department",
+   "description": "Runs J&K government hospitals, public-health programmes and medical/nursing colleges.",
+   "headPositionId": "st-jk-pos-minister-1",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Home Department",
+   "description": "Handles internal security coordination, prisons and home-affairs administration; policing, public order and All-India Services in J&K remain with the Lieutenant Governor under Section 55 of the J&K Reorganisation Act, 2019.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-hospitality-protocol",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Hospitality and Protocol Department",
+   "description": "Manages official protocol, VIP visits and government guest houses in J&K.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-housing-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Housing and Urban Development Department",
+   "aliases": [
+    "H&UDD"
+   ],
+   "description": "Oversees municipal governance, urban planning and housing schemes in J&K's towns and cities.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-industries-commerce",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Industries and Commerce Department",
+   "description": "Administers industrial estates, MSME support and trade/commerce policy in J&K.",
+   "headPositionId": "st-jk-pos-deputy-cm-1",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-information",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Information Department",
+   "aliases": [
+    "Directorate of Information and Public Relations"
+   ],
+   "description": "Publicises J&K government schemes and manages government media/public relations.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Information Technology Department",
+   "description": "Drives J&K's e-governance platforms and digital service delivery (JK e-Gov Agency).",
+   "headPositionId": "st-jk-pos-minister-4",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-jal-shakti",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Jal Shakti Department",
+   "aliases": [
+    "Public Health Engineering Department"
+   ],
+   "description": "Delivers drinking-water supply, irrigation and flood-control infrastructure across J&K.",
+   "headPositionId": "st-jk-pos-minister-3",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-labour-employment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Labour and Employment Department",
+   "description": "Enforces labour laws and runs employment exchanges and job-placement services in J&K.",
+   "headPositionId": "st-jk-pos-deputy-cm-1",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-ladakh-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Ladakh Affairs Department",
+   "description": "Handles residual J&K government matters relating to Ladakh following the 2019 reorganisation.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-planning-development-monitoring",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Planning, Development and Monitoring Department",
+   "aliases": [
+    "PDD"
+   ],
+   "description": "Prepares J&K's development plans, allocates scheme outlays and monitors project implementation.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-power-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Power Development Department",
+   "aliases": [
+    "PDD Power"
+   ],
+   "description": "Generates and distributes electricity and administers power subsidy/tariff policy in J&K.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-public-works-rb",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Public Works Department (R&B)",
+   "aliases": [
+    "PWD J&K"
+   ],
+   "description": "Builds and maintains J&K's government roads, bridges and public buildings.",
+   "headPositionId": "st-jk-pos-deputy-cm-1",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Revenue Department",
+   "description": "Administers land revenue records, land acquisition and district administration in J&K.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-rural-development-panchayati-raj",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Rural Development Department and Panchayati Raj",
+   "aliases": [
+    "RDD"
+   ],
+   "description": "Runs rural livelihood and infrastructure schemes and oversees Panchayati Raj institutions in J&K.",
+   "headPositionId": "st-jk-pos-minister-2",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-science-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Science and Technology Department",
+   "description": "Promotes scientific research, innovation and technology programmes in J&K.",
+   "headPositionId": "st-jk-pos-minister-4",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Social Welfare Department",
+   "description": "Runs welfare pensions, disability support and child-protection schemes in J&K.",
+   "headPositionId": "st-jk-pos-minister-1",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Tourism Department",
+   "description": "Promotes J&K's tourism destinations and regulates tourism infrastructure and services.",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Transport Department",
+   "description": "Regulates public and private transport, vehicle registration and road transport services in J&K.",
+   "headPositionId": "st-jk-pos-minister-4",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-tribal-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Tribal Affairs Department",
+   "description": "Runs welfare and development schemes for Scheduled Tribes (including Gujjar-Bakarwal and Pahari communities) in J&K.",
+   "headPositionId": "st-jk-pos-minister-3",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-dept-youth-services-sports",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-jk-government",
+   "name": "Youth Services and Sports Department",
+   "description": "Promotes youth development programmes and sports infrastructure/events in J&K.",
+   "headPositionId": "st-jk-pos-minister-4",
+   "sources": [
+    "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-la-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Finance Department",
+   "description": "Prepares the Ladakh UT budget, controls expenditure and manages accounts, treasury and state taxes.",
+   "officialUrl": "https://ladakh.gov.in/finance-department-2/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/finance-department-2/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "General Administration Department",
+   "aliases": [
+    "GAD"
+   ],
+   "description": "Handles Ladakh UT's internal administration, cadre/service matters and inter-department coordination.",
+   "officialUrl": "https://ladakh.gov.in/general-administration-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/general-administration-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-health",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Health Department",
+   "description": "Runs Ladakh's government hospitals, public-health programmes and medical education.",
+   "officialUrl": "https://ladakh.gov.in/health-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/health-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-housing-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Housing and Urban Development Department",
+   "description": "Oversees municipal governance, urban planning and housing schemes in Leh and Kargil towns.",
+   "officialUrl": "https://ladakh.gov.in/housing-and-urban-development/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/housing-and-urban-development/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Information Technology Department",
+   "description": "Drives Ladakh UT's e-governance platforms and digital service delivery.",
+   "officialUrl": "https://ladakh.gov.in/information-technology/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/information-technology/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-law-and-justice",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Law and Justice Department",
+   "description": "Provides legal advice to the Ladakh UT administration and handles litigation.",
+   "officialUrl": "https://ladakh.gov.in/law-and-justice/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/law-and-justice/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "School Education Department",
+   "description": "Runs government schools and regulates school education across Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/school-education-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/school-education-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-technical-education-skill-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Technical Education and Skill Development Department",
+   "description": "Runs ITIs, polytechnics and skilling programmes for Ladakh's youth.",
+   "officialUrl": "https://ladakh.gov.in/technical-education-and-skill-development/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/technical-education-and-skill-development/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-phe-ifc",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Public Health Engineering and Irrigation & Flood Control Department",
+   "aliases": [
+    "PHE & IFC"
+   ],
+   "description": "Delivers drinking-water supply and irrigation/flood-control infrastructure in Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/phe-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/phe-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Public Works Department",
+   "aliases": [
+    "PWD Ladakh"
+   ],
+   "description": "Builds and maintains Ladakh's government roads, bridges and public buildings.",
+   "officialUrl": "https://ladakh.gov.in/public-works-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/public-works-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-planning-development-monitoring",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Planning, Development and Monitoring Department",
+   "description": "Prepares Ladakh UT's development plans, allocates scheme outlays and monitors project implementation.",
+   "officialUrl": "https://ladakh.gov.in/planning-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/planning-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Revenue Department",
+   "description": "Administers land revenue records and district administration (Deputy Commissioners of Leh and Kargil) in Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/revenue-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/revenue-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-power-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Power Development Department",
+   "description": "Generates and distributes electricity across Ladakh UT.",
+   "officialUrl": "https://ladakh.gov.in/power-development-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/power-development-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-animal-sheep-husbandry",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Animal/Sheep Husbandry Department",
+   "description": "Runs veterinary services and livestock/pashmina-goat and sheep development programmes in Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/animal-sheep-husbandry/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/animal-sheep-husbandry/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Tourism Department",
+   "description": "Promotes Ladakh as a tourist destination and regulates tourism infrastructure and permits.",
+   "officialUrl": "https://ladakh.gov.in/tourism-2/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/tourism-2/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-food-civil-supplies-consumer-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Food, Civil Supplies and Consumer Affairs Department",
+   "aliases": [
+    "FCS & CA"
+   ],
+   "description": "Administers the public distribution system and consumer-protection matters in Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/food-civil-supplies-consumer-affairs",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/food-civil-supplies-consumer-affairs"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Excise Department",
+   "description": "Regulates liquor licensing and collects excise revenue in Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/excise-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/excise-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-state-taxes",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "State Taxes Department",
+   "description": "Administers GST and other state-tax collection in Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/state-taxes-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/state-taxes-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Labour Department",
+   "description": "Enforces labour laws and registers establishments and construction workers in Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/labour-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/labour-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-employment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Employment Department",
+   "description": "Runs employment exchanges and job-placement services in Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/employment/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/employment/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Culture Department",
+   "description": "Promotes Ladakh's art, heritage and cultural institutions.",
+   "officialUrl": "https://ladakh.gov.in/culture-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/culture-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-library",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Library Department",
+   "description": "Runs Ladakh UT's public library services.",
+   "officialUrl": "https://ladakh.gov.in/library/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/library/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Transport Department",
+   "description": "Regulates public and private transport and vehicle registration in Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/transport-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/transport-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-youth-services-sports",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Youth Services and Sports Department",
+   "description": "Promotes youth development programmes and sports infrastructure/events in Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/youth-services-and-sports/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/youth-services-and-sports/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Agriculture Department",
+   "description": "Runs farm-input support and agricultural extension services for Ladakh's farmers.",
+   "officialUrl": "https://ladakh.gov.in/agriculture/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/agriculture/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-higher-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Higher Education Department",
+   "description": "Oversees Ladakh UT's government degree colleges and higher-education policy.",
+   "officialUrl": "https://ladakh.gov.in/higher-education/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/higher-education/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-cooperative",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Cooperative Department",
+   "description": "Registers and regulates cooperative societies in Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/cooperative-/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/cooperative-/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-rural-development-panchayati-raj",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Rural Development and Panchayati Raj Department",
+   "description": "Runs rural livelihood and infrastructure schemes and oversees Panchayati Raj/Hill Council institutions in Ladakh.",
+   "officialUrl": "https://ladakh.gov.in/rural-development-panchayati-raj-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/rural-development-panchayati-raj-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Home Department",
+   "description": "Handles internal security coordination, prisons and home-affairs administration in Ladakh, a subject the LG controls directly.",
+   "officialUrl": "https://ladakh.gov.in/home/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/home/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-election",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Election Department",
+   "description": "Coordinates the Ladakh UT administration's role in local-body elections (LAHDC Leh and Kargil).",
+   "officialUrl": "https://ladakh.gov.in/election-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/election-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-dept-forest-ecology-environment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-la-government",
+   "name": "Forest, Ecology and Environment Department",
+   "description": "Protects Ladakh's forests and fragile high-altitude ecology and implements environment/climate programmes.",
+   "officialUrl": "https://ladakh.gov.in/forest-ecology-environment-department/",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "notes": "Ladakh has no elected Council of Ministers; the UT is administered directly by the Lieutenant Governor (assisted by an Advisor to the LG and Administrative Secretaries), so headPositionId points to the LG rather than a minister.",
+   "sources": [
+    "https://ladakh.gov.in/departments/",
+    "https://ladakh.gov.in/forest-ecology-environment-department/"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-dl-pos-secretary-general-administration",
+   "title": "Additional Chief Secretary (GAD), General Administration Department",
+   "orgId": "st-dl-dept-general-administration",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Navin Kumar Choudhary, IAS",
+    "notes": "Additional Chief Secretary (GAD)"
+   },
+   "sources": [
+    "https://gad.delhi.gov.in/gad/directory-officers"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-secretary-finance",
+   "title": "Principal Secretary (Finance), Finance Department",
+   "orgId": "st-dl-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Santosh D. Vaidya, IAS",
+    "notes": "Principal Secretary (Finance)"
+   },
+   "sources": [
+    "https://finance.delhi.gov.in/who-is-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-secretary-women-and-child-development",
+   "title": "Secretary (Women and Child Development), Department of Women and Child Development",
+   "orgId": "st-dl-dept-women-and-child-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Rashmi Singh, IAS",
+    "notes": "Secretary (Women and Child Development)"
+   },
+   "sources": [
+    "https://wcd.delhi.gov.in/who-is-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-secretary-services",
+   "title": "Principal Secretary (Services), Services Department",
+   "orgId": "st-dl-dept-services",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Nandini Paliwal, IAS",
+    "notes": "Principal Secretary (Services)"
+   },
+   "sources": [
+    "https://services.delhi.gov.in/who-is-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-secretary-administrative-reforms",
+   "title": "Additional Chief Secretary (Administrative Reforms), Administrative Reforms Department",
+   "orgId": "st-dl-dept-administrative-reforms",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Prashant Goyal, IAS",
+    "notes": "Additional Chief Secretary (Administrative Reforms)"
+   },
+   "sources": [
+    "https://ard.delhi.gov.in/who-is-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-secretary-industries",
+   "title": "Additional Chief Secretary (Industries), Department of Industries",
+   "orgId": "st-dl-dept-industries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Dr. Sajjan Singh Yadav, IAS",
+    "notes": "Additional Chief Secretary (Industries)"
+   },
+   "sources": [
+    "https://industries.delhi.gov.in/who-is-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-secretary-social-welfare",
+   "title": "Additional Chief Secretary (Social Welfare), Department of Social Welfare",
+   "orgId": "st-dl-dept-social-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Bipul Pathak, IAS",
+    "notes": "Additional Chief Secretary (Social Welfare)"
+   },
+   "sources": [
+    "https://socialwelfare.delhi.gov.in/who-is-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-secretary-labour",
+   "title": "Secretary-cum-Labour Commissioner, Labour Department",
+   "orgId": "st-dl-dept-labour",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Pandurang K. Pole",
+    "notes": "Secretary-cum-Labour Commissioner"
+   },
+   "sources": [
+    "https://labour.delhi.gov.in/who-is-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-secretary-information-technology",
+   "title": "Secretary (IT), Information Technology Department",
+   "orgId": "st-dl-dept-information-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Jitendra Yadav, IAS",
+    "notes": "Secretary (IT)"
+   },
+   "sources": [
+    "https://it.delhi.gov.in/who-is-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-pos-secretary-finance",
+   "title": "Secretary in Finance, Finance Department",
+   "orgId": "st-la-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-la-pos-lieutenant-governor",
+   "holder": {
+    "name": "Dr. Laltinkhuma Franklin, IAS",
+    "notes": "Secretary in Finance (Ladakh has no Chief Minister; postings are ordered by the UT administration under the LG.)"
+   },
+   "sources": [
+    "https://ladakh.gov.in/finance-department-2/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-pos-secretary-general-administration",
+   "title": "Administrative Secretary, General Administration Department",
+   "orgId": "st-la-dept-general-administration",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-la-pos-lieutenant-governor",
+   "holder": {
+    "name": "Michael M. D'Souza, IAS",
+    "notes": "Administrative Secretary (Ladakh has no Chief Minister; postings are ordered by the UT administration under the LG.)"
+   },
+   "sources": [
+    "https://ladakh.gov.in/general-administration-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-pos-secretary-health",
+   "title": "Commissioner Secretary, Health and Medical Education, Health Department",
+   "orgId": "st-la-dept-health",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-la-pos-lieutenant-governor",
+   "holder": {
+    "name": "Dr. Laltinkhuma Franklin, IAS",
+    "notes": "Commissioner Secretary, Health and Medical Education (Ladakh has no Chief Minister; postings are ordered by the UT administration under the LG.)"
+   },
+   "sources": [
+    "https://ladakh.gov.in/health-department/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-pos-secretary-home",
+   "title": "Administrative Secretary, Home Department",
+   "orgId": "st-la-dept-home",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-la-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ashish Kundra, IAS",
+    "notes": "Administrative Secretary (Ladakh has no Chief Minister; postings are ordered by the UT administration under the LG.)"
+   },
+   "sources": [
+    "https://ladakh.gov.in/home/"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-dept-general-administration",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-general-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-dept-finance",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-dept-planning",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-planning",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-dept-revenue",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-revenue",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-dept-women-and-child-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-women-and-child-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-dept-land-and-building",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-land-and-building",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-dept-services",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-services",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-dept-information-and-publicity",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-information-and-publicity",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-dept-vigilance",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-vigilance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-dept-administrative-reforms",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-administrative-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-1",
+   "to": "st-dl-dept-public-works",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-public-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-5",
+   "to": "st-dl-dept-law-justice-and-legislative-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-law-justice-and-legislative-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-1",
+   "to": "st-dl-dept-gurdwara-elections",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-gurdwara-elections",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-1",
+   "to": "st-dl-dept-irrigation-and-flood-control",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-irrigation-and-flood-control",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-1",
+   "to": "st-dl-dept-water",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-water",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-2",
+   "to": "st-dl-dept-home",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-2",
+   "to": "st-dl-dept-power",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-power",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-2",
+   "to": "st-dl-dept-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-2",
+   "to": "st-dl-dept-higher-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-higher-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-2",
+   "to": "st-dl-dept-training-and-technical-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-training-and-technical-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-3",
+   "to": "st-dl-dept-food-and-supplies",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-food-and-supplies",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-3",
+   "to": "st-dl-dept-forests-and-wildlife",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-forests-and-wildlife",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-3",
+   "to": "st-dl-dept-environment",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-environment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-3",
+   "to": "st-dl-dept-industries",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-4",
+   "to": "st-dl-dept-social-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-4",
+   "to": "st-dl-dept-sc-st-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-sc-st-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-4",
+   "to": "st-dl-dept-cooperative",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-cooperative",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-4",
+   "to": "st-dl-dept-elections",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-elections",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-5",
+   "to": "st-dl-dept-labour",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-labour",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-5",
+   "to": "st-dl-dept-employment",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-employment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-5",
+   "to": "st-dl-dept-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-5",
+   "to": "st-dl-dept-art-culture-and-language",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-art-culture-and-language",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-5",
+   "to": "st-dl-dept-tourism",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-6",
+   "to": "st-dl-dept-health-and-family-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-health-and-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-6",
+   "to": "st-dl-dept-transport",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dl-pos-minister-6",
+   "to": "st-dl-dept-information-technology",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+  },
+  {
+   "from": "st-dl-pos-chief-secretary",
+   "to": "st-dl-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-2",
+   "to": "st-jk-dept-agriculture-production",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-agriculture-production",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-animal-sheep-husbandry",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-animal-sheep-husbandry",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-4",
+   "to": "st-jk-dept-ari-and-trainings",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-ari-and-trainings",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-civil-aviation",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-civil-aviation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-2",
+   "to": "st-jk-dept-cooperative",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-cooperative",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-culture",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-4",
+   "to": "st-jk-dept-food-civil-supplies-consumer-affairs",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-food-civil-supplies-consumer-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-horticulture",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-horticulture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-law-justice-parliamentary-affairs",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-law-justice-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-deputy-cm-1",
+   "to": "st-jk-dept-mining",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-mining",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-deputy-cm-1",
+   "to": "st-jk-dept-skill-development",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-skill-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-disaster-management-relief-rehabilitation-reconstruction",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-disaster-management-relief-rehabilitation-reconstruction",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-1",
+   "to": "st-jk-dept-school-education",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-school-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-1",
+   "to": "st-jk-dept-higher-education",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-higher-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-2",
+   "to": "st-jk-dept-election",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-election",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-estates",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-estates",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-finance",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-3",
+   "to": "st-jk-dept-forest",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-forest",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-general-administration",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-general-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-1",
+   "to": "st-jk-dept-health-medical-education",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-health-medical-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-home",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-hospitality-protocol",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-hospitality-protocol",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-housing-urban-development",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-housing-urban-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-deputy-cm-1",
+   "to": "st-jk-dept-industries-commerce",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-industries-commerce",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-information",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-information",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-4",
+   "to": "st-jk-dept-information-technology",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-3",
+   "to": "st-jk-dept-jal-shakti",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-jal-shakti",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-deputy-cm-1",
+   "to": "st-jk-dept-labour-employment",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-labour-employment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-ladakh-affairs",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-ladakh-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-planning-development-monitoring",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-planning-development-monitoring",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-power-development",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-power-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-deputy-cm-1",
+   "to": "st-jk-dept-public-works-rb",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-public-works-rb",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-revenue",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-revenue",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-2",
+   "to": "st-jk-dept-rural-development-panchayati-raj",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-rural-development-panchayati-raj",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-4",
+   "to": "st-jk-dept-science-technology",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-science-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-1",
+   "to": "st-jk-dept-social-welfare",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-dept-tourism",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-4",
+   "to": "st-jk-dept-transport",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-3",
+   "to": "st-jk-dept-tribal-affairs",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-tribal-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-jk-pos-minister-4",
+   "to": "st-jk-dept-youth-services-sports",
+   "type": "heads",
+   "source": "https://web.archive.org/web/20241217214047/https://jk.gov.in/jammukashmir/department/"
+  },
+  {
+   "from": "st-jk-pos-chief-secretary",
+   "to": "st-jk-dept-youth-services-sports",
+   "type": "oversees"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-finance",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-general-administration",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-health",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-housing-urban-development",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-information-technology",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-law-and-justice",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-school-education",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-technical-education-skill-development",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-phe-ifc",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-public-works",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-planning-development-monitoring",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-revenue",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-power-development",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-animal-sheep-husbandry",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-tourism",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-food-civil-supplies-consumer-affairs",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-excise",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-state-taxes",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-labour",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-employment",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-culture",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-library",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-transport",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-youth-services-sports",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-agriculture",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-higher-education",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-cooperative",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-rural-development-panchayati-raj",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-home",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-election",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-dept-forest-ecology-environment",
+   "type": "heads",
+   "source": "https://ladakh.gov.in/departments/"
+  }
+ ]
+}

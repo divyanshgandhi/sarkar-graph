@@ -1,0 +1,2755 @@
+{
+ "segment": "regulators",
+ "asOf": "2026-09-25",
+ "notes": "Independent statutory regulators and oversight bodies (RBI, SEBI, IRDAI, PFRDA, IFSCA, IBBI, TRAI, CCI, CERC, PNGRB, AERA, NHRC, NCW, NCPCR, NCM, CVC, CIC, Lokpal, Press Council of India, NABARD, SIDBI, EXIM Bank, NHB, NPCI). Known gaps/doubts: (1) RBI Central Board of Directors (part-time/independent directors) not enumerated — only Governor, 4 Deputy Governors and the Monetary Policy Committee are covered; (2) exact appointment dates could not be confirmed for several holders (IRDAI, PFRDA, TRAI, PNGRB, NHRC chairs; most Whole-Time/Members across SEBI, IRDAI, PFRDA, TRAI, PNGRB, NABARD, SIDBI, EXIM Bank, NHB) — identity is high/medium confidence from primary sources but the exact 'since' date is marked null or approximate (year/month only) rather than invented; (3) CVC's and Lokpal's own websites (cvc.gov.in, lokpal.gov.in) are client-rendered SPAs that returned no leadership content to automated fetch — those two bodies' holder data rests on Wikipedia only and is marked confidence:medium pending a primary-source cross-check; (4) NHRC currently has only a Chairperson recorded — sitting Members were not confirmed in this pass; (5) indiacode.nic.in legal-source links were not resolved for any Act (legalBasis text given instead; officialUrl given for every body); (6) NPCI is not a Government of India body — it is a Section-8 nonprofit promoted by RBI/IBA and owned by member banks; included per the segment's ownership brief as a quasi-regulatory payments body under RBI oversight, kind classification (autonomous_body) is a judgement call, not a legal category; (7) PNGRB Chairperson's appointment date and PNGRB Members' identities are only medium/low confidence (PNGRB's own site would not serve a members/board page to curl; corroborated Chairperson via the site's own homepage press item and Wikipedia only).",
+ "entities": [
+  {
+   "id": "in-rbi",
+   "kind": "regulator",
+   "sector": "constitutional",
+   "name": "Reserve Bank of India",
+   "abbr": "RBI",
+   "aliases": [
+    "RBI",
+    "Mint Street",
+    "Reserve Bank"
+   ],
+   "parentId": "in-union-government",
+   "description": "India's central bank; regulates banks, NBFCs and payment systems, conducts monetary policy, manages the currency and India's foreign-exchange reserves.",
+   "legalBasis": "Reserve Bank of India Act, 1934",
+   "officialUrl": "https://www.rbi.org.in",
+   "established": "1935",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-governor-rbi",
+   "sources": [
+    "https://www.rbi.org.in/Scripts/AboutusDisplay.aspx?pg=Governors.htm",
+    "https://www.rbi.org.in/Scripts/AboutusDisplay.aspx?pg=deputygovernors.htm"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-rbi-mpc",
+   "kind": "commission",
+   "sector": "constitutional",
+   "name": "Monetary Policy Committee",
+   "abbr": "MPC",
+   "aliases": [
+    "MPC"
+   ],
+   "parentId": "in-rbi",
+   "description": "Six-member statutory committee that sets India's benchmark policy interest rate to meet the inflation target set by the Government.",
+   "legalBasis": "Reserve Bank of India Act, 1934, Chapter III-F (s.45ZB), inserted by the Finance Act, 2016",
+   "officialUrl": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+   "established": "2016",
+   "headPositionId": "in-pos-governor-rbi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Monetary_Policy_Committee_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-sebi",
+   "kind": "regulator",
+   "sector": "constitutional",
+   "name": "Securities and Exchange Board of India",
+   "abbr": "SEBI",
+   "aliases": [
+    "SEBI"
+   ],
+   "parentId": "in-union-government",
+   "description": "Regulates India's securities and capital markets, registers and supervises stock exchanges, brokers, mutual funds and listed companies, and protects investors.",
+   "legalBasis": "Securities and Exchange Board of India Act, 1992",
+   "officialUrl": "https://www.sebi.gov.in",
+   "established": "1992",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-chairperson-sebi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Securities_and_Exchange_Board_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-irdai",
+   "kind": "regulator",
+   "sector": "constitutional",
+   "name": "Insurance Regulatory and Development Authority of India",
+   "abbr": "IRDAI",
+   "aliases": [
+    "IRDAI",
+    "IRDA"
+   ],
+   "parentId": "in-union-government",
+   "description": "Regulates and promotes the insurance and reinsurance industry in India, licenses insurers and intermediaries and protects policyholders' interests.",
+   "legalBasis": "Insurance Regulatory and Development Authority Act, 1999",
+   "officialUrl": "https://irdai.gov.in",
+   "established": "1999",
+   "hq": "Hyderabad",
+   "headPositionId": "in-pos-chairman-irdai",
+   "sources": [
+    "https://irdai.gov.in/chairman-and-members-of-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pfrda",
+   "kind": "regulator",
+   "sector": "constitutional",
+   "name": "Pension Fund Regulatory and Development Authority",
+   "abbr": "PFRDA",
+   "aliases": [
+    "PFRDA"
+   ],
+   "parentId": "in-union-government",
+   "description": "Regulates and develops India's pension sector, including the National Pension System (NPS) and Atal Pension Yojana, and registers pension fund managers and intermediaries.",
+   "legalBasis": "Pension Fund Regulatory and Development Authority Act, 2013",
+   "officialUrl": "https://www.pfrda.org.in",
+   "established": "2003",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-pfrda",
+   "sources": [
+    "https://www.pfrda.org.in/about-us/authority/about-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ifsca",
+   "kind": "regulator",
+   "sector": "constitutional",
+   "name": "International Financial Services Centres Authority",
+   "abbr": "IFSCA",
+   "aliases": [
+    "IFSCA"
+   ],
+   "parentId": "in-union-government",
+   "description": "Unified regulator for banking, capital markets, insurance and funds management in India's International Financial Services Centres, currently GIFT City, Gandhinagar.",
+   "legalBasis": "International Financial Services Centres Authority Act, 2019",
+   "officialUrl": "https://ifsca.gov.in",
+   "established": "2020",
+   "hq": "GIFT City, Gandhinagar, Gujarat",
+   "headPositionId": "in-pos-chairperson-ifsca",
+   "sources": [
+    "https://ifsca.gov.in/Pages/Contents/Chairperson"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ibbi",
+   "kind": "regulator",
+   "sector": "constitutional",
+   "name": "Insolvency and Bankruptcy Board of India",
+   "abbr": "IBBI",
+   "aliases": [
+    "IBBI"
+   ],
+   "parentId": "in-union-government",
+   "description": "Regulates insolvency professionals, insolvency professional agencies and information utilities, and oversees the corporate and individual insolvency resolution processes under the IBC.",
+   "legalBasis": "Insolvency and Bankruptcy Code, 2016 (s.188)",
+   "officialUrl": "https://ibbi.gov.in",
+   "established": "2016",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-ibbi",
+   "sources": [
+    "https://ibbi.gov.in/about/governing-board",
+    "https://ibbi.gov.in/en/about/jayanti-prasad"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-trai",
+   "kind": "regulator",
+   "sector": "constitutional",
+   "name": "Telecom Regulatory Authority of India",
+   "abbr": "TRAI",
+   "aliases": [
+    "TRAI"
+   ],
+   "parentId": "in-union-government",
+   "description": "Regulates telecom services and tariffs and advises the Government on telecom and broadcasting policy, licensing and interconnection matters.",
+   "legalBasis": "Telecom Regulatory Authority of India Act, 1997",
+   "officialUrl": "https://www.trai.gov.in",
+   "established": "1997",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairman-trai",
+   "sources": [
+    "https://www.trai.gov.in/about-us/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cci",
+   "kind": "regulator",
+   "sector": "constitutional",
+   "name": "Competition Commission of India",
+   "abbr": "CCI",
+   "aliases": [
+    "CCI"
+   ],
+   "parentId": "in-union-government",
+   "description": "Enforces the Competition Act by preventing anti-competitive agreements and abuse of dominance and regulating mergers and acquisitions (combinations).",
+   "legalBasis": "Competition Act, 2002",
+   "officialUrl": "https://www.cci.gov.in",
+   "established": "2003",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-cci",
+   "sources": [
+    "https://www.cci.gov.in/commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cerc",
+   "kind": "regulator",
+   "sector": "constitutional",
+   "name": "Central Electricity Regulatory Commission",
+   "abbr": "CERC",
+   "aliases": [
+    "CERC"
+   ],
+   "parentId": "in-union-government",
+   "description": "Regulates tariffs of central generating stations and inter-state transmission, and issues licences for inter-state transmission and trading of electricity.",
+   "legalBasis": "Electricity Act, 2003 (s.76)",
+   "officialUrl": "https://cercind.gov.in",
+   "established": "1998",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-cerc",
+   "sources": [
+    "https://cercind.gov.in/chairperson.html",
+    "https://cercind.gov.in/keystaff.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pngrb",
+   "kind": "regulator",
+   "sector": "constitutional",
+   "name": "Petroleum and Natural Gas Regulatory Board",
+   "abbr": "PNGRB",
+   "aliases": [
+    "PNGRB"
+   ],
+   "parentId": "in-union-government",
+   "description": "Regulates refining, processing, storage, transport, distribution, marketing and sale of petroleum, petroleum products and natural gas, and authorises city gas distribution and pipeline networks.",
+   "legalBasis": "Petroleum and Natural Gas Regulatory Board Act, 2006",
+   "officialUrl": "https://www.pngrb.gov.in",
+   "established": "2006",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-pngrb",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Petroleum_and_Natural_Gas_Regulatory_Board",
+    "https://www.pngrb.gov.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-aera",
+   "kind": "regulator",
+   "sector": "constitutional",
+   "name": "Airports Economic Regulatory Authority of India",
+   "abbr": "AERA",
+   "aliases": [
+    "AERA"
+   ],
+   "parentId": "in-union-government",
+   "description": "Regulates aeronautical tariffs and monitors performance standards at major Indian airports.",
+   "legalBasis": "Airports Economic Regulatory Authority of India Act, 2008",
+   "officialUrl": "https://www.aera.gov.in",
+   "established": "2009",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-aera",
+   "sources": [
+    "https://www.aera.gov.in/authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nhrc",
+   "kind": "commission",
+   "sector": "constitutional",
+   "name": "National Human Rights Commission",
+   "abbr": "NHRC",
+   "aliases": [
+    "NHRC"
+   ],
+   "parentId": "in-union-government",
+   "description": "Investigates and inquires into complaints of human-rights violations, reviews laws and safeguards, and recommends remedial action to the Government.",
+   "legalBasis": "Protection of Human Rights Act, 1993",
+   "officialUrl": "https://nhrc.nic.in",
+   "established": "1993",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-nhrc",
+   "sources": [
+    "https://nhrc.nic.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ncw",
+   "kind": "commission",
+   "sector": "constitutional",
+   "name": "National Commission for Women",
+   "abbr": "NCW",
+   "aliases": [
+    "NCW"
+   ],
+   "parentId": "in-union-government",
+   "description": "Statutory body that reviews the constitutional and legal safeguards for women, recommends remedial legislation, and facilitates redressal of grievances relating to women's rights.",
+   "legalBasis": "National Commission for Women Act, 1990",
+   "officialUrl": "https://ncw.gov.in",
+   "established": "1992",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-ncw",
+   "sources": [
+    "https://ncw.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ncpcr",
+   "kind": "commission",
+   "sector": "constitutional",
+   "name": "National Commission for Protection of Child Rights",
+   "abbr": "NCPCR",
+   "aliases": [
+    "NCPCR"
+   ],
+   "parentId": "in-union-government",
+   "description": "Examines and reviews laws and mechanisms for protecting children's rights, inquires into violations (including under POCSO and the Juvenile Justice Act), and recommends remedial measures.",
+   "legalBasis": "Commissions for Protection of Child Rights Act, 2005",
+   "officialUrl": "https://ncpcr.gov.in",
+   "established": "2007",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-ncpcr",
+   "sources": [
+    "https://ncpcr.gov.in/public/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ncm",
+   "kind": "commission",
+   "sector": "constitutional",
+   "name": "National Commission for Minorities",
+   "abbr": "NCM",
+   "aliases": [
+    "NCM"
+   ],
+   "parentId": "in-union-government",
+   "description": "Evaluates the progress of the development of notified religious minorities (Muslims, Christians, Sikhs, Buddhists, Parsis, Jains) and safeguards their rights.",
+   "legalBasis": "National Commission for Minorities Act, 1992",
+   "officialUrl": "http://ncm.nic.in",
+   "established": "1993",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-ncm",
+   "sources": [
+    "http://ncm.nic.in/homepage/homepage.php",
+    "https://en.wikipedia.org/wiki/National_Commission_for_Minorities"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cvc",
+   "kind": "commission",
+   "sector": "constitutional",
+   "name": "Central Vigilance Commission",
+   "abbr": "CVC",
+   "aliases": [
+    "CVC"
+   ],
+   "parentId": "in-union-government",
+   "description": "Apex integrity institution that oversees vigilance administration in central government bodies, advises on corruption cases and superintends the CBI's anti-corruption work.",
+   "legalBasis": "Central Vigilance Commission Act, 2003",
+   "officialUrl": "https://cvc.gov.in",
+   "established": "1964",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-central-vigilance-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Vigilance_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-cic",
+   "kind": "commission",
+   "sector": "constitutional",
+   "name": "Central Information Commission",
+   "abbr": "CIC",
+   "aliases": [
+    "CIC"
+   ],
+   "parentId": "in-union-government",
+   "description": "Adjudicates second appeals and complaints under the Right to Information Act against central public authorities and can penalise Public Information Officers for non-compliance.",
+   "legalBasis": "Right to Information Act, 2005 (s.12)",
+   "officialUrl": "https://cic.gov.in",
+   "established": "2005",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chief-information-commissioner",
+   "sources": [
+    "https://cic.gov.in/cic-profile"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-lokpal",
+   "kind": "statutory_body",
+   "sector": "constitutional",
+   "name": "Lokpal of India",
+   "abbr": "Lokpal",
+   "aliases": [
+    "Lokpal"
+   ],
+   "parentId": "in-union-government",
+   "description": "Anti-corruption ombudsman with jurisdiction to inquire into corruption allegations against the Prime Minister (with safeguards), Union Ministers, MPs and central government officials.",
+   "legalBasis": "Lokpal and Lokayuktas Act, 2013",
+   "officialUrl": "https://lokpal.gov.in",
+   "established": "2019",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-lokpal",
+   "sources": [
+    "https://lokpal.gov.in/about/present-members",
+    "https://en.wikipedia.org/wiki/Lokpal"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-press-council",
+   "kind": "statutory_body",
+   "sector": "constitutional",
+   "name": "Press Council of India",
+   "abbr": "PCI",
+   "aliases": [
+    "Press Council of India",
+    "PCI"
+   ],
+   "parentId": "in-union-government",
+   "description": "Quasi-judicial body that preserves the freedom of the press and maintains standards of newspapers and news agencies in India, adjudicating complaints of journalistic misconduct.",
+   "legalBasis": "Press Council Act, 1978",
+   "officialUrl": "https://presscouncil.nic.in",
+   "established": "1979",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-press-council",
+   "sources": [
+    "https://presscouncil.nic.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nabard",
+   "kind": "statutory_body",
+   "sector": "constitutional",
+   "name": "National Bank for Agriculture and Rural Development",
+   "abbr": "NABARD",
+   "aliases": [
+    "NABARD"
+   ],
+   "parentId": "in-union-government",
+   "description": "Apex development finance institution for agriculture and rural development; refinances rural credit institutions, supervises cooperative banks and RRBs, and promotes rural infrastructure via the RIDF.",
+   "legalBasis": "National Bank for Agriculture and Rural Development Act, 1981",
+   "officialUrl": "https://www.nabard.org",
+   "established": "1982",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-chairman-nabard",
+   "sources": [
+    "https://www.nabard.org/team.aspx?id=9"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-sidbi",
+   "kind": "statutory_body",
+   "sector": "constitutional",
+   "name": "Small Industries Development Bank of India",
+   "abbr": "SIDBI",
+   "aliases": [
+    "SIDBI"
+   ],
+   "parentId": "in-union-government",
+   "description": "Principal financial institution for promotion, financing and development of the Micro, Small and Medium Enterprises (MSME) sector; coordinates the functions of institutions in MSME financing.",
+   "legalBasis": "Small Industries Development Bank of India Act, 1989",
+   "officialUrl": "https://www.sidbi.in",
+   "established": "1990",
+   "hq": "Lucknow",
+   "headPositionId": "in-pos-chairman-md-sidbi",
+   "sources": [
+    "https://www.sidbi.in/en/about"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-exim-bank",
+   "kind": "statutory_body",
+   "sector": "constitutional",
+   "name": "Export-Import Bank of India",
+   "abbr": "EXIM Bank",
+   "aliases": [
+    "EXIM Bank",
+    "India Exim Bank"
+   ],
+   "parentId": "in-union-government",
+   "description": "India's export credit agency; provides financial assistance to exporters and importers and functions as the principal financial institution for coordinating export credit institutions.",
+   "legalBasis": "Export-Import Bank of India Act, 1981",
+   "officialUrl": "https://www.eximbankindia.in",
+   "established": "1982",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-managing-director-exim-bank",
+   "sources": [
+    "https://www.eximbankindia.in/board-of-directors"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nhb",
+   "kind": "statutory_body",
+   "sector": "constitutional",
+   "name": "National Housing Bank",
+   "abbr": "NHB",
+   "aliases": [
+    "NHB"
+   ],
+   "parentId": "in-union-government",
+   "description": "Apex regulator and refinancing institution for housing finance companies in India, promoting a sound and healthy housing finance system.",
+   "legalBasis": "National Housing Bank Act, 1987",
+   "officialUrl": "https://www.nhb.org.in",
+   "established": "1988",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-managing-director-nhb",
+   "sources": [
+    "https://www.nhb.org.in/about-us/board-of-directors/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-npci",
+   "kind": "autonomous_body",
+   "sector": "constitutional",
+   "name": "National Payments Corporation of India",
+   "abbr": "NPCI",
+   "aliases": [
+    "NPCI",
+    "UPI"
+   ],
+   "parentId": "in-union-government",
+   "description": "Not-for-profit umbrella organisation for retail payments and settlement systems in India (UPI, IMPS, RuPay, FASTag, AePS); promoted by RBI and the Indian Banks' Association and owned by member banks, operating under RBI oversight.",
+   "legalBasis": "Companies Act, 2013, s.8 (incorporation); regulated as a payment system operator under the Payment and Settlement Systems Act, 2007",
+   "officialUrl": "https://www.npci.org.in",
+   "established": "2008",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-md-ceo-npci",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Payments_Corporation_of_India"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-governor-rbi",
+   "title": "Governor, Reserve Bank of India",
+   "orgId": "in-rbi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "termYears": 3,
+   "holder": {
+    "name": "Sanjay Malhotra",
+    "since": "2024-12-11",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sanjay_Malhotra",
+    "acting": false,
+    "notes": "26th Governor; IAS 1990-batch Rajasthan cadre; previously Secretary, Dept of Revenue, MoF."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.rbi.org.in/Scripts/AboutusDisplay.aspx?pg=Governors.htm"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-deputy-governor-rbi-1",
+   "title": "Deputy Governor, Reserve Bank of India",
+   "orgId": "in-rbi",
+   "rank": "head_of_agency",
+   "seat": "Deputy Governor 1",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Swaminathan J",
+    "since": "2023-06-26",
+    "acting": false,
+    "notes": "Reappointed for a further term from 26.06.2026; in continuous office since 26.06.2023."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.rbi.org.in/Scripts/AboutusDisplay.aspx?pg=deputygovernors.htm"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-deputy-governor-rbi-2",
+   "title": "Deputy Governor, Reserve Bank of India",
+   "orgId": "in-rbi",
+   "rank": "head_of_agency",
+   "seat": "Deputy Governor 2",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Poonam Gupta",
+    "since": "2025-05-02",
+    "acting": false,
+    "notes": "Also RBI member on the Monetary Policy Committee."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.rbi.org.in/Scripts/AboutusDisplay.aspx?pg=deputygovernors.htm"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-deputy-governor-rbi-3",
+   "title": "Deputy Governor, Reserve Bank of India",
+   "orgId": "in-rbi",
+   "rank": "head_of_agency",
+   "seat": "Deputy Governor 3",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Shirish Chandra Murmu",
+    "since": "2025-10-09",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.rbi.org.in/Scripts/AboutusDisplay.aspx?pg=deputygovernors.htm"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-deputy-governor-rbi-4",
+   "title": "Deputy Governor, Reserve Bank of India",
+   "orgId": "in-rbi",
+   "rank": "head_of_agency",
+   "seat": "Deputy Governor 4",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Rohit Jain",
+    "since": "2026-05-04",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.rbi.org.in/Scripts/AboutusDisplay.aspx?pg=deputygovernors.htm"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mpc-member-rbi-1",
+   "title": "MPC Member (Deputy Governor in charge of monetary policy)",
+   "orgId": "in-rbi-mpc",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Poonam Gupta",
+    "since": "2025-05-02",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Monetary_Policy_Committee_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-mpc-member-rbi-2",
+   "title": "MPC Member (Executive Director in charge of monetary policy)",
+   "orgId": "in-rbi-mpc",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Indranil Bhattacharyya",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Monetary_Policy_Committee_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-mpc-member-external-1",
+   "title": "MPC External Member",
+   "orgId": "in-rbi-mpc",
+   "rank": "commission_member",
+   "seat": "External Member 1",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-union-council-of-ministers",
+   "termYears": 4,
+   "holder": {
+    "name": "Ram Singh",
+    "acting": false,
+    "notes": "Government-nominated external member; four-year, non-renewable term."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Monetary_Policy_Committee_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-mpc-member-external-2",
+   "title": "MPC External Member",
+   "orgId": "in-rbi-mpc",
+   "rank": "commission_member",
+   "seat": "External Member 2",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-union-council-of-ministers",
+   "termYears": 4,
+   "holder": {
+    "name": "Saugata Bhattacharya",
+    "acting": false,
+    "notes": "Government-nominated external member; four-year, non-renewable term."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Monetary_Policy_Committee_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-mpc-member-external-3",
+   "title": "MPC External Member",
+   "orgId": "in-rbi-mpc",
+   "rank": "commission_member",
+   "seat": "External Member 3",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-union-council-of-ministers",
+   "termYears": 4,
+   "holder": {
+    "name": "Nagesh Kumar",
+    "acting": false,
+    "notes": "Government-nominated external member; four-year, non-renewable term."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Monetary_Policy_Committee_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairperson-sebi",
+   "title": "Chairperson, SEBI",
+   "orgId": "in-sebi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "termYears": 3,
+   "holder": {
+    "name": "Tuhin Kanta Pandey",
+    "since": "2025-03-01",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tuhin_Kanta_Pandey",
+    "acting": false,
+    "notes": "IAS officer; previously Secretary, DIPAM, Ministry of Finance."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Securities_and_Exchange_Board_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-wtm-sebi-1",
+   "title": "Whole Time Member, SEBI",
+   "orgId": "in-sebi",
+   "rank": "commission_member",
+   "seat": "Whole Time Member 1",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Amarjeet Singh",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Securities_and_Exchange_Board_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-wtm-sebi-2",
+   "title": "Whole Time Member, SEBI",
+   "orgId": "in-sebi",
+   "rank": "commission_member",
+   "seat": "Whole Time Member 2",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Kamlesh Chandra Varshney",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Securities_and_Exchange_Board_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-wtm-sebi-3",
+   "title": "Whole Time Member, SEBI",
+   "orgId": "in-sebi",
+   "rank": "commission_member",
+   "seat": "Whole Time Member 3",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Sandip Pradhan",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Securities_and_Exchange_Board_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-wtm-sebi-4",
+   "title": "Whole Time Member, SEBI",
+   "orgId": "in-sebi",
+   "rank": "commission_member",
+   "seat": "Whole Time Member 4",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "K V Ramana Murthy",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Securities_and_Exchange_Board_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairman-irdai",
+   "title": "Chairman, IRDAI",
+   "orgId": "in-irdai",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Ajay Seth",
+    "since": "2025-03",
+    "acting": false,
+    "notes": "Since-date approximate (month only); confirmed current chairman by irdai.gov.in as of 2026-09-07. Previously Secretary, Dept of Economic Affairs, MoF."
+   },
+   "vacant": false,
+   "sources": [
+    "https://irdai.gov.in/chairman-and-members-of-authority"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-wtm-irdai-1",
+   "title": "Whole Time Member (IRDAI) — Finance & Investments",
+   "orgId": "in-irdai",
+   "rank": "commission_member",
+   "seat": "Finance & Investments",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Rajay Kumar Sinha",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://irdai.gov.in/chairman-and-members-of-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-wtm-irdai-2",
+   "title": "Whole Time Member (IRDAI) — Distribution",
+   "orgId": "in-irdai",
+   "rank": "commission_member",
+   "seat": "Distribution",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Girija Subramanian",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://irdai.gov.in/chairman-and-members-of-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-wtm-irdai-3",
+   "title": "Whole Time Member (IRDAI) — Non-Life",
+   "orgId": "in-irdai",
+   "rank": "commission_member",
+   "seat": "Non-Life",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Deepak Sood",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://irdai.gov.in/chairman-and-members-of-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-wtm-irdai-4",
+   "title": "Whole Time Member (IRDAI) — Life",
+   "orgId": "in-irdai",
+   "rank": "commission_member",
+   "seat": "Life",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Swaminathan S Iyer",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://irdai.gov.in/chairman-and-members-of-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-ptm-irdai-1",
+   "title": "Part Time Member, IRDAI",
+   "orgId": "in-irdai",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Debasish Prusty",
+    "acting": false,
+    "notes": "Additional Secretary, DFS, Ministry of Finance"
+   },
+   "vacant": false,
+   "sources": [
+    "https://irdai.gov.in/chairman-and-members-of-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-ptm-irdai-2",
+   "title": "Part Time Member, IRDAI",
+   "orgId": "in-irdai",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Prasanna Kumar D",
+    "acting": false,
+    "notes": "President, Institute of Chartered Accountants of India"
+   },
+   "vacant": false,
+   "sources": [
+    "https://irdai.gov.in/chairman-and-members-of-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-pfrda",
+   "title": "Chairperson, PFRDA",
+   "orgId": "in-pfrda",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Sivasubramanian Ramann",
+    "since": "2025-07",
+    "acting": false,
+    "notes": "Since-date approximate (month only). Previously CMD, SIDBI (2020-2025)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.pfrda.org.in/about-us/authority/about-authority"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-wtm-pfrda-1",
+   "title": "Whole-time Member (PFRDA) — Economics",
+   "orgId": "in-pfrda",
+   "rank": "commission_member",
+   "seat": "Economics",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Mamta Shankar",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.pfrda.org.in/about-us/authority/about-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-wtm-pfrda-2",
+   "title": "Whole-time Member (PFRDA) — Law",
+   "orgId": "in-pfrda",
+   "rank": "commission_member",
+   "seat": "Law",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Randip Singh Jagpal",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.pfrda.org.in/about-us/authority/about-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-wtm-pfrda-3",
+   "title": "Whole-time Member (PFRDA) — Finance",
+   "orgId": "in-pfrda",
+   "rank": "commission_member",
+   "seat": "Finance",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Sanjay Pandey",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.pfrda.org.in/about-us/authority/about-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-ptm-pfrda-1",
+   "title": "Part-time Member, PFRDA",
+   "orgId": "in-pfrda",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Parama Sen",
+    "acting": false,
+    "notes": "Additional Secretary (Pers.), Dept of Expenditure, MoF"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.pfrda.org.in/about-us/authority/about-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-ptm-pfrda-2",
+   "title": "Part-time Member, PFRDA",
+   "orgId": "in-pfrda",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Chandradeep Kumar Jha",
+    "acting": false,
+    "notes": "Statistical Advisor, DFS, MoF"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.pfrda.org.in/about-us/authority/about-authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-ifsca",
+   "title": "Chairperson, IFSCA",
+   "orgId": "in-ifsca",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "termYears": 3,
+   "holder": {
+    "name": "K Rajaraman",
+    "since": "2023-08-01",
+    "acting": false,
+    "notes": "IAS 1989-batch Tamil Nadu cadre; previously Secretary, Dept of Telecommunications."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ifsca.gov.in/Pages/Contents/Chairperson"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-ibbi",
+   "title": "Chairperson, IBBI",
+   "orgId": "in-ibbi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Jayanti Prasad",
+    "since": "2026-09-13",
+    "acting": true,
+    "notes": "Holding additional charge of Chairperson from 13 September 2026, in addition to his substantive post of Whole Time Member (since 5 July 2022)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ibbi.gov.in/en/about/jayanti-prasad"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-wtm-ibbi-1",
+   "title": "Whole-time Member, IBBI",
+   "orgId": "in-ibbi",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Jayanti Prasad",
+    "since": "2022-07-05",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://ibbi.gov.in/about/governing-board"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-wtm-ibbi-2",
+   "title": "Whole-time Member, IBBI",
+   "orgId": "in-ibbi",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Sandip Garg",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://ibbi.gov.in/about/governing-board"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-wtm-ibbi-3",
+   "title": "Whole-time Member, IBBI",
+   "orgId": "in-ibbi",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Bhushan Kumar Sinha",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://ibbi.gov.in/about/governing-board"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ibbi-exofficio-1",
+   "title": "Ex-officio Member, IBBI",
+   "orgId": "in-ibbi",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Anita Shah Akella",
+    "acting": false,
+    "notes": "Joint Secretary, Ministry of Corporate Affairs"
+   },
+   "vacant": false,
+   "sources": [
+    "https://ibbi.gov.in/about/governing-board"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ibbi-exofficio-2",
+   "title": "Ex-officio Member, IBBI",
+   "orgId": "in-ibbi",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Aparna Sinha",
+    "acting": false,
+    "notes": "Economic Adviser, Dept of Economic Affairs, MoF"
+   },
+   "vacant": false,
+   "sources": [
+    "https://ibbi.gov.in/about/governing-board"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ibbi-exofficio-3",
+   "title": "Ex-officio Member, IBBI",
+   "orgId": "in-ibbi",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Niraj Kumar",
+    "acting": false,
+    "notes": "Joint Secretary & Legal Adviser, Ministry of Law & Justice"
+   },
+   "vacant": false,
+   "sources": [
+    "https://ibbi.gov.in/about/governing-board"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ibbi-exofficio-4",
+   "title": "Ex-officio Member, IBBI",
+   "orgId": "in-ibbi",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Vaibhav Chaturvedi",
+    "acting": false,
+    "notes": "Chief General Manager, Reserve Bank of India"
+   },
+   "vacant": false,
+   "sources": [
+    "https://ibbi.gov.in/about/governing-board"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ibbi-parttime-1",
+   "title": "Part-time Member, IBBI",
+   "orgId": "in-ibbi",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "M. P. Ram Mohan",
+    "acting": false,
+    "notes": "Professor, IIM Ahmedabad"
+   },
+   "vacant": false,
+   "sources": [
+    "https://ibbi.gov.in/about/governing-board"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ibbi-parttime-2",
+   "title": "Part-time Member, IBBI",
+   "orgId": "in-ibbi",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "L. V. Prabhakar",
+    "acting": false,
+    "notes": "Former MD & CEO, Canara Bank"
+   },
+   "vacant": false,
+   "sources": [
+    "https://ibbi.gov.in/about/governing-board"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-trai",
+   "title": "Chairman, TRAI",
+   "orgId": "in-trai",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Anil Kumar Lahoti",
+    "since": "2023-10",
+    "acting": false,
+    "notes": "Since-date approximate (month only). Former Chairman & CEO, Railway Board."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.trai.gov.in/about-us/whos-who"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-trai-1",
+   "title": "Member, TRAI",
+   "orgId": "in-trai",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Ritu Ranjan Mittar",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.trai.gov.in/about-us/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-trai-2",
+   "title": "Member, TRAI",
+   "orgId": "in-trai",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Dr. M P Tangirala",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.trai.gov.in/about-us/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-trai-parttime-1",
+   "title": "Member (Part-time), TRAI",
+   "orgId": "in-trai",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Prof. Ranjan Bose",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.trai.gov.in/about-us/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-trai-parttime-2",
+   "title": "Member (Part-time), TRAI",
+   "orgId": "in-trai",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Neelkanth Mishra",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.trai.gov.in/about-us/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-cci",
+   "title": "Chairperson, CCI",
+   "orgId": "in-cci",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Ravneet Kaur",
+    "since": "2023-05-23",
+    "acting": false,
+    "notes": "IAS officer; previously Chairperson, National Financial Reporting Authority (NFRA)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.cci.gov.in/commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-cci-1",
+   "title": "Member, CCI",
+   "orgId": "in-cci",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Sweta Kakkad",
+    "since": "2023-09-19",
+    "acting": false,
+    "notes": "First Member from the private sector (legal practice) to join CCI."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.cci.gov.in/commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-cerc",
+   "title": "Chairperson, CERC",
+   "orgId": "in-cerc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Jishnu Barua",
+    "since": "2023-03-02",
+    "acting": false,
+    "notes": "Former IAS officer; former Chief Secretary, Assam."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cercind.gov.in/chairperson.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-cerc-1",
+   "title": "Member, CERC",
+   "orgId": "in-cerc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Ramesh Babu Veeravalli",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cercind.gov.in/keystaff.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-cerc-2",
+   "title": "Member, CERC",
+   "orgId": "in-cerc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Harish Dudani",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cercind.gov.in/keystaff.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-cerc-3",
+   "title": "Member, CERC",
+   "orgId": "in-cerc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Ravinder Singh Dhillon",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cercind.gov.in/keystaff.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-pngrb",
+   "title": "Chairperson, PNGRB",
+   "orgId": "in-pngrb",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Anil Kumar Jain",
+    "since": "2020",
+    "acting": false,
+    "notes": "Since-year approximate. Identity confirmed current via PNGRB's own official social media post dated 2 September 2026."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Petroleum_and_Natural_Gas_Regulatory_Board"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-pngrb-1",
+   "title": "Member, PNGRB — Monitoring & Infrastructure",
+   "orgId": "in-pngrb",
+   "rank": "commission_member",
+   "seat": "Monitoring & Infrastructure",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Anjani Kumar Tiwari",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Petroleum_and_Natural_Gas_Regulatory_Board"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-member-pngrb-2",
+   "title": "Member, PNGRB — Commercial",
+   "orgId": "in-pngrb",
+   "rank": "commission_member",
+   "seat": "Commercial",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "A. Ramana Kumar",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Petroleum_and_Natural_Gas_Regulatory_Board"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-member-pngrb-3",
+   "title": "Member, PNGRB — Technical",
+   "orgId": "in-pngrb",
+   "rank": "commission_member",
+   "seat": "Technical",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Jayanta Narayan Das",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Petroleum_and_Natural_Gas_Regulatory_Board"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-member-pngrb-legal",
+   "title": "Member, PNGRB — Legal",
+   "orgId": "in-pngrb",
+   "rank": "commission_member",
+   "seat": "Legal",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Petroleum_and_Natural_Gas_Regulatory_Board"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chairperson-aera",
+   "title": "Chairperson, AERA",
+   "orgId": "in-aera",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "S.K.G. Rahate",
+    "since": "2024-05-14",
+    "acting": false,
+    "notes": "IAS 1990-batch Jharkhand cadre; formerly Secretary, Dept of Justice, Ministry of Law and Justice."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.aera.gov.in/authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-aera-1",
+   "title": "Member, AERA",
+   "orgId": "in-aera",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "V. Vidya",
+    "since": "2024-05-10",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.aera.gov.in/authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-aera-2",
+   "title": "Member, AERA",
+   "orgId": "in-aera",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Reema Prakash",
+    "since": "2026-07-01",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.aera.gov.in/authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-nhrc",
+   "title": "Chairperson, NHRC",
+   "orgId": "in-nhrc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Justice V. Ramasubramanian",
+    "since": "2024-12",
+    "wikipedia": "https://en.wikipedia.org/wiki/V._Ramasubramanian",
+    "acting": false,
+    "notes": "Since-date approximate (month only). Former Supreme Court judge; identity confirmed current via nhrc.nic.in press items dated as late as July 2026."
+   },
+   "vacant": false,
+   "sources": [
+    "https://nhrc.nic.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairperson-ncw",
+   "title": "Chairperson, NCW",
+   "orgId": "in-ncw",
+   "rank": "head_of_agency",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Vijaya Kishore Rahatkar",
+    "since": "2024-10-19",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vijaya_Rahatkar",
+    "acting": false,
+    "notes": "9th Chairperson of NCW; succeeded Rekha Sharma (term ended 2024-08-07)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ncw.gov.in/",
+    "https://en.wikipedia.org/wiki/National_Commission_for_Women"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-ncpcr",
+   "title": "Chairperson, NCPCR",
+   "orgId": "in-ncpcr",
+   "rank": "head_of_agency",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Valeti Premchand",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://ncpcr.gov.in/public/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ncpcr-1",
+   "title": "Member (Laws Relating to Children), NCPCR",
+   "orgId": "in-ncpcr",
+   "rank": "commission_member",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Preeti Bharadwaj Dalal",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://ncpcr.gov.in/public/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-secretary-ncpcr",
+   "title": "Member Secretary, NCPCR",
+   "orgId": "in-ncpcr",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Sanjeev Sharma",
+    "acting": false,
+    "notes": "Bureaucratic/administrative head."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ncpcr.gov.in/public/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-ncm",
+   "title": "Chairperson, NCM",
+   "orgId": "in-ncm",
+   "rank": "head_of_agency",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Harjit Singh Grewal",
+    "since": "2026-07-21",
+    "acting": false,
+    "notes": "Commission freshly reconstituted in July 2026 after the Chairperson and Member posts had been vacant through late 2025."
+   },
+   "vacant": false,
+   "sources": [
+    "http://ncm.nic.in/homepage/homepage.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-vice-chairperson-ncm",
+   "title": "Vice-Chairperson, NCM",
+   "orgId": "in-ncm",
+   "rank": "commission_member",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "S. Munawari Begum",
+    "since": "2026-07-21",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "http://ncm.nic.in/homepage/homepage.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ncm-1",
+   "title": "Member, NCM",
+   "orgId": "in-ncm",
+   "rank": "commission_member",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Glenn E Souza Ticlo",
+    "since": "2026-07-21",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "http://ncm.nic.in/homepage/homepage.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-central-vigilance-commissioner",
+   "title": "Central Vigilance Commissioner",
+   "orgId": "in-cvc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 4,
+   "holder": {
+    "name": "Praveen Kumar Srivastava",
+    "since": "2022-12-28",
+    "acting": false,
+    "notes": "IAS 1988-batch Assam-Meghalaya cadre; term runs to 2026-12-28."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Vigilance_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-vigilance-commissioner-1",
+   "title": "Vigilance Commissioner",
+   "orgId": "in-cvc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "A.S. Rajeev",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Vigilance_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-vigilance-commissioner-2",
+   "title": "Vigilance Commissioner",
+   "orgId": "in-cvc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Praveen Vashista",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Vigilance_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chief-information-commissioner",
+   "title": "Chief Information Commissioner",
+   "orgId": "in-cic",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 3,
+   "holder": {
+    "name": "Raj Kumar Goyal",
+    "since": "2025-12-15",
+    "acting": false,
+    "notes": "IAS officer."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cic.gov.in/cic-profile"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-information-commissioner-1",
+   "title": "Information Commissioner",
+   "orgId": "in-cic",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 3,
+   "holder": {
+    "name": "Anandi Ramalingam",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cic.gov.in/cic-profile"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-information-commissioner-2",
+   "title": "Information Commissioner",
+   "orgId": "in-cic",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 3,
+   "holder": {
+    "name": "Vinod Kumar Tiwari",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cic.gov.in/cic-profile"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-information-commissioner-3",
+   "title": "Information Commissioner",
+   "orgId": "in-cic",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 3,
+   "holder": {
+    "name": "Surendra Singh Meena",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cic.gov.in/cic-profile"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-information-commissioner-4",
+   "title": "Information Commissioner",
+   "orgId": "in-cic",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 3,
+   "holder": {
+    "name": "Ashutosh Chaturvedi",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cic.gov.in/cic-profile"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-information-commissioner-5",
+   "title": "Information Commissioner",
+   "orgId": "in-cic",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 3,
+   "holder": {
+    "name": "Swagat Das",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cic.gov.in/cic-profile"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-information-commissioner-6",
+   "title": "Information Commissioner",
+   "orgId": "in-cic",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 3,
+   "holder": {
+    "name": "Sudha Rani Relangi",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cic.gov.in/cic-profile"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-information-commissioner-7",
+   "title": "Information Commissioner",
+   "orgId": "in-cic",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 3,
+   "holder": {
+    "name": "P. R. Ramesh",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cic.gov.in/cic-profile"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-information-commissioner-8",
+   "title": "Information Commissioner",
+   "orgId": "in-cic",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 3,
+   "holder": {
+    "name": "Khushwant Singh Sethi",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cic.gov.in/cic-profile"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-information-commissioner-9",
+   "title": "Information Commissioner",
+   "orgId": "in-cic",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 3,
+   "holder": {
+    "name": "Jaya Varma Sinha",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cic.gov.in/cic-profile"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-information-commissioner-10",
+   "title": "Information Commissioner",
+   "orgId": "in-cic",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 3,
+   "holder": {
+    "name": "Sanjeev Kumar Jindal",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cic.gov.in/cic-profile"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-lokpal",
+   "title": "Chairperson, Lokpal",
+   "orgId": "in-lokpal",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Ajay Manikrao Khanwilkar",
+    "since": "2024-03-10",
+    "wikipedia": "https://en.wikipedia.org/wiki/A._M._Khanwilkar",
+    "acting": false,
+    "notes": "Former Supreme Court judge; identity/date per Wikipedia — lokpal.gov.in itself is JS-rendered and did not return the name to automated fetch in this pass."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokpal"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-lokpal-judicial-1",
+   "title": "Judicial Member, Lokpal",
+   "orgId": "in-lokpal",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Dilip Babasaheb Bhosale",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokpal"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-lokpal-judicial-2",
+   "title": "Judicial Member, Lokpal",
+   "orgId": "in-lokpal",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Pradip Kumar Mohanty",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokpal"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-lokpal-judicial-3",
+   "title": "Judicial Member, Lokpal",
+   "orgId": "in-lokpal",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Abhilasha Kumari",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokpal"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-lokpal-nonjudicial-1",
+   "title": "Non-Judicial Member, Lokpal",
+   "orgId": "in-lokpal",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Dinesh Kumar Jain",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokpal"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-lokpal-nonjudicial-2",
+   "title": "Non-Judicial Member, Lokpal",
+   "orgId": "in-lokpal",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Archana Ramasundaram",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokpal"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-lokpal-nonjudicial-3",
+   "title": "Non-Judicial Member, Lokpal",
+   "orgId": "in-lokpal",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Mahender Singh",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokpal"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-lokpal-nonjudicial-4",
+   "title": "Non-Judicial Member, Lokpal",
+   "orgId": "in-lokpal",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Indrajeet Prasad Gautam",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokpal"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairperson-press-council",
+   "title": "Chairperson, Press Council of India",
+   "orgId": "in-press-council",
+   "rank": "head_of_agency",
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Justice Ranjana Prakash Desai",
+    "since": "2026-04-24",
+    "acting": false,
+    "notes": "Former Supreme Court judge; nominated for the Council's 15th Term per Gazette Notification dated 24.04.2026."
+   },
+   "vacant": false,
+   "sources": [
+    "https://presscouncil.nic.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-nabard",
+   "title": "Chairman, NABARD",
+   "orgId": "in-nabard",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Dr. Shaji Krishnan V",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.nabard.org/team.aspx?id=9"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-deputy-managing-director-nabard-1",
+   "title": "Deputy Managing Director, NABARD",
+   "orgId": "in-nabard",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Goverdhan S. Rawat",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.nabard.org/team.aspx?id=9"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-deputy-managing-director-nabard-2",
+   "title": "Deputy Managing Director, NABARD",
+   "orgId": "in-nabard",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Dr Ajay Kumar Sood",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.nabard.org/team.aspx?id=9"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-deputy-managing-director-nabard-3",
+   "title": "Deputy Managing Director, NABARD",
+   "orgId": "in-nabard",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Rakesh Kashyap",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.nabard.org/team.aspx?id=9"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-nabard-rbi",
+   "title": "Director, NABARD (RBI nominee)",
+   "orgId": "in-nabard",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Poonam Gupta",
+    "acting": false,
+    "notes": "Deputy Governor, RBI, sits ex officio under NABARD Act 1981 s.6(1)(c)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.nabard.org/team.aspx?id=9"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-md-sidbi",
+   "title": "Chairman & Managing Director, SIDBI",
+   "orgId": "in-sidbi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Manoj Mittal",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sidbi.in/en/about"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-deputy-managing-director-sidbi",
+   "title": "Deputy Managing Director, SIDBI",
+   "orgId": "in-sidbi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Prakash Kumar",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sidbi.in/en/about"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-managing-director-exim-bank",
+   "title": "Managing Director, EXIM Bank",
+   "orgId": "in-exim-bank",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Harsha Bangari",
+    "since": "2021",
+    "acting": false,
+    "notes": "Since-year approximate. First woman Deputy Managing Director of the Bank (2020) before her elevation to MD in 2021."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.eximbankindia.in/board-of-directors"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-deputy-managing-director-exim-bank-1",
+   "title": "Deputy Managing Director, EXIM Bank",
+   "orgId": "in-exim-bank",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Tarun Sharma",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.eximbankindia.in/board-of-directors"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-deputy-managing-director-exim-bank-2",
+   "title": "Deputy Managing Director, EXIM Bank",
+   "orgId": "in-exim-bank",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Deepali Agrawal",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.eximbankindia.in/board-of-directors"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-managing-director-nhb",
+   "title": "Managing Director, NHB",
+   "orgId": "in-nhb",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Sanjay Shukla",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.nhb.org.in/about-us/board-of-directors/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-nhb-1",
+   "title": "Director, NHB",
+   "orgId": "in-nhb",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Kailash Chander",
+    "acting": false,
+    "notes": "Director, NHB"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.nhb.org.in/about-us/board-of-directors/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-nhb-2",
+   "title": "Director, NHB",
+   "orgId": "in-nhb",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Piyush Srivastava",
+    "acting": false,
+    "notes": "Senior Economic Advisor (Rural Housing), Ministry of Rural Development"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.nhb.org.in/about-us/board-of-directors/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-nhb-3",
+   "title": "Director, NHB",
+   "orgId": "in-nhb",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Kuldip Narayan",
+    "acting": false,
+    "notes": "Joint Secretary, Ministry of Housing and Urban Affairs"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.nhb.org.in/about-us/board-of-directors/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-nhb-4",
+   "title": "Director, NHB",
+   "orgId": "in-nhb",
+   "rank": "commission_member",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Saurabh Kumar",
+    "acting": false,
+    "notes": "Joint Secretary, Dept of Financial Services, Ministry of Finance"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.nhb.org.in/about-us/board-of-directors/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-md-ceo-npci",
+   "title": "Managing Director & CEO, NPCI",
+   "orgId": "in-npci",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Dilip Asbe",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Payments_Corporation_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairman-npci",
+   "title": "Non-Executive Chairman, NPCI",
+   "orgId": "in-npci",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Ajay Kumar Choudhary",
+    "acting": false,
+    "notes": "Former RBI Executive Director."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Payments_Corporation_of_India"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "relations": [
+  {
+   "to": "in-rbi-mpc",
+   "type": "ex_officio",
+   "basis": "RBI Act 1934 s.45ZB(2)(a) — Governor chairs the MPC ex officio, with a casting vote",
+   "from": "in-pos-governor-rbi"
+  },
+  {
+   "to": "in-rbi",
+   "type": "administers",
+   "basis": "RBI is administratively attached to the Department of Economic Affairs, Ministry of Finance",
+   "from": "in-dept-economic-affairs"
+  },
+  {
+   "to": "in-pos-governor-rbi",
+   "type": "appoints",
+   "basis": "RBI Act 1934 s.8 — Governor and Deputy Governors appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-npci",
+   "type": "oversees",
+   "basis": "Payment and Settlement Systems Act, 2007 — RBI regulates and supervises NPCI as an authorised retail payment system operator; NPCI was promoted by RBI together with the Indian Banks' Association",
+   "from": "in-rbi"
+  },
+  {
+   "to": "in-nabard",
+   "type": "oversees",
+   "basis": "RBI Deputy Governor sits ex officio on the NABARD Board and RBI holds a minority equity stake",
+   "from": "in-rbi"
+  },
+  {
+   "to": "in-sebi",
+   "type": "administers",
+   "basis": "SEBI is administratively attached to the Department of Economic Affairs (Capital Markets Division), Ministry of Finance",
+   "from": "in-dept-economic-affairs"
+  },
+  {
+   "to": "in-pos-chairperson-sebi",
+   "type": "appoints",
+   "basis": "SEBI Act 1992 s.5 — Chairman and Whole Time Members appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-irdai",
+   "type": "administers",
+   "basis": "IRDAI is administratively attached to the Department of Financial Services, Ministry of Finance",
+   "from": "in-dept-financial-services"
+  },
+  {
+   "to": "in-pos-chairman-irdai",
+   "type": "appoints",
+   "basis": "IRDAI Act 1999 s.4 — Chairperson and Members appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-pfrda",
+   "type": "administers",
+   "basis": "PFRDA is administratively attached to the Department of Financial Services, Ministry of Finance",
+   "from": "in-dept-financial-services"
+  },
+  {
+   "to": "in-pos-chairperson-pfrda",
+   "type": "appoints",
+   "basis": "PFRDA Act 2013 s.4 — Chairperson and Whole-time Members appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-ifsca",
+   "type": "administers",
+   "basis": "IFSCA is administratively attached to the Department of Economic Affairs, Ministry of Finance",
+   "from": "in-dept-economic-affairs"
+  },
+  {
+   "to": "in-pos-chairperson-ifsca",
+   "type": "appoints",
+   "basis": "IFSCA Act 2019 s.4 — Chairperson appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-ibbi",
+   "type": "administers",
+   "basis": "IBBI is administratively attached to the Ministry of Corporate Affairs",
+   "from": "in-min-corporate-affairs"
+  },
+  {
+   "to": "in-pos-chairperson-ibbi",
+   "type": "appoints",
+   "basis": "Insolvency and Bankruptcy Code 2016 s.189 — Chairperson appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-trai",
+   "type": "administers",
+   "basis": "TRAI is administratively attached to the Department of Telecommunications, Ministry of Communications",
+   "from": "in-dept-telecommunications"
+  },
+  {
+   "to": "in-pos-chairman-trai",
+   "type": "appoints",
+   "basis": "TRAI Act 1997 s.4 — Chairperson and Members appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-cci",
+   "type": "administers",
+   "basis": "CCI is administratively attached to the Ministry of Corporate Affairs",
+   "from": "in-min-corporate-affairs"
+  },
+  {
+   "to": "in-pos-chairperson-cci",
+   "type": "appoints",
+   "basis": "Competition Act 2002 s.9 — Chairperson and Members appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-cerc",
+   "type": "administers",
+   "basis": "CERC is administratively attached to the Ministry of Power",
+   "from": "in-min-power"
+  },
+  {
+   "to": "in-pos-chairperson-cerc",
+   "type": "appoints",
+   "basis": "Electricity Act 2003 s.85 — Chairperson and Members appointed by the Central Government on recommendation of a Selection Committee",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-pngrb",
+   "type": "administers",
+   "basis": "PNGRB is administratively attached to the Ministry of Petroleum and Natural Gas",
+   "from": "in-min-petroleum-and-natural-gas"
+  },
+  {
+   "to": "in-pos-chairperson-pngrb",
+   "type": "appoints",
+   "basis": "PNGRB Act 2006 s.5 — Chairperson and Members appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-aera",
+   "type": "administers",
+   "basis": "AERA is administratively attached to the Ministry of Civil Aviation",
+   "from": "in-min-civil-aviation"
+  },
+  {
+   "to": "in-pos-chairperson-aera",
+   "type": "appoints",
+   "basis": "AERA Act 2008 s.5 — Chairperson and Members appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-nhrc",
+   "type": "administers",
+   "basis": "NHRC's secretariat receives administrative/budgetary support via the Ministry of Home Affairs, though the Commission is functionally independent",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "in-pos-chairperson-nhrc",
+   "type": "appoints",
+   "basis": "Protection of Human Rights Act 1993 s.4 — appointed by the President on recommendation of a Selection Committee (PM, Speaker Lok Sabha, Home Minister, Leaders of Opposition in LS & RS, Deputy Chairman RS)",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "in-ncw",
+   "type": "administers",
+   "basis": "NCW is administratively attached to the Ministry of Women and Child Development",
+   "from": "in-min-women-and-child-development"
+  },
+  {
+   "to": "in-pos-chairperson-ncw",
+   "type": "nominates",
+   "basis": "National Commission for Women Act 1990 s.3 — Chairperson nominated by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-ncpcr",
+   "type": "administers",
+   "basis": "NCPCR is administratively attached to the Ministry of Women and Child Development",
+   "from": "in-min-women-and-child-development"
+  },
+  {
+   "to": "in-pos-chairperson-ncpcr",
+   "type": "nominates",
+   "basis": "Commissions for Protection of Child Rights Act 2005 s.3 — Chairperson nominated by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-ncm",
+   "type": "administers",
+   "basis": "NCM is administratively attached to the Ministry of Minority Affairs",
+   "from": "in-min-minority-affairs"
+  },
+  {
+   "to": "in-pos-chairperson-ncm",
+   "type": "nominates",
+   "basis": "National Commission for Minorities Act 1992 s.3 — Chairperson nominated by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-cvc",
+   "type": "administers",
+   "basis": "CVC's secretariat is serviced via the Department of Personnel and Training for administrative purposes",
+   "from": "in-dept-personnel-and-training"
+  },
+  {
+   "to": "in-pos-central-vigilance-commissioner",
+   "type": "appoints",
+   "basis": "CVC Act 2003 s.4 — appointed by the President on recommendation of a committee (PM, Home Minister, Leader of Opposition in Lok Sabha)",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "in-cic",
+   "type": "administers",
+   "basis": "CIC is administratively attached to the Department of Personnel and Training",
+   "from": "in-dept-personnel-and-training"
+  },
+  {
+   "to": "in-pos-chief-information-commissioner",
+   "type": "appoints",
+   "basis": "RTI Act 2005 s.12 — appointed by the President on recommendation of a committee (PM, Leader of Opposition in Lok Sabha, a Union Cabinet Minister nominated by the PM)",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "in-lokpal",
+   "type": "administers",
+   "basis": "Lokpal's secretariat/administrative matters are handled via the Department of Personnel and Training",
+   "from": "in-dept-personnel-and-training"
+  },
+  {
+   "to": "in-pos-chairperson-lokpal",
+   "type": "appoints",
+   "basis": "Lokpal and Lokayuktas Act 2013 s.4 — appointed by the President on recommendation of a Selection Committee (PM, Speaker Lok Sabha, Leader of Opposition Lok Sabha, Chief Justice of India or nominee judge, an eminent jurist)",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "in-press-council",
+   "type": "administers",
+   "basis": "Press Council of India is administratively attached to the Ministry of Information and Broadcasting",
+   "from": "in-min-information-and-broadcasting"
+  },
+  {
+   "to": "in-pos-chairperson-press-council",
+   "type": "nominates",
+   "basis": "Press Council Act 1978 s.5 — Chairman nominated jointly by a committee of the Chairman of the Council of States, the Speaker of the House of the People and a person elected by the Council members; formal notification issued by the Central Government",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "in-nabard",
+   "type": "administers",
+   "basis": "NABARD is administratively attached to the Department of Financial Services, Ministry of Finance, which holds the bulk of GoI's equity",
+   "from": "in-dept-financial-services"
+  },
+  {
+   "to": "in-pos-chairman-nabard",
+   "type": "appoints",
+   "basis": "NABARD Act 1981 s.6(1)(a) — Chairman appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-nabard",
+   "type": "ex_officio",
+   "basis": "NABARD Act 1981 s.6(1)(c) — a Deputy Governor of RBI is a Director on the NABARD Board ex officio",
+   "from": "in-rbi"
+  },
+  {
+   "to": "in-sidbi",
+   "type": "administers",
+   "basis": "SIDBI is administratively attached to the Department of Financial Services, Ministry of Finance",
+   "from": "in-dept-financial-services"
+  },
+  {
+   "to": "in-pos-chairman-md-sidbi",
+   "type": "appoints",
+   "basis": "SIDBI Act 1989 s.6 — Chairman and Managing Director appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-exim-bank",
+   "type": "administers",
+   "basis": "EXIM Bank is wholly owned by the Government of India and administratively attached to the Department of Financial Services, Ministry of Finance",
+   "from": "in-dept-financial-services"
+  },
+  {
+   "to": "in-pos-managing-director-exim-bank",
+   "type": "appoints",
+   "basis": "Export-Import Bank of India Act 1981 s.7 — Managing Director appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  },
+  {
+   "to": "in-nhb",
+   "type": "administers",
+   "basis": "NHB is wholly owned by the Government of India (since RBI divested its stake in 2019) and administratively attached to the Department of Financial Services, Ministry of Finance",
+   "from": "in-dept-financial-services"
+  },
+  {
+   "to": "in-pos-managing-director-nhb",
+   "type": "appoints",
+   "basis": "National Housing Bank Act 1987 — Managing Director appointed by the Central Government",
+   "from": "in-union-council-of-ministers"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 61,
+  "corrections": [
+   "Removed an exact-duplicate relation (in-rbi --oversees--> in-npci was listed twice with slightly different 'basis' text); merged into a single relation with combined basis text.",
+   "RBI Governor (Sanjay Malhotra) and all 4 Deputy Governors (Swaminathan J, Poonam Gupta, Shirish Chandra Murmu, Rohit Jain) re-verified against RBI's own official 'Deputy Governors (present and former)' tenure table (website.rbi.org.in, fetched 2026-09-25) and the current Wikipedia revision of Reserve Bank of India: all four names and since-dates (26.06.2023, 02.05.2025, 09.10.2025, 04.05.2026) confirmed exact; Swaminathan J's reappointment for a fresh term from 26.06.2026 was already correctly disclosed in holder.notes so no factual change was needed.",
+   "IBBI Chairperson Jayanti Prasad's acting-since date (2026-09-13) verified word-for-word against IBBI's own press release PDF (No. IBBI/PR/2026/15, dated 21 Sept 2026): 'assigned additional charge ... with effect from 13th September, 2026' — confirmed accurate, not a fabricated or misread date.",
+   "PNGRB Chairperson (Anil Kumar Jain), 3 Members (Anjani Kumar Tiwari, A. Ramana Kumar, Jayanta Narayan Das) and the vacant Legal member seat cross-checked against the current Wikipedia revision of PNGRB and confirmed exact, including the vacancy.",
+   "CVC (Praveen Kumar Srivastava + 2 Vigilance Commissioners) and NPCI (Dilip Asbe MD/CEO, Ajay Kumar Choudhary Chairman) re-fetched fresh from Wikipedia (2026-09-25 session) since both bodies' own sites remain client-rendered SPAs unreachable to curl/WebFetch; holder names and CVC since-date confirmed exact — left at confidence:medium as already documented since only a secondary source could be reached.",
+   "SEBI (Tuhin Kanta Pandey, since 2025-03-01), NCM (Harjit Singh Grewal/S. Munawari Begum/Glenn E Souza Ticlo, all since 2026-07-21, re-confirmed live on ncm.nic.in's own homepage ticker), Press Council (Justice Ranjana Prakash Desai, since 2026-04-24, per Gazette Notification), CIC (Raj Kumar Goyal, since 2025-12-15), Lokpal (A. M. Khanwilkar + 3 judicial + 4 non-judicial members), CCI (Ravneet Kaur since 2023-05-23 + member Sweta Kakkad; confirmed CCI currently has only 1 filled Member seat via a live 'Filling Up 02 Posts of Member' vacancy notice, so the file's single-member coverage is correct, not incomplete), CERC, AERA, NHRC, NCW, NCPCR, IRDAI, PFRDA, NABARD, SIDBI, EXIM Bank, NHB and TRAI head-of-body and named-member positions all re-verified against official primary sources (cached fresh in research/india/scratch/regulators/*.html, fetched 2026-09-25) or, where a body's site is JS-rendered, against the current Wikipedia revision — no invented, wrong, or stale holder was found.",
+   "Known gap unresolved: RBI's Central Board of Directors (part-time/independent directors) is still not enumerated — a fresh attempt to fetch RBI's dedicated Central Board page redirected to the RBI homepage (JS-driven SPA), so this gap is left disclosed in notes rather than guessed at.",
+   "Schema/ID audit found no duplicate entity or position IDs, no dangling orgId/headPositionId references within the segment, and no invalid kind/sector/rank/appointmentMode/relation-type values — the file was already schema-clean apart from the duplicate relation above."
+  ]
+ }
+}

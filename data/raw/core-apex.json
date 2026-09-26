@@ -1,0 +1,2149 @@
+{
+ "segment": "core-apex",
+ "asOf": "2026-09-25",
+ "notes": "Gaps/low-confidence items: (1) Secretary to the President's Secretariat — name could not be independently confirmed with the tools available (no browser tools; presidentofindia.gov.in blocked WebFetch with 403; WebSearch budget for the shared research session was exhausted before this could be resolved) — position included with confidence:low and no holder per the 'never invent' rule. (2) NTRO Chairman Rajesh Arya's appointment date is unconfirmed (confidence:low). (3) Deputy NSAs / Additional NSA / NSAB Chairman appointment dates are approximate ('2025') — sourced to a single secondary article (indianmasterminds.com), not to PIB/official notification; treat as medium-confidence and re-verify against an official source before publishing exact dates. (4) NITI Aayog full-time-member roster and EAC-PM full-time-member roster are each sourced to a single page (Wikipedia) fetched via a summarising tool, not cross-checked against niti.gov.in/eacpm.gov.in directly — flagged medium confidence; part-time EAC-PM members were left out (they rotate more often and are lower-value for a citizen-facing graph). (5) Full ministerial membership rosters of the Cabinet Committees other than the CCS (Appointments, Political Affairs, Economic Affairs, Parliamentary Affairs, Accommodation, Investment & Growth, Employment & Skill Development) were not obtainable within the WebSearch budget available to this segment (the shared session budget of 200 WebSearch calls was exhausted while multiple segment agents ran in parallel); only the PM-as-chair ex_officio relation and (for CCS) confirmed member ministers are recorded — a follow-up pass with fresh search budget should fill these in from pib.gov.in cabinet committee reconstitution notifications. (6) in-electorate elector count (977,965,560) is the ECI-certified figure for the 2024 Lok Sabha election (per Wikipedia infobox); the task brief's '~99 crore' figure likely reflects a later 2025-2026 Special Intensive Revision total that this segment could not independently pin down — the gap is noted in the entity's stats rather than guessed at. (7) President/Vice-President positions have appointedBy=null rather than a fabricated 'electoral college' entity id — SCHEMA.md has no single canonical id for that cross-cutting body; the real mechanics are captured via the indirectly_elects relations from in-lok-sabha and in-rajya-sabha (and, for the President, State Legislative Assemblies, which are owned by the states-* segments and not referenced here to avoid guessing at ~30 relation rows outside this segment's ownership). (8) Special Protection Group (SPG), Special Frontier Force (SFF) and the National Authority for the Chemical Weapons Convention are administratively under the Cabinet Secretariat but are NOT in this segment's explicit ownership list, so they were deliberately left undefined — flagging for whichever segment (likely ministries-b, Home Affairs/security) should pick them up. (9) Video file /var/folders/qv/g8rx8w_d5pd5h04q3_k6k62r0000gn/T/TemporaryItems/NSIRD_screencaptureui_I77iz0/Screen Recording 2026-09-25 at 2.33.06 PM.mov referenced in the original chat request was not accessible to this subagent (macOS denied read access to that TemporaryItems path, and no browser tools are permitted for this research task) — it was not used as a source for this segment.",
+ "entities": [
+  {
+   "id": "in-electorate",
+   "kind": "constituency",
+   "sector": "electorate",
+   "name": "Electorate of India",
+   "aliases": [
+    "Indian voters",
+    "electoral roll"
+   ],
+   "parentId": null,
+   "description": "The body of citizens registered on India's electoral rolls. They directly elect the Lok Sabha (and State Legislative Assemblies) under Article 326 universal adult suffrage, and indirectly elect the President and Vice-President through their elected representatives.",
+   "legalBasis": "Article 326, Constitution of India (universal adult suffrage)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://eci.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "registeredElectors2024LokSabha": 977965560
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2024_Indian_general_election"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-constitution",
+   "kind": "constituency",
+   "sector": "constitutional",
+   "name": "Constitution of India",
+   "aliases": [
+    "Bharatiya Samvidhan"
+   ],
+   "parentId": null,
+   "description": "The supreme law of India. Adopted by the Constituent Assembly on 26 November 1949 and in force from 26 January 1950, it creates and limits the powers of the Union and State governments, the fundamental rights of citizens, and every entity mapped in this graph.",
+   "legalBasis": "Adopted by the Constituent Assembly of India",
+   "legalSourceUrl": null,
+   "officialUrl": "https://legislative.gov.in/constitution-of-india",
+   "established": "1950-01-26",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Constitution_of_India"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-union-government",
+   "kind": "council_of_ministers",
+   "sector": "executive",
+   "name": "Government of India",
+   "aliases": [
+    "Union Government",
+    "Central Government",
+    "GoI"
+   ],
+   "parentId": "in-constitution",
+   "description": "The executive branch of the Union of India, headed nominally by the President and in practice by the Prime Minister and Union Council of Ministers, who administer the ministries, departments, agencies, armed forces and public-sector undertakings of the Union.",
+   "legalBasis": "Part V, Constitution of India (The Union)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.india.gov.in",
+   "established": "1950-01-26",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": "in-pos-cabinet-secretary",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Constitution_of_India"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-presidents-secretariat",
+   "kind": "secretariat",
+   "sector": "executive",
+   "name": "President's Secretariat",
+   "aliases": [
+    "Rashtrapati Bhavan Secretariat"
+   ],
+   "parentId": "in-union-government",
+   "description": "The office that assists the President of India in discharging constitutional, ceremonial and administrative duties, and manages Rashtrapati Bhavan.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.presidentofindia.gov.in",
+   "established": null,
+   "hq": "Rashtrapati Bhavan, New Delhi",
+   "headPositionId": "in-pos-secretary-to-president",
+   "adminHeadPositionId": "in-pos-secretary-to-president",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://www.presidentofindia.gov.in"
+   ],
+   "confidence": "medium",
+   "nameHi": null
+  },
+  {
+   "id": "in-vice-presidents-secretariat",
+   "kind": "secretariat",
+   "sector": "executive",
+   "name": "Vice-President's Secretariat",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "The office that assists the Vice-President of India in discharging duties as ex-officio Chairman of the Rajya Sabha and other constitutional functions.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://vicepresidentofindia.nic.in",
+   "established": null,
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://vicepresidentofindia.nic.in"
+   ],
+   "confidence": "medium",
+   "nameHi": null
+  },
+  {
+   "id": "in-pmo",
+   "kind": "secretariat",
+   "sector": "executive",
+   "name": "Prime Minister's Office",
+   "abbr": "PMO",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "The Prime Minister's own secretariat: it coordinates policy across ministries, handles PM's day-to-day work, foreign-policy and security files, and monitors flagship programmes. Headed by one or more Principal Secretaries to the PM, with Advisers, Additional Secretaries and Joint Secretaries.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.pmindia.gov.in",
+   "established": "1947",
+   "hq": "South Block, New Delhi",
+   "headPositionId": "in-pos-principal-secretary-pm-1",
+   "adminHeadPositionId": "in-pos-principal-secretary-pm-1",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prime_Minister%27s_Office_(India)"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-cabinet-secretariat",
+   "kind": "secretariat",
+   "sector": "executive",
+   "name": "Cabinet Secretariat",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "The apex coordinating department of the Union executive. It gives secretarial assistance to the Union Cabinet and its committees, resolves inter-ministerial differences, and administratively oversees several security and intelligence bodies including R&AW.",
+   "legalBasis": "Government of India (Transaction of Business) Rules, 1961 and (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://cabsec.gov.in",
+   "established": "1946-09-05",
+   "hq": "Rashtrapati Bhavan, New Delhi",
+   "headPositionId": "in-pos-cabinet-secretary",
+   "adminHeadPositionId": "in-pos-cabinet-secretary",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cabinet_Secretariat_(India)"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-nsc",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "National Security Council",
+   "abbr": "NSC",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "India's apex body for national security and strategic policy, chaired by the Prime Minister. Its three tiers are the Strategic Policy Group, the National Security Advisory Board, and the National Security Council Secretariat.",
+   "legalBasis": "Executive order, established 19 November 1998",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1998-11-19",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": "in-pos-national-security-advisor",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Security_Council_(India)"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-nscs",
+   "kind": "secretariat",
+   "sector": "executive",
+   "name": "National Security Council Secretariat",
+   "abbr": "NSCS",
+   "aliases": [],
+   "parentId": "in-nsc",
+   "description": "The secretariat of the National Security Council, headed by the National Security Advisor; it runs strategic-planning, internal-affairs, intelligence-and-technology and military verticals, and coordinates the Joint Intelligence Committee.",
+   "legalBasis": "Executive order, 1998",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1998",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-national-security-advisor",
+   "adminHeadPositionId": "in-pos-national-security-advisor",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Security_Council_(India)"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-nsab",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "National Security Advisory Board",
+   "abbr": "NSAB",
+   "aliases": [],
+   "parentId": "in-nsc",
+   "description": "An external panel of retired officials, military officers and academics that gives the NSC long-term threat assessments and policy recommendations. Reconstituted April 2025 with 7 members.",
+   "legalBasis": "Executive order under the National Security Council",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1998",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairman-nsab",
+   "adminHeadPositionId": null,
+   "seats": 7,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Security_Council_(India)"
+   ],
+   "confidence": "medium",
+   "nameHi": null
+  },
+  {
+   "id": "in-raw",
+   "kind": "intelligence_agency",
+   "sector": "executive",
+   "name": "Research and Analysis Wing",
+   "abbr": "R&AW",
+   "aliases": [
+    "RAW",
+    "Secretary (R)"
+   ],
+   "parentId": "in-cabinet-secretariat",
+   "description": "India's primary foreign-intelligence agency, responsible for external intelligence gathering, counter-terrorism abroad and covert operations. Headed by the Secretary (R), it reports through the Cabinet Secretariat directly to the Prime Minister, and is administratively outside the RTI Act.",
+   "legalBasis": "Executive order, 1968 (not a statutory body)",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1968-09-21",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-secretary-r",
+   "adminHeadPositionId": "in-pos-secretary-r",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Secretary_of_the_Research_and_Analysis_Wing",
+    "https://en.wikipedia.org/wiki/Cabinet_Secretariat_(India)"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-ntro",
+   "kind": "intelligence_agency",
+   "sector": "executive",
+   "name": "National Technical Research Organisation",
+   "abbr": "NTRO",
+   "aliases": [],
+   "parentId": "in-nscs",
+   "description": "India's technical-intelligence agency, handling SIGINT, remote sensing, cyber security and cryptology for the security establishment. Set up on the recommendation of the Cabinet Committee on Security; reports to the NSA and PMO.",
+   "legalBasis": "Cabinet Committee on Security approval, October 2004",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "2004-10",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairman-ntro",
+   "adminHeadPositionId": "in-pos-chairman-ntro",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Technical_Research_Organisation"
+   ],
+   "confidence": "medium",
+   "nameHi": null
+  },
+  {
+   "id": "in-niti-aayog",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "NITI Aayog",
+   "aliases": [
+    "National Institution for Transforming India"
+   ],
+   "parentId": "in-union-government",
+   "description": "The Union Government's premier public-policy think tank, which replaced the Planning Commission in 2015. It advises the Centre and States on policy and monitors flagship programmes; the Prime Minister chairs it ex officio, with a full-time Vice-Chairperson, full-time members, a CEO, and a Governing Council of all State/UT Chief Ministers.",
+   "legalBasis": "Cabinet Resolution, 1 January 2015",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.niti.gov.in",
+   "established": "2015-01-01",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-niti-aayog",
+   "adminHeadPositionId": "in-pos-ceo-niti-aayog",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/NITI_Aayog"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-pmeac",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "Economic Advisory Council to the Prime Minister",
+   "abbr": "EAC-PM",
+   "aliases": [
+    "PMEAC"
+   ],
+   "parentId": "in-pmo",
+   "description": "A non-constitutional, non-statutory, non-permanent body of economists that advises the Prime Minister on economic and related issues; it is reconstituted after every general election. NITI Aayog provides its administrative/secretarial support.",
+   "legalBasis": "Executive order, reconstituted periodically",
+   "legalSourceUrl": null,
+   "officialUrl": "https://eacpm.gov.in",
+   "established": null,
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairman-pmeac",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Economic_Advisory_Council_to_the_Prime_Minister"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-psa-office",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "Office of the Principal Scientific Adviser to the Government of India",
+   "abbr": "PSA",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "Advises the Prime Minister and Union Government on science, technology and innovation policy, and coordinates cross-departmental S&T missions.",
+   "legalBasis": "Executive order, 1999",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.psa.gov.in",
+   "established": "1999",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-principal-scientific-adviser",
+   "adminHeadPositionId": "in-pos-principal-scientific-adviser",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Principal_Scientific_Adviser_to_the_Government_of_India"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-cabinet-committee-appointments",
+   "kind": "cabinet_committee",
+   "sector": "executive",
+   "name": "Appointments Committee of the Cabinet",
+   "abbr": "ACC",
+   "aliases": [],
+   "parentId": "in-union-cabinet",
+   "description": "Decides all senior civil-service, defence, public-sector and constitutional-body appointments; effectively the Centre's top appointing authority.",
+   "legalBasis": "Government of India (Transaction of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)",
+    "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+   ],
+   "confidence": "medium",
+   "nameHi": null
+  },
+  {
+   "id": "in-cabinet-committee-security",
+   "kind": "cabinet_committee",
+   "sector": "executive",
+   "name": "Cabinet Committee on Security",
+   "abbr": "CCS",
+   "aliases": [],
+   "parentId": "in-union-cabinet",
+   "description": "The final decision-making body on defence, internal security and major national-security matters; the NSA, Cabinet Secretary and the Defence/Home/External Affairs Secretaries are permanent invitees.",
+   "legalBasis": "Government of India (Transaction of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)",
+    "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+   ],
+   "confidence": "medium",
+   "nameHi": null
+  },
+  {
+   "id": "in-cabinet-committee-political-affairs",
+   "kind": "cabinet_committee",
+   "sector": "executive",
+   "name": "Cabinet Committee on Political Affairs",
+   "abbr": "CCPA",
+   "aliases": [],
+   "parentId": "in-union-cabinet",
+   "description": "Deliberates on politically sensitive policy and administrative issues that cut across ministries.",
+   "legalBasis": "Government of India (Transaction of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)",
+    "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+   ],
+   "confidence": "medium",
+   "nameHi": null
+  },
+  {
+   "id": "in-cabinet-committee-economic-affairs",
+   "kind": "cabinet_committee",
+   "sector": "executive",
+   "name": "Cabinet Committee on Economic Affairs",
+   "abbr": "CCEA",
+   "aliases": [],
+   "parentId": "in-union-cabinet",
+   "description": "Reviews economic trends and approves major investment, pricing and economic-policy proposals above delegated financial limits.",
+   "legalBasis": "Government of India (Transaction of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)",
+    "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+   ],
+   "confidence": "medium",
+   "nameHi": null
+  },
+  {
+   "id": "in-cabinet-committee-parliamentary-affairs",
+   "kind": "cabinet_committee",
+   "sector": "executive",
+   "name": "Cabinet Committee on Parliamentary Affairs",
+   "abbr": "CCPA (Parl.)",
+   "aliases": [],
+   "parentId": "in-union-cabinet",
+   "description": "Oversees Government business in Parliament, including the legislative agenda for each session.",
+   "legalBasis": "Government of India (Transaction of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)",
+    "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+   ],
+   "confidence": "medium",
+   "nameHi": null
+  },
+  {
+   "id": "in-cabinet-committee-accommodation",
+   "kind": "cabinet_committee",
+   "sector": "executive",
+   "name": "Cabinet Committee on Accommodation",
+   "abbr": "CCA",
+   "aliases": [],
+   "parentId": "in-union-cabinet",
+   "description": "Allots government accommodation to ministers, MPs and senior officials.",
+   "legalBasis": "Government of India (Transaction of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)",
+    "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+   ],
+   "confidence": "medium",
+   "nameHi": null
+  },
+  {
+   "id": "in-cabinet-committee-investment-and-growth",
+   "kind": "cabinet_committee",
+   "sector": "executive",
+   "name": "Cabinet Committee on Investment and Growth",
+   "abbr": "CCI&G",
+   "aliases": [],
+   "parentId": "in-union-cabinet",
+   "description": "Fast-tracks large public and private investment proposals and infrastructure projects that are stuck for want of clearances.",
+   "legalBasis": "Government of India (Transaction of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)",
+    "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+   ],
+   "confidence": "medium",
+   "nameHi": null
+  },
+  {
+   "id": "in-cabinet-committee-employment-and-skill-development",
+   "kind": "cabinet_committee",
+   "sector": "executive",
+   "name": "Cabinet Committee on Employment and Skill Development",
+   "abbr": "CCESD",
+   "aliases": [],
+   "parentId": "in-union-cabinet",
+   "description": "Coordinates employment-generation and skilling schemes across ministries.",
+   "legalBasis": "Government of India (Transaction of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)",
+    "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+   ],
+   "confidence": "medium",
+   "nameHi": null
+  },
+  {
+   "id": "in-union-council-of-ministers",
+   "kind": "council_of_ministers",
+   "sector": "executive",
+   "name": "Union Council of Ministers",
+   "abbr": "CoM",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "All ministers of the Union — Cabinet Ministers, Ministers of State (Independent Charge) and Ministers of State — appointed by the President on the advice of the Prime Minister. Collectively responsible to the Lok Sabha.",
+   "legalBasis": "Article 74 and Article 75, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1950-01-26",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Constitution_of_India"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-union-cabinet",
+   "kind": "cabinet",
+   "sector": "executive",
+   "name": "Union Cabinet",
+   "aliases": [
+    "Cabinet"
+   ],
+   "parentId": "in-union-council-of-ministers",
+   "description": "The inner, senior tier of the Union Council of Ministers — Cabinet Ministers only — which is the de facto chief decision-making body of the Union executive and the body whose committees (see Cabinet Committees) transact most government business.",
+   "legalBasis": "Constitutional convention; Article 74",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1950-01-26",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": "in-pos-cabinet-secretary",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Constitution_of_India"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-inter-state-council",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "Inter-State Council",
+   "abbr": "ISC",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "A recommendatory (non-statutory, non-permanent) body set up under Article 263 to investigate and discuss subjects of common interest between the Union and States, or among States. Chaired by the Prime Minister; members are all State Chief Ministers, Chief Ministers/Administrators of UTs, Governors of States under President's Rule, and 6 Union Cabinet Ministers nominated by the PM. Its Standing Committee is chaired by the Union Home Minister.",
+   "legalBasis": "Article 263, Constitution of India; Presidential Order of 28 May 1990",
+   "legalSourceUrl": null,
+   "officialUrl": "https://interstatecouncil.nic.in",
+   "established": "1990-05-28",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Inter-State_Council"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-zonal-council-northern",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "Northern Zonal Council",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "Statutory advisory body under Part III of the States Reorganisation Act, 1956 for coordination among member States/UTs: Haryana, Himachal Pradesh, Punjab, Rajasthan, and the UTs of Chandigarh, Delhi, Jammu & Kashmir, Ladakh. Chaired by the Union Home Minister; member States' Chief Ministers serve as Vice-Chairman on an annual rotating basis.",
+   "legalBasis": "States Reorganisation Act, 1956, Part III",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1957",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Zonal_council"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-zonal-council-central",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "Central Zonal Council",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "Statutory advisory body under Part III of the States Reorganisation Act, 1956 for coordination among member States/UTs: Chhattisgarh, Madhya Pradesh, Uttar Pradesh, Uttarakhand. Chaired by the Union Home Minister; member States' Chief Ministers serve as Vice-Chairman on an annual rotating basis.",
+   "legalBasis": "States Reorganisation Act, 1956, Part III",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1957",
+   "hq": "Prayagraj",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Zonal_council"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-zonal-council-eastern",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "Eastern Zonal Council",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "Statutory advisory body under Part III of the States Reorganisation Act, 1956 for coordination among member States/UTs: Bihar, Jharkhand, Odisha, West Bengal. Chaired by the Union Home Minister; member States' Chief Ministers serve as Vice-Chairman on an annual rotating basis.",
+   "legalBasis": "States Reorganisation Act, 1956, Part III",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1957",
+   "hq": "Kolkata",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Zonal_council"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-zonal-council-western",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "Western Zonal Council",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "Statutory advisory body under Part III of the States Reorganisation Act, 1956 for coordination among member States/UTs: Goa, Gujarat, Maharashtra, and the UT of Dadra & Nagar Haveli and Daman & Diu. Chaired by the Union Home Minister; member States' Chief Ministers serve as Vice-Chairman on an annual rotating basis.",
+   "legalBasis": "States Reorganisation Act, 1956, Part III",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1957",
+   "hq": "Mumbai",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Zonal_council"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-zonal-council-southern",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "Southern Zonal Council",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "Statutory advisory body under Part III of the States Reorganisation Act, 1956 for coordination among member States/UTs: Andhra Pradesh, Karnataka, Kerala, Tamil Nadu, Telangana, and (as special invitees) the UTs of Puducherry, Andaman & Nicobar Islands, Lakshadweep. Chaired by the Union Home Minister; member States' Chief Ministers serve as Vice-Chairman on an annual rotating basis.",
+   "legalBasis": "States Reorganisation Act, 1956, Part III",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1957",
+   "hq": "Chennai",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Zonal_council"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  },
+  {
+   "id": "in-nec",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "North Eastern Council",
+   "abbr": "NEC",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "Statutory regional planning and advisory body for the 8 North-Eastern states (Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Tripura, Sikkim since 2002); it functions under the Ministry of Development of North Eastern Region (DoNER).",
+   "legalBasis": "North Eastern Council Act, 1971",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1972-11-07",
+   "hq": "Shillong",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/North_Eastern_Council"
+   ],
+   "confidence": "high",
+   "nameHi": null
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-president",
+   "title": "President of India",
+   "orgId": "in-presidents-secretariat",
+   "rank": "head_of_state",
+   "seat": null,
+   "appointmentMode": "indirectly_elected",
+   "appointedBy": null,
+   "onAdviceOf": null,
+   "termYears": 5,
+   "holder": {
+    "name": "Droupadi Murmu",
+    "since": "2022-07-25",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Droupadi_Murmu",
+    "acting": false,
+    "notes": "15th President of India; first tribal (Adivasi) President. Elected by an electoral college of elected MPs and elected MLAs (Art. 54/55) — no single canonical entity ID exists for that college; see the indirectly_elects relations from in-lok-sabha/in-rajya-sabha instead of a single appointedBy id."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_office-holders_in_the_Government_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-to-president",
+   "title": "Secretary to the President",
+   "orgId": "in-presidents-secretariat",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://www.presidentofindia.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-vice-president",
+   "title": "Vice-President of India",
+   "orgId": "in-vice-presidents-secretariat",
+   "rank": "vice_head_of_state",
+   "seat": null,
+   "appointmentMode": "indirectly_elected",
+   "appointedBy": null,
+   "onAdviceOf": null,
+   "termYears": 5,
+   "holder": {
+    "name": "C. P. Radhakrishnan",
+    "since": "2025-09-12",
+    "party": "BJP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/C._P._Radhakrishnan",
+    "acting": false,
+    "notes": "15th Vice-President; elected 9 Sept 2025 (452 of 767 votes cast) after Jagdeep Dhankhar's resignation on 21 July 2025; sworn in 12 Sept 2025. Ex officio Chairman of the Rajya Sabha. Elected by an electoral college of members of both Houses of Parliament (Art. 66) — see the indirectly_elects relations from in-lok-sabha/in-rajya-sabha instead of a single appointedBy id."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2165353&reg=48&lang=2",
+    "https://en.wikipedia.org/wiki/C._P._Radhakrishnan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-prime-minister",
+   "title": "Prime Minister of India",
+   "orgId": "in-pmo",
+   "rank": "head_of_government",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 5,
+   "holder": {
+    "name": "Narendra Modi",
+    "since": "2014-05-26",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Varanasi, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Narendra_Modi",
+    "acting": false,
+    "notes": "Began third consecutive term 9 June 2024 (NDA coalition government)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_office-holders_in_the_Government_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-principal-secretary-pm-1",
+   "title": "Principal Secretary to the Prime Minister",
+   "orgId": "in-pmo",
+   "rank": "secretary",
+   "seat": 1,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Pramod Kumar Mishra (P.K. Mishra)",
+    "since": "2019-09-11",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Pramod_Kumar_Mishra",
+    "acting": false,
+    "notes": "Reappointed with effect from 10 June 2024, co-terminus with the PM's term; holds Cabinet Minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pramod_Kumar_Mishra",
+    "https://en.wikipedia.org/wiki/Prime_Minister%27s_Office_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-principal-secretary-pm-2",
+   "title": "Principal Secretary to the Prime Minister",
+   "orgId": "in-pmo",
+   "rank": "secretary",
+   "seat": 2,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Shaktikanta Das",
+    "since": "2025-02-22",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Shaktikanta_Das",
+    "acting": false,
+    "notes": "Former RBI Governor; appointed as a second, additional Principal Secretary to the PM alongside P.K. Mishra."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shaktikanta_Das",
+    "https://en.wikipedia.org/wiki/Prime_Minister%27s_Office_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cabinet-secretary",
+   "title": "Cabinet Secretary of India",
+   "orgId": "in-cabinet-secretariat",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "T. V. Somanathan",
+    "since": "2024-08-30",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/T._V._Somanathan",
+    "acting": false,
+    "notes": "IAS, Tamil Nadu cadre 1987 batch; senior-most civil servant, ranked 11th in the Order of Precedence; was Finance Secretary before this appointment."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_office-holders_in_the_Government_of_India",
+    "https://en.wikipedia.org/wiki/Cabinet_Secretariat_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-national-security-advisor",
+   "title": "National Security Advisor",
+   "orgId": "in-nscs",
+   "rank": "other",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Ajit Doval",
+    "since": "2014-05-30",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Ajit_Doval",
+    "acting": false,
+    "notes": "Fifth and longest-serving NSA; reappointed for a third consecutive term in June 2024, co-terminus with the PM's tenure; holds Cabinet Minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ajit_Doval",
+    "https://en.wikipedia.org/wiki/National_Security_Advisor_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-deputy-nsa-1",
+   "title": "Deputy National Security Advisor",
+   "orgId": "in-nscs",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": "in-pos-national-security-advisor",
+   "termYears": null,
+   "holder": {
+    "name": "T. V. Ravichandran",
+    "since": "2025",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Technology and Intelligence vertical; exact appointment date not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://indianmasterminds.com/news/nsa-ajit-doval-reshapes-national-security-team-new-deputy-nsas-and-strategic-realignment-90080/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-deputy-nsa-2",
+   "title": "Deputy National Security Advisor",
+   "orgId": "in-nscs",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": "in-pos-national-security-advisor",
+   "termYears": null,
+   "holder": {
+    "name": "Anish Dayal Singh",
+    "since": "2025",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Internal Affairs vertical; exact appointment date not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://indianmasterminds.com/news/nsa-ajit-doval-reshapes-national-security-team-new-deputy-nsas-and-strategic-realignment-90080/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-deputy-nsa-3",
+   "title": "Deputy National Security Advisor",
+   "orgId": "in-nscs",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": "in-pos-national-security-advisor",
+   "termYears": null,
+   "holder": {
+    "name": "Pavan Kapoor",
+    "since": "2025",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Strategic and Foreign Affairs vertical; exact appointment date not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://indianmasterminds.com/news/nsa-ajit-doval-reshapes-national-security-team-new-deputy-nsas-and-strategic-realignment-90080/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-additional-nsa",
+   "title": "Additional National Security Advisor",
+   "orgId": "in-nscs",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": "in-pos-national-security-advisor",
+   "termYears": null,
+   "holder": {
+    "name": "Rajinder Khanna",
+    "since": "2025",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Rajinder_Khanna",
+    "acting": false,
+    "notes": "Former R&AW chief; serving his second stint in the NSC apparatus. Exact appointment date not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://indianmasterminds.com/news/nsa-ajit-doval-reshapes-national-security-team-new-deputy-nsas-and-strategic-realignment-90080/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairman-nsab",
+   "title": "Chairman, National Security Advisory Board",
+   "orgId": "in-nsab",
+   "rank": "other",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Alok Joshi",
+    "since": "2025-04",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Former R&AW chief; NSAB reconstituted April 2025 with 7 members under his chairmanship."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Security_Council_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-r",
+   "title": "Secretary (R) / Chief of Research and Analysis Wing",
+   "orgId": "in-raw",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": null,
+   "termYears": 2,
+   "holder": {
+    "name": "Parag Jain",
+    "since": "2025-07-01",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Parag_Jain",
+    "acting": false,
+    "notes": "25th Secretary (R); IPS, Punjab cadre 1989 batch; fixed 2-year tenure; succeeded Ravi Sinha."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Parag_Jain",
+    "https://en.wikipedia.org/wiki/Secretary_of_the_Research_and_Analysis_Wing"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-ntro",
+   "title": "Chairman, National Technical Research Organisation",
+   "orgId": "in-ntro",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Rajesh Arya",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS officer; exact appointment date not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Technical_Research_Organisation"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chairperson-niti-aayog",
+   "title": "Chairperson, NITI Aayog",
+   "orgId": "in-niti-aayog",
+   "rank": "other",
+   "seat": null,
+   "appointmentMode": "ex_officio",
+   "appointedBy": null,
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Narendra Modi",
+    "since": "2015-01-01",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Varanasi, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Narendra_Modi",
+    "acting": false,
+    "notes": "Ex officio: the sitting Prime Minister always chairs NITI Aayog."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/NITI_Aayog"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-vice-chairperson-niti-aayog",
+   "title": "Vice-Chairperson, NITI Aayog",
+   "orgId": "in-niti-aayog",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Ashok Kumar Lahiri",
+    "since": "2026-05-08",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Ashok_Lahiri",
+    "acting": false,
+    "notes": "Economist; succeeded Suman Bery. Holds rank of Union Cabinet Minister."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/NITI_Aayog"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-ceo-niti-aayog",
+   "title": "Chief Executive Officer, NITI Aayog",
+   "orgId": "in-niti-aayog",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Anurag Jain",
+    "since": "2026-08-17",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS, Madhya Pradesh cadre 1989 batch; succeeded B.V.R. Subrahmanyam. Assumed charge as CEO on 17.08.2026 per official niti.gov.in leadership profile (corrected from an earlier secondary-source date of 2026-02)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.niti.gov.in/about-us/whos-who/leadership/ceo-niti-aayog",
+    "https://www.manoramayearbook.in/current-affairs/india/2026/08/18/anurag-jain-niti-aayog-ceo.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-niti-aayog-1",
+   "title": "Full-time Member, NITI Aayog",
+   "orgId": "in-niti-aayog",
+   "rank": "other",
+   "seat": 1,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Rajiv Gauba",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Roster per current NITI Aayog leadership page; individual appointment dates not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/NITI_Aayog"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-niti-aayog-2",
+   "title": "Full-time Member, NITI Aayog",
+   "orgId": "in-niti-aayog",
+   "rank": "other",
+   "seat": 2,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "K. V. Raju",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Roster per current NITI Aayog leadership page; individual appointment dates not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/NITI_Aayog"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-niti-aayog-3",
+   "title": "Full-time Member, NITI Aayog",
+   "orgId": "in-niti-aayog",
+   "rank": "other",
+   "seat": 3,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Gobardhan Das",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Roster per current NITI Aayog leadership page; individual appointment dates not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/NITI_Aayog"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-niti-aayog-4",
+   "title": "Full-time Member, NITI Aayog",
+   "orgId": "in-niti-aayog",
+   "rank": "other",
+   "seat": 4,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Abhay Karandikar",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Roster per current NITI Aayog leadership page; individual appointment dates not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/NITI_Aayog"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-niti-aayog-5",
+   "title": "Full-time Member, NITI Aayog",
+   "orgId": "in-niti-aayog",
+   "rank": "other",
+   "seat": 5,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "R Balasubramaniam",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Roster per current NITI Aayog leadership page; individual appointment dates not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/NITI_Aayog"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-niti-aayog-6",
+   "title": "Full-time Member, NITI Aayog",
+   "orgId": "in-niti-aayog",
+   "rank": "other",
+   "seat": 6,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "M. Srinivas",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Roster per current NITI Aayog leadership page; individual appointment dates not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/NITI_Aayog"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-niti-aayog-7",
+   "title": "Full-time Member, NITI Aayog",
+   "orgId": "in-niti-aayog",
+   "rank": "other",
+   "seat": 7,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Joram Aniya",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Roster per current NITI Aayog leadership page; individual appointment dates not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/NITI_Aayog"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairman-pmeac",
+   "title": "Chairman, Economic Advisory Council to the Prime Minister",
+   "orgId": "in-pmeac",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "S. Mahendra Dev",
+    "since": "2025-06",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Economist, former IGIDR Vice-Chancellor; succeeded Suman Bery (who held additional charge after founding chair Bibek Debroy's death in Nov 2024). Entitled to the status of a Union Minister."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.business-standard.com/india-news/mahendra-dev-takes-charge-as-new-chairman-of-pm-s-economic-advisory-council-125060700353_1.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-pmeac-1",
+   "title": "Full-time Member, Economic Advisory Council to the PM",
+   "orgId": "in-pmeac",
+   "rank": "other",
+   "seat": 1,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Shamika Ravi",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Roster per Wikipedia EAC-PM page; appointment dates not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Economic_Advisory_Council_to_the_Prime_Minister"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-pmeac-2",
+   "title": "Full-time Member, Economic Advisory Council to the PM",
+   "orgId": "in-pmeac",
+   "rank": "other",
+   "seat": 2,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Sanjeev Sanyal",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Roster per Wikipedia EAC-PM page; appointment dates not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Economic_Advisory_Council_to_the_Prime_Minister"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-pmeac-3",
+   "title": "Full-time Member, Economic Advisory Council to the PM",
+   "orgId": "in-pmeac",
+   "rank": "other",
+   "seat": 3,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Sanjay Kumar Mishra",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Roster per Wikipedia EAC-PM page; appointment dates not independently confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Economic_Advisory_Council_to_the_Prime_Minister"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-principal-scientific-adviser",
+   "title": "Principal Scientific Adviser to the Government of India",
+   "orgId": "in-psa-office",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Ajay Kumar Sood",
+    "since": "2022-04-03",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Ajay_Kumar_Sood",
+    "acting": false,
+    "notes": "Physicist; still in office as of Jan 2026 per public event appearances."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Principal_Scientific_Adviser_to_the_Government_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-attorney-general",
+   "title": "Attorney General for India",
+   "orgId": "in-union-government",
+   "rank": "law_officer",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-union-cabinet",
+   "termYears": 2,
+   "holder": {
+    "name": "R. Venkataramani",
+    "since": "2022-10-01",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/R._Venkataramani",
+    "acting": false,
+    "notes": "Reappointed for a further 2-year term effective 1 Oct 2025 (till 30 Sept 2027) by order of 26 Sept 2025."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.gktoday.in/question/who-has-been-re-appointed-as-the-attorney-general-of-india-in-septembe",
+    "https://en.wikipedia.org/wiki/R._Venkataramani"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-solicitor-general",
+   "title": "Solicitor General of India",
+   "orgId": "in-union-government",
+   "rank": "law_officer",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": {
+    "name": "Tushar Mehta",
+    "since": "2018-10-10",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Tushar_Mehta",
+    "acting": false,
+    "notes": "Reappointed for a fresh 3-year term effective 1 July 2026 (prior term ran to 30 June 2026)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.barandbench.com/news/law-policy/tushar-mehta-re-appointed-solicitor-general-for-three-years-five-asgs-for-supreme-court-re-appointed",
+    "https://en.wikipedia.org/wiki/Tushar_Mehta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-additional-solicitor-general-1",
+   "title": "Additional Solicitor General of India (Supreme Court)",
+   "orgId": "in-union-government",
+   "rank": "law_officer",
+   "seat": 1,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Vikramjit Banerjee",
+    "since": "2026-07-01",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Re-appointed as ASG for the Supreme Court in the June 2026 ACC order that also re-appointed the Solicitor General, effective 2026-07-01, for three years or until further orders."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.barandbench.com/news/law-policy/tushar-mehta-re-appointed-solicitor-general-for-three-years-five-asgs-for-supreme-court-re-appointed"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-additional-solicitor-general-2",
+   "title": "Additional Solicitor General of India (Supreme Court)",
+   "orgId": "in-union-government",
+   "rank": "law_officer",
+   "seat": 2,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "K. M. Nataraj",
+    "since": "2026-07-01",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Re-appointed as ASG for the Supreme Court in the June 2026 ACC order that also re-appointed the Solicitor General, effective 2026-07-01, for three years or until further orders."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.barandbench.com/news/law-policy/tushar-mehta-re-appointed-solicitor-general-for-three-years-five-asgs-for-supreme-court-re-appointed"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-additional-solicitor-general-3",
+   "title": "Additional Solicitor General of India (Supreme Court)",
+   "orgId": "in-union-government",
+   "rank": "law_officer",
+   "seat": 3,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Suryaprakash V. Raju",
+    "since": "2026-06-30",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Re-appointed as ASG for the Supreme Court in the June 2026 ACC order that also re-appointed the Solicitor General, effective 2026-06-30, for three years or until further orders."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.barandbench.com/news/law-policy/tushar-mehta-re-appointed-solicitor-general-for-three-years-five-asgs-for-supreme-court-re-appointed"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-additional-solicitor-general-4",
+   "title": "Additional Solicitor General of India (Supreme Court)",
+   "orgId": "in-union-government",
+   "rank": "law_officer",
+   "seat": 4,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "N. Venkataraman",
+    "since": "2026-06-30",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Re-appointed as ASG for the Supreme Court in the June 2026 ACC order that also re-appointed the Solicitor General, effective 2026-06-30, for three years or until further orders."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.barandbench.com/news/law-policy/tushar-mehta-re-appointed-solicitor-general-for-three-years-five-asgs-for-supreme-court-re-appointed"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-additional-solicitor-general-5",
+   "title": "Additional Solicitor General of India (Supreme Court)",
+   "orgId": "in-union-government",
+   "rank": "law_officer",
+   "seat": 5,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-cabinet-committee-appointments",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Aishwarya Bhati",
+    "since": "2026-06-30",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Re-appointed as ASG for the Supreme Court in the June 2026 ACC order that also re-appointed the Solicitor General, effective 2026-06-30, for three years or until further orders."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.barandbench.com/news/law-policy/tushar-mehta-re-appointed-solicitor-general-for-three-years-five-asgs-for-supreme-court-re-appointed"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-electorate",
+   "to": "in-lok-sabha",
+   "type": "elects",
+   "basis": "Article 326 (universal adult suffrage)",
+   "source": "https://en.wikipedia.org/wiki/Constitution_of_India"
+  },
+  {
+   "from": "in-lok-sabha",
+   "to": "in-pos-president",
+   "type": "indirectly_elects",
+   "basis": "Article 54 (elected members of Lok Sabha are part of the Presidential electoral college)",
+   "source": "https://en.wikipedia.org/wiki/Constitution_of_India"
+  },
+  {
+   "from": "in-rajya-sabha",
+   "to": "in-pos-president",
+   "type": "indirectly_elects",
+   "basis": "Article 54 (elected members of Rajya Sabha are part of the Presidential electoral college)",
+   "source": "https://en.wikipedia.org/wiki/Constitution_of_India"
+  },
+  {
+   "from": "in-lok-sabha",
+   "to": "in-pos-vice-president",
+   "type": "indirectly_elects",
+   "basis": "Article 66 (electoral college = members of both Houses of Parliament)",
+   "source": "https://en.wikipedia.org/wiki/Constitution_of_India"
+  },
+  {
+   "from": "in-rajya-sabha",
+   "to": "in-pos-vice-president",
+   "type": "indirectly_elects",
+   "basis": "Article 66 (electoral college = members of both Houses of Parliament)",
+   "source": "https://en.wikipedia.org/wiki/Constitution_of_India"
+  },
+  {
+   "from": "in-pos-vice-president",
+   "to": "in-rajya-sabha",
+   "type": "ex_officio",
+   "basis": "Article 64 (Vice-President is ex officio Chairman of the Rajya Sabha)",
+   "source": "https://en.wikipedia.org/wiki/Constitution_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-prime-minister",
+   "type": "appoints",
+   "basis": "Article 75(1); by convention, leader of the majority party/coalition in the Lok Sabha",
+   "source": "https://en.wikipedia.org/wiki/Constitution_of_India"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-union-council-of-ministers",
+   "type": "advises_appointment",
+   "basis": "Article 75(1) — the President appoints all other Ministers on the advice of the Prime Minister",
+   "source": "https://en.wikipedia.org/wiki/Constitution_of_India"
+  },
+  {
+   "from": "in-union-council-of-ministers",
+   "to": "in-lok-sabha",
+   "type": "accountable_to",
+   "basis": "Article 75(3) — collective responsibility of the Council of Ministers to the Lok Sabha",
+   "source": "https://en.wikipedia.org/wiki/Constitution_of_India"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-cabinet-secretary",
+   "type": "oversees",
+   "basis": "PM heads the Government of India; Cabinet Secretary is the administrative head of the civil service",
+   "source": "https://en.wikipedia.org/wiki/Cabinet_Secretariat_(India)"
+  },
+  {
+   "from": "in-cabinet-committee-appointments",
+   "to": "in-pos-cabinet-secretary",
+   "type": "appoints",
+   "basis": "ACC approves appointment of the Cabinet Secretary",
+   "source": "https://en.wikipedia.org/wiki/Cabinet_Secretariat_(India)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-national-security-advisor",
+   "type": "appoints",
+   "basis": "NSA is a personal appointment of the PM, formalised via the ACC; co-terminus with the PM's term",
+   "source": "https://en.wikipedia.org/wiki/National_Security_Advisor_(India)"
+  },
+  {
+   "from": "in-pos-national-security-advisor",
+   "to": "in-pos-prime-minister",
+   "type": "advises",
+   "basis": "NSA is the PM's principal adviser on national security and foreign policy",
+   "source": "https://en.wikipedia.org/wiki/National_Security_Council_(India)"
+  },
+  {
+   "from": "in-cabinet-secretariat",
+   "to": "in-raw",
+   "type": "administers",
+   "basis": "R&AW is administratively placed under the Cabinet Secretariat and reports to the PM",
+   "source": "https://en.wikipedia.org/wiki/Cabinet_Secretariat_(India)"
+  },
+  {
+   "from": "in-nscs",
+   "to": "in-ntro",
+   "type": "oversees",
+   "basis": "NTRO reports to the NSA/NSCS and the PMO for technical-intelligence coordination",
+   "source": "https://en.wikipedia.org/wiki/National_Technical_Research_Organisation"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-niti-aayog",
+   "type": "ex_officio",
+   "basis": "The sitting Prime Minister is ex officio Chairperson of NITI Aayog",
+   "source": "https://en.wikipedia.org/wiki/NITI_Aayog"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-inter-state-council",
+   "type": "ex_officio",
+   "basis": "Article 263 order — the Prime Minister chairs the Inter-State Council",
+   "source": "https://en.wikipedia.org/wiki/Inter-State_Council"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-cabinet-committee-appointments",
+   "type": "ex_officio",
+   "basis": "The Prime Minister chairs the Cabinet Committees of the Union Cabinet",
+   "source": "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-cabinet-committee-security",
+   "type": "ex_officio",
+   "basis": "The Prime Minister chairs the Cabinet Committees of the Union Cabinet",
+   "source": "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-cabinet-committee-political-affairs",
+   "type": "ex_officio",
+   "basis": "The Prime Minister chairs the Cabinet Committees of the Union Cabinet",
+   "source": "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-cabinet-committee-economic-affairs",
+   "type": "ex_officio",
+   "basis": "The Prime Minister chairs the Cabinet Committees of the Union Cabinet",
+   "source": "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-cabinet-committee-parliamentary-affairs",
+   "type": "ex_officio",
+   "basis": "The Prime Minister chairs the Cabinet Committees of the Union Cabinet",
+   "source": "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-cabinet-committee-accommodation",
+   "type": "ex_officio",
+   "basis": "The Prime Minister chairs the Cabinet Committees of the Union Cabinet",
+   "source": "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-cabinet-committee-investment-and-growth",
+   "type": "ex_officio",
+   "basis": "The Prime Minister chairs the Cabinet Committees of the Union Cabinet",
+   "source": "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-cabinet-committee-employment-and-skill-development",
+   "type": "ex_officio",
+   "basis": "The Prime Minister chairs the Cabinet Committees of the Union Cabinet",
+   "source": "https://en.wikipedia.org/wiki/Cabinet_Committee_(India)"
+  },
+  {
+   "from": "in-pos-minister-home-affairs",
+   "to": "in-cabinet-committee-security",
+   "type": "member_of",
+   "basis": "Union Home Minister is a standing member of the CCS",
+   "source": "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+  },
+  {
+   "from": "in-pos-minister-defence",
+   "to": "in-cabinet-committee-security",
+   "type": "member_of",
+   "basis": "Union Defence Minister is a standing member of the CCS",
+   "source": "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+  },
+  {
+   "from": "in-pos-minister-external-affairs",
+   "to": "in-cabinet-committee-security",
+   "type": "member_of",
+   "basis": "Union External Affairs Minister is a standing member of the CCS",
+   "source": "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+  },
+  {
+   "from": "in-pos-minister-finance",
+   "to": "in-cabinet-committee-security",
+   "type": "member_of",
+   "basis": "Union Finance Minister is a standing member of the CCS",
+   "source": "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+  },
+  {
+   "from": "in-pos-national-security-advisor",
+   "to": "in-cabinet-committee-security",
+   "type": "ex_officio",
+   "basis": "NSA is a permanent invitee/attendee at CCS meetings",
+   "source": "https://www.indiatvnews.com/web-stories/news/what-is-cabinet-committee-on-security-and-who-are-its-members-2025-04-23-986902"
+  },
+  {
+   "from": "in-pos-minister-home-affairs",
+   "to": "in-zonal-council-northern",
+   "type": "ex_officio",
+   "basis": "Union Home Minister is the common Chairman of all five Zonal Councils",
+   "source": "https://en.wikipedia.org/wiki/Zonal_council"
+  },
+  {
+   "from": "in-pos-minister-home-affairs",
+   "to": "in-zonal-council-central",
+   "type": "ex_officio",
+   "basis": "Union Home Minister is the common Chairman of all five Zonal Councils",
+   "source": "https://en.wikipedia.org/wiki/Zonal_council"
+  },
+  {
+   "from": "in-pos-minister-home-affairs",
+   "to": "in-zonal-council-eastern",
+   "type": "ex_officio",
+   "basis": "Union Home Minister is the common Chairman of all five Zonal Councils",
+   "source": "https://en.wikipedia.org/wiki/Zonal_council"
+  },
+  {
+   "from": "in-pos-minister-home-affairs",
+   "to": "in-zonal-council-western",
+   "type": "ex_officio",
+   "basis": "Union Home Minister is the common Chairman of all five Zonal Councils",
+   "source": "https://en.wikipedia.org/wiki/Zonal_council"
+  },
+  {
+   "from": "in-pos-minister-home-affairs",
+   "to": "in-zonal-council-southern",
+   "type": "ex_officio",
+   "basis": "Union Home Minister is the common Chairman of all five Zonal Councils",
+   "source": "https://en.wikipedia.org/wiki/Zonal_council"
+  },
+  {
+   "from": "in-pos-minister-home-affairs",
+   "to": "in-inter-state-council",
+   "type": "ex_officio",
+   "basis": "Union Home Minister chairs the Inter-State Council's Standing Committee",
+   "source": "https://en.wikipedia.org/wiki/Inter-State_Council"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-attorney-general",
+   "type": "appoints",
+   "basis": "Article 76(1), on the advice of the Union Cabinet",
+   "source": "https://en.wikipedia.org/wiki/R._Venkataramani"
+  },
+  {
+   "from": "in-pos-attorney-general",
+   "to": "in-union-government",
+   "type": "advises",
+   "basis": "Article 76 — AG is the Government of India's chief legal adviser and its principal counsel before the Supreme Court",
+   "source": "https://en.wikipedia.org/wiki/R._Venkataramani"
+  },
+  {
+   "from": "in-cabinet-committee-appointments",
+   "to": "in-pos-solicitor-general",
+   "type": "appoints",
+   "basis": "SG is appointed by the Appointments Committee of the Cabinet (not an Article 76 constitutional post)",
+   "source": "https://en.wikipedia.org/wiki/Tushar_Mehta"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 37,
+  "checkedPositionIds": [
+   "in-pos-president",
+   "in-pos-vice-president",
+   "in-pos-prime-minister",
+   "in-pos-cabinet-secretary",
+   "in-pos-national-security-advisor",
+   "in-pos-deputy-nsa-1",
+   "in-pos-deputy-nsa-2",
+   "in-pos-deputy-nsa-3",
+   "in-pos-additional-nsa",
+   "in-pos-chairman-nsab",
+   "in-pos-secretary-r",
+   "in-pos-chairman-ntro",
+   "in-pos-vice-chairperson-niti-aayog",
+   "in-pos-ceo-niti-aayog",
+   "in-pos-member-niti-aayog-1",
+   "in-pos-member-niti-aayog-2",
+   "in-pos-member-niti-aayog-3",
+   "in-pos-member-niti-aayog-4",
+   "in-pos-member-niti-aayog-5",
+   "in-pos-member-niti-aayog-6",
+   "in-pos-member-niti-aayog-7",
+   "in-pos-chairman-pmeac",
+   "in-pos-member-pmeac-1",
+   "in-pos-member-pmeac-2",
+   "in-pos-member-pmeac-3",
+   "in-pos-principal-scientific-adviser",
+   "in-pos-attorney-general",
+   "in-pos-solicitor-general",
+   "in-pos-additional-solicitor-general-1",
+   "in-pos-additional-solicitor-general-2",
+   "in-pos-additional-solicitor-general-3",
+   "in-pos-additional-solicitor-general-4",
+   "in-pos-additional-solicitor-general-5",
+   "in-pos-secretary-to-president",
+   "in-pos-principal-secretary-pm-1",
+   "in-pos-principal-secretary-pm-2",
+   "in-pos-chairperson-niti-aayog"
+  ],
+  "corrections": [
+   "in-pos-ceo-niti-aayog: holder.since corrected '2026-02' -> '2026-08-17' (niti.gov.in official profile says 'assumed charge ... on 17.08.2026'); confidence medium->high",
+   "REMOVED in-pos-member-pmeac-4 (Gourav Vallabh): official eacpm.gov.in/team page lists him as 'Part-Time Member', not a full-time Member (only Sanyal, Sanjay Kumar Mishra, Shamika Ravi are full-time Members alongside Chairman Mahendra Dev) -- was misclassified; removing keeps the segment consistent with its own stated rule of excluding part-time EAC-PM members",
+   "in-pos-additional-solicitor-general-1: holder.since precision-corrected '2026' -> '2026-07-01' (exact effective date from barandbench.com article body); confidence medium->high",
+   "in-pos-additional-solicitor-general-2: holder.since precision-corrected '2026' -> '2026-07-01' (exact effective date from barandbench.com article body); confidence medium->high",
+   "in-pos-additional-solicitor-general-3: holder.since precision-corrected '2026' -> '2026-06-30' (exact effective date from barandbench.com article body); confidence medium->high",
+   "in-pos-additional-solicitor-general-4: holder.since precision-corrected '2026' -> '2026-06-30' (exact effective date from barandbench.com article body); confidence medium->high",
+   "in-pos-additional-solicitor-general-5: holder.since precision-corrected '2026' -> '2026-06-30' (exact effective date from barandbench.com article body); confidence medium->high"
+  ],
+  "notes": "Shared session WebSearch budget (200/200) was exhausted by the time this verification pass ran; verification instead used WebFetch against Wikipedia's parse API and current article revisions, plus direct curl (desktop-Chrome UA) against primary official sources: niti.gov.in (Vice-Chairperson, CEO, and 7 full-time-member profile pages), eacpm.gov.in/team (official EAC-PM roster distinguishing full-time vs part-time members), psa.gov.in (confirms Ajay Kumar Sood still PSA as of a May 2026 news item), and barandbench.com (primary article body with exact ASG/SG effective dates). No duplicate IDs, invalid kinds/sectors/ranks/relation-types/appointmentModes, or dangling in-segment orgId/parentId references were found (see scratch/core-apex/pre-verify.json for the prior state and the validation script). Positions in-pos-deputy-nsa-1/2/3, in-pos-additional-nsa, in-pos-chairman-nsab and in-pos-chairman-ntro remain sourced to a single secondary article / a single Wikipedia page respectively and are correctly held at confidence:medium/low per the 'never invent' rule -- could not be upgraded without WebSearch access to official PIB/cabsec notifications. in-pos-secretary-to-president remains vacant of a holder (confidence:low) -- presidentofindia.gov.in returned HTTP 404 on the /secretariat path attempted this pass (same inaccessibility the original agent hit via WebFetch/403); genuinely unconfirmed, left as-is per 'never invent'. Cross-file referential integrity re-checked: in-pos-minister-home-affairs/-defence/-external-affairs/-finance (referenced in Cabinet Committee on Security member_of relations) all resolve in data/raw/council-of-ministers.json; in-lok-sabha resolves in data/raw/parliament-lok-sabha.json; in-rajya-sabha resolves in data/raw/parliament-rajya-sabha.json; Special Protection Group (flagged in the original agent's notes as deliberately out of scope) is already covered in data/raw/ministries-b1.json, so no gap and no duplication."
+ }
+}

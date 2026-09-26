@@ -1,0 +1,2170 @@
+{
+ "segment": "states-mz-nl-tr",
+ "asOf": "2026-09-25",
+ "notes": "Segment covers Mizoram (st-mz), Nagaland (st-nl), Tripura (st-tr) in full per SCHEMA.md/task spec, excluding districts (owned by local-lgd) and the High Courts serving them (owned by judiciary; not referenced here as no direct relation was required). KNOWN GAPS / LOW-CONFIDENCE ITEMS: (1) Nagaland CM Neiphiu Rio's and most ministers' current party label (NPF vs NDPP) per a September 2025 Wikipedia infobox change — flagged medium confidence, needs a press cross-check; (2) Tripura State Election Commissioner — Wikipedia gives two conflicting names, holder left unset; (3) Mizoram Lokayukta chairperson's term (sworn in 2019, 5-year term may have lapsed) not reconfirmed; (4) Nagaland and Mizoram State Human Rights Commissions — could not confirm whether constituted or who chairs them (no entity created rather than guessing); Nagaland Lokayukta — same issue, no entity created; (5) Several officials (Chief Secretaries, DGPs, PSC chairs, SEC commissioners) have no confirmed start date in the sources found — 'since' left null; (6) Nagaland has NO municipal corporations (only Municipal/Town Councils, e.g. Kohima Municipal Council, elections held 26 June 2024) — no municipal_corporation entity created for Nagaland by design, not omission; (7) Council-of-ministers constituency data for most Mizoram ministers not found in the source used; (8) Mizoram 2011 census population (1,097,206) and Tripura 2011 census population (3,673,917) are standard published Census of India figures cited from general knowledge (WebFetch could not surface the exact 2011 figure directly) — marked high confidence as these are static, well-established historical statistics, but not independently re-fetched this session. WebSearch was unavailable for this whole segment (session budget exhausted before I could use it) so all research relied on WebFetch (Wikipedia + a couple of official portals, several of which 404'd) plus general knowledge for stable structural facts; no live browser tools or additional WebSearch were available. UPDATED 2026-09-25 by adversarial verification pass (see top-level 'verification' block): gaps (1) Nagaland CM party and (2) Tripura SEC commissioner name conflict are now RESOLVED (see verification.corrections). New issue found and fixed: Nagaland SEC commissioner holder was misattributed (was actually the Chief Electoral Officer) and has been cleared. New issue found and flagged: Tripura Lokayukta's term also appears to have lapsed (same class of issue as the pre-existing Mizoram Lokayukta flag). Remaining unresolved gaps ((3) Mizoram Lokayukta term status, (4) no-entity SHRC/Nagaland-Lokayukta gaps, (5) missing chief-secretary/DGP/SEC/PSC since-dates, (6) Nagaland municipal structure, (7) Mizoram minister constituencies, (8) 2011 census figures not independently re-fetched) were re-checked in this pass and could not be resolved from sources available; left as originally flagged rather than guessed.",
+ "entities": [
+  {
+   "id": "st-mz",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Mizoram",
+   "parentId": "in-states-and-uts",
+   "description": "Northeastern Indian state bordering Myanmar and Bangladesh, predominantly Mizo (Christian, tribal) population; a former Union Territory that became a full state in 1987 under the 1986 Mizoram Peace Accord.",
+   "legalBasis": "State of Mizoram Act, 1986 (53rd Amendment)",
+   "officialUrl": "https://mizoram.gov.in",
+   "capital": "Aizawl",
+   "established": "1987-02-20",
+   "hq": "Aizawl",
+   "headPositionId": "st-mz-pos-governor",
+   "stats": {
+    "population2011": 1097206,
+    "areaKm2": 21081,
+    "lokSabhaSeats": 1,
+    "rajyaSabhaSeats": 1,
+    "assemblySeats": 40,
+    "districts": 11
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram",
+    "https://en.wikipedia.org/wiki/List_of_districts_of_Mizoram"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Mizoram",
+   "parentId": "st-mz",
+   "description": "The executive government of the State of Mizoram, headed by the Governor as constitutional head and the Chief Minister as head of government.",
+   "officialUrl": "https://mizoram.gov.in",
+   "headPositionId": "st-mz-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Mizoram"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Mizoram Council of Ministers",
+   "parentId": "st-mz-government",
+   "description": "Council of Ministers advising the Governor of Mizoram, headed by Chief Minister Lalduhoma (ZPM) since 8 December 2023; all members are from the Zoram People's Movement.",
+   "headPositionId": "st-mz-pos-chief-minister",
+   "seats": 12,
+   "legalBasis": "Article 164, Constitution of India (capped at 12 members per Article 164(1A) for a 40-seat assembly)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Mizoram Legislative Assembly",
+   "parentId": "st-mz-government",
+   "abbr": "MLA",
+   "aliases": [
+    "Mizoram Vidhan Sabha"
+   ],
+   "description": "Unicameral 40-seat legislature of Mizoram, founded 10 May 1972; current (9th) Assembly elected 7 November 2023, term runs to 2028.",
+   "legalBasis": "Article 168, Constitution of India",
+   "officialUrl": "https://mizoramassembly.nic.in",
+   "established": "1972-05-10",
+   "seats": 40,
+   "stats": {
+    "partyWiseStrength": {
+     "ZPM": 27,
+     "MNF": 10,
+     "BJP": 2,
+     "INC": 1
+    },
+    "lastElectionDate": "2023-11-07",
+    "nextElectionDue": "2028",
+    "assemblyNumber": 9
+   },
+   "headPositionId": "st-mz-pos-speaker",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/2023_Mizoram_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Mizoram State Election Commission",
+   "parentId": "st-mz-government",
+   "abbr": "SEC",
+   "description": "Constitutional body conducting elections to Mizoram's Village Councils and Urban Local Bodies (municipalities), independent of the state government.",
+   "legalBasis": "Articles 243K, 243ZA and 324, Constitution of India",
+   "headPositionId": "st-mz-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Mizoram Public Service Commission",
+   "parentId": "st-mz-government",
+   "abbr": "MPSC",
+   "description": "Constitutional body conducting recruitment examinations and advising the state government on civil service matters in Mizoram.",
+   "legalBasis": "Article 315, Constitution of India",
+   "officialUrl": "https://mpsc.mizoram.gov.in",
+   "headPositionId": "st-mz-pos-psc-chairman",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-lokayukta",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "Mizoram Lokayukta",
+   "parentId": "st-mz-government",
+   "description": "Anti-corruption ombudsman investigating complaints against public functionaries in Mizoram; a three-member body headed by a current/former High Court Chief Justice or judge.",
+   "legalBasis": "Mizoram Lokayukta and Deputy Lokayukta Act, 2014 (effective Nov 2014)",
+   "headPositionId": "st-mz-pos-lokayukta-chairperson",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-mc-aizawl",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Aizawl Municipal Corporation",
+   "parentId": "st-mz",
+   "abbr": "AMC",
+   "description": "Sole municipal corporation in Mizoram, governing the state capital Aizawl; upgraded from Aizawl Municipal Council in 2010.",
+   "legalBasis": "Mizoram Municipalities Act, 2007",
+   "officialUrl": "https://amcmizoram.com",
+   "established": "2010",
+   "seats": 19,
+   "headPositionId": "st-mz-mc-aizawl-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Aizawl_Municipal_Corporation"
+   ],
+   "confidence": "medium",
+   "notes": "A fresh Wikipedia fetch (page last updated 2026-09-23) indicates Aizawl held a municipal election in 2026 in which ZPM won 17 seats -- this postdates the 'seats: 19' figure recorded here (from the prior council), which was NOT independently reconfirmed for the new term; treat total-seat count as possibly stale. The mayor holder (H. Lalremtluanga, ZPM) matches both the old and new sources so was not changed."
+  },
+  {
+   "id": "st-nl",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Nagaland",
+   "parentId": "in-states-and-uts",
+   "description": "Northeastern Indian state bordering Myanmar, home to numerous Naga tribes; formed in 1963 as India's 16th state, subject to special protections under Article 371A.",
+   "legalBasis": "State of Nagaland Act, 1962; Article 371A",
+   "officialUrl": "https://nagaland.gov.in",
+   "capital": "Kohima",
+   "established": "1963-12-01",
+   "hq": "Kohima",
+   "headPositionId": "st-nl-pos-governor",
+   "stats": {
+    "population2011": 1978502,
+    "areaKm2": 16579,
+    "lokSabhaSeats": 1,
+    "rajyaSabhaSeats": 1,
+    "assemblySeats": 60,
+    "districts": 17
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland",
+    "https://en.wikipedia.org/wiki/List_of_districts_of_Nagaland"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Nagaland",
+   "parentId": "st-nl",
+   "description": "The executive government of Nagaland, headed by the Governor as constitutional head and the Chief Minister as head of an NDPP-led, all-party coalition government (no formal opposition since the 2023 election).",
+   "officialUrl": "https://nagaland.gov.in",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Nagaland Council of Ministers (Fifth Rio ministry)",
+   "parentId": "st-nl-government",
+   "description": "Council of Ministers of Nagaland formed 7 March 2023 as an NDPP-BJP coalition (with allied independents); Chief Minister Neiphiu Rio has led continuously since 2018.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "seats": 12,
+   "legalBasis": "Article 164, Constitution of India",
+   "notes": "Wikipedia's current infobox for Neiphiu Rio and the 'Fifth Rio ministry' lists his party as NPF (Naga People's Front); Rio 'rejoined NPF' as its president on 21 October 2025 while continuing as Chief Minister -- a change from the NDPP banner under which the coalition won the 2023 election. RE-VERIFIED 2026-09-25 via an independent fresh fetch of the ministry page; individual ministers below retain their as-elected-2023 party labels, which the same fetch confirms are still their current listed parties.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry",
+    "https://en.wikipedia.org/wiki/Neiphiu_Rio"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Nagaland Legislative Assembly",
+   "parentId": "st-nl-government",
+   "abbr": "NLA",
+   "description": "Unicameral 60-seat legislature of Nagaland; the 14th Assembly, elected 27 February 2023, uniquely has no formal Leader of Opposition after all elected parties joined the government (a state-specific 'opposition-less' political arrangement announced in 2023).",
+   "legalBasis": "Article 168, Constitution of India",
+   "officialUrl": "https://nagalandassembly.nic.in",
+   "seats": 60,
+   "stats": {
+    "partyWiseStrength": {
+     "NDPP": 25,
+     "BJP": 12,
+     "NPP": 5,
+     "NCP": 7,
+     "LJP(RV)": 2,
+     "NPF": 2,
+     "RPI(A)": 2,
+     "JD(U)": 1,
+     "Independent": 4
+    },
+    "lastElectionDate": "2023-02-27",
+    "nextElectionDue": "2028",
+    "assemblyNumber": 14
+   },
+   "headPositionId": "st-nl-pos-speaker",
+   "notes": "Party-wise strength shown is the AS-ELECTED tally from the 27 Feb 2023 result; subsequent defections/realignments (all parties joining govt; Rio's move to NPF in Oct 2025) mean current floor strength by party likely differs — could not obtain an updated post-realignment whip list.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/2023_Nagaland_Legislative_Assembly_election"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Nagaland State Election Commission",
+   "parentId": "st-nl-government",
+   "abbr": "SEC",
+   "description": "Constitutional body responsible for conducting elections to Nagaland's local bodies.",
+   "legalBasis": "Articles 243K, 243ZA and 324, Constitution of India",
+   "headPositionId": "st-nl-pos-sec-commissioner",
+   "notes": "Source page for Nagaland's election machinery returned 'Chief Electoral Officer' (the state-level ECI officer for Lok Sabha/Assembly rolls) rather than clearly identifying the separate State Election Commissioner for local-body polls — the two offices may be conflated in the source; flagged low confidence.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_State_Election_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-nl-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Nagaland Public Service Commission",
+   "parentId": "st-nl-government",
+   "abbr": "NPSC",
+   "description": "Constitutional body conducting recruitment examinations and advising the state government on civil service matters in Nagaland.",
+   "legalBasis": "Article 315, Constitution of India",
+   "headPositionId": "st-nl-pos-psc-chairman",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tr",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Tripura",
+   "parentId": "in-states-and-uts",
+   "description": "Northeastern Indian state bordering Bangladesh on three sides; a former princely state that merged with India in 1949 and became a full state in 1972.",
+   "legalBasis": "North-Eastern Areas (Reorganisation) Act, 1971",
+   "officialUrl": "https://tripura.gov.in",
+   "capital": "Agartala",
+   "established": "1972-01-21",
+   "hq": "Agartala",
+   "headPositionId": "st-tr-pos-governor",
+   "stats": {
+    "population2011": 3673917,
+    "areaKm2": 10491,
+    "lokSabhaSeats": 2,
+    "rajyaSabhaSeats": 1,
+    "assemblySeats": 60,
+    "districts": 8
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tripura"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Tripura",
+   "parentId": "st-tr",
+   "description": "The executive government of Tripura, headed by the Governor as constitutional head and the Chief Minister as head of a BJP-led coalition government (with Tipra Motha Party and IPFT).",
+   "officialUrl": "https://tripura.gov.in",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Tripura"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Tripura Council of Ministers (Second Saha ministry)",
+   "parentId": "st-tr-government",
+   "description": "Council of Ministers of Tripura formed 8 March 2023 as a BJP-IPFT coalition; expanded in March 2024 and July 2025 to include Tipra Motha Party (TMP) members, the main opposition party in the 2023 election, after it joined the government.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "seats": 12,
+   "legalBasis": "Article 164, Constitution of India",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Tripura Legislative Assembly",
+   "parentId": "st-tr-government",
+   "abbr": "TLA",
+   "description": "Unicameral 60-seat legislature of Tripura; the 13th Assembly, elected 16 February 2023, convened 13 March 2023.",
+   "legalBasis": "Article 168, Constitution of India",
+   "officialUrl": "https://tripuraassembly.nic.in",
+   "seats": 60,
+   "stats": {
+    "partyWiseStrength": {
+     "BJP": 32,
+     "TMP": 13,
+     "CPI(M)": 11,
+     "INC": 3,
+     "IPFT": 1
+    },
+    "lastElectionDate": "2023-02-16",
+    "nextElectionDue": "2028",
+    "assemblyNumber": 13
+   },
+   "headPositionId": "st-tr-pos-speaker",
+   "notes": "Party-wise strength is the AS-ELECTED 2023 tally; TMP subsequently joined the government (from 2024), so current floor alignment differs from the elected tally shown.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Tripura State Election Commission",
+   "parentId": "st-tr-government",
+   "abbr": "SEC",
+   "description": "Constitutional body responsible for conducting elections to Tripura's Panchayats and Municipalities.",
+   "legalBasis": "Articles 243K, 243ZA and 324, Constitution of India",
+   "headPositionId": "st-tr-pos-sec-commissioner",
+   "notes": "Source Wikipedia article gives CONFLICTING names for the current commissioner (infobox: Manoj Kumar IAS Retd.; body text: Saradindu Chaudhari IAS Retd.) — could not resolve which is current; flagged low confidence.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tripura_State_Election_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-tr-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Tripura Public Service Commission",
+   "parentId": "st-tr-government",
+   "abbr": "TPSC",
+   "description": "Constitutional body conducting recruitment examinations and advising the state government on civil service matters in Tripura.",
+   "legalBasis": "Article 315, Constitution of India",
+   "headPositionId": "st-tr-pos-psc-chairman",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tripura_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tr-lokayukta",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "Tripura Lokayukta",
+   "parentId": "st-tr-government",
+   "description": "Anti-corruption ombudsman investigating complaints of misuse of power/corruption against ministers, legislators and government servants in Tripura.",
+   "legalBasis": "Tripura Lokayukta and Deputy Lokayukta Act, 2008",
+   "headPositionId": "st-tr-pos-lokayukta-chairperson",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tripura_Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tr-mc-agartala",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Agartala Municipal Corporation",
+   "parentId": "st-tr",
+   "abbr": "AMC",
+   "description": "Sole municipal corporation in Tripura, governing the state capital Agartala; the oldest municipal body in Northeast India, with roots to 1871.",
+   "officialUrl": "https://agartalacity.tripura.gov.in",
+   "established": "1871",
+   "seats": 51,
+   "headPositionId": "st-tr-mc-agartala-pos-mayor",
+   "notes": "1871 is the founding date of the municipal body, not necessarily the year it attained 'Corporation' status (exact upgrade year not confirmed).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Agartala_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-mz-pos-governor",
+   "title": "Governor of Mizoram",
+   "orgId": "st-mz-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Vijay Kumar Singh",
+    "since": "2025-01-16",
+    "party": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/V._K._Singh",
+    "acting": false,
+    "notes": "Retired General, 24th Chief of the Army Staff (2010-2012); former Union Minister of State for External Affairs, Road Transport and Highways, Civil Aviation; 25th Governor of Mizoram."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/V._K._Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-chief-minister",
+   "title": "Chief Minister of Mizoram",
+   "orgId": "st-mz-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "termYears": 5,
+   "holder": {
+    "name": "Lalduhoma",
+    "since": "2023-12-08",
+    "party": "ZPM",
+    "house": "Mizoram Legislative Assembly",
+    "constituency": "Serchhip",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalduhoma",
+    "acting": false,
+    "notes": "6th Chief Minister of Mizoram; also holds Finance, Planning, Vigilance and General Administration portfolios."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma",
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-minister-1",
+   "title": "Minister — Home (Mizoram)",
+   "orgId": "st-mz-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "onAdviceOf": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "K Sapdanga",
+    "since": "2023-12-08",
+    "party": "ZPM",
+    "house": "Mizoram Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Home, Urban Development, Personnel, Disaster Management. Constituency not confirmed from source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-minister-2",
+   "title": "Minister — Public Works (Mizoram)",
+   "orgId": "st-mz-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "onAdviceOf": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "Vanlalhlana",
+    "since": "2023-12-08",
+    "party": "ZPM",
+    "house": "Mizoram Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Public Works, Transport, Parliamentary Affairs. Constituency not confirmed from source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-minister-3",
+   "title": "Minister — Local Administration (Mizoram)",
+   "orgId": "st-mz-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "onAdviceOf": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "C. Lalsawivunga",
+    "since": "2023-12-08",
+    "party": "ZPM",
+    "house": "Mizoram Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Local Administration, District Council, Art & Culture, Animal Husbandry. Constituency not confirmed from source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-minister-4",
+   "title": "Minister — Environment (Mizoram)",
+   "orgId": "st-mz-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "onAdviceOf": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "Lalthansanga",
+    "since": "2023-12-08",
+    "party": "ZPM",
+    "house": "Mizoram Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Environment, Forests, Sericulture, Fisheries, Land Resources. Constituency not confirmed from source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-minister-5",
+   "title": "Minister — School Education (Mizoram)",
+   "orgId": "st-mz-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "onAdviceOf": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "Vanlalthlana",
+    "since": "2023-12-08",
+    "party": "ZPM",
+    "house": "Mizoram Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: School Education, Higher Education, Taxation, Information & ICT. Constituency not confirmed from source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-minister-6",
+   "title": "Minister — Agriculture (Mizoram)",
+   "orgId": "st-mz-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "onAdviceOf": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "P. C. Vanlalruata",
+    "since": "2023-12-08",
+    "party": "ZPM",
+    "house": "Mizoram Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Agriculture, Irrigation, Cooperation. Constituency not confirmed from source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-minister-7",
+   "title": "Minister — Health (Mizoram)",
+   "orgId": "st-mz-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "onAdviceOf": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "Lalrinpuii",
+    "since": "2023-12-08",
+    "party": "ZPM",
+    "house": "Mizoram Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Health, Social Welfare, Women & Child Development, Tourism. Constituency not confirmed from source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-minister-8",
+   "title": "Minister — Power (Mizoram)",
+   "orgId": "st-mz-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "onAdviceOf": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "F. Rodingliana",
+    "since": "2023-12-08",
+    "party": "ZPM",
+    "house": "Mizoram Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Power, Commerce, Printing & Stationery. Constituency not confirmed from source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-minister-9",
+   "title": "Minister — Food & Civil Supplies (Mizoram)",
+   "orgId": "st-mz-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "onAdviceOf": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "B. Lalchhanzova",
+    "since": "2023-12-08",
+    "party": "ZPM",
+    "house": "Mizoram Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Food & Civil Supplies, Land Revenue. Constituency not confirmed from source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-minister-10",
+   "title": "Minister — Rural Development (Mizoram)",
+   "orgId": "st-mz-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "onAdviceOf": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "Lalnilawma",
+    "since": "2023-12-08",
+    "party": "ZPM",
+    "house": "Mizoram Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Rural Development, Horticulture, Public Health Engineering. Constituency not confirmed from source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-minister-11",
+   "title": "Minister — Labour (Mizoram)",
+   "orgId": "st-mz-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "onAdviceOf": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "Lalnghinglova Hmar",
+    "since": "2023-12-08",
+    "party": "ZPM",
+    "house": "Mizoram Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Labour, Sports, Excise & Narcotics. Constituency not confirmed from source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalduhoma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-speaker",
+   "title": "Speaker, Mizoram Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-assembly",
+   "holder": {
+    "name": "Lalbiakzama",
+    "since": "2023",
+    "party": "ZPM",
+    "wikipedia": null,
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-deputy-speaker",
+   "title": "Deputy Speaker, Mizoram Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-assembly",
+   "holder": {
+    "name": "Lalfamkima",
+    "since": "2023",
+    "party": "ZPM",
+    "wikipedia": null,
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Mizoram Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-assembly",
+   "holder": {
+    "name": "Lalchhandama Ralte",
+    "since": "2023",
+    "party": "MNF",
+    "wikipedia": null,
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-chief-secretary",
+   "title": "Chief Secretary of Mizoram",
+   "orgId": "st-mz-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "Khilli Ram Meena",
+    "since": null,
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS officer; per Government of Mizoram Wikipedia page. Not independently cross-verified against a second 2025-2026 source — LOW-MEDIUM confidence on exact tenure start."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Mizoram"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-dgp",
+   "title": "Director General of Police, Mizoram",
+   "orgId": "st-mz-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "Sharad Agarwal",
+    "since": null,
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS officer."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Police"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-sec-commissioner",
+   "title": "State Election Commissioner, Mizoram",
+   "orgId": "st-mz-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "termYears": 5,
+   "holder": {
+    "name": "Laima Chozah",
+    "since": null,
+    "party": null,
+    "wikipedia": null,
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-pos-psc-chairman",
+   "title": "Chairman, Mizoram Public Service Commission",
+   "orgId": "st-mz-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "holder": {
+    "name": "R. Lalramnghaka",
+    "since": "2024-05-14",
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Retired IAS officer."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-lokayukta-chairperson",
+   "title": "Chairperson, Mizoram Lokayukta",
+   "orgId": "st-mz-lokayukta",
+   "rank": "other",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-governor",
+   "termYears": 5,
+   "holder": {
+    "name": "C. Lalsawta",
+    "since": "2019-03-12",
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS (Retd.); first Lokayukta chairperson of Mizoram, sworn in 12 March 2019. A 5-year term from that date would have lapsed ~2024 — COULD NOT CONFIRM whether he continues or a successor has been appointed; flagged low confidence."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Lokayukta"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mz-mc-aizawl-pos-mayor",
+   "title": "Mayor, Aizawl Municipal Corporation",
+   "orgId": "st-mz-mc-aizawl",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-mc-aizawl",
+   "holder": {
+    "name": "H. Lalremtluanga",
+    "since": null,
+    "party": "ZPM",
+    "wikipedia": null,
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Aizawl_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-governor",
+   "title": "Governor of Nagaland",
+   "orgId": "st-nl-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Nand Kishore Yadav",
+    "since": "2026-03-13",
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Took office 13 March 2026 — a recent appointment within the as-of window; confirm against a second source if used publicly."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_governors"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-chief-minister",
+   "title": "Chief Minister of Nagaland",
+   "orgId": "st-nl-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "termYears": 5,
+   "holder": {
+    "name": "Neiphiu Rio",
+    "since": "2023-03-07",
+    "party": "NPF",
+    "house": "Nagaland Legislative Assembly",
+    "constituency": "Northern Angami II",
+    "wikipedia": "https://en.wikipedia.org/wiki/Neiphiu_Rio",
+    "acting": false,
+    "notes": "Continuously CM since 8 March 2018; current (Fifth Rio ministry) term began 7 March 2023 after the NDPP-BJP alliance won the election. Party RE-CONFIRMED as NPF (Naga People's Front) via a fresh live fetch of the current 'Fifth Rio ministry' Wikipedia revision on 2026-09-25 (independent of the original agent's read) -- Rio rejoined NPF as its president 21 Oct 2025 while remaining CM; elected in 2023 on an NDPP ticket."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Neiphiu_Rio",
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Nagaland",
+   "orgId": "st-nl-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "onAdviceOf": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "T. R. Zeliang",
+    "since": "2023-03-07",
+    "party": "NPF",
+    "constituency": "Peren",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Planning, Transformation, National Highway."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-deputy-cm-2",
+   "title": "Deputy Chief Minister of Nagaland",
+   "orgId": "st-nl-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "onAdviceOf": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Yanthungo Patton",
+    "since": "2023-03-07",
+    "party": "BJP",
+    "constituency": "Tyüi",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Home, Border Affairs."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-minister-1",
+   "title": "Minister — Forest (Nagaland)",
+   "orgId": "st-nl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "onAdviceOf": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "C. L. John",
+    "since": "2023-03-07",
+    "party": "NPF",
+    "constituency": "Tehok",
+    "house": "Nagaland Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Forest, Environment, Climate Change, Village Guard. Party as elected in 2023; see coalition realignment note on st-nl-council-of-ministers."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-minister-2",
+   "title": "Minister — Roads & Bridges (Nagaland)",
+   "orgId": "st-nl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "onAdviceOf": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "G. Kaito Aye",
+    "since": "2023-03-07",
+    "party": "NPF",
+    "constituency": "Satakha",
+    "house": "Nagaland Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Roads & Bridges. Party as elected in 2023; see coalition realignment note on st-nl-council-of-ministers."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-minister-3",
+   "title": "Minister — Public Health Engineering (Nagaland)",
+   "orgId": "st-nl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "onAdviceOf": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Jacob Zhimomi",
+    "since": "2023-03-07",
+    "party": "BJP",
+    "constituency": "Ghaspani I",
+    "house": "Nagaland Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Public Health Engineering, Cooperation. Party as elected in 2023; see coalition realignment note on st-nl-council-of-ministers."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-minister-4",
+   "title": "Minister — Power (Nagaland)",
+   "orgId": "st-nl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "onAdviceOf": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "K. G. Kenye",
+    "since": "2023-03-07",
+    "party": "NPF",
+    "constituency": "Chizami",
+    "house": "Nagaland Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Power, Parliamentary Affairs. Party as elected in 2023; see coalition realignment note on st-nl-council-of-ministers."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-minister-5",
+   "title": "Minister — Rural Development (Nagaland)",
+   "orgId": "st-nl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "onAdviceOf": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Metsubo Jamir",
+    "since": "2023-03-07",
+    "party": "NPF",
+    "constituency": "Mokokchung Town",
+    "house": "Nagaland Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Rural Development, SIDR. Party as elected in 2023; see coalition realignment note on st-nl-council-of-ministers."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-minister-6",
+   "title": "Minister — Housing (Nagaland)",
+   "orgId": "st-nl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "onAdviceOf": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "P. Bashangmongba Chang",
+    "since": "2023-03-07",
+    "party": "BJP",
+    "constituency": "Tuensang Sadar I",
+    "house": "Nagaland Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Housing, Mechanical Engineering. Party as elected in 2023; see coalition realignment note on st-nl-council-of-ministers."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-minister-7",
+   "title": "Minister — Health & Family Welfare (Nagaland)",
+   "orgId": "st-nl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "onAdviceOf": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "P. Paiwang Konyak",
+    "since": "2023-03-07",
+    "party": "NPF",
+    "constituency": "Tizit",
+    "house": "Nagaland Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Health & Family Welfare. Party as elected in 2023; see coalition realignment note on st-nl-council-of-ministers."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-minister-8",
+   "title": "Minister — Women Resource Development (Nagaland)",
+   "orgId": "st-nl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "onAdviceOf": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Salhoutuonuo Kruse",
+    "since": "2023-03-07",
+    "party": "NPF",
+    "constituency": "Western Angami",
+    "house": "Nagaland Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Women Resource Development, Horticulture. Party as elected in 2023; see coalition realignment note on st-nl-council-of-ministers."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-minister-9",
+   "title": "Minister — Tourism (Nagaland)",
+   "orgId": "st-nl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "onAdviceOf": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Temjen Imna Along",
+    "since": "2023-03-07",
+    "party": "BJP",
+    "constituency": "Alongtaki",
+    "house": "Nagaland Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Tourism, Higher Education. Party as elected in 2023; see coalition realignment note on st-nl-council-of-ministers."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rio_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-speaker",
+   "title": "Speaker, Nagaland Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-assembly",
+   "holder": {
+    "name": "Sharingain Longkumer",
+    "since": "2020-02-07",
+    "party": "NPF",
+    "wikipedia": null,
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-deputy-speaker",
+   "title": "Deputy Speaker, Nagaland Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-assembly",
+   "holder": {
+    "name": "S. Toiho Yeptho",
+    "since": "2024-02-27",
+    "party": "NPF",
+    "wikipedia": null,
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Nagaland Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-assembly",
+   "vacant": true,
+   "holder": null,
+   "notes": "Vacant by political arrangement: after the 2023 election every party represented in the 14th Assembly opted to join the government, leaving no formal opposition ('opposition-less government').",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-chief-secretary",
+   "title": "Chief Secretary of Nagaland",
+   "orgId": "st-nl-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Sentiyanger Imchen",
+    "since": null,
+    "party": null,
+    "wikipedia": null,
+    "acting": false
+   },
+   "sources": [
+    "https://nagaland.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-dgp",
+   "title": "Director General of Police, Nagaland",
+   "orgId": "st-nl-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Rupin Sharma",
+    "since": "2023-01",
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS officer."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Police"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-sec-commissioner",
+   "title": "State Election Commissioner, Nagaland",
+   "orgId": "st-nl-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "holder": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_State_Election_Commission"
+   ],
+   "confidence": "low",
+   "vacant": false,
+   "notes": "CORRECTED 2026-09-25: the previously recorded holder 'Abhijeet Sinha' is confirmed (via fresh fetch of the Nagaland_State_Election_Commission Wikipedia page) to be the Chief Electoral Officer of Nagaland -- a separate ECI-linked office responsible for Lok Sabha/Assembly electoral rolls, not the State Election Commissioner who conducts local-body elections. The true current State Election Commissioner could not be confirmed from sources checked; removed the incorrect holder rather than leave a misattributed name. Left vacant/unknown pending a source that names the actual SEC commissioner."
+  },
+  {
+   "id": "st-nl-pos-psc-chairman",
+   "title": "Chairman, Nagaland Public Service Commission",
+   "orgId": "st-nl-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-governor",
+   "holder": {
+    "name": "W. Honje Konyak",
+    "since": null,
+    "party": null,
+    "wikipedia": null,
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tr-pos-governor",
+   "title": "Governor of Tripura",
+   "orgId": "st-tr-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "N. Indrasena Reddy",
+    "since": "2023-10-26",
+    "party": null,
+    "wikipedia": null,
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_governors"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-chief-minister",
+   "title": "Chief Minister of Tripura",
+   "orgId": "st-tr-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "termYears": 5,
+   "holder": {
+    "name": "Manik Saha",
+    "since": "2023-03-08",
+    "party": "BJP",
+    "house": "Tripura Legislative Assembly",
+    "constituency": "Town Bordowali",
+    "wikipedia": "https://en.wikipedia.org/wiki/Manik_Saha",
+    "acting": false,
+    "notes": "Also holds Home, Health & Family Welfare, PWD and unallocated portfolios."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manik_Saha",
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-deputy-cm",
+   "title": "Deputy Chief Minister of Tripura",
+   "orgId": "st-tr-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "onAdviceOf": "st-tr-pos-chief-minister",
+   "vacant": true,
+   "holder": null,
+   "notes": "Post shown as vacant per Government of Tripura Wikipedia page as of the fetched revision.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Tripura"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tr-pos-minister-1",
+   "title": "Minister — Power (Tripura)",
+   "orgId": "st-tr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "onAdviceOf": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Ratan Lal Nath",
+    "since": "2023-03-08",
+    "party": "BJP",
+    "constituency": "Mohanpur",
+    "house": "Tripura Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Power, Agriculture, Law, Election."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-minister-2",
+   "title": "Minister — Finance (Tripura)",
+   "orgId": "st-tr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "onAdviceOf": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Pranjit Singha Roy",
+    "since": "2023-03-08",
+    "party": "BJP",
+    "constituency": "Radhakishorpur",
+    "house": "Tripura Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Finance, Planning, IT."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-minister-3",
+   "title": "Minister — Industries (Tripura)",
+   "orgId": "st-tr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "onAdviceOf": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Santana Chakma",
+    "since": "2023-03-08",
+    "party": "TMP",
+    "constituency": "Pencharthal",
+    "house": "Tripura Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Industries, Jail, OBC Welfare."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-minister-4",
+   "title": "Minister — Food/Civil Supplies (Tripura)",
+   "orgId": "st-tr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "onAdviceOf": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Sushanta Chowdhury",
+    "since": "2023-03-08",
+    "party": "BJP",
+    "constituency": "Majlishpur",
+    "house": "Tripura Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Food/Civil Supplies, Transport, Tourism."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-minister-5",
+   "title": "Minister — Youth Affairs (Tripura)",
+   "orgId": "st-tr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "onAdviceOf": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Tinku Roy",
+    "since": "2023-03-08",
+    "party": "BJP",
+    "constituency": "Chandipur",
+    "house": "Tripura Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Youth Affairs, Social Welfare, Labour."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-minister-6",
+   "title": "Minister — Tribal Welfare (Tripura)",
+   "orgId": "st-tr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "onAdviceOf": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Bikash Debbarma",
+    "since": "2023-03-08",
+    "party": "BJP",
+    "constituency": "Krishnapur",
+    "house": "Tripura Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Tribal Welfare, Handloom, Statistics."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-minister-7",
+   "title": "Minister — SC Welfare (Tripura)",
+   "orgId": "st-tr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "onAdviceOf": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Sudhangshu Das",
+    "since": "2023-03-08",
+    "party": "BJP",
+    "constituency": "Fatikroy",
+    "house": "Tripura Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: SC Welfare, Animal Resources, Fisheries."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-minister-8",
+   "title": "Minister — Cooperation (Tripura)",
+   "orgId": "st-tr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "onAdviceOf": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Sukla Charan Noatia",
+    "since": "2023-03-08",
+    "party": "IPFT",
+    "constituency": "Jolaibari",
+    "house": "Tripura Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Cooperation, Tribal Welfare, Minorities."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-minister-9",
+   "title": "Minister — Forests (Tripura)",
+   "orgId": "st-tr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "onAdviceOf": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Animesh Debbarma",
+    "since": "2024-03-07",
+    "party": "TMP",
+    "constituency": "Ashrambari",
+    "house": "Tripura Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Forests, Administration, Environment."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-minister-10",
+   "title": "Minister — Higher Education (Tripura)",
+   "orgId": "st-tr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "onAdviceOf": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Kishor Barman",
+    "since": "2025-07-03",
+    "party": "BJP",
+    "constituency": "Nalchar",
+    "house": "Tripura Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Higher Education, Administration, Panchayat."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mos-1",
+   "title": "Minister of State — Industries & Commerce (Tripura)",
+   "orgId": "st-tr-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "onAdviceOf": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Brishaketu Debbarma",
+    "since": "2024-03-07",
+    "party": "TMP",
+    "constituency": "Simna",
+    "house": "Tripura Legislative Assembly",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Portfolio: Industries & Commerce."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Saha_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-speaker",
+   "title": "Speaker, Tripura Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-assembly",
+   "holder": {
+    "name": "Ram Pada Jamatia",
+    "since": "2026-03-18",
+    "party": "BJP",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Recent change (March 2026) — could not independently confirm predecessor/reason for change; flagged for a second-source check."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tripura_Legislative_Assembly"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tr-pos-deputy-speaker",
+   "title": "Deputy Speaker, Tripura Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-assembly",
+   "holder": {
+    "name": "Ram Prasad Paul",
+    "since": "2023-03-28",
+    "party": "BJP",
+    "wikipedia": null,
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tripura_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Tripura Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-assembly",
+   "holder": {
+    "name": "Jitendra Chaudhury",
+    "since": "2024-03-06",
+    "party": "CPI(M)",
+    "wikipedia": null,
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tripura_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-chief-secretary",
+   "title": "Chief Secretary of Tripura",
+   "orgId": "st-tr-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Jitendra Kumar Sinha",
+    "since": null,
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Tripura"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tr-pos-dgp",
+   "title": "Director General of Police, Tripura",
+   "orgId": "st-tr-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Anurag Dhankar",
+    "since": null,
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS officer."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tripura_Police"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tr-pos-sec-commissioner",
+   "title": "State Election Commissioner, Tripura",
+   "orgId": "st-tr-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "termYears": 5,
+   "holder": {
+    "name": "P. K. Chakravarty",
+    "since": null,
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS (Retd.). Per the official Tripura State Election Commission website (sec.tripura.gov.in), fetched 2026-09-25, which names him State Election Commissioner. NOTE: this is a THIRD name, distinct from BOTH candidates given by the Tripura_State_Election_Commission Wikipedia page (infobox: Manoj Kumar; body text: Saradindu Chaudhari) -- Wikipedia is stale/wrong here. Exact since-date not found on the official site."
+   },
+   "vacant": false,
+   "notes": "Wikipedia source gives two conflicting names (Manoj Kumar vs Saradindu Chaudhari) for this post — holder deliberately left unset pending verification rather than guessing which is current.",
+   "sources": [
+    "https://sec.tripura.gov.in",
+    "https://en.wikipedia.org/wiki/Tripura_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tr-pos-psc-chairman",
+   "title": "Chairman, Tripura Public Service Commission",
+   "orgId": "st-tr-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "holder": {
+    "name": "Dilip Kumar Chakma",
+    "since": null,
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS (Retd.)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tripura_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tr-pos-lokayukta-chairperson",
+   "title": "Lokayukta of Tripura",
+   "orgId": "st-tr-lokayukta",
+   "rank": "other",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-governor",
+   "termYears": 3,
+   "holder": {
+    "name": "K. N. Bhattacharjee",
+    "since": null,
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "First lawyer (rather than a former judge) appointed Lokayukta of Tripura. Per Wikipedia, appointed 3rd Lokayukta of Tripura on 2021-07-03 for 'a term of three years or attaining the age of 70 years whichever is earlier' -- a 3-year term from that date would have lapsed ~2024-07-03, over two years before this as-of date (2026-09-25). Could not confirm reappointment/successor/vacancy in the sources checked (2026-09-25) -- flagged low confidence, same class of issue as the Mizoram Lokayukta below."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tripura_Lokayukta"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-tr-mc-agartala-pos-mayor",
+   "title": "Mayor, Agartala Municipal Corporation",
+   "orgId": "st-tr-mc-agartala",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-mc-agartala",
+   "holder": {
+    "name": "Dipak Majumder",
+    "since": null,
+    "party": "BJP",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "All 51 AMC seats were held by BJP following the November 2021 municipal election; next AMC election due ~2026, status not independently confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Agartala_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "relations": [
+  {
+   "to": "st-mz-assembly",
+   "type": "elects",
+   "basis": "Article 170",
+   "source": "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly",
+   "from": "in-electorate"
+  },
+  {
+   "to": "st-mz-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/V._K._Singh",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "st-mz-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Lalduhoma",
+   "from": "st-mz-pos-governor"
+  },
+  {
+   "to": "st-mz-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Lalduhoma_ministry",
+   "from": "st-mz-pos-chief-minister"
+  },
+  {
+   "to": "st-mz-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Lalduhoma_ministry",
+   "from": "st-mz-pos-chief-minister"
+  },
+  {
+   "to": "st-mz-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Lalduhoma_ministry",
+   "from": "st-mz-pos-chief-minister"
+  },
+  {
+   "to": "st-mz-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Lalduhoma_ministry",
+   "from": "st-mz-pos-chief-minister"
+  },
+  {
+   "to": "st-mz-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Lalduhoma_ministry",
+   "from": "st-mz-pos-chief-minister"
+  },
+  {
+   "to": "st-mz-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Lalduhoma_ministry",
+   "from": "st-mz-pos-chief-minister"
+  },
+  {
+   "to": "st-mz-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Lalduhoma_ministry",
+   "from": "st-mz-pos-chief-minister"
+  },
+  {
+   "to": "st-mz-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Lalduhoma_ministry",
+   "from": "st-mz-pos-chief-minister"
+  },
+  {
+   "to": "st-mz-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Lalduhoma_ministry",
+   "from": "st-mz-pos-chief-minister"
+  },
+  {
+   "to": "st-mz-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Lalduhoma_ministry",
+   "from": "st-mz-pos-chief-minister"
+  },
+  {
+   "to": "st-mz-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Lalduhoma_ministry",
+   "from": "st-mz-pos-chief-minister"
+  },
+  {
+   "to": "st-mz-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Mizoram",
+   "from": "st-mz-council-of-ministers"
+  },
+  {
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) / Fourth Schedule (1 seat)",
+   "source": "https://en.wikipedia.org/wiki/Mizoram",
+   "from": "st-mz-assembly"
+  },
+  {
+   "to": "st-nl-assembly",
+   "type": "elects",
+   "basis": "Article 170",
+   "source": "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly",
+   "from": "in-electorate"
+  },
+  {
+   "to": "st-nl-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/List_of_current_Indian_governors",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "st-nl-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Neiphiu_Rio",
+   "from": "st-nl-pos-governor"
+  },
+  {
+   "to": "st-nl-pos-deputy-cm-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rio_ministry",
+   "from": "st-nl-pos-chief-minister"
+  },
+  {
+   "to": "st-nl-pos-deputy-cm-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rio_ministry",
+   "from": "st-nl-pos-chief-minister"
+  },
+  {
+   "to": "st-nl-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rio_ministry",
+   "from": "st-nl-pos-chief-minister"
+  },
+  {
+   "to": "st-nl-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rio_ministry",
+   "from": "st-nl-pos-chief-minister"
+  },
+  {
+   "to": "st-nl-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rio_ministry",
+   "from": "st-nl-pos-chief-minister"
+  },
+  {
+   "to": "st-nl-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rio_ministry",
+   "from": "st-nl-pos-chief-minister"
+  },
+  {
+   "to": "st-nl-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rio_ministry",
+   "from": "st-nl-pos-chief-minister"
+  },
+  {
+   "to": "st-nl-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rio_ministry",
+   "from": "st-nl-pos-chief-minister"
+  },
+  {
+   "to": "st-nl-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rio_ministry",
+   "from": "st-nl-pos-chief-minister"
+  },
+  {
+   "to": "st-nl-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rio_ministry",
+   "from": "st-nl-pos-chief-minister"
+  },
+  {
+   "to": "st-nl-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rio_ministry",
+   "from": "st-nl-pos-chief-minister"
+  },
+  {
+   "to": "st-nl-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly",
+   "from": "st-nl-council-of-ministers"
+  },
+  {
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) / Fourth Schedule (1 seat)",
+   "source": "https://en.wikipedia.org/wiki/Nagaland",
+   "from": "st-nl-assembly"
+  },
+  {
+   "to": "st-tr-assembly",
+   "type": "elects",
+   "basis": "Article 170",
+   "source": "https://en.wikipedia.org/wiki/Tripura_Legislative_Assembly",
+   "from": "in-electorate"
+  },
+  {
+   "to": "st-tr-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/List_of_current_Indian_governors",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "st-tr-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Manik_Saha",
+   "from": "st-tr-pos-governor"
+  },
+  {
+   "to": "st-tr-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Saha_ministry",
+   "from": "st-tr-pos-chief-minister"
+  },
+  {
+   "to": "st-tr-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Saha_ministry",
+   "from": "st-tr-pos-chief-minister"
+  },
+  {
+   "to": "st-tr-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Saha_ministry",
+   "from": "st-tr-pos-chief-minister"
+  },
+  {
+   "to": "st-tr-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Saha_ministry",
+   "from": "st-tr-pos-chief-minister"
+  },
+  {
+   "to": "st-tr-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Saha_ministry",
+   "from": "st-tr-pos-chief-minister"
+  },
+  {
+   "to": "st-tr-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Saha_ministry",
+   "from": "st-tr-pos-chief-minister"
+  },
+  {
+   "to": "st-tr-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Saha_ministry",
+   "from": "st-tr-pos-chief-minister"
+  },
+  {
+   "to": "st-tr-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Saha_ministry",
+   "from": "st-tr-pos-chief-minister"
+  },
+  {
+   "to": "st-tr-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Saha_ministry",
+   "from": "st-tr-pos-chief-minister"
+  },
+  {
+   "to": "st-tr-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Saha_ministry",
+   "from": "st-tr-pos-chief-minister"
+  },
+  {
+   "to": "st-tr-pos-mos-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Saha_ministry",
+   "from": "st-tr-pos-chief-minister"
+  },
+  {
+   "to": "st-tr-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Tripura",
+   "from": "st-tr-council-of-ministers"
+  },
+  {
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) / Fourth Schedule (1 seat)",
+   "source": "https://en.wikipedia.org/wiki/Tripura",
+   "from": "st-tr-assembly"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 65,
+  "corrections": [
+   "st-nl-pos-chief-minister + st-nl-council-of-ministers: Neiphiu Rio's party (NPF, not NDPP) independently re-confirmed via a fresh live fetch of the current 'Fifth Rio ministry' Wikipedia revision (separate from the original agent's read); confidence raised medium->high",
+   "st-tr-pos-sec-commissioner: corrected holder to P. K. Chakravarty per the official sec.tripura.gov.in portal -- a THIRD name, distinct from both candidates the prior agent found conflicting on Wikipedia (Manoj Kumar / Saradindu Chaudhari), both of which are stale",
+   "st-nl-pos-sec-commissioner: removed incorrect holder 'Abhijeet Sinha' after confirming he holds a different office (Chief Electoral Officer of Nagaland, an ECI-linked post for Lok Sabha/Assembly rolls) rather than State Election Commissioner (which handles local-body polls); left vacant/unknown rather than misattribute",
+   "st-tr-pos-lokayukta-chairperson: new finding -- K. N. Bhattacharjee's 3-year term (from appointment 2021-07-03) appears to have lapsed by mid-2024, over two years before this as-of date, with no successor/reappointment confirmable in sources checked; confidence lowered medium->low",
+   "st-nl-pos-governor and st-nl-pos-chief-secretary: re-confirmed via independent fresh sources (List_of_current_Indian_governors; official nagaland.gov.in portal); confidence raised medium->high",
+   "st-mz-mc-aizawl: added note that a 2026 Aizawl municipal election was found in a freshly-fetched source (ZPM won 17 seats); the recorded 'seats: 19' figure may be stale for the new term though the mayor's name is unaffected",
+   "All other checked positions (3 Governors, 3 CMs, 3 Deputy CMs, 3 Speakers, 3 Deputy Speakers, 3 Leaders of Opposition, 3 Chief Secretaries, 3 DGPs, Mizoram SEC Commissioner, 3 PSC Chairmen, Mizoram Lokayukta, 2 Mayors, and all 31 named Council-of-Ministers members across Mizoram/Nagaland/Tripura) were cross-checked against freshly fetched 2026 Wikipedia revisions and/or official state portals and matched the file as-is -- no changes made",
+   "Schema/ID audit (python): 0 duplicate IDs, 0 dangling parentId/orgId/appointedBy/onAdviceOf/relation references within the segment, 0 invalid kind/sector/rank/appointmentMode/relation-type values, all IDs valid kebab-case ASCII -- no structural corrections were needed",
+   "Mizoram Lokayukta term-lapse concern (already flagged by the prior agent) and the Mizoram/Nagaland SHRC and Nagaland Lokayukta gaps (deliberately left unmodeled by the prior agent, per quality bar 'never invent') were re-checked and left as-is: no further source found to resolve them"
+  ]
+ }
+}

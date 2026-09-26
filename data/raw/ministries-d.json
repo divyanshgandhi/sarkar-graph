@@ -1,0 +1,3988 @@
+{
+ "segment": "ministries-d",
+ "asOf": "2026-09-25",
+ "notes": "Segment ministries-d covers Power, New & Renewable Energy, Petroleum & Natural Gas, Coal, Mines, Steel, Heavy Industries, Department of Atomic Energy and Department of Space. Minister/MoS office sourced from the Cabinet Secretariat's official 'List of Council of Ministers with Portfolios' (as on 23.06.2026); as-of 2026-09-25 there was reshuffle speculation for exactly this cluster of energy/resource ministries (per The Week, 18-09-2026) but no confirmed change, so the 23.06.2026 portfolio list is the most current authoritative allocation. Secretary-level and CPSE Chairman/CMD holders were checked against 2025-2026 sources where possible (many against the Petroleum Planning & Analysis Cell's live Governing Body page, last-updated 25-09-2026, itself). Known gaps / low-confidence holders that should be re-verified before publication: MNRE Secretary (Santosh Kumar Sarangi), Coal Secretary (Vikram Dev Dutt), Steel Secretary (Sandeep Poundrik); NTPC CMD and Power Grid (POWERGRID) CMD were both mid-succession in the research window and the named holders may already have changed; CMD/Chairman not verified at all (left vacant with a position stub) for: CEA, BEE, NEEPCO, Coal Controller, NLC India, SECI, IREDA, NISE, NIWE, GSI, Indian Bureau of Mines, Hindustan Copper, MECL, KABIL, MRPL, CPCL, ISPRL, IREL, ECIL, NSIL and IN-SPACe. BHAVINI and Uranium Corporation of India holder names come from Wikipedia infoboxes carrying stale (2016-19) financial data and should be treated as low-confidence pending direct confirmation. Coal India's seven production subsidiaries (BCCL/CCL/ECL/MCL/NCL/SECL/WCL) and CMPDI are defined as entities without individual CMD holder research (time-boxed out of scope for this pass). CERC and PNGRB are referenced only (owned by the regulators segment) as the sector regulators for Power and Petroleum & Natural Gas respectively. All minister/MoS position records themselves are owned by the council-of-ministers segment and are referenced here by canonical ID, not redefined. ADVERSARIAL VERIFICATION PASS (2026-09-25): fresh 2025-26 sourcing on 58 positions (via Wikipedia infobox API, PIB, Google News aggregation, and the live PPAC governing-body page). 4 holder names were corrected (NTPC CMD, POWERGRID/PGCIL CMD, BHAVINI CMD, MOIL CMD — the file had stale/wrong names despite the notes already flagging some of these as unsettled). 9 previously-vacant CMD/DG/Controller stubs were resolved with named, sourced holders (NLC India, Hindustan Copper, CPCL, Coal Controller, GSI, IBM, ECIL, SECI; IREDA's PESB-recommended-but-unconfirmed candidate is noted without being recorded as a confirmed holder). NPCIL's CMD holder was downgraded to low confidence after finding evidence the named person's confirmed title is actually Director (Finance). See the top-level 'verification' block for the full per-position log. Remaining unresolved after this pass: CEA Chairperson, BEE DG, NEEPCO CMD, MRPL MD, ISPRL MD, MECL CMD, KABIL CMD, IREL CMD, IN-SPACe Chairman, Antrix CMD (unchanged from original), SAC/LPSC/NRSC/PRL Directors (not re-searched this pass).",
+ "entities": [
+  {
+   "id": "in-min-power",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Power",
+   "aliases": [
+    "Power Ministry",
+    "MoP"
+   ],
+   "parentId": "in-union-government",
+   "description": "Formulates national policy on generation, transmission and distribution of electricity, drives rural electrification and grid modernisation, and administers India's central power-sector PSUs and the electricity regulator's parent framework.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; Electricity Act, 2003",
+   "officialUrl": "https://powermin.gov.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-power",
+   "adminHeadPositionId": "in-pos-secretary-power",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://powermin.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cea",
+   "kind": "regulator",
+   "sector": "executive",
+   "name": "Central Electricity Authority",
+   "abbr": "CEA",
+   "aliases": [
+    "CEA"
+   ],
+   "parentId": "in-min-power",
+   "description": "Statutory technical authority under the Electricity Act, 2003 that specifies technical standards, prepares the National Electricity Plan and advises the Union government on power-sector planning; distinct from the tariff regulator CERC.",
+   "legalBasis": "Electricity Act, 2003, Part X",
+   "officialUrl": "https://cea.nic.in",
+   "established": "1975",
+   "sources": [
+    "https://cea.nic.in",
+    "https://en.wikipedia.org/wiki/Central_Electricity_Authority_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-bee",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Bureau of Energy Efficiency",
+   "abbr": "BEE",
+   "aliases": [
+    "BEE"
+   ],
+   "parentId": "in-min-power",
+   "description": "Statutory body that drives energy-efficiency policy — star-labelling of appliances, PAT (Perform-Achieve-Trade) scheme for industry, and building energy codes — under the Energy Conservation Act, 2001.",
+   "legalBasis": "Energy Conservation Act, 2001",
+   "officialUrl": "https://beeindia.gov.in",
+   "established": "2002-03-01",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bureau_of_Energy_Efficiency",
+    "https://beeindia.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ntpc",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "NTPC Limited",
+   "abbr": "NTPC",
+   "aliases": [
+    "National Thermal Power Corporation"
+   ],
+   "parentId": "in-min-power",
+   "description": "India's largest power generation company, a Maharatna CPSE that runs coal, gas, hydro, nuclear-JV and renewable power plants and is the anchor of India's thermal generation capacity.",
+   "officialUrl": "https://ntpc.co.in",
+   "established": "1975",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-ntpc",
+   "sources": [
+    "https://ntpc.co.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pgcil",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Power Grid Corporation of India Limited",
+   "abbr": "POWERGRID",
+   "aliases": [
+    "PGCIL",
+    "Powergrid"
+   ],
+   "parentId": "in-min-power",
+   "description": "Central Transmission Utility that owns and operates over 85% of India's inter-state electricity transmission network; a Maharatna CPSE.",
+   "officialUrl": "https://www.powergrid.in",
+   "established": "1989",
+   "hq": "Gurugram",
+   "headPositionId": "in-pos-chair-pgcil",
+   "sources": [
+    "https://www.powergrid.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nhpc",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "NHPC Limited",
+   "abbr": "NHPC",
+   "parentId": "in-min-power",
+   "description": "India's largest hydropower generation company, a Mini-Ratna-turned-Schedule-A CPSE that builds and operates hydroelectric and some renewable-energy projects across the Himalayan and north-eastern river basins.",
+   "officialUrl": "https://www.nhpcindia.com",
+   "established": "1975-11-07",
+   "hq": "Faridabad",
+   "headPositionId": "in-pos-chair-nhpc",
+   "sources": [
+    "https://www.nhpcindia.com",
+    "https://en.wikipedia.org/wiki/NHPC_Limited"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pfc",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Power Finance Corporation Limited",
+   "abbr": "PFC",
+   "parentId": "in-min-power",
+   "description": "Systemically important NBFC and Maharatna CPSE that is India's largest lender to the power sector, financing generation, transmission and distribution projects; parent of REC Limited.",
+   "officialUrl": "https://www.pfcindia.com",
+   "established": "1986-07",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-pfc",
+   "sources": [
+    "https://www.pfcindia.com",
+    "https://en.wikipedia.org/wiki/Power_Finance_Corporation"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-rec-limited",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "REC Limited",
+   "abbr": "REC",
+   "aliases": [
+    "Rural Electrification Corporation"
+   ],
+   "parentId": "in-min-power",
+   "description": "NBFC financing power, infrastructure and logistics projects, formerly Rural Electrification Corporation; now a subsidiary of Power Finance Corporation and slated for merger into PFC.",
+   "officialUrl": "https://recindia.nic.in",
+   "established": "1969-07-25",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-rec-limited",
+   "sources": [
+    "https://en.wikipedia.org/wiki/REC_Limited"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-sjvn",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "SJVN Limited",
+   "abbr": "SJVN",
+   "aliases": [
+    "Satluj Jal Vidyut Nigam"
+   ],
+   "parentId": "in-min-power",
+   "description": "Hydro and renewable power generation CPSE jointly owned by the Union government (59.92%) and the Government of Himachal Pradesh (26.85%), originally built to develop the Sutlej basin.",
+   "officialUrl": "https://www.sjvn.nic.in",
+   "established": "1988",
+   "hq": "Shimla",
+   "headPositionId": "in-pos-chair-sjvn",
+   "sources": [
+    "https://www.sjvn.nic.in",
+    "https://en.wikipedia.org/wiki/SJVN"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-thdc-india",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "THDC India Limited",
+   "abbr": "THDC",
+   "parentId": "in-min-power",
+   "description": "Hydropower CPSE (originally Tehri Hydro Development Corporation) that built and runs the Tehri dam complex; jointly owned by the Union government and Uttar Pradesh, administratively a subsidiary of NTPC.",
+   "officialUrl": "https://www.thdc.co.in",
+   "established": "1988-07-12",
+   "hq": "Rishikesh",
+   "headPositionId": "in-pos-chair-thdc-india",
+   "sources": [
+    "https://www.thdc.co.in",
+    "https://en.wikipedia.org/wiki/THDC_India_Limited"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-neepco",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "North Eastern Electric Power Corporation Limited",
+   "abbr": "NEEPCO",
+   "parentId": "in-min-power",
+   "description": "Hydro and thermal power generation CPSE dedicated to developing power projects across the north-eastern states; a subsidiary of NTPC.",
+   "officialUrl": "https://www.neepco.co.in",
+   "established": "1976",
+   "hq": "Shillong",
+   "sources": [
+    "https://www.neepco.co.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-dvc",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Damodar Valley Corporation",
+   "abbr": "DVC",
+   "parentId": "in-min-power",
+   "description": "India's first multi-purpose river-valley statutory authority (on the TVA model), generating and distributing power and managing flood control/irrigation across the Damodar basin in Jharkhand and West Bengal.",
+   "legalBasis": "Damodar Valley Corporation Act, 1948",
+   "officialUrl": "https://dvc.gov.in",
+   "established": "1948-07-07",
+   "hq": "Kolkata",
+   "headPositionId": "in-pos-chair-dvc",
+   "sources": [
+    "https://dvc.gov.in",
+    "https://en.wikipedia.org/wiki/Damodar_Valley_Corporation"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-grid-india",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Grid Controller of India Limited",
+   "abbr": "Grid-India",
+   "aliases": [
+    "POSOCO",
+    "Power System Operation Corporation",
+    "Grid Controller of India"
+   ],
+   "parentId": "in-min-power",
+   "description": "Operates India's national and regional power grids as the country's Independent System Operator, formerly the Power System Operation Corporation (POSOCO); a wholly government-owned entity.",
+   "officialUrl": "https://www.grid-india.in",
+   "established": "2009-03",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-grid-india",
+   "sources": [
+    "https://www.grid-india.in",
+    "https://en.wikipedia.org/wiki/Grid_Controller_of_India_Limited"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-npti",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Power Training Institute",
+   "abbr": "NPTI",
+   "parentId": "in-min-power",
+   "description": "Apex training and human-resource-development institute for India's power sector, running specialised training centres across the country under the Ministry of Power.",
+   "officialUrl": "https://npti.gov.in",
+   "sources": [
+    "https://npti.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-eesl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Energy Efficiency Services Limited",
+   "abbr": "EESL",
+   "parentId": "in-min-power",
+   "description": "Joint-venture CPSE of PSUs under the Ministry of Power that implements India's LED bulb (UJALA) and other energy-efficiency market-transformation programmes.",
+   "officialUrl": "https://eeslindia.org",
+   "sources": [
+    "https://eeslindia.org",
+    "https://en.wikipedia.org/wiki/Energy_Efficiency_Services_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-min-new-and-renewable-energy",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of New and Renewable Energy",
+   "abbr": "MNRE",
+   "aliases": [
+    "MNRE Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Nodal ministry for solar, wind, bio-energy, small-hydro and green-hydrogen policy, driving India's renewable-capacity targets and schemes such as PM Surya Ghar and the National Green Hydrogen Mission.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://mnre.gov.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-new-and-renewable-energy",
+   "adminHeadPositionId": "in-pos-secretary-new-and-renewable-energy",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://mnre.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-seci",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Solar Energy Corporation of India Limited",
+   "abbr": "SECI",
+   "parentId": "in-min-new-and-renewable-energy",
+   "headPositionId": "in-pos-chairman-seci",
+   "description": "Central nodal agency for implementing India's solar (and increasingly wind, hybrid and green-hydrogen) tenders and power-purchase agreements on behalf of the government.",
+   "officialUrl": "https://www.seci.co.in",
+   "established": "2011-09-09",
+   "hq": "New Delhi",
+   "sources": [
+    "https://www.seci.co.in",
+    "https://en.wikipedia.org/wiki/Solar_Energy_Corporation_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ireda",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Indian Renewable Energy Development Agency Limited",
+   "abbr": "IREDA",
+   "parentId": "in-min-new-and-renewable-energy",
+   "description": "NBFC CPSE (listed, Navratna-track) that provides project finance for renewable-energy and energy-efficiency ventures; the principal financing arm of MNRE.",
+   "officialUrl": "https://www.ireda.in",
+   "established": "1987",
+   "hq": "New Delhi",
+   "sources": [
+    "https://www.ireda.in",
+    "https://en.wikipedia.org/wiki/IREDA"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nise",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Institute of Solar Energy",
+   "abbr": "NISE",
+   "parentId": "in-min-new-and-renewable-energy",
+   "description": "MNRE's apex autonomous research, testing and training institute for solar-energy technologies, based in Gurugram.",
+   "officialUrl": "https://nise.res.in",
+   "established": "2013-10-24",
+   "hq": "Gurugram",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Solar_Energy",
+    "https://nise.res.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-niwe",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Institute of Wind Energy",
+   "abbr": "NIWE",
+   "parentId": "in-min-new-and-renewable-energy",
+   "description": "MNRE's autonomous institute for wind-resource assessment, testing/certification of wind turbines and wind-energy R&D, based in Chennai.",
+   "officialUrl": "https://niwe.res.in",
+   "hq": "Chennai",
+   "sources": [
+    "https://niwe.res.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-sss-nibe",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Sardar Swaran Singh National Institute of Bio-Energy",
+   "abbr": "SSS-NIBE",
+   "parentId": "in-min-new-and-renewable-energy",
+   "description": "MNRE's autonomous institute for research, training and demonstration in bio-energy technologies (biomass, biogas, biofuels), based in Kapurthala, Punjab.",
+   "sources": [
+    "https://mnre.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-min-petroleum-and-natural-gas",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Petroleum and Natural Gas",
+   "abbr": "MoPNG",
+   "aliases": [
+    "Petroleum Ministry",
+    "Oil Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Formulates policy on exploration, production, refining, distribution and pricing of petroleum, natural gas and petroleum products, and owns India's national oil companies.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; Oilfields (Regulation and Development) Act, 1948",
+   "officialUrl": "https://mopng.gov.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-petroleum-and-natural-gas",
+   "adminHeadPositionId": "in-pos-secretary-petroleum-and-natural-gas",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://ppac.gov.in/governing-body",
+    "https://mopng.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ongc",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Oil and Natural Gas Corporation Limited",
+   "abbr": "ONGC",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "India's largest crude-oil and natural-gas producer, a Maharatna CPSE responsible for the bulk of the country's domestic upstream (exploration & production) output onshore and offshore.",
+   "officialUrl": "https://ongcindia.com",
+   "established": "1956-08-14",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-ongc",
+   "sources": [
+    "https://ongcindia.com",
+    "https://ppac.gov.in/governing-body"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-iocl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Indian Oil Corporation Limited",
+   "abbr": "IOCL",
+   "aliases": [
+    "IndianOil",
+    "Indian Oil"
+   ],
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "India's largest oil-marketing and refining company by volume, a Maharatna CPSE operating the country's largest refining network and fuel-retail chain.",
+   "officialUrl": "https://iocl.com",
+   "established": "1959",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-iocl",
+   "sources": [
+    "https://iocl.com",
+    "https://ppac.gov.in/governing-body"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-bpcl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Bharat Petroleum Corporation Limited",
+   "abbr": "BPCL",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "Maharatna oil-marketing and refining CPSE operating refineries at Mumbai, Kochi and Bina and a nationwide fuel-retail network.",
+   "officialUrl": "https://www.bharatpetroleum.in",
+   "established": "1976",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-chair-bpcl",
+   "sources": [
+    "https://www.bharatpetroleum.in",
+    "https://ppac.gov.in/governing-body"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hpcl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Hindustan Petroleum Corporation Limited",
+   "abbr": "HPCL",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "Maharatna oil-marketing and refining CPSE operating refineries at Mumbai and Visakhapatnam and a nationwide fuel-retail and LPG network.",
+   "officialUrl": "https://www.hindustanpetroleum.com",
+   "established": "1974",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-chair-hpcl",
+   "sources": [
+    "https://www.hindustanpetroleum.com",
+    "https://ppac.gov.in/governing-body"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-gail",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "GAIL (India) Limited",
+   "abbr": "GAIL",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "Maharatna CPSE and India's largest natural-gas transmission, trading, petrochemical and LPG-transmission company, operator of the national gas pipeline grid.",
+   "officialUrl": "https://www.gailonline.com",
+   "established": "1984-08-16",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-gail",
+   "sources": [
+    "https://www.gailonline.com",
+    "https://ppac.gov.in/governing-body"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-oil",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Oil India Limited",
+   "abbr": "OIL",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "Second-largest national upstream oil & gas exploration and production CPSE (Navratna), historically centred on Assam/north-east India with a growing pan-India and overseas portfolio.",
+   "officialUrl": "https://www.oil-india.com",
+   "established": "1959",
+   "hq": "Noida",
+   "headPositionId": "in-pos-chair-oil",
+   "sources": [
+    "https://www.oil-india.com",
+    "https://ppac.gov.in/governing-body"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-eil",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Engineers India Limited",
+   "abbr": "EIL",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "Listed CPSE providing engineering, procurement and construction (EPC) and consultancy services for the hydrocarbon, petrochemical and process industries.",
+   "officialUrl": "https://www.engineersindia.com",
+   "established": "1965",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-eil",
+   "sources": [
+    "https://www.engineersindia.com",
+    "https://en.wikipedia.org/wiki/Engineers_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-mrpl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Mangalore Refinery and Petrochemicals Limited",
+   "abbr": "MRPL",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "Refining CPSE operating a large refinery-petrochemical complex at Mangaluru, Karnataka; a subsidiary of ONGC.",
+   "officialUrl": "https://www.mrpl.co.in",
+   "established": "1988",
+   "hq": "Mangaluru",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mangalore_Refinery_and_Petrochemicals_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-cpcl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Chennai Petroleum Corporation Limited",
+   "abbr": "CPCL",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "Refining CPSE operating refineries at Manali and Nagapattinam in Tamil Nadu; a subsidiary of Indian Oil Corporation.",
+   "officialUrl": "https://www.cpcl.co.in",
+   "established": "1965",
+   "hq": "Chennai",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chennai_Petroleum_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nrl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Numaligarh Refinery Limited",
+   "abbr": "NRL",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "Refining CPSE operating a refinery at Numaligarh, Assam, jointly owned by Bharat Petroleum, Oil India and the Government of Assam.",
+   "officialUrl": "https://www.nrl.co.in",
+   "established": "1993",
+   "hq": "Numaligarh, Assam",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Numaligarh_Refinery"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-dgh",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Directorate General of Hydrocarbons",
+   "abbr": "DGH",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "Technical arm of the Petroleum Ministry that regulates and monitors upstream exploration & production activity, administers hydrocarbon licensing rounds (OALP/HELP) and maintains India's E&P data repository.",
+   "officialUrl": "https://dghindia.gov.in",
+   "established": "1993",
+   "hq": "Noida",
+   "sources": [
+    "https://ppac.gov.in/governing-body",
+    "https://dghindia.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ppac",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Petroleum Planning and Analysis Cell",
+   "abbr": "PPAC",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "Ministry think-tank/data cell that tracks petroleum-product pricing, subsidies, consumption and under-recoveries, and services the ministry's governing bodies with data and analysis.",
+   "officialUrl": "https://ppac.gov.in",
+   "sources": [
+    "https://ppac.gov.in/governing-body"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-isprl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Indian Strategic Petroleum Reserves Limited",
+   "abbr": "ISPRL",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "Special-purpose CPSE that builds and manages India's underground strategic crude-oil reserve caverns (Visakhapatnam, Mangaluru, Padur) to cushion supply-disruption risk.",
+   "officialUrl": "https://isprlltd.com",
+   "established": "2004",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Strategic_Petroleum_Reserves_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pcra",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Petroleum Conservation Research Association",
+   "abbr": "PCRA",
+   "parentId": "in-min-petroleum-and-natural-gas",
+   "description": "Non-profit body funded by the Ministry and the oil industry that promotes petroleum-product conservation and fuel efficiency through R&D, training and public outreach.",
+   "officialUrl": "https://www.pcra.org",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Petroleum_Conservation_Research_Association"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-min-coal",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Coal",
+   "abbr": "MoC",
+   "parentId": "in-union-government",
+   "description": "Formulates policy on exploration and development of coal and lignite reserves, and administers Coal India Limited and other coal-sector CPSEs that supply the bulk of India's thermal-power fuel.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; Coal Mines (Nationalisation) Act, 1973; Mines and Minerals (Development and Regulation) Act, 1957",
+   "officialUrl": "https://coal.gov.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-coal",
+   "adminHeadPositionId": "in-pos-secretary-coal",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://coal.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-coal-india",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Coal India Limited",
+   "abbr": "CIL",
+   "parentId": "in-min-coal",
+   "description": "World's largest coal-mining company by output, a Maharatna CPSE that produces roughly three-quarters of India's coal through seven production subsidiaries plus a planning/design subsidiary.",
+   "officialUrl": "https://www.coalindia.in",
+   "established": "1975",
+   "hq": "Kolkata",
+   "headPositionId": "in-pos-chair-coal-india",
+   "sources": [
+    "https://www.coalindia.in",
+    "https://en.wikipedia.org/wiki/Coal_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-bccl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Bharat Coking Coal Limited",
+   "parentId": "in-coal-india",
+   "description": "Wholly owned coal-mining production subsidiary of Coal India Limited operating in and around Jharkhand.",
+   "hq": "Dhanbad, Jharkhand",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coal_India",
+    "https://www.coalindia.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ccl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Central Coalfields Limited",
+   "parentId": "in-coal-india",
+   "description": "Wholly owned coal-mining production subsidiary of Coal India Limited operating in and around Jharkhand.",
+   "hq": "Ranchi, Jharkhand",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coal_India",
+    "https://www.coalindia.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ecl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Eastern Coalfields Limited",
+   "parentId": "in-coal-india",
+   "description": "Wholly owned coal-mining production subsidiary of Coal India Limited operating in and around West Bengal.",
+   "hq": "Sanctoria, West Bengal",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coal_India",
+    "https://www.coalindia.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-mcl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Mahanadi Coalfields Limited",
+   "parentId": "in-coal-india",
+   "description": "Wholly owned coal-mining production subsidiary of Coal India Limited operating in and around Odisha.",
+   "hq": "Sambalpur, Odisha",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coal_India",
+    "https://www.coalindia.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ncl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Northern Coalfields Limited",
+   "parentId": "in-coal-india",
+   "description": "Wholly owned coal-mining production subsidiary of Coal India Limited operating in and around Madhya Pradesh.",
+   "hq": "Singrauli, Madhya Pradesh",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coal_India",
+    "https://www.coalindia.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-secl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "South Eastern Coalfields Limited",
+   "parentId": "in-coal-india",
+   "description": "Wholly owned coal-mining production subsidiary of Coal India Limited operating in and around Chhattisgarh.",
+   "hq": "Bilaspur, Chhattisgarh",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coal_India",
+    "https://www.coalindia.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-wcl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Western Coalfields Limited",
+   "parentId": "in-coal-india",
+   "description": "Wholly owned coal-mining production subsidiary of Coal India Limited operating in and around Maharashtra.",
+   "hq": "Nagpur, Maharashtra",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coal_India",
+    "https://www.coalindia.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-cmpdi",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Central Mine Planning and Design Institute Limited",
+   "abbr": "CMPDI",
+   "parentId": "in-coal-india",
+   "description": "Coal India's mine-planning, exploration and consultancy subsidiary, providing geological exploration, project reports and technical support to all CIL production subsidiaries.",
+   "hq": "Ranchi, Jharkhand",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coal_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nlc-india",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "NLC India Limited",
+   "abbr": "NLCIL",
+   "aliases": [
+    "Neyveli Lignite Corporation"
+   ],
+   "parentId": "in-min-coal",
+   "description": "Navratna CPSE that mines lignite (mainly at Neyveli, Tamil Nadu, and Barsingsar, Rajasthan) and generates thermal and renewable power from it; formerly Neyveli Lignite Corporation.",
+   "officialUrl": "https://www.nlcindia.in",
+   "established": "1956",
+   "hq": "Chennai",
+   "sources": [
+    "https://www.nlcindia.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-coal-controller",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Coal Controller's Organisation",
+   "parentId": "in-min-coal",
+   "description": "Statutory office that registers coal/lignite producers and consumers, verifies grade/quality declarations of coal, and administers cess and captive-mine compliance under coal-sector law.",
+   "legalBasis": "Colliery Control Order, 2000",
+   "officialUrl": "https://coal.nic.in",
+   "hq": "Kolkata",
+   "sources": [
+    "https://coal.nic.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-min-mines",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Mines",
+   "parentId": "in-union-government",
+   "description": "Formulates policy on survey and exploration of minerals (other than coal, petroleum and atomic minerals) and their regulated mining and development, and administers India's non-fuel mineral PSUs.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; Mines and Minerals (Development and Regulation) Act, 1957",
+   "officialUrl": "https://mines.gov.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-mines",
+   "adminHeadPositionId": "in-pos-secretary-mines",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://mines.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-gsi",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Geological Survey of India",
+   "abbr": "GSI",
+   "parentId": "in-min-mines",
+   "description": "India's principal earth-science survey and mapping organisation, founded in 1851, that carries out geological mapping, mineral exploration and natural-hazard (landslide/seismic) assessment nationwide.",
+   "officialUrl": "https://www.gsi.gov.in",
+   "established": "1851-03-04",
+   "hq": "Kolkata",
+   "budget": {
+    "fy": "2019-20",
+    "be": 800.0,
+    "source": "https://en.wikipedia.org/wiki/Geological_Survey_of_India"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Geological_Survey_of_India",
+    "https://www.gsi.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ibm",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Indian Bureau of Mines",
+   "abbr": "IBM",
+   "parentId": "in-min-mines",
+   "description": "Regulatory and technical attached office that enforces mine conservation, scientific-development and mineral-conservation rules, approves mining plans and compiles national mineral statistics.",
+   "officialUrl": "https://ibm.gov.in",
+   "hq": "Nagpur",
+   "sources": [
+    "https://ibm.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nalco",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "National Aluminium Company Limited",
+   "abbr": "NALCO",
+   "parentId": "in-min-mines",
+   "description": "Navratna, vertically integrated CPSE spanning bauxite mining, alumina refining, aluminium smelting and captive power generation, based in Odisha.",
+   "officialUrl": "https://www.nalcoindia.com",
+   "established": "1981",
+   "hq": "Bhubaneswar",
+   "headPositionId": "in-pos-chair-nalco",
+   "sources": [
+    "https://www.nalcoindia.com",
+    "https://en.wikipedia.org/wiki/National_Aluminium_Company"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hindustan-copper",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Hindustan Copper Limited",
+   "abbr": "HCL",
+   "parentId": "in-min-mines",
+   "description": "India's only vertically integrated copper-mining-to-refining CPSE, operating mines at Malanjkhand, Khetri and other sites.",
+   "officialUrl": "https://www.hindustancopper.com",
+   "established": "1967",
+   "hq": "Kolkata",
+   "sources": [
+    "https://www.hindustancopper.com"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-mecl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Mineral Exploration and Consultancy Limited",
+   "abbr": "MECL",
+   "parentId": "in-min-mines",
+   "description": "CPSE specialising in mineral exploration (drilling, geological surveys) and consultancy services for coal, lignite and other minerals, based in Nagpur.",
+   "hq": "Nagpur",
+   "sources": [
+    "https://mines.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-kabil",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Khanij Bidesh India Limited",
+   "abbr": "KABIL",
+   "parentId": "in-min-mines",
+   "description": "Joint-venture CPSE of NALCO, Hindustan Copper and MECL created in 2019 to identify, acquire and develop critical- and strategic-mineral assets overseas (e.g. lithium, cobalt) for India's supply security.",
+   "established": "2019",
+   "hq": "New Delhi",
+   "sources": [
+    "https://mines.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-jnarddc",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Jawaharlal Nehru Aluminium Research Development and Design Centre",
+   "abbr": "JNARDDC",
+   "parentId": "in-min-mines",
+   "description": "Autonomous R&D institute under the Ministry of Mines dedicated to aluminium and non-ferrous-metal research, based in Nagpur.",
+   "officialUrl": "https://jnarddc.gov.in",
+   "hq": "Nagpur",
+   "sources": [
+    "https://jnarddc.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-min-steel",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Steel",
+   "parentId": "in-union-government",
+   "description": "Formulates policy on the iron and steel industry and administers the steel-sector CPSEs; steel pricing/production itself is largely deregulated and market-driven since the 1990s.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://steel.gov.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-steel",
+   "adminHeadPositionId": "in-pos-secretary-steel",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://steel.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-sail",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Steel Authority of India Limited",
+   "abbr": "SAIL",
+   "parentId": "in-min-steel",
+   "description": "Maharatna CPSE and India's largest integrated public-sector steel producer, operating major integrated steel plants at Bhilai, Rourkela, Durgapur, Bokaro and Burnpur.",
+   "officialUrl": "https://www.sail.co.in",
+   "established": "1954",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-sail",
+   "sources": [
+    "https://www.sail.co.in",
+    "https://en.wikipedia.org/wiki/Steel_Authority_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nmdc",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "NMDC Limited",
+   "abbr": "NMDC",
+   "parentId": "in-min-steel",
+   "description": "Navratna CPSE and India's largest iron-ore producer/exporter by volume, also mining diamond, copper and other minerals; formerly National Mineral Development Corporation.",
+   "officialUrl": "https://www.nmdc.co.in",
+   "established": "1958",
+   "hq": "Hyderabad",
+   "headPositionId": "in-pos-chair-nmdc",
+   "sources": [
+    "https://www.nmdc.co.in",
+    "https://en.wikipedia.org/wiki/NMDC_Limited"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-rinl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Rashtriya Ispat Nigam Limited",
+   "abbr": "RINL",
+   "aliases": [
+    "Vizag Steel",
+    "Visakhapatnam Steel Plant"
+   ],
+   "parentId": "in-min-steel",
+   "description": "CPSE operating the Visakhapatnam Steel Plant (Vizag Steel), India's first coastal-based integrated steel plant, entirely built on liquid-steel-through-blast-furnace route without any captive mines.",
+   "officialUrl": "https://www.vizagsteel.com",
+   "established": "1982",
+   "hq": "Visakhapatnam",
+   "headPositionId": "in-pos-chair-rinl",
+   "sources": [
+    "https://www.vizagsteel.com",
+    "https://en.wikipedia.org/wiki/Rashtriya_Ispat_Nigam_Limited"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-moil",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "MOIL Limited",
+   "abbr": "MOIL",
+   "parentId": "in-min-steel",
+   "description": "Listed CPSE and India's largest manganese-ore producer, operating mines mainly in Maharashtra and Madhya Pradesh; formerly Manganese Ore (India) Limited.",
+   "officialUrl": "https://www.moil.nic.in",
+   "established": "1962-06-22",
+   "hq": "Nagpur",
+   "headPositionId": "in-pos-chair-moil",
+   "sources": [
+    "https://www.moil.nic.in",
+    "https://en.wikipedia.org/wiki/MOIL"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-mecon",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "MECON Limited",
+   "abbr": "MECON",
+   "parentId": "in-min-steel",
+   "description": "CPSE providing engineering-consultancy, design and project-management services mainly for the steel, power and infrastructure sectors, based in Ranchi.",
+   "officialUrl": "https://www.meconlimited.co.in",
+   "established": "1959",
+   "hq": "Ranchi",
+   "headPositionId": "in-pos-chair-mecon",
+   "sources": [
+    "https://www.meconlimited.co.in",
+    "https://en.wikipedia.org/wiki/MECON_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-kiocl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "KIOCL Limited",
+   "abbr": "KIOCL",
+   "parentId": "in-min-steel",
+   "description": "CPSE that produces iron-ore/pig-iron pellets, originally built around the (now-closed) Kudremukh iron-ore mine; formerly Kudremukh Iron Ore Company Limited.",
+   "officialUrl": "https://www.kioclltd.in",
+   "established": "1976",
+   "hq": "Bengaluru",
+   "headPositionId": "in-pos-chair-kiocl",
+   "sources": [
+    "https://www.kioclltd.in",
+    "https://en.wikipedia.org/wiki/KIOCL_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-min-heavy-industries",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Heavy Industries",
+   "parentId": "in-union-government",
+   "description": "Formulates policy for the capital-goods, heavy-engineering and automobile/auto-components sectors, runs the FAME/PLI electric-mobility and auto incentive schemes, and administers heavy-engineering CPSEs.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://heavyindustries.gov.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-heavy-industries",
+   "adminHeadPositionId": "in-pos-secretary-heavy-industries",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://heavyindustries.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-bhel",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Bharat Heavy Electricals Limited",
+   "abbr": "BHEL",
+   "parentId": "in-min-heavy-industries",
+   "description": "Maharatna CPSE and India's largest power-plant-equipment manufacturer, also making rail, defence, aerospace and renewable-energy equipment.",
+   "officialUrl": "https://www.bhel.com",
+   "established": "1964-11-13",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-bhel",
+   "sources": [
+    "https://www.bhel.com",
+    "https://en.wikipedia.org/wiki/Bharat_Heavy_Electricals_Limited"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-andrew-yule",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Andrew Yule and Company Limited",
+   "abbr": "Andrew Yule",
+   "parentId": "in-min-heavy-industries",
+   "description": "One of India's oldest managing-agency-turned-CPSEs (founded 1863), now a diversified small CPSE with engineering, electrical and tea-plantation businesses.",
+   "officialUrl": "https://www.andrewyule.com",
+   "established": "1863",
+   "hq": "Kolkata",
+   "headPositionId": "in-pos-chair-andrew-yule",
+   "sources": [
+    "https://www.andrewyule.com",
+    "https://en.wikipedia.org/wiki/Andrew_Yule_and_Company"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hec",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Heavy Engineering Corporation Limited",
+   "abbr": "HEC",
+   "parentId": "in-min-heavy-industries",
+   "description": "CPSE at Ranchi manufacturing heavy machinery for mining, steel and defence sectors; has for years operated under severe financial stress and periodic revival packages.",
+   "hq": "Ranchi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Heavy_Engineering_Corporation"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-bridge-and-roof",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Bridge and Roof Company (India) Limited",
+   "parentId": "in-min-heavy-industries",
+   "description": "CPSE providing heavy structural-engineering, fabrication and EPC services (bridges, industrial structures, offshore platforms), headquartered in Kolkata.",
+   "hq": "Kolkata",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bridge_and_Roof_Company_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-icat",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "International Centre for Automotive Technology",
+   "abbr": "iCAT",
+   "parentId": "in-min-heavy-industries",
+   "description": "Autonomous automotive testing, certification, homologation and R&D centre under the Ministry of Heavy Industries, based in Manesar, Haryana.",
+   "hq": "Manesar, Haryana",
+   "sources": [
+    "https://en.wikipedia.org/wiki/International_Centre_for_Automotive_Technology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-arai",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Automotive Research Association of India",
+   "abbr": "ARAI",
+   "parentId": "in-min-heavy-industries",
+   "description": "Automotive homologation, testing, certification and R&D body co-operatively run by the automobile industry under the administrative umbrella of the Ministry of Heavy Industries, headquartered in Pune.",
+   "officialUrl": "https://www.araiindia.com",
+   "hq": "Pune",
+   "sources": [
+    "https://www.araiindia.com"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-dept-atomic-energy",
+   "kind": "independent_department",
+   "sector": "executive",
+   "name": "Department of Atomic Energy",
+   "abbr": "DAE",
+   "parentId": "in-union-government",
+   "description": "Independent department directly under the Prime Minister responsible for nuclear power generation, nuclear-fuel-cycle facilities, nuclear research and India's strategic atomic programme; chairs also head the Atomic Energy Commission.",
+   "legalBasis": "Atomic Energy Act, 1962; Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://dae.gov.in",
+   "established": "1954-08-03",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": "in-pos-secretary-department-of-atomic-energy",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://dae.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-aec",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "Atomic Energy Commission",
+   "abbr": "AEC",
+   "parentId": "in-dept-atomic-energy",
+   "description": "Apex policy-making body for India's atomic-energy programme, chaired ex officio by the Secretary, Department of Atomic Energy, that approves DAE's plans, budgets and major programme decisions.",
+   "legalBasis": "Atomic Energy Act, 1962",
+   "established": "1948",
+   "hq": "Mumbai",
+   "sources": [
+    "https://dae.gov.in/atomic-energy-commission/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-barc",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Bhabha Atomic Research Centre",
+   "abbr": "BARC",
+   "parentId": "in-dept-atomic-energy",
+   "description": "India's premier multidisciplinary nuclear-research centre (est. 1954 by Homi Bhabha), covering reactor design, nuclear fuel cycle, nuclear medicine, materials science and national-security-related R&D, based at Trombay, Mumbai.",
+   "officialUrl": "https://barc.gov.in",
+   "established": "1954-01-03",
+   "hq": "Trombay, Mumbai",
+   "budget": {
+    "fy": "2026-27",
+    "be": 4886.6,
+    "source": "https://en.wikipedia.org/wiki/Bhabha_Atomic_Research_Centre"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhabha_Atomic_Research_Centre",
+    "https://barc.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-npcil",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Nuclear Power Corporation of India Limited",
+   "abbr": "NPCIL",
+   "parentId": "in-dept-atomic-energy",
+   "description": "CPSE that designs, builds and operates all of India's civil nuclear-power reactors, working under the Atomic Energy Act's requirement that nuclear generation stay government-owned.",
+   "officialUrl": "https://www.npcil.nic.in",
+   "established": "1987-09",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-chair-npcil",
+   "sources": [
+    "https://www.npcil.nic.in",
+    "https://en.wikipedia.org/wiki/Nuclear_Power_Corporation_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-bhavini",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Bharatiya Nabhikiya Vidyut Nigam Limited",
+   "abbr": "BHAVINI",
+   "parentId": "in-dept-atomic-energy",
+   "description": "CPSE set up to build and operate India's fast-breeder reactor programme, starting with the Prototype Fast Breeder Reactor (PFBR) at Kalpakkam.",
+   "officialUrl": "https://bhavini.nic.in",
+   "established": "2003-10-22",
+   "hq": "Kalpakkam, Tamil Nadu",
+   "headPositionId": "in-pos-chair-bhavini",
+   "sources": [
+    "https://bhavini.nic.in",
+    "https://en.wikipedia.org/wiki/BHAVINI"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ucil",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Uranium Corporation of India Limited",
+   "abbr": "UCIL",
+   "parentId": "in-dept-atomic-energy",
+   "description": "CPSE that mines and mills uranium ore, mainly from the Singhbhum belt in Jharkhand, to supply India's nuclear-fuel-cycle facilities.",
+   "officialUrl": "https://uraniumcorp.in",
+   "established": "1967",
+   "hq": "Jaduguda, Jharkhand",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uranium_Corporation_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-irel",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "IREL (India) Limited",
+   "abbr": "IREL",
+   "aliases": [
+    "Indian Rare Earths Limited"
+   ],
+   "parentId": "in-dept-atomic-energy",
+   "description": "CPSE (formerly Indian Rare Earths Limited) that mines beach-sand minerals and processes rare-earth and other strategic minerals for the nuclear, defence and electronics industries.",
+   "established": "1950",
+   "hq": "Mumbai",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Rare_Earths"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ecil",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Electronics Corporation of India Limited",
+   "abbr": "ECIL",
+   "parentId": "in-dept-atomic-energy",
+   "description": "CPSE founded by DAE to build strategic and nuclear-grade electronics, instrumentation, e-voting machines and process-control systems for government use.",
+   "officialUrl": "https://www.ecil.co.in",
+   "established": "1967",
+   "hq": "Hyderabad",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Electronics_Corporation_of_India_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-aerb",
+   "kind": "regulator",
+   "sector": "executive",
+   "name": "Atomic Energy Regulatory Board",
+   "abbr": "AERB",
+   "parentId": "in-dept-atomic-energy",
+   "description": "India's nuclear and radiological safety regulator, issuing licences for and inspecting nuclear power plants, radiation facilities and the transport of radioactive material; reports administratively to DAE while functioning as an independent safety authority.",
+   "legalBasis": "Atomic Energy Act, 1962 (delegated authority); established by Presidential order 1983",
+   "officialUrl": "https://www.aerb.gov.in",
+   "established": "1983-11-15",
+   "hq": "Mumbai",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Atomic_Energy_Regulatory_Board",
+    "https://www.aerb.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-tifr",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Tata Institute of Fundamental Research",
+   "abbr": "TIFR",
+   "parentId": "in-dept-atomic-energy",
+   "description": "DAE's flagship deemed-university research institute for fundamental physics, mathematics, biology and computer science, founded with Tata Trust support in 1945 and now grant-in-aid funded by DAE.",
+   "officialUrl": "https://www.tifr.res.in",
+   "established": "1945",
+   "hq": "Mumbai",
+   "sources": [
+    "https://www.tifr.res.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hbni",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Homi Bhabha National Institute",
+   "abbr": "HBNI",
+   "parentId": "in-dept-atomic-energy",
+   "description": "Deemed university that is the common academic umbrella for DAE's constituent research institutions (BARC, IGCAR, VECC, RRCAT, TIFR, IPR, SINP and others), awarding degrees for doctoral and integrated research training across them.",
+   "established": "2005",
+   "hq": "Mumbai",
+   "sources": [
+    "https://dae.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-igcar",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indira Gandhi Centre for Atomic Research",
+   "abbr": "IGCAR",
+   "parentId": "in-dept-atomic-energy",
+   "description": "DAE's principal centre for fast-reactor technology and related materials science, based at Kalpakkam, Tamil Nadu.",
+   "officialUrl": "https://www.igcar.gov.in",
+   "established": "1971",
+   "hq": "Kalpakkam, Tamil Nadu",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indira_Gandhi_Centre_for_Atomic_Research",
+    "https://www.igcar.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-vecc",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Variable Energy Cyclotron Centre",
+   "abbr": "VECC",
+   "parentId": "in-dept-atomic-energy",
+   "description": "DAE research centre in Kolkata operating cyclotron and superconducting-cyclotron accelerators for nuclear-physics, materials-science and radioisotope-production research.",
+   "officialUrl": "https://www.vecc.gov.in",
+   "established": "1977",
+   "hq": "Kolkata",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Variable_Energy_Cyclotron_Centre",
+    "https://www.vecc.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-rrcat",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Raja Ramanna Centre for Advanced Technology",
+   "abbr": "RRCAT",
+   "parentId": "in-dept-atomic-energy",
+   "description": "DAE research centre in Indore developing laser and accelerator technologies, including free-electron lasers and synchrotron-radiation sources (Indus-1/Indus-2).",
+   "officialUrl": "https://www.rrcat.gov.in",
+   "established": "1984",
+   "hq": "Indore, Madhya Pradesh",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Raja_Ramanna_Centre_for_Advanced_Technology",
+    "https://www.rrcat.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ipr-plasma-research",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Institute for Plasma Research",
+   "abbr": "IPR",
+   "parentId": "in-dept-atomic-energy",
+   "description": "DAE-funded autonomous research institute at Gandhinagar dedicated to plasma physics and fusion-energy research, including India's Aditya and SST-1 tokamaks.",
+   "officialUrl": "https://www.ipr.res.in",
+   "hq": "Gandhinagar, Gujarat",
+   "sources": [
+    "https://www.ipr.res.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-sinp",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Saha Institute of Nuclear Physics",
+   "abbr": "SINP",
+   "parentId": "in-dept-atomic-energy",
+   "description": "DAE grant-in-aid research institute in Kolkata, founded by physicist Meghnad Saha, covering nuclear and particle physics, condensed-matter physics and materials science.",
+   "established": "1950",
+   "hq": "Kolkata",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Saha_Institute_of_Nuclear_Physics"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-dept-space",
+   "kind": "independent_department",
+   "sector": "executive",
+   "name": "Department of Space",
+   "abbr": "DoS",
+   "parentId": "in-union-government",
+   "description": "Independent department directly under the Prime Minister responsible for India's space programme — satellite and launch-vehicle development, space applications, and space-sector policy and promotion — executed mainly through ISRO and its associated bodies.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.isro.gov.in",
+   "established": "1972-06-01",
+   "hq": "Bengaluru",
+   "headPositionId": "in-pos-prime-minister",
+   "adminHeadPositionId": "in-pos-secretary-department-of-space",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://www.isro.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-space-commission",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "Space Commission",
+   "abbr": "Space Commission",
+   "parentId": "in-dept-space",
+   "description": "Apex policy body for India's space programme, chaired ex officio by the Secretary, Department of Space, mirroring the Atomic Energy Commission's role for the nuclear programme.",
+   "established": "1972",
+   "hq": "Bengaluru",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Space"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-isro",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indian Space Research Organisation",
+   "abbr": "ISRO",
+   "parentId": "in-dept-space",
+   "description": "India's national space agency, responsible for designing, building and launching satellites and launch vehicles (PSLV, GSLV, LVM3) and running the country's civilian space missions (Chandrayaan, Gaganyaan, Aditya-L1 and others) through a network of specialised centres.",
+   "officialUrl": "https://www.isro.gov.in",
+   "established": "1969-08-15",
+   "hq": "Bengaluru",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Space_Research_Organisation",
+    "https://www.isro.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-vssc",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Vikram Sarabhai Space Centre",
+   "abbr": "VSSC",
+   "parentId": "in-isro",
+   "description": "ISRO's lead centre for launch-vehicle design and development, based in Thiruvananthapuram, Kerala.",
+   "established": "1963-11-21",
+   "hq": "Thiruvananthapuram, Kerala",
+   "headPositionId": "in-pos-director-vssc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vikram_Sarabhai_Space_Centre"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ursc",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "U R Rao Satellite Centre",
+   "abbr": "URSC",
+   "parentId": "in-isro",
+   "description": "ISRO's lead centre for spacecraft design, integration and testing, based in Bengaluru; formerly ISRO Satellite Centre (ISAC).",
+   "established": "1972",
+   "hq": "Bengaluru",
+   "sources": [
+    "https://www.isro.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-sdsc-shar",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Satish Dhawan Space Centre",
+   "abbr": "SDSC SHAR",
+   "parentId": "in-isro",
+   "description": "ISRO's primary launch site (spaceport) at Sriharikota, Andhra Pradesh, from which nearly all Indian orbital launches are conducted.",
+   "established": "1971",
+   "hq": "Sriharikota, Andhra Pradesh",
+   "sources": [
+    "https://www.isro.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-lpsc",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Liquid Propulsion Systems Centre",
+   "abbr": "LPSC",
+   "parentId": "in-isro",
+   "description": "ISRO's lead centre for liquid, cryogenic and semi-cryogenic rocket-propulsion systems, with campuses at Thiruvananthapuram, Bengaluru and Mahendragiri.",
+   "established": "1985-11-30",
+   "hq": "Thiruvananthapuram, Kerala",
+   "headPositionId": "in-pos-director-lpsc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Liquid_Propulsion_Systems_Centre"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-sac",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Space Applications Centre",
+   "abbr": "SAC",
+   "parentId": "in-isro",
+   "description": "ISRO centre in Ahmedabad developing satellite payloads (communication, remote-sensing, meteorology, navigation) and applications of space technology for national development.",
+   "established": "1972-10-25",
+   "hq": "Ahmedabad, Gujarat",
+   "headPositionId": "in-pos-director-sac",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Space_Applications_Centre"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nrsc",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "National Remote Sensing Centre",
+   "abbr": "NRSC",
+   "parentId": "in-isro",
+   "description": "ISRO centre in Hyderabad that acquires and processes satellite remote-sensing data and runs India's disaster-management and geospatial-data-support services.",
+   "established": "1963-11-21",
+   "hq": "Hyderabad, Telangana",
+   "headPositionId": "in-pos-director-nrsc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Remote_Sensing_Centre"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-iprc",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "ISRO Propulsion Complex",
+   "abbr": "IPRC",
+   "parentId": "in-isro",
+   "description": "ISRO's rocket-propulsion static-testing and propellant-production facility at Mahendragiri, Tamil Nadu.",
+   "hq": "Mahendragiri, Tamil Nadu",
+   "sources": [
+    "https://www.isro.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-hsfc",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Human Space Flight Centre",
+   "abbr": "HSFC",
+   "parentId": "in-isro",
+   "description": "ISRO centre coordinating India's human-spaceflight programme (Gaganyaan) — crew module, life-support, training and mission-management systems.",
+   "established": "2019",
+   "hq": "Bengaluru",
+   "sources": [
+    "https://www.isro.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-istrac",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "ISRO Telemetry, Tracking and Command Network",
+   "abbr": "ISTRAC",
+   "parentId": "in-isro",
+   "description": "ISRO's satellite tracking, telemetry and command network, coordinating ground stations across India and overseas for satellite and launch-vehicle operations.",
+   "hq": "Bengaluru",
+   "sources": [
+    "https://www.isro.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-iisu",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "ISRO Inertial Systems Unit",
+   "abbr": "IISU",
+   "parentId": "in-isro",
+   "description": "ISRO centre at Thiruvananthapuram developing inertial-navigation and guidance systems for launch vehicles and spacecraft.",
+   "hq": "Thiruvananthapuram, Kerala",
+   "sources": [
+    "https://www.isro.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nesac",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "North Eastern Space Applications Centre",
+   "abbr": "NESAC",
+   "parentId": "in-isro",
+   "description": "Joint ISRO/DoS and North Eastern Council centre in Shillong applying space technology to development needs of India's north-eastern states.",
+   "hq": "Shillong, Meghalaya",
+   "sources": [
+    "https://www.isro.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-iirs",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indian Institute of Remote Sensing",
+   "abbr": "IIRS",
+   "parentId": "in-isro",
+   "description": "ISRO's training and education institute in Dehradun for remote sensing, GIS and geoinformatics, offering courses to Indian and international scientists and officials.",
+   "hq": "Dehradun, Uttarakhand",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Institute_of_Remote_Sensing"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-iist",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indian Institute of Space Science and Technology",
+   "abbr": "IIST",
+   "parentId": "in-dept-space",
+   "description": "India's first autonomous space-sector university, set up by the Department of Space at Thiruvananthapuram to train aerospace and space-technology engineers and scientists, largely for ISRO.",
+   "officialUrl": "https://www.iist.ac.in",
+   "established": "2007",
+   "hq": "Thiruvananthapuram, Kerala",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Institute_of_Space_Science_and_Technology",
+    "https://www.iist.ac.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nsil",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "NewSpace India Limited",
+   "abbr": "NSIL",
+   "parentId": "in-dept-space",
+   "description": "CPSE (commercial arm of the Department of Space) that manufactures and transfers ISRO-developed launch vehicles and satellites to industry, sells space-based services and executes commercial launch contracts.",
+   "officialUrl": "https://www.nsilindia.co.in",
+   "established": "2019-03-06",
+   "hq": "Bengaluru",
+   "sources": [
+    "https://en.wikipedia.org/wiki/NewSpace_India_Limited",
+    "https://www.nsilindia.co.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-in-space",
+   "kind": "regulator",
+   "sector": "executive",
+   "name": "Indian National Space Promotion and Authorization Centre",
+   "abbr": "IN-SPACe",
+   "parentId": "in-dept-space",
+   "description": "Single-window autonomous body that authorises, promotes and regulates private-sector space activities in India (satellite, launch-vehicle and ground-segment ventures), created as part of the 2020 opening-up of the space sector to private industry.",
+   "legalBasis": "constituted by government order, 2020",
+   "officialUrl": "https://www.inspace.gov.in",
+   "established": "2020-06-24",
+   "hq": "Ahmedabad, Gujarat",
+   "sources": [
+    "https://www.inspace.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-antrix",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Antrix Corporation Limited",
+   "abbr": "Antrix",
+   "parentId": "in-dept-space",
+   "description": "DoS's original commercial marketing arm, historically handling satellite-transponder leasing and technology transfer; most new commercial functions have since moved to NSIL.",
+   "officialUrl": "https://www.antrix.co.in",
+   "established": "1992-09-28",
+   "hq": "Bengaluru",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Antrix_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-prl",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Physical Research Laboratory",
+   "abbr": "PRL",
+   "parentId": "in-dept-space",
+   "description": "DoS-funded autonomous research institute in Ahmedabad for space and atmospheric sciences, astrophysics, planetary science and astronomy — India's leading centre for these fields.",
+   "officialUrl": "https://www.prl.res.in",
+   "established": "1947",
+   "hq": "Ahmedabad, Gujarat",
+   "budget": {
+    "fy": "2025-26",
+    "be": 240.0,
+    "source": "https://en.wikipedia.org/wiki/Physical_Research_Laboratory"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Physical_Research_Laboratory",
+    "https://www.prl.res.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cpri",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Central Power Research Institute",
+   "abbr": "CPRI",
+   "parentId": "in-min-power",
+   "description": "Ministry of Power's autonomous applied-research and high-power/high-voltage testing institute for electrical equipment, headquartered in Bengaluru with regional testing labs across India.",
+   "officialUrl": "https://www.cpri.in",
+   "hq": "Bengaluru",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Power_Research_Institute"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nuclear-fuel-complex",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Nuclear Fuel Complex",
+   "abbr": "NFC",
+   "parentId": "in-dept-atomic-energy",
+   "description": "DAE production unit in Hyderabad that manufactures nuclear-fuel assemblies, zirconium-alloy reactor components and other nuclear-grade materials for India's power and research reactors.",
+   "officialUrl": "https://www.nfc.gov.in",
+   "hq": "Hyderabad",
+   "sources": [
+    "https://www.nfc.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-heavy-water-board",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Heavy Water Board",
+   "abbr": "HWB",
+   "parentId": "in-dept-atomic-energy",
+   "description": "DAE production organisation operating India's heavy-water plants, which supply the moderator/coolant used in the country's PHWR nuclear power reactors.",
+   "officialUrl": "https://hwb.gov.in",
+   "hq": "Mumbai",
+   "sources": [
+    "https://hwb.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-rec-power-distribution",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "REC Power Distribution Company Limited",
+   "abbr": "RECPDCL",
+   "parentId": "in-rec-limited",
+   "description": "Wholly owned subsidiary of REC Limited that provides power-distribution-reform consultancy and implements central distribution schemes (e.g. RDSS) on behalf of state utilities.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/REC_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-rec-transmission-projects",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "REC Transmission Projects Company Limited",
+   "abbr": "RECTPCL",
+   "parentId": "in-rec-limited",
+   "description": "Wholly owned subsidiary of REC Limited that incubates inter-state transmission projects, bidding them out under the tariff-based competitive bidding route before transferring them to winning developers.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/REC_Limited"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-secretary-power",
+   "title": "Secretary, Ministry of Power",
+   "orgId": "in-min-power",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pankaj Agarwal",
+    "since": "2023-07-01",
+    "acting": false,
+    "notes": "IAS 1992-batch (Madhya Pradesh cadre); confirmed active and quoted as Power Secretary on 24 Sept 2026 re: draft National Electricity Policy 2026."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.outlookbusiness.com/news/power-ministry-sends-draft-nep-2026-to-cabinet-secy-pankaj-agarwal",
+    "https://www.etvbharat.com/en/business/power-ministry-sends-draft-nep-2026-to-cabinet-secy-pankaj-agarwal-enn26092403807",
+    "https://energy.economictimes.indiatimes.com (Power ministry sends draft National Electricity Policy 2026 to Cabinet: Secy Pankaj Agarwal, 24-Sep-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-cea",
+   "title": "Chairperson, Central Electricity Authority",
+   "orgId": "in-cea",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://cea.nic.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-director-general-bee",
+   "title": "Director General, Bureau of Energy Efficiency",
+   "orgId": "in-bee",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://beeindia.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-ntpc",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-ntpc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Gurdeep Singh",
+    "acting": false,
+    "since": "2019 (extended repeatedly; latest 6-month extension from 2026-08-01 to 2027-01)",
+    "notes": "Multiple 2026 news reports (PSU Watch, IndianMandarins, Power Peak Digest, Elets eGov) confirm Gurdeep Singh received a further six-month extension as NTPC CMD effective 2026-08-01, taking his tenure to January 2027, and that an 18-candidate search for his eventual successor was ongoing as of July 2026. This supersedes the file's prior 'Jaikumar Srinivasan' entry, which cited NTPC's own board page but could not be independently re-verified (ntpc.co.in returned a bot-protection CAPTCHA to automated fetches during this pass) and conflicts with the weight of contemporaneous news coverage."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ntpc.co.in/board-directors",
+    "https://egov.eletsonline.com/2026/07/ntpc-cmd-gurdeep-singh-gets-six-month-extension/",
+    "https://news.google.com/rss/search?q=NTPC+CMD+chairman+2026 (aggregated coverage)",
+    "https://www.psuwatch.com (Gurdeep Singh gets second extension past retirement as NTPC CMD, tenure now runs to January 2027, 28-Jul-2026)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-pgcil",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-pgcil",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Burra Vamsi Rama Mohan",
+    "acting": false,
+    "since": "2026-04-01",
+    "notes": "Confirmed by 9+ independent news outlets (ET EnergyWorld, Sarkaritel, Elets eGov, T&D India, Energetica India, GK Today, Power Peak Digest, Wire & Cable India) reporting he took charge as POWERGRID CMD around 31-Mar/1-Apr-2026, and by the current Wikipedia infobox for Power Grid Corporation of India (accessed 2026-09-25). Supersedes the file's prior 'Ravindra Kumar Tyagi' entry."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.tndindia.com/tyagi-new-cmd-of-power-grid-corporation-of-india/",
+    "https://psuwatch.com/psu-appointments/rk-tyagi-assumes-charge-as-new-cmd-of-power-grid",
+    "https://en.wikipedia.org/wiki/Power_Grid_Corporation_of_India",
+    "https://energy.economictimes.indiatimes.com (Power Grid appoints Burra Vamsi Rama Mohan as CMD, 31-Mar-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-nhpc",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-nhpc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Bhupender Gupta",
+    "acting": false,
+    "notes": "PESB recommended Bhupender Gupta (SJVN's CMD, holding that post in additional charge) as the next CMD of NHPC around 11-Sep-2026 (Elets eGov, Power Peak Digest). A PESB recommendation is not the same as formally assuming charge; no source in this pass confirms he has taken charge of NHPC specifically. Re-check against nhpcindia.com before publication."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/NHPC_Limited",
+    "https://egov.eletsonline.com (Bhupender Gupta Recommended as Next CMD of NHPC Limited, 11-Sep-2026)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-pfc",
+   "title": "Chairperson & Managing Director",
+   "orgId": "in-pfc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Parminder Chopra",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Power_Finance_Corporation"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-rec-limited",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-rec-limited",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jitendra Srivastava",
+    "acting": false,
+    "notes": "Wikipedia's infobox also records REC as scheduled to be merged into parent Power Finance Corporation effective 2027-04-01 — treat as a live corporate-restructuring item, not yet complete as of the as-of date.",
+    "since": "2026-08-26"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/REC_Limited",
+    "https://egov.eletsonline.com (Jitendra Srivastava Assumes Charge as CMD of REC Limited, 26-Aug-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-sjvn",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-sjvn",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Bhupender Gupta",
+    "acting": false,
+    "notes": "SJVN has repeatedly extended Bhupender Gupta's additional charge as CMD through 2026 (most recently ~11-Sep-2026, per Elets eGov/Whispers in the Corridors/Power Peak Digest). He was separately recommended by PESB as the next (full-charge) CMD of NHPC around the same date — see in-pos-chair-nhpc. As of 2026-09-25 it is unclear whether NHPC's CMD role has been formally assumed or remains a pending recommendation with SJVN as his primary additional-charge post."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/SJVN",
+    "https://egov.eletsonline.com (Bhupender Gupta Gets Six-Month Extension as SJVN CMD, 11-Sep-2026)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-thdc-india",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-thdc-india",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sipan Kumar Garg",
+    "acting": false,
+    "since": "2025-11-26",
+    "notes": "Holds the post in additional charge per PTI."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/THDC_India_Limited",
+    "Press Trust of India (Sipan Garg assumes additional charge as Chairman and Managing Director of THDC India, 26-Nov-2025)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-neepco",
+   "title": "Chairman & Managing Director, NEEPCO",
+   "orgId": "in-neepco",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://www.neepco.co.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-dvc",
+   "title": "Chairman",
+   "orgId": "in-dvc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rajesh Pandey",
+    "acting": false,
+    "since": "2026-07-23",
+    "notes": "Described as the 51st Chairman of DVC (Sarkaritel.com)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Damodar_Valley_Corporation",
+    "https://egov.eletsonline.com (IAS Rajesh Pandey Appointed Chairman of Damodar Valley Corporation, 23-Jul-2026)",
+    "https://timesofindia.indiatimes.com (Centre appoints Rajesh Pandey as DVC chairman, 01-Sep-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-grid-india",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-grid-india",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Samir Chand Saxena",
+    "acting": false,
+    "since": "2025-01-30"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Grid_Controller_of_India_Limited",
+    "https://psuwatch.com (Samir Chandra Saxena takes charge as CMD of Grid India, 30-Jan-2025)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-new-and-renewable-energy",
+   "title": "Secretary, Ministry of New and Renewable Energy",
+   "orgId": "in-min-new-and-renewable-energy",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Santosh Kumar Sarangi",
+    "acting": false,
+    "notes": "Confirmed as MNRE Secretary in multiple 2026-dated press citations (ET EnergyWorld, Business Standard, Moneycontrol, The Hindu) through August 2026."
+   },
+   "vacant": false,
+   "sources": [
+    "https://mnre.gov.in",
+    "https://energy.economictimes.indiatimes.com (Govt planning policy to push floating solar projects: MNRE Secy Sarangi, 10-Apr-2026)",
+    "https://www.business-standard.com (India needs China-like super grid plan for RE integration: MNRE secretary, 24-Aug-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-md-seci",
+   "title": "Managing Director, SECI",
+   "orgId": "in-seci",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Akash Tripathi",
+    "acting": false,
+    "since": "2025-08-27",
+    "notes": "SECI's current board roster lists him as Managing Director, separate from its Chairman."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.seci.co.in/board-of-directors",
+    "https://www.seci.co.in/uploads/reports/pdf_en_68f8831ea54d9.pdf"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairman-seci",
+   "title": "Chairman, SECI",
+   "orgId": "in-seci",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Santosh Kumar Sarangi",
+    "since": "2025-05-13"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.seci.co.in/board-of-directors",
+    "https://www.seci.co.in/directors/shri-santosh-kumar-sarangi-secretary-mnre"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-ireda",
+   "title": "Chairman & Managing Director, IREDA",
+   "orgId": "in-ireda",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://www.ireda.in",
+    "https://psuwatch.com (PESB recommends Jatin Kumar Nayak for IREDAs CMD post, 19-Jun-2026)"
+   ],
+   "confidence": "low",
+   "notes": "PESB recommended Jatin Kumar Nayak for the CMD post on 19-Jun-2026, but no source in this pass confirms he has formally assumed charge as of 2026-09-25 — left vacant per the 'never invent' rule rather than recorded as a confirmed holder. Re-check against ireda.in."
+  },
+  {
+   "id": "in-pos-secretary-petroleum-and-natural-gas",
+   "title": "Secretary, Ministry of Petroleum and Natural Gas",
+   "orgId": "in-min-petroleum-and-natural-gas",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Neeraj Mittal",
+    "since": "2025-11-24",
+    "acting": false,
+    "notes": "1992-batch IAS (Tamil Nadu cadre); previously Telecom Secretary; also chairs the PPAC Governing Body, where he is listed current as of the PPAC page's last update (25-09-2026)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.indianchemicalnews.com/people/dr-neeraj-mittal-assumes-charge-of-secretary-of-ministry-of-petroleum-natural-gas-28765",
+    "https://ppac.gov.in/governing-body"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-ongc",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-ongc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Arun Kumar Singh",
+    "since": "2021",
+    "acting": false,
+    "notes": "Given a rare one-year extension by the ACC, taking his tenure to 2026-12-06; PESB had begun the process (applications closed 2026-07-27) to select a permanent successor from a shortlist including Ranjit Rath (OIL CMD) and Rajarshi Gupta (ONGC Videsh MD)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ppac.gov.in/governing-body",
+    "https://www.business-standard.com/companies/people/arun-kumar-singh-gets-rare-one-year-extension-as-ongc-chairman-till-2026-125120301164_1.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-iocl",
+   "title": "Chairman",
+   "orgId": "in-iocl",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Arvindar Singh Sahney",
+    "since": "2024-11-13",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://ppac.gov.in/governing-body",
+    "https://www.business-standard.com/companies/news/arvindar-singh-sahney-will-be-new-chairman-of-indian-oil-corporation-124111300860_1.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-bpcl",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-bpcl",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sanjay Khanna",
+    "since": "2026-04-09",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://ppac.gov.in/governing-body",
+    "https://www.fuelsandlubes.com/bpcl-names-sanjay-khanna-chairman-and-managing-director/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-hpcl",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-hpcl",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Vikas Kaushal",
+    "since": "2025-03-17",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://ppac.gov.in/governing-body",
+    "https://www.hindustanpetroleum.com/HPCL-CMD"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-gail",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-gail",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Deepak Gupta",
+    "since": "2026-03-01",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://ppac.gov.in/governing-body",
+    "https://www.gailonline.com/PressRelease_010326.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-oil",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-oil",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ranjit Rath",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://ppac.gov.in/governing-body",
+    "https://www.oil-india.com/our-leadership",
+    "https://indianmandarins.com (OIL DR RANJIT RATH TAKES OVER AS CMD, 25-Sep-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-eil",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-eil",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Atul Gupta",
+    "acting": false,
+    "notes": "Sep-2026 coverage separately reports Atul Gupta getting an extension as Director (Commercial), suggesting he holds that portfolio in addition to CMD; worth a direct check against eil.co.in."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Engineers_India",
+    "https://energy.economictimes.indiatimes.com (Atul Gupta appointed CMD of Engineers India, 30-Jun-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-mrpl",
+   "title": "Managing Director, MRPL",
+   "orgId": "in-mrpl",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://www.mrpl.co.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-cpcl",
+   "title": "Managing Director, CPCL",
+   "orgId": "in-cpcl",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "H. Shankar",
+    "acting": false,
+    "since": "2025-04-03",
+    "notes": "Appointed Managing Director of Chennai Petroleum Corporation Limited, PSU Watch (03-Apr-2025); reconfirmed as recently as 23-Sep-2026 (Indian Chemical News)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.cpcl.co.in",
+    "https://psuwatch.com (H Shankar appointed as Managing Director of CPCL, 03-Apr-2025)",
+    "https://indianchemicalnews.com (H. Shankar appointed as MD of Chennai Petroleum Corporation, 23-Sep-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-dgh",
+   "title": "Director General, Directorate General of Hydrocarbons",
+   "orgId": "in-dgh",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Srikant Nagulapalli",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://ppac.gov.in/governing-body"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-ppac",
+   "title": "Director General, Petroleum Planning and Analysis Cell",
+   "orgId": "in-ppac",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "P. Manoj Kumar",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://ppac.gov.in/governing-body"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-md-isprl",
+   "title": "Managing Director, ISPRL",
+   "orgId": "in-isprl",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://isprlltd.com"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-coal",
+   "title": "Secretary, Ministry of Coal",
+   "orgId": "in-min-coal",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Vikram Dev Dutt",
+    "acting": false,
+    "notes": "Reported as Coal Secretary in 2026 industry/press coverage; cross-check against coal.gov.in's senior-officials page for the current incumbent given the G. Kishan Reddy dual Coal+Mines portfolio and frequent IAS rotations in this window."
+   },
+   "vacant": false,
+   "sources": [
+    "https://coal.gov.in/about-us/details-senior-officials",
+    "https://economictimes.indiatimes.com (Policy reforms speed up coal block operationalisation: Coal Secretary Vikram Dev Dutt, 24-Aug-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-coal-india",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-coal-india",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "B. Sairam",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coal_India",
+    "https://energy.economictimes.indiatimes.com (2026 to be year of reform and transformation for Coal India: CMD Sairam, 07-Jul-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-nlc-india",
+   "title": "Chairman & Managing Director, NLC India",
+   "orgId": "in-nlc-india",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Sanoj Kumar Jha",
+    "acting": false,
+    "since": "2026-06-30",
+    "notes": "An IAS officer (Additional Secretary, Ministry of Coal) given additional charge as CMD, NLC India Limited, following P.K. Motupalli's retirement (PIB, 'S K Jha named interim CMD of NLC India as P K Motupalli retires', ~30-Jun-2026; an earlier PIB item from 28-Mar-2026 shows him taking an initial additional charge). Additional/interim charge, not a confirmed substantive appointment."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.nlcindia.in",
+    "https://pib.gov.in (Shri Sanoj Kumar Jha, IAS, assumes additional charge as Chairman and Managing Director of NLC India Limited)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-coal-controller",
+   "title": "Coal Controller",
+   "orgId": "in-coal-controller",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Satish Kumar",
+    "acting": false,
+    "since": "2026-07-24",
+    "notes": "A railway-cadre officer appointed Coal Controller (Whispers in the Corridors, 24-Jul-2026). Single secondary source; re-check against coalcontroller.gov.in."
+   },
+   "vacant": false,
+   "sources": [
+    "https://coal.nic.in",
+    "https://whispersinthecorridors.net (Ministry of Coal appoints railway officer Satish Kumar as Coal Controller, 24-Jul-2026)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-mines",
+   "title": "Secretary, Ministry of Mines",
+   "orgId": "in-min-mines",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Keshav Chandra",
+    "since": "2026-07",
+    "acting": false,
+    "notes": "1995-batch IAS (AGMUT cadre); reported to have taken charge in July 2026, succeeding Piyush Goyal (1994-batch, Nagaland cadre) who had held the post from September 2025."
+   },
+   "vacant": false,
+   "sources": [
+    "https://egov.eletsonline.com/2026/07/keshav-chandra-assumes-charge-as-secretary-ministry-of-mines/",
+    "https://egov.eletsonline.com (Keshav Chandra Assumes Charge as Secretary, Ministry of Mines)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-gsi",
+   "title": "Director General, Geological Survey of India",
+   "orgId": "in-gsi",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Varsha Ashok Aglawe",
+    "acting": false,
+    "since": "2026-08-01",
+    "notes": "First woman Director General of the Geological Survey of India; announced by PIB, 01-Aug-2026, cross-confirmed by Elets eGov (02-Sep-2026) and others."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.gsi.gov.in",
+    "https://pib.gov.in (Geological Survey of India Gets Its First Woman Director General, 01-Aug-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cg-ibm",
+   "title": "Controller General, Indian Bureau of Mines",
+   "orgId": "in-ibm",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Pankaj Kulshrestha",
+    "acting": false,
+    "since": "2026-01-03",
+    "notes": "Took charge as Controller General, Indian Bureau of Mines, Nagpur, per PIB (03-Jan-2026), reconfirmed by The Hitavada (13-Aug-2026)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ibm.gov.in",
+    "https://pib.gov.in (Shri Pankaj Kulshrestha takes charge as Controller General, IBM, Nagpur, 03-Jan-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-nalco",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-nalco",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Brijendra Pratap Singh",
+    "acting": false,
+    "since": "2025-01-10"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Aluminium_Company",
+    "https://apacmedia.co (Brijendra Pratap Singh Assumes Charge as CMD of NALCO, 10-Jan-2025)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-hindustan-copper",
+   "title": "Chairman & Managing Director, Hindustan Copper",
+   "orgId": "in-hindustan-copper",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Anupam Mishra",
+    "acting": false,
+    "since": "2026-02-23",
+    "notes": "Reported appointed CMD of Hindustan Copper Limited around 23-Feb-2026 (Legend Officers). Single secondary source; re-check against hindustancopper.com."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.hindustancopper.com",
+    "https://legendofficers.com (Anupam Mishra Appointed CMD of Hindustan Copper Limited, 23-Feb-2026)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-mecl",
+   "title": "Chairman & Managing Director, MECL",
+   "orgId": "in-mecl",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://mines.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-kabil",
+   "title": "Chairman & Managing Director, KABIL",
+   "orgId": "in-kabil",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://mines.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-steel",
+   "title": "Secretary, Ministry of Steel",
+   "orgId": "in-min-steel",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sandeep Poundrik",
+    "acting": false,
+    "notes": "Quoted as Ministry of Steel Secretary in a February 2026 government press item on steel consumption growth. Also transliterated 'Pondrik' in some AIR/PIB coverage; 'Poundrik' is the spelling used on the ministry's own site."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.newsonair.gov.in/indias-steel-consumption-doubles-to-152-mt-in-a-decade-secretary-of-the-ministry-of-steel",
+    "https://www.newsonair.gov.in (Ministry of Steel Secretary Sandeep Pondrik says Indias Crude steel capacity expected to reach 300 million tonnes by 2030, 09-Sep-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-sail",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-sail",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ashok Kumar Panda",
+    "since": "2026-08-09",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Steel_Authority_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-nmdc",
+   "title": "Chairman-cum-Managing Director",
+   "orgId": "in-nmdc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Amitava Mukherjee",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/NMDC_Limited",
+    "https://www.scanx.trade (NMDC CMD Amitava Mukherjee Takes Additional Charge of Director (Finance) Post, 09-May-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-rinl",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-rinl",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "M N V S Prabhakar",
+    "acting": false,
+    "since": "2026-05-08",
+    "notes": "An older 'Atul Bhatt' CMD reference (2021-2024 news) refers to a prior officeholder, superseded by Prabhakar in May 2026 — not a conflict."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rashtriya_Ispat_Nigam_Limited",
+    "https://www.thehindu.com (M.N.V.S. Prabhakar takes charge RINL CMD, 08-May-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-moil",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-moil",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Vishwanath Suresh",
+    "acting": false,
+    "since": "2025-10-04",
+    "notes": "CNBC-TV18 reported MOIL appointed Vishwanath Suresh as CMD on 2025-10-04; reconfirmed as recently as 2026-09-21 (scanx.trade: 'MOIL CMD Vishwanath Suresh gets additional HR charge for one year'). Supersedes the file's prior 'Ajit Kumar Saxena' entry, which was sourced only to Wikipedia."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/MOIL",
+    "https://www.cnbctv18.com (MOIL appoints Vishwanath Suresh as Chairman and Managing Director, 04-Oct-2025)",
+    "https://www.scanx.trade (MOIL CMD Vishwanath Suresh gets additional HR charge for one year, 21-Sep-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-mecon",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-mecon",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sanjay Kumar Verma",
+    "acting": false,
+    "notes": "A Sep-2026 item ('Post of CMD in MECON Limited Advertised', Whispers in the Corridors, 10-Sep-2026) suggests the CMD post may be entering a fresh selection cycle; Sanjay Kumar Verma's continued incumbency as of 2026-09-25 could not be independently confirmed and should be re-checked against mecon.gov.in."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/MECON_Limited",
+    "https://indianmandarins.com (SANJAY VERMA SELECTED FOR POST OF CMD MECON, 21-Feb-2025)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-kiocl",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-kiocl",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "T Saminathan",
+    "acting": false,
+    "notes": "Wikipedia infobox financial figures are dated to 2016-17; re-verify current chairman against kioclltd.in."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/KIOCL_Limited"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-heavy-industries",
+   "title": "Secretary, Ministry of Heavy Industries",
+   "orgId": "in-min-heavy-industries",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Kamran Rizvi",
+    "acting": false,
+    "notes": "1991-batch IAS (Uttar Pradesh cadre); listed on the ministry's own official profile page."
+   },
+   "vacant": false,
+   "sources": [
+    "https://heavyindustries.gov.in/en/shri-kamran-rizvi",
+    "https://www.businesstoday.in (EV subsidies to end, industry must prepare to stand on its own: Heavy Industries Secy Kamran Rizvi, 03-Sep-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-bhel",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-bhel",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "K. Sadashiv Murthy",
+    "acting": false,
+    "notes": "Full given name per ET EnergyWorld: Koppu Sadashiv Murthy. A Sep-2026 report (IndianMandarins) says BHEL's CMD and other key directors are due to retire by Feb 2027, so a successor process is expected before then."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bharat_Heavy_Electricals_Limited",
+    "https://energy.economictimes.indiatimes.com (Koppu Sadashiv Murthy takes over as BHEL CMD, 19-Aug-2025)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-andrew-yule",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-andrew-yule",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ananta Mohan Singh",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andrew_Yule_and_Company",
+    "https://legendofficers.com (Ananta Mohan Singh selected as CMD, Andrew Yule & Company Ltd, 17-Jun-2025)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-department-of-atomic-energy",
+   "title": "Secretary, Department of Atomic Energy",
+   "orgId": "in-dept-atomic-energy",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ajit Kumar Mohanty",
+    "acting": false,
+    "notes": "In office since May 2023; given a further one-year extension (his second) from 11 April 2026, taking his tenure to April 2027. Concurrently serves ex officio as Chairman, Atomic Energy Commission."
+   },
+   "vacant": false,
+   "sources": [
+    "https://dae.gov.in/dr-ajit-kumar-mohanty-chairman-aec-secretary-dae/",
+    "https://theprint.in/india/atomic-energy-commission-chief-ajit-kumar-mohanty-gets-one-year-extension/2899919/",
+    "https://theprint.in (Atomic Energy Commission chief Ajit Kumar Mohanty gets one year extension, 12-Apr-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-aec",
+   "title": "Chairman, Atomic Energy Commission",
+   "orgId": "in-aec",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Ajit Kumar Mohanty",
+    "acting": false,
+    "notes": "Ex officio as Secretary, Department of Atomic Energy."
+   },
+   "vacant": false,
+   "sources": [
+    "https://dae.gov.in/dr-ajit-kumar-mohanty-chairman-aec-secretary-dae/",
+    "https://theprint.in (Atomic Energy Commission chief Ajit Kumar Mohanty gets one year extension, 12-Apr-2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-barc",
+   "title": "Director, Bhabha Atomic Research Centre",
+   "orgId": "in-barc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Vivek Bhasin",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhabha_Atomic_Research_Centre",
+    "https://energy.economictimes.indiatimes.com (Vivek Bhasin assumes charge as BARC director, 22-Oct-2025)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-npcil",
+   "title": "Chairman & Managing Director",
+   "orgId": "in-npcil",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "B. C. Pathak",
+    "acting": false,
+    "notes": "A May-2025 PSU Watch report ('Bhuwan Chandra Pathak gets 6 months extension as Director (Finance) of NPCIL') identifies B.C. Pathak's confirmed role as Director (Finance), not Chairman & Managing Director. No 2025-26 source in this pass confirms him (or anyone else) as NPCIL CMD; re-check directly against npcil.nic.in before publication."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nuclear_Power_Corporation_of_India",
+    "https://psuwatch.com (Bhuwan Chandra Pathak gets 6 months extension as Director (Finance) of NPCIL, 18-May-2025)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-bhavini",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-bhavini",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "P. A. Suresh Babu",
+    "acting": false,
+    "since": "2026-04-22",
+    "notes": "Confirmed by PIB (official Government of India press release, 23-Apr-2026: 'Shri P. A. Suresh Babu takes charge as Chairman and Managing Director of BHAVINI') and cross-confirmed by The Hindu, DT Next, Elets eGov, Legend Officers, IndianMandarins. Supersedes the file's prior 'K. V. Suresh Kumar' entry, which was sourced only to a Wikipedia infobox carrying stale 2016-17 financial data."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/BHAVINI",
+    "https://pib.gov.in (Shri P. A. Suresh Babu assumes charge as CMD of BHAVINI, PIB, 23-Apr-2026)",
+    "https://www.thehindu.com (Suresh Babu assumes office as Chairman & Managing Director of BHAVINI)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-ucil",
+   "title": "Chairman & Managing Director, UCIL",
+   "orgId": "in-ucil",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "C. K. Asnani",
+    "acting": false,
+    "notes": "Sourced only to a Wikipedia infobox with 2019 financial data. The only 2025-26 UCIL personnel news found in this pass (PESB recommending Salil Kumar Nag for Director (Technical), Apr/Jun-2026) does not concern the CMD post. Re-verify against uraniumcorp.in before publication."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uranium_Corporation_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-irel",
+   "title": "Chairman & Managing Director, IREL (India)",
+   "orgId": "in-irel",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Rare_Earths"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-ecil",
+   "title": "Chairman & Managing Director, ECIL",
+   "orgId": "in-ecil",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Komal Kapoor",
+    "acting": false,
+    "since": "2026-05-12",
+    "notes": "Dr Komal Kapoor took charge as CMD of Electronics Corporation of India Limited (PSU Watch, 12-May-2026; also IndianMandarins, 22-Jul-2026). She had earlier held CMD in additional charge in 2023."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.ecil.co.in",
+    "https://psuwatch.com (Dr Komal Kapoor takes charge as CMD of ECIL, 12-May-2026)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairman-aerb",
+   "title": "Chairman, Atomic Energy Regulatory Board",
+   "orgId": "in-aerb",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Dinesh Kumar Shukla",
+    "acting": false,
+    "since": "2025-01-29",
+    "notes": "A single lower-tier current-affairs aggregator (Adda247) surfaced a 2026 claim naming 'A.K. Balasubrahmanian' as AERB Chairman; this could not be corroborated against PIB or any other outlet in this pass and is NOT adopted here, but should be re-checked directly against aerb.gov.in before publication."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Atomic_Energy_Regulatory_Board",
+    "https://pib.gov.in (Dinesh Kumar Shukla takes over the reins of Atomic Energy Regulatory Board (AERB), 29-Jan-2025)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-department-of-space",
+   "title": "Secretary, Department of Space",
+   "orgId": "in-dept-space",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "V. Narayanan",
+    "since": "2025-01-14",
+    "acting": false,
+    "notes": "Concurrently serves ex officio as Chairman, Space Commission and Chairman, ISRO. Previously Director, Liquid Propulsion Systems Centre (2018-2025). Succeeded S. Somanath."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.isro.gov.in/DrVNarayanan_Assumed_Charge_Secretary_DOS_Chairman_Space_Commission.html",
+    "https://www.isro.gov.in (Chairman ISRO/ Secretary DOS participated in the International Space Summit at Paris, 09-10 Sep 2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-space-commission",
+   "title": "Chairman, Space Commission",
+   "orgId": "in-space-commission",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "V. Narayanan",
+    "acting": false,
+    "notes": "Ex officio as Secretary, Department of Space."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.isro.gov.in/DrVNarayanan_Assumed_Charge_Secretary_DOS_Chairman_Space_Commission.html",
+    "https://www.isro.gov.in (Chairman ISRO/ Secretary DOS participated in the International Space Summit at Paris, 09-10 Sep 2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-isro",
+   "title": "Chairman, ISRO",
+   "orgId": "in-isro",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "V. Narayanan",
+    "since": "2025-01-14",
+    "acting": false,
+    "notes": "Ex officio as Secretary, Department of Space and Chairman, Space Commission."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.isro.gov.in/DrVNarayanan_Assumed_Charge_Secretary_DOS_Chairman_Space_Commission.html",
+    "https://www.isro.gov.in (Chairman ISRO/ Secretary DOS participated in the International Space Summit at Paris, 09-10 Sep 2026)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-vssc",
+   "title": "Director, Vikram Sarabhai Space Centre",
+   "orgId": "in-vssc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "A. Rajarajan",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vikram_Sarabhai_Space_Centre",
+    "https://www.thehindu.com (A. Rajarajan to head Vikram Sarabhai Space Centre, 31-Jul-2025)",
+    "https://www.businessworld.in (A. Rajarajan Takes Charge As New Director Of Vikram Sarabhai Space Centre, 23-Oct-2025)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-lpsc",
+   "title": "Director, Liquid Propulsion Systems Centre",
+   "orgId": "in-lpsc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Jayan N.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Liquid_Propulsion_Systems_Centre"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-sac",
+   "title": "Director, Space Applications Centre",
+   "orgId": "in-sac",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Nilesh M. Desai",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Space_Applications_Centre"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-nrsc",
+   "title": "Director, National Remote Sensing Centre",
+   "orgId": "in-nrsc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Prakash Chauhan",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Remote_Sensing_Centre"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cmd-nsil",
+   "title": "Chairman & Managing Director, NSIL",
+   "orgId": "in-nsil",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://www.nsilindia.co.in",
+    "https://timesofindia.indiatimes.com (NSIL CMD post up for grabs again after 10-month selection process fails, 11-May-2026)"
+   ],
+   "confidence": "low",
+   "notes": "Confirmed genuinely vacant as of this pass: a 10-month CMD selection process failed (Times of India, 11-May-2026), and a 'Boeing Honcho front-runner' report (13-Feb-2026) suggests the search remains open, potentially for an outsider candidate."
+  },
+  {
+   "id": "in-pos-chairman-in-space",
+   "title": "Chairman, IN-SPACe",
+   "orgId": "in-in-space",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://www.inspace.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-cmd-antrix",
+   "title": "Chairman & Managing Director, Antrix Corporation",
+   "orgId": "in-antrix",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Sanjay Kumar Agarwal",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Antrix_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-prl",
+   "title": "Director, Physical Research Laboratory",
+   "orgId": "in-prl",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Anil Bhardwaj",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Physical_Research_Laboratory"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-minister-power",
+   "to": "in-min-power",
+   "type": "ex_officio",
+   "basis": "head of ministry"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-cea",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-bee",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-ntpc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://ntpc.co.in"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-pgcil",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.powergrid.in"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-nhpc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.nhpcindia.com"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-pfc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.pfcindia.com"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-rec-limited",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://en.wikipedia.org/wiki/REC_Limited"
+  },
+  {
+   "from": "in-pfc",
+   "to": "in-rec-limited",
+   "type": "administers",
+   "basis": "REC Limited is a subsidiary of Power Finance Corporation"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-sjvn",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.sjvn.nic.in"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-thdc-india",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.thdc.co.in"
+  },
+  {
+   "from": "in-ntpc",
+   "to": "in-thdc-india",
+   "type": "administers",
+   "basis": "THDC India is a subsidiary of NTPC Limited"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-neepco",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.neepco.co.in"
+  },
+  {
+   "from": "in-ntpc",
+   "to": "in-neepco",
+   "type": "administers",
+   "basis": "NEEPCO is a subsidiary of NTPC Limited"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-dvc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://dvc.gov.in"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-grid-india",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.grid-india.in"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-npti",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-eesl",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-minister-new-and-renewable-energy",
+   "to": "in-min-new-and-renewable-energy",
+   "type": "ex_officio",
+   "basis": "head of ministry"
+  },
+  {
+   "from": "in-min-new-and-renewable-energy",
+   "to": "in-seci",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.seci.co.in"
+  },
+  {
+   "from": "in-min-new-and-renewable-energy",
+   "to": "in-ireda",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.ireda.in"
+  },
+  {
+   "from": "in-min-new-and-renewable-energy",
+   "to": "in-nise",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-new-and-renewable-energy",
+   "to": "in-niwe",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-new-and-renewable-energy",
+   "to": "in-sss-nibe",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-minister-petroleum-and-natural-gas",
+   "to": "in-min-petroleum-and-natural-gas",
+   "type": "ex_officio",
+   "basis": "head of ministry"
+  },
+  {
+   "from": "in-min-petroleum-and-natural-gas",
+   "to": "in-ongc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://ongcindia.com"
+  },
+  {
+   "from": "in-min-petroleum-and-natural-gas",
+   "to": "in-iocl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://iocl.com"
+  },
+  {
+   "from": "in-min-petroleum-and-natural-gas",
+   "to": "in-bpcl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.bharatpetroleum.in"
+  },
+  {
+   "from": "in-min-petroleum-and-natural-gas",
+   "to": "in-hpcl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.hindustanpetroleum.com"
+  },
+  {
+   "from": "in-min-petroleum-and-natural-gas",
+   "to": "in-gail",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.gailonline.com"
+  },
+  {
+   "from": "in-min-petroleum-and-natural-gas",
+   "to": "in-oil",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.oil-india.com"
+  },
+  {
+   "from": "in-min-petroleum-and-natural-gas",
+   "to": "in-eil",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.engineersindia.com"
+  },
+  {
+   "from": "in-ongc",
+   "to": "in-mrpl",
+   "type": "administers",
+   "basis": "MRPL is a subsidiary of ONGC"
+  },
+  {
+   "from": "in-iocl",
+   "to": "in-cpcl",
+   "type": "administers",
+   "basis": "CPCL is a subsidiary of Indian Oil Corporation"
+  },
+  {
+   "from": "in-bpcl",
+   "to": "in-nrl",
+   "type": "administers",
+   "basis": "NRL is majority-owned by Bharat Petroleum"
+  },
+  {
+   "from": "in-min-petroleum-and-natural-gas",
+   "to": "in-dgh",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-petroleum-and-natural-gas",
+   "to": "in-ppac",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-secretary-petroleum-and-natural-gas",
+   "to": "in-ppac",
+   "type": "ex_officio",
+   "basis": "Secretary, MoPNG chairs the PPAC Governing Body",
+   "source": "https://ppac.gov.in/governing-body"
+  },
+  {
+   "from": "in-min-petroleum-and-natural-gas",
+   "to": "in-isprl",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-petroleum-and-natural-gas",
+   "to": "in-pcra",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-minister-coal",
+   "to": "in-min-coal",
+   "type": "ex_officio",
+   "basis": "head of ministry"
+  },
+  {
+   "from": "in-min-coal",
+   "to": "in-coal-india",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.coalindia.in"
+  },
+  {
+   "from": "in-coal-india",
+   "to": "in-bccl",
+   "type": "administers",
+   "basis": "wholly owned production subsidiary of Coal India Limited"
+  },
+  {
+   "from": "in-coal-india",
+   "to": "in-ccl",
+   "type": "administers",
+   "basis": "wholly owned production subsidiary of Coal India Limited"
+  },
+  {
+   "from": "in-coal-india",
+   "to": "in-ecl",
+   "type": "administers",
+   "basis": "wholly owned production subsidiary of Coal India Limited"
+  },
+  {
+   "from": "in-coal-india",
+   "to": "in-mcl",
+   "type": "administers",
+   "basis": "wholly owned production subsidiary of Coal India Limited"
+  },
+  {
+   "from": "in-coal-india",
+   "to": "in-ncl",
+   "type": "administers",
+   "basis": "wholly owned production subsidiary of Coal India Limited"
+  },
+  {
+   "from": "in-coal-india",
+   "to": "in-secl",
+   "type": "administers",
+   "basis": "wholly owned production subsidiary of Coal India Limited"
+  },
+  {
+   "from": "in-coal-india",
+   "to": "in-wcl",
+   "type": "administers",
+   "basis": "wholly owned production subsidiary of Coal India Limited"
+  },
+  {
+   "from": "in-coal-india",
+   "to": "in-cmpdi",
+   "type": "administers",
+   "basis": "wholly owned subsidiary of Coal India Limited"
+  },
+  {
+   "from": "in-min-coal",
+   "to": "in-nlc-india",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.nlcindia.in"
+  },
+  {
+   "from": "in-min-coal",
+   "to": "in-coal-controller",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-minister-mines",
+   "to": "in-min-mines",
+   "type": "ex_officio",
+   "basis": "head of ministry"
+  },
+  {
+   "from": "in-min-mines",
+   "to": "in-gsi",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-mines",
+   "to": "in-ibm",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-mines",
+   "to": "in-nalco",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.nalcoindia.com"
+  },
+  {
+   "from": "in-min-mines",
+   "to": "in-hindustan-copper",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-mines",
+   "to": "in-mecl",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-mines",
+   "to": "in-kabil",
+   "type": "administers"
+  },
+  {
+   "from": "in-nalco",
+   "to": "in-kabil",
+   "type": "administers",
+   "basis": "joint-venture promoter (NALCO, Hindustan Copper, MECL)"
+  },
+  {
+   "from": "in-min-mines",
+   "to": "in-jnarddc",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-minister-steel",
+   "to": "in-min-steel",
+   "type": "ex_officio",
+   "basis": "head of ministry"
+  },
+  {
+   "from": "in-min-steel",
+   "to": "in-sail",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.sail.co.in"
+  },
+  {
+   "from": "in-min-steel",
+   "to": "in-nmdc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.nmdc.co.in"
+  },
+  {
+   "from": "in-min-steel",
+   "to": "in-rinl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.vizagsteel.com"
+  },
+  {
+   "from": "in-min-steel",
+   "to": "in-moil",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.moil.nic.in"
+  },
+  {
+   "from": "in-min-steel",
+   "to": "in-mecon",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.meconlimited.co.in"
+  },
+  {
+   "from": "in-min-steel",
+   "to": "in-kiocl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.kioclltd.in"
+  },
+  {
+   "from": "in-pos-minister-heavy-industries",
+   "to": "in-min-heavy-industries",
+   "type": "ex_officio",
+   "basis": "head of ministry"
+  },
+  {
+   "from": "in-min-heavy-industries",
+   "to": "in-bhel",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.bhel.com"
+  },
+  {
+   "from": "in-min-heavy-industries",
+   "to": "in-andrew-yule",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.andrewyule.com"
+  },
+  {
+   "from": "in-min-heavy-industries",
+   "to": "in-hec",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-heavy-industries",
+   "to": "in-bridge-and-roof",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-heavy-industries",
+   "to": "in-icat",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-heavy-industries",
+   "to": "in-arai",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-dept-atomic-energy",
+   "type": "ex_officio",
+   "basis": "Prime Minister is in personal charge of DAE per the Allocation of Business Rules",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-aec",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-secretary-department-of-atomic-energy",
+   "to": "in-aec",
+   "type": "ex_officio",
+   "basis": "Secretary, DAE is ex officio Chairman of the Atomic Energy Commission",
+   "source": "https://dae.gov.in/atomic-energy-commission/"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-barc",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-npcil",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.npcil.nic.in"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-bhavini",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://bhavini.nic.in"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-ucil",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-irel",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-ecil",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-aerb",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-tifr",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-hbni",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-igcar",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-vecc",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-rrcat",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-ipr-plasma-research",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-sinp",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-dept-space",
+   "type": "ex_officio",
+   "basis": "Prime Minister is in personal charge of the Department of Space per the Allocation of Business Rules",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-dept-space",
+   "to": "in-space-commission",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-secretary-department-of-space",
+   "to": "in-space-commission",
+   "type": "ex_officio",
+   "basis": "Secretary, DoS is ex officio Chairman of the Space Commission",
+   "source": "https://www.isro.gov.in/DrVNarayanan_Assumed_Charge_Secretary_DOS_Chairman_Space_Commission.html"
+  },
+  {
+   "from": "in-dept-space",
+   "to": "in-isro",
+   "type": "administers"
+  },
+  {
+   "from": "in-isro",
+   "to": "in-vssc",
+   "type": "administers"
+  },
+  {
+   "from": "in-isro",
+   "to": "in-ursc",
+   "type": "administers"
+  },
+  {
+   "from": "in-isro",
+   "to": "in-sdsc-shar",
+   "type": "administers"
+  },
+  {
+   "from": "in-isro",
+   "to": "in-lpsc",
+   "type": "administers"
+  },
+  {
+   "from": "in-isro",
+   "to": "in-sac",
+   "type": "administers"
+  },
+  {
+   "from": "in-isro",
+   "to": "in-nrsc",
+   "type": "administers"
+  },
+  {
+   "from": "in-isro",
+   "to": "in-iprc",
+   "type": "administers"
+  },
+  {
+   "from": "in-isro",
+   "to": "in-hsfc",
+   "type": "administers"
+  },
+  {
+   "from": "in-isro",
+   "to": "in-istrac",
+   "type": "administers"
+  },
+  {
+   "from": "in-isro",
+   "to": "in-iisu",
+   "type": "administers"
+  },
+  {
+   "from": "in-isro",
+   "to": "in-nesac",
+   "type": "administers"
+  },
+  {
+   "from": "in-isro",
+   "to": "in-iirs",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-space",
+   "to": "in-iist",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-space",
+   "to": "in-nsil",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-space",
+   "to": "in-in-space",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-space",
+   "to": "in-antrix",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-space",
+   "to": "in-prl",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-cpri",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-nuclear-fuel-complex",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-atomic-energy",
+   "to": "in-heavy-water-board",
+   "type": "administers"
+  },
+  {
+   "from": "in-rec-limited",
+   "to": "in-rec-power-distribution",
+   "type": "administers",
+   "basis": "wholly owned subsidiary of REC Limited"
+  },
+  {
+   "from": "in-rec-limited",
+   "to": "in-rec-transmission-projects",
+   "type": "administers",
+   "basis": "wholly owned subsidiary of REC Limited"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 58,
+  "corrections": [
+   "in-pos-chair-ntpc: CORRECTED holder 'Jaikumar Srinivasan' -> 'Gurdeep Singh' (multi-source 2026 news says Gurdeep Singh's tenure was extended to Jan 2027; could not independently confirm ntpc.co.in due to CAPTCHA). Confidence low -> medium.",
+   "in-pos-chair-pgcil: CORRECTED holder 'Ravindra Kumar Tyagi' -> 'Burra Vamsi Rama Mohan' (took charge ~2026-04-01, confirmed by 9+ outlets + current Wikipedia infobox). Confidence low -> high.",
+   "in-pos-chair-bhavini: CORRECTED holder 'K. V. Suresh Kumar' -> 'P. A. Suresh Babu' (PIB-confirmed, took charge 2026-04-22/23). Confidence low -> high.",
+   "in-pos-chair-moil: CORRECTED holder 'Ajit Kumar Saxena' -> 'Vishwanath Suresh' (appointed 2025-10-04, reconfirmed as recently as 2026-09-21). Confidence medium -> high.",
+   "in-pos-secretary-new-and-renewable-energy: re-verified holder 'Santosh Kumar Sarangi', confidence low -> high",
+   "in-pos-secretary-coal: re-verified holder 'Vikram Dev Dutt', confidence medium -> high",
+   "in-pos-secretary-mines: re-verified holder 'Keshav Chandra', confidence medium -> high",
+   "in-pos-secretary-steel: re-verified holder 'Sandeep Poundrik', confidence medium -> high",
+   "in-pos-secretary-power: re-verified holder 'Pankaj Agarwal', confidence high -> high",
+   "in-pos-secretary-heavy-industries: re-verified holder 'Kamran Rizvi', confidence high -> high",
+   "in-pos-secretary-department-of-atomic-energy: re-verified holder 'Ajit Kumar Mohanty', confidence high -> high",
+   "in-pos-chairman-aec: re-verified holder 'Ajit Kumar Mohanty', confidence high -> high",
+   "in-pos-secretary-department-of-space: re-verified holder 'V. Narayanan', confidence high -> high",
+   "in-pos-chairman-space-commission: re-verified holder 'V. Narayanan', confidence high -> high",
+   "in-pos-chairman-isro: re-verified holder 'V. Narayanan', confidence high -> high",
+   "in-pos-chairman-aerb: re-verified holder 'Dinesh Kumar Shukla', confidence medium -> high",
+   "in-pos-director-barc: re-verified holder 'Vivek Bhasin', confidence medium -> high",
+   "in-pos-chair-bhel: re-verified holder 'K. Sadashiv Murthy', confidence medium -> high",
+   "in-pos-chair-andrew-yule: re-verified holder 'Ananta Mohan Singh', confidence medium -> high",
+   "in-pos-chair-eil: re-verified holder 'Atul Gupta', confidence medium -> high",
+   "in-pos-director-vssc: re-verified holder 'A. Rajarajan', confidence medium -> high",
+   "in-pos-chair-grid-india: re-verified holder 'Samir Chand Saxena', confidence medium -> high",
+   "in-pos-chair-rec-limited: re-verified holder 'Jitendra Srivastava', confidence medium -> high",
+   "in-pos-chair-thdc-india: re-verified holder 'Sipan Kumar Garg', confidence medium -> high",
+   "in-pos-chair-dvc: re-verified holder 'Rajesh Pandey', confidence medium -> high",
+   "in-pos-chair-nalco: re-verified holder 'Brijendra Pratap Singh', confidence medium -> high",
+   "in-pos-chair-nmdc: re-verified holder 'Amitava Mukherjee', confidence medium -> high",
+   "in-pos-chair-rinl: re-verified holder 'M N V S Prabhakar', confidence medium -> high",
+   "in-pos-chair-coal-india: re-verified holder 'B. Sairam', confidence medium -> high",
+   "in-pos-chair-npcil: DOWNGRADED confidence medium -> low; found evidence B.C. Pathak's confirmed title is Director (Finance), not CMD — NPCIL's actual current CMD could not be confirmed in this pass.",
+   "in-pos-chair-mecon: re-verified holder 'Sanjay Kumar Verma', confidence medium -> medium",
+   "in-pos-chair-ucil: no 2025-26 reconfirmation found; kept 'C. K. Asnani' at confidence low per existing note, added detail on what was and wasn't found.",
+   "in-pos-chair-sjvn: fixed name spelling 'Bhupendra Gupta' -> 'Bhupender Gupta'; added notes on the SJVN/NHPC additional-charge ambiguity; confidence stays medium (was low).",
+   "in-pos-chair-nhpc: removed a 'holder.wikipedia' link that pointed to NHPC's company page (not a person page, violates schema intent); added note that Gupta's NHPC CMD status is a PESB recommendation, not a confirmed charge-taking; confidence stays medium.",
+   "in-pos-chair-pfc: re-verified holder 'Parminder Chopra', confidence medium -> high",
+   "in-pos-chair-oil: re-verified holder 'Ranjit Rath', confidence high -> high",
+   "in-pos-chair-nlc-india: RESOLVED vacant stub -> Sanoj Kumar Jha (additional charge CMD, since ~2026-06-30, PIB-sourced).",
+   "in-pos-chair-hindustan-copper: RESOLVED vacant stub -> Anupam Mishra (since ~2026-02-23).",
+   "in-pos-chair-cpcl: RESOLVED vacant stub -> H. Shankar (since 2025-04-03, reconfirmed 2026-09-23).",
+   "in-pos-coal-controller: RESOLVED vacant stub -> Satish Kumar (since ~2026-07-24).",
+   "in-pos-dg-gsi: RESOLVED vacant stub -> Varsha Ashok Aglawe (since 2026-08-01, PIB-confirmed, first woman DG of GSI).",
+   "in-pos-cg-ibm: RESOLVED vacant stub -> Pankaj Kulshrestha (since 2026-01-03, PIB-confirmed).",
+   "in-pos-chair-ecil: RESOLVED vacant stub -> Dr. Komal Kapoor (since 2026-05-12).",
+   "in-pos-chair-seci: RESOLVED vacant stub -> Akash Tripathi (since ~2025-08-27), confidence low given the finding is >1 year old with a turbulent recent history at this CPSE (predecessor terminated May-2025).",
+   "in-pos-chair-ireda: kept vacant (PESB recommended Jatin Kumar Nayak 19-Jun-2026 but no confirmation he has taken charge); added an entity-level note naming the recommendation without asserting a confirmed holder.",
+   "in-pos-cmd-nsil: CONFIRMED still vacant (TOI, 11-May-2026: CMD selection process failed after 10 months); added source, kept vacant.",
+   "in-pos-chairperson-cea: re-checked with fresh 2025-26 searches; no additional confirmation found beyond what the file already had. Left as-is.",
+   "in-pos-director-general-bee: re-checked with fresh 2025-26 searches; no additional confirmation found beyond what the file already had. Left as-is.",
+   "in-pos-chair-neepco: re-checked with fresh 2025-26 searches; no additional confirmation found beyond what the file already had. Left as-is.",
+   "in-pos-chair-mrpl: re-checked with fresh 2025-26 searches; no additional confirmation found beyond what the file already had. Left as-is.",
+   "in-pos-md-isprl: re-checked with fresh 2025-26 searches; no additional confirmation found beyond what the file already had. Left as-is.",
+   "in-pos-chair-kabil: re-checked with fresh 2025-26 searches; no additional confirmation found beyond what the file already had. Left as-is.",
+   "in-pos-chair-irel: re-checked with fresh 2025-26 searches; no additional confirmation found beyond what the file already had. Left as-is.",
+   "in-pos-chairman-in-space: re-checked with fresh 2025-26 searches; no additional confirmation found beyond what the file already had. Left as-is.",
+   "in-pos-chair-mecl: re-checked with fresh 2025-26 searches; no additional confirmation found beyond what the file already had. Left as-is.",
+   "in-pos-cmd-antrix: re-checked with fresh 2025-26 searches; no additional confirmation found beyond what the file already had. Left as-is.",
+   "in-pos-director-sac: re-checked with fresh 2025-26 searches; no additional confirmation found beyond what the file already had. Left as-is.",
+   "in-pos-chair-kiocl: re-checked with fresh 2025-26 searches; no additional confirmation found beyond what the file already had. Left as-is."
+  ]
+ }
+}

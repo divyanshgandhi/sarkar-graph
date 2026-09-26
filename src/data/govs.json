@@ -1,0 +1,665 @@
+[
+ {
+  "gov": "in",
+  "name": "India",
+  "nameHi": "भारत",
+  "kind": "union",
+  "capital": "New Delhi",
+  "cm": null,
+  "head": null,
+  "nodes": 1699
+ },
+ {
+  "gov": "an",
+  "name": "Andaman and Nicobar Islands",
+  "nameHi": "अंडमान और निकोबार द्वीपसमूह",
+  "kind": "ut",
+  "capital": "Sri Vijaya Puram",
+  "cm": null,
+  "head": {
+   "title": "Lieutenant Governor of Andaman and Nicobar Islands",
+   "name": "Prof. (Dr.) Dinesh Sharma"
+  },
+  "nodes": 85
+ },
+ {
+  "gov": "ap",
+  "name": "Andhra Pradesh",
+  "nameHi": "आंध्र प्रदेश",
+  "kind": "state",
+  "capital": "Amaravati",
+  "cm": {
+   "name": "N. Chandrababu Naidu",
+   "party": "TDP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/The_portrait_of_CM_Shri_Nara_Chandrababu_Naidu.jpg/330px-The_portrait_of_CM_Shri_Nara_Chandrababu_Naidu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Andhra Pradesh",
+   "name": "Syed Abdul Nazeer"
+  },
+  "party": "TDP",
+  "seats": 175,
+  "nodes": 128
+ },
+ {
+  "gov": "ar",
+  "name": "Arunachal Pradesh",
+  "nameHi": "अरुणाचल प्रदेश",
+  "kind": "state",
+  "capital": "Itanagar",
+  "cm": {
+   "name": "Pema Khandu",
+   "party": "BJP",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Pema_Khandu_in_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "head": {
+   "title": "Governor of Arunachal Pradesh",
+   "name": "Kaiwalya Trivikram Parnaik"
+  },
+  "party": "BJP",
+  "seats": 60,
+  "nodes": 158
+ },
+ {
+  "gov": "as",
+  "name": "Assam",
+  "nameHi": "असम",
+  "kind": "state",
+  "capital": "Dispur",
+  "cm": {
+   "name": "Himanta Biswa Sarma",
+   "party": "BJP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Himanta_Biswa_Sarma_in_2026.jpg/330px-Himanta_Biswa_Sarma_in_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Assam",
+   "name": "Lakshman Prasad Acharya"
+  },
+  "party": "BJP",
+  "seats": 126,
+  "nodes": 128
+ },
+ {
+  "gov": "br",
+  "name": "Bihar",
+  "nameHi": "बिहार",
+  "kind": "state",
+  "capital": "Patna",
+  "cm": {
+   "name": "Samrat Choudhary",
+   "party": "BJP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Samrat_Chaudhary_in_Rajgir.jpg/330px-Samrat_Chaudhary_in_Rajgir.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Bihar",
+   "name": "Syed Ata Hasnain"
+  },
+  "party": "BJP",
+  "seats": 243,
+  "nodes": 166
+ },
+ {
+  "gov": "ch",
+  "name": "Chandigarh",
+  "nameHi": "चंडीगढ़",
+  "kind": "ut",
+  "capital": "Chandigarh",
+  "cm": null,
+  "head": {
+   "title": "Administrator of Chandigarh",
+   "name": "Gulab Chand Kataria"
+  },
+  "nodes": 90
+ },
+ {
+  "gov": "cg",
+  "name": "Chhattisgarh",
+  "nameHi": "छत्तीसगढ़",
+  "kind": "state",
+  "capital": "Raipur",
+  "cm": {
+   "name": "Vishnu Deo Sai",
+   "party": "BJP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Vishnu_Deo_Sai%2C_Chief_Minister_of_Chhattisgarh.jpg/330px-Vishnu_Deo_Sai%2C_Chief_Minister_of_Chhattisgarh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Chhattisgarh",
+   "name": "Ramen Deka"
+  },
+  "party": "BJP",
+  "seats": 90,
+  "nodes": 123
+ },
+ {
+  "gov": "dh",
+  "name": "Dadra and Nagar Haveli and Daman and Diu",
+  "nameHi": "दादरा और नगर हवेली और दमन और दीव",
+  "kind": "ut",
+  "capital": "Daman",
+  "cm": null,
+  "head": {
+   "title": "Administrator of Dadra and Nagar Haveli and Daman and Diu",
+   "name": "Praful Khoda Patel"
+  },
+  "nodes": 102
+ },
+ {
+  "gov": "dl",
+  "name": "Delhi",
+  "nameHi": "दिल्ली",
+  "kind": "ut",
+  "capital": "New Delhi",
+  "cm": {
+   "name": "Rekha Gupta",
+   "party": "BJP"
+  },
+  "head": {
+   "title": "Lieutenant Governor of Delhi",
+   "name": "Taranjit Singh Sandhu"
+  },
+  "party": "BJP",
+  "seats": 70,
+  "nodes": 83
+ },
+ {
+  "gov": "ga",
+  "name": "Goa",
+  "nameHi": "गोवा",
+  "kind": "state",
+  "capital": "Panaji",
+  "cm": {
+   "name": "Pramod Sawant",
+   "party": "BJP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Pramod_Sawant_at_the_inauguration_of_the_Chhatrapati_Shivaji_Maharaj_Chair_in_Goa_University_%28cropped%29.jpg/330px-Pramod_Sawant_at_the_inauguration_of_the_Chhatrapati_Shivaji_Maharaj_Chair_in_Goa_University_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Goa",
+   "name": "Pusapati Ashok Gajapathi Raju"
+  },
+  "party": "BJP",
+  "seats": 40,
+  "nodes": 70
+ },
+ {
+  "gov": "gj",
+  "name": "Gujarat",
+  "nameHi": "गुजरात",
+  "kind": "state",
+  "capital": "Gandhinagar",
+  "cm": {
+   "name": "Bhupendra Patel",
+   "party": "BJP",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bhupendra_Patel_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "head": {
+   "title": "Governor of Gujarat",
+   "name": "Acharya Devvrat"
+  },
+  "party": "BJP",
+  "seats": 182,
+  "nodes": 126
+ },
+ {
+  "gov": "hr",
+  "name": "Haryana",
+  "nameHi": "हरियाणा",
+  "kind": "state",
+  "capital": "Chandigarh",
+  "cm": {
+   "name": "Nayab Singh Saini",
+   "party": "BJP",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Nayab_Singh_Saini_October_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "head": {
+   "title": "Governor of Haryana",
+   "name": "Ashim Kumar Ghosh"
+  },
+  "party": "BJP",
+  "seats": 90,
+  "nodes": 133
+ },
+ {
+  "gov": "hp",
+  "name": "Himachal Pradesh",
+  "nameHi": "हिमाचल प्रदेश",
+  "kind": "state",
+  "capital": "Shimla",
+  "cm": {
+   "name": "Sukhvinder Singh Sukhu",
+   "party": "INC",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Sukhvinder_Singh_Sukhu.jpg/330px-Sukhvinder_Singh_Sukhu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Himachal Pradesh",
+   "name": "Kavinder Gupta"
+  },
+  "party": "INC",
+  "seats": 68,
+  "nodes": 153
+ },
+ {
+  "gov": "jk",
+  "name": "Jammu and Kashmir",
+  "nameHi": "जम्मू और कश्मीर",
+  "kind": "ut",
+  "capital": "Srinagar / Jammu",
+  "cm": {
+   "name": "Omar Abdullah",
+   "party": "JKNC",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Omar_Abdullah%2C_Chief_Minister_of_Jammu_%26_Kashmir.jpg/330px-Omar_Abdullah%2C_Chief_Minister_of_Jammu_%26_Kashmir.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Lieutenant Governor of Jammu and Kashmir",
+   "name": "Manoj Sinha"
+  },
+  "party": "JKNC",
+  "seats": 95,
+  "nodes": 89
+ },
+ {
+  "gov": "jh",
+  "name": "Jharkhand",
+  "nameHi": "झारखंड",
+  "kind": "state",
+  "capital": "Ranchi",
+  "cm": {
+   "name": "Hemant Soren",
+   "party": "JMM",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Hemant_Soren_2024.jpg/330px-Hemant_Soren_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Jharkhand",
+   "name": "Santosh Kumar Gangwar"
+  },
+  "party": "JMM",
+  "seats": 81,
+  "nodes": 99
+ },
+ {
+  "gov": "ka",
+  "name": "Karnataka",
+  "nameHi": "कर्नाटक",
+  "kind": "state",
+  "capital": "Bengaluru",
+  "cm": {
+   "name": "D. K. Shivakumar",
+   "party": "INC",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/DK_Shivakumar_speech.jpg/330px-DK_Shivakumar_speech.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Karnataka",
+   "name": "Thawar Chand Gehlot"
+  },
+  "party": "INC",
+  "seats": 224,
+  "nodes": 149
+ },
+ {
+  "gov": "kl",
+  "name": "Kerala",
+  "nameHi": "केरल",
+  "kind": "state",
+  "capital": "Thiruvananthapuram",
+  "cm": {
+   "name": "V. D. Satheesan",
+   "party": "INC",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/VD_Satheesan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "head": {
+   "title": "Governor of Kerala",
+   "name": "Rajendra Vishwanath Arlekar"
+  },
+  "party": "INC",
+  "seats": 140,
+  "nodes": 158
+ },
+ {
+  "gov": "la",
+  "name": "Ladakh",
+  "nameHi": "लद्दाख",
+  "kind": "ut",
+  "capital": "Leh",
+  "cm": null,
+  "head": {
+   "title": "Lieutenant Governor of Ladakh",
+   "name": "Vinai Kumar Saxena"
+  },
+  "nodes": 53
+ },
+ {
+  "gov": "ld",
+  "name": "Lakshadweep",
+  "nameHi": "लक्षद्वीप",
+  "kind": "ut",
+  "capital": "Kavaratti",
+  "cm": null,
+  "head": {
+   "title": "Administrator of Lakshadweep",
+   "name": "Praful Khoda Patel"
+  },
+  "nodes": 84
+ },
+ {
+  "gov": "mp",
+  "name": "Madhya Pradesh",
+  "nameHi": "मध्य प्रदेश",
+  "kind": "state",
+  "capital": "Bhopal",
+  "cm": {
+   "name": "Mohan Yadav",
+   "party": "BJP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Mohan_Yadav%2C_Chief_Minister_of_Madhya_Pradesh.jpg/330px-Mohan_Yadav%2C_Chief_Minister_of_Madhya_Pradesh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Madhya Pradesh",
+   "name": "Mangubhai C. Patel"
+  },
+  "party": "BJP",
+  "seats": 230,
+  "nodes": 169
+ },
+ {
+  "gov": "mh",
+  "name": "Maharashtra",
+  "nameHi": "महाराष्ट्र",
+  "kind": "state",
+  "capital": "Mumbai",
+  "cm": {
+   "name": "Devendra Fadnavis",
+   "party": "BJP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Shri_Devendra_Gangadharrao_Fadnavis.jpg/330px-Shri_Devendra_Gangadharrao_Fadnavis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Maharashtra",
+   "name": "Jishnu Dev Varma"
+  },
+  "party": "BJP",
+  "seats": 288,
+  "nodes": 182
+ },
+ {
+  "gov": "mn",
+  "name": "Manipur",
+  "nameHi": "मणिपुर",
+  "kind": "state",
+  "capital": "Imphal",
+  "cm": {
+   "name": "Yumnam Khemchand Singh",
+   "party": "BJP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/YumnamKhemchandSingh_%28cropped%29.webp/330px-YumnamKhemchandSingh_%28cropped%29.webp?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Manipur",
+   "name": "Ajay Kumar Bhalla"
+  },
+  "party": "BJP",
+  "seats": 60,
+  "nodes": 87
+ },
+ {
+  "gov": "ml",
+  "name": "Meghalaya",
+  "nameHi": "मेघालय",
+  "kind": "state",
+  "capital": "Shillong",
+  "cm": {
+   "name": "Conrad Sangma",
+   "party": "NPP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Conrad_Sangma_%28cropped%29.jpg/330px-Conrad_Sangma_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Meghalaya",
+   "name": "C. H. Vijayashankar"
+  },
+  "party": "NPP",
+  "seats": 60,
+  "nodes": 135
+ },
+ {
+  "gov": "mz",
+  "name": "Mizoram",
+  "nameHi": "मिज़ोरम",
+  "kind": "state",
+  "capital": "Aizawl",
+  "cm": {
+   "name": "Lalduhoma",
+   "party": "ZPM",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Lalduhoma.jpg/330px-Lalduhoma.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Mizoram",
+   "name": "Vijay Kumar Singh"
+  },
+  "party": "ZPM",
+  "seats": 40,
+  "nodes": 85
+ },
+ {
+  "gov": "nl",
+  "name": "Nagaland",
+  "nameHi": "नागालैंड",
+  "kind": "state",
+  "capital": "Kohima",
+  "cm": {
+   "name": "Neiphiu Rio",
+   "party": "NPF",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Neiphiu_Rio.jpg/330px-Neiphiu_Rio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Nagaland",
+   "name": "Nand Kishore Yadav"
+  },
+  "party": "NPF",
+  "seats": 60,
+  "nodes": 119
+ },
+ {
+  "gov": "od",
+  "name": "Odisha",
+  "nameHi": "ओडिशा",
+  "kind": "state",
+  "capital": "Bhubaneswar",
+  "cm": {
+   "name": "Mohan Charan Majhi",
+   "party": "BJP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Shri_Mohan_Charan_Majhi.jpg/330px-Shri_Mohan_Charan_Majhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Odisha",
+   "name": "Kambhampati Hari Babu"
+  },
+  "party": "BJP",
+  "seats": 147,
+  "nodes": 113
+ },
+ {
+  "gov": "py",
+  "name": "Puducherry",
+  "nameHi": "पुदुचेरी",
+  "kind": "ut",
+  "capital": "Puducherry",
+  "cm": {
+   "name": "N. Rangaswamy",
+   "party": "AINRC",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/N._Rangaswamy_%28cropped%29.jpg/330px-N._Rangaswamy_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Lieutenant Governor of Puducherry",
+   "name": "Kuniyil Kailashnathan"
+  },
+  "party": "AINRC",
+  "seats": 33,
+  "nodes": 117
+ },
+ {
+  "gov": "pb",
+  "name": "Punjab",
+  "nameHi": "पंजाब",
+  "kind": "state",
+  "capital": "Chandigarh",
+  "cm": {
+   "name": "Bhagwant Mann",
+   "party": "AAP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Bhagwant_Mann_2026.jpg/330px-Bhagwant_Mann_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Punjab",
+   "name": "Gulab Chand Kataria"
+  },
+  "party": "AAP",
+  "seats": 117,
+  "nodes": 176
+ },
+ {
+  "gov": "rj",
+  "name": "Rajasthan",
+  "nameHi": "राजस्थान",
+  "kind": "state",
+  "capital": "Jaipur",
+  "cm": {
+   "name": "Bhajan Lal Sharma",
+   "party": "BJP",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Bhajan_Lal_Sharma_and_deputies_meets_VP_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "head": {
+   "title": "Governor of Rajasthan",
+   "name": "Haribhau Kisanrao Bagade"
+  },
+  "party": "BJP",
+  "seats": 200,
+  "nodes": 147
+ },
+ {
+  "gov": "sk",
+  "name": "Sikkim",
+  "nameHi": "सिक्किम",
+  "kind": "state",
+  "capital": "Gangtok",
+  "cm": {
+   "name": "Prem Singh Tamang",
+   "party": "SKM",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Prem_Singh_Tamang%2C_Chief_Minister_of_Sikkim.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "head": {
+   "title": "Governor of Sikkim",
+   "name": "Om Prakash Mathur"
+  },
+  "party": "SKM",
+  "seats": 32,
+  "nodes": 80
+ },
+ {
+  "gov": "tn",
+  "name": "Tamil Nadu",
+  "nameHi": "तमिलनाडु",
+  "kind": "state",
+  "capital": "Chennai",
+  "cm": {
+   "name": "Vijay (Chandrasekaran Joseph Vijay)",
+   "party": "TVK",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/C._Joseph_Vijay_%28cropped%29.jpg/330px-C._Joseph_Vijay_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Tamil Nadu",
+   "name": "Rajendra Vishwanath Arlekar"
+  },
+  "party": "TVK",
+  "seats": 234,
+  "nodes": 200
+ },
+ {
+  "gov": "tg",
+  "name": "Telangana",
+  "nameHi": "तेलंगाना",
+  "kind": "state",
+  "capital": "Hyderabad",
+  "cm": {
+   "name": "A. Revanth Reddy",
+   "party": "INC",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Telangana_CM_Revanth_Reddy_at_Gaddar_Awards_2025_-_1.jpg/330px-Telangana_CM_Revanth_Reddy_at_Gaddar_Awards_2025_-_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Telangana",
+   "name": "Shiv Pratap Shukla"
+  },
+  "party": "INC",
+  "seats": 119,
+  "nodes": 131
+ },
+ {
+  "gov": "tr",
+  "name": "Tripura",
+  "nameHi": "त्रिपुरा",
+  "kind": "state",
+  "capital": "Agartala",
+  "cm": {
+   "name": "Manik Saha",
+   "party": "BJP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Dr._Manik_Saha.jpg/330px-Dr._Manik_Saha.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Tripura",
+   "name": "N. Indrasena Reddy"
+  },
+  "party": "BJP",
+  "seats": 60,
+  "nodes": 131
+ },
+ {
+  "gov": "up",
+  "name": "Uttar Pradesh",
+  "nameHi": "उत्तर प्रदेश",
+  "kind": "state",
+  "capital": "Lucknow",
+  "cm": {
+   "name": "Yogi Adityanath",
+   "party": "BJP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Yogiji_in_2023.jpg/330px-Yogiji_in_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Uttar Pradesh",
+   "name": "Anandiben Patel"
+  },
+  "party": "BJP",
+  "seats": 403,
+  "nodes": 264
+ },
+ {
+  "gov": "uk",
+  "name": "Uttarakhand",
+  "nameHi": "उत्तराखंड",
+  "kind": "state",
+  "capital": "Dehradun",
+  "cm": {
+   "name": "Pushkar Singh Dhami",
+   "party": "BJP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Pushkar_Singh_Dhami%2C_Chief_Minister_of_Uttarakhand.jpg/330px-Pushkar_Singh_Dhami%2C_Chief_Minister_of_Uttarakhand.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of Uttarakhand",
+   "name": "Gurmit Singh"
+  },
+  "party": "BJP",
+  "seats": 70,
+  "nodes": 111
+ },
+ {
+  "gov": "wb",
+  "name": "West Bengal",
+  "nameHi": "पश्चिम बंगाल",
+  "kind": "state",
+  "capital": "Kolkata",
+  "cm": {
+   "name": "Suvendu Adhikari",
+   "party": "BJP",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Suvendu_Adhikari_May_2026_%28cropped%29.jpg/330px-Suvendu_Adhikari_May_2026_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "head": {
+   "title": "Governor of West Bengal",
+   "name": "R. N. Ravi"
+  },
+  "party": "BJP",
+  "seats": 294,
+  "nodes": 147
+ }
+]

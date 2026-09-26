@@ -1,0 +1,5643 @@
+{
+ "segment": "council-of-ministers",
+ "asOf": "2026-09-25",
+ "notes": "Union Council of Ministers as of 2026-09-25 (Third Modi ministry, formed 9-10 June 2024).\n\nMETHOD: Base roster reconstructed from the live Wikipedia \"Third Modi ministry\" article\n(en.wikipedia.org/wiki/Third_Modi_ministry, fetched via the Wikipedia parse API on 2026-09-25), which\nlists 30 Cabinet Ministers, 5 Ministers of State (Independent Charge) and 34 Ministers of State\n(72 total members ever appointed, 3 removed by 2026-09-25, 69 currently serving). Per-holder house\n(Lok Sabha/Rajya Sabha), constituency and party were extracted from each holder's own Wikipedia\ninfobox (fetched individually) and cross-checked with WebSearch news coverage for every change\nevent below. One position per (ministry, seat): a minister holding N ministries gets N\n`in-pos-minister-<slug>` / `in-pos-mos-<slug>-<n>` records, holder repeated, cross-referenced in notes.\n\nCHANGES SINCE JUNE 2024 (verified against 2026 press coverage, not just Wikipedia):\n1. Education: Dharmendra Pradhan resigned as Union Education Minister on 25 July 2026 following\n   weeks of nationwide student protests over an examination-leak scandal (President accepted his\n   resignation under Article 75). Pralhad Joshi (already Cabinet Minister for Consumer Affairs,\n   Food & Public Distribution and New & Renewable Energy) was given additional charge of Education\n   the same day. Sources: SCC Online, Al Jazeera (2026-07-25/26).\n2. George Kurian (MoS Fisheries, Animal Husbandry & Dairying; MoS Minority Affairs) left the\n   Council of Ministers on 23 June 2026 after his Rajya Sabha term ended 21 June 2026 and BJP did\n   not renominate him. No replacement had been named for either portfolio as of 2026-09-25\n   (in-pos-mos-fisheries-animal-husbandry-and-dairying-2 and in-pos-mos-minority-affairs-1 are\n   recorded vacant, confidence \"low\" pending a reshuffle). Source: The Tribune, Business Standard.\n3. Ravneet Singh Bittu (MoS Railways; MoS Food Processing Industries) resigned 24 July 2026 after\n   similarly not being renominated to the Rajya Sabha (his term ended 21 June 2026); reported bound\n   for a party role ahead of the 2027 Punjab election. No replacement named as of 2026-09-25\n   (in-pos-mos-railways-2 and in-pos-mos-food-processing-industries-1 recorded vacant, confidence\n   \"low\"). Source: Newsdrum, Tribune India.\n\nRESHUFFLE WATCH (not applied — no confirmed action as of 2026-09-25): Speculation about a larger Modi\nCabinet reshuffle/expansion has recurred through mid-2026 (expected around a \"Chintan Shivir\"\nministers' retreat PM Modi held 23-24 September 2026), including talk of Nirmala Sitharaman moving\nportfolios and new inductees (Shaktikanta Das, Anurag Thakur, Shrikant Shinde, Arun Govil were\nnamed in speculation). As of 2026-09-25 the government has made no official announcement and no new\nminister has been sworn in beyond the changes listed above — do not treat the speculation as fact;\nre-check this segment after any confirmed swearing-in.\n\nDATA GAPS / LOW CONFIDENCE:\n- Tokhan Sahu (MoS Housing & Urban Affairs): his Wikipedia infobox heading just says \"Member of\n  Parliament\" without naming the house; house inferred as Lok Sabha from his constituency\n  (Bilaspur, Chhattisgarh, a Lok Sabha seat) — confidence \"medium\" on that position pending a\n  direct-source check.\n- MoS Finance shows only one holder (Pankaj Chaudhary) in the current Wikipedia table; if a second\n  MoS Finance exists it was not surfaced by this pass.\n- `since` dates for all June-2024 appointees use the Wikipedia-listed \"took office\" date (10 June\n  2024 for most; 9 June 2024 for the PM), not each individual's personal swearing-in time.\n- No PIB \"allocation of portfolios\" gazette notification was fetched directly (network access here\n  was via WebSearch/WebFetch + the Wikipedia API, not gov.in scraping); all current-holder facts\n  are corroborated by at least one 2026 press source in addition to Wikipedia, per the quality bar,\n  but a direct PIB citation was not obtained for every seat.\n\nPARTY COMPOSITION OF THE UNION COUNCIL OF MINISTERS (unique current members, 2026-09-25, N=69):\n| Party | Cabinet Ministers | MoS (Independent Charge) | Ministers of State | Total members |\n|---|---|---|---|---|\n| BJP (Bharatiya Janata Party) | 25 | 3 | 30 | 58 |\n| TDP (Telugu Desam Party) | 1 | 0 | 1 | 2 |\n| JD(U) (Janata Dal (United)) | 1 | 0 | 1 | 2 |\n| LJP(RV) (Lok Janshakti Party (Ram Vilas)) | 1 | 0 | 0 | 1 |\n| RPI(A) (Republican Party of India (Athawale)) | 0 | 0 | 1 | 1 |\n| JD(S) (Janata Dal (Secular)) | 1 | 0 | 0 | 1 |\n| SHS (Shiv Sena) | 0 | 1 | 0 | 1 |\n| RLD (Rashtriya Lok Dal) | 0 | 1 | 0 | 1 |\n| HAM(S) (Hindustani Awam Morcha (Secular)) | 1 | 0 | 0 | 1 |\n| AD(S) (Apna Dal (Sonelal)) | 0 | 0 | 1 | 1 |\n[VERIFIER CORRECTION 2026-09-25: the \"Ministers of State\" column above had 3 transcription\nerrors vs. the source. Fixed against (a) the party-composition wikitable on the live\n\"Third Modi ministry\" Wikipedia article itself (already saved by the builder agent at\nresearch/india/scratch/council-of-ministers/third_modi_ministry.html, table index 3: BJP\n25/3/30/58, SHS 0/1/0/1, RLD 0/1/0/1) and (b) independent recomputation from this file's own\n118 position records. Cause: Rao Inderjit Singh, Jitendra Singh and Arjun Ram Meghwal (BJP),\nPrataprao Ganpatrao Jadhav (SHS) and Jayant Chaudhary (RLD) each hold one MoS-Independent-Charge\nseat AND one ordinary MoS seat; they were double-counted in both the \"MoS(I/C)\" and \"MoS\"\ncolumns even though the table's own row totals (and the N=69 grand total) already counted each\nperson once under their higher rank. Row totals and grand total (69) were already correct and\nare unchanged.]\n",
+ "entities": [],
+ "positions": [
+  {
+   "id": "in-pos-minister-personnel-public-grievances-and-pensions",
+   "title": "Minister of Personnel, Public Grievances and Pensions",
+   "orgId": "in-min-personnel-public-grievances-and-pensions",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Narendra Modi",
+    "since": "2024-06-09",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Varanasi, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Narendra_Modi",
+    "notes": "Also holds: in-pos-minister-atomic-energy, in-pos-minister-space; Prime Minister; also holds all portfolios not allocated to any Minister."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Narendra_Modi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-atomic-energy",
+   "title": "Minister of Atomic Energy",
+   "orgId": "in-dept-atomic-energy",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Narendra Modi",
+    "since": "2024-06-09",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Varanasi, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Narendra_Modi",
+    "notes": "Also holds: in-pos-minister-personnel-public-grievances-and-pensions, in-pos-minister-space; Prime Minister; also holds all portfolios not allocated to any Minister."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Narendra_Modi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-space",
+   "title": "Minister of Space",
+   "orgId": "in-dept-space",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Narendra Modi",
+    "since": "2024-06-09",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Varanasi, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Narendra_Modi",
+    "notes": "Also holds: in-pos-minister-personnel-public-grievances-and-pensions, in-pos-minister-atomic-energy; Prime Minister; also holds all portfolios not allocated to any Minister."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Narendra_Modi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-defence",
+   "title": "Minister of Defence",
+   "orgId": "in-min-defence",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rajnath Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Lucknow, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rajnath_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Rajnath_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-home-affairs",
+   "title": "Minister of Home Affairs",
+   "orgId": "in-min-home-affairs",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Amit Shah",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Gandhinagar, Gujarat",
+    "wikipedia": "https://en.wikipedia.org/wiki/Amit_Shah",
+    "notes": "Also holds: in-pos-minister-cooperation"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Amit_Shah"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-cooperation",
+   "title": "Minister of Co-operation",
+   "orgId": "in-min-cooperation",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Amit Shah",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Gandhinagar, Gujarat",
+    "wikipedia": "https://en.wikipedia.org/wiki/Amit_Shah",
+    "notes": "Also holds: in-pos-minister-home-affairs"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Amit_Shah"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-road-transport-and-highways",
+   "title": "Minister of Road Transport and Highways",
+   "orgId": "in-min-road-transport-and-highways",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Nitin Gadkari",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Nagpur, Maharashtra",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nitin_Gadkari"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Nitin_Gadkari"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-health-and-family-welfare",
+   "title": "Minister of Health and Family Welfare",
+   "orgId": "in-min-health-and-family-welfare",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jagat Prakash Nadda",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Gujarat",
+    "wikipedia": "https://en.wikipedia.org/wiki/J._P._Nadda",
+    "notes": "Also holds: in-pos-minister-chemicals-and-fertilizers"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/J._P._Nadda"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-chemicals-and-fertilizers",
+   "title": "Minister of Chemicals and Fertilizers",
+   "orgId": "in-min-chemicals-and-fertilizers",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jagat Prakash Nadda",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Gujarat",
+    "wikipedia": "https://en.wikipedia.org/wiki/J._P._Nadda",
+    "notes": "Also holds: in-pos-minister-health-and-family-welfare"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/J._P._Nadda"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-agriculture-and-farmers-welfare",
+   "title": "Minister of Agriculture and Farmers' Welfare",
+   "orgId": "in-min-agriculture-and-farmers-welfare",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Shivraj Singh Chouhan",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Vidisha, Madhya Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shivraj_Singh_Chouhan",
+    "notes": "Also holds: in-pos-minister-rural-development"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Shivraj_Singh_Chouhan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-rural-development",
+   "title": "Minister of Rural Development",
+   "orgId": "in-min-rural-development",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Shivraj Singh Chouhan",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Vidisha, Madhya Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shivraj_Singh_Chouhan",
+    "notes": "Also holds: in-pos-minister-agriculture-and-farmers-welfare"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Shivraj_Singh_Chouhan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-finance",
+   "title": "Minister of Finance",
+   "orgId": "in-min-finance",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Nirmala Sitharaman",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Karnataka",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nirmala_Sitharaman",
+    "notes": "Also holds: in-pos-minister-corporate-affairs"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Nirmala_Sitharaman"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-corporate-affairs",
+   "title": "Minister of Corporate Affairs",
+   "orgId": "in-min-corporate-affairs",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Nirmala Sitharaman",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Karnataka",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nirmala_Sitharaman",
+    "notes": "Also holds: in-pos-minister-finance"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Nirmala_Sitharaman"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-external-affairs",
+   "title": "Minister of External Affairs",
+   "orgId": "in-min-external-affairs",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "S. Jaishankar",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Gujarat",
+    "wikipedia": "https://en.wikipedia.org/wiki/S._Jaishankar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/S._Jaishankar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-power",
+   "title": "Minister of Power",
+   "orgId": "in-min-power",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Manohar Lal Khattar",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Karnal, Haryana",
+    "wikipedia": "https://en.wikipedia.org/wiki/Manohar_Lal_Khattar",
+    "notes": "Also holds: in-pos-minister-housing-and-urban-affairs"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Manohar_Lal_Khattar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-housing-and-urban-affairs",
+   "title": "Minister of Housing and Urban Affairs",
+   "orgId": "in-min-housing-and-urban-affairs",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Manohar Lal Khattar",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Karnal, Haryana",
+    "wikipedia": "https://en.wikipedia.org/wiki/Manohar_Lal_Khattar",
+    "notes": "Also holds: in-pos-minister-power"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Manohar_Lal_Khattar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-heavy-industries",
+   "title": "Minister of Heavy Industries",
+   "orgId": "in-min-heavy-industries",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "H. D. Kumaraswamy",
+    "since": "2024-06-10",
+    "party": "JD(S)",
+    "house": "Lok Sabha",
+    "constituency": "Mandya, Karnataka",
+    "wikipedia": "https://en.wikipedia.org/wiki/H._D._Kumaraswamy",
+    "notes": "Also holds: in-pos-minister-steel"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/H._D._Kumaraswamy"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-steel",
+   "title": "Minister of Steel",
+   "orgId": "in-min-steel",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "H. D. Kumaraswamy",
+    "since": "2024-06-10",
+    "party": "JD(S)",
+    "house": "Lok Sabha",
+    "constituency": "Mandya, Karnataka",
+    "wikipedia": "https://en.wikipedia.org/wiki/H._D._Kumaraswamy",
+    "notes": "Also holds: in-pos-minister-heavy-industries"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/H._D._Kumaraswamy"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-commerce-and-industry",
+   "title": "Minister of Commerce and Industry",
+   "orgId": "in-min-commerce-and-industry",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Piyush Goyal",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Mumbai North, Maharashtra",
+    "wikipedia": "https://en.wikipedia.org/wiki/Piyush_Goyal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Piyush_Goyal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-education",
+   "title": "Minister of Education",
+   "orgId": "in-min-education",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pralhad Joshi",
+    "since": "2026-07-26",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Dharwad",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pralhad_Joshi",
+    "notes": "Given additional charge of Education following resignation of Dharmendra Pradhan; continues to hold Consumer Affairs, Food & Public Distribution and New & Renewable Energy. VERIFIER 2026-09-25: since-date corrected from 2026-07-25 to 2026-07-26 — Dharmendra Pradhan's resignation was accepted/reported 2026-07-25 (Al Jazeera, SCC Online) but Pralhad Joshi's own Wikipedia infobox states he \"assumed office\" as Education Minister on 26 July 2026 (fetched fresh); the 1-day gap between a resignation and the successor's formal charge is plausible and both dates are independently sourced, so this uses the more specific source for THIS holder's since-date per schema."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Pralhad_Joshi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-micro-small-and-medium-enterprises",
+   "title": "Minister of Micro, Small and Medium Enterprises",
+   "orgId": "in-min-micro-small-and-medium-enterprises",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jitan Ram Manjhi",
+    "since": "2024-06-10",
+    "party": "HAM(S)",
+    "house": "Lok Sabha",
+    "constituency": "Gaya, Bihar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jitan_Ram_Manjhi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jitan_Ram_Manjhi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-panchayati-raj",
+   "title": "Minister of Panchayati Raj",
+   "orgId": "in-min-panchayati-raj",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Lalan Singh",
+    "since": "2024-06-10",
+    "party": "JD(U)",
+    "house": "Lok Sabha",
+    "constituency": "Munger, Bihar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalan_Singh",
+    "notes": "Also holds: in-pos-minister-fisheries-animal-husbandry-and-dairying"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Lalan_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-fisheries-animal-husbandry-and-dairying",
+   "title": "Minister of Fisheries, Animal Husbandry and Dairying",
+   "orgId": "in-min-fisheries-animal-husbandry-and-dairying",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Lalan Singh",
+    "since": "2024-06-10",
+    "party": "JD(U)",
+    "house": "Lok Sabha",
+    "constituency": "Munger, Bihar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalan_Singh",
+    "notes": "Also holds: in-pos-minister-panchayati-raj"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Lalan_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-ports-shipping-and-waterways",
+   "title": "Minister of Ports, Shipping and Waterways",
+   "orgId": "in-min-ports-shipping-and-waterways",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sarbananda Sonowal",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Dibrugarh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sarbananda_Sonowal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Sarbananda_Sonowal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-social-justice-and-empowerment",
+   "title": "Minister of Social Justice and Empowerment",
+   "orgId": "in-min-social-justice-and-empowerment",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Virendra Kumar Khatik",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Tikamgarh, Madhya Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Virendra_Kumar_Khatik"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Virendra_Kumar_Khatik"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-civil-aviation",
+   "title": "Minister of Civil Aviation",
+   "orgId": "in-min-civil-aviation",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Kinjarapu Ram Mohan Naidu",
+    "since": "2024-06-10",
+    "party": "TDP",
+    "house": "Lok Sabha",
+    "constituency": "Srikakulam, Andhra Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kinjarapu_Ram_Mohan_Naidu"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Kinjarapu_Ram_Mohan_Naidu"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-consumer-affairs-food-and-public-distribution",
+   "title": "Minister of Consumer Affairs, Food and Public Distribution",
+   "orgId": "in-min-consumer-affairs-food-and-public-distribution",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pralhad Joshi",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Dharwad",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pralhad_Joshi",
+    "notes": "Also holds: in-pos-minister-new-and-renewable-energy"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Pralhad_Joshi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-new-and-renewable-energy",
+   "title": "Minister of New and Renewable Energy",
+   "orgId": "in-min-new-and-renewable-energy",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pralhad Joshi",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Dharwad",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pralhad_Joshi",
+    "notes": "Also holds: in-pos-minister-consumer-affairs-food-and-public-distribution"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Pralhad_Joshi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-tribal-affairs",
+   "title": "Minister of Tribal Affairs",
+   "orgId": "in-min-tribal-affairs",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jual Oram",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Sundargarh, Odisha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jual_Oram"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jual_Oram"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-textiles",
+   "title": "Minister of Textiles",
+   "orgId": "in-min-textiles",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Giriraj Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Begusarai, Bihar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Giriraj_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Giriraj_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-railways",
+   "title": "Minister of Railways",
+   "orgId": "in-min-railways",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ashwini Vaishnaw",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Odisha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ashwini_Vaishnaw",
+    "notes": "Also holds: in-pos-minister-information-and-broadcasting, in-pos-minister-electronics-and-information-technology"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Ashwini_Vaishnaw"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-information-and-broadcasting",
+   "title": "Minister of Information and Broadcasting",
+   "orgId": "in-min-information-and-broadcasting",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ashwini Vaishnaw",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Odisha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ashwini_Vaishnaw",
+    "notes": "Also holds: in-pos-minister-railways, in-pos-minister-electronics-and-information-technology"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Ashwini_Vaishnaw"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-electronics-and-information-technology",
+   "title": "Minister of Electronics and Information Technology",
+   "orgId": "in-min-electronics-and-information-technology",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ashwini Vaishnaw",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Odisha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ashwini_Vaishnaw",
+    "notes": "Also holds: in-pos-minister-railways, in-pos-minister-information-and-broadcasting"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Ashwini_Vaishnaw"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-communications",
+   "title": "Minister of Communications",
+   "orgId": "in-min-communications",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jyotiraditya Scindia",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Guna, Madhya Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jyotiraditya_Scindia",
+    "notes": "Also holds: in-pos-minister-development-of-north-eastern-region"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jyotiraditya_Scindia"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-development-of-north-eastern-region",
+   "title": "Minister of Development of North Eastern Region",
+   "orgId": "in-min-development-of-north-eastern-region",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jyotiraditya Scindia",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Guna, Madhya Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jyotiraditya_Scindia",
+    "notes": "Also holds: in-pos-minister-communications"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jyotiraditya_Scindia"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-environment-forest-and-climate-change",
+   "title": "Minister of Environment, Forest and Climate Change",
+   "orgId": "in-min-environment-forest-and-climate-change",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Bhupender Yadav",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Alwar, Rajasthan",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bhupender_Yadav"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Bhupender_Yadav"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-culture",
+   "title": "Minister of Culture",
+   "orgId": "in-min-culture",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Gajendra Singh Shekhawat",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Jodhpur, Rajasthan",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gajendra_Singh_Shekhawat",
+    "notes": "Also holds: in-pos-minister-tourism"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Gajendra_Singh_Shekhawat"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-tourism",
+   "title": "Minister of Tourism",
+   "orgId": "in-min-tourism",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Gajendra Singh Shekhawat",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Jodhpur, Rajasthan",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gajendra_Singh_Shekhawat",
+    "notes": "Also holds: in-pos-minister-culture"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Gajendra_Singh_Shekhawat"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-women-and-child-development",
+   "title": "Minister of Women and Child Development",
+   "orgId": "in-min-women-and-child-development",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Annpurna Devi",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Kodarma, Jharkhand",
+    "wikipedia": "https://en.wikipedia.org/wiki/Annpurna_Devi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Annpurna_Devi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-parliamentary-affairs",
+   "title": "Minister of Parliamentary Affairs",
+   "orgId": "in-min-parliamentary-affairs",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Kiren Rijiju",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Arunachal West",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kiren_Rijiju",
+    "notes": "Also holds: in-pos-minister-minority-affairs"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Kiren_Rijiju"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-minority-affairs",
+   "title": "Minister of Minority Affairs",
+   "orgId": "in-min-minority-affairs",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Kiren Rijiju",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Arunachal West",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kiren_Rijiju",
+    "notes": "Also holds: in-pos-minister-parliamentary-affairs"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Kiren_Rijiju"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-petroleum-and-natural-gas",
+   "title": "Minister of Petroleum and Natural Gas",
+   "orgId": "in-min-petroleum-and-natural-gas",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Hardeep Singh Puri",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hardeep_Singh_Puri"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Hardeep_Singh_Puri"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-labour-and-employment",
+   "title": "Minister of Labour and Employment",
+   "orgId": "in-min-labour-and-employment",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Mansukh L. Mandaviya",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Porbandar, Gujarat",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mansukh_Mandaviya",
+    "notes": "Also holds: in-pos-minister-youth-affairs-and-sports"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Mansukh_Mandaviya"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-youth-affairs-and-sports",
+   "title": "Minister of Youth Affairs and Sports",
+   "orgId": "in-min-youth-affairs-and-sports",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Mansukh L. Mandaviya",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Porbandar, Gujarat",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mansukh_Mandaviya",
+    "notes": "Also holds: in-pos-minister-labour-and-employment"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Mansukh_Mandaviya"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-coal",
+   "title": "Minister of Coal",
+   "orgId": "in-min-coal",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "G. Kishan Reddy",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Secunderabad, Telangana",
+    "wikipedia": "https://en.wikipedia.org/wiki/G._Kishan_Reddy",
+    "notes": "Also holds: in-pos-minister-mines"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/G._Kishan_Reddy"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-mines",
+   "title": "Minister of Mines",
+   "orgId": "in-min-mines",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "G. Kishan Reddy",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Secunderabad, Telangana",
+    "wikipedia": "https://en.wikipedia.org/wiki/G._Kishan_Reddy",
+    "notes": "Also holds: in-pos-minister-coal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/G._Kishan_Reddy"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-food-processing-industries",
+   "title": "Minister of Food Processing Industries",
+   "orgId": "in-min-food-processing-industries",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Chirag Paswan",
+    "since": "2024-06-10",
+    "party": "LJP(RV)",
+    "house": "Lok Sabha",
+    "constituency": "Hajipur, Bihar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chirag_Paswan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Chirag_Paswan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-jal-shakti",
+   "title": "Minister of Jal Shakti",
+   "orgId": "in-min-jal-shakti",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "C. R. Patil",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Navsari, Gujarat",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._R._Patil"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/C._R._Patil"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-statistics-and-programme-implementation-1",
+   "title": "Minister of State (Independent Charge) of Statistics and Programme Implementation",
+   "orgId": "in-min-statistics-and-programme-implementation",
+   "rank": "mos_independent_charge",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rao Inderjit Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Gurgaon, Haryana",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rao_Inderjit_Singh",
+    "notes": "Also holds (IC): in-pos-mos-planning-1"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Rao_Inderjit_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-planning-1",
+   "title": "Minister of State (Independent Charge) of Planning",
+   "orgId": "in-min-planning",
+   "rank": "mos_independent_charge",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rao Inderjit Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Gurgaon, Haryana",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rao_Inderjit_Singh",
+    "notes": "Also holds (IC): in-pos-mos-statistics-and-programme-implementation-1"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Rao_Inderjit_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-science-and-technology-1",
+   "title": "Minister of State (Independent Charge) of Science and Technology",
+   "orgId": "in-min-science-and-technology",
+   "rank": "mos_independent_charge",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jitendra Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Udhampur, J&K",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jitendra_Singh",
+    "notes": "Also holds (IC): in-pos-mos-earth-sciences-1"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jitendra_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-earth-sciences-1",
+   "title": "Minister of State (Independent Charge) of Earth Sciences",
+   "orgId": "in-min-earth-sciences",
+   "rank": "mos_independent_charge",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jitendra Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Udhampur, J&K",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jitendra_Singh",
+    "notes": "Also holds (IC): in-pos-mos-science-and-technology-1"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jitendra_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-law-and-justice-1",
+   "title": "Minister of State (Independent Charge) of Law and Justice",
+   "orgId": "in-min-law-and-justice",
+   "rank": "mos_independent_charge",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Arjun Ram Meghwal",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Bikaner, Rajasthan",
+    "wikipedia": "https://en.wikipedia.org/wiki/Arjun_Ram_Meghwal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Arjun_Ram_Meghwal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-ayush-1",
+   "title": "Minister of State (Independent Charge) of AYUSH",
+   "orgId": "in-min-ayush",
+   "rank": "mos_independent_charge",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Prataprao Ganpatrao Jadhav",
+    "since": "2024-06-10",
+    "party": "SHS",
+    "house": "Lok Sabha",
+    "constituency": "Buldhana, Maharashtra",
+    "wikipedia": "https://en.wikipedia.org/wiki/Prataprao_Jadhav"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Prataprao_Jadhav"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-skill-development-and-entrepreneurship-1",
+   "title": "Minister of State (Independent Charge) of Skill Development and Entrepreneurship",
+   "orgId": "in-min-skill-development-and-entrepreneurship",
+   "rank": "mos_independent_charge",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jayant Chaudhary",
+    "since": "2024-06-10",
+    "party": "RLD",
+    "house": "Rajya Sabha",
+    "constituency": "Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jayant_Chaudhary"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jayant_Chaudhary"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-culture-1",
+   "title": "Minister of State in the Ministry of Culture",
+   "orgId": "in-min-culture",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rao Inderjit Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Gurgaon, Haryana",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rao_Inderjit_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Rao_Inderjit_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-pmo-1",
+   "title": "Minister of State in the Prime Minister’s Office",
+   "orgId": "in-pmo",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jitendra Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Udhampur, J&K",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jitendra_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jitendra_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-personnel-public-grievances-and-pensions-1",
+   "title": "Minister of State in the Ministry of Personnel, Public Grievances and Pensions",
+   "orgId": "in-min-personnel-public-grievances-and-pensions",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jitendra Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Udhampur, J&K",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jitendra_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jitendra_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-atomic-energy-1",
+   "title": "Minister of State in the Department of Atomic Energy",
+   "orgId": "in-dept-atomic-energy",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jitendra Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Udhampur, J&K",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jitendra_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jitendra_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-space-1",
+   "title": "Minister of State in the Department of Space",
+   "orgId": "in-dept-space",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jitendra Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Udhampur, J&K",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jitendra_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jitendra_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-parliamentary-affairs-1",
+   "title": "Minister of State in the Ministry of Parliamentary Affairs",
+   "orgId": "in-min-parliamentary-affairs",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Arjun Ram Meghwal",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Bikaner, Rajasthan",
+    "wikipedia": "https://en.wikipedia.org/wiki/Arjun_Ram_Meghwal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Arjun_Ram_Meghwal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-parliamentary-affairs-2",
+   "title": "Minister of State in the Ministry of Parliamentary Affairs",
+   "orgId": "in-min-parliamentary-affairs",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "L. Murugan",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Madhya Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/L._Murugan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/L._Murugan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-health-and-family-welfare-1",
+   "title": "Minister of State in the Ministry of Health and Family Welfare",
+   "orgId": "in-min-health-and-family-welfare",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Prataprao Ganpatrao Jadhav",
+    "since": "2024-06-10",
+    "party": "SHS",
+    "house": "Lok Sabha",
+    "constituency": "Buldhana, Maharashtra",
+    "wikipedia": "https://en.wikipedia.org/wiki/Prataprao_Jadhav"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Prataprao_Jadhav"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-health-and-family-welfare-2",
+   "title": "Minister of State in the Ministry of Health and Family Welfare",
+   "orgId": "in-min-health-and-family-welfare",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Anupriya Patel",
+    "since": "2024-06-10",
+    "party": "AD(S)",
+    "house": "Lok Sabha",
+    "constituency": "Mirzapur, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Anupriya_Patel"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Anupriya_Patel"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-education-1",
+   "title": "Minister of State in the Ministry of Education",
+   "orgId": "in-min-education",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jayant Chaudhary",
+    "since": "2024-06-10",
+    "party": "RLD",
+    "house": "Rajya Sabha",
+    "constituency": "Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jayant_Chaudhary"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jayant_Chaudhary"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-education-2",
+   "title": "Minister of State in the Ministry of Education",
+   "orgId": "in-min-education",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sukanta Majumdar",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Balurghat, West Bengal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sukanta_Majumdar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Sukanta_Majumdar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-commerce-and-industry-1",
+   "title": "Minister of State in the Ministry of Commerce and Industry",
+   "orgId": "in-min-commerce-and-industry",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jitin Prasada",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Pilibhit, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jitin_Prasada"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jitin_Prasada"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-electronics-and-information-technology-1",
+   "title": "Minister of State in the Ministry of Electronics and Information Technology",
+   "orgId": "in-min-electronics-and-information-technology",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jitin Prasada",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Pilibhit, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jitin_Prasada"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Jitin_Prasada"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-power-1",
+   "title": "Minister of State in the Ministry of Power",
+   "orgId": "in-min-power",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Shripad Yesso Naik",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "North Goa, Goa",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shripad_Yesso_Naik"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Shripad_Yesso_Naik"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-new-and-renewable-energy-1",
+   "title": "Minister of State in the Ministry of New and Renewable Energy",
+   "orgId": "in-min-new-and-renewable-energy",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Shripad Yesso Naik",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "North Goa, Goa",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shripad_Yesso_Naik"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Shripad_Yesso_Naik"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-finance-1",
+   "title": "Minister of State in the Ministry of Finance",
+   "orgId": "in-min-finance",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pankaj Chaudhary",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Maharajganj, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pankaj_Chaudhary"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Pankaj_Chaudhary"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-cooperation-1",
+   "title": "Minister of State in the Ministry of Co-operation",
+   "orgId": "in-min-cooperation",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Krishan Pal Gurjar",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Faridabad, Haryana",
+    "wikipedia": "https://en.wikipedia.org/wiki/Krishan_Pal_Gurjar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Krishan_Pal_Gurjar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-cooperation-2",
+   "title": "Minister of State in the Ministry of Co-operation",
+   "orgId": "in-min-cooperation",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Murlidhar Mohol",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Pune, Maharashtra",
+    "wikipedia": "https://en.wikipedia.org/wiki/Murlidhar_Mohol"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Murlidhar_Mohol"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-social-justice-and-empowerment-1",
+   "title": "Minister of State in the Ministry of Social Justice and Empowerment",
+   "orgId": "in-min-social-justice-and-empowerment",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ramdas Athawale",
+    "since": "2024-06-10",
+    "party": "RPI(A)",
+    "house": "Rajya Sabha",
+    "constituency": "Maharashtra",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ramdas_Athawale"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Ramdas_Athawale"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-social-justice-and-empowerment-2",
+   "title": "Minister of State in the Ministry of Social Justice and Empowerment",
+   "orgId": "in-min-social-justice-and-empowerment",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "B. L. Verma",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Banwari_Lal_Verma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Banwari_Lal_Verma"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-agriculture-and-farmers-welfare-1",
+   "title": "Minister of State in the Ministry of Agriculture and Farmers Welfare",
+   "orgId": "in-min-agriculture-and-farmers-welfare",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ram Nath Thakur",
+    "since": "2024-06-10",
+    "party": "JD(U)",
+    "house": "Rajya Sabha",
+    "constituency": "Bihar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ram_Nath_Thakur"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Ram_Nath_Thakur"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-agriculture-and-farmers-welfare-2",
+   "title": "Minister of State in the Ministry of Agriculture and Farmers Welfare",
+   "orgId": "in-min-agriculture-and-farmers-welfare",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Bhagirath Choudhary",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Ajmer (Lok Sabha constituency)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bhagirath_Choudhary"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Bhagirath_Choudhary"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-home-affairs-1",
+   "title": "Minister of State in the Ministry of Home Affairs",
+   "orgId": "in-min-home-affairs",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Nityanand Rai",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Ujiarpur",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nityanand_Rai"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Nityanand_Rai"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-home-affairs-2",
+   "title": "Minister of State in the Ministry of Home Affairs",
+   "orgId": "in-min-home-affairs",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Bandi Sanjay Kumar",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Karimnagar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bandi_Sanjay_Kumar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Bandi_Sanjay_Kumar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-chemicals-and-fertilizers-1",
+   "title": "Minister of State in the Ministry of Chemicals and Fertilizers",
+   "orgId": "in-min-chemicals-and-fertilizers",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Anupriya Patel",
+    "since": "2024-06-10",
+    "party": "AD(S)",
+    "house": "Lok Sabha",
+    "constituency": "Mirzapur, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Anupriya_Patel"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Anupriya_Patel"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-jal-shakti-1",
+   "title": "Minister of State in the Ministry of Jal Shakti",
+   "orgId": "in-min-jal-shakti",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "V. Somanna",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Tumkur",
+    "wikipedia": "https://en.wikipedia.org/wiki/V._Somanna"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/V._Somanna"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-jal-shakti-2",
+   "title": "Minister of State in the Ministry of Jal Shakti",
+   "orgId": "in-min-jal-shakti",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Raj Bhushan Choudhary",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Muzaffarpur",
+    "wikipedia": "https://en.wikipedia.org/wiki/Raj_Bhushan_Choudhary"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Raj_Bhushan_Choudhary"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-railways-1",
+   "title": "Minister of State in the Ministry of Railways",
+   "orgId": "in-min-railways",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "V. Somanna",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Tumkur",
+    "wikipedia": "https://en.wikipedia.org/wiki/V._Somanna"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/V._Somanna"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-railways-2",
+   "title": "Minister of State in the Ministry of Railways",
+   "orgId": "in-min-railways",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+   ],
+   "confidence": "low",
+   "notes": "Ravneet Singh Bittu held this seat from 2024-06-10 to 2026-07-24 (Resigned; not re-nominated to Rajya Sabha.). No replacement named as of 2026-09-25."
+  },
+  {
+   "id": "in-pos-mos-rural-development-1",
+   "title": "Minister of State in the Ministry of Rural Development",
+   "orgId": "in-min-rural-development",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pemmasani Chandra Sekhar",
+    "since": "2024-06-10",
+    "party": "TDP",
+    "house": "Lok Sabha",
+    "constituency": "Guntur, Andhra Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chandra_Sekhar_Pemmasani"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Chandra_Sekhar_Pemmasani"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-rural-development-2",
+   "title": "Minister of State in the Ministry of Rural Development",
+   "orgId": "in-min-rural-development",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Kamlesh Paswan",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Bansgaon [ 1 ]",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kamlesh_Paswan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Kamlesh_Paswan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-communications-1",
+   "title": "Minister of State in the Ministry of Communications",
+   "orgId": "in-min-communications",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pemmasani Chandra Sekhar",
+    "since": "2024-06-10",
+    "party": "TDP",
+    "house": "Lok Sabha",
+    "constituency": "Guntur, Andhra Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chandra_Sekhar_Pemmasani"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Chandra_Sekhar_Pemmasani"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-fisheries-animal-husbandry-and-dairying-1",
+   "title": "Minister of State in the Ministry of Fisheries, Animal Husbandry and Dairying",
+   "orgId": "in-min-fisheries-animal-husbandry-and-dairying",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "S. P. Singh Baghel",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Agra, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/S._P._Singh_Baghel"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/S._P._Singh_Baghel"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-fisheries-animal-husbandry-and-dairying-2",
+   "title": "Minister of State in the Ministry of Fisheries, Animal Husbandry and Dairying",
+   "orgId": "in-min-fisheries-animal-husbandry-and-dairying",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+   ],
+   "confidence": "low",
+   "notes": "George Kurian held this seat from 2024-06-10 to 2026-06-23 (Resigned after Rajya Sabha term ended 21 June 2026; not re-nominated.). No replacement named as of 2026-09-25."
+  },
+  {
+   "id": "in-pos-mos-panchayati-raj-1",
+   "title": "Minister of State in the Ministry of Panchayati Raj",
+   "orgId": "in-min-panchayati-raj",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "S. P. Singh Baghel",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Agra, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/S._P._Singh_Baghel"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/S._P._Singh_Baghel"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-micro-small-and-medium-enterprises-1",
+   "title": "Minister of State in the Ministry of Micro, Small and Medium Enterprises",
+   "orgId": "in-min-micro-small-and-medium-enterprises",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Shobha Karandlaje",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Bangalore North",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shobha_Karandlaje"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Shobha_Karandlaje"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-labour-and-employment-1",
+   "title": "Minister of State in the Ministry of Labour and Employment",
+   "orgId": "in-min-labour-and-employment",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Shobha Karandlaje",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Bangalore North",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shobha_Karandlaje"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Shobha_Karandlaje"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-environment-forest-and-climate-change-1",
+   "title": "Minister of State in the Ministry of Environment, Forest and Climate Change",
+   "orgId": "in-min-environment-forest-and-climate-change",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Kirti Vardhan Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Gonda, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kirti_Vardhan_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Kirti_Vardhan_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-external-affairs-1",
+   "title": "Minister of State in the Ministry of External Affairs",
+   "orgId": "in-min-external-affairs",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Kirti Vardhan Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Gonda, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kirti_Vardhan_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Kirti_Vardhan_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-external-affairs-2",
+   "title": "Minister of State in the Ministry of External Affairs",
+   "orgId": "in-min-external-affairs",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pabitra Margherita",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Assam",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pabitra_Margherita"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Pabitra_Margherita"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-consumer-affairs-food-and-public-distribution-1",
+   "title": "Minister of State in the Ministry of Consumer Affairs, Food and Public Distribution",
+   "orgId": "in-min-consumer-affairs-food-and-public-distribution",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "B. L. Verma",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Banwari_Lal_Verma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Banwari_Lal_Verma"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-consumer-affairs-food-and-public-distribution-2",
+   "title": "Minister of State in the Ministry of Consumer Affairs, Food and Public Distribution",
+   "orgId": "in-min-consumer-affairs-food-and-public-distribution",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Nimuben Bambhaniya",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Bhavnagar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nimuben_Bambhaniya"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Nimuben_Bambhaniya"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-ports-shipping-and-waterways-1",
+   "title": "Minister of State in the Ministry of Ports, Shipping and Waterways",
+   "orgId": "in-min-ports-shipping-and-waterways",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Shantanu Thakur",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Bangaon",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shantanu_Thakur"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Shantanu_Thakur"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-petroleum-and-natural-gas-1",
+   "title": "Minister of State in the Ministry of Petroleum and Natural Gas",
+   "orgId": "in-min-petroleum-and-natural-gas",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Suresh Gopi",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Thrissur, Kerala",
+    "wikipedia": "https://en.wikipedia.org/wiki/Suresh_Gopi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Suresh_Gopi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-tourism-1",
+   "title": "Minister of State in the Ministry of Tourism",
+   "orgId": "in-min-tourism",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Suresh Gopi",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Thrissur, Kerala",
+    "wikipedia": "https://en.wikipedia.org/wiki/Suresh_Gopi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Suresh_Gopi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-information-and-broadcasting-1",
+   "title": "Minister of State in the Ministry of Information and Broadcasting",
+   "orgId": "in-min-information-and-broadcasting",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "L. Murugan",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Madhya Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/L._Murugan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/L._Murugan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-road-transport-and-highways-1",
+   "title": "Minister of State in the Ministry of Road Transport and Highways",
+   "orgId": "in-min-road-transport-and-highways",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ajay Tamta",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Almora",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ajay_Tamta"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Ajay_Tamta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-road-transport-and-highways-2",
+   "title": "Minister of State in the Ministry of Road Transport and Highways",
+   "orgId": "in-min-road-transport-and-highways",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Harsh Malhotra",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "East Delhi",
+    "wikipedia": "https://en.wikipedia.org/wiki/Harsh_Malhotra"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Harsh_Malhotra"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-coal-1",
+   "title": "Minister of State in the Ministry of Coal",
+   "orgId": "in-min-coal",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Satish Chandra Dubey",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Bihar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Satish_Chandra_Dubey"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Satish_Chandra_Dubey"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-mines-1",
+   "title": "Minister of State in the Ministry of Mines",
+   "orgId": "in-min-mines",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Satish Chandra Dubey",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Bihar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Satish_Chandra_Dubey"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Satish_Chandra_Dubey"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-defence-1",
+   "title": "Minister of State in the Ministry of Defence",
+   "orgId": "in-min-defence",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sanjay Seth",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Ranchi",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sanjay_Seth_(Jharkhand_politician)"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Sanjay_Seth_(Jharkhand_politician)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-food-processing-industries-1",
+   "title": "Minister of State in the Ministry of Food Processing Industries",
+   "orgId": "in-min-food-processing-industries",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+   ],
+   "confidence": "low",
+   "notes": "Ravneet Singh Bittu held this seat from 2024-06-10 to 2026-07-24 (Resigned; not re-nominated to Rajya Sabha.). No replacement named as of 2026-09-25."
+  },
+  {
+   "id": "in-pos-mos-tribal-affairs-1",
+   "title": "Minister of State in the Ministry of Tribal Affairs",
+   "orgId": "in-min-tribal-affairs",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Durga Das Uikey",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Betul",
+    "wikipedia": "https://en.wikipedia.org/wiki/Durga_Das_Uikey"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Durga_Das_Uikey"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-youth-affairs-and-sports-1",
+   "title": "Minister of State in the Ministry of Youth Affairs and Sports",
+   "orgId": "in-min-youth-affairs-and-sports",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Raksha Khadse",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Raver",
+    "wikipedia": "https://en.wikipedia.org/wiki/Raksha_Khadse"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Raksha_Khadse"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-development-of-north-eastern-region-1",
+   "title": "Minister of State in the Ministry of Development of North Eastern Region",
+   "orgId": "in-min-development-of-north-eastern-region",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sukanta Majumdar",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Balurghat, West Bengal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sukanta_Majumdar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Sukanta_Majumdar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-women-and-child-development-1",
+   "title": "Minister of State in the Ministry of Women and Child Development",
+   "orgId": "in-min-women-and-child-development",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Savitri Thakur",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Dhar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Savitri_Thakur"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Savitri_Thakur"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-housing-and-urban-affairs-1",
+   "title": "Minister of State in the Ministry of Housing and Urban Affairs",
+   "orgId": "in-min-housing-and-urban-affairs",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Tokhan Sahu",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Bilaspur",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tokhan_Sahu",
+    "notes": "VERIFIER 2026-09-25: house (Lok Sabha) and constituency (Bilaspur, Chhattisgarh) reconfirmed directly from his own Wikipedia infobox (fetched fresh), which explicitly states \"member of parliament to the 18th Lok Sabha from Bilaspur\" — resolves the prior ambiguity noted by the builder agent."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Tokhan_Sahu"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-heavy-industries-1",
+   "title": "Minister of State in the Ministry of Heavy Industries",
+   "orgId": "in-min-heavy-industries",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Bhupathi Raju Srinivasa Varma",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Narasapuram",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bhupathi_Raju_Srinivasa_Varma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Bhupathi_Raju_Srinivasa_Varma"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-steel-1",
+   "title": "Minister of State in the Ministry of Steel",
+   "orgId": "in-min-steel",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Bhupathi Raju Srinivasa Varma",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Narasapuram",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bhupathi_Raju_Srinivasa_Varma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Bhupathi_Raju_Srinivasa_Varma"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-corporate-affairs-1",
+   "title": "Minister of State in the Ministry of Corporate Affairs",
+   "orgId": "in-min-corporate-affairs",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Harsh Malhotra",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "East Delhi",
+    "wikipedia": "https://en.wikipedia.org/wiki/Harsh_Malhotra"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Harsh_Malhotra"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-civil-aviation-1",
+   "title": "Minister of State in the Ministry of Civil Aviation",
+   "orgId": "in-min-civil-aviation",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Murlidhar Mohol",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Pune, Maharashtra",
+    "wikipedia": "https://en.wikipedia.org/wiki/Murlidhar_Mohol"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Murlidhar_Mohol"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-minority-affairs-1",
+   "title": "Minister of State in the Ministry of Minority Affairs",
+   "orgId": "in-min-minority-affairs",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+   ],
+   "confidence": "low",
+   "notes": "George Kurian held this seat from 2024-06-10 to 2026-06-23 (Resigned after Rajya Sabha term ended 21 June 2026; not re-nominated.). No replacement named as of 2026-09-25."
+  },
+  {
+   "id": "in-pos-mos-textiles-1",
+   "title": "Minister of State in the Ministry of Textiles",
+   "orgId": "in-min-textiles",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pabitra Margherita",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "constituency": "Assam",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pabitra_Margherita"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Modi_ministry",
+    "https://en.wikipedia.org/wiki/Pabitra_Margherita"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-personnel-public-grievances-and-pensions",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-personnel-public-grievances-and-pensions",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-personnel-public-grievances-and-pensions",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-personnel-public-grievances-and-pensions",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-atomic-energy",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-atomic-energy",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-atomic-energy",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-atomic-energy",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-space",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-space",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-space",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-space",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-defence",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-defence",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-defence",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-defence",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-home-affairs",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-home-affairs",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-home-affairs",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-home-affairs",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-cooperation",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-cooperation",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-cooperation",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-cooperation",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-road-transport-and-highways",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-road-transport-and-highways",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-road-transport-and-highways",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-road-transport-and-highways",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-health-and-family-welfare",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-health-and-family-welfare",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-health-and-family-welfare",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-health-and-family-welfare",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-chemicals-and-fertilizers",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-chemicals-and-fertilizers",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-chemicals-and-fertilizers",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-chemicals-and-fertilizers",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-agriculture-and-farmers-welfare",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-agriculture-and-farmers-welfare",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-agriculture-and-farmers-welfare",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-agriculture-and-farmers-welfare",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-rural-development",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-rural-development",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-rural-development",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-rural-development",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-finance",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-finance",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-finance",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-finance",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-corporate-affairs",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-corporate-affairs",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-corporate-affairs",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-corporate-affairs",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-external-affairs",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-external-affairs",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-external-affairs",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-external-affairs",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-power",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-power",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-power",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-power",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-housing-and-urban-affairs",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-housing-and-urban-affairs",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-housing-and-urban-affairs",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-housing-and-urban-affairs",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-heavy-industries",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-heavy-industries",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-heavy-industries",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-heavy-industries",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-steel",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-steel",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-steel",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-steel",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-commerce-and-industry",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-commerce-and-industry",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-commerce-and-industry",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-commerce-and-industry",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-education",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-education",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-education",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-education",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-micro-small-and-medium-enterprises",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-micro-small-and-medium-enterprises",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-micro-small-and-medium-enterprises",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-micro-small-and-medium-enterprises",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-panchayati-raj",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-panchayati-raj",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-panchayati-raj",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-panchayati-raj",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-fisheries-animal-husbandry-and-dairying",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-fisheries-animal-husbandry-and-dairying",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-fisheries-animal-husbandry-and-dairying",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-fisheries-animal-husbandry-and-dairying",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-ports-shipping-and-waterways",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-ports-shipping-and-waterways",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-ports-shipping-and-waterways",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-ports-shipping-and-waterways",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-social-justice-and-empowerment",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-social-justice-and-empowerment",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-social-justice-and-empowerment",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-social-justice-and-empowerment",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-civil-aviation",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-civil-aviation",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-civil-aviation",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-civil-aviation",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-consumer-affairs-food-and-public-distribution",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-consumer-affairs-food-and-public-distribution",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-consumer-affairs-food-and-public-distribution",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-consumer-affairs-food-and-public-distribution",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-new-and-renewable-energy",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-new-and-renewable-energy",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-new-and-renewable-energy",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-new-and-renewable-energy",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-tribal-affairs",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-tribal-affairs",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-tribal-affairs",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-tribal-affairs",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-textiles",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-textiles",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-textiles",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-textiles",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-railways",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-railways",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-railways",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-railways",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-information-and-broadcasting",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-information-and-broadcasting",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-information-and-broadcasting",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-information-and-broadcasting",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-electronics-and-information-technology",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-electronics-and-information-technology",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-electronics-and-information-technology",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-electronics-and-information-technology",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-communications",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-communications",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-communications",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-communications",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-development-of-north-eastern-region",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-development-of-north-eastern-region",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-development-of-north-eastern-region",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-development-of-north-eastern-region",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-environment-forest-and-climate-change",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-environment-forest-and-climate-change",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-environment-forest-and-climate-change",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-environment-forest-and-climate-change",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-culture",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-culture",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-culture",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-culture",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-tourism",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-tourism",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-tourism",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-tourism",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-women-and-child-development",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-women-and-child-development",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-women-and-child-development",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-women-and-child-development",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-parliamentary-affairs",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-parliamentary-affairs",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-parliamentary-affairs",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-parliamentary-affairs",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-minority-affairs",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-minority-affairs",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-minority-affairs",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-minority-affairs",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-petroleum-and-natural-gas",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-petroleum-and-natural-gas",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-petroleum-and-natural-gas",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-petroleum-and-natural-gas",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-labour-and-employment",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-labour-and-employment",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-labour-and-employment",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-labour-and-employment",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-youth-affairs-and-sports",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-youth-affairs-and-sports",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-youth-affairs-and-sports",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-youth-affairs-and-sports",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-coal",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-coal",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-coal",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-coal",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-mines",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-mines",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-mines",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-mines",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-food-processing-industries",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-food-processing-industries",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-food-processing-industries",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-food-processing-industries",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-jal-shakti",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-jal-shakti",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-jal-shakti",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-minister-jal-shakti",
+   "to": "in-union-cabinet",
+   "type": "member_of",
+   "basis": "Cabinet rank",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-statistics-and-programme-implementation-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-statistics-and-programme-implementation-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-statistics-and-programme-implementation-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-planning-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-planning-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-planning-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-science-and-technology-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-science-and-technology-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-science-and-technology-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-earth-sciences-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-earth-sciences-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-earth-sciences-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-law-and-justice-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-law-and-justice-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-law-and-justice-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-ayush-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-ayush-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-ayush-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-skill-development-and-entrepreneurship-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-skill-development-and-entrepreneurship-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-skill-development-and-entrepreneurship-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-culture-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-culture-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-culture-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-pmo-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-pmo-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-pmo-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-personnel-public-grievances-and-pensions-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-personnel-public-grievances-and-pensions-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-personnel-public-grievances-and-pensions-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-atomic-energy-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-atomic-energy-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-atomic-energy-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-space-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-space-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-space-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-parliamentary-affairs-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-parliamentary-affairs-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-parliamentary-affairs-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-parliamentary-affairs-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-parliamentary-affairs-2",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-parliamentary-affairs-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-health-and-family-welfare-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-health-and-family-welfare-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-health-and-family-welfare-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-health-and-family-welfare-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-health-and-family-welfare-2",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-health-and-family-welfare-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-education-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-education-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-education-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-education-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-education-2",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-education-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-commerce-and-industry-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-commerce-and-industry-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-commerce-and-industry-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-electronics-and-information-technology-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-electronics-and-information-technology-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-electronics-and-information-technology-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-power-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-power-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-power-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-new-and-renewable-energy-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-new-and-renewable-energy-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-new-and-renewable-energy-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-finance-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-finance-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-finance-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-cooperation-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-cooperation-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-cooperation-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-cooperation-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-cooperation-2",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-cooperation-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-social-justice-and-empowerment-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-social-justice-and-empowerment-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-social-justice-and-empowerment-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-social-justice-and-empowerment-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-social-justice-and-empowerment-2",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-social-justice-and-empowerment-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-agriculture-and-farmers-welfare-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-agriculture-and-farmers-welfare-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-agriculture-and-farmers-welfare-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-agriculture-and-farmers-welfare-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-agriculture-and-farmers-welfare-2",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-agriculture-and-farmers-welfare-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-home-affairs-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-home-affairs-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-home-affairs-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-home-affairs-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-home-affairs-2",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-home-affairs-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-chemicals-and-fertilizers-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-chemicals-and-fertilizers-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-chemicals-and-fertilizers-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-jal-shakti-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-jal-shakti-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-jal-shakti-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-jal-shakti-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-jal-shakti-2",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-jal-shakti-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-railways-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-railways-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-railways-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-railways-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-rural-development-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-rural-development-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-rural-development-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-rural-development-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-rural-development-2",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-rural-development-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-communications-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-communications-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-communications-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-fisheries-animal-husbandry-and-dairying-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-fisheries-animal-husbandry-and-dairying-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-fisheries-animal-husbandry-and-dairying-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-fisheries-animal-husbandry-and-dairying-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-panchayati-raj-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-panchayati-raj-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-panchayati-raj-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-micro-small-and-medium-enterprises-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-micro-small-and-medium-enterprises-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-micro-small-and-medium-enterprises-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-labour-and-employment-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-labour-and-employment-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-labour-and-employment-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-environment-forest-and-climate-change-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-environment-forest-and-climate-change-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-environment-forest-and-climate-change-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-external-affairs-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-external-affairs-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-external-affairs-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-external-affairs-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-external-affairs-2",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-external-affairs-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-consumer-affairs-food-and-public-distribution-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-consumer-affairs-food-and-public-distribution-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-consumer-affairs-food-and-public-distribution-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-consumer-affairs-food-and-public-distribution-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-consumer-affairs-food-and-public-distribution-2",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-consumer-affairs-food-and-public-distribution-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-ports-shipping-and-waterways-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-ports-shipping-and-waterways-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-ports-shipping-and-waterways-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-petroleum-and-natural-gas-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-petroleum-and-natural-gas-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-petroleum-and-natural-gas-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-tourism-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-tourism-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-tourism-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-information-and-broadcasting-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-information-and-broadcasting-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-information-and-broadcasting-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-road-transport-and-highways-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-road-transport-and-highways-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-road-transport-and-highways-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-road-transport-and-highways-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-road-transport-and-highways-2",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-road-transport-and-highways-2",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-coal-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-coal-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-coal-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-mines-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-mines-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-mines-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-defence-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-defence-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-defence-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-food-processing-industries-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-tribal-affairs-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-tribal-affairs-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-tribal-affairs-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-youth-affairs-and-sports-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-youth-affairs-and-sports-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-youth-affairs-and-sports-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-development-of-north-eastern-region-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-development-of-north-eastern-region-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-development-of-north-eastern-region-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-women-and-child-development-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-women-and-child-development-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-women-and-child-development-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-housing-and-urban-affairs-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-housing-and-urban-affairs-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-housing-and-urban-affairs-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-heavy-industries-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-heavy-industries-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-heavy-industries-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-steel-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-steel-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-steel-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-corporate-affairs-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-corporate-affairs-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-corporate-affairs-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-civil-aviation-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-civil-aviation-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-civil-aviation-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-minority-affairs-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-textiles-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-textiles-1",
+   "type": "appoints",
+   "basis": "Article 75(1)",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  },
+  {
+   "from": "in-pos-mos-textiles-1",
+   "to": "in-union-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 74/75",
+   "source": "https://en.wikipedia.org/wiki/Third_Modi_ministry"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 45,
+  "corrections": [
+   "Party composition table in notes: fixed 3 transcription errors in the 'Ministers of State' column (BJP 33->30, SHS 1->0, RLD 1->0) against the source Wikipedia party-composition wikitable (saved at research/india/scratch/council-of-ministers/third_modi_ministry.html) and independent recomputation from the 118 position records; row/grand totals (58, 1, 1, N=69) were already correct.",
+   "in-pos-mos-housing-and-urban-affairs-1 (Tokhan Sahu): confidence raised medium -> high after his own Wikipedia infobox confirmed Lok Sabha / Bilaspur, Chhattisgarh (resolves prior ambiguity).",
+   "in-pos-minister-education (Pralhad Joshi) holder.since corrected 2026-07-25 -> 2026-07-26 per his own Wikipedia infobox ('assumed office' date); Dharmendra Pradhan's resignation date (2026-07-25) is unaffected and left as reported by press."
+  ],
+  "reverified_no_change": [
+   "in-pos-minister-home-affairs / in-pos-minister-cooperation (Amit Shah)",
+   "in-pos-minister-defence (Rajnath Singh)",
+   "in-pos-minister-finance / in-pos-minister-corporate-affairs (Nirmala Sitharaman)",
+   "in-pos-minister-railways / in-pos-minister-electronics-and-information-technology / in-pos-minister-information-and-broadcasting (Ashwini Vaishnaw)",
+   "in-pos-mos-atomic-energy-1 / in-pos-mos-space-1 / in-pos-mos-personnel-public-grievances-and-pensions-1 / in-pos-mos-pmo-1 / in-pos-mos-earth-sciences-1 / in-pos-mos-science-and-technology-1 (Jitendra Singh)",
+   "in-pos-minister-education / in-pos-minister-consumer-affairs-food-and-public-distribution / in-pos-minister-new-and-renewable-energy (Pralhad Joshi)",
+   "in-pos-mos-fisheries-animal-husbandry-and-dairying-2 / in-pos-mos-minority-affairs-1 (confirmed still vacant: George Kurian's departure re-verified on his own Wikipedia page, 23 June 2026, no successor named)",
+   "in-pos-mos-railways-2 / in-pos-mos-food-processing-industries-1 (confirmed still vacant: Ravneet Singh Bittu's departure re-verified on his own Wikipedia page, 24 July 2026, no successor named)",
+   "in-pos-mos-finance-1 (Pankaj Chaudhary; re-confirmed via Ministry of Finance Wikipedia page that no second MoS Finance is currently listed - data gap noted by builder stands)",
+   "in-pos-minister-agriculture-and-farmers-welfare / in-pos-minister-rural-development (Shivraj Singh Chouhan)",
+   "in-pos-minister-health-and-family-welfare / in-pos-minister-chemicals-and-fertilizers (J. P. Nadda)",
+   "in-pos-minister-coal / in-pos-minister-mines (G. Kishan Reddy)",
+   "in-pos-minister-communications / in-pos-minister-development-of-north-eastern-region (Jyotiraditya Scindia)",
+   "in-pos-minister-heavy-industries / in-pos-minister-steel (H. D. Kumaraswamy)",
+   "in-pos-minister-power / in-pos-minister-housing-and-urban-affairs (Manohar Lal Khattar)",
+   "in-pos-minister-minority-affairs / in-pos-minister-parliamentary-affairs (Kiren Rijiju)",
+   "in-pos-minister-labour-and-employment / in-pos-minister-youth-affairs-and-sports (Mansukh L. Mandaviya)",
+   "in-pos-minister-external-affairs (S. Jaishankar)",
+   "in-pos-minister-commerce-and-industry (Piyush Goyal)",
+   "in-pos-mos-petroleum-and-natural-gas-1 / in-pos-mos-tourism-1 (Suresh Gopi)",
+   "in-pos-mos-chemicals-and-fertilizers-1 / in-pos-mos-health-and-family-welfare-2 (Anupriya Patel)"
+  ],
+  "method": "Structural/schema pass: reloaded with python, checked all 118 position IDs/ranks/appointmentMode/confidence values against SCHEMA.md enums (0 violations), checked all 56 distinct orgId values against MINISTRIES.md (all 53 ministries + 2 PM-held departments + PMO covered, 0 missing, 0 extraneous), checked all relation from/to endpoints for dangling references (0 found), and verified relation completeness per the brief (each non-vacant position has advises_appointment-from-PM + appoints-from-President + member_of-council-of-ministers, and cabinet-rank positions additionally have member_of-union-cabinet; the 4 vacant positions correctly lack the appointment relations). Holder pass: re-verified 45 positions (30 unique Cabinet Ministers covering 45 of the 48 cabinet-rank seats via direct per-holder Wikipedia fetches, plus MoS Finance, plus the two confirmed 2026 departures) against each holder's own current Wikipedia infobox via WebFetch dated 2026-09-25 (WebSearch was unavailable - session search budget was exhausted by other segments' agents before this pass started - so verification relied on WebFetch of individual Wikipedia biography pages plus the already-fetched Wikipedia 'Third Modi ministry' article/tables saved in scratch/). No fabricated or unsourced facts found; no entities/positions were invented or removed. Coverage vs. the brief was already complete (all 53 ministries + 2 PM departments have minister/MoS seats; 30 cabinet + 7 MoS-IC + 63 MoS = 118, matching the 69 unique current holders after Kurian/Bittu departures); nothing missing was found to add."
+ }
+}

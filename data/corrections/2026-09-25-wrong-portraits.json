@@ -1,0 +1,58 @@
+[
+  {
+    "id": "st-up-pos-mla-dariyabad",
+    "set": { "holder.image": null },
+    "source": "https://commons.wikimedia.org/wiki/File:Justice_Satish_Chandra_Sharma.jpg",
+    "reason": "Removed a portrait of the Supreme Court judge with the same name; it does not depict the Dariyabad MLA.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "st-up-pos-minister-52",
+    "set": { "holder.image": null },
+    "source": "https://commons.wikimedia.org/wiki/File:Justice_Satish_Chandra_Sharma.jpg",
+    "reason": "Removed a portrait of the Supreme Court judge with the same name; it does not depict the Uttar Pradesh minister.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "st-gj-pos-mla-ellisbridge",
+    "set": { "holder.image": null },
+    "source": "https://commons.wikimedia.org/wiki/File:Shri_Amit_Shah_in_Raigad.jpg",
+    "reason": "Removed the Union Home Minister's portrait from the Ellisbridge MLA's seat; they are different people.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "st-up-pos-mla-mubarakpur",
+    "set": { "holder.image": null },
+    "source": "https://commons.wikimedia.org/wiki/File:Akhilesh_Yadav_544.jpg",
+    "reason": "Removed the Kannauj MP's portrait from the different politician representing Mubarakpur.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "st-kl-pos-mla-tanur",
+    "set": { "holder.image": null },
+    "source": "https://commons.wikimedia.org/wiki/File:Rajeev_Chandrasekhar_with_PM_Modi_(cropped).jpg",
+    "reason": "Removed Rajeev Chandrasekhar's portrait from P. K. Navas's seat in Tanur.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "st-ap-pos-governor",
+    "set": { "holder.image": null },
+    "source": "https://commons.wikimedia.org/wiki/File:Emblem_of_Andhra_Pradesh.svg",
+    "reason": "Removed the Andhra Pradesh state emblem from Governor Syed Abdul Nazeer's portrait field.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "st-tg-pos-governor",
+    "set": { "holder.image": null },
+    "source": "https://commons.wikimedia.org/wiki/File:Emblem_of_Telangana.svg",
+    "reason": "Removed the Telangana state emblem from Governor Shiv Pratap Shukla's portrait field.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  }
+]

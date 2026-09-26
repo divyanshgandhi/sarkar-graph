@@ -1,0 +1,5918 @@
+{
+ "segment": "mlas-jk-ar-mn-ml",
+ "asOf": "2026-09-25",
+ "notes": "Full current MLA rosters for Jammu & Kashmir (95: 90 elected + 5 LG-nominated, all 5 nominated seats VACANT as of 2026-09-25 per Sept 2026 news), Arunachal Pradesh (60), Manipur (60: 58 filled + 2 vacant due to MLA deaths - Tadubi and Thanlon), and Meghalaya (60). Sourced from Wikipedia 'Nth Assembly' member-list pages (wikitext via parse API, fetched in chunks due to page size / WebFetch summarization limits) cross-checked against by-election articles. Current (post-defection/post-bypoll) party is used throughout, not the original 2022-2024 election-night party. Party-wise strength counts for AR, MN, JK were independently re-derived here and cross-validated exactly against the pre-existing entity stats in data/raw/states-ar-mn-ml.json and data/raw/states-dl-jk-la.json (written by a sibling segment) - full agreement on every party's seat count for all four legislatures, which is strong corroboration. AITC used (not the sibling file's 'MAITC') per this segment's standard-abbreviation instructions for Meghalaya's Trinamool Congress state unit. KNOWN GAPS (declared, not guessed): (1) J&K MLA wikipedia URLs are constructed from the member's plain name (name.replace(' ','_')) rather than verified individual wikilink targets, because the WebFetch chunks used for JK returned de-wikified plain text; some may 404 or land on a disambiguation page. AR/MN/ML wikipedia URLs are closer to the actual wikilink targets since those chunks retained wikitext. (2) The exact single Meghalaya constituency whose poll was deferred to 10 May 2023 (vs 27 Feb 2023) was not identified. (3) Gambegre (Meghalaya) by-election date given as 2024-11-23 from general knowledge of the November 2024 Indian by-election batch, not independently confirmed with a fetched source - flagged medium confidence on that one date only. (4) WebSearch budget was already exhausted (200/200) before this segment ran; all research here was done via WebFetch + curl/python against Wikipedia (curl/python were rate-limited 429 throughout by a shared egress IP, consistent with sibling segments' notes, so WebFetch was the only working path).",
+ "entities": [
+  {
+   "id": "st-jk-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Jammu and Kashmir Legislative Assembly",
+   "seats": 95,
+   "stats": {
+    "totalSeats": 95,
+    "partyWiseStrength": {
+     "JKNC": 41,
+     "JKPDP": 4,
+     "JKPC": 1,
+     "JKAIP": 1,
+     "INC": 6,
+     "IND": 6,
+     "CPI(M)": 1,
+     "BJP": 29,
+     "AAP": 1,
+     "nominated_vacant": 5
+    },
+    "lastElection": "2024-09-18/2024-10-01",
+    "nextElectionDue": "2029",
+    "note": "90 elected seats + 5 LG-nominated seats provided for by the 2023 amendment to the J&K Reorganisation Act 2019; all 5 nominated seats remain VACANT as of 2026-09-25 (LG has not made nominations; ongoing political dispute over voting rights of nominated members)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Arunachal Pradesh Legislative Assembly",
+   "seats": 60,
+   "stats": {
+    "totalSeats": 60,
+    "partyWiseStrength": {
+     "BJP": 46,
+     "PPA": 6,
+     "IND": 3,
+     "INC": 1,
+     "NCP": 3,
+     "NPP": 1
+    },
+    "lastElection": "2024-04-19",
+    "nextElectionDue": "2029"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly",
+    "https://en.wikipedia.org/wiki/2024_Arunachal_Pradesh_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Manipur Legislative Assembly",
+   "seats": 60,
+   "stats": {
+    "totalSeats": 60,
+    "partyWiseStrength": {
+     "INC": 5,
+     "BJP": 36,
+     "NPP": 6,
+     "IND": 3,
+     "JD(U)": 1,
+     "NPF": 5,
+     "KPA": 2,
+     "Vacant": 2
+    },
+    "lastElection": "2022-02-28/2022-03-05",
+    "nextElectionDue": "2027-02/2027-03",
+    "note": "Continued to exist through the 2025-26 President's Rule period (13 Feb 2025 - 4 Feb 2026); government reformed 4 Feb 2026 under CM Yumnam Khemchand Singh (BJP-NPP-NPF-JD(U) coalition). Tadubi and Thanlon seats vacant following MLA deaths."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly",
+    "https://en.wikipedia.org/wiki/Manipur_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Meghalaya Legislative Assembly",
+   "seats": 60,
+   "stats": {
+    "totalSeats": 60,
+    "partyWiseStrength": {
+     "NPP": 33,
+     "UDP": 4,
+     "BJP": 10,
+     "VPP": 4,
+     "AITC": 5,
+     "HSPDP": 2,
+     "IND": 2
+    },
+    "lastElection": "2023-02-27",
+    "nextElectionDue": "2028",
+    "note": "One seat's poll was deferred to 10 May 2023 (exact seat not confirmed by this segment - declared gap). Meghalaya's council of ministers was reshuffled/expanded 16 Sept 2025."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly",
+    "https://en.wikipedia.org/wiki/Meghalaya_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-jk-pos-mla-karnah",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Karnah",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Javaid Ahmad Mirchal",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Karnah",
+    "wikipedia": "https://en.wikipedia.org/wiki/Javaid_Ahmad_Mirchal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-trehgam",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Trehgam",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Saifullah Mir",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Trehgam",
+    "wikipedia": "https://en.wikipedia.org/wiki/Saifullah_Mir"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-kupwara",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kupwara",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Mir Mohammad Fayaz",
+    "since": "2024-10-08",
+    "party": "JKPDP",
+    "constituency": "Kupwara",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mir_Mohammad_Fayaz"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-lolab",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lolab",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Qaysar Jamshaid Lone",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Lolab",
+    "wikipedia": "https://en.wikipedia.org/wiki/Qaysar_Jamshaid_Lone"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-handwara",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Handwara",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Sajad Gani Lone",
+    "since": "2024-10-08",
+    "party": "JKPC",
+    "constituency": "Handwara",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sajad_Gani_Lone"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-langate",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Langate",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Khursheed Ahmed Sheikh",
+    "since": "2024-10-08",
+    "party": "JKAIP",
+    "constituency": "Langate",
+    "wikipedia": "https://en.wikipedia.org/wiki/Khursheed_Ahmed_Sheikh",
+    "notes": "Elected as Independent; primary member of AIP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-sopore",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Sopore",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Irshad Rasool Kar",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Sopore",
+    "wikipedia": "https://en.wikipedia.org/wiki/Irshad_Rasool_Kar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-rafiabad",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Rafiabad",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Javid Ahmad Dar",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Rafiabad",
+    "wikipedia": "https://en.wikipedia.org/wiki/Javid_Ahmad_Dar",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-uri",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Uri",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Sajjad Safi",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Uri",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sajjad_Safi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-baramulla",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Baramulla",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Javid Hassan Baig",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Baramulla",
+    "wikipedia": "https://en.wikipedia.org/wiki/Javid_Hassan_Baig"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-gulmarg",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Gulmarg",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Pirzada Farooq Ahmed Shah",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Gulmarg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pirzada_Farooq_Ahmed_Shah"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-wagoora-kreeri",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Wagoora-Kreeri",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Irfan Hafiz Lone",
+    "since": "2024-10-08",
+    "party": "INC",
+    "constituency": "Wagoora-Kreeri",
+    "wikipedia": "https://en.wikipedia.org/wiki/Irfan_Hafiz_Lone"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-pattan",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pattan",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Javaid Riyaz",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Pattan",
+    "wikipedia": "https://en.wikipedia.org/wiki/Javaid_Riyaz"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-sonawari",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Sonawari",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Hilal Akbar Lone",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Sonawari",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hilal_Akbar_Lone"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-bandipora",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bandipora",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Nizam Uddin Bhat",
+    "since": "2024-10-08",
+    "party": "INC",
+    "constituency": "Bandipora",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nizam_Uddin_Bhat"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-gurez",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Gurez (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Nazir Ahmed Khan",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Gurez (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nazir_Ahmed_Khan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-kangan",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kangan (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Mian Mehar Ali",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Kangan (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mian_Mehar_Ali"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-ganderbal",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ganderbal",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Omar Abdullah",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Ganderbal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Omar_Abdullah",
+    "notes": "Chief Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-hazratbal",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Hazratbal",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Salman Sagar",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Hazratbal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Salman_Sagar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-khanyar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Khanyar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Ali Mohammad Sagar",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Khanyar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ali_Mohammad_Sagar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-habba-kadal",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Habba Kadal",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Shamim Firdous",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Habba Kadal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shamim_Firdous"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-lal-chowk",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lal Chowk",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Sheikh Ahsan Ahmed",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Lal Chowk",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sheikh_Ahsan_Ahmed"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-chanapora",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chanapora",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Mushtaq Guroo",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Chanapora",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mushtaq_Guroo"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-zadibal",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Zadibal",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Tanvir Sadiq",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Zadibal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tanvir_Sadiq"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-eidgah",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Eidgah",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Mubarik Gul",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Eidgah",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mubarik_Gul"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-central-shalteng",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Central Shalteng",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Tariq Hameed Karra",
+    "since": "2024-10-08",
+    "party": "INC",
+    "constituency": "Central Shalteng",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tariq_Hameed_Karra"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-budgam",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Budgam",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Aga Syed Muntazir Mehdi",
+    "since": "2025-11-14",
+    "party": "JKPDP",
+    "constituency": "Budgam",
+    "wikipedia": "https://en.wikipedia.org/wiki/Aga_Syed_Muntazir_Mehdi",
+    "notes": "BYPOLL:2025-11-14; won after Omar Abdullah vacated (contested Ganderbal+Budgam in 2024, kept Ganderbal)"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-beerwah",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Beerwah",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Shafi Ahmad Wani",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Beerwah",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shafi_Ahmad_Wani"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-khan-sahib",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Khan Sahib",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Saif Ud Din Bhat",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Khan Sahib",
+    "wikipedia": "https://en.wikipedia.org/wiki/Saif_Ud_Din_Bhat"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-charari-sharief",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Charari Sharief",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Abdul Rahim Rather",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Charari Sharief",
+    "wikipedia": "https://en.wikipedia.org/wiki/Abdul_Rahim_Rather",
+    "notes": "Speaker"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-chadoora",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chadoora",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Ali Mohammad Dar",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Chadoora",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ali_Mohammad_Dar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-pampore",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pampore",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Hasnain Masoodi",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Pampore",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hasnain_Masoodi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-tral",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tral",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Rafiq Ahmad Naik",
+    "since": "2024-10-08",
+    "party": "JKPDP",
+    "constituency": "Tral",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rafiq_Ahmad_Naik"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-pulwama",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pulwama",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Waheed Ur Rehman Para",
+    "since": "2024-10-08",
+    "party": "JKPDP",
+    "constituency": "Pulwama",
+    "wikipedia": "https://en.wikipedia.org/wiki/Waheed_Ur_Rehman_Para"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-rajpora",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Rajpora",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Ghulam Mohit Uddin Mir",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Rajpora",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ghulam_Mohit_Uddin_Mir"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-zainapora",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Zainapora",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Showkat Hussain",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Zainapora",
+    "wikipedia": "https://en.wikipedia.org/wiki/Showkat_Hussain"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-shopian",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Shopian",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Shabir Ahmad Kullay",
+    "since": "2024-10-08",
+    "party": "IND",
+    "constituency": "Shopian",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shabir_Ahmad_Kullay"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-dh-pora",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "DH Pora",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Sakina Itoo",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "DH Pora",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sakina_Itoo",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-kulgam",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kulgam",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Mohammad Yusuf Tarigami",
+    "since": "2024-10-08",
+    "party": "CPI(M)",
+    "constituency": "Kulgam",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mohammad_Yusuf_Tarigami"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-devsar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Devsar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Peerzada Feroze Ahamad",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Devsar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Peerzada_Feroze_Ahamad"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-dooru",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Dooru",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Gulam Ahmad Mir",
+    "since": "2024-10-08",
+    "party": "INC",
+    "constituency": "Dooru",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gulam_Ahmad_Mir"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-kokernag",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kokernag (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Zafar Ali Khatana",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Kokernag (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zafar_Ali_Khatana"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-anantnag-west",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Anantnag West",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Abdul Majeed Bhat",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Anantnag West",
+    "wikipedia": "https://en.wikipedia.org/wiki/Abdul_Majeed_Bhat"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-anantnag",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Anantnag",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Peerzada Mohammad Syed",
+    "since": "2024-10-08",
+    "party": "INC",
+    "constituency": "Anantnag",
+    "wikipedia": "https://en.wikipedia.org/wiki/Peerzada_Mohammad_Syed"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-srigufwara-bijbehara",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Srigufwara-Bijbehara",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Bashir Ahmed Shah Veeri",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Srigufwara-Bijbehara",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bashir_Ahmed_Shah_Veeri"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-shangus-anantnag-east",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Shangus-Anantnag East",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Reyaz Ahmad Khan",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Shangus-Anantnag East",
+    "wikipedia": "https://en.wikipedia.org/wiki/Reyaz_Ahmad_Khan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-pahalgam",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pahalgam",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Altaf Ahmad Wani",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Pahalgam",
+    "wikipedia": "https://en.wikipedia.org/wiki/Altaf_Ahmad_Wani"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-inderwal",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Inderwal",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Payare Lal Sharma",
+    "since": "2024-10-08",
+    "party": "IND",
+    "constituency": "Inderwal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Payare_Lal_Sharma",
+    "notes": "Supports JKNC"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-kishtwar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kishtwar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Shagun Parihar",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Kishtwar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shagun_Parihar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-padder-nagseni",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Padder-Nagseni",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Sunil Kumar Sharma",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Padder-Nagseni",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sunil_Kumar_Sharma",
+    "notes": "Leader of Opposition"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-bhadarwah",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bhadarwah",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Daleep Singh",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Bhadarwah",
+    "wikipedia": "https://en.wikipedia.org/wiki/Daleep_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-doda",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Doda",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Mehraj Malik",
+    "since": "2024-10-08",
+    "party": "AAP",
+    "constituency": "Doda",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mehraj_Malik"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-doda-west",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Doda West",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Shakti Raj Parihar",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Doda West",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shakti_Raj_Parihar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-ramban",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ramban",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Arjun Singh Raju",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Ramban",
+    "wikipedia": "https://en.wikipedia.org/wiki/Arjun_Singh_Raju"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-banihal",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Banihal",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Sajad Shaheen",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Banihal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sajad_Shaheen"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-gulabgarh",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Gulabgarh (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Khurshied Ahmed",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Gulabgarh (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Khurshied_Ahmed"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-reasi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Reasi",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Kuldeep Raj Dubey",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Reasi",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kuldeep_Raj_Dubey"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-shri-mata-vaishno-devi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Shri Mata Vaishno Devi",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Baldev Raj Sharma",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Shri Mata Vaishno Devi",
+    "wikipedia": "https://en.wikipedia.org/wiki/Baldev_Raj_Sharma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-udhampur-west",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Udhampur West",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Pawan Kumar Gupta",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Udhampur West",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pawan_Kumar_Gupta"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-udhampur-east",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Udhampur East",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Ranbir Singh Pathania",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Udhampur East",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ranbir_Singh_Pathania"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-chenani",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chenani",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Balwant Singh Mankotia",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Chenani",
+    "wikipedia": "https://en.wikipedia.org/wiki/Balwant_Singh_Mankotia"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-ramnagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ramnagar (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Sunil Bhardwaj",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Ramnagar (SC)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sunil_Bhardwaj"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-bani",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bani",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Rameshwar Singh Thakur",
+    "since": "2024-10-08",
+    "party": "IND",
+    "constituency": "Bani",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rameshwar_Singh_Thakur",
+    "notes": "Supports JKNC"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-billawar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Billawar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Satish Kumar Sharma",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Billawar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Satish_Kumar_Sharma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-basohli",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Basohli",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Thakur Darshan Singh",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Basohli",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thakur_Darshan_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-jasrota",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Jasrota",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Rajiv Jasrotia",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Jasrota",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rajiv_Jasrotia"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-kathua",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kathua (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Bharat Bhushan",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Kathua (SC)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bharat_Bhushan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-hiranagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Hiranagar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Vijay Kumar Sharma",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Hiranagar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vijay_Kumar_Sharma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-ramgarh",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ramgarh (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Devinder Kumar Manyal",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Ramgarh (SC)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Devinder_Kumar_Manyal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-samba",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Samba",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Surjeet Singh Slathia",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Samba",
+    "wikipedia": "https://en.wikipedia.org/wiki/Surjeet_Singh_Slathia"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-vijaypur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Vijaypur",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Chander Prakash Ganga",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Vijaypur",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chander_Prakash_Ganga"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-bishnah",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bishnah (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Rajeev Kumar",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Bishnah (SC)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rajeev_Kumar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-suchetgarh",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Suchetgarh (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Gharu Ram Bhagat",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Suchetgarh (SC)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gharu_Ram_Bhagat"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-rs-pora-jammu-south",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "RS Pora-Jammu South",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Narinder Singh Raina",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "RS Pora-Jammu South",
+    "wikipedia": "https://en.wikipedia.org/wiki/Narinder_Singh_Raina"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-bahu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bahu",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Vikram Randhawa",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Bahu",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vikram_Randhawa"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-jammu-east",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Jammu East",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Yudhvir Sethi",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Jammu East",
+    "wikipedia": "https://en.wikipedia.org/wiki/Yudhvir_Sethi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-nagrota",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nagrota",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Devyani Singh Rana",
+    "since": "2025-11-14",
+    "party": "BJP",
+    "constituency": "Nagrota",
+    "wikipedia": "https://en.wikipedia.org/wiki/Devyani_Singh_Rana",
+    "notes": "BYPOLL:2025-11-14; won after death of Devender Singh Rana (31 Oct 2024)"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-jammu-west",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Jammu West",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Arvind Gupta",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Jammu West",
+    "wikipedia": "https://en.wikipedia.org/wiki/Arvind_Gupta"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-jammu-north",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Jammu North",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Sham Lal Sharma",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Jammu North",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sham_Lal_Sharma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-marh",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Marh (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Surinder Kumar",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Marh (SC)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Surinder_Kumar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-akhnoor",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Akhnoor (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Mohan Lal",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Akhnoor (SC)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mohan_Lal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-chhamb",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chhamb",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Satish Sharma",
+    "since": "2024-10-08",
+    "party": "IND",
+    "constituency": "Chhamb",
+    "wikipedia": "https://en.wikipedia.org/wiki/Satish_Sharma",
+    "notes": "Cabinet Minister; Supports JKNC"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-kalakote-sunderbani",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kalakote-Sunderbani",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Randhir Singh",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "constituency": "Kalakote-Sunderbani",
+    "wikipedia": "https://en.wikipedia.org/wiki/Randhir_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-nowshera",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nowshera",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Surinder Kumar Choudhary",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Nowshera",
+    "wikipedia": "https://en.wikipedia.org/wiki/Surinder_Kumar_Choudhary",
+    "notes": "Deputy Chief Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-rajouri",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Rajouri (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Iftkar Ahmed",
+    "since": "2024-10-08",
+    "party": "INC",
+    "constituency": "Rajouri (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Iftkar_Ahmed"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-budhal",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Budhal (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Javaid Iqbal",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Budhal (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Javaid_Iqbal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-thanamandi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Thanamandi (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Muzaffar Iqbal Khan",
+    "since": "2024-10-08",
+    "party": "IND",
+    "constituency": "Thanamandi (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Muzaffar_Iqbal_Khan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-surankote",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Surankote (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Choudhary Mohammed Akram",
+    "since": "2024-10-08",
+    "party": "IND",
+    "constituency": "Surankote (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Choudhary_Mohammed_Akram",
+    "notes": "Supports JKNC"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-poonch-haveli",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Poonch Haveli",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Ajaz Ahmed Jan",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Poonch Haveli",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ajaz_Ahmed_Jan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-mendhar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mendhar (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-electorate",
+   "holder": {
+    "name": "Javed Ahmed Rana",
+    "since": "2024-10-08",
+    "party": "JKNC",
+    "constituency": "Mendhar (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Javed_Ahmed_Rana",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/1st_Jammu_and_Kashmir_Assembly_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-mla-nominated-woman-1",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nominated (Woman member)",
+   "appointmentMode": "nominated",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Legislative_Assembly",
+    "https://www.bing.com/news/search?q=Jammu+Kashmir+5+nominated+MLAs+Lieutenant+Governor+2026"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-pos-mla-nominated-woman-2",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nominated (Woman member)",
+   "appointmentMode": "nominated",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Legislative_Assembly",
+    "https://www.bing.com/news/search?q=Jammu+Kashmir+5+nominated+MLAs+Lieutenant+Governor+2026"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-pos-mla-nominated-kashmiri-migrant-1",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nominated (Kashmiri Migrants)",
+   "appointmentMode": "nominated",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Legislative_Assembly",
+    "https://www.bing.com/news/search?q=Jammu+Kashmir+5+nominated+MLAs+Lieutenant+Governor+2026"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-pos-mla-nominated-kashmiri-migrant-woman",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nominated (Kashmiri Migrants, Woman)",
+   "appointmentMode": "nominated",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Legislative_Assembly",
+    "https://www.bing.com/news/search?q=Jammu+Kashmir+5+nominated+MLAs+Lieutenant+Governor+2026"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-pos-mla-nominated-pojk-displaced",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nominated (Displaced Persons from Pakistan-occupied Jammu and Kashmir)",
+   "appointmentMode": "nominated",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Legislative_Assembly",
+    "https://www.bing.com/news/search?q=Jammu+Kashmir+5+nominated+MLAs+Lieutenant+Governor+2026"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-mla-lumla",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lumla (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Tsering Lhamu",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Lumla (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tsering_Lhamu"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-tawang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tawang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Namgey Tsering",
+    "since": "2024-06-02",
+    "party": "PPA",
+    "constituency": "Tawang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Namgey_Tsering",
+    "notes": "Switched from NPP to PPA"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-mukto",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mukto (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Pema Khandu",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Mukto (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pema_Khandu",
+    "notes": "Chief Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-dirang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Dirang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Phurpa Tsering",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Dirang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Phurpa_Tsering"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-kalaktang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kalaktang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Tseten Chombay Kee",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Kalaktang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tseten_Chombay_Kee"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-thrizino-buragaon",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Thrizino-Buragaon (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Tenzin Nyima Glow",
+    "since": "2024-06-02",
+    "party": "IND",
+    "constituency": "Thrizino-Buragaon (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tenzin_Nyima_Glow"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-bomdila",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bomdila (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Dongru Siongju",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Bomdila (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dongru_Siongju"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-bameng",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bameng (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Kumar Waii",
+    "since": "2024-06-02",
+    "party": "INC",
+    "constituency": "Bameng (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kumar_Waii"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-chayangtajo",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chayangtajo (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Hayeng Mangfi",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Chayangtajo (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hayeng_Mangfi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-seppa-east",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Seppa East (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Ealing Tallang",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Seppa East (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ealing_Tallang"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-seppa-west",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Seppa West (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Mama Natung",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Seppa West (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mama_Natung"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-pakke-kessang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pakke-Kessang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Biyuram Wahge",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Pakke-Kessang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Biyuram_Wahge"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-itanagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Itanagar (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Techi Kaso",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Itanagar (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Techi_Kaso"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-doimukh",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Doimukh (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Nabam Vivek",
+    "since": "2024-06-02",
+    "party": "PPA",
+    "constituency": "Doimukh (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nabam_Vivek"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-sagalee",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Sagalee (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Ratu Techi",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Sagalee (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ratu_Techi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-yachuli",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Yachuli (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Toko Tatung",
+    "since": "2024-06-02",
+    "party": "NCP",
+    "constituency": "Yachuli (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Toko_Tatung"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-ziro-hapoli",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ziro-Hapoli (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Hage Appa",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Ziro-Hapoli (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hage_Appa"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-palin",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Palin (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Balo Raja",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Palin (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Balo_Raja"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-nyapin",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nyapin (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Tai Nikio",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Nyapin (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tai_Nikio"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-tali",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tali (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Jikke Tako",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Tali (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jikke_Tako"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-koloriang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Koloriang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Pani Taram",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Koloriang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pani_Taram"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-nacho",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nacho (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Nakap Nalo",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Nacho (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nakap_Nalo"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-taliha",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Taliha (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Nyato Dukam",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Taliha (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nyato_Dukam"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-daporijo",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Daporijo (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Taniya Soki",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Daporijo (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Taniya_Soki"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-raga",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Raga (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Rotom Tebin",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Raga (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rotom_Tebin"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-dumporijo",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Dumporijo (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Rode Bui",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Dumporijo (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rode_Bui"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-liromoba",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Liromoba (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Pesi Jilen",
+    "since": "2024-06-02",
+    "party": "PPA",
+    "constituency": "Liromoba (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pesi_Jilen",
+    "notes": "Switched from NPP to PPA"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-likabali",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Likabali (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Kardo Nyigyor",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Likabali (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kardo_Nyigyor"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-basar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Basar (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Nyabi Jini Dirchi",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Basar (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nyabi_Jini_Dirchi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-along-west",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Along West (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Topin Ete",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Along West (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Topin_Ete"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-along-east",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Along East (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Kento Jini",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Along East (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kento_Jini"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-rumgong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Rumgong (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Talem Taboh",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Rumgong (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Talem_Taboh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-mechuka",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mechuka (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Pasang Dorjee Sona",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Mechuka (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pasang_Dorjee_Sona"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-tuting-yingkiong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tuting-Yingkiong (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Alo Libang",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Tuting-Yingkiong (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Alo_Libang"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-pangin",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pangin (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Ojing Tasing",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Pangin (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ojing_Tasing"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-nari-koyu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nari-Koyu (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Tojir Kadu",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Nari-Koyu (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tojir_Kadu"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-pasighat-west",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pasighat West (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Ninong Ering",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Pasighat West (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ninong_Ering"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-pasighat-east",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pasighat East (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Tapi Darang",
+    "since": "2024-06-02",
+    "party": "PPA",
+    "constituency": "Pasighat East (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tapi_Darang",
+    "notes": "Switched from NPP to PPA"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-mebo",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mebo (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Oken Tayeng",
+    "since": "2024-06-02",
+    "party": "PPA",
+    "constituency": "Mebo (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Oken_Tayeng"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-mariyang-geku",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mariyang-Geku (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Oni Panyang",
+    "since": "2024-06-02",
+    "party": "PPA",
+    "constituency": "Mariyang-Geku (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Oni_Panyang",
+    "notes": "Switched from NPP to PPA"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-anini",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Anini (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Mopi Mihu",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Anini (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mopi_Mihu"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-dambuk",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Dambuk (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Puinnyo Apum",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Dambuk (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Puinnyo_Apum"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-roing",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Roing (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Mutchu Mithi",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Roing (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mutchu_Mithi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-tezu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tezu (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Mahesh Chai",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Tezu (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mahesh_Chai"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-hayuliang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Hayuliang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Dasanglu Pul",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Hayuliang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dasanglu_Pul"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-chowkham",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chowkham (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Chowna Mein",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Chowkham (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chowna_Mein",
+    "notes": "Deputy Chief Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-namsai",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Namsai (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Chau Zingnu Namchoom",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Namsai (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chau_Zingnu_Namchoom"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-lekang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lekang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Likha Soni",
+    "since": "2024-06-02",
+    "party": "NCP",
+    "constituency": "Lekang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Likha_Soni"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-bordumsa-diyun",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bordumsa-Diyun",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Nikh Kamin",
+    "since": "2024-06-02",
+    "party": "NCP",
+    "constituency": "Bordumsa-Diyun",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nikh_Kamin"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-miao",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Miao (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Kamlung Mossang",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Miao (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kamlung_Mossang"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-nampong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nampong (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Laisam Simai",
+    "since": "2024-06-02",
+    "party": "IND",
+    "constituency": "Nampong (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Laisam_Simai"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-changlang-south",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Changlang South (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Hamjong Tangha",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Changlang South (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hamjong_Tangha"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-changlang-north",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Changlang North (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Tesam Pongte",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Changlang North (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tesam_Pongte"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-namsang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Namsang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Wangki Lowang",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Namsang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wangki_Lowang"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-khonsa-east",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Khonsa East (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Wanglam Sawin",
+    "since": "2024-06-02",
+    "party": "IND",
+    "constituency": "Khonsa East (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wanglam_Sawin"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-khonsa-west",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Khonsa West (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Chakat Aboh",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Khonsa West (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chakat_Aboh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-borduria-bagapani",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Borduria-Bagapani (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Wanglin Lowangdong",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Borduria-Bagapani (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wanglin_Lowangdong"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-kanubari",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kanubari (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Gabriel Denwang Wangsu",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Kanubari (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gabriel_Denwang_Wangsu"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-longding-pumao",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Longding-Pumao (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Thangwang Wangham",
+    "since": "2024-06-02",
+    "party": "NPP",
+    "constituency": "Longding-Pumao (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thangwang_Wangham"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-mla-pongchau-wakka",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pongchau-Wakka (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-electorate",
+   "holder": {
+    "name": "Honchun Ngandam",
+    "since": "2024-06-02",
+    "party": "BJP",
+    "constituency": "Pongchau-Wakka (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Honchun_Ngandam"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Arunachal_Pradesh_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-pos-mla-khundrakpam",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Khundrakpam",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Thokchom Lokeshwar Singh",
+    "since": "2022-03-10",
+    "party": "INC",
+    "constituency": "Khundrakpam",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thokchom_Lokeshwar_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-heingang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Heingang",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "N. Biren Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Heingang",
+    "wikipedia": "https://en.wikipedia.org/wiki/N._Biren_Singh",
+    "notes": "Resigned as Chief Minister 9 Feb 2025; remains sitting MLA"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-khurai",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Khurai",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Leishangthem Susindro Meitei",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Khurai",
+    "wikipedia": "https://en.wikipedia.org/wiki/Leishangthem_Susindro_Meitei"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-kshetrigao",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kshetrigao",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Sheikh Noorul Hassan",
+    "since": "2022-03-10",
+    "party": "NPP",
+    "constituency": "Kshetrigao",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sheikh_Noorul_Hassan"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-thongju",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Thongju",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Thongam Biswajit Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Thongju",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thongam_Biswajit_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-keirao",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Keirao",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Lourembam Rameshwor Meetei",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Keirao",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lourembam_Rameshwor_Meetei"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-andro",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Andro",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Thounaojam Shyamkumar Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Andro",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thounaojam_Shyamkumar_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-lamlai",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lamlai",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Khongbantabam Ibomcha",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Lamlai",
+    "wikipedia": "https://en.wikipedia.org/wiki/Khongbantabam_Ibomcha"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-thangmeiband",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Thangmeiband",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Khumukcham Joykishan",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Thangmeiband",
+    "wikipedia": "https://en.wikipedia.org/wiki/Khumukcham_Joykishan",
+    "notes": "Switched from JD(U) to BJP"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-uripok",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Uripok",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Khwairakpam Raghumani Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Uripok",
+    "wikipedia": "https://en.wikipedia.org/wiki/Khwairakpam_Raghumani_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-sagolband",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Sagolband",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Rajkumar Imo Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Sagolband",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rajkumar_Imo_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-keishamthong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Keishamthong",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Sapam Nishikant Singh",
+    "since": "2022-03-10",
+    "party": "IND",
+    "constituency": "Keishamthong",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sapam_Nishikant_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-singjamei",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Singjamei",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Yumnam Khemchand Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Singjamei",
+    "wikipedia": "https://en.wikipedia.org/wiki/Yumnam_Khemchand_Singh",
+    "notes": "Chief Minister since 2026-02-04"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-yaiskul",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Yaiskul",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Thokchom Satyabrata Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Yaiskul",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thokchom_Satyabrata_Singh",
+    "notes": "Speaker"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-wangkhei",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Wangkhei",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Thangjam Arunkumar",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Wangkhei",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thangjam_Arunkumar",
+    "notes": "Switched from JD(U) to BJP"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-sekmai",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Sekmai (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Heikham Dingo Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Sekmai (SC)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Heikham_Dingo_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-lamsang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lamsang",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Sorokhaibam Rajen",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Lamsang",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sorokhaibam_Rajen"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-konthoujam",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Konthoujam",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Sapam Ranjan Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Konthoujam",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sapam_Ranjan_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-patsoi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Patsoi",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Sapam Kunjakeswor Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Patsoi",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sapam_Kunjakeswor_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-langthabal",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Langthabal",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Karam Shyam",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Langthabal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Karam_Shyam"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-naoriya-pakhanglakpa",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Naoriya Pakhanglakpa",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Soraisam Kebi Devi",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Naoriya Pakhanglakpa",
+    "wikipedia": "https://en.wikipedia.org/wiki/Soraisam_Kebi_Devi"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-wangoi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Wangoi",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Khuraijam Loken Singh",
+    "since": "2022-03-10",
+    "party": "NPP",
+    "constituency": "Wangoi",
+    "wikipedia": "https://en.wikipedia.org/wiki/Khuraijam_Loken_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-mayang-imphal",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mayang Imphal",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Kongkham Robindro Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Mayang Imphal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kongkham_Robindro_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-nambol",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nambol",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Thounaojam Basanta Kumar Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Nambol",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thounaojam_Basanta_Kumar_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-oinam",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Oinam",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Irengbam Nalini Devi",
+    "since": "2022-03-10",
+    "party": "NPP",
+    "constituency": "Oinam",
+    "wikipedia": "https://en.wikipedia.org/wiki/Irengbam_Nalini_Devi"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-bishnupur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bishnupur",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Govindas Konthoujam",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Bishnupur",
+    "wikipedia": "https://en.wikipedia.org/wiki/Govindas_Konthoujam"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-moirang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Moirang",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Thongam Shanti Singh",
+    "since": "2022-03-10",
+    "party": "NPP",
+    "constituency": "Moirang",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thongam_Shanti_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-thanga",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Thanga",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Tongbram Robindro Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Thanga",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tongbram_Robindro_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-kumbi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kumbi",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Sanasam Premachandra Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Kumbi",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sanasam_Premachandra_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-lilong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lilong",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Muhammad Abdul Nasir",
+    "since": "2022-03-10",
+    "party": "JD(U)",
+    "constituency": "Lilong",
+    "wikipedia": "https://en.wikipedia.org/wiki/Muhammad_Abdul_Nasir"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-thoubal",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Thoubal",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Okram Ibobi Singh",
+    "since": "2022-03-10",
+    "party": "INC",
+    "constituency": "Thoubal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Okram_Ibobi_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-wangkhem",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Wangkhem",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Keisham Meghachandra Singh",
+    "since": "2022-03-10",
+    "party": "INC",
+    "constituency": "Wangkhem",
+    "wikipedia": "https://en.wikipedia.org/wiki/Keisham_Meghachandra_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-heirok",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Heirok",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Thokchom Radheshyam Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Heirok",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thokchom_Radheshyam_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-wangjing-tentha",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Wangjing Tentha",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Paonam Brojen",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Wangjing Tentha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Paonam_Brojen"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-khangabok",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Khangabok",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Surjakumar Okram",
+    "since": "2022-03-10",
+    "party": "INC",
+    "constituency": "Khangabok",
+    "wikipedia": "https://en.wikipedia.org/wiki/Surjakumar_Okram"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-wabgai",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Wabgai",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Usham Deben Singh",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Wabgai",
+    "wikipedia": "https://en.wikipedia.org/wiki/Usham_Deben_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-kakching",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kakching",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Mayanglambam Rameshwar Singh",
+    "since": "2022-03-10",
+    "party": "NPP",
+    "constituency": "Kakching",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mayanglambam_Rameshwar_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-hiyanglam",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Hiyanglam",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Yumnam Radheshyam",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Hiyanglam",
+    "wikipedia": "https://en.wikipedia.org/wiki/Yumnam_Radheshyam"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-sugnu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Sugnu",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Kangujam Ranjit Singh",
+    "since": "2022-03-10",
+    "party": "INC",
+    "constituency": "Sugnu",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kangujam_Ranjit_Singh"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-jiribam",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Jiribam",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Ashab Uddin",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Jiribam",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ashab_Uddin",
+    "notes": "Switched from JD(U) to BJP"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-chandel",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chandel (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Olish Shilshi",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Chandel (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Olish_Shilshi"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-tengnoupal",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tengnoupal (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Letpao Haokip",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Tengnoupal (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Letpao_Haokip"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-phungyar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Phungyar (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Leishiyo Keishing",
+    "since": "2022-03-10",
+    "party": "NPF",
+    "constituency": "Phungyar (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Leishiyo_Keishing"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-ukhrul",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ukhrul (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Ram Muivah",
+    "since": "2022-03-10",
+    "party": "NPF",
+    "constituency": "Ukhrul (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ram_Muivah"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-chingai",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chingai (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Khashim Vashum",
+    "since": "2022-03-10",
+    "party": "NPF",
+    "constituency": "Chingai (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Khashim_Vashum"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-saikul",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Saikul (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Kimneo Haokip Hangshing",
+    "since": "2022-03-10",
+    "party": "KPA",
+    "constituency": "Saikul (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kimneo_Haokip_Hangshing"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-karong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Karong (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "J. Kumo Sha",
+    "since": "2022-03-10",
+    "party": "IND",
+    "constituency": "Karong (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/J._Kumo_Sha"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-mao",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mao (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Losii Dikho",
+    "since": "2022-03-10",
+    "party": "NPF",
+    "constituency": "Mao (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Losii_Dikho",
+    "notes": "Deputy Chief Minister since 2026-02-04"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-tadubi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tadubi (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": null,
+   "vacant": true,
+   "notes": "Formerly held by N. Kayisii (NPP). Died 18 January 2025."
+  },
+  {
+   "id": "st-mn-pos-mla-kangpokpi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kangpokpi",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Nemcha Kipgen",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Kangpokpi",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nemcha_Kipgen",
+    "notes": "Deputy Chief Minister since 2026-02-04"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-saitu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Saitu (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Haokholet Kipgen",
+    "since": "2022-03-10",
+    "party": "IND",
+    "constituency": "Saitu (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Haokholet_Kipgen"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-tamei",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tamei (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Awangbow Newmai",
+    "since": "2022-03-10",
+    "party": "NPF",
+    "constituency": "Tamei (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Awangbow_Newmai"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-tamenglong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tamenglong (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Janghemlung Panmei",
+    "since": "2022-03-10",
+    "party": "NPP",
+    "constituency": "Tamenglong (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Janghemlung_Panmei"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-nungba",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nungba (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Dinganglung Gangmei",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Nungba (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dinganglung_Gangmei"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-tipaimukh",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tipaimukh (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Ngursanglur Sanate",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Tipaimukh (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ngursanglur_Sanate",
+    "notes": "Switched from JD(U) to BJP"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-thanlon",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Thanlon (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": null,
+   "vacant": true,
+   "notes": "Formerly held by Vungzagin Valte (BJP). Died 20 February 2026."
+  },
+  {
+   "id": "st-mn-pos-mla-henglep",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Henglep (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Letzamang Haokip",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Henglep (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Letzamang_Haokip"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-churachandpur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Churachandpur (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "L. M. Khaute",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Churachandpur (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/L._M._Khaute",
+    "notes": "Switched from JD(U) to BJP"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-saikot",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Saikot (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Paolienlal Haokip",
+    "since": "2022-03-10",
+    "party": "BJP",
+    "constituency": "Saikot (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Paolienlal_Haokip"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-mn-pos-mla-singhat",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Singhat (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-electorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/12th_Manipur_Assembly"
+   ],
+   "confidence": "high",
+   "holder": {
+    "name": "Chinlunthang Manlun",
+    "since": "2022-03-10",
+    "party": "KPA",
+    "constituency": "Singhat (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chinlunthang_Manlun"
+   },
+   "vacant": false
+  },
+  {
+   "id": "st-ml-pos-mla-nartiang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nartiang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Sniawbhalang Dhar",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Nartiang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sniawbhalang_Dhar",
+    "notes": "Deputy Chief Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-jowai",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Jowai (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Wailadmiki Shylla",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Jowai (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wailadmiki_Shylla",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-raliang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Raliang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Comingone Ymbon",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Raliang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Comingone_Ymbon"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mowkaiaw",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mowkaiaw (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Nujorki Sungoh",
+    "since": "2023-03-02",
+    "party": "UDP",
+    "constituency": "Mowkaiaw (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nujorki_Sungoh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-sutnga-saipung",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Sutnga Saipung (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Santa Mary Shylla",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Sutnga Saipung (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Santa_Mary_Shylla"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-khliehriat",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Khliehriat (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Kyrmen Shylla",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "constituency": "Khliehriat (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kyrmen_Shylla",
+    "notes": "Switched from UDP to BJP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-amlarem",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Amlarem (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Lahkmen Rymbui",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "constituency": "Amlarem (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lahkmen_Rymbui",
+    "notes": "Cabinet Minister; switched from UDP to BJP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mawhati",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mawhati (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Charles Marngar",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Mawhati (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Charles_Marngar",
+    "notes": "Switched from INC to NPP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-nongpoh",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nongpoh (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Mayralborn Syiem",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "constituency": "Nongpoh (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mayralborn_Syiem",
+    "notes": "Switched from UDP to BJP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-jirang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Jirang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Sosthenes Sohtun",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Jirang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sosthenes_Sohtun",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-umsning",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Umsning (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Celestine Lyngdoh",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Umsning (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Celestine_Lyngdoh",
+    "notes": "Switched from INC to NPP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-umroi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Umroi (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Damanbait Lamare",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Umroi (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Damanbait_Lamare"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mawrengkneng",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mawrengkneng (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Heaving Stone Kharpran",
+    "since": "2023-03-02",
+    "party": "VPP",
+    "constituency": "Mawrengkneng (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Heaving_Stone_Kharpran"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-pynthorumkhrah",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pynthorumkhrah",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Alexander Laloo Hek",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "constituency": "Pynthorumkhrah",
+    "wikipedia": "https://en.wikipedia.org/wiki/Alexander_Laloo_Hek"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mawlai",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mawlai (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Brightstarwell Marbaniang",
+    "since": "2023-03-02",
+    "party": "VPP",
+    "constituency": "Mawlai (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Brightstarwell_Marbaniang"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-east-shillong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "East Shillong (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Ampareen Lyngdoh",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "East Shillong (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ampareen_Lyngdoh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-north-shillong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "North Shillong (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Adelbert Nongrum",
+    "since": "2023-03-02",
+    "party": "VPP",
+    "constituency": "North Shillong (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Adelbert_Nongrum"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-west-shillong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "West Shillong",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Paul Lyngdoh",
+    "since": "2023-03-02",
+    "party": "UDP",
+    "constituency": "West Shillong",
+    "wikipedia": "https://en.wikipedia.org/wiki/Paul_Lyngdoh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-south-shillong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "South Shillong",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Sanbor Shullai",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "constituency": "South Shillong",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sanbor_Shullai",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mylliem",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mylliem (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Ronnie V. Lyngdoh",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Mylliem (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ronnie_V._Lyngdoh",
+    "notes": "Switched from INC to NPP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-nongthymmai",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nongthymmai (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Charles Pyngrope",
+    "since": "2023-03-02",
+    "party": "AITC",
+    "constituency": "Nongthymmai (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Charles_Pyngrope"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-nongkrem",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nongkrem (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Ardent Miller Basaiawmoit",
+    "since": "2023-03-02",
+    "party": "VPP",
+    "constituency": "Nongkrem (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ardent_Miller_Basaiawmoit"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-sohiong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Sohiong (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Synshar Lyngdoh Thabah",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "constituency": "Sohiong (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Synshar_Lyngdoh_Thabah",
+    "notes": "Switched from UDP to BJP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mawphlang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mawphlang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Matthew Beyondstar Kurbah",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "constituency": "Mawphlang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Matthew_Beyondstar_Kurbah",
+    "notes": "Switched from UDP to BJP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mawsynram",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mawsynram (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Ollan Singh Suin",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "constituency": "Mawsynram (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ollan_Singh_Suin",
+    "notes": "Switched from UDP to BJP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-shella",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Shella (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Balajied Kupar Synrem",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "constituency": "Shella (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Balajied_Kupar_Synrem",
+    "notes": "Switched from UDP to BJP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-pynursla",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pynursla (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Prestone Tynsong",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Pynursla (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Prestone_Tynsong",
+    "notes": "Deputy Chief Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-sohra",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Sohra (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Gavin Miguel Mylleim",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Sohra (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gavin_Miguel_Mylleim",
+    "notes": "PDF merged with NPP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mawkynrew",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mawkynrew (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Banteidor Lyngdoh",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Mawkynrew (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Banteidor_Lyngdoh",
+    "notes": "PDF merged with NPP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mairang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mairang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Metbah Lyngdoh",
+    "since": "2023-03-02",
+    "party": "UDP",
+    "constituency": "Mairang (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Metbah_Lyngdoh",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mawthadraishan",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mawthadraishan (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Shakliar Warjri",
+    "since": "2023-03-02",
+    "party": "HSPDP",
+    "constituency": "Mawthadraishan (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shakliar_Warjri"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-nongstoin",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nongstoin (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Gabriel Wahlang",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Nongstoin (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gabriel_Wahlang",
+    "notes": "Switched from INC to NPP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-rambrai-jyrngam",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Rambrai-Jyrngam (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Remington Gabil Momin",
+    "since": "2023-03-02",
+    "party": "IND",
+    "constituency": "Rambrai-Jyrngam (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Remington_Gabil_Momin"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mawshynrut",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mawshynrut (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Methodius Dkhar",
+    "since": "2023-03-02",
+    "party": "HSPDP",
+    "constituency": "Mawshynrut (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Methodius_Dkhar",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-ranikor",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ranikor (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Pius Marwein",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "constituency": "Ranikor (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pius_Marwein",
+    "notes": "Switched from UDP to BJP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mawkyrwat",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mawkyrwat (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Renikton Lyngdoh Tongkhar",
+    "since": "2023-03-02",
+    "party": "UDP",
+    "constituency": "Mawkyrwat (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Renikton_Lyngdoh_Tongkhar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-kharkutta",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kharkutta (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Rupert Momin",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Kharkutta (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rupert_Momin"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mendipathar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mendipathar (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Marthon J. Sangma",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Mendipathar (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Marthon_J._Sangma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-resubelpara",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Resubelpara (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Timothy J. Shira",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Resubelpara (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Timothy_J._Shira",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-bajengdoba",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bajengdoba (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Pongseng Marak",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Bajengdoba (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pongseng_Marak"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-songsak",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Songsak (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Mukul Sangma",
+    "since": "2023-03-02",
+    "party": "AITC",
+    "constituency": "Songsak (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mukul_Sangma",
+    "notes": "Leader of Opposition"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-rongjeng",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Rongjeng (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Jim M. Sangma",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Rongjeng (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jim_M._Sangma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-williamnagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Williamnagar (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Marcuise N. Marak",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Williamnagar (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Marcuise_N._Marak",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-raksamgre",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Raksamgre (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Limison D. Sangma",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Raksamgre (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Limison_D._Sangma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-tikrikilla",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tikrikilla (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Jimmy D. Sangma",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Tikrikilla (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jimmy_D._Sangma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-phulbari",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Phulbari",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Abu Taher Mondal",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Phulbari",
+    "wikipedia": "https://en.wikipedia.org/wiki/Abu_Taher_Mondal"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-rajabala",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Rajabala",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Mizanur Rahman Kazi",
+    "since": "2023-03-02",
+    "party": "AITC",
+    "constituency": "Rajabala",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mizanur_Rahman_Kazi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-selsella",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Selsella (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Arbinstone B. Marak",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Selsella (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Arbinstone_B._Marak"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-dadenggre",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Dadenggre (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Rupa M. Marak",
+    "since": "2023-03-02",
+    "party": "AITC",
+    "constituency": "Dadenggre (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rupa_M._Marak"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-north-tura",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "North Tura (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Thomas A. Sangma",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "North Tura (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thomas_A._Sangma",
+    "notes": "Speaker"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-south-tura",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "South Tura (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Conrad Sangma",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "South Tura (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Conrad_Sangma",
+    "notes": "Chief Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-rangsakona",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Rangsakona (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Subir Marak",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Rangsakona (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Subir_Marak"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-ampati",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ampati (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Miani D Shira",
+    "since": "2023-03-02",
+    "party": "AITC",
+    "constituency": "Ampati (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Miani_D_Shira"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-mahendraganj",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mahendraganj (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Sanjay A. Sangma",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Mahendraganj (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sanjay_A._Sangma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-salmanpara",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Salmanpara (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Ian Botham K. Sangma",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Salmanpara (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ian_Botham_K._Sangma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-gambegre",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Gambegre (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Mehtab Chandee Agitok Sangma",
+    "since": "2024-11-23",
+    "party": "NPP",
+    "constituency": "Gambegre (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mehtab_Chandee_Agitok_Sangma",
+    "notes": "BYPOLL:2024-11-23; won after Saleng A. Sangma (INC) was elected to 18th Lok Sabha"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-dalu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Dalu (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Brening A. Sangma",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Dalu (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Brening_A._Sangma",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-rongara-siju",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Rongara Siju (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Rakkam A Sangma",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Rongara Siju (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rakkam_A_Sangma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-chokpot",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chokpot (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Sengchim N. Sangma",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "constituency": "Chokpot (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sengchim_N._Sangma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-mla-baghmara",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Baghmara (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-electorate",
+   "holder": {
+    "name": "Kartush R. Marak",
+    "since": "2023-03-02",
+    "party": "IND",
+    "constituency": "Baghmara (ST)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kartush_R._Marak"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/11th_Meghalaya_Assembly"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": []
+}

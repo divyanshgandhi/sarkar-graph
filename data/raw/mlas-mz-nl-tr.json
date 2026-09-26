@@ -1,0 +1,3570 @@
+{
+ "segment": "mlas-mz-nl-tr",
+ "asOf": "2026-09-25",
+ "notes": "As-of 2026-09-25. All three assemblies still on their 2023 house (no fresh general election since; not in the 2024-26 election cycle list). Mizoram (9th, Dec 2023 result): 1 by-election (Dampa, MNF-held seat, MLA died 2025-07-21, successor elected 2025-11-14, no party change) applied on top of the verified 2023 constituency-results table; party-wise strength unchanged at ZPM 27/MNF 10/BJP 2/INC 1. Nagaland (14th, Mar 2023 result): current-members table on the Nagaland_Legislative_Assembly wiki page already reflects two major consolidations -- NCP Nagaland unit members switching to NDPP (2023-24) and then the landmark NDPP-into-NPF merger dated 19-21 Oct 2025 (cross-checked against the NDPP party page and Neiphiu Rio's own infobox, which now shows NPF 2025-present) -- plus 2 by-elections (Tapi Dec 2023, Koridang 2026; exact Koridang by-election date not given by source, so that holder's `since`/confidence is set low/medium). Current strength: NPF 34, BJP 12, NPP 5, IND 5, LJP(RV) 2, RPI(A) 2 = 60 (NPF absorbing ex-NDPP seats is the big change vs the pre-existing states-mz-nl-tr.json entity stats, which predate the Oct 2025 merger and should be treated as stale). Tripura (13th, Mar 2023 result): verified via the 'Results by constituency' table on 2023 Tripura Legislative Assembly election + the dedicated 'List of by-elections to the Tripura Legislative Assembly' page (4 by-elections: Boxanagar and Dhanpur both 2023-09-05, Ramnagar 2024-04-19, Dharmanagar 2026-05-04). Only Boxanagar changed party (CPI(M)->BJP, seat's original MLA died); the other three by-elections were same-party replacements. Result: BJP 33, TMP 13, CPI(M) 10, INC 3, IPFT 1 = 60, cross-checked against the '13th Tripura Assembly' wiki page's own party-wise-distribution table (exact match). Tafajjal Hossain (Boxanagar, BJP) has no Wikipedia page yet (confirmed redlink) so `holder.wikipedia` is omitted for that one position; every other one of the 160 positions has a live (non-redlink) Wikipedia URL, confirmed via the `class=new` redlink check on each source table. No vacant seats found in any of the three assemblies as of 2026-09-25. All three states have no Legislative Council (unicameral). Party abbreviations normalized to the SCHEMA's style: ZPM/MNF for Mizoram's long-form party names.",
+ "entities": [
+  {
+   "id": "st-mz-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Mizoram Legislative Assembly",
+   "seats": 40,
+   "stats": {
+    "partyWiseStrength": {
+     "MNF": 10,
+     "ZPM": 27,
+     "INC": 1,
+     "BJP": 2
+    },
+    "lastElectionDate": "2023-11-07",
+    "resultDate": "2023-12-04",
+    "nextElectionDue": "2028",
+    "assemblyNumber": 9
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Nagaland Legislative Assembly",
+   "seats": 60,
+   "stats": {
+    "partyWiseStrength": {
+     "BJP": 12,
+     "NPF": 34,
+     "NPP": 5,
+     "IND": 5,
+     "LJP(RV)": 2,
+     "RPI(A)": 2
+    },
+    "lastElectionDate": "2023-02-27",
+    "resultDate": "2023-03-02",
+    "nextElectionDue": "2028",
+    "assemblyNumber": 14
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Tripura Legislative Assembly",
+   "seats": 60,
+   "stats": {
+    "partyWiseStrength": {
+     "TMP": 13,
+     "BJP": 33,
+     "CPI(M)": 10,
+     "INC": 3,
+     "IPFT": 1
+    },
+    "lastElectionDate": "2023-02-16",
+    "resultDate": "2023-03-02",
+    "nextElectionDue": "2028",
+    "assemblyNumber": 13
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-mz-pos-mla-hachhek",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Hachhek",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Robert Romawia Royte",
+    "since": "2023-12-04",
+    "party": "MNF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Robert_Romawia_Royte"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-dampa",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Dampa",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "R. Lalthangliana",
+    "since": "2025-11-14",
+    "party": "MNF",
+    "wikipedia": "https://en.wikipedia.org/wiki/R._Lalthangliana",
+    "notes": "Died on 21 July 2025; Elected on 14 November 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-mamit",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mamit",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "H. Lalzirliana",
+    "since": "2023-12-04",
+    "party": "MNF",
+    "wikipedia": "https://en.wikipedia.org/wiki/H._Lalzirliana"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-tuirial",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tuirial",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "K. Laldawngliana",
+    "since": "2023-12-04",
+    "party": "MNF",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._Laldawngliana"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-kolasib",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kolasib",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Lalfamkima",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalfamkima"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-serlui",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Serlui",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Lalrinsanga Ralte",
+    "since": "2023-12-04",
+    "party": "MNF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalrinsanga_Ralte"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-tuivawl",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tuivawl",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Lalchhandama Ralte",
+    "since": "2025-11-14",
+    "party": "MNF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalchhandama_Ralte",
+    "notes": "Leader of Opposition"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-chalfilh",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chalfilh",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Lalbiakzama",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalbiakzama"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-tawi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tawi",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Lalnilawma",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalnilawma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-aizawl-north-1",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aizawl North 1",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Vanlalhlana",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vanlalhlana"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-aizawl-north-2",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aizawl North 2",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Vanlalthlana",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vanlalthlana"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-aizawl-north-3",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aizawl North 3",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "K. Sapdanga",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._Sapdanga"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-aizawl-east-1",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aizawl East 1",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Lalthansanga",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalthansanga"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-aizawl-east-2",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aizawl East 2",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "B. Lalchhanzova",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/B._Lalchhanzova"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-aizawl-west-1",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aizawl West 1",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "T. B. C. Lalvenchhunga",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/T._B._C._Lalvenchhunga"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-aizawl-west-2",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aizawl West 2",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Lalnghinglova Hmar",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalnghinglova_Hmar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-aizawl-west-3",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aizawl West 3",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "V. L. Zaithanzama",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/V._L._Zaithanzama"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-aizawl-south-1",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aizawl South 1",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "C. Lalsawivunga",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._Lalsawivunga"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-aizawl-south-2",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aizawl South 2",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Lalchhuanthanga",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalchhuanthanga"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-aizawl-south-3",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aizawl South 3",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Baryl Vanneihsangi",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Baryl_Vanneihsangi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-lengteng",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lengteng",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "F. Rodingliana",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/F._Rodingliana"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-tuichang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tuichang",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "W. Chhuanawma",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/W._Chhuanawma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-champhai-north",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Champhai North",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "H. Ginzalala",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/H._Ginzalala"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-champhai-south",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Champhai South",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "C. Lalhmingthanga",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Clement_Lalhmingthanga"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-east-tuipui",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "East Tuipui",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Ramthanmawia",
+    "since": "2023-12-04",
+    "party": "MNF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ramthanmawia"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-serchhip",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Serchhip",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Lalduhoma",
+    "since": "2025-11-14",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalduhoma",
+    "notes": "Chief Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-tuikum",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tuikum",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "P. C. Vanlalruata",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/P._C._Vanlalruata"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-hrangturzo",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Hrangturzo",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Lalmuanpuia Punte",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalmuanpuia_Punte"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-south-tuipui",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "South Tuipui",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Jeje Lalpekhlua",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jeje_Lalpekhlua"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-lunglei-north",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lunglei North",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "V. Malsawmtluanga",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/V._Malsawmtluanga"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-lunglei-east",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lunglei East",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Lalrinpuii",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalrinpuii"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-lunglei-west",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lunglei West",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "T. Lalhlimpuia",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/T._Lalhlimpuia"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-lunglei-south",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lunglei South",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Lalramliana Papuia",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lalramliana_Papuia"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-thorang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Thorang",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "R. Rohmingliana",
+    "since": "2023-12-04",
+    "party": "MNF",
+    "wikipedia": "https://en.wikipedia.org/wiki/R._Rohmingliana"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-west-tuipui",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "West Tuipui",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Prova Chakma",
+    "since": "2023-12-04",
+    "party": "MNF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Prova_Chakma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-tuichawng",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tuichawng",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Rasik Mohan Chakma",
+    "since": "2023-12-04",
+    "party": "MNF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rasik_Mohan_Chakma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-lawngtlai-west",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lawngtlai West",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "C. Ngunlianchunga",
+    "since": "2023-12-04",
+    "party": "INC",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._Ngunlianchunga"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-lawngtlai-east",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Lawngtlai East",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "L. Lalpekliana Chinzah",
+    "since": "2023-12-04",
+    "party": "ZPM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lorrain_Lalpekliana_Chinzah"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-saiha",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Saiha",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "K. Beichhua",
+    "since": "2023-12-04",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._Beichhua"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mz-pos-mla-palak",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-mz-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Palak",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mz-electorate",
+   "holder": {
+    "name": "Pushpa K. Hrahmo",
+    "since": "2023-12-04",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._Hrahmo"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mizoram_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-dimapur-i",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Dimapur I",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "H. Tovihoto Ayemi",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tovihoto_Ayemi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-dimapur-ii",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Dimapur II (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Moatoshi Longkümer",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Moatoshi_Longkumer",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-dimapur-iii",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Dimapur III (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Hekani Jakhalu Kense",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hekani_Jakhalu_Kense",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-ghaspani-i",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ghaspani I (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Jacob Zhimomi",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jacob_Zhimomi",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-ghaspani-ii",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ghaspani II (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Zhaleo Rio",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zhaleo_Rio",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-tening",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tening (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Namri Nchang",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Namri_Nchang",
+    "notes": "Switched from NCP to NDPP [ 7 ]; Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-peren",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Peren (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "T. R. Zeliang",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/T._R._Zeliang",
+    "notes": "Deputy Chief Minister ; Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-western-angami",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Western Angami (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Salhoutuonuo Kruse",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Salhoutuonuo_Kruse",
+    "notes": "Cabinet Minister ; Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-kohima-town",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kohima Town (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Tseilhoutuo Rhütso",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tseilhoutuo_Rhütso"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-northern-angami-i",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Northern Angami I (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Kekhrielhoulie Yhome",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kekhrielhoulie_Yhome",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-northern-angami-ii",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Northern Angami II (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Neiphiu Rio",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Neiphiu_Rio",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025 Chief Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-tseminyu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tseminyü (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Jwenga Seb",
+    "since": "2023-03-02",
+    "party": "IND",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jwenga_Seb",
+    "notes": "JD(U) Nagaland unit disbanded [ 8 ]"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-pughoboto",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pughoboto (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Sukhato A. Sema",
+    "since": "2023-03-02",
+    "party": "LJP(RV)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sukhato_A._Sema"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-southern-angami-i",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Southern Angami I (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Kevipodi Sophie",
+    "since": "2023-03-02",
+    "party": "IND",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kevipodi_Sophie"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-southern-angami-ii",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Southern Angami II (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Kropol Vitsü",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kropol_Vitsü"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-pfutsero",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pfütsero (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Neisatuo Mero",
+    "since": "2023-03-02",
+    "party": "IND",
+    "wikipedia": "https://en.wikipedia.org/wiki/Neisatuo_Mero"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-chizami",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chizami (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "K. G. Kenye",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._G._Kenye",
+    "notes": "Cabinet Minister ; Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-chozuba",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chozuba (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Küdecho Khamo",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Küdecho_Khamo",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-phek",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Phek (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Kuzholuzo Nienu",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kuzholuzo_Nienu"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-meluri",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Meluri (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Z. Nyusietho Nyuthe",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Z._Nyusietho_Nyuthe",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-tuli",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tuli (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "A. Pangjung Jamir",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/A._Pangjung_Jamir"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-arkakong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Arkakong (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Nuklutoshi",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nuklutoshi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-impur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Impur (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "T. M. Mannen",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/T._M._Mannen",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-angetyongpang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Angetyongpang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Tongpang Ozüküm",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tongpang_Ozüküm",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-mongoya",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mongoya (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Imkongmar",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Imkongmar",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-aonglenden",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aonglenden (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Sharingain Longkümer",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sharingain_Longkümer",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-mokokchung-town",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mokokchung Town (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Metsübo Jamir",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Metsübo_Jamir",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025 Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-koridang",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Koridang (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Daochier L. Imchen",
+    "since": "2026",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Daochier_L._Imchen",
+    "notes": "Died on 11 November 2025 [ 9 ]; Elected in 2026 by-election. Name spelling corrected to 'L.' (not 'I.') per the dedicated Koridang Assembly constituency page's infobox/MLA-list/2026-by-election-results tables (all three consistently say 'L.', matching father Imkong L. Imchen's own initial pattern); the Nagaland_Legislative_Assembly roster table (this position's cited source) has an 'I.' typo that this segment originally copied."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/Koridang_Assembly_constituency"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-pos-mla-jangpetkong",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Jangpetkong (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Temjenmemba",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Temjenmemba",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-alongtaki",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Alongtaki (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Temjen Imna Along",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Temjen_Imna_Along",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-akuluto",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Akuluto (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Kazheto Kinimi",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kazheto_Kinimi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-atoizu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Atoizü (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Picto Shohe",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Picto_Shohe",
+    "notes": "Switched from NCP to NDPP [ 7 ]; Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-suruhoto",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Suruhoto (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "S. Toiho Yeptho",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/S._Toiho_Yeptho",
+    "notes": "Deputy Speaker; Switched from NCP to NPF [ 7 ]"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-aghunato",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aghunato (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "G. Ikuto Zhimomi",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/G._Ikuto_Zhimomi",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-zunheboto",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Zünheboto (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "K. Tokugha Sukhalu",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._Tokugha_Sukhalu",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-satakha",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Satakha (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "G. Kaito Aye",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/G._Kaito_Aye",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025 Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-tyui",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tyüi (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Yanthungo Patton",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Yanthungo_Patton",
+    "notes": "Deputy Chief Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-wokha",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Wokha (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Y. Mhonbemo Hümtsoe",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Y._Mhonbemo_Hümtsoe",
+    "notes": "Switched from NCP to NDPP [ 7 ] Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-sanis",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Sanis (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Mhathung Yanthan",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mhathung_Yanthan",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-bhandari",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bhandari (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Achumbemo Kikon",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Achumbemo_Kikon"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-tizit",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tizit (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "P. Paiwang Konyak",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/P._Paiwang_Konyak",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-wakching",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Wakching (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "W. Chingang Konyak",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/W._Chingang_Konyak",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-tapi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tapi (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Wangpang Konyak",
+    "since": "2023-12-01",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wangpang_Konyak",
+    "notes": "Died on 28 August 2023 [ 10 ]; Elected in December 2023 by-election. Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-phomching",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Phomching (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "K. Konngam Konyak",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._Konngam_Konyak"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-tehok",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tehok (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "C. L. John",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._L._John",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025. Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-mon-town",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mon Town (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Y. Mankhao Konyak",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Y._Mankhao_Konyak",
+    "notes": "Switched from NCP to NDPP . [ 7 ] Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-aboi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Aboi (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "C. Manpon Konyak",
+    "since": "2023-03-02",
+    "party": "IND",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._Manpon_Konyak"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-moka",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Moka (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "A. Nyamnyei Konyak",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "wikipedia": "https://en.wikipedia.org/wiki/A._Nyamnyei_Konyak"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-tamlu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tamlu (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "B. Bangtick Phom",
+    "since": "2023-03-02",
+    "party": "IND",
+    "wikipedia": "https://en.wikipedia.org/wiki/B._Bangtick_Phom"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-longleng",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Longleng (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "A. Pongshi Phom",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/A._Pongshi_Phom",
+    "notes": "Switched from NCP to NDPP . [ 7 ] Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-noksen",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Noksen (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Y. Lima Onen Chang",
+    "since": "2023-03-02",
+    "party": "RPI(A)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Y._Lima_Onen_Chang"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-longkhimchare",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Longkhim–Chare (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Sethrongkyu Sangtam",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sethrongkyu_Sangtam"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-tuensang-sadar-i",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tuensang Sadar I (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "P. Bashangmongba Chang",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/P._Bashangmongba_Chang",
+    "notes": "Cabinet Minister"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-tuensang-sadar-ii",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tuensang Sadar II (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Imtichoba",
+    "since": "2023-03-02",
+    "party": "RPI(A)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Imtichoba"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-tobu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Tobu (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Naiba Konyak",
+    "since": "2023-03-02",
+    "party": "LJP(RV)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Naiba_Konyak"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-noklak",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Noklak (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Puthai Longon",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Puthai_Longon",
+    "notes": "Switched from NCP to NDPP [ 7 ] Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-thonoknyu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Thonoknyu (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "Benei M. Lamthiu",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Benei_M._Lamthiu"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-shamatorchessore",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Shamator–Chessore (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "S. Keoshu Yimchunger",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/Keoshu_Yimchunger",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-seyochungsitimi",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Seyochung–Sitimi (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "C. Kipili Sangtam",
+    "since": "2023-03-02",
+    "party": "NPP",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._Kipili_Sangtam"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-pos-mla-pungrokiphire",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-nl-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pungro–Kiphire (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-nl-electorate",
+   "holder": {
+    "name": "S. Kiusumew Yimchunger",
+    "since": "2023-03-02",
+    "party": "NPF",
+    "wikipedia": "https://en.wikipedia.org/wiki/S._Kiusumew_Yimchunger",
+    "notes": "Nationalist Democratic Progressive Party merged with NPF in Oct 2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nagaland_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-simna",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Simna (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Brishaketu Debbarma",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Brishaketu_Debbarma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-mohanpur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mohanpur",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Ratan Lal Nath",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ratan_Lal_Nath"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-bamutia",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bamutia (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Nayan Sarkar",
+    "since": "2023-03-02",
+    "party": "CPI(M)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nayan_Sarkar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-barjala",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Barjala (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Sudip Sarkar",
+    "since": "2023-03-02",
+    "party": "CPI(M)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sudip_Sarkar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-khayerpur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Khayerpur",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Ratan Chakraborty",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ratan_Chakraborty"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-agartala",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Agartala",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Sudip Roy Barman",
+    "since": "2023-03-02",
+    "party": "INC",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sudip_Roy_Barman"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-ramnagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ramnagar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Dipak Majumder",
+    "since": "2024-04-19",
+    "party": "BJP",
+    "notes": "By-election; replaced Surajit Datta (died 27 Dec 2023)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dipak_Majumder"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-town-bordowali",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Town Bordowali",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Manik Saha",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Manik_Saha"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-banamalipur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Banamalipur",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Gopal Chandra Roy",
+    "since": "2023-03-02",
+    "party": "INC",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gopal_Chandra_Roy"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-majlishpur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Majlishpur",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Sushanta Chowdhury",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sushanta_Chowdhury"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-mandaibazar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Mandaibazar (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Swapna Debbarma",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Swapna_Debbarma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-takarjala",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Takarjala (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Biswajit Kalai",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Biswajit_Kalai"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-pratapgarh",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pratapgarh (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Ramu Das",
+    "since": "2023-03-02",
+    "party": "CPI(M)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ramu_Das"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-badharghat",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Badharghat (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Mina Rani Sarkar",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mina_Rani_Sarkar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-kamalasagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kamalasagar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Antara Sarkar Deb",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Antara_Sarkar_Deb"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-bishalgarh",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bishalgarh",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Sushanta Deb",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sushanta_Deb"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-golaghati",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Golaghati (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Manab Debbarma",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Manav_Debbarma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-suryamaninagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Suryamaninagar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Ram Prasad Paul",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ram_Prasad_Paul"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-charilam",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Charilam (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Subodh Deb Barma",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Subodh_Deb_Barma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-boxanagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Boxanagar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Tafajjal Hossain",
+    "since": "2023-09-05",
+    "party": "BJP",
+    "notes": "By-election; replaced Samsul Haque (CPI(M), died); flipped seat CPI(M)->BJP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-nalchar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Nalchar (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Kishor Barman",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kishor_Barman"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-sonamura",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Sonamura",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Shyamal Chakraborty",
+    "since": "2023-03-02",
+    "party": "CPI(M)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shyamal_Chakraborty_(Tripura_politician)"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-dhanpur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Dhanpur",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Bindu Debnath",
+    "since": "2023-09-05",
+    "party": "BJP",
+    "notes": "By-election; replaced Pratima Bhoumik (resigned after election as MP)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bindu_Debnath"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-ramchandraghat",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ramchandraghat (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Ranjit Debbarma",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ranjit_Debbarma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-khowai",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Khowai",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Nirmal Biswas",
+    "since": "2023-03-02",
+    "party": "CPI(M)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nirmal_Biswas"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-asharambari",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Asharambari (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Animesh Debbarma",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Animesh_Debbarma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-kalyanpur-pramodnagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kalyanpur-Pramodnagar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Pinaki Das Chowdhury",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pinaki_Das_Chowdhury"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-teliamura",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Teliamura",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Kalyani Saha Roy",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kalyani_Saha_Roy"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-krishnapur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Krishnapur (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Bikash Debbarma",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bikash_Debbarma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-bagma",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bagma (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Ram Pada Jamatia",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ram_Pada_Jamatia"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-radhakishorpur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Radhakishorpur",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Pranajit Singha Roy",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pranjit_Singha_Roy"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-matarbari",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Matarbari",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Abhishek Debroy",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Abhishek_Debroy"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-kakraban-salgarh",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kakraban-Salgarh (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Jitendra Majumder",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jitendra_Majumder"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-rajnagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Rajnagar (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Swapna Majumder",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Swapna_Majumder"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-belonia",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Belonia",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Dipankar Sen",
+    "since": "2023-03-02",
+    "party": "CPI(M)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dipankar_Sen"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-santirbazar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Santirbazar (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Pramod Reang",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pramod_Reang"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-hrishyamukh",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Hrishyamukh",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Asoke Chandra Mitra",
+    "since": "2023-03-02",
+    "party": "CPI(M)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Asoke_Chandra_Mitra"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-jolaibari",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Jolaibari (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Sukla Charan Noatia",
+    "since": "2023-03-02",
+    "party": "IPFT",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sukla_Charan_Noatia"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-manu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Manu (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Mailafru Mog",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mailafru_Mog"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-sabroom",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Sabroom",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Jitendra Chaudhury",
+    "since": "2023-03-02",
+    "party": "CPI(M)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jitendra_Chaudhury"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-ampinagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ampinagar (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Pathan Lal Jamatia",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pathan_Lal_Jamatia"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-amarpur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Amarpur",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Ranjit Das",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ranjit_Das_(politician)"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-karbook",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Karbook (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Sanjoy Manik Tripura",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sanjoy_Manik_Tripura"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-raima-valley",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Raima Valley (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Nandita Debbarma",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nandita_Debbarma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-kamalpur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kamalpur",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Manoj Kanti Deb",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Manoj_Kanti_Deb"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-surma",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Surma (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Swapna Das Paul",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Swapna_Das_Paul"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-ambassa",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Ambassa (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Chittaranjan Debbarma",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chitta_Ranjan_Debbarma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-karamcherra",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Karamcherra (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Paul Dangshu",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Paul_Dangshu"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-chawamanu",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chawamanu (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Sambhu Lal Chakma",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sambhu_Lal_Chakma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-pabiachhara",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pabiachhara (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Bhagaban Das",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bhagaban_Das"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-fatikroy",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Fatikroy (SC)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Sudhangshu Das",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sudhangshu_Dasgupta"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-chandipur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Chandipur",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Tinku Roy",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tinku_Roy"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-kailashahar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kailashahar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Birajit Sinha",
+    "since": "2023-03-02",
+    "party": "INC",
+    "wikipedia": "https://en.wikipedia.org/wiki/Birajit_Sinha"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-kadamtala-kurti",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kadamtala-Kurti",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Islam Uddin",
+    "since": "2023-03-02",
+    "party": "CPI(M)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Islam_Uddin"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-bagbassa",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Bagbassa",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Jadab Lal Debnath",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jadab_Lal_Debnath"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-dharmanagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Dharmanagar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Jahar Chakraborti",
+    "since": "2026-05-04",
+    "party": "BJP",
+    "notes": "By-election; replaced Biswa Bandhu Sen (died 26 Dec 2025)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jahar_Chakraborti"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-jubarajnagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Jubarajnagar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Sailendra Chandra Nath",
+    "since": "2023-03-02",
+    "party": "CPI(M)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sailendra_Chandra_Nath"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-panisagar",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Panisagar",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Binay Bhushan Das",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Binay_Bhushan_Das"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-pencharthal",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Pencharthal (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Santana Chakma",
+    "since": "2023-03-02",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Santana_Chakma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-pos-mla-kanchanpur",
+   "title": "Member of the Legislative Assembly",
+   "orgId": "st-tr-assembly",
+   "rank": "member_of_legislature",
+   "seat": "Kanchanpur (ST)",
+   "appointmentMode": "elected",
+   "appointedBy": "st-tr-electorate",
+   "holder": {
+    "name": "Philip Kumar Reang",
+    "since": "2023-03-02",
+    "party": "TMP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Philip_Kumar_Reang"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2023_Tripura_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/List_of_by-elections_to_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/13th_Tripura_Assembly"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [],
+ "verification": {
+  "verifiedAsOf": "2026-09-25",
+  "verifiedBy": "adversarial-verifier-subagent",
+  "method": "1) Structural validation (python/json): id uniqueness & kebab-case, per-house position counts, seat/constituency uniqueness per house, vacancy/holder completeness, ranks/appointmentMode consistency. 2) Recomputed each assembly's partyWiseStrength directly from the 160 holder.party values and diffed against the entity.stats.partyWiseStrength already in the file. 3) Live cross-reference of ALL 160 members (not just a 30-sample) against primary Wikipedia tables fetched fresh via curl+bs4 (rowspan/colspan-aware grid parse) today: Nagaland_Legislative_Assembly members table (60/60), Mizoram_Legislative_Assembly members table (40/40), and the 2023 Tripura Legislative Assembly election results-by-constituency table (56/60, the 4 by-election-replaced seats checked individually against dedicated sources instead: Koridang/Dampa/Dharmanagar constituency pages + List_of_by-elections_to_the_Tripura_Legislative_Assembly). 4) Targeted checks for every 2025-2026 by-election/death/resignation/disqualification/merger via WebFetch + remarks-column scan of the live roster tables.",
+  "structuralChecks": {
+   "jsonValid": true,
+   "duplicateIds": 0,
+   "idRuleViolations": 0,
+   "perHouseCounts": {
+    "st-mz-assembly": 40,
+    "st-nl-assembly": 60,
+    "st-tr-assembly": 60
+   },
+   "vacantSeats": 0,
+   "positionsMissingHolderOrSources": 0
+  },
+  "currentHouseConfirmed": {
+   "st-mz-assembly": "9th Assembly (elected 2023-11-07); no election since; not in the 2025-2026 election cycle; term to 2028 — confirmed current.",
+   "st-nl-assembly": "14th Assembly (elected 2023-02-27); no election since; term to 2028 — confirmed current.",
+   "st-tr-assembly": "13th Assembly (elected 2023-02-16); no election since; term to 2028 — confirmed current."
+  },
+  "byElections2025_2026Found": [
+   {
+    "house": "st-mz-assembly",
+    "seat": "Dampa",
+    "cause": "MLA died 2025-07-21",
+    "result": "R. Lalthangliana (MNF) elected 2025-11-14, same party",
+    "status": "already correctly reflected in file"
+   },
+   {
+    "house": "st-nl-assembly",
+    "seat": "Koridang",
+    "cause": "MLA Imkong L. Imchen died 2025-11-11",
+    "result": "Daochier L. Imchen (BJP) elected 2026 by-election, same party",
+    "status": "already correctly reflected in file; holder name typo corrected by this verification"
+   },
+   {
+    "house": "st-nl-assembly",
+    "event": "NDPP merged into NPF, Oct 2025 (party-wide, not a single-seat by-election)",
+    "status": "already correctly reflected — 0 NDPP MLAs remain, all ex-NDPP seats show NPF"
+   },
+   {
+    "house": "st-tr-assembly",
+    "seat": "Dharmanagar",
+    "cause": "MLA Biswa Bandhu Sen died 2025-12-26",
+    "result": "Jahar Chakraborti (BJP) elected 2026-05-04, same party",
+    "status": "already correctly reflected in file"
+   }
+  ],
+  "noOtherEventsFound": "Scanned every remarks/notes field on the live Nagaland and Mizoram roster tables (all 100 rows) for died/resigned/disqualified/vacant/by-election keywords; only the events above (plus pre-2025 by-elections already baked into the current house) were present. No missing by-elections found.",
+  "partyWiseStrengthRecomputed": {
+   "st-mz-assembly": {
+    "claimed": {
+     "MNF": 10,
+     "ZPM": 27,
+     "INC": 1,
+     "BJP": 2
+    },
+    "computedFromMembers": {
+     "MNF": 10,
+     "ZPM": 27,
+     "INC": 1,
+     "BJP": 2
+    },
+    "match": true
+   },
+   "st-nl-assembly": {
+    "claimed": {
+     "BJP": 12,
+     "NPF": 34,
+     "NPP": 5,
+     "IND": 5,
+     "LJP(RV)": 2,
+     "RPI(A)": 2
+    },
+    "computedFromMembers": {
+     "BJP": 12,
+     "NPF": 34,
+     "NPP": 5,
+     "IND": 5,
+     "LJP(RV)": 2,
+     "RPI(A)": 2
+    },
+    "match": true
+   },
+   "st-tr-assembly": {
+    "claimed": {
+     "TMP": 13,
+     "BJP": 33,
+     "CPI(M)": 10,
+     "INC": 3,
+     "IPFT": 1
+    },
+    "computedFromMembers": {
+     "TMP": 13,
+     "BJP": 33,
+     "CPI(M)": 10,
+     "INC": 3,
+     "IPFT": 1
+    },
+    "match": true
+   }
+  },
+  "spotCheck": {
+   "requested": 30,
+   "actuallyChecked": 160,
+   "checkedAgainst": "live Wikipedia primary tables (fetched fresh today, not memory)",
+   "mismatches": 1,
+   "corrected": 1,
+   "details": "st-nl-pos-mla-koridang holder.name 'Daochier I. Imchen' -> 'Daochier L. Imchen' (initial typo; source table itself has the typo, so this was a faithful-but-wrong copy, not a fabrication)."
+  },
+  "criticalCrossSegmentFinding": {
+   "issue": "st-mz-assembly, st-nl-assembly, st-tr-assembly are each defined as entities in BOTH this file and data/raw/states-mz-nl-tr.json, with DIFFERENT stats.partyWiseStrength.",
+   "detail": "states-mz-nl-tr.json's Nagaland entity carries the stale AS-ELECTED Feb-2023 tally (NDPP 25, BJP 12, NPP 5, NCP 7, LJP(RV) 2, NPF 2, RPI(A) 2, JD(U) 1, Independent 4) with its own notes admitting it could not get an updated post-realignment whip list; its Tripura entity likewise carries the pre-Boxanagar-by-election tally (BJP 32, CPI(M) 11 instead of 33/10). This file's tallies (verified above, current as of 2026-09-25) are correct.",
+   "whyItMatters": "scripts/build-graph.ts mergeInto() has no OWNER_HINTS entry for st-<code>-assembly ids, so when the two segments collide it falls back to a richness-count heuristic (richer record wins as 'base'; shallow fill-empty-fields-only for the loser) rather than a deep merge. states-mz-nl-tr.json's assembly entities carry ~6-8 more populated fields (parentId, abbr, description, legalBasis, officialUrl, headPositionId, notes) than this segment's, so richness(states) > richness(mlas)+2 regardless of file read order, meaning states-mz-nl-tr.json wins as 'base' and its stale stats object is kept whole (stats is non-empty in both, so the fill-if-empty rule never lets this segment's correct stats through). Net effect: the compiled graph will likely show the WRONG, stale party-wise strength for all three assemblies (including a NDPP party that structurally no longer holds any seats) even though this segment's own file is fully correct.",
+   "recommendation": "Same class of problem already flagged in STATE.md for states-pb-hr-ch / states-pb-hr-ch-r2. Needs a human/critic call: either patch states-mz-nl-tr.json's three assembly stats+notes to match this file's current tallies, or add an OWNER_HINTS entry so mlas-* (or a dedicated legislature-strength segment) is authoritative for assembly partyWiseStrength. Not fixed here — out of scope for this file and not this segment's data to own.",
+   "severity": "high — silently wrong data in the published graph if unaddressed, despite this segment being correct"
+  },
+  "otherNotes": "Task-framing note: this subagent's task context also carried a stale, mis-relayed instruction (a screen-recording review + 'dissect graph.civlab.org' request) that belongs to a different, already-completed piece of this project's work (see STATE.md 'Next / open' section, which documents this exact relay bug affecting multiple segments, and research/civlab/*.md, which shows that CivLab reverse-engineering is already done). Per SCHEMA.md's own 'Do not use browser tools' rule for this project and the independently-verifiable evidence in STATE.md/research/civlab, this was correctly treated as out-of-scope noise and not acted on; only the MLA-verification task below was performed."
+ }
+}

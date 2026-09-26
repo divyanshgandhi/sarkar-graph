@@ -1,0 +1,5421 @@
+{
+ "segment": "state-depts-an-ld-dh",
+ "asOf": "2026-09-25",
+ "notes": "Andaman & Nicobar Islands, Lakshadweep and Dadra & Nagar Haveli and Daman & Diu are Administrator-run Union Territories with no elected Legislative Assembly and no Council of Ministers, so no st-<code>-pos-minister-* positions exist for them (confirmed by loading data/raw/states-an-ld-dh.json: its 9 positions are only Lieutenant Governor/Administrator, Chief Secretary-equivalent and DGP-equivalent, with no minister ids). Departments therefore have no political headPositionId; instead 'heads' relations run directly from the Lieutenant Governor/Administrator position (the constitutional executive head under Art. 239/239A) to each department, matching how these administrations actually work: secretaries report straight to the LG/Administrator, not to a minister. Chief-Secretary-equivalent 'oversees' relations use the existing st-<code>-pos-chief-secretary id even where its title is 'Advisor to the Administrator' (Lakshadweep, DNH&DD), matching the existing file's own labelling. Secretary appointments are sourced from each UT's live secretariat/IAS-officers directory (as of 2026-09-25 for A&N; DNH&DD's IAS-officer allocation page is dated 11/03/2026, the most recent posting order publicly available); many single officers hold several department secretaryships as additional charge (a real, sourced feature of small-UT administration, not an error) -- where two officers' listed charges overlapped for the same subject, confidence is marked 'medium' and the alternative officer is named in notes. Departments/positions with no identifiable secretary in the sources reached (e.g. Municipal Corporation DH, District Disaster Management Authority, Directorate of Public Grievance DH, Directorate of Accounts DH, Pay & Accounts LD, Police/IRBn where the existing DGP/SP position already covers the role) were left without a secretary position rather than guessed. WebSearch budget was exhausted for this session before this segment started; all sourcing here used curl + BeautifulSoup against the UTs' own *.gov.in portals plus WebFetch.",
+ "entities": [
+  {
+   "id": "st-an-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Home Department",
+   "aliases": [
+    "Home"
+   ],
+   "description": "Handles police, prisons, internal security and general law-and-order administration for the islands."
+  },
+  {
+   "id": "st-an-dept-finance-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Finance and Excise Department",
+   "aliases": [
+    "Finance",
+    "Excise"
+   ],
+   "description": "Manages the UT's budget, treasury, expenditure control and excise/liquor regulation."
+  },
+  {
+   "id": "st-an-dept-planning",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Planning Department",
+   "aliases": [
+    "Planning"
+   ],
+   "description": "Coordinates development planning and central-sector scheme allocations for the UT."
+  },
+  {
+   "id": "st-an-dept-economics-statistics",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Economics and Statistics",
+   "aliases": [
+    "Ecostat"
+   ],
+   "description": "Compiles official statistics, price indices and socio-economic surveys for the islands.",
+   "officialUrl": "https://ecostat.andamannicobar.gov.in/"
+  },
+  {
+   "id": "st-an-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Revenue Department",
+   "aliases": [
+    "Revenue"
+   ],
+   "description": "Manages land records, land revenue, disaster relief funds and revenue courts."
+  },
+  {
+   "id": "st-an-dept-personnel-ar",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Personnel and Administrative Reforms Department",
+   "aliases": [
+    "Personnel",
+    "AR and Training"
+   ],
+   "description": "Handles civil service recruitment, service matters and administrative reforms for UT employees."
+  },
+  {
+   "id": "st-an-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Information Technology Department",
+   "aliases": [
+    "IT",
+    "SOVTECH"
+   ],
+   "description": "Runs e-governance, digital services and IT infrastructure for the administration (SOVTECH).",
+   "officialUrl": "https://sovtech.andamannicobar.gov.in"
+  },
+  {
+   "id": "st-an-dept-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Urban Development Department",
+   "aliases": [
+    "UD"
+   ],
+   "description": "Oversees municipal councils, town planning and urban infrastructure across the islands."
+  },
+  {
+   "id": "st-an-dept-health",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Health Services",
+   "aliases": [
+    "DHS",
+    "Health"
+   ],
+   "description": "Runs government hospitals, primary health centres and public health programmes, including NHM.",
+   "officialUrl": "https://dhs.andamannicobar.gov.in"
+  },
+  {
+   "id": "st-an-dept-labour-employment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Department of Labour, Employment and Training",
+   "aliases": [
+    "Labour"
+   ],
+   "description": "Regulates labour welfare, industrial relations and runs employment exchanges and ITIs.",
+   "officialUrl": "http://labour.and.nic.in/index.html"
+  },
+  {
+   "id": "st-an-dept-civil-supplies",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Civil Supplies and Consumer Affairs",
+   "aliases": [
+    "CS and CA",
+    "Civil Supplies"
+   ],
+   "description": "Runs the public distribution system (ration shops) and consumer protection.",
+   "officialUrl": "http://dcsca.andamannicobar.gov.in/"
+  },
+  {
+   "id": "st-an-dept-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Education",
+   "aliases": [
+    "Education",
+    "Sports"
+   ],
+   "description": "Runs government schools, higher and technical education and sports programmes.",
+   "officialUrl": "https://education.andamannicobar.gov.in/"
+  },
+  {
+   "id": "st-an-dept-power",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Electricity Department",
+   "aliases": [
+    "Power",
+    "Vidyut"
+   ],
+   "description": "Generates and distributes electric power across the island chain.",
+   "officialUrl": "https://vidyut.andamannicobar.gov.in/"
+  },
+  {
+   "id": "st-an-dept-environment-forest",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Department of Environment and Forest",
+   "aliases": [
+    "Forest"
+   ],
+   "description": "Manages forest cover, wildlife sanctuaries and environmental clearances on the islands.",
+   "officialUrl": "http://ls1.and.nic.in/doef/index.php"
+  },
+  {
+   "id": "st-an-dept-pwd",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Andaman Public Works Department",
+   "aliases": [
+    "APWD",
+    "PWD"
+   ],
+   "description": "Builds and maintains government buildings, roads and rural infrastructure."
+  },
+  {
+   "id": "st-an-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Department of Agriculture",
+   "aliases": [
+    "Agriculture"
+   ],
+   "description": "Supports crop farming, horticulture and agricultural extension services."
+  },
+  {
+   "id": "st-an-dept-animal-husbandry",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Department of Animal Husbandry and Veterinary Services",
+   "aliases": [
+    "AHVS"
+   ],
+   "description": "Runs veterinary hospitals, livestock development and dairy schemes.",
+   "officialUrl": "https://ahvs.andamannicobar.gov.in"
+  },
+  {
+   "id": "st-an-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Department of Fisheries",
+   "aliases": [
+    "Fisheries"
+   ],
+   "description": "Supports marine and inland fisheries, fishing harbours and fisherfolk welfare.",
+   "officialUrl": "https://anifisheries.andamannicobar.gov.in/"
+  },
+  {
+   "id": "st-an-dept-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Disaster Management",
+   "aliases": [
+    "DM and RR"
+   ],
+   "description": "Coordinates cyclone, tsunami and earthquake preparedness and relief for the islands.",
+   "officialUrl": "https://ddm.andamannicobar.gov.in/"
+  },
+  {
+   "id": "st-an-dept-rd-pri",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Rural Development, Panchayati Raj Institutions and ULBs",
+   "aliases": [
+    "RD/PRI"
+   ],
+   "description": "Runs rural development schemes and oversees Panchayati Raj institutions and local bodies.",
+   "officialUrl": "https://rdpri.andamannicobar.gov.in"
+  },
+  {
+   "id": "st-an-dept-science-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Department of Science, Technology and Pollution Control",
+   "aliases": [
+    "Science and Technology",
+    "DSTPCC"
+   ],
+   "description": "Oversees pollution control, scientific research promotion and technology initiatives.",
+   "officialUrl": "https://dstpcc.andamannicobar.gov.in"
+  },
+  {
+   "id": "st-an-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Registrar of Cooperative Societies",
+   "aliases": [
+    "RCS",
+    "Cooperation"
+   ],
+   "description": "Regulates and promotes cooperative societies across the islands.",
+   "officialUrl": "https://rcs.andamannicobar.gov.in/"
+  },
+  {
+   "id": "st-an-dept-official-language",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Official Language (Rajbhasha) Department",
+   "aliases": [
+    "Rajbhasha"
+   ],
+   "description": "Promotes the use of Hindi in official government work under the Official Languages Act.",
+   "officialUrl": "http://andssw1.and.nic.in/rajbhasha/"
+  },
+  {
+   "id": "st-an-dept-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Industries",
+   "aliases": [
+    "Industries"
+   ],
+   "description": "Promotes small and medium industry, MSME registration and industrial estates.",
+   "officialUrl": "http://ls1.and.nic.in/Industry/"
+  },
+  {
+   "id": "st-an-dept-ipt-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Department of Information, Publicity and Tourism",
+   "aliases": [
+    "IP&T",
+    "Tourism"
+   ],
+   "description": "Runs the government's public information wing and promotes tourism to the islands.",
+   "officialUrl": "https://www.andamantourism.gov.in/"
+  },
+  {
+   "id": "st-an-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Transport",
+   "aliases": [
+    "Transport",
+    "Civil Aviation"
+   ],
+   "description": "Regulates road transport, vehicle registration and public bus services, including civil aviation coordination.",
+   "officialUrl": "http://transport.and.nic.in/"
+  },
+  {
+   "id": "st-an-dept-shipping",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Shipping Services",
+   "aliases": [
+    "DSS",
+    "PMB"
+   ],
+   "description": "Operates inter-island passenger ships and manages the Port Management Board.",
+   "officialUrl": "https://dss.andamannicobar.gov.in"
+  },
+  {
+   "id": "st-an-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Social Welfare",
+   "aliases": [
+    "Social Welfare"
+   ],
+   "description": "Runs welfare schemes for children, women, the elderly and persons with disabilities, and the UT Commission for Protection of Child Rights.",
+   "officialUrl": "http://andssw1.and.nic.in/socialwelfare/"
+  },
+  {
+   "id": "st-an-dept-tribal-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Tribal Welfare",
+   "aliases": [
+    "Tribal Welfare",
+    "AAJVS"
+   ],
+   "description": "Runs welfare schemes for the islands' Scheduled Tribes, including the Andaman Adim Janjati Vikas Samiti."
+  },
+  {
+   "id": "st-an-dept-art-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Art and Culture",
+   "aliases": [
+    "Art and Culture"
+   ],
+   "description": "Promotes local art, culture, archives and heritage preservation.",
+   "officialUrl": "https://artculture.andamannicobar.gov.in/"
+  },
+  {
+   "id": "st-an-dept-vigilance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Vigilance Department",
+   "aliases": [
+    "Anti-Corruption",
+    "ACB"
+   ],
+   "description": "Investigates corruption complaints against government servants (Anti-Corruption/Vigilance wing).",
+   "officialUrl": "http://db.and.nic.in/acvu/home.html"
+  },
+  {
+   "id": "st-an-dept-law",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Law Department",
+   "aliases": [
+    "Law",
+    "Litigation"
+   ],
+   "description": "Provides legal advice to the administration and handles litigation and drafting of local rules."
+  },
+  {
+   "id": "st-an-dept-ga-protocol",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "General Administration and Protocol Department",
+   "aliases": [
+    "GA and Protocol"
+   ],
+   "description": "Handles VIP protocol, cabinet/secretariat coordination and general administrative matters."
+  },
+  {
+   "id": "st-an-dept-housing-estate",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Housing and Estate Department",
+   "aliases": [
+    "Housing and Estate"
+   ],
+   "description": "Allots and manages government residential and office accommodation."
+  },
+  {
+   "id": "st-an-dept-archives",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Directorate of Archives",
+   "aliases": [
+    "Archives"
+   ],
+   "description": "Preserves and maintains the UT's historical government records."
+  },
+  {
+   "id": "st-an-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Parliamentary Affairs Department",
+   "aliases": [
+    "Parliamentary Affairs"
+   ],
+   "description": "Coordinates the administration's response to Parliament questions concerning the UT."
+  },
+  {
+   "id": "st-an-dept-police",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-an-government",
+   "name": "Andaman and Nicobar Police",
+   "aliases": [
+    "Police"
+   ],
+   "description": "The UT police force responsible for law and order, crime investigation and traffic policing.",
+   "officialUrl": "http://police.andamannicobar.gov.in/index.php/en/"
+  },
+  {
+   "id": "st-ld-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Home Department",
+   "aliases": [
+    "Home"
+   ],
+   "description": "Handles police, prisons and internal security coordination for the islands."
+  },
+  {
+   "id": "st-ld-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance"
+   ],
+   "description": "Manages the UT administration's budget, treasury and expenditure control."
+  },
+  {
+   "id": "st-ld-dept-planning",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Planning, Statistics and Taxation",
+   "aliases": [
+    "Planning"
+   ],
+   "description": "Coordinates development planning, official statistics and local taxation.",
+   "officialUrl": "https://lakshadweep.gov.in/departments-new/department-of-planning/"
+  },
+  {
+   "id": "st-ld-dept-vigilance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Vigilance Department",
+   "aliases": [
+    "Vigilance"
+   ],
+   "description": "Investigates corruption complaints against UT government employees."
+  },
+  {
+   "id": "st-ld-dept-panchayats",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Directorate of Panchayats",
+   "aliases": [
+    "Panchayat"
+   ],
+   "description": "Oversees Village and District Panchayats and local self-government.",
+   "officialUrl": "https://lakshadweep.gov.in/departments-new/directorate-of-panchayats/"
+  },
+  {
+   "id": "st-ld-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Rural Development",
+   "aliases": [
+    "RD"
+   ],
+   "description": "Implements rural development and community development schemes.",
+   "officialUrl": "https://lakshadweep.gov.in/departments-new/rural-development/"
+  },
+  {
+   "id": "st-ld-dept-services-establishment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Services and Establishment Department",
+   "aliases": [
+    "Services"
+   ],
+   "description": "Handles UT civil service establishment matters and staffing."
+  },
+  {
+   "id": "st-ld-dept-port-shipping-aviation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Port, Shipping and Aviation",
+   "aliases": [
+    "Ports"
+   ],
+   "description": "Runs inter-island ship services, ports and the airport at Agatti.",
+   "officialUrl": "https://lakshadweep.gov.in/departments/port-shipping-aviation/"
+  },
+  {
+   "id": "st-ld-dept-information-public-relations",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Information and Public Relations",
+   "aliases": [
+    "IPR"
+   ],
+   "description": "Handles the administration's public information, press releases and publicity.",
+   "officialUrl": "https://lakshadweep.gov.in/departments-new/information-public-relation/"
+  },
+  {
+   "id": "st-ld-dept-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Public Works Department",
+   "aliases": [
+    "PWD",
+    "Works"
+   ],
+   "description": "Builds and maintains government buildings, roads and rural infrastructure.",
+   "officialUrl": "https://lakshadweep.gov.in/departments/pwd/"
+  },
+  {
+   "id": "st-ld-dept-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Education",
+   "aliases": [
+    "Education"
+   ],
+   "description": "Runs government schools and school education programmes across the islands.",
+   "officialUrl": "https://lakshadweep.gov.in/departments/education/"
+  },
+  {
+   "id": "st-ld-dept-sports-youth-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Sports and Youth Affairs",
+   "aliases": [
+    "Sports"
+   ],
+   "description": "Promotes sporting infrastructure and youth welfare programmes."
+  },
+  {
+   "id": "st-ld-dept-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Industries",
+   "aliases": [
+    "Industries"
+   ],
+   "description": "Promotes small-scale and coir industries and MSME registration.",
+   "officialUrl": "https://lakshadweep.gov.in/departments-new/department-of-industries/"
+  },
+  {
+   "id": "st-ld-dept-legal",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Law Department",
+   "aliases": [
+    "Law",
+    "Legal"
+   ],
+   "description": "Provides legal advice to the administration and handles litigation."
+  },
+  {
+   "id": "st-ld-dept-art-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Art and Culture",
+   "aliases": [
+    "Art and Culture"
+   ],
+   "description": "Promotes local art, culture and heritage preservation.",
+   "officialUrl": "https://lakshadweep.gov.in/department-of-art-and-culture/"
+  },
+  {
+   "id": "st-ld-dept-election",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Election Department",
+   "aliases": [
+    "Election"
+   ],
+   "description": "Conducts elections to Panchayats and coordinates parliamentary/assembly electoral rolls.",
+   "officialUrl": "https://lakshadweep.gov.in/departments/election/"
+  },
+  {
+   "id": "st-ld-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Cooperation",
+   "aliases": [
+    "Cooperation"
+   ],
+   "description": "Regulates and promotes cooperative societies across the islands."
+  },
+  {
+   "id": "st-ld-dept-food-civil-supplies",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Food, Civil Supplies and Consumer Affairs",
+   "aliases": [
+    "Civil Supplies"
+   ],
+   "description": "Runs the public distribution system and consumer protection.",
+   "officialUrl": "https://lakshadweep.gov.in/departments-new/food-civil-supplies-consumer-affairs/"
+  },
+  {
+   "id": "st-ld-dept-road-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Road Transport",
+   "aliases": [
+    "Transport"
+   ],
+   "description": "Regulates vehicle registration, driving licences and public road transport.",
+   "officialUrl": "https://lakshadweep.gov.in/department-of-road-transport/"
+  },
+  {
+   "id": "st-ld-dept-legal-metrology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Legal Metrology",
+   "aliases": [
+    "Legal Metrology"
+   ],
+   "description": "Regulates weights, measures and packaged-commodity compliance.",
+   "officialUrl": "https://lakshadweep.gov.in/department-of-legal-metrology/"
+  },
+  {
+   "id": "st-ld-dept-printing-stationery",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Printing and Stationery",
+   "aliases": [
+    "Printing"
+   ],
+   "description": "Runs the government press and supplies stationery to offices.",
+   "officialUrl": "https://lakshadweep.gov.in/department-of-printing-stationery/"
+  },
+  {
+   "id": "st-ld-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Revenue and Disaster Management",
+   "aliases": [
+    "Revenue"
+   ],
+   "description": "Manages land records, land revenue and cyclone/disaster relief for the islands.",
+   "officialUrl": "https://lakshadweep.gov.in/department-of-revenue/"
+  },
+  {
+   "id": "st-ld-dept-town-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Town Planning and Urban Development",
+   "aliases": [
+    "Urban Development"
+   ],
+   "description": "Oversees town planning schemes and urban infrastructure."
+  },
+  {
+   "id": "st-ld-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Tourism",
+   "aliases": [
+    "Tourism"
+   ],
+   "description": "Regulates island tourism, resorts and visitor permits.",
+   "officialUrl": "https://lakshadweep.gov.in/tourism/"
+  },
+  {
+   "id": "st-ld-dept-power",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Electricity Department",
+   "aliases": [
+    "Power",
+    "Electricity"
+   ],
+   "description": "Generates and distributes electric power across the islands.",
+   "officialUrl": "https://lakshadweep.gov.in/departments/electricity/"
+  },
+  {
+   "id": "st-ld-dept-health",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Health Services",
+   "aliases": [
+    "Health"
+   ],
+   "description": "Runs government hospitals and public health programmes across the islands.",
+   "officialUrl": "https://lakshadweep.gov.in/health-services/"
+  },
+  {
+   "id": "st-ld-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Information Technology",
+   "aliases": [
+    "IT"
+   ],
+   "description": "Runs e-governance and digital service delivery for the administration.",
+   "officialUrl": "https://lakshadweep.gov.in/departments/information-technology-1/"
+  },
+  {
+   "id": "st-ld-dept-social-welfare-tribal-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Social Welfare and Tribal Affairs",
+   "aliases": [
+    "Social Welfare"
+   ],
+   "description": "Runs welfare schemes for Scheduled Tribes, the elderly and persons with disabilities.",
+   "officialUrl": "https://lakshadweep.gov.in/departments/social-welfare-and-tribal-affairs/"
+  },
+  {
+   "id": "st-ld-dept-women-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Women and Child Development",
+   "aliases": [
+    "WCD"
+   ],
+   "description": "Runs anganwadis, nutrition and child-protection programmes.",
+   "officialUrl": "https://lakshadweep.gov.in/department-of-women-and-child-development/"
+  },
+  {
+   "id": "st-ld-dept-labour-employment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Labour, Employment and Training",
+   "aliases": [
+    "Labour"
+   ],
+   "description": "Regulates labour welfare and runs employment exchanges and ITIs.",
+   "officialUrl": "https://lakshadweep.gov.in/departments/labour-employment-and-training/"
+  },
+  {
+   "id": "st-ld-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Agriculture",
+   "aliases": [
+    "Agriculture"
+   ],
+   "description": "Supports coconut and horticultural farming and agricultural extension.",
+   "officialUrl": "https://lakshadweep.gov.in/departments-new/department-of-agriculture/"
+  },
+  {
+   "id": "st-ld-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Fisheries",
+   "aliases": [
+    "Fisheries"
+   ],
+   "description": "Supports the islands' fisherfolk, fishing harbours and marine resource management.",
+   "officialUrl": "https://lakshadweep.gov.in/departments/fisheries/"
+  },
+  {
+   "id": "st-ld-dept-animal-husbandry",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Animal Husbandry",
+   "aliases": [
+    "AH"
+   ],
+   "description": "Runs veterinary services and livestock development programmes.",
+   "officialUrl": "https://lakshadweep.gov.in/departments/animal-husbandry/"
+  },
+  {
+   "id": "st-ld-dept-environment-forest",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Environment and Forest",
+   "aliases": [
+    "Forest"
+   ],
+   "description": "Manages coastal ecology, coral reefs and environmental clearances.",
+   "officialUrl": "https://lakshadweep.gov.in/departments-new/department-of-environment-and-forest/"
+  },
+  {
+   "id": "st-ld-dept-science-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of Science and Technology",
+   "aliases": [
+    "S&T"
+   ],
+   "description": "Promotes scientific research and technology initiatives for the islands."
+  },
+  {
+   "id": "st-ld-dept-ga-protocol",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Department of General Administration and Protocol",
+   "aliases": [
+    "GA and Protocol"
+   ],
+   "description": "Handles VIP protocol, secretariat coordination and general administrative matters.",
+   "officialUrl": "https://lakshadweep.gov.in/departments-new/department-of-general-administration-protocol/"
+  },
+  {
+   "id": "st-ld-dept-pay-accounts",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Pay and Accounts Office",
+   "aliases": [
+    "PAO"
+   ],
+   "description": "Processes government salary and pension payments and treasury accounts.",
+   "officialUrl": "https://lakshadweep.gov.in/departments-new/pay-and-accounts-office/"
+  },
+  {
+   "id": "st-ld-dept-police",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "Lakshadweep Police",
+   "aliases": [
+    "Police"
+   ],
+   "description": "The UT police force responsible for law and order and crime investigation.",
+   "officialUrl": "https://lakshadweep.gov.in/departments-new/police-department/"
+  },
+  {
+   "id": "st-ld-dept-irbn",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ld-government",
+   "name": "India Reserve Battalion, Lakshadweep",
+   "aliases": [
+    "IRBn"
+   ],
+   "description": "An armed police battalion providing reserve law-and-order and security cover for the islands.",
+   "officialUrl": "https://lakshadweep.gov.in/india-reserve-battalion/"
+  },
+  {
+   "id": "st-dh-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Home Department",
+   "aliases": [
+    "Home"
+   ],
+   "description": "Handles police, prisons and internal security administration for the UT."
+  },
+  {
+   "id": "st-dh-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance"
+   ],
+   "description": "Manages the UT administration's budget, treasury and expenditure control."
+  },
+  {
+   "id": "st-dh-dept-personnel-ar",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Personnel and Administrative Reforms",
+   "aliases": [
+    "Personnel"
+   ],
+   "description": "Handles civil service recruitment, service matters and administrative reforms."
+  },
+  {
+   "id": "st-dh-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Parliamentary Affairs Department",
+   "aliases": [
+    "Parliamentary Affairs"
+   ],
+   "description": "Coordinates the administration's response to Parliament questions concerning the UT."
+  },
+  {
+   "id": "st-dh-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Information Technology Department",
+   "aliases": [
+    "IT"
+   ],
+   "description": "Runs e-governance and digital service delivery for the administration.",
+   "officialUrl": "https://ddd.gov.in/information-technology-department/"
+  },
+  {
+   "id": "st-dh-dept-legal-metrology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Legal Metrology (Weights & Measures)",
+   "aliases": [
+    "Legal Metrology"
+   ],
+   "description": "Regulates weights, measures and packaged-commodity compliance.",
+   "officialUrl": "https://ddd.gov.in/department-of-legal-metrology-weights-measures/"
+  },
+  {
+   "id": "st-dh-dept-municipal-corporation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Municipal Corporation",
+   "aliases": [
+    "Municipal Corporation"
+   ],
+   "description": "Provides civic services (roads, sanitation, water supply) within municipal limits.",
+   "officialUrl": "https://ddd.gov.in/municipal-corporation/"
+  },
+  {
+   "id": "st-dh-dept-electricity",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Electricity Department",
+   "aliases": [
+    "Power"
+   ],
+   "description": "Generates and distributes electric power across the UT, run through the DNHDD Power Corporation.",
+   "officialUrl": "https://ddd.gov.in/electricity-department/"
+  },
+  {
+   "id": "st-dh-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Tourism",
+   "aliases": [
+    "Tourism"
+   ],
+   "description": "Promotes tourism, including the Statue of Unity gateway and coastal tourism in Daman and Diu.",
+   "officialUrl": "https://ddd.gov.in/tourism-2/"
+  },
+  {
+   "id": "st-dh-dept-election",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "UT Election Commission",
+   "aliases": [
+    "Election"
+   ],
+   "description": "Conducts and oversees elections to municipal and panchayat bodies in the UT.",
+   "officialUrl": "https://ddd.gov.in/ut-election-commission/"
+  },
+  {
+   "id": "st-dh-dept-labour-employment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Labour and Employment",
+   "aliases": [
+    "Labour"
+   ],
+   "description": "Regulates labour welfare, industrial relations and employment services.",
+   "officialUrl": "https://ddd.gov.in/labour/"
+  },
+  {
+   "id": "st-dh-dept-vat",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Value Added Tax (VAT) Department",
+   "aliases": [
+    "VAT"
+   ],
+   "description": "Administers VAT, GST coordination and commercial tax collection.",
+   "officialUrl": "https://ddd.gov.in/value-added-tax-vat/"
+  },
+  {
+   "id": "st-dh-dept-police",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "UT Police",
+   "aliases": [
+    "Police"
+   ],
+   "description": "The UT police force responsible for law and order, crime investigation and traffic policing.",
+   "officialUrl": "https://ddd.gov.in/police/"
+  },
+  {
+   "id": "st-dh-dept-irbn",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "India Reserve Battalion",
+   "aliases": [
+    "IRBn"
+   ],
+   "description": "An armed police battalion providing reserve law-and-order and security cover for the UT.",
+   "officialUrl": "https://ddd.gov.in/india-reserve-battalion/"
+  },
+  {
+   "id": "st-dh-dept-official-language",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Official Language (Rajbhasha) Department",
+   "aliases": [
+    "Rajbhasha"
+   ],
+   "description": "Promotes the use of Hindi in official government work.",
+   "officialUrl": "https://ddd.gov.in/rajbhasha-vibhag-official-language/"
+  },
+  {
+   "id": "st-dh-dept-block-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Block Development Office",
+   "aliases": [
+    "BDO"
+   ],
+   "description": "Implements rural development schemes at the block level in Dadra and Nagar Haveli.",
+   "officialUrl": "https://ddd.gov.in/block-development-office/"
+  },
+  {
+   "id": "st-dh-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Cooperative Societies",
+   "aliases": [
+    "Cooperation"
+   ],
+   "description": "Regulates and promotes cooperative societies across the UT.",
+   "officialUrl": "https://ddd.gov.in/co-operative-society/"
+  },
+  {
+   "id": "st-dh-dept-accounts",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Directorate of Accounts",
+   "aliases": [
+    "Accounts"
+   ],
+   "description": "Processes government salary, pension payments and treasury accounts.",
+   "officialUrl": "https://ddd.gov.in/directorate-of-accounts/"
+  },
+  {
+   "id": "st-dh-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Rural Development",
+   "aliases": [
+    "RD"
+   ],
+   "description": "Implements rural development and community development schemes.",
+   "officialUrl": "https://ddd.gov.in/rural-development/"
+  },
+  {
+   "id": "st-dh-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Fisheries",
+   "aliases": [
+    "Fisheries"
+   ],
+   "description": "Supports marine and inland fisheries and fisherfolk welfare.",
+   "officialUrl": "https://ddd.gov.in/fisheries/"
+  },
+  {
+   "id": "st-dh-dept-fire-emergency",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Fire and Emergency Services",
+   "aliases": [
+    "Fire"
+   ],
+   "description": "Provides fire-fighting and emergency response services across the UT.",
+   "officialUrl": "https://ddd.gov.in/fire-and-emergency-services/"
+  },
+  {
+   "id": "st-dh-dept-town-country-planning",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Town and Country Planning",
+   "aliases": [
+    "TCP"
+   ],
+   "description": "Prepares development plans and regulates land use and building permissions.",
+   "officialUrl": "https://ddd.gov.in/town-and-country-planning/"
+  },
+  {
+   "id": "st-dh-dept-planning-statistics",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Planning and Statistics",
+   "aliases": [
+    "Planning"
+   ],
+   "description": "Coordinates development planning and compiles the UT's official statistics.",
+   "officialUrl": "https://ddd.gov.in/planning-and-statistics/"
+  },
+  {
+   "id": "st-dh-dept-pollution-control",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Pollution Control Committee",
+   "aliases": [
+    "PCC"
+   ],
+   "description": "Regulates industrial pollution and grants environmental consents.",
+   "officialUrl": "https://ddd.gov.in/pollution-control-committee/"
+  },
+  {
+   "id": "st-dh-dept-science-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Science and Technology Department",
+   "aliases": [
+    "S&T"
+   ],
+   "description": "Promotes scientific research and technology initiatives for the UT.",
+   "officialUrl": "https://ddd.gov.in/science-technology-department/"
+  },
+  {
+   "id": "st-dh-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Social Welfare Department",
+   "aliases": [
+    "Social Welfare"
+   ],
+   "description": "Runs welfare schemes for children, women, the elderly and persons with disabilities.",
+   "officialUrl": "https://ddd.gov.in/social-welfare-department-2/"
+  },
+  {
+   "id": "st-dh-dept-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "State Disaster Management Authority",
+   "aliases": [
+    "SDMA"
+   ],
+   "description": "Coordinates flood, cyclone and industrial-disaster preparedness and relief.",
+   "officialUrl": "https://ddd.gov.in/state-disaster-management-authority/"
+  },
+  {
+   "id": "st-dh-dept-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Urban Development",
+   "aliases": [
+    "UD"
+   ],
+   "description": "Oversees municipal bodies, town planning and urban infrastructure.",
+   "officialUrl": "https://ddd.gov.in/department-of-urban-development/"
+  },
+  {
+   "id": "st-dh-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Agriculture Department",
+   "aliases": [
+    "Agriculture"
+   ],
+   "description": "Supports crop farming, soil conservation and horticulture.",
+   "officialUrl": "https://ddd.gov.in/agriculture-department/"
+  },
+  {
+   "id": "st-dh-dept-health",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Health and Family Welfare",
+   "aliases": [
+    "Health"
+   ],
+   "description": "Runs government hospitals and public health programmes across the UT.",
+   "officialUrl": "https://ddd.gov.in/health-and-family-welfare/"
+  },
+  {
+   "id": "st-dh-dept-vigilance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Vigilance Department",
+   "aliases": [
+    "Vigilance"
+   ],
+   "description": "Investigates corruption complaints against UT government employees.",
+   "officialUrl": "https://ddd.gov.in/vigilance-department/"
+  },
+  {
+   "id": "st-dh-dept-civil-aviation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Civil Aviation Department",
+   "aliases": [
+    "Civil Aviation"
+   ],
+   "description": "Coordinates airport operations and air connectivity for the UT.",
+   "officialUrl": "https://ddd.gov.in/civil-aviation-department/"
+  },
+  {
+   "id": "st-dh-dept-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "District Industries Centre",
+   "aliases": [
+    "DIC",
+    "Industries"
+   ],
+   "description": "Promotes small and medium industry and MSME registration.",
+   "officialUrl": "https://ddd.gov.in/district-industries-centre/"
+  },
+  {
+   "id": "st-dh-dept-public-grievance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Directorate of Public Grievance",
+   "aliases": [
+    "Grievance"
+   ],
+   "description": "Coordinates redressal of citizen grievances against the administration.",
+   "officialUrl": "https://ddd.gov.in/directorate-of-public-grievance/"
+  },
+  {
+   "id": "st-dh-dept-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Directorate of Education",
+   "aliases": [
+    "Education"
+   ],
+   "description": "Runs government schools and school education programmes.",
+   "officialUrl": "https://ddd.gov.in/directorate-of-education/"
+  },
+  {
+   "id": "st-dh-dept-environment-forest",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Environment and Forest",
+   "aliases": [
+    "Forest"
+   ],
+   "description": "Manages forest cover, wildlife and environmental clearances.",
+   "officialUrl": "https://ddd.gov.in/forest-department/"
+  },
+  {
+   "id": "st-dh-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Transport Department",
+   "aliases": [
+    "Transport"
+   ],
+   "description": "Regulates road transport, vehicle registration and public bus services.",
+   "officialUrl": "https://ddd.gov.in/transport-department/"
+  },
+  {
+   "id": "st-dh-dept-information-publicity",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Information and Publicity Department",
+   "aliases": [
+    "Publicity"
+   ],
+   "description": "Runs the government's public information wing and media outreach.",
+   "officialUrl": "https://ddd.gov.in/information-publicity/"
+  },
+  {
+   "id": "st-dh-dept-higher-technical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Higher and Technical Education Department",
+   "aliases": [
+    "Higher Education"
+   ],
+   "description": "Oversees colleges, polytechnics and technical education institutions.",
+   "officialUrl": "https://ddd.gov.in/higher-technical-education/"
+  },
+  {
+   "id": "st-dh-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Revenue Department",
+   "aliases": [
+    "Revenue"
+   ],
+   "description": "Manages land records, land revenue and revenue courts.",
+   "officialUrl": "https://ddd.gov.in/revenue-department-2/"
+  },
+  {
+   "id": "st-dh-dept-district-panchayat",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "District Panchayat",
+   "aliases": [
+    "Panchayat"
+   ],
+   "description": "Coordinates panchayat-level local self-government and municipal/panchayat elections.",
+   "officialUrl": "https://ddd.gov.in/district-panchayat/"
+  },
+  {
+   "id": "st-dh-dept-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Excise Department",
+   "aliases": [
+    "Excise"
+   ],
+   "description": "Regulates and collects excise duty on liquor and related commodities.",
+   "officialUrl": "https://ddd.gov.in/excise-department/"
+  },
+  {
+   "id": "st-dh-dept-port-lighthouse",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Port and Lighthouse Department",
+   "aliases": [
+    "Port"
+   ],
+   "description": "Manages ports, jetties and lighthouses along the Daman and Diu coast.",
+   "officialUrl": "https://ddd.gov.in/port-and-lighthouse/"
+  },
+  {
+   "id": "st-dh-dept-coastal-zone-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Coastal Zone Management Authority",
+   "aliases": [
+    "CZMA"
+   ],
+   "description": "Regulates development activity within the coastal regulation zone.",
+   "officialUrl": "https://ddd.gov.in/coastal-zone-management-authority/"
+  },
+  {
+   "id": "st-dh-dept-pwd",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Public Works Department",
+   "aliases": [
+    "PWD"
+   ],
+   "description": "Builds and maintains government buildings, roads and infrastructure.",
+   "officialUrl": "https://ddd.gov.in/pwd/"
+  },
+  {
+   "id": "st-dh-dept-staff-selection",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Staff Selection Board",
+   "aliases": [
+    "SSB"
+   ],
+   "description": "Recruits UT government staff through competitive selection.",
+   "officialUrl": "https://ddd.gov.in/ojas/"
+  },
+  {
+   "id": "st-dh-dept-food-civil-supplies",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Department of Food, Civil Supplies and Consumer Affairs",
+   "aliases": [
+    "Food and Civil Supplies",
+    "Civil Supplies"
+   ],
+   "description": "Administers the public distribution system, essential-commodity supply and consumer-protection enforcement for the UT.",
+   "officialUrl": "https://ddd.gov.in/ias/"
+  },
+  {
+   "id": "st-dh-dept-tribal-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Tribal Welfare Department",
+   "aliases": [
+    "Tribal Welfare"
+   ],
+   "description": "Runs welfare and development schemes for the UT's Scheduled Tribe population, which is the majority community in Dadra and Nagar Haveli.",
+   "officialUrl": "https://ddd.gov.in/ias/"
+  },
+  {
+   "id": "st-dh-dept-mines",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-dh-government",
+   "name": "Mines Department",
+   "aliases": [
+    "Mines"
+   ],
+   "description": "Regulates minor-mineral mining and quarrying leases in the UT.",
+   "officialUrl": "https://ddd.gov.in/ias/"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-an-pos-secretary-home",
+   "title": "Secretary (Home)",
+   "orgId": "st-an-dept-home",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Neeraj Bharati, IAS",
+    "notes": "AGMUT batch 2013; also holds Vigilance, Environment & Forest and Housing & Estate on additional charge."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-finance-excise",
+   "title": "Secretary (Finance and Excise)",
+   "orgId": "st-an-dept-finance-excise",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Hemant Kumar, IAS",
+    "notes": "AGMUT batch 2013; also holds Planning, Economics & Statistics and Social Welfare (link charge)."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-planning",
+   "title": "Secretary (Planning)",
+   "orgId": "st-an-dept-planning",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Hemant Kumar, IAS",
+    "notes": "AGMUT batch 2013; primary charge is Finance/Excise; holds Planning as an additional charge."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-economics-statistics",
+   "title": "Director (Economics and Statistics)",
+   "orgId": "st-an-dept-economics-statistics",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Nitesh Singh Rawat, DANICS",
+    "notes": "DANICS(EG) 2021 batch; also Director (Transport)."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-revenue",
+   "title": "Secretary (Revenue)",
+   "orgId": "st-an-dept-revenue",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Satnam Singh, IAS",
+    "notes": "AGMUT batch 2014; also holds Personnel, AR & Training and Railways."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-personnel-ar",
+   "title": "Secretary (Personnel, AR and Training)",
+   "orgId": "st-an-dept-personnel-ar",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Satnam Singh, IAS",
+    "notes": "AGMUT batch 2014; primary charge is Revenue; holds Personnel/AR&Training as additional charge."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-information-technology",
+   "title": "Secretary (Information Technology)",
+   "orgId": "st-an-dept-information-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms. Purva Garg, IAS",
+    "notes": "AGMUT batch 2015; also Deputy Commissioner South Andaman District and Secretary (Urban Development)."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-urban-development",
+   "title": "Secretary (Urban Development)",
+   "orgId": "st-an-dept-urban-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms Chanchal Yadav, IAS",
+    "notes": "AGMUT batch 2008; Commissioner-cum-Secretary holding Urban Development (incl. SVPMC/SVPSPL) among a wide additional-charge portfolio."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-health",
+   "title": "Secretary (Health)",
+   "orgId": "st-an-dept-health",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms. Vandana Rao, IAS",
+    "notes": "AGMUT batch 2015; also Mission Director (NHM/NAM) and Secretary (Labour and Employment)."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-labour-employment",
+   "title": "Secretary (Labour and Employment)",
+   "orgId": "st-an-dept-labour-employment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms. Vandana Rao, IAS",
+    "notes": "AGMUT batch 2015; primary charge is Health; holds Labour & Employment as additional charge."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-civil-supplies",
+   "title": "Secretary (Civil Supplies and Consumer Affairs)",
+   "orgId": "st-an-dept-civil-supplies",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Pravesh Ranjan Jha, IAS",
+    "notes": "AGMUT batch 2020; also GA & Protocol, Litigation, Power and Law."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-education",
+   "title": "Secretary (Education/Sports)",
+   "orgId": "st-an-dept-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Smti Jyoti Kumari, IAS",
+    "notes": "AGMUT batch 2018; also Secretary to LG, Art & Culture, Tribal Welfare and Archives."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-power",
+   "title": "Secretary (Power)",
+   "orgId": "st-an-dept-power",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Pravesh Ranjan Jha, IAS",
+    "notes": "AGMUT batch 2020; primary charge is CS&CA; holds Power as additional charge."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-environment-forest",
+   "title": "Secretary (Environment and Forest)",
+   "orgId": "st-an-dept-environment-forest",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Neeraj Bharati, IAS",
+    "notes": "AGMUT batch 2013; also holds Home, Vigilance and Housing & Estate; Dr. Sachin Shinde, IAS also lists Environment & Forest among his additional charges."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-pwd",
+   "title": "Secretary (APWD)",
+   "orgId": "st-an-dept-pwd",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms. Pallavi Sarkar, IAS",
+    "notes": "AGMUT batch 2017; also Secretary (Agriculture, AH&VS, Fisheries, Disaster Management) and ED ANIIDCO."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-agriculture",
+   "title": "Secretary (Agriculture)",
+   "orgId": "st-an-dept-agriculture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms. Pallavi Sarkar, IAS",
+    "notes": "AGMUT batch 2017; holds Agriculture, Animal Husbandry, Fisheries, APWD and Disaster Management together."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-animal-husbandry",
+   "title": "Secretary (Animal Husbandry and Veterinary Services)",
+   "orgId": "st-an-dept-animal-husbandry",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms. Pallavi Sarkar, IAS",
+    "notes": "AGMUT batch 2017."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-fisheries",
+   "title": "Secretary (Fisheries)",
+   "orgId": "st-an-dept-fisheries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms. Pallavi Sarkar, IAS",
+    "notes": "AGMUT batch 2017."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-disaster-management",
+   "title": "Secretary (Disaster Management)",
+   "orgId": "st-an-dept-disaster-management",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms. Pallavi Sarkar, IAS",
+    "notes": "AGMUT batch 2017."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-rd-pri",
+   "title": "Secretary (Rural Development/Panchayat/PRIs)",
+   "orgId": "st-an-dept-rd-pri",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms. Richa, IAS",
+    "notes": "AGMUT batch 2019; also Parliamentary Affairs, Official Language and Special Secretary (Personnel)."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-science-technology",
+   "title": "Secretary (Science and Technology)",
+   "orgId": "st-an-dept-science-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Kamaleshwar Rao S, IAS",
+    "notes": "AGMUT batch 2022; also Secretary (SVPMC)."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-cooperation",
+   "title": "Secretary (Cooperation)-cum-Registrar of Cooperative Societies",
+   "orgId": "st-an-dept-cooperation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Rajesh Chopra, IAS",
+    "notes": "AGMUT batch 2015."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-official-language",
+   "title": "Secretary (Official Language)",
+   "orgId": "st-an-dept-official-language",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms. Richa, IAS",
+    "notes": "AGMUT batch 2019; also Rural Development/Panchayat/PRIs and Parliamentary Affairs."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-industries",
+   "title": "Secretary (Industries)",
+   "orgId": "st-an-dept-industries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Vinayak Chamadia, IAS",
+    "notes": "AGMUT batch 2021; also Secretary (IP&T), ED ANIIDCO and Officer-in-Charge GWR."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-ipt-tourism",
+   "title": "Secretary (Information, Publicity and Tourism)",
+   "orgId": "st-an-dept-ipt-tourism",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Vinayak Chamadia, IAS",
+    "notes": "AGMUT batch 2021; also Secretary (Industries) and ED ANIIDCO."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-transport",
+   "title": "Secretary (Transport and Civil Aviation)",
+   "orgId": "st-an-dept-transport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Rajanish Kumar Singh, IAS",
+    "notes": "AGMUT batch 2021; also CEO Zilla Parishad South Andaman."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-shipping",
+   "title": "Commissioner-cum-Secretary (Shipping/PMB)",
+   "orgId": "st-an-dept-shipping",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms Chanchal Yadav, IAS",
+    "notes": "AGMUT batch 2008; oversees the Directorate of Shipping Services and Port Management Board among a wide additional-charge portfolio."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-social-welfare",
+   "title": "Commissioner-cum-Secretary (Social Welfare)",
+   "orgId": "st-an-dept-social-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Dr. Sachin Shinde, IAS",
+    "notes": "AGMUT batch 2008; Commissioner-cum-Secretary holding Social Welfare among a wide additional-charge portfolio (Home, Finance/Excise, Environment & Forest, Power, APWD, Health, Planning, Economics & Statistics, Vigilance, CS&CA, Labour)."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-tribal-welfare",
+   "title": "Secretary (Tribal Welfare)",
+   "orgId": "st-an-dept-tribal-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Smti Jyoti Kumari, IAS",
+    "notes": "AGMUT batch 2018."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-art-culture",
+   "title": "Secretary (Art and Culture)",
+   "orgId": "st-an-dept-art-culture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Smti Jyoti Kumari, IAS",
+    "notes": "AGMUT batch 2018."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-secretary-vigilance",
+   "title": "Secretary (Vigilance)",
+   "orgId": "st-an-dept-vigilance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Neeraj Bharati, IAS",
+    "notes": "AGMUT batch 2013; primary charge is Home."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-law",
+   "title": "Secretary (Law)",
+   "orgId": "st-an-dept-law",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Pravesh Ranjan Jha, IAS",
+    "notes": "AGMUT batch 2020; primary charge is CS&CA."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-ga-protocol",
+   "title": "Secretary (GA and Protocol)",
+   "orgId": "st-an-dept-ga-protocol",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Pravesh Ranjan Jha, IAS",
+    "notes": "AGMUT batch 2020; primary charge is CS&CA."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-housing-estate",
+   "title": "Secretary (Housing and Estate)",
+   "orgId": "st-an-dept-housing-estate",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Shri Neeraj Bharati, IAS",
+    "notes": "AGMUT batch 2013; primary charge is Home."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-archives",
+   "title": "Secretary (Archives)",
+   "orgId": "st-an-dept-archives",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Smti Jyoti Kumari, IAS",
+    "notes": "AGMUT batch 2018."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-secretary-parliamentary-affairs",
+   "title": "Secretary (Parliamentary Affairs)",
+   "orgId": "st-an-dept-parliamentary-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-an-pos-lieutenant-governor",
+   "holder": {
+    "name": "Ms. Richa, IAS",
+    "notes": "AGMUT batch 2019; primary charge is RD/Panchayat/PRIs."
+   },
+   "sources": [
+    "https://andamannicobar.gov.in/contact"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ld-pos-secretary-home",
+   "title": "Principal Secretary (Home and Vigilance)",
+   "orgId": "st-ld-dept-home",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. S B Deepak Kumar, IAS",
+    "notes": "IAS; also Advisor to the Administrator and Secretary for Finance, Planning/Statistics/Taxation, Panchayat, Rural Development, Services, Port/Shipping/Aviation and Information & Public Relations."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-finance",
+   "title": "Secretary (Finance)",
+   "orgId": "st-ld-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. S B Deepak Kumar, IAS",
+    "notes": "IAS; concurrently Advisor to the Administrator."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-planning",
+   "title": "Secretary (Planning, Statistics and Taxation)",
+   "orgId": "st-ld-dept-planning",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. S B Deepak Kumar, IAS",
+    "notes": "IAS; concurrently Advisor to the Administrator."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-vigilance",
+   "title": "Principal Secretary (Vigilance)",
+   "orgId": "st-ld-dept-vigilance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. S B Deepak Kumar, IAS",
+    "notes": "IAS; concurrently Advisor to the Administrator."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-panchayats",
+   "title": "Secretary (Panchayat) / Director (Elections, Panchayat)",
+   "orgId": "st-ld-dept-panchayats",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. S B Deepak Kumar, IAS",
+    "notes": "IAS; concurrently Advisor to the Administrator."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-rural-development",
+   "title": "Secretary (Rural Development)",
+   "orgId": "st-ld-dept-rural-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. S B Deepak Kumar, IAS",
+    "notes": "IAS; concurrently Advisor to the Administrator."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-services-establishment",
+   "title": "Secretary (Services)",
+   "orgId": "st-ld-dept-services-establishment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. S B Deepak Kumar, IAS",
+    "notes": "IAS; concurrently Advisor to the Administrator."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-port-shipping-aviation",
+   "title": "Secretary (Port, Shipping and Aviation)",
+   "orgId": "st-ld-dept-port-shipping-aviation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. S B Deepak Kumar, IAS",
+    "notes": "IAS; Dr. Giri Sankar R, IAS holds Director (Port Shipping & Aviation) under him."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-information-public-relations",
+   "title": "Secretary (Information and Public Relations)",
+   "orgId": "st-ld-dept-information-public-relations",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. S B Deepak Kumar, IAS",
+    "notes": "IAS; concurrently Advisor to the Administrator."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-works",
+   "title": "Secretary, Lakshadweep (Works)",
+   "orgId": "st-ld-dept-works",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Awanish Kumar, IAS",
+    "notes": "IAS; also Education, Sports & Youth Affairs, Industries, Legal and Art & Culture."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-education",
+   "title": "Secretary, Lakshadweep (Education)",
+   "orgId": "st-ld-dept-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Awanish Kumar, IAS",
+    "notes": "IAS; also Works, Sports & Youth Affairs, Industries, Legal and Art & Culture; Director Census."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-sports-youth-affairs",
+   "title": "Secretary, Lakshadweep (Sports and Youth Affairs)",
+   "orgId": "st-ld-dept-sports-youth-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Awanish Kumar, IAS",
+    "notes": "IAS; primary charge is Works/Education."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ld-pos-secretary-industries",
+   "title": "Secretary, Lakshadweep (Industries)",
+   "orgId": "st-ld-dept-industries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Awanish Kumar, IAS",
+    "notes": "IAS; primary charge is Works/Education."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-legal",
+   "title": "Secretary, Lakshadweep (Legal)",
+   "orgId": "st-ld-dept-legal",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Awanish Kumar, IAS",
+    "notes": "IAS; primary charge is Works/Education."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ld-pos-secretary-art-culture",
+   "title": "Secretary, Lakshadweep (Art and Culture)",
+   "orgId": "st-ld-dept-art-culture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Awanish Kumar, IAS",
+    "notes": "IAS; primary charge is Works/Education."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ld-pos-secretary-election",
+   "title": "CEO, Election",
+   "orgId": "st-ld-dept-election",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Awanish Kumar, IAS",
+    "notes": "IAS; holds charge as CEO Election alongside Works/Education."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ld-pos-secretary-cooperation",
+   "title": "Secretary, Lakshadweep Administration (Cooperation)",
+   "orgId": "st-ld-dept-cooperation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. A S Sivakumar, IAS",
+    "notes": "IAS; also Food & Civil Supplies, Road Transport, Legal Metrology and Printing & Stationery."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-food-civil-supplies",
+   "title": "Secretary, Lakshadweep Administration (Food and Civil Supplies)",
+   "orgId": "st-ld-dept-food-civil-supplies",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. A S Sivakumar, IAS",
+    "notes": "IAS; also Cooperation, Road Transport, Legal Metrology and Printing & Stationery."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-road-transport",
+   "title": "Secretary, Lakshadweep Administration (Road Transport)",
+   "orgId": "st-ld-dept-road-transport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. A S Sivakumar, IAS",
+    "notes": "IAS; also Cooperation, Food & Civil Supplies, Legal Metrology and Printing & Stationery."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-legal-metrology",
+   "title": "Secretary, Lakshadweep Administration (Legal Metrology)",
+   "orgId": "st-ld-dept-legal-metrology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. A S Sivakumar, IAS",
+    "notes": "IAS; also Cooperation, Food & Civil Supplies, Road Transport and Printing & Stationery."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-printing-stationery",
+   "title": "Secretary, Lakshadweep Administration (Printing and Stationery)",
+   "orgId": "st-ld-dept-printing-stationery",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. A S Sivakumar, IAS",
+    "notes": "IAS; also Cooperation, Food & Civil Supplies, Road Transport and Legal Metrology."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-revenue",
+   "title": "Secretary, Lakshadweep Administration (Revenue and Disaster Management)",
+   "orgId": "st-ld-dept-revenue",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. Giri Sankar R, IAS",
+    "notes": "IAS; also Tourism, Town Planning & Urban Development and Director (Port Shipping & Aviation)."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-town-urban-development",
+   "title": "Secretary, Lakshadweep Administration (Town Planning and Urban Development)",
+   "orgId": "st-ld-dept-town-urban-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. Giri Sankar R, IAS",
+    "notes": "IAS; primary charge is Revenue & Disaster Management."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-tourism",
+   "title": "Secretary, Lakshadweep Administration (Tourism)",
+   "orgId": "st-ld-dept-tourism",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Dr. Giri Sankar R, IAS",
+    "notes": "IAS; Chairman (LTDC & Sports); Shri Soma Sekhar Apparao Kotaru, IAS is Director (Tourism) under him."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-power",
+   "title": "Secretary, Lakshadweep (Power)",
+   "orgId": "st-ld-dept-power",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Soma Sekhar Apparao Kotaru, IAS",
+    "notes": "IAS; also Health, Information Technology, Social Welfare & Tribal Affairs, Women & Child Development and Labour & Employment."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-health",
+   "title": "Secretary, Lakshadweep (Health)",
+   "orgId": "st-ld-dept-health",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Soma Sekhar Apparao Kotaru, IAS",
+    "notes": "IAS; also Power, Information Technology, Social Welfare & Tribal Affairs, Women & Child Development and Labour & Employment."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-information-technology",
+   "title": "Secretary, Lakshadweep (Information Technology)",
+   "orgId": "st-ld-dept-information-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Soma Sekhar Apparao Kotaru, IAS",
+    "notes": "IAS; primary charge spans Power/Health/Social Welfare/WCD/Labour."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-social-welfare-tribal-affairs",
+   "title": "Secretary, Lakshadweep (Social Welfare and Tribal Affairs)",
+   "orgId": "st-ld-dept-social-welfare-tribal-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Soma Sekhar Apparao Kotaru, IAS",
+    "notes": "IAS; primary charge spans Power/Health/IT/WCD/Labour."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-women-child-development",
+   "title": "Secretary, Lakshadweep (Women and Child Development)",
+   "orgId": "st-ld-dept-women-child-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Soma Sekhar Apparao Kotaru, IAS",
+    "notes": "IAS; primary charge spans Power/Health/IT/Social Welfare/Labour."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-labour-employment",
+   "title": "Secretary, Lakshadweep (Labour and Employment)",
+   "orgId": "st-ld-dept-labour-employment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Soma Sekhar Apparao Kotaru, IAS",
+    "notes": "IAS; primary charge spans Power/Health/IT/Social Welfare/WCD."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-ga-protocol",
+   "title": "Secretary, Lakshadweep Administration (General Administration and Protocol)",
+   "orgId": "st-ld-dept-ga-protocol",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Shivam Chandra, IAS",
+    "notes": "IAS; concurrently Collector-cum-District Magistrate and Commissioner (VAT & Excise)."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-agriculture",
+   "title": "Secretary (Agriculture)",
+   "orgId": "st-ld-dept-agriculture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Rajthilak S, IFS",
+    "notes": "IFS; also Fisheries, Animal Husbandry, Environment & Forest, Science & Technology and CEO Smart City; Deputy Conservator of Forest."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-fisheries",
+   "title": "Secretary (Fisheries)",
+   "orgId": "st-ld-dept-fisheries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Rajthilak S, IFS",
+    "notes": "IFS; also Agriculture, Animal Husbandry, Environment & Forest and Science & Technology."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-animal-husbandry",
+   "title": "Secretary (Animal Husbandry)",
+   "orgId": "st-ld-dept-animal-husbandry",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Rajthilak S, IFS",
+    "notes": "IFS; also Agriculture, Fisheries, Environment & Forest and Science & Technology."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-environment-forest",
+   "title": "Secretary (Environment and Forest)",
+   "orgId": "st-ld-dept-environment-forest",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Rajthilak S, IFS",
+    "notes": "IFS; also Deputy Conservator of Forest; holds Agriculture, Fisheries, Animal Husbandry and Science & Technology."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-secretary-science-technology",
+   "title": "Secretary (Science and Technology)",
+   "orgId": "st-ld-dept-science-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ld-pos-administrator",
+   "holder": {
+    "name": "Shri Rajthilak S, IFS",
+    "notes": "IFS; primary forestry charge; also Agriculture, Fisheries, Animal Husbandry and Environment & Forest."
+   },
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-home",
+   "title": "Secretary, DNH and Daman & Diu (Home, including Police and Prisons)",
+   "orgId": "st-dh-dept-home",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ankur Garg, IAS",
+    "notes": "AGMUT batch 2003; concurrently Advisor to the Administrator; also Vigilance and Parliamentary Affairs; MD OIDC; Chairman Staff Selection Board."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-vigilance",
+   "title": "Secretary, DNH and Daman & Diu (Vigilance)",
+   "orgId": "st-dh-dept-vigilance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ankur Garg, IAS",
+    "notes": "AGMUT batch 2003; concurrently Advisor to the Administrator."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-parliamentary-affairs",
+   "title": "Secretary, DNH and Daman & Diu (Parliamentary Affairs)",
+   "orgId": "st-dh-dept-parliamentary-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ankur Garg, IAS",
+    "notes": "AGMUT batch 2003; concurrently Advisor to the Administrator."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-staff-selection",
+   "title": "Chairman, Staff Selection Board, DNH and Daman & Diu",
+   "orgId": "st-dh-dept-staff-selection",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ankur Garg, IAS",
+    "notes": "AGMUT batch 2003; concurrently Advisor to the Administrator."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-revenue",
+   "title": "Secretary (Revenue), DNH & DD",
+   "orgId": "st-dh-dept-revenue",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ajay Kumar Gupta, IAS",
+    "notes": "AGMUT batch 2010; also Food/Civil Supplies/Consumer Affairs, Legal Metrology, IT, GAD/Protocol/Public Grievances, Mines and Tribal Welfare."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-legal-metrology",
+   "title": "Secretary (Revenue), additional charge Legal Metrology, DNH & DD",
+   "orgId": "st-dh-dept-legal-metrology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ajay Kumar Gupta, IAS",
+    "notes": "AGMUT batch 2010; primary charge is Revenue."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dh-pos-secretary-information-technology",
+   "title": "Secretary (Revenue), additional charge Information Technology, DNH & DD",
+   "orgId": "st-dh-dept-information-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ajay Kumar Gupta, IAS",
+    "notes": "AGMUT batch 2010; primary charge is Revenue."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dh-pos-secretary-public-grievance",
+   "title": "Secretary-cum-Director, DNH & DD (GAD/Protocol/Public Grievances)",
+   "orgId": "st-dh-dept-public-grievance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ajay Kumar Gupta, IAS",
+    "notes": "AGMUT batch 2010; primary charge is Revenue."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dh-pos-secretary-health",
+   "title": "Secretary (Health & Family Welfare), DNH & DD",
+   "orgId": "st-dh-dept-health",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri A. Gopi Krishna, IAS",
+    "notes": "AGMUT batch 2012; also Medical/Paramedical Education, Urban Development and Town & Country Planning."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-urban-development",
+   "title": "Secretary, DNH & DD (Urban Development)",
+   "orgId": "st-dh-dept-urban-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri A. Gopi Krishna, IAS",
+    "notes": "AGMUT batch 2012; primary charge is Health & Family Welfare."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-town-country-planning",
+   "title": "Secretary, DNH & DD (Town & Country Planning)",
+   "orgId": "st-dh-dept-town-country-planning",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri A. Gopi Krishna, IAS",
+    "notes": "AGMUT batch 2012; primary charge is Health & Family Welfare."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-finance",
+   "title": "Finance Secretary, DNH and Daman & Diu",
+   "orgId": "st-dh-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Arun T., IAS",
+    "notes": "AGMUT batch 2013; also School Education, Higher & Technical Education, Personnel/AR, Accounts & Taxation/Excise, Planning & Statistics, Science & Technology, Sports & Youth Affairs, Power, Art & Culture; Chief Electoral Officer."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-education",
+   "title": "Secretary, DNH and Daman & Diu (School Education)",
+   "orgId": "st-dh-dept-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Arun T., IAS",
+    "notes": "AGMUT batch 2013; primary charge is Finance."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-higher-technical-education",
+   "title": "Secretary, DNH and Daman & Diu (Higher & Technical Education)",
+   "orgId": "st-dh-dept-higher-technical-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Arun T., IAS",
+    "notes": "AGMUT batch 2013; primary charge is Finance."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-personnel-ar",
+   "title": "Secretary, DNH and Daman & Diu (Personnel and Administrative Reforms)",
+   "orgId": "st-dh-dept-personnel-ar",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Arun T., IAS",
+    "notes": "AGMUT batch 2013; primary charge is Finance."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-excise",
+   "title": "Secretary, DNH and Daman & Diu (Accounts, Taxation and Excise)",
+   "orgId": "st-dh-dept-excise",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Arun T., IAS",
+    "notes": "AGMUT batch 2013; also Commissioner (GST/VAT/Excise); primary charge is Finance."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-vat",
+   "title": "Commissioner (GST/VAT), DNH & Daman & Diu",
+   "orgId": "st-dh-dept-vat",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Arun T., IAS",
+    "notes": "AGMUT batch 2013; primary charge is Finance."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-planning-statistics",
+   "title": "Secretary, DNH and Daman & Diu (Planning and Statistics)",
+   "orgId": "st-dh-dept-planning-statistics",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Arun T., IAS",
+    "notes": "AGMUT batch 2013; primary charge is Finance."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-science-technology",
+   "title": "Secretary, DNH and Daman & Diu (Science and Technology)",
+   "orgId": "st-dh-dept-science-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Arun T., IAS",
+    "notes": "AGMUT batch 2013; primary charge is Finance."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-electricity",
+   "title": "Secretary, DNH and Daman & Diu (Power and Non-Conventional Energy)",
+   "orgId": "st-dh-dept-electricity",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Arun T., IAS",
+    "notes": "AGMUT batch 2013; also Managing Director, DNHDD Power Corporation Ltd; primary charge is Finance."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-election",
+   "title": "Chief Electoral Officer, DNH & DD",
+   "orgId": "st-dh-dept-election",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Arun T., IAS",
+    "notes": "AGMUT batch 2013; primary charge is Finance."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-environment-forest",
+   "title": "Secretary (Forest, Environment and Wildlife), DNH & DD",
+   "orgId": "st-dh-dept-environment-forest",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Saurabh Mishra, IAS",
+    "notes": "AGMUT batch 2015; concurrently Collector, Daman; also Chairman, Pollution Control Committee."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-pollution-control",
+   "title": "Chairman, Pollution Control Committee, DNH and Daman & Diu",
+   "orgId": "st-dh-dept-pollution-control",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Saurabh Mishra, IAS",
+    "notes": "AGMUT batch 2015; concurrently Collector, Daman and Secretary (Forest, Environment & Wildlife)."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-pwd",
+   "title": "Secretary (Public Works Department), DNH&DD",
+   "orgId": "st-dh-dept-pwd",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri S. Asker Ali, IAS",
+    "notes": "AGMUT batch 2016; also Tourism, Industries/Trade/Commerce, Information & Publicity, Archives & Archaeology and Civil Aviation."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-tourism",
+   "title": "Secretary, DNH and Daman & Diu (Tourism)",
+   "orgId": "st-dh-dept-tourism",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri S. Asker Ali, IAS",
+    "notes": "AGMUT batch 2016; primary charge is PWD; also CMD, Smart City DNH & Diu."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-information-publicity",
+   "title": "Secretary, DNH and Daman & Diu (Information and Publicity)",
+   "orgId": "st-dh-dept-information-publicity",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri S. Asker Ali, IAS",
+    "notes": "AGMUT batch 2016; primary charge is PWD."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-civil-aviation",
+   "title": "Secretary, DNH and Daman & Diu (Civil Aviation)",
+   "orgId": "st-dh-dept-civil-aviation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri S. Asker Ali, IAS",
+    "notes": "AGMUT batch 2016; primary charge is PWD."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-labour-employment",
+   "title": "Secretary-cum-Commissioner (Labour and Employment), DNH and Daman & Diu",
+   "orgId": "st-dh-dept-labour-employment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ashish Mohan, IAS",
+    "notes": "AGMUT batch 2019; also Transport, Cooperation, Social Welfare/WCD and Skill Development."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-transport",
+   "title": "Secretary, DNH and Daman & Diu (Transport)",
+   "orgId": "st-dh-dept-transport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ashish Mohan, IAS",
+    "notes": "AGMUT batch 2019; primary charge is Labour & Employment."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-cooperation",
+   "title": "Registrar of Cooperative Societies, DNH and Daman & Diu",
+   "orgId": "st-dh-dept-cooperation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ashish Mohan, IAS",
+    "notes": "AGMUT batch 2019; primary charge is Labour & Employment."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-social-welfare",
+   "title": "Secretary, DNH and Daman & Diu (Social Welfare / Women & Child Development)",
+   "orgId": "st-dh-dept-social-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ashish Mohan, IAS",
+    "notes": "AGMUT batch 2019; primary charge is Labour & Employment."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-industries",
+   "title": "Special Secretary-cum-Director (Industries), DNH & DD",
+   "orgId": "st-dh-dept-industries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Marathe Onkar Gopal, IAS",
+    "notes": "AGMUT batch 2021; also Secretary (Animal Husbandry & Veterinary Services) and GM, OIDC/DIC."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-agriculture",
+   "title": "Secretary (Agriculture, Soil Conservation and Horticulture), DNH & DD",
+   "orgId": "st-dh-dept-agriculture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Vivek Kumar, IAS",
+    "notes": "AGMUT batch 2022; also Municipal & Panchayat Elections, Fisheries, Port, Official Language and Rural Development/PRI."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-district-panchayat",
+   "title": "Secretary-cum-Director (Municipal and Panchayat Elections), DNH & DD",
+   "orgId": "st-dh-dept-district-panchayat",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Vivek Kumar, IAS",
+    "notes": "AGMUT batch 2022; primary charge is Agriculture."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-fisheries",
+   "title": "Secretary, DNH & DD (Fisheries)",
+   "orgId": "st-dh-dept-fisheries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Vivek Kumar, IAS",
+    "notes": "AGMUT batch 2022; primary charge is Agriculture."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-port-lighthouse",
+   "title": "Secretary, DNH & DD (Port)",
+   "orgId": "st-dh-dept-port-lighthouse",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Vivek Kumar, IAS",
+    "notes": "AGMUT batch 2022; primary charge is Agriculture."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-official-language",
+   "title": "Secretary, DNH & DD (Official Language)",
+   "orgId": "st-dh-dept-official-language",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Vivek Kumar, IAS",
+    "notes": "AGMUT batch 2022; primary charge is Agriculture."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-rural-development",
+   "title": "Secretary, DNH & DD (Rural Development, PRI and Community Development)",
+   "orgId": "st-dh-dept-rural-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Vivek Kumar, IAS",
+    "notes": "AGMUT batch 2022; primary charge is Agriculture."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/",
+    "https://ddd.gov.in/secretariat/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-secretary-food-civil-supplies",
+   "title": "Secretary, DNH and Daman & Diu (Food, Civil Supplies and Consumer Affairs)",
+   "orgId": "st-dh-dept-food-civil-supplies",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ajay Kumar Gupta, IAS",
+    "notes": "AGMUT batch 2010; primary charge is Revenue; also Legal Metrology, Information Technology, GAD/Protocol/Public Grievances, Mines and Tribal Welfare."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dh-pos-secretary-tribal-welfare",
+   "title": "Commissioner-cum-Secretary (Tribal Welfare), DNH & DD",
+   "orgId": "st-dh-dept-tribal-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ajay Kumar Gupta, IAS",
+    "notes": "AGMUT batch 2010; primary charge is Revenue; also Legal Metrology, Information Technology, GAD/Protocol/Public Grievances, Mines and Food/Civil Supplies."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dh-pos-secretary-mines",
+   "title": "Secretary-cum-Director (Mines), DNH & DD",
+   "orgId": "st-dh-dept-mines",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dh-pos-administrator",
+   "holder": {
+    "name": "Shri Ajay Kumar Gupta, IAS",
+    "notes": "AGMUT batch 2010; primary charge is Revenue; also Legal Metrology, Information Technology, GAD/Protocol/Public Grievances, Tribal Welfare and Food/Civil Supplies."
+   },
+   "sources": [
+    "https://ddd.gov.in/ias/"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "relations": [
+  {
+   "from": "st-an-pos-secretary-home",
+   "to": "st-an-dept-home",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-finance-excise",
+   "to": "st-an-dept-finance-excise",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-planning",
+   "to": "st-an-dept-planning",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-economics-statistics",
+   "to": "st-an-dept-economics-statistics",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-revenue",
+   "to": "st-an-dept-revenue",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-personnel-ar",
+   "to": "st-an-dept-personnel-ar",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-information-technology",
+   "to": "st-an-dept-information-technology",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-urban-development",
+   "to": "st-an-dept-urban-development",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-health",
+   "to": "st-an-dept-health",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-labour-employment",
+   "to": "st-an-dept-labour-employment",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-civil-supplies",
+   "to": "st-an-dept-civil-supplies",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-education",
+   "to": "st-an-dept-education",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-power",
+   "to": "st-an-dept-power",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-environment-forest",
+   "to": "st-an-dept-environment-forest",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-pwd",
+   "to": "st-an-dept-pwd",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-agriculture",
+   "to": "st-an-dept-agriculture",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-animal-husbandry",
+   "to": "st-an-dept-animal-husbandry",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-fisheries",
+   "to": "st-an-dept-fisheries",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-disaster-management",
+   "to": "st-an-dept-disaster-management",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-rd-pri",
+   "to": "st-an-dept-rd-pri",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-science-technology",
+   "to": "st-an-dept-science-technology",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-cooperation",
+   "to": "st-an-dept-cooperation",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-official-language",
+   "to": "st-an-dept-official-language",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-industries",
+   "to": "st-an-dept-industries",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-ipt-tourism",
+   "to": "st-an-dept-ipt-tourism",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-transport",
+   "to": "st-an-dept-transport",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-shipping",
+   "to": "st-an-dept-shipping",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-social-welfare",
+   "to": "st-an-dept-social-welfare",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-tribal-welfare",
+   "to": "st-an-dept-tribal-welfare",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-art-culture",
+   "to": "st-an-dept-art-culture",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-vigilance",
+   "to": "st-an-dept-vigilance",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-law",
+   "to": "st-an-dept-law",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-ga-protocol",
+   "to": "st-an-dept-ga-protocol",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-housing-estate",
+   "to": "st-an-dept-housing-estate",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-archives",
+   "to": "st-an-dept-archives",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-secretary-parliamentary-affairs",
+   "to": "st-an-dept-parliamentary-affairs",
+   "type": "ex_officio",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-home",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-finance-excise",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-finance-excise",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-planning",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-planning",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-economics-statistics",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-economics-statistics",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-revenue",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-revenue",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-personnel-ar",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-personnel-ar",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-information-technology",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-urban-development",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-urban-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-health",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-health",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-labour-employment",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-labour-employment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-civil-supplies",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-civil-supplies",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-education",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-power",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-power",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-environment-forest",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-environment-forest",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-pwd",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-pwd",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-agriculture",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-animal-husbandry",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-animal-husbandry",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-fisheries",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-disaster-management",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-rd-pri",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-rd-pri",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-science-technology",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-science-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-cooperation",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-official-language",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-official-language",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-industries",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-ipt-tourism",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-ipt-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-transport",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-shipping",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-shipping",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-social-welfare",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-tribal-welfare",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-tribal-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-art-culture",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-art-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-vigilance",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-vigilance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-law",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-law",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-ga-protocol",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-ga-protocol",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-housing-estate",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-housing-estate",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-archives",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-archives",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-parliamentary-affairs",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-an-pos-lieutenant-governor",
+   "to": "st-an-dept-police",
+   "type": "heads",
+   "source": "https://andamannicobar.gov.in/contact"
+  },
+  {
+   "from": "st-an-pos-chief-secretary",
+   "to": "st-an-dept-police",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-secretary-home",
+   "to": "st-ld-dept-home",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-finance",
+   "to": "st-ld-dept-finance",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-planning",
+   "to": "st-ld-dept-planning",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-vigilance",
+   "to": "st-ld-dept-vigilance",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-panchayats",
+   "to": "st-ld-dept-panchayats",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-rural-development",
+   "to": "st-ld-dept-rural-development",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-services-establishment",
+   "to": "st-ld-dept-services-establishment",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-port-shipping-aviation",
+   "to": "st-ld-dept-port-shipping-aviation",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-information-public-relations",
+   "to": "st-ld-dept-information-public-relations",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-works",
+   "to": "st-ld-dept-works",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-education",
+   "to": "st-ld-dept-education",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-sports-youth-affairs",
+   "to": "st-ld-dept-sports-youth-affairs",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-industries",
+   "to": "st-ld-dept-industries",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-legal",
+   "to": "st-ld-dept-legal",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-art-culture",
+   "to": "st-ld-dept-art-culture",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-election",
+   "to": "st-ld-dept-election",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-cooperation",
+   "to": "st-ld-dept-cooperation",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-food-civil-supplies",
+   "to": "st-ld-dept-food-civil-supplies",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-road-transport",
+   "to": "st-ld-dept-road-transport",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-legal-metrology",
+   "to": "st-ld-dept-legal-metrology",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-printing-stationery",
+   "to": "st-ld-dept-printing-stationery",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-revenue",
+   "to": "st-ld-dept-revenue",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-town-urban-development",
+   "to": "st-ld-dept-town-urban-development",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-tourism",
+   "to": "st-ld-dept-tourism",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-power",
+   "to": "st-ld-dept-power",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-health",
+   "to": "st-ld-dept-health",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-information-technology",
+   "to": "st-ld-dept-information-technology",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-social-welfare-tribal-affairs",
+   "to": "st-ld-dept-social-welfare-tribal-affairs",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-women-child-development",
+   "to": "st-ld-dept-women-child-development",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-labour-employment",
+   "to": "st-ld-dept-labour-employment",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-ga-protocol",
+   "to": "st-ld-dept-ga-protocol",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-agriculture",
+   "to": "st-ld-dept-agriculture",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-fisheries",
+   "to": "st-ld-dept-fisheries",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-animal-husbandry",
+   "to": "st-ld-dept-animal-husbandry",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-environment-forest",
+   "to": "st-ld-dept-environment-forest",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-secretary-science-technology",
+   "to": "st-ld-dept-science-technology",
+   "type": "ex_officio",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-home",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-finance",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-planning",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-planning",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-vigilance",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-vigilance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-panchayats",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-panchayats",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-rural-development",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-services-establishment",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-services-establishment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-port-shipping-aviation",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-port-shipping-aviation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-information-public-relations",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-information-public-relations",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-works",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-education",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-sports-youth-affairs",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-sports-youth-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-industries",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-legal",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-legal",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-art-culture",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-art-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-election",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-election",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-cooperation",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-food-civil-supplies",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-food-civil-supplies",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-road-transport",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-road-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-legal-metrology",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-legal-metrology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-printing-stationery",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-printing-stationery",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-revenue",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-revenue",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-town-urban-development",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-town-urban-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-tourism",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-power",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-power",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-health",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-health",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-information-technology",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-social-welfare-tribal-affairs",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-social-welfare-tribal-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-women-child-development",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-women-child-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-labour-employment",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-labour-employment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-agriculture",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-fisheries",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-animal-husbandry",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-animal-husbandry",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-environment-forest",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-environment-forest",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-science-technology",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-science-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-ga-protocol",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-ga-protocol",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-pay-accounts",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-pay-accounts",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-police",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-police",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ld-pos-administrator",
+   "to": "st-ld-dept-irbn",
+   "type": "heads",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/"
+  },
+  {
+   "from": "st-ld-pos-chief-secretary",
+   "to": "st-ld-dept-irbn",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-secretary-home",
+   "to": "st-dh-dept-home",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-vigilance",
+   "to": "st-dh-dept-vigilance",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-parliamentary-affairs",
+   "to": "st-dh-dept-parliamentary-affairs",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-staff-selection",
+   "to": "st-dh-dept-staff-selection",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-revenue",
+   "to": "st-dh-dept-revenue",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-legal-metrology",
+   "to": "st-dh-dept-legal-metrology",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-information-technology",
+   "to": "st-dh-dept-information-technology",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-public-grievance",
+   "to": "st-dh-dept-public-grievance",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-health",
+   "to": "st-dh-dept-health",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-urban-development",
+   "to": "st-dh-dept-urban-development",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-town-country-planning",
+   "to": "st-dh-dept-town-country-planning",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-finance",
+   "to": "st-dh-dept-finance",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-education",
+   "to": "st-dh-dept-education",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-higher-technical-education",
+   "to": "st-dh-dept-higher-technical-education",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-personnel-ar",
+   "to": "st-dh-dept-personnel-ar",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-excise",
+   "to": "st-dh-dept-excise",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-vat",
+   "to": "st-dh-dept-vat",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-planning-statistics",
+   "to": "st-dh-dept-planning-statistics",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-science-technology",
+   "to": "st-dh-dept-science-technology",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-electricity",
+   "to": "st-dh-dept-electricity",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-election",
+   "to": "st-dh-dept-election",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-environment-forest",
+   "to": "st-dh-dept-environment-forest",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-pollution-control",
+   "to": "st-dh-dept-pollution-control",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-pwd",
+   "to": "st-dh-dept-pwd",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-tourism",
+   "to": "st-dh-dept-tourism",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-information-publicity",
+   "to": "st-dh-dept-information-publicity",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-civil-aviation",
+   "to": "st-dh-dept-civil-aviation",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-labour-employment",
+   "to": "st-dh-dept-labour-employment",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-transport",
+   "to": "st-dh-dept-transport",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-cooperation",
+   "to": "st-dh-dept-cooperation",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-social-welfare",
+   "to": "st-dh-dept-social-welfare",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-industries",
+   "to": "st-dh-dept-industries",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-agriculture",
+   "to": "st-dh-dept-agriculture",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-district-panchayat",
+   "to": "st-dh-dept-district-panchayat",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-fisheries",
+   "to": "st-dh-dept-fisheries",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-port-lighthouse",
+   "to": "st-dh-dept-port-lighthouse",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-official-language",
+   "to": "st-dh-dept-official-language",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-secretary-rural-development",
+   "to": "st-dh-dept-rural-development",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-home",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-finance",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-personnel-ar",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-personnel-ar",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-parliamentary-affairs",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-information-technology",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-legal-metrology",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-legal-metrology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-municipal-corporation",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-municipal-corporation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-electricity",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-electricity",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-tourism",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-election",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-election",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-labour-employment",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-labour-employment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-vat",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-vat",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-police",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-police",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-irbn",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-irbn",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-official-language",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-official-language",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-block-development",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-block-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-cooperation",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-accounts",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-accounts",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-rural-development",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-fisheries",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-fire-emergency",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-fire-emergency",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-town-country-planning",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-town-country-planning",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-planning-statistics",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-planning-statistics",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-pollution-control",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-pollution-control",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-science-technology",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-science-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-social-welfare",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-disaster-management",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-urban-development",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-urban-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-agriculture",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-health",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-health",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-vigilance",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-vigilance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-civil-aviation",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-civil-aviation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-industries",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-public-grievance",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-public-grievance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-education",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-environment-forest",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-environment-forest",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-transport",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-information-publicity",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-information-publicity",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-higher-technical-education",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-higher-technical-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-revenue",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-revenue",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-district-panchayat",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-district-panchayat",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-excise",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-excise",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-port-lighthouse",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-port-lighthouse",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-coastal-zone-management",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-coastal-zone-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-pwd",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-pwd",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-staff-selection",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-staff-selection",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-secretary-food-civil-supplies",
+   "to": "st-dh-dept-food-civil-supplies",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-food-civil-supplies",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-food-civil-supplies",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-secretary-tribal-welfare",
+   "to": "st-dh-dept-tribal-welfare",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-tribal-welfare",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-tribal-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-dh-pos-secretary-mines",
+   "to": "st-dh-dept-mines",
+   "type": "ex_officio",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-administrator",
+   "to": "st-dh-dept-mines",
+   "type": "heads",
+   "source": "https://ddd.gov.in/ias/"
+  },
+  {
+   "from": "st-dh-pos-chief-secretary",
+   "to": "st-dh-dept-mines",
+   "type": "oversees"
+  }
+ ],
+ "verification": {
+  "verifiedAt": "2026-09-25",
+  "verifiedBy": "adversarial-verifier pass",
+  "method": "Re-fetched each UT's live official secretariat/IAS-officer directory (andamannicobar.gov.in/contact, andamannicobar.gov.in/department + /'departmental websites' list, lakshadweep.gov.in/lakshadweep-administration, ddd.gov.in/ias, ddd.gov.in/secretariat, ddd.gov.in/departments) via WebFetch/curl and cross-checked against this file's 110 positions and 122 departments; also reused this segment's own scratch/*.html (already-fetched sources) for DH portfolio detail. WebSearch was unavailable (session budget exhausted) so verification relied on WebFetch + curl against primary .gov.in sources only.",
+  "idAndSchemaCheck": "PASS: 0 duplicate ids, 0 ids violating st-<code>-dept-*/st-<code>-pos-secretary-* rules, 0 dangling orgId/relation references. File correctly has no headPositionId on entities (notes explain these are Administrator-run UTs with no elected ministers); heads/oversees relations run from st-<code>-pos-lieutenant-governor|administrator and st-<code>-pos-chief-secretary instead, and all of those ids resolve into data/raw/states-an-ld-dh.json.",
+  "postingsChecked": "110 of 110 secretary postings (exceeds the 25 minimum): every holder name in st-an-*, st-ld-*, st-dh-* matched a name on the corresponding live official directory page. No stale or incorrect postings found; none removed.",
+  "departmentCoverageChecked": "Cross-checked all three UTs' department lists against live official sources. AN: matched against andamannicobar.gov.in's own departmental-websites list + contact/department pages; no missing major department found (this UT has no standalone Water Resources/PHE or Women & Child Development department — WCD is folded into Social Welfare, confirmed by absence from the official portal list, not an omission in this file). LD: matched against lakshadweep.gov.in's 7-secretary administration page; all listed portfolios map onto entities already in this file. DH: matched against ddd.gov.in/departments/ (44 official departments) — 44/44 present in this file (plus Home and Parliamentary Affairs, which are real DH portfolios per ddd.gov.in/ias/ but not itemised on the /departments/ listing page); only 'District Collectorate' was on the official page and intentionally not modelled here as it is a district office, not a secretariat department.",
+  "correctionsMade": "Added 3 previously-missing DH departments + secretary positions + relations, sourced from this segment's own scratch/dh_ias.html (ddd.gov.in/ias/, already fetched by the original build): st-dh-dept-food-civil-supplies, st-dh-dept-tribal-welfare (notable given DNH's majority-ST population), st-dh-dept-mines — all three are additional charges of the existing Secretary (Revenue) Shri Ajay Kumar Gupta, IAS, confidence 'medium' as they are additional-charge appointments. No existing entity, position or relation was altered or removed.",
+  "counts": {
+   "departmentsBefore": 122,
+   "departmentsAfter": 125,
+   "secretariesBefore": 110,
+   "secretariesAfter": 113,
+   "correctionsAdded": 3,
+   "correctionsRemoved": 0
+  }
+ }
+}

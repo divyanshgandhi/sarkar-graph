@@ -1,0 +1,4089 @@
+{
+ "segment": "states-tn-kl-py",
+ "asOf": "2026-09-25",
+ "notes": "Segment states-tn-kl-py covers Tamil Nadu, Kerala and Puducherry in full except districts (owned by local-lgd).\nAs-of 2026-09-25. All three had assembly elections Apr-May 2026 and each saw a change of ruling party/CM:\n- Tamil Nadu: TVK (actor Vijay's new party, founded Feb 2024) became the single largest party (108/234) and Vijay\n  became CM on 10 May 2026 in coalition with INC/IUML/VCK, ending decades of DMK-AIADMK alternation. No Deputy CM.\n- Kerala: UDF (INC-led) won a landslide (102/140), ending two LDF terms; V. D. Satheesan (INC) became CM 18 May 2026.\n- Puducherry: incumbent N. Rangasamy (AINRC) and the NDA alliance were RE-ELECTED, his fifth term as CM (13 May 2026).\n\nResearch constraints and honest gaps (severity noted):\n1. WebSearch tool quota was exhausted session-wide before this segment's research began (shared budget across\n   parallel research agents); all research after that point relied on WebFetch (single-pass, AI-summarized) of\n   Wikipedia pages plus a handful of direct Wikipedia API/HTML fetches via curl. No official state-portal (tn.gov.in,\n   kerala.gov.in, py.gov.in) cabinet pages, PIB releases or news-site cross-checks were possible — only Wikipedia.\n   Confidence is capped at \"medium\" for anything that rests on a single WebFetch summary rather than a primary\n   document, even where the underlying Wikipedia article looks well-sourced.\n2. Full council-of-minister lists (TN 34 of a reported \"35 total\" ministers, Kerala 20, Puducherry 5) come from a\n   single WebFetch pass each over the \"<CM> ministry\" Wikipedia article; portfolio splits, exact swearing-in dates\n   for individual ministers, and minister Wikipedia links were NOT individually cross-verified. TN source claimed\n   \"35 total\" ministers but the rendered table only named 34 — the missing one could not be identified, so only 34\n   are recorded (do not treat 34 as necessarily exhaustive).\n3. Deputy CMs: none of the three states currently show a Deputy Chief Minister in the sources found. Not asserting\n   there is none — only that none was found.\n4. Chief Secretary / DGP are civil-service appointments that can change independent of the election cycle and were\n   the hardest to verify: TN Chief Secretary (M. Sai Kumar) is cross-verified from two sources (medium-high\n   confidence); TN DGP (Sandeep Rai Rathore) was an ECI-appointed neutral DGP for the April 2026 poll — whether he\n   continued post-election is unverified (confidence low). Kerala Chief Secretary is reported to have changed from\n   A. Jayathilak to Bishwanath Sinha around July 2026 but no dedicated source could confirm this independently\n   (confidence low). Kerala DGP and Puducherry DGP could not be found in the sources available and are recorded as\n   positions with holder=null rather than invented (confidence low). Puducherry Chief Secretary (Sharat Chauhan) has\n   one source only.\n5. Tamil Nadu State Human Rights Commission: existence/legal basis recorded, but no current chairperson could be\n   confirmed (article not found under expected title) — holder omitted.\n6. Kerala State Human Rights Commission: same gap as above, even less confirmable — entity recorded without a\n   headPositionId or holder.\n7. Puducherry: it has no Lokayukta (explicitly excluded, along with J&K, under Indian practice) and — as far as\n   could be verified — no distinct State Election Commission or State Public Service Commission separate from\n   Union-level machinery; these were therefore NOT created as entities rather than guessed. Puducherry also has no\n   ULB formally elevated to \"municipal corporation\" status; the five municipalities (Puducherry, Oulgaret, Karaikal,\n   Mahe, Yanam) are recorded under kind \"municipal_corporation\" per the schema's closed kind list for this segment's\n   local-body layer, with a note in each description clarifying their actual (lower) legal tier — flag this if the\n   schema is later extended with a \"municipality\" kind.\n8. Puducherry assembly party-wise strength: the election-result page and the assembly-composition page disagree\n   slightly on AINRC's exact seat count (12 vs 11) once the 3 nominated members and post-poll realignment are\n   folated in; both figures are given with a note rather than silently picking one.\n9. No Legislative Council exists in any of TN, Kerala or Puducherry (correctly out of scope per the task brief,\n   which lists only UP/Bihar/Maharashtra/Karnataka/AP/Telangana as having one).\n10. Municipal-corporation mayors were not verified for either state (Wikipedia list pages did not carry current\n    mayor names) and are therefore omitted rather than guessed, per the task's \"mayor only if easily verifiable\"\n    instruction.\n11. Governor of Tamil Nadu: Kerala's Governor (Rajendra Arlekar) holds ADDITIONAL CHARGE of Tamil Nadu since 12\n    March 2026 (no dedicated full-time TN Governor as of the as-of date) — flagged with \"acting\": true on the\n    holder rather than treated as a routine appointment; worth re-checking as this is an unusual, likely temporary\n    arrangement.\n\n--- ADVERSARIAL VERIFICATION PASS (2026-09-25) ---\nRe-checked with fresh 2025-2026 sources (Wikipedia via WebFetch/curl API; WebSearch was session-wide exhausted, same constraint the original research hit). Corrections applied are listed in the top-level 'verification' block. Remaining known gaps not fixed in this pass (kept low-confidence / omitted rather than invented): TN DGP post-election continuation still unconfirmed; Kerala Chief Secretary transition (A. Jayathilak -> Bishwanath Sinha) still single-source; TN/KL State Human Rights Commission chairpersons still unconfirmed; exact per-minister swearing-in dates for the 2 (of 5) Puducherry ministers sworn in 13 May 2026 vs the 3 sworn in 17 June 2026 could not be individually attributed, so all 5 keep the 5 Aug 2026 portfolio-allocation date with an explanatory note, as in the original file. Also flagged: this segment has no 'indirectly_elects' relations from st-tn-assembly/st-kl-assembly/st-py-assembly to individual Rajya Sabha member positions (owned by the parliament-* segment) as suggested by the task brief -- adding those needs coordination with parliament-rajya-sabha.json's exact position IDs and was out of scope for this verification pass.",
+ "entities": [
+  {
+   "id": "st-tn",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Tamil Nadu",
+   "nameHi": "तमिलनाडु",
+   "aliases": [
+    "TN"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "A southern Indian state on the Coromandel Coast; the 6th-most populous state, with Chennai as its capital and a legislature elected every five years.",
+   "officialUrl": "https://www.tn.gov.in",
+   "hq": "Chennai",
+   "stats": {
+    "population2011": 72147030,
+    "areaKm2": 130058,
+    "lokSabhaSeats": 39,
+    "rajyaSabhaSeats": 18,
+    "assemblySeats": 234,
+    "districts": 38
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tamil_Nadu"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Tamil Nadu",
+   "aliases": [
+    "Tamil Nadu Government",
+    "TN Govt"
+   ],
+   "parentId": "st-tn",
+   "description": "The executive government of Tamil Nadu, headed by the Governor as constitutional head and the Chief Minister as head of government, currently a coalition led by Tamilaga Vettri Kazhagam (TVK) after the April 2026 assembly election.",
+   "officialUrl": "https://www.tn.gov.in",
+   "headPositionId": "st-tn-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Tamil_Nadu"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Tamil Nadu Council of Ministers",
+   "aliases": [
+    "TN Cabinet",
+    "Vijay ministry"
+   ],
+   "parentId": "st-tn-government",
+   "description": "The Council of Ministers of Tamil Nadu, collectively responsible to the Legislative Assembly, headed by Chief Minister Vijay (TVK) since 10 May 2026 in coalition with INC, IUML and VCK.",
+   "headPositionId": "st-tn-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Tamil Nadu Legislative Assembly",
+   "nameHi": "தமிழ்நாடு சட்டமன்றம்",
+   "abbr": "TNLA",
+   "aliases": [
+    "Tamil Nadu Vidhan Sabha"
+   ],
+   "parentId": "st-tn",
+   "description": "The unicameral state legislature of Tamil Nadu (Tamil Nadu abolished its Legislative Council in 1986); the 17th Assembly was elected on 23 April 2026, results 4 May 2026.",
+   "seats": 234,
+   "stats": {
+    "partyWiseStrength": {
+     "TVK": 108,
+     "DMK": 59,
+     "INC": 5,
+     "other_SPA_allies": 9,
+     "AIADMK": 47,
+     "BJP": 1,
+     "other_NDA_allies": 5
+    },
+    "lastElectionDate": "2026-04-23",
+    "resultDate": "2026-05-04",
+    "termEndsBy": "2031-05"
+   },
+   "headPositionId": "st-tn-pos-speaker",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026_Tamil_Nadu_Legislative_Assembly_election"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Tamil Nadu State Election Commission",
+   "abbr": "TNSEC",
+   "parentId": "st-tn-government",
+   "description": "Constitutional body under Article 243K conducting elections to panchayats and municipalities in Tamil Nadu.",
+   "headPositionId": "st-tn-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tamil_Nadu_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Tamil Nadu Public Service Commission",
+   "abbr": "TNPSC",
+   "parentId": "st-tn-government",
+   "description": "Constitutional body under Article 315 conducting recruitment to Tamil Nadu state civil services.",
+   "headPositionId": "st-tn-pos-psc-chairman",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tamil_Nadu_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-lokayukta",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "Tamil Nadu Lokayukta",
+   "parentId": "st-tn-government",
+   "description": "Anti-corruption ombudsman for Tamil Nadu, established under the Tamil Nadu Lokayukta Act, 2018.",
+   "established": "2018",
+   "legalBasis": "Tamil Nadu Lokayukta Act, 2018",
+   "headPositionId": "st-tn-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-shrc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Tamil Nadu State Human Rights Commission",
+   "abbr": "TNSHRC",
+   "parentId": "st-tn-government",
+   "description": "Statutory body under the Protection of Human Rights Act, 1993 that inquires into human-rights violations in Tamil Nadu.",
+   "legalBasis": "Protection of Human Rights Act, 1993",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-tn-mc-chennai",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Greater Chennai Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Chennai city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-madurai",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Madurai Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Madurai city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-coimbatore",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Coimbatore Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Coimbatore city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-tiruchirappalli",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Tiruchirappalli Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Tiruchirappalli city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-salem",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Salem Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Salem city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-tirunelveli",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Tirunelveli Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Tirunelveli city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-vellore",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Vellore Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Vellore city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-tiruppur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Tiruppur Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Tiruppur city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-erode",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Erode Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Erode city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-thoothukudi",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Thoothukudi Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Thoothukudi city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-dindigul",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Dindigul Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Dindigul city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-thanjavur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Thanjavur Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Thanjavur city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-nagercoil",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Nagercoil Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Nagercoil city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-hosur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Hosur Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Hosur city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-avadi",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Avadi Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Avadi city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-kumbakonam",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kumbakonam Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Kumbakonam city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-cuddalore",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Cuddalore Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Cuddalore city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-kancheepuram",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kancheepuram Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Kancheepuram city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-karur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Karur Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Karur city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-sivakasi",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Sivakasi Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Sivakasi city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-tambaram",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Tambaram Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Tambaram city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-karaikudi",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Karaikudi Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Karaikudi city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-namakkal",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Namakkal Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Namakkal city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-pudukkottai",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Pudukkottai Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Pudukkottai city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-mc-tiruvannamalai",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Tiruvannamalai Municipal Corporation",
+   "parentId": "st-tn",
+   "description": "Urban local body governing Tiruvannamalai city under the Tamil Nadu District Municipalities/City Municipal Corporation Acts.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Tamil_Nadu"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Kerala",
+   "nameHi": "केरल",
+   "aliases": [
+    "KL"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "A southwestern Indian state on the Malabar Coast, known for its high human-development indicators; capital Thiruvananthapuram, legislature elected every five years.",
+   "officialUrl": "https://kerala.gov.in",
+   "hq": "Thiruvananthapuram",
+   "stats": {
+    "population2011": 33406061,
+    "areaKm2": 38863,
+    "lokSabhaSeats": 20,
+    "rajyaSabhaSeats": 9,
+    "assemblySeats": 140,
+    "districts": 14
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Kerala",
+   "aliases": [
+    "Kerala Government"
+   ],
+   "parentId": "st-kl",
+   "description": "The executive government of Kerala, currently led by Chief Minister V. D. Satheesan (INC) after the United Democratic Front's win in the April 2026 assembly election, ending two terms of CPI(M)-led LDF rule under Pinarayi Vijayan.",
+   "officialUrl": "https://kerala.gov.in",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Kerala Council of Ministers",
+   "aliases": [
+    "Satheesan ministry",
+    "Kerala Cabinet"
+   ],
+   "parentId": "st-kl-government",
+   "description": "The Council of Ministers of Kerala headed by Chief Minister V. D. Satheesan since 18 May 2026, a UDF coalition of INC, IUML and smaller allies.",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Kerala Legislative Assembly",
+   "nameHi": "केरल विधान सभा",
+   "aliases": [
+    "Kerala Vidhan Sabha",
+    "Niyamasabha"
+   ],
+   "parentId": "st-kl",
+   "description": "The unicameral state legislature of Kerala; the 16th Assembly was elected 9 April 2026.",
+   "seats": 140,
+   "stats": {
+    "partyWiseStrength": {
+     "INC": 63,
+     "IUML": 26,
+     "KEC": 8,
+     "other_UDF_allies": 5,
+     "CPI(M)": 26,
+     "CPI": 3,
+     "other_LDF_allies": 6,
+     "BJP": 3
+    },
+    "lastElectionDate": "2026-04-09",
+    "resultDate": "2026-05-18",
+    "termEndsBy": "2031-05"
+   },
+   "headPositionId": "st-kl-pos-speaker",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026_Kerala_Legislative_Assembly_election"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Kerala State Election Commission",
+   "parentId": "st-kl-government",
+   "description": "Constitutional body under Article 243K conducting elections to panchayats and municipalities in Kerala.",
+   "headPositionId": "st-kl-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kerala_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Kerala Public Service Commission",
+   "abbr": "KPSC",
+   "parentId": "st-kl-government",
+   "description": "Constitutional body under Article 315 conducting recruitment to Kerala state civil services.",
+   "headPositionId": "st-kl-pos-psc-chairman",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kerala_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-lokayukta",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "Kerala Lokayukta",
+   "parentId": "st-kl-government",
+   "description": "Anti-corruption ombudsman for Kerala, established under the Kerala Lokayukta Act, 1999.",
+   "established": "1999",
+   "legalBasis": "Kerala Lokayukta Act, 1999",
+   "headPositionId": "st-kl-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kerala_Lokayukta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-shrc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Kerala State Human Rights Commission",
+   "abbr": "KSHRC",
+   "parentId": "st-kl-government",
+   "description": "Statutory body under the Protection of Human Rights Act, 1993 that inquires into human-rights violations in Kerala.",
+   "legalBasis": "Protection of Human Rights Act, 1993",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kerala"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-kl-mc-thiruvananthapuram",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Thiruvananthapuram Municipal Corporation",
+   "parentId": "st-kl",
+   "established": "1940",
+   "description": "Urban local body governing Thiruvananthapuram city under the Kerala Municipality Act, 1994.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Kerala"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-mc-kozhikode",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kozhikode Municipal Corporation",
+   "parentId": "st-kl",
+   "established": "1962",
+   "description": "Urban local body governing Kozhikode city under the Kerala Municipality Act, 1994.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Kerala"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-mc-kochi",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kochi Municipal Corporation",
+   "parentId": "st-kl",
+   "established": "1967",
+   "description": "Urban local body governing Kochi city under the Kerala Municipality Act, 1994.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Kerala"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-mc-kollam",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kollam Municipal Corporation",
+   "parentId": "st-kl",
+   "established": "2000",
+   "description": "Urban local body governing Kollam city under the Kerala Municipality Act, 1994.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Kerala"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-mc-thrissur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Thrissur Municipal Corporation",
+   "parentId": "st-kl",
+   "established": "2000",
+   "description": "Urban local body governing Thrissur city under the Kerala Municipality Act, 1994.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Kerala"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-mc-kannur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kannur Municipal Corporation",
+   "parentId": "st-kl",
+   "established": "2015",
+   "description": "Urban local body governing Kannur city under the Kerala Municipality Act, 1994.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Kerala"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py",
+   "kind": "union_territory",
+   "sector": "federal",
+   "name": "Puducherry",
+   "nameHi": "पुदुचेरी",
+   "aliases": [
+    "Pondicherry",
+    "PY"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "A Union Territory with its own elected legislature and Council of Ministers (per Article 239A), made up of four non-contiguous regions: Puducherry, Karaikal, Mahe and Yanam.",
+   "officialUrl": "https://py.gov.in",
+   "hq": "Puducherry",
+   "stats": {
+    "population2011": 1394467,
+    "areaKm2": 483,
+    "lokSabhaSeats": 1,
+    "rajyaSabhaSeats": 1,
+    "assemblySeats": 33,
+    "districts": 4
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Puducherry_(union_territory)",
+    "https://en.wikipedia.org/wiki/Demographics_of_Puducherry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Puducherry",
+   "parentId": "st-py",
+   "description": "The executive government of the Union Territory of Puducherry, headed by a Lieutenant Governor as administrator and a Chief Minister leading an elected Council of Ministers, currently an AINRC-BJP (NDA) coalition led by N. Rangasamy for a fifth term.",
+   "officialUrl": "https://py.gov.in",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/N._Rangasamy"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Puducherry Council of Ministers",
+   "aliases": [
+    "Fifth Rangaswamy ministry"
+   ],
+   "parentId": "st-py-government",
+   "description": "The Council of Ministers of Puducherry, capped at six members including the Chief Minister under the Government of Union Territories Act, 1963; headed by N. Rangasamy since 13 May 2026.",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Puducherry Legislative Assembly",
+   "aliases": [
+    "Pondicherry Assembly"
+   ],
+   "parentId": "st-py",
+   "description": "The unicameral legislature of the Union Territory of Puducherry: 30 directly elected members plus 3 members nominated by the Union Government. The 16th Assembly was elected 9 April 2026.",
+   "seats": 33,
+   "stats": {
+    "partyWiseStrength": {
+     "AINRC": 11,
+     "BJP": 4,
+     "AIADMK": 1,
+     "LJK": 1,
+     "independent_pro_govt": 1,
+     "nominated": 3,
+     "DMK": 5,
+     "TVK": 2,
+     "INC": 1,
+     "NMK": 1,
+     "independent_opposition": 2,
+     "vacant": 1
+    },
+    "electedSeats": 30,
+    "lastElectionDate": "2026-04-09",
+    "termEndsBy": "2031-05",
+    "note": "Election-night tally (18 NDA / 6 SPA / 3 TVK-led / 3 independents of 30 elected) differs slightly from post-formation assembly composition above (which folds in the 3 nominated members and post-poll realignment) — treat exact per-party counts as approximate."
+   },
+   "headPositionId": "st-py-pos-speaker",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026_Puducherry_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/Puducherry_Legislative_Assembly"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-mc-puducherry",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Puducherry Municipality",
+   "parentId": "st-py",
+   "description": "Urban local body (Puducherry region; largest urban local body in the UT (municipal-council tier, not yet upgraded to a full municipal corporation).) It is administered as a municipality/commune panchayat-tier body; Puducherry does not currently have any ULB formally upgraded to 'municipal corporation' status.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Puducherry_(union_territory)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-py-mc-oulgaret",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Oulgaret Municipality",
+   "parentId": "st-py",
+   "description": "Urban local body (Puducherry region, adjoining Puducherry town.) It is administered as a municipality/commune panchayat-tier body; Puducherry does not currently have any ULB formally upgraded to 'municipal corporation' status.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Puducherry_(union_territory)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-py-mc-karaikal",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Karaikal Municipality",
+   "parentId": "st-py",
+   "description": "Urban local body (Karaikal region.) It is administered as a municipality/commune panchayat-tier body; Puducherry does not currently have any ULB formally upgraded to 'municipal corporation' status.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Puducherry_(union_territory)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-py-mc-mahe",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Mahe Municipality",
+   "parentId": "st-py",
+   "description": "Urban local body (Mahe region.) It is administered as a municipality/commune panchayat-tier body; Puducherry does not currently have any ULB formally upgraded to 'municipal corporation' status.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Puducherry_(union_territory)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-py-mc-yanam",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Yanam Municipality",
+   "parentId": "st-py",
+   "description": "Urban local body (Yanam region.) It is administered as a municipality/commune panchayat-tier body; Puducherry does not currently have any ULB formally upgraded to 'municipal corporation' status.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Puducherry_(union_territory)"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-tn-pos-governor",
+   "title": "Governor of Tamil Nadu",
+   "orgId": "st-tn-government",
+   "rank": "governor",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Rajendra Vishwanath Arlekar",
+    "since": "2026-03-12",
+    "notes": "Holds additional charge of Tamil Nadu while serving as full-time Governor of Kerala (in office there since 2 January 2025); succeeded R. N. Ravi, who was transferred as Governor of West Bengal.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rajendra_Arlekar",
+    "acting": true
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Governor_of_Tamil_Nadu",
+    "https://en.wikipedia.org/wiki/R._N._Ravi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-chief-minister",
+   "title": "Chief Minister of Tamil Nadu",
+   "orgId": "st-tn-government",
+   "rank": "chief_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "holder": {
+    "name": "Vijay (Chandrasekaran Joseph Vijay)",
+    "since": "2026-05-10",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Perambur",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._Joseph_Vijay",
+    "notes": "Founder of Tamilaga Vettri Kazhagam (launched Feb 2024); TVK won 108 of 234 seats, the single largest party in the 2026 election, and formed a coalition government with INC, IUML and VCK; passed floor test 13 May 2026. Also won Tiruchirappalli East but retained Perambur. No Deputy CM has been appointed as of the as-of date."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay",
+    "https://en.wikipedia.org/wiki/2026_Tamil_Nadu_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-1",
+   "title": "Minister for Rural Development",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "N. Anand",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Thiyagarayanagar",
+    "notes": "Portfolio(s): Rural Development; Irrigation. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-2",
+   "title": "Minister for Public Works",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Aadhav Arjuna",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Villivakkam",
+    "notes": "Portfolio(s): Public Works; Highways. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-3",
+   "title": "Minister for Health",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "K. G. Arunraj",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Tiruchengode",
+    "notes": "Portfolio(s): Health; Medical Education. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-4",
+   "title": "Minister for Revenue",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "K. A. Sengottaiyan",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Gobichettipalayam",
+    "notes": "Portfolio(s): Revenue; Disaster Management. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-5",
+   "title": "Minister for Food",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "P. Venkataramanan",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Mylapore",
+    "notes": "Portfolio(s): Food; Civil Supplies. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-6",
+   "title": "Minister for Electricity",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "C. T. R. Nirmal Kumar",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Thiruparankundram",
+    "notes": "Portfolio(s): Electricity; Law. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-7",
+   "title": "Minister for School Education",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Rajmohan Arumugam",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Egmore",
+    "notes": "Portfolio(s): School Education; Tamil Culture. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-8",
+   "title": "Minister for Minerals",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "T. K. Prabhu",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Karaikudi",
+    "notes": "Portfolio(s): Minerals; Mines. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-9",
+   "title": "Minister for Industries",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "S. Keerthana",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Sivakasi",
+    "notes": "Portfolio(s): Industries. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-10",
+   "title": "Minister for Higher Education",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "P. Viswanathan",
+    "since": "2026-05-13",
+    "party": "INC",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Melur",
+    "notes": "Portfolio(s): Higher Education. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-11",
+   "title": "Minister for Tourism",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "S. Rajeshkumar",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Killiyoor",
+    "notes": "Portfolio(s): Tourism. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-12",
+   "title": "Minister for Minorities Welfare",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "A. M. Shahjahan",
+    "since": "2026-05-13",
+    "party": "IUML",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Papanasam",
+    "notes": "Portfolio(s): Minorities Welfare. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-13",
+   "title": "Minister for Adi Dravidar Welfare",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Vanni Arasu",
+    "since": "2026-05-13",
+    "party": "VCK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Tindivanam",
+    "notes": "Portfolio(s): Adi Dravidar Welfare. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-14",
+   "title": "Minister for Transport",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Vijay Tamilan Parthiban",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Salem South",
+    "notes": "Portfolio(s): Transport. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-15",
+   "title": "Minister for Housing",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "B. Rajkumar",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Cuddalore",
+    "notes": "Portfolio(s): Housing; Urban Development. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-16",
+   "title": "Minister for Backward Classes Welfare",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "V. Sampath Kumar",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Coimbatore North",
+    "notes": "Portfolio(s): Backward Classes Welfare. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-17",
+   "title": "Minister for Handlooms",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "M. Vijay Balaji",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Erode East",
+    "notes": "Portfolio(s): Handlooms; Textiles. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-18",
+   "title": "Minister for Prohibition",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "K. Vignesh",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Kinathukadavu",
+    "notes": "Portfolio(s): Prohibition; Excise. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-19",
+   "title": "Minister for NRI Welfare",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Thennarasu K.",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Sriperumbudur",
+    "notes": "Portfolio(s): NRI Welfare. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-20",
+   "title": "Minister for Labour Welfare",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "J. Mohamed Farvas",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Arantangi",
+    "notes": "Portfolio(s): Labour Welfare. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-21",
+   "title": "Minister for Co-operation",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "V. Gandhiraj",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Arakkonam",
+    "notes": "Portfolio(s): Co-operation. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-22",
+   "title": "Minister for Social Welfare",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Jegadeshwari K.",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Rajapalayam",
+    "notes": "Portfolio(s): Social Welfare. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-23",
+   "title": "Minister for Agriculture",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "R. Vinoth",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Kumbakonam",
+    "notes": "Portfolio(s): Agriculture. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-24",
+   "title": "Minister for Dairy Development",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "C. Vijayalakshmi",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Kumarapalayam",
+    "notes": "Portfolio(s): Dairy Development. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-25",
+   "title": "Minister for Human Resources Management",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "D. Sarathkumar",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Tambaram",
+    "notes": "Portfolio(s): Human Resources Management. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-26",
+   "title": "Minister for Hindu Religious & Charitable Endowments",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "S. Ramesh",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Srirangam",
+    "notes": "Portfolio(s): Hindu Religious & Charitable Endowments. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-27",
+   "title": "Minister for Rural Industries",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "P. Mathanraja",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Ottapidaram",
+    "notes": "Portfolio(s): Rural Industries. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-28",
+   "title": "Minister for Finance",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "N. Marie Wilson",
+    "since": "2026-05-13",
+    "party": "INC",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "R. K. Nagar",
+    "notes": "Portfolio(s): Finance; Planning. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-29",
+   "title": "Minister for Fisheries",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Srinath",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Thoothukkudi",
+    "notes": "Portfolio(s): Fisheries. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-30",
+   "title": "Minister for Animal Husbandry",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "S. Kamali",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Avanashi",
+    "notes": "Portfolio(s): Animal Husbandry. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-31",
+   "title": "Minister for AI, IT & Digital Services",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "R. Kumar",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Velachery",
+    "notes": "Portfolio(s): AI, IT & Digital Services. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-32",
+   "title": "Minister for Forests",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "R. V. Ranjithkumar",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Kancheepuram",
+    "notes": "Portfolio(s): Forests. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-33",
+   "title": "Minister for Commercial Taxes",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Logesh Tamilselvan",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Rasipuram",
+    "notes": "Portfolio(s): Commercial Taxes. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-minister-34",
+   "title": "Minister for Environment",
+   "orgId": "st-tn-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Rajeev",
+    "since": "2026-05-13",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "constituency": "Tiruvadanai",
+    "notes": "Portfolio(s): Environment. Sworn in as part of the first Vijay ministry, took charge 13 May 2026 (some portfolios allocated on floor-test day)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-speaker",
+   "title": "Speaker of the Tamil Nadu Legislative Assembly",
+   "orgId": "st-tn-assembly",
+   "rank": "presiding_officer",
+   "seat": null,
+   "appointmentMode": "elected",
+   "appointedBy": "st-tn-assembly",
+   "holder": {
+    "name": "J. C. D. Prabhakar",
+    "since": "2026-05-12",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "notes": "Elected Speaker of the 17th Assembly."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Speaker_of_the_Tamil_Nadu_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-deputy-speaker",
+   "title": "Deputy Speaker of the Tamil Nadu Legislative Assembly",
+   "orgId": "st-tn-assembly",
+   "rank": "deputy_presiding_officer",
+   "seat": null,
+   "appointmentMode": "elected",
+   "appointedBy": "st-tn-assembly",
+   "holder": {
+    "name": "M. Ravisankar",
+    "since": "2026-05-12",
+    "party": "TVK",
+    "house": "Tamil Nadu Legislative Assembly"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Speaker_of_the_Tamil_Nadu_Legislative_Assembly"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-leader-of-opposition",
+   "title": "Leader of the Opposition, Tamil Nadu Legislative Assembly",
+   "orgId": "st-tn-assembly",
+   "rank": "leader_of_opposition",
+   "seat": null,
+   "appointmentMode": "ex_officio",
+   "appointedBy": "st-tn-assembly",
+   "holder": {
+    "name": "Udhayanidhi Stalin",
+    "since": "2026-05-10",
+    "party": "DMK",
+    "house": "Tamil Nadu Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Udhayanidhi_Stalin",
+    "notes": "Leader of the largest opposition party (DMK/SPA) after the 2026 election."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-chief-secretary",
+   "title": "Chief Secretary of Tamil Nadu",
+   "orgId": "st-tn-government",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "onAdviceOf": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "M. Sai Kumar",
+    "since": "2026-04-08",
+    "notes": "IAS officer; 33rd holder of the post per Wikipedia's list."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_Chief_Secretaries_of_Tamil_Nadu",
+    "https://en.wikipedia.org/wiki/Government_of_Tamil_Nadu"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-pos-dgp",
+   "title": "Director General of Police, Tamil Nadu",
+   "orgId": "st-tn-government",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "holder": {
+    "name": "Sandeep Rai Rathore",
+    "since": "2026-04-02",
+    "notes": "Appointed by the Election Commission of India ahead of the April 2026 poll as a neutral police chief; not independently confirmed whether he continued as DGP after the new government took charge in May 2026 — treat post-election status as unverified."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tamil_Nadu_Police"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-tn-pos-sec-commissioner",
+   "title": "Tamil Nadu State Election Commissioner",
+   "orgId": "st-tn-sec",
+   "rank": "commission_member",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "holder": {
+    "name": "B. Jothi Nirmalasamy",
+    "since": "2024-03-11",
+    "notes": "Retired IAS officer."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tamil_Nadu_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-psc-chairman",
+   "title": "Chairman, Tamil Nadu Public Service Commission",
+   "orgId": "st-tn-psc",
+   "rank": "commission_member",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "holder": {
+    "name": "S. K. Prabakar",
+    "since": null,
+    "notes": "IAS officer; exact start date not confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tamil_Nadu_Public_Service_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-tn-pos-lokayukta",
+   "title": "Lokayukta of Tamil Nadu",
+   "orgId": "st-tn-lokayukta",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-governor",
+   "holder": {
+    "name": "P. Raja Manickam",
+    "since": null,
+    "notes": "Corrected from 'P. Devadass', who was the FIRST Tamil Nadu Lokayukta (appointed April 2019, 5-year term since expired) and was still incorrectly recorded as the current incumbent. Per the Tamil Nadu Lokayukta Wikipedia infobox, the current incumbent is 'Justice P. Raja manickam' (exact spacing/transliteration of the name is uncertain from the source and could not be cross-verified with a second source; appointment date not found). Retired judge."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-kl-pos-governor",
+   "title": "Governor of Kerala",
+   "orgId": "st-kl-government",
+   "rank": "governor",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Rajendra Vishwanath Arlekar",
+    "since": "2025-01-02",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rajendra_Arlekar",
+    "notes": "Succeeded Arif Mohammad Khan, who was transferred as Governor of Bihar. Also holds additional charge of Tamil Nadu since 12 March 2026."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Governor_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-chief-minister",
+   "title": "Chief Minister of Kerala",
+   "orgId": "st-kl-government",
+   "rank": "chief_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "holder": {
+    "name": "V. D. Satheesan",
+    "since": "2026-05-18",
+    "party": "INC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Paravur",
+    "wikipedia": "https://en.wikipedia.org/wiki/V._D._Satheesan",
+    "notes": "Also holds Finance, General Administration, Law, Ports and other portfolios not allocated to other ministers. Succeeded Pinarayi Vijayan (CPI(M)) whose second LDF term ended 18 May 2026. No Deputy CM reported."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+    "https://en.wikipedia.org/wiki/2026_Kerala_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-1",
+   "title": "Minister for Home",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Ramesh Chennithala",
+    "since": "2026-05-19",
+    "party": "INC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Haripad",
+    "notes": "Portfolio(s): Home; Vigilance; Coir."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-2",
+   "title": "Minister for Health",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "K. Muraleedharan",
+    "since": "2026-05-19",
+    "party": "INC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Vattiyoorkavu",
+    "notes": "Portfolio(s): Health; Devaswom."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-3",
+   "title": "Minister for Electricity",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Sunny Joseph",
+    "since": "2026-05-19",
+    "party": "INC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Peravoor",
+    "notes": "Portfolio(s): Electricity; Environment."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-4",
+   "title": "Minister for Forests",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Shibu Baby John",
+    "since": "2026-05-19",
+    "party": "RSP",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Chavara",
+    "notes": "Portfolio(s): Forests; Skill Development."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-5",
+   "title": "Minister for Water Resources",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Mons Joseph",
+    "since": "2026-05-19",
+    "party": "KEC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Kaduthuruthy",
+    "notes": "Portfolio(s): Water Resources; Housing."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-6",
+   "title": "Minister for Food",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Anoop Jacob",
+    "since": "2026-05-19",
+    "party": "KC(J)",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Piravom",
+    "notes": "Portfolio(s): Food; Civil Supplies."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-7",
+   "title": "Minister for Industries",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "P. K. Kunhalikutty",
+    "since": "2026-05-19",
+    "party": "IUML",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Malappuram",
+    "notes": "Portfolio(s): Industries; IT."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-8",
+   "title": "Minister for Transport",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "C. P. John",
+    "since": "2026-05-19",
+    "party": "CMP",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Thiruvananthapuram",
+    "notes": "Portfolio(s): Transport."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-9",
+   "title": "Minister for Revenue",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "A. P. Anil Kumar",
+    "since": "2026-05-19",
+    "party": "INC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Wandoor",
+    "notes": "Portfolio(s): Revenue."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-10",
+   "title": "Minister for General Education",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "N. Samsudheen",
+    "since": "2026-05-19",
+    "party": "IUML",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Mannarkkad",
+    "notes": "Portfolio(s): General Education; Minority Welfare."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-11",
+   "title": "Minister for Higher Education",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Roji M. John",
+    "since": "2026-05-19",
+    "party": "INC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Angamaly",
+    "notes": "Portfolio(s): Higher Education."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-12",
+   "title": "Minister for Tourism",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "P. C. Vishnunadh",
+    "since": "2026-05-19",
+    "party": "INC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Kundara",
+    "notes": "Portfolio(s): Tourism; Culture."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-13",
+   "title": "Minister for Labour",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Bindhu Krishna",
+    "since": "2026-05-19",
+    "party": "INC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Kollam",
+    "notes": "Portfolio(s): Labour; Women & Child Development."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-14",
+   "title": "Minister for Excise",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "M. Liju",
+    "since": "2026-05-19",
+    "party": "INC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Kayamkulam",
+    "notes": "Portfolio(s): Excise; Co-operation."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-15",
+   "title": "Minister for Local Self Government",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "K. M. Shaji",
+    "since": "2026-05-19",
+    "party": "IUML",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Vengara",
+    "notes": "Portfolio(s): Local Self Government."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-16",
+   "title": "Minister for Public Works",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "P. K. Basheer",
+    "since": "2026-05-19",
+    "party": "IUML",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Eranad",
+    "notes": "Portfolio(s): Public Works."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-17",
+   "title": "Minister for Fisheries",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "V. E. Abdul Gafoor",
+    "since": "2026-05-19",
+    "party": "IUML",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Kalamassery",
+    "notes": "Portfolio(s): Fisheries; Social Justice."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-18",
+   "title": "Minister for Agriculture",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "T. Siddique",
+    "since": "2026-05-19",
+    "party": "INC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Kalpetta",
+    "notes": "Portfolio(s): Agriculture."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-19",
+   "title": "Minister for SC/ST/Backward Classes Welfare",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "K. A. Thulasi",
+    "since": "2026-05-19",
+    "party": "INC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Kongad",
+    "notes": "Portfolio(s): SC/ST/Backward Classes Welfare."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-minister-20",
+   "title": "Minister for Sports",
+   "orgId": "st-kl-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "O. J. Janeesh",
+    "since": "2026-05-19",
+    "party": "INC",
+    "house": "Kerala Legislative Assembly",
+    "constituency": "Kodungallur",
+    "notes": "Portfolio(s): Sports; Youth Affairs."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-speaker",
+   "title": "Speaker of the Kerala Legislative Assembly",
+   "orgId": "st-kl-assembly",
+   "rank": "presiding_officer",
+   "seat": null,
+   "appointmentMode": "elected",
+   "appointedBy": "st-kl-assembly",
+   "holder": {
+    "name": "Thiruvanchoor Radhakrishnan",
+    "since": "2026-05-22",
+    "party": "INC",
+    "constituency": "Kottayam",
+    "house": "Kerala Legislative Assembly"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-deputy-speaker",
+   "title": "Deputy Speaker of the Kerala Legislative Assembly",
+   "orgId": "st-kl-assembly",
+   "rank": "deputy_presiding_officer",
+   "seat": null,
+   "appointmentMode": "elected",
+   "appointedBy": "st-kl-assembly",
+   "holder": {
+    "name": "Shanimol Osman",
+    "since": "2026-05",
+    "party": "INC",
+    "constituency": "Aroor",
+    "house": "Kerala Legislative Assembly"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-kl-pos-leader-of-opposition",
+   "title": "Leader of the Opposition, Kerala Legislative Assembly",
+   "orgId": "st-kl-assembly",
+   "rank": "leader_of_opposition",
+   "seat": null,
+   "appointmentMode": "ex_officio",
+   "appointedBy": "st-kl-assembly",
+   "holder": {
+    "name": "Pinarayi Vijayan",
+    "since": "2026-05-18",
+    "party": "CPI(M)",
+    "house": "Kerala Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pinarayi_Vijayan",
+    "notes": "Outgoing two-term Chief Minister, now leads the LDF opposition."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-chief-secretary",
+   "title": "Chief Secretary of Kerala",
+   "orgId": "st-kl-government",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "onAdviceOf": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Bishwanath Sinha",
+    "since": "2026-07",
+    "notes": "Reported successor to A. Jayathilak (Kerala's 50th Chief Secretary, in office 1 May 2025 - 30 June 2026); Sinha's own Wikipedia page could not be located to independently confirm exact start date, so treat with caution."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/A._Jayathilak"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-kl-pos-dgp",
+   "title": "Director General of Police, Kerala",
+   "orgId": "st-kl-government",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "holder": {
+    "name": "Ravada A. Chandrasekhar",
+    "since": "2025-07-01",
+    "notes": "IPS officer; State Police Chief / DGP per the Kerala Police Wikipedia infobox. Appointed before the May 2026 change of government; continuation in post through 2026-09-25 not independently cross-verified (DGP is a civil-service post not automatically tied to the electoral cycle). Previously recorded as vacant=false with holder=null, an internal contradiction; corrected here rather than left blank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kerala_Police"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-kl-pos-sec-commissioner",
+   "title": "Kerala State Election Commissioner",
+   "orgId": "st-kl-sec",
+   "rank": "commission_member",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "holder": {
+    "name": "N. Seshadrinathan",
+    "since": null,
+    "notes": "Exact appointment date not confirmed."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kerala_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-pos-psc-chairman",
+   "title": "Chairman, Kerala Public Service Commission",
+   "orgId": "st-kl-psc",
+   "rank": "commission_member",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "holder": {
+    "name": "M. R. Baiju",
+    "since": "2022",
+    "notes": "In office since 2022; term/reappointment status in 2026 not independently re-verified beyond the article's infobox."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kerala_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-pos-lokayukta",
+   "title": "Lokayukta of Kerala",
+   "orgId": "st-kl-lokayukta",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-governor",
+   "holder": {
+    "name": "Justice N. Anil Kumar",
+    "since": "2024-08-21"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kerala_Lokayukta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-lieutenant-governor",
+   "title": "Lieutenant Governor of Puducherry",
+   "orgId": "st-py-government",
+   "rank": "lieutenant_governor",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Kuniyil Kailashnathan",
+    "since": "2024-08-07",
+    "notes": "Retired IAS officer; succeeded C. P. Radhakrishnan, who held additional charge Mar-Aug 2024."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lieutenant_Governor_of_Puducherry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-chief-minister",
+   "title": "Chief Minister of Puducherry",
+   "orgId": "st-py-government",
+   "rank": "chief_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-lieutenant-governor",
+   "holder": {
+    "name": "N. Rangaswamy",
+    "since": "2026-05-13",
+    "party": "AINRC",
+    "house": "Puducherry Legislative Assembly",
+    "constituency": "Mangalam",
+    "wikipedia": "https://en.wikipedia.org/wiki/N._Rangaswamy",
+    "notes": "Sworn in for a fifth time as CM (previously 2001-08, 2011-16, 2021-26); AINRC-BJP (NDA) alliance retained its majority in the April 2026 election. Holds Finance, Health, Transport and other portfolios not allocated to other ministers. Name normalized to canonical Wikipedia spelling \"N. Rangaswamy\" (press commonly also spells it \"N. Rangasamy\", which is a redirect to the same article)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/N._Rangaswamy",
+    "https://en.wikipedia.org/wiki/2026_Puducherry_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-minister-1",
+   "title": "Minister for Home",
+   "orgId": "st-py-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-lieutenant-governor",
+   "onAdviceOf": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "A. Namassivayam",
+    "since": "2026-08-05",
+    "house": "Puducherry Legislative Assembly",
+    "constituency": "Mannadipet",
+    "notes": "Portfolio(s): Home; Education; Law; Animal Husbandry; Forest & Wildlife; Electricity. Portfolios were allocated on 5 August 2026, well after the 13 May 2026 swearing-in, following a delay in cabinet formation.",
+    "party": "BJP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-pos-minister-2",
+   "title": "Minister for Public Works",
+   "orgId": "st-py-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-lieutenant-governor",
+   "onAdviceOf": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Malladi Krishna Rao",
+    "since": "2026-08-05",
+    "house": "Puducherry Legislative Assembly",
+    "constituency": "Yanam",
+    "notes": "Portfolio(s): Public Works; Tourism; Fisheries; Industries & Commerce; Labour & Employment. Portfolios were allocated on 5 August 2026, well after the 13 May 2026 swearing-in, following a delay in cabinet formation.",
+    "party": "AINRC"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-pos-minister-3",
+   "title": "Minister for Agriculture",
+   "orgId": "st-py-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-lieutenant-governor",
+   "onAdviceOf": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "G. N. S. Rajasekaran",
+    "since": "2026-08-05",
+    "house": "Puducherry Legislative Assembly",
+    "constituency": "Thirunallar",
+    "notes": "Portfolio(s): Agriculture; Sports & Youth Affairs; Rural Development; Sainik Welfare. Portfolios were allocated on 5 August 2026, well after the 13 May 2026 swearing-in, following a delay in cabinet formation.",
+    "party": "BJP"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-pos-minister-4",
+   "title": "Minister for Adi Dravidar Welfare",
+   "orgId": "st-py-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-lieutenant-governor",
+   "onAdviceOf": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "P. Rajavelu",
+    "since": "2026-08-05",
+    "house": "Puducherry Legislative Assembly",
+    "constituency": "Nettapakkam",
+    "notes": "Portfolio(s): Adi Dravidar Welfare; Art & Culture; Housing; IT; Economics & Statistics. Portfolios were allocated on 5 August 2026, well after the 13 May 2026 swearing-in, following a delay in cabinet formation.",
+    "party": "AINRC"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-pos-minister-5",
+   "title": "Minister for Civil Supplies & Consumer Affairs",
+   "orgId": "st-py-council-of-ministers",
+   "rank": "state_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-lieutenant-governor",
+   "onAdviceOf": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "V. P. Sivakolundhu",
+    "since": "2026-08-05",
+    "house": "Puducherry Legislative Assembly",
+    "constituency": "Lawspet",
+    "notes": "Portfolio(s): Civil Supplies & Consumer Affairs; Social Welfare; Women & Child Development; Minority Affairs. Portfolios were allocated on 5 August 2026, well after the 13 May 2026 swearing-in, following a delay in cabinet formation. Party (AINRC) confirmed via the Fifth Rangaswamy ministry Wikipedia article.",
+    "party": "AINRC"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-pos-speaker",
+   "title": "Speaker of the Puducherry Legislative Assembly",
+   "orgId": "st-py-assembly",
+   "rank": "presiding_officer",
+   "seat": null,
+   "appointmentMode": "elected",
+   "appointedBy": "st-py-assembly",
+   "holder": {
+    "name": "A. Anbalagan",
+    "since": "2026-05",
+    "party": "AIADMK",
+    "house": "Puducherry Legislative Assembly"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Puducherry_Legislative_Assembly"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-pos-leader-of-opposition",
+   "title": "Leader of the Opposition, Puducherry Legislative Assembly",
+   "orgId": "st-py-assembly",
+   "rank": "leader_of_opposition",
+   "seat": null,
+   "appointmentMode": "ex_officio",
+   "appointedBy": "st-py-assembly",
+   "holder": {
+    "name": "A. M. H. Nazeem",
+    "since": "2026-05",
+    "party": "DMK",
+    "house": "Puducherry Legislative Assembly"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Puducherry_Legislative_Assembly"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-pos-chief-secretary",
+   "title": "Chief Secretary of Puducherry",
+   "orgId": "st-py-government",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-lieutenant-governor",
+   "holder": {
+    "name": "Sharat Chauhan",
+    "since": null,
+    "notes": "IAS officer; exact appointment date not confirmed from available sources."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Puducherry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-pos-dgp",
+   "title": "Director General of Police, Puducherry",
+   "orgId": "st-py-government",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-lieutenant-governor",
+   "holder": {
+    "name": "Manoj Kumar Lal",
+    "since": null,
+    "notes": "IPS officer; Director General of Police per the Puducherry Police Wikipedia infobox. Appointment date not given by the source. Previously recorded as vacant=false with holder=null, an internal contradiction; corrected here rather than left blank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Puducherry_Police"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "relations": [
+  {
+   "to": "st-tn-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-1",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-1"
+  },
+  {
+   "to": "st-tn-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-2",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-2"
+  },
+  {
+   "to": "st-tn-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-3",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-3"
+  },
+  {
+   "to": "st-tn-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-4",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-4"
+  },
+  {
+   "to": "st-tn-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-5",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-5"
+  },
+  {
+   "to": "st-tn-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-6",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-6"
+  },
+  {
+   "to": "st-tn-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-7",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-7"
+  },
+  {
+   "to": "st-tn-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-8",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-8"
+  },
+  {
+   "to": "st-tn-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-9",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-9"
+  },
+  {
+   "to": "st-tn-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-10",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-10"
+  },
+  {
+   "to": "st-tn-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-11",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-11"
+  },
+  {
+   "to": "st-tn-pos-minister-12",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-12",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-12"
+  },
+  {
+   "to": "st-tn-pos-minister-13",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-13",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-13"
+  },
+  {
+   "to": "st-tn-pos-minister-14",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-14",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-14"
+  },
+  {
+   "to": "st-tn-pos-minister-15",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-15",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-15"
+  },
+  {
+   "to": "st-tn-pos-minister-16",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-16",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-16"
+  },
+  {
+   "to": "st-tn-pos-minister-17",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-17",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-17"
+  },
+  {
+   "to": "st-tn-pos-minister-18",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-18",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-18"
+  },
+  {
+   "to": "st-tn-pos-minister-19",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-19",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-19"
+  },
+  {
+   "to": "st-tn-pos-minister-20",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-20",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-20"
+  },
+  {
+   "to": "st-tn-pos-minister-21",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-21",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-21"
+  },
+  {
+   "to": "st-tn-pos-minister-22",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-22",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-22"
+  },
+  {
+   "to": "st-tn-pos-minister-23",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-23",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-23"
+  },
+  {
+   "to": "st-tn-pos-minister-24",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-24",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-24"
+  },
+  {
+   "to": "st-tn-pos-minister-25",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-25",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-25"
+  },
+  {
+   "to": "st-tn-pos-minister-26",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-26",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-26"
+  },
+  {
+   "to": "st-tn-pos-minister-27",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-27",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-27"
+  },
+  {
+   "to": "st-tn-pos-minister-28",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-28",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-28"
+  },
+  {
+   "to": "st-tn-pos-minister-29",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-29",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-29"
+  },
+  {
+   "to": "st-tn-pos-minister-30",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-30",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-30"
+  },
+  {
+   "to": "st-tn-pos-minister-31",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-31",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-31"
+  },
+  {
+   "to": "st-tn-pos-minister-32",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-32",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-32"
+  },
+  {
+   "to": "st-tn-pos-minister-33",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-33",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-33"
+  },
+  {
+   "to": "st-tn-pos-minister-34",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-chief-minister"
+  },
+  {
+   "to": "st-tn-pos-minister-34",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/C._Joseph_Vijay_ministry",
+   "from": "st-tn-pos-minister-34"
+  },
+  {
+   "to": "st-tn-assembly",
+   "type": "elects",
+   "basis": "Article 170",
+   "source": "https://en.wikipedia.org/wiki/2026_Tamil_Nadu_Legislative_Assembly_election",
+   "from": "in-electorate"
+  },
+  {
+   "to": "st-tn-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/Governor_of_Tamil_Nadu",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "st-tn-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Vijay_(politician)",
+   "from": "st-tn-pos-governor"
+  },
+  {
+   "to": "st-tn-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Tamil_Nadu",
+   "from": "st-tn-council-of-ministers"
+  },
+  {
+   "to": "st-tn-pos-chief-minister",
+   "type": "reports_to",
+   "basis": "Business Rules",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Tamil_Nadu",
+   "from": "st-tn-pos-chief-secretary"
+  },
+  {
+   "to": "st-kl-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-1",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-1"
+  },
+  {
+   "to": "st-kl-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-2",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-2"
+  },
+  {
+   "to": "st-kl-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-3",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-3"
+  },
+  {
+   "to": "st-kl-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-4",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-4"
+  },
+  {
+   "to": "st-kl-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-5",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-5"
+  },
+  {
+   "to": "st-kl-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-6",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-6"
+  },
+  {
+   "to": "st-kl-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-7",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-7"
+  },
+  {
+   "to": "st-kl-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-8",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-8"
+  },
+  {
+   "to": "st-kl-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-9",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-9"
+  },
+  {
+   "to": "st-kl-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-10",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-10"
+  },
+  {
+   "to": "st-kl-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-11",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-11"
+  },
+  {
+   "to": "st-kl-pos-minister-12",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-12",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-12"
+  },
+  {
+   "to": "st-kl-pos-minister-13",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-13",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-13"
+  },
+  {
+   "to": "st-kl-pos-minister-14",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-14",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-14"
+  },
+  {
+   "to": "st-kl-pos-minister-15",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-15",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-15"
+  },
+  {
+   "to": "st-kl-pos-minister-16",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-16",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-16"
+  },
+  {
+   "to": "st-kl-pos-minister-17",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-17",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-17"
+  },
+  {
+   "to": "st-kl-pos-minister-18",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-18",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-18"
+  },
+  {
+   "to": "st-kl-pos-minister-19",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-19",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-19"
+  },
+  {
+   "to": "st-kl-pos-minister-20",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-chief-minister"
+  },
+  {
+   "to": "st-kl-pos-minister-20",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-council-of-ministers",
+   "type": "member_of",
+   "basis": "Article 163/164",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-minister-20"
+  },
+  {
+   "to": "st-kl-assembly",
+   "type": "elects",
+   "basis": "Article 170",
+   "source": "https://en.wikipedia.org/wiki/2026_Kerala_Legislative_Assembly_election",
+   "from": "in-electorate"
+  },
+  {
+   "to": "st-kl-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/Governor_of_Kerala",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "st-kl-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-pos-governor"
+  },
+  {
+   "to": "st-kl-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Minister_of_Kerala",
+   "from": "st-kl-council-of-ministers"
+  },
+  {
+   "to": "st-py-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Government of Union Territories Act, 1963, s.44",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-chief-minister"
+  },
+  {
+   "to": "st-py-pos-minister-1",
+   "type": "appoints",
+   "basis": "Government of Union Territories Act, 1963, s.44",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-lieutenant-governor"
+  },
+  {
+   "to": "st-py-council-of-ministers",
+   "type": "member_of",
+   "basis": "Government of Union Territories Act, 1963",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-minister-1"
+  },
+  {
+   "to": "st-py-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Government of Union Territories Act, 1963, s.44",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-chief-minister"
+  },
+  {
+   "to": "st-py-pos-minister-2",
+   "type": "appoints",
+   "basis": "Government of Union Territories Act, 1963, s.44",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-lieutenant-governor"
+  },
+  {
+   "to": "st-py-council-of-ministers",
+   "type": "member_of",
+   "basis": "Government of Union Territories Act, 1963",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-minister-2"
+  },
+  {
+   "to": "st-py-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Government of Union Territories Act, 1963, s.44",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-chief-minister"
+  },
+  {
+   "to": "st-py-pos-minister-3",
+   "type": "appoints",
+   "basis": "Government of Union Territories Act, 1963, s.44",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-lieutenant-governor"
+  },
+  {
+   "to": "st-py-council-of-ministers",
+   "type": "member_of",
+   "basis": "Government of Union Territories Act, 1963",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-minister-3"
+  },
+  {
+   "to": "st-py-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Government of Union Territories Act, 1963, s.44",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-chief-minister"
+  },
+  {
+   "to": "st-py-pos-minister-4",
+   "type": "appoints",
+   "basis": "Government of Union Territories Act, 1963, s.44",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-lieutenant-governor"
+  },
+  {
+   "to": "st-py-council-of-ministers",
+   "type": "member_of",
+   "basis": "Government of Union Territories Act, 1963",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-minister-4"
+  },
+  {
+   "to": "st-py-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Government of Union Territories Act, 1963, s.44",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-chief-minister"
+  },
+  {
+   "to": "st-py-pos-minister-5",
+   "type": "appoints",
+   "basis": "Government of Union Territories Act, 1963, s.44",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-lieutenant-governor"
+  },
+  {
+   "to": "st-py-council-of-ministers",
+   "type": "member_of",
+   "basis": "Government of Union Territories Act, 1963",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Rangaswamy_ministry",
+   "from": "st-py-pos-minister-5"
+  },
+  {
+   "to": "st-py-assembly",
+   "type": "elects",
+   "basis": "Government of Union Territories Act, 1963",
+   "source": "https://en.wikipedia.org/wiki/2026_Puducherry_Legislative_Assembly_election",
+   "from": "in-electorate"
+  },
+  {
+   "to": "st-py-pos-lieutenant-governor",
+   "type": "appoints",
+   "basis": "Article 239",
+   "source": "https://en.wikipedia.org/wiki/Lieutenant_Governor_of_Puducherry",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "st-py-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Government of Union Territories Act, 1963, s.44",
+   "source": "https://en.wikipedia.org/wiki/N._Rangasamy",
+   "from": "st-py-pos-lieutenant-governor"
+  },
+  {
+   "to": "st-py-assembly",
+   "type": "accountable_to",
+   "basis": "Government of Union Territories Act, 1963, s.44",
+   "source": "https://en.wikipedia.org/wiki/N._Rangasamy",
+   "from": "st-py-council-of-ministers"
+  },
+  {
+   "to": "st-py-assembly",
+   "type": "nominates",
+   "basis": "Government of Union Territories Act, 1963",
+   "source": "https://en.wikipedia.org/wiki/Puducherry_Legislative_Assembly",
+   "from": "in-pos-president"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 80,
+  "corrections": [
+   "st-tn-pos-chief-minister: wikipedia URL normalized from redirect https://en.wikipedia.org/wiki/Vijay_(politician) to canonical https://en.wikipedia.org/wiki/C._Joseph_Vijay",
+   "st-py-pos-chief-minister: holder name normalized from 'N. Rangasamy' (redirect spelling) to canonical Wikipedia title 'N. Rangaswamy'; wikipedia/source URL updated to canonical article",
+   "st-tn-pos-minister-11 (S. Rajeshkumar, Minister for Tourism): party corrected from 'INC' to 'TVK' -- confirmed against the C. Joseph Vijay ministry Wikipedia table (was misaligned by one row in original research)",
+   "st-py-pos-minister-5 (V. P. Sivakolundhu): party added ('AINRC', was null/unconfirmed), confirmed via Fifth Rangaswamy ministry Wikipedia article; confidence raised low->medium",
+   "st-tn-pos-lokayukta: STALE HOLDER corrected -- 'P. Devadass' was the first (2019) Lokayukta whose term has expired, not the current holder; replaced with current incumbent 'P. Raja Manickam' per Tamil Nadu Lokayukta Wikipedia infobox (confidence remains low: spelling/date unconfirmed)",
+   "st-kl-pos-dgp: fixed vacant=false/holder=null contradiction -- added holder 'Ravada A. Chandrasekhar' (since 2025-07-01) per Kerala Police Wikipedia infobox, confidence low",
+   "st-py-pos-dgp: fixed vacant=false/holder=null contradiction -- added holder 'Manoj Kumar Lal' per Puducherry Police Wikipedia infobox, confidence low",
+   "st-tn-pos-deputy-speaker: since tightened '2026-05' -> '2026-05-12'; confidence low->medium (reconfirmed via Tamil Nadu Legislative Assembly Wikipedia page)",
+   "st-tn-pos-speaker: confidence medium->high (reconfirmed name/party/date via Speaker of the Tamil Nadu Legislative Assembly Wikipedia page)",
+   "st-tn-pos-leader-of-opposition: since tightened '2026-05' -> '2026-05-10'; confidence medium->high (reconfirmed via Udhayanidhi Stalin Wikipedia page)",
+   "st-kl-pos-speaker: since tightened '2026-05' -> '2026-05-22'; confidence medium->high (reconfirmed via Thiruvanchoor Radhakrishnan Wikipedia page)",
+   "st-kl-pos-leader-of-opposition: since tightened '2026-05' -> '2026-05-18'; confidence medium->high (reconfirmed via Pinarayi Vijayan Wikipedia page)",
+   "Bumped confidence medium->high for 33 Tamil Nadu ministers and 20 Kerala ministers: full cabinet rosters (names, portfolios, parties) directly re-verified in full against the canonical 'C. Joseph Vijay ministry' and 'Satheesan ministry' Wikipedia articles (34/34 TN and 20/20 KL names matched, resolving the prior 34-vs-35 open question: 35 total = 1 CM + 34 ministers, the 34-minister list is complete)"
+  ]
+ }
+}

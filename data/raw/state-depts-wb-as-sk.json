@@ -1,0 +1,4086 @@
+{
+ "segment": "state-depts-wb-as-sk",
+ "asOf": "2026-09-25",
+ "notes": "Administrative-department entities (kind: state_department) for West Bengal, Assam and Sikkim, referencing existing minister/CM/Chief-Secretary position ids from states-wb-as-sk.json (not redefined here). West Bengal: 54 departments sourced directly from the official department index at wb.gov.in (government-departments-page.aspx), each with its own officialUrl; headPositionId matched by substring against each minister's 'Portfolio:' note (4 fell back to the Chief Minister at confidence=medium because their names weren't literally present in any minister's portfolio text: Correctional Administration, Disaster Management and Civil Defence, Paschimanchal Unnayan Affairs, Planning and Statistics — plausible since the CM holds 'all departments not allotted to other ministers', but unconfirmed by an explicit source). Assam: 51 departments derived from the Second Sarma ministry's official portfolio allocation as reported by Wikipedia/press (assam.gov.in's own /departments-list is a client-rendered page that returned almost no content to a static fetch within this session's tool budget, so no per-department officialUrl could be sourced; confidence=medium throughout). Sikkim: 40 departments sourced directly from the official department index at sikkim.gov.in (nav 'Departments' menu), each with its own officialUrl; 13 fell back to the Chief Minister (Home, Finance, Planning & Development, Personnel, Power, Excise, Land Revenue & Disaster Management, Transport, Information & Public Relations, Information Technology, Skill Development, DESME, Election) which matches the residual after all 11 ministers' stated portfolios are accounted for. SECRETARIES: none were added in this pass. This session's WebSearch budget was exhausted (200/200, shared across the parallel research run) before administrative-secretary research could start, and SCHEMA.md's instruction is to omit rather than guess a posting — filling st-<code>-pos-secretary-<dept-slug> needs a follow-up pass against each state's 2025-2026 IAS posting/transfer-order list (e.g. WB Personnel & AR Dept, Assam DoP&AR, Sikkim DoP orders) with a fresh search budget. Relations: 'heads' minister/CM -> department for every department, plus 'oversees' Chief Secretary -> department for every department (all three states' chief-secretary position ids exist in the base file).",
+ "entities": [
+  {
+   "id": "st-wb-dept-agricultural-marketing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Agricultural Marketing",
+   "aliases": [
+    "Agricultural Marketing"
+   ],
+   "description": "Runs the state's agriculture extension services, input supply and crop-development schemes for farmers.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D170911192215847&page=Agricultural-Marketing",
+   "headPositionId": "st-wb-pos-minister-3",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D170911192215847&page=Agricultural-Marketing"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Agriculture",
+   "aliases": [
+    "Agriculture"
+   ],
+   "description": "Runs the state's agriculture extension services, input supply and crop-development schemes for farmers.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D170907140022669&page=Agriculture",
+   "headPositionId": "st-wb-pos-minister-18",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D170907140022669&page=Agriculture"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-animal-resources-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Animal Resources Development",
+   "aliases": [
+    "Animal Resources Development"
+   ],
+   "description": "Runs veterinary services, livestock development, dairy and poultry programmes across West Bengal.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171104161241934&page=Animal-Resources-Development",
+   "headPositionId": "st-wb-pos-minister-20",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171104161241934&page=Animal-Resources-Development"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-backward-classes-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Backward Classes Welfare",
+   "aliases": [
+    "Backward Classes Welfare"
+   ],
+   "description": "Runs welfare and reservation-related schemes for Other Backward Classes.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171017150714382&page=Backward-Classes-Welfare",
+   "headPositionId": "st-wb-pos-minister-11",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171017150714382&page=Backward-Classes-Welfare"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-consumer-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Consumer Affairs",
+   "aliases": [
+    "Consumer Affairs"
+   ],
+   "description": "Enforces consumer-protection law and regulates weights and measures.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171017154447525&page=Consumer-Affairs",
+   "headPositionId": "st-wb-pos-minister-21",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171017154447525&page=Consumer-Affairs"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-co-operation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Co-operation",
+   "aliases": [
+    "Co-operation"
+   ],
+   "description": "Regulates and promotes cooperative societies, credit and marketing cooperatives in the state.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171017172319499&page=Co-operation",
+   "headPositionId": "st-wb-pos-minister-2",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171017172319499&page=Co-operation"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-correctional-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Correctional Administration",
+   "aliases": [
+    "Correctional Administration"
+   ],
+   "description": "Administers the state's prisons and correctional/reform services.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171104170336887&page=Correctional-Administration",
+   "headPositionId": "st-wb-pos-chief-minister",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171104170336887&page=Correctional-Administration"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-wb-dept-disaster-management-and-civil-defence",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Disaster Management and Civil Defence",
+   "aliases": [
+    "Disaster Management and Civil Defence"
+   ],
+   "description": "Coordinates the state's disaster preparedness, relief and rehabilitation response.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171017163539655&page=Disaster-Management-and-Civil-Defence",
+   "headPositionId": "st-wb-pos-chief-minister",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171017163539655&page=Disaster-Management-and-Civil-Defence"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-wb-dept-environment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Environment",
+   "aliases": [
+    "Environment"
+   ],
+   "description": "Regulates pollution control and environmental clearances and implements the state's environment policy.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171026152816854&page=Environment",
+   "headPositionId": "st-wb-pos-minister-9",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171026152816854&page=Environment"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance"
+   ],
+   "description": "Manages the state budget, treasury, taxation and public expenditure.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171020140220000&page=Finance",
+   "headPositionId": "st-wb-pos-minister-13",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171020140220000&page=Finance"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-fire-and-emergency-services",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Fire and Emergency Services",
+   "aliases": [
+    "Fire and Emergency Services"
+   ],
+   "description": "Runs the state fire service and emergency-response operations.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171017183526213&page=Fire-and-Emergency-Services",
+   "headPositionId": "st-wb-pos-minister-32",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171017183526213&page=Fire-and-Emergency-Services"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Fisheries",
+   "aliases": [
+    "Fisheries"
+   ],
+   "description": "Develops fisheries and aquaculture and supports the state's fishing communities.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171017184737480&page=Fisheries",
+   "headPositionId": "st-wb-pos-minister-20",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171017184737480&page=Fisheries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-food-and-supplies",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Food and Supplies",
+   "aliases": [
+    "Food and Supplies"
+   ],
+   "description": "Runs the public distribution system and food-supply regulation.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171017185942366&page=Food-and-Supplies",
+   "headPositionId": "st-wb-pos-minister-2",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171017185942366&page=Food-and-Supplies"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-food-processing-industries-and-horticulture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Food Processing Industries and Horticulture",
+   "aliases": [
+    "Food Processing Industries and Horticulture"
+   ],
+   "description": "Promotes horticulture, cash-crop cultivation and post-harvest support for growers.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171104174502424&page=Food-Processing-Industries-and-Horticulture",
+   "headPositionId": "st-wb-pos-minister-14",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171104174502424&page=Food-Processing-Industries-and-Horticulture"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-forests",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Forests Department",
+   "aliases": [
+    "Forests"
+   ],
+   "description": "Manages the state's forests, wildlife sanctuaries and environmental regulation.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171017180005140&page=Forests",
+   "headPositionId": "st-wb-pos-minister-9",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171017180005140&page=Forests"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-health-and-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Health and Family Welfare",
+   "aliases": [
+    "Health and Family Welfare"
+   ],
+   "description": "Runs public hospitals, health programmes and medical education in the state.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171104175411966&page=Health-and-Family-Welfare",
+   "headPositionId": "st-wb-pos-minister-15",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171104175411966&page=Health-and-Family-Welfare"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-higher-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Higher Education",
+   "aliases": [
+    "Higher Education"
+   ],
+   "description": "Oversees colleges, universities and technical/vocational education.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D190722192535757&page=Higher-Education",
+   "headPositionId": "st-wb-pos-minister-12",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D190722192535757&page=Higher-Education"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-home-and-hill-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Home and Hill Affairs Department",
+   "aliases": [
+    "Home and Hill Affairs"
+   ],
+   "description": "Oversees police, public order, prisons and internal security in the state.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171020123459389&page=Home-and-Hill-Affairs",
+   "headPositionId": "st-wb-pos-chief-minister",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171020123459389&page=Home-and-Hill-Affairs"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-housing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Housing Department",
+   "aliases": [
+    "Housing"
+   ],
+   "description": "Runs public housing schemes and building construction for the state.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171026145955640&page=Housing",
+   "headPositionId": "st-wb-pos-minister-6",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171026145955640&page=Housing"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-industry-commerce-and-enterprises",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Industry, Commerce and Enterprises",
+   "aliases": [
+    "Industry, Commerce and Enterprises"
+   ],
+   "description": "Promotes industrial investment, commerce and public-sector enterprises in the state.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D180824112903743&page=Industry,-Commerce-and-Enterprises",
+   "headPositionId": "st-wb-pos-minister-7",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D180824112903743&page=Industry,-Commerce-and-Enterprises"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-information-and-cultural-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Information & Cultural Affairs",
+   "aliases": [
+    "Information & Cultural Affairs"
+   ],
+   "description": "Preserves the state's heritage, arts, museums and cultural institutions.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171104154524399&page=Information-&-Cultural-Affairs",
+   "headPositionId": "st-wb-pos-chief-minister",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171104154524399&page=Information-&-Cultural-Affairs"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-information-technology-and-electronics",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Information Technology and Electronics",
+   "aliases": [
+    "Information Technology and Electronics"
+   ],
+   "description": "Drives e-governance, digital infrastructure and IT policy for the state.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171104180458821&page=Information-Technology-and-Electronics",
+   "headPositionId": "st-wb-pos-minister-14",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171104180458821&page=Information-Technology-and-Electronics"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-irrigation-and-waterways",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Irrigation and Waterways",
+   "aliases": [
+    "Irrigation and Waterways"
+   ],
+   "description": "Develops irrigation infrastructure and manages the state's river and water resources.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171018162508574&page=Irrigation-and-Waterways",
+   "headPositionId": "st-wb-pos-minister-16",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171018162508574&page=Irrigation-and-Waterways"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-judicial",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Judicial Department",
+   "aliases": [
+    "Judicial"
+   ],
+   "description": "Administers subordinate courts and judicial administration matters that fall to the state executive.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171104182519414&page=Judicial",
+   "headPositionId": "st-wb-pos-minister-38",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171104182519414&page=Judicial"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Labour Department",
+   "aliases": [
+    "Labour"
+   ],
+   "description": "Enforces labour laws, industrial relations and worker welfare in the state.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171023115944549&page=Labour",
+   "headPositionId": "st-wb-pos-minister-10",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171023115944549&page=Labour"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-land-and-land-reforms-and-refugee-relief-and-rehabilitation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Land and Land Reforms and Refugee Relief and Rehabilitation",
+   "aliases": [
+    "Land and Land Reforms and Refugee Relief and Rehabilitation"
+   ],
+   "description": "Administers land records, land revenue collection and land-reform measures.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D190305165850306&page=Land-and-Land-Reforms-and-Refugee-Relief-and-Rehabilitation",
+   "headPositionId": "st-wb-pos-chief-minister",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D190305165850306&page=Land-and-Land-Reforms-and-Refugee-Relief-and-Rehabilitation"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-law",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Law Department",
+   "aliases": [
+    "Law"
+   ],
+   "description": "Provides legal advice to government and drafts and vets state legislation.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D170911193153844&page=Law",
+   "headPositionId": "st-wb-pos-minister-38",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D170911193153844&page=Law"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-mass-education-extension-and-library-services",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Mass Education Extension and Library Services",
+   "aliases": [
+    "Mass Education Extension and Library Services"
+   ],
+   "description": "Runs adult-literacy programmes and public libraries.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171106120119131&page=Mass-Education-Extension-and-Library-Services",
+   "headPositionId": "st-wb-pos-minister-11",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171106120119131&page=Mass-Education-Extension-and-Library-Services"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-micro-small-and-medium-enterprises-and-textiles",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Micro, Small and Medium Enterprises and Textiles",
+   "aliases": [
+    "Micro, Small and Medium Enterprises and Textiles"
+   ],
+   "description": "Promotes handloom, textile and sericulture industries and artisan livelihoods.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171020131559014&page=Micro,-Small-and-Medium-Enterprises-and-Textiles",
+   "headPositionId": "st-wb-pos-minister-6",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171020131559014&page=Micro,-Small-and-Medium-Enterprises-and-Textiles"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-minority-affairs-and-madrasah-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Minority Affairs and Madrasah Education",
+   "aliases": [
+    "Minority Affairs and Madrasah Education"
+   ],
+   "description": "Runs welfare and education schemes for minority communities, including madrasah education.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171018171340413&page=Minority-Affairs-and-Madrasah-Education",
+   "headPositionId": "st-wb-pos-minister-4",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171018171340413&page=Minority-Affairs-and-Madrasah-Education"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-non-conventional-and-renewable-energy-sources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Non-Conventional and Renewable Energy Sources",
+   "aliases": [
+    "Non-Conventional and Renewable Energy Sources"
+   ],
+   "description": "Promotes solar, wind and other renewable-energy projects in West Bengal.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D191118102924750&page=Non-Conventional-and-Renewable-Energy-Sources",
+   "headPositionId": "st-wb-pos-minister-7",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D191118102924750&page=Non-Conventional-and-Renewable-Energy-Sources"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-north-bengal-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of North Bengal Development",
+   "aliases": [
+    "North Bengal Development"
+   ],
+   "description": "Coordinates infrastructure and development schemes specific to North Bengal.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171020143832834&page=North-Bengal-Development",
+   "headPositionId": "st-wb-pos-minister-1",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171020143832834&page=North-Bengal-Development"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-panchayats-and-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Panchayats and Rural Development",
+   "aliases": [
+    "Panchayats and Rural Development"
+   ],
+   "description": "Oversees panchayati raj institutions and rural local self-government.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171018172611445&page=Panchayats-and-Rural-Development",
+   "headPositionId": "st-wb-pos-minister-3",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171018172611445&page=Panchayats-and-Rural-Development"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Parliamentary Affairs",
+   "aliases": [
+    "Parliamentary Affairs"
+   ],
+   "description": "Manages the state government's business in the Legislative Assembly.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171106121346123&page=Parliamentary-Affairs",
+   "headPositionId": "st-wb-pos-minister-8",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171106121346123&page=Parliamentary-Affairs"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-paschimanchal-unnayan-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Paschimanchal Unnayan Affairs",
+   "aliases": [
+    "Paschimanchal Unnayan Affairs"
+   ],
+   "description": "Coordinates development schemes for the western/Paschimanchal region of West Bengal.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171106122417409&page=Paschimanchal-Unnayan-Affairs",
+   "headPositionId": "st-wb-pos-chief-minister",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171106122417409&page=Paschimanchal-Unnayan-Affairs"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-wb-dept-personnel-and-administrative-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Personnel and Administrative Reforms",
+   "aliases": [
+    "Personnel and Administrative Reforms"
+   ],
+   "description": "Manages civil-service recruitment, service rules and administrative reforms.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171018180121068&page=Personnel-and-Administrative-Reforms",
+   "headPositionId": "st-wb-pos-chief-minister",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171018180121068&page=Personnel-and-Administrative-Reforms"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-planning-and-statistics",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Planning and Statistics",
+   "aliases": [
+    "Planning and Statistics"
+   ],
+   "description": "Coordinates state planning, economic policy and statistics.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171106123639518&page=Planning-and-Statistics",
+   "headPositionId": "st-wb-pos-chief-minister",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171106123639518&page=Planning-and-Statistics"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-wb-dept-power",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Power Department",
+   "aliases": [
+    "Power"
+   ],
+   "description": "Oversees electricity generation, transmission and distribution policy in the state.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171020165646074&page=Power",
+   "headPositionId": "st-wb-pos-chief-minister",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171020165646074&page=Power"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-programme-monitoring",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Programme Monitoring",
+   "aliases": [
+    "Programme Monitoring"
+   ],
+   "description": "Monitors implementation of government schemes and flagship programmes.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D220816122624643&page=Programme-Monitoring",
+   "headPositionId": "st-wb-pos-minister-19",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D220816122624643&page=Programme-Monitoring"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-public-enterprises-and-industrial-reconstruction",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Public Enterprises and Industrial Reconstruction",
+   "aliases": [
+    "Public Enterprises and Industrial Reconstruction"
+   ],
+   "description": "Oversees state public-sector enterprises and industrial revival.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D191204073202606&page=Public-Enterprises-and-Industrial-Reconstruction",
+   "headPositionId": "st-wb-pos-minister-7",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D191204073202606&page=Public-Enterprises-and-Industrial-Reconstruction"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-public-health-engineering",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Public Health Engineering",
+   "aliases": [
+    "Public Health Engineering"
+   ],
+   "description": "Provides piped drinking water and public-health engineering infrastructure.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171020170927932&page=Public-Health-Engineering",
+   "headPositionId": "st-wb-pos-minister-17",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171020170927932&page=Public-Health-Engineering"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Public Works",
+   "aliases": [
+    "Public Works"
+   ],
+   "description": "Builds and maintains state government buildings and highways.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171017170617993&page=Public-Works",
+   "headPositionId": "st-wb-pos-minister-17",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171017170617993&page=Public-Works"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of School Education",
+   "aliases": [
+    "School Education"
+   ],
+   "description": "Administers government and government-aided schools and school curricula.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171018161534384&page=School-Education",
+   "headPositionId": "st-wb-pos-minister-6",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171018161534384&page=School-Education"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-science-and-technology-and-biotechnology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Science and Technology and Biotechnology",
+   "aliases": [
+    "Science and Technology and Biotechnology"
+   ],
+   "description": "Promotes science and technology programmes and climate-change policy.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D190305175821427&page=Science-and-Technology-and-Biotechnology",
+   "headPositionId": "st-wb-pos-minister-29",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D190305175821427&page=Science-and-Technology-and-Biotechnology"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-self-help-group-and-self-employment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Self Help Group and Self Employment",
+   "aliases": [
+    "Self Help Group and Self Employment"
+   ],
+   "description": "Runs skill-training, employment and self-employment programmes.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171020173250687&page=Self-Help-Group-and-Self-Employment",
+   "headPositionId": "st-wb-pos-minister-19",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171020173250687&page=Self-Help-Group-and-Self-Employment"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-sundarban-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Sundarban Affairs",
+   "aliases": [
+    "Sundarban Affairs"
+   ],
+   "description": "Coordinates development and conservation programmes for the Sundarbans region.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D190305155018113&page=Sundarban-Affairs",
+   "headPositionId": "st-wb-pos-minister-39",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D190305155018113&page=Sundarban-Affairs"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-technical-education-training-and-skill-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Technical Education, Training & Skill Development",
+   "aliases": [
+    "Technical Education, Training & Skill Development"
+   ],
+   "description": "Oversees polytechnics, ITIs and vocational-skilling programmes in West Bengal.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171018165634914&page=Technical-Education,-Training-&-Skill-Development",
+   "headPositionId": "st-wb-pos-minister-12",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171018165634914&page=Technical-Education,-Training-&-Skill-Development"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Tourism Department",
+   "aliases": [
+    "Tourism"
+   ],
+   "description": "Promotes tourism infrastructure and the state's tourist destinations.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171020182119249&page=Tourism",
+   "headPositionId": "st-wb-pos-minister-8",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171020182119249&page=Tourism"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Transport Department",
+   "aliases": [
+    "Transport"
+   ],
+   "description": "Regulates road transport, vehicle registration and public transport services.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D190305174659142&page=Transport",
+   "headPositionId": "st-wb-pos-minister-10",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D190305174659142&page=Transport"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-tribal-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Tribal Development",
+   "aliases": [
+    "Tribal Development"
+   ],
+   "description": "Runs welfare and development schemes for Scheduled Tribes.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171020185144156&page=Tribal-Development",
+   "headPositionId": "st-wb-pos-minister-4",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171020185144156&page=Tribal-Development"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-urban-development-and-municipal-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Urban Development and Municipal Affairs",
+   "aliases": [
+    "Urban Development and Municipal Affairs"
+   ],
+   "description": "Oversees municipal governance, urban planning and civic infrastructure.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171020190026414&page=Urban-Development-and-Municipal-Affairs",
+   "headPositionId": "st-wb-pos-minister-5",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171020190026414&page=Urban-Development-and-Municipal-Affairs"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-water-resources-investigation-and-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Water resources Investigation and Development",
+   "aliases": [
+    "Water resources Investigation and Development"
+   ],
+   "description": "Develops irrigation infrastructure and manages the state's river and water resources.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171017174354943&page=Water-resources-Investigation-and-Development",
+   "headPositionId": "st-wb-pos-minister-1",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171017174354943&page=Water-resources-Investigation-and-Development"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-women-and-child-development-and-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Women and Child Development and Social Welfare",
+   "aliases": [
+    "Women and Child Development and Social Welfare"
+   ],
+   "description": "Runs child-welfare, nutrition and women's-safety schemes, including anganwadi services.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D170911133209662&page=Women-and-Child-Development-and-Social-Welfare",
+   "headPositionId": "st-wb-pos-minister-19",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D170911133209662&page=Women-and-Child-Development-and-Social-Welfare"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-dept-youth-services-and-sports",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-wb-government",
+   "name": "Department of Youth Services and Sports",
+   "aliases": [
+    "Youth Services and Sports"
+   ],
+   "description": "Runs sports infrastructure and youth-development programmes.",
+   "officialUrl": "https://wb.gov.in/departments-details.aspx?id=D171020191849227&page=Youth-Services-and-Sports",
+   "headPositionId": "st-wb-pos-minister-21",
+   "sources": [
+    "https://wb.gov.in/departments-details.aspx?id=D171020191849227&page=Youth-Services-and-Sports"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-dept-home-and-political",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Home and Political Department",
+   "aliases": [
+    "Home and Political"
+   ],
+   "description": "Oversees police, public order, prisons and internal security in the state.",
+   "headPositionId": "st-as-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-public-works-buildings-and-national-highways",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Public Works (Buildings and National Highways) Department",
+   "aliases": [
+    "Public Works (Buildings and National Highways)"
+   ],
+   "description": "Builds and maintains state government buildings and highways.",
+   "headPositionId": "st-as-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-public-works-roads",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Public Works (Roads) Department",
+   "aliases": [
+    "Public Works (Roads)"
+   ],
+   "description": "Constructs and maintains the state's roads and bridges.",
+   "headPositionId": "st-as-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-power",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Power Department",
+   "aliases": [
+    "Power"
+   ],
+   "description": "Oversees electricity generation, transmission and distribution policy in the state.",
+   "headPositionId": "st-as-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-information-public-relations-printing-and-stationery",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Information, Public Relations, Printing and Stationery Department",
+   "aliases": [
+    "Information, Public Relations, Printing and Stationery"
+   ],
+   "description": "Handles the state government's public communication, press releases and media relations.",
+   "headPositionId": "st-as-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-transformation-and-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Transformation and Development Department",
+   "aliases": [
+    "Transformation and Development"
+   ],
+   "description": "Coordinates cross-department transformation and development initiatives for the state.",
+   "headPositionId": "st-as-pos-minister-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-labour-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Labour Welfare Department",
+   "aliases": [
+    "Labour Welfare"
+   ],
+   "description": "Enforces labour laws, industrial relations and worker welfare in the state.",
+   "headPositionId": "st-as-pos-minister-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-tea-tribes-and-adivasi-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Tea Tribes and Adivasi Welfare Department",
+   "aliases": [
+    "Tea Tribes and Adivasi Welfare"
+   ],
+   "description": "Runs welfare schemes for tea-garden and Adivasi communities.",
+   "headPositionId": "st-as-pos-minister-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-panchayat-and-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Panchayat and Rural Development Department",
+   "aliases": [
+    "Panchayat and Rural Development"
+   ],
+   "description": "Oversees panchayati raj institutions and rural local self-government.",
+   "headPositionId": "st-as-pos-minister-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-implementation-of-assam-accord",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Implementation of Assam Accord Department",
+   "aliases": [
+    "Implementation of Assam Accord"
+   ],
+   "description": "Coordinates implementation of the Assam Accord's clauses.",
+   "headPositionId": "st-as-pos-minister-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-border-protection-and-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Border Protection and Development Department",
+   "aliases": [
+    "Border Protection and Development"
+   ],
+   "description": "Manages border-area protection and development along the state's international border.",
+   "headPositionId": "st-as-pos-minister-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Excise Department",
+   "aliases": [
+    "Excise"
+   ],
+   "description": "Regulates the manufacture, sale and taxation of alcohol and controlled substances in the state.",
+   "headPositionId": "st-as-pos-minister-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Transport Department",
+   "aliases": [
+    "Transport"
+   ],
+   "description": "Regulates road transport, vehicle registration and public transport services.",
+   "headPositionId": "st-as-pos-minister-3",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-welfare-of-bodoland",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Welfare of Bodoland Department",
+   "aliases": [
+    "Welfare of Bodoland"
+   ],
+   "description": "Coordinates welfare and development programmes for the Bodoland region.",
+   "headPositionId": "st-as-pos-minister-3",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-women-and-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Women and Child Development Department",
+   "aliases": [
+    "Women and Child Development"
+   ],
+   "description": "Runs child-welfare, nutrition and women's-safety schemes, including anganwadi services.",
+   "headPositionId": "st-as-pos-minister-4",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Tourism Department",
+   "aliases": [
+    "Tourism"
+   ],
+   "description": "Promotes tourism infrastructure and the state's tourist destinations.",
+   "headPositionId": "st-as-pos-minister-4",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Parliamentary Affairs Department",
+   "aliases": [
+    "Parliamentary Affairs"
+   ],
+   "description": "Manages the state government's business in the Legislative Assembly.",
+   "headPositionId": "st-as-pos-minister-5",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Agriculture Department",
+   "aliases": [
+    "Agriculture"
+   ],
+   "description": "Runs the state's agriculture extension services, input supply and crop-development schemes for farmers.",
+   "headPositionId": "st-as-pos-minister-5",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-irrigation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Irrigation Department",
+   "aliases": [
+    "Irrigation"
+   ],
+   "description": "Develops irrigation infrastructure and manages the state's river and water resources.",
+   "headPositionId": "st-as-pos-minister-5",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-social-justice-and-empowerment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Social Justice and Empowerment Department",
+   "aliases": [
+    "Social Justice and Empowerment"
+   ],
+   "description": "Runs welfare and social-security schemes for persons with disabilities and other disadvantaged groups in Assam.",
+   "headPositionId": "st-as-pos-minister-6",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-soil-conservation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Soil Conservation Department",
+   "aliases": [
+    "Soil Conservation"
+   ],
+   "description": "Runs soil- and watershed-conservation programmes.",
+   "headPositionId": "st-as-pos-minister-6",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-welfare-of-minorities-and-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Welfare of Minorities and Development Department",
+   "aliases": [
+    "Welfare of Minorities and Development"
+   ],
+   "description": "Runs welfare and education schemes for minority communities, including madrasah education.",
+   "headPositionId": "st-as-pos-minister-6",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-health-and-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Health and Family Welfare Department",
+   "aliases": [
+    "Health and Family Welfare"
+   ],
+   "description": "Runs public hospitals, health programmes and medical education in the state.",
+   "headPositionId": "st-as-pos-minister-7",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-medical-education-and-research",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Medical Education and Research Department",
+   "aliases": [
+    "Medical Education and Research"
+   ],
+   "description": "Runs public hospitals, health programmes and medical education in the state.",
+   "headPositionId": "st-as-pos-minister-7",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-cultural-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Cultural Affairs Department",
+   "aliases": [
+    "Cultural Affairs"
+   ],
+   "description": "Preserves the state's heritage, arts, museums and cultural institutions.",
+   "headPositionId": "st-as-pos-minister-8",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-industries-commerce-and-public-enterprises",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Industries, Commerce and Public Enterprises Department",
+   "aliases": [
+    "Industries, Commerce and Public Enterprises"
+   ],
+   "description": "Promotes industrial investment, commerce and public-sector enterprises in the state.",
+   "headPositionId": "st-as-pos-minister-8",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-act-east-policy-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Act East Policy Affairs Department",
+   "aliases": [
+    "Act East Policy Affairs"
+   ],
+   "description": "Coordinates the state's participation in India's Act East Policy connectivity initiatives.",
+   "headPositionId": "st-as-pos-minister-8",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-handloom-textiles-and-sericulture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Handloom, Textiles and Sericulture Department",
+   "aliases": [
+    "Handloom, Textiles and Sericulture"
+   ],
+   "description": "Promotes handloom, textile and sericulture industries and artisan livelihoods.",
+   "headPositionId": "st-as-pos-minister-9",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-sports-and-youth-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Sports and Youth Welfare Department",
+   "aliases": [
+    "Sports and Youth Welfare"
+   ],
+   "description": "Runs sports infrastructure and youth-development programmes.",
+   "headPositionId": "st-as-pos-minister-9",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-skill-employment-and-entrepreneurship",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Skill, Employment and Entrepreneurship Department",
+   "aliases": [
+    "Skill, Employment and Entrepreneurship"
+   ],
+   "description": "Runs skill-training, employment and self-employment programmes.",
+   "headPositionId": "st-as-pos-minister-9",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-indigenous-and-tribal-faith-and-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Indigenous and Tribal Faith and Culture Department",
+   "aliases": [
+    "Indigenous and Tribal Faith and Culture"
+   ],
+   "description": "Administers religious and community trusts and places of worship.",
+   "headPositionId": "st-as-pos-minister-9",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance"
+   ],
+   "description": "Manages the state budget, treasury, taxation and public expenditure.",
+   "headPositionId": "st-as-pos-minister-10",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-environment-and-forest",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Environment and Forest Department",
+   "aliases": [
+    "Environment and Forest"
+   ],
+   "description": "Manages the state's forests, wildlife sanctuaries and environmental regulation.",
+   "headPositionId": "st-as-pos-minister-10",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-mines-and-minerals",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Mines and Minerals Department",
+   "aliases": [
+    "Mines and Minerals"
+   ],
+   "description": "Regulates mining leases and mineral resources in the state.",
+   "headPositionId": "st-as-pos-minister-10",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-food-public-distribution-and-consumer-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Food, Public Distribution and Consumer Affairs Department",
+   "aliases": [
+    "Food, Public Distribution and Consumer Affairs"
+   ],
+   "description": "Runs the public distribution system and food-supply regulation.",
+   "headPositionId": "st-as-pos-minister-11",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-housing-and-urban-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Housing and Urban Affairs Department",
+   "aliases": [
+    "Housing and Urban Affairs"
+   ],
+   "description": "Runs public housing schemes and building construction for the state.",
+   "headPositionId": "st-as-pos-minister-11",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Cooperation Department",
+   "aliases": [
+    "Cooperation"
+   ],
+   "description": "Regulates and promotes cooperative societies, credit and marketing cooperatives in the state.",
+   "headPositionId": "st-as-pos-minister-11",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-revenue-and-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Revenue and Disaster Management Department",
+   "aliases": [
+    "Revenue and Disaster Management"
+   ],
+   "description": "Coordinates the state's disaster preparedness, relief and rehabilitation response.",
+   "headPositionId": "st-as-pos-minister-12",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-science-technology-and-climate-change",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Science, Technology and Climate Change Department",
+   "aliases": [
+    "Science, Technology and Climate Change"
+   ],
+   "description": "Promotes science and technology programmes and climate-change policy.",
+   "headPositionId": "st-as-pos-minister-12",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "General Administration Department",
+   "aliases": [
+    "General Administration"
+   ],
+   "description": "Coordinates general administrative and secretariat functions of the state government.",
+   "headPositionId": "st-as-pos-minister-12",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-public-health-engineering",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Public Health Engineering Department",
+   "aliases": [
+    "Public Health Engineering"
+   ],
+   "description": "Provides piped drinking water and public-health engineering infrastructure.",
+   "headPositionId": "st-as-pos-minister-13",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-hill-areas-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Hill Areas Development Department",
+   "aliases": [
+    "Hill Areas Development"
+   ],
+   "description": "Coordinates development programmes for the state's hill areas.",
+   "headPositionId": "st-as-pos-minister-13",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-barak-valley-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Barak Valley Development Department",
+   "aliases": [
+    "Barak Valley Development"
+   ],
+   "description": "Coordinates development programmes for the Barak Valley region.",
+   "headPositionId": "st-as-pos-minister-13",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-animal-husbandry-and-veterinary",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Animal Husbandry and Veterinary Department",
+   "aliases": [
+    "Animal Husbandry and Veterinary"
+   ],
+   "description": "Runs veterinary services, livestock development and dairy programmes.",
+   "headPositionId": "st-as-pos-minister-14",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Fisheries Department",
+   "aliases": [
+    "Fisheries"
+   ],
+   "description": "Develops fisheries and aquaculture and supports the state's fishing communities.",
+   "headPositionId": "st-as-pos-minister-14",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "School Education Department",
+   "aliases": [
+    "School Education"
+   ],
+   "description": "Administers government and government-aided schools and school curricula.",
+   "headPositionId": "st-as-pos-minister-15",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-higher-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Higher Education Department",
+   "aliases": [
+    "Higher Education"
+   ],
+   "description": "Oversees colleges, universities and technical/vocational education.",
+   "headPositionId": "st-as-pos-minister-15",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-tribal-affairs-plains",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Tribal Affairs (Plains) Department",
+   "aliases": [
+    "Tribal Affairs (Plains)"
+   ],
+   "description": "Runs welfare and development schemes for Scheduled Tribes.",
+   "headPositionId": "st-as-pos-minister-15",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Information Technology Department",
+   "aliases": [
+    "Information Technology"
+   ],
+   "description": "Drives e-governance, digital infrastructure and IT policy for the state.",
+   "headPositionId": "st-as-pos-minister-15",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Water Resources Department",
+   "aliases": [
+    "Water Resources"
+   ],
+   "description": "Develops irrigation infrastructure and manages the state's river and water resources.",
+   "headPositionId": "st-as-pos-minister-16",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-as-dept-judicial",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-as-government",
+   "name": "Judicial Department",
+   "aliases": [
+    "Judicial"
+   ],
+   "description": "Administers subordinate courts and judicial administration matters that fall to the state executive.",
+   "headPositionId": "st-as-pos-minister-16",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "medium",
+   "notes": "Department list & portfolio allocation from the Second Sarma ministry's official Allocation of Business as reported by press/Wikipedia; state secretariat's own JS-rendered department directory (assam.gov.in/departments-list) could not be parsed in this pass."
+  },
+  {
+   "id": "st-sk-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Agriculture Department",
+   "aliases": [
+    "Agriculture"
+   ],
+   "description": "Runs the state's agriculture extension services, input supply and crop-development schemes for farmers.",
+   "officialUrl": "https://sikkim.gov.in/departments/food-security-and-agriculture-development-department",
+   "headPositionId": "st-sk-pos-minister-7",
+   "sources": [
+    "https://sikkim.gov.in/departments/food-security-and-agriculture-development-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-animal-husbandry-and-veterinary-services",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Animal Husbandry & Veterinary Services Department",
+   "aliases": [
+    "Animal Husbandry & Veterinary Services"
+   ],
+   "description": "Runs veterinary services, livestock development and dairy programmes.",
+   "officialUrl": "https://sikkim.gov.in/departments/sikkim-ahvs",
+   "headPositionId": "st-sk-pos-minister-7",
+   "sources": [
+    "https://sikkim.gov.in/departments/sikkim-ahvs"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-buildings-and-housing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Buildings & Housing Department",
+   "aliases": [
+    "Buildings & Housing"
+   ],
+   "description": "Runs public housing schemes and building construction for the state.",
+   "officialUrl": "https://sikkim.gov.in/departments/building-and-housing-department",
+   "headPositionId": "st-sk-pos-minister-4",
+   "sources": [
+    "https://sikkim.gov.in/departments/building-and-housing-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-commerce-and-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Commerce & Industries Department",
+   "aliases": [
+    "Commerce & Industries"
+   ],
+   "description": "Promotes industrial investment, commerce and public-sector enterprises in the state.",
+   "officialUrl": "https://sikkim.gov.in/departments/commerce-and-industries-department",
+   "headPositionId": "st-sk-pos-minister-11",
+   "sources": [
+    "https://sikkim.gov.in/departments/commerce-and-industries-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Cooperation Department",
+   "aliases": [
+    "Cooperation"
+   ],
+   "description": "Regulates and promotes cooperative societies, credit and marketing cooperatives in the state.",
+   "officialUrl": "https://sikkim.gov.in/departments/cooperation-department",
+   "headPositionId": "st-sk-pos-minister-2",
+   "sources": [
+    "https://sikkim.gov.in/departments/cooperation-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Culture Department",
+   "aliases": [
+    "Culture"
+   ],
+   "description": "Preserves the state's heritage, arts, museums and cultural institutions.",
+   "officialUrl": "https://sikkim.gov.in/departments/cultural-affairs-and-heritage-department",
+   "headPositionId": "st-sk-pos-minister-6",
+   "sources": [
+    "https://sikkim.gov.in/departments/cultural-affairs-and-heritage-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-desme",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Directorate of Economics, Statistics, Monitoring and Evaluation",
+   "aliases": [
+    "Directorate of Economics, Statistics & Monitoring and Evaluation"
+   ],
+   "description": "Compiles official economic and statistical data and monitors plan implementation.",
+   "officialUrl": "https://sikkim.gov.in/departments/desme",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/desme"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-dept-personnel",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Department of Personnel",
+   "aliases": [
+    "Department of Personnel"
+   ],
+   "description": "Manages civil-service recruitment, service rules and administrative reforms.",
+   "officialUrl": "https://sikkim.gov.in/departments/department-of-personnel-public-grievances",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/department-of-personnel-public-grievances"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-dept-ecclesiastical",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Ecclesiastical Department",
+   "aliases": [
+    "Ecclesiastical"
+   ],
+   "description": "Administers religious and community trusts and places of worship.",
+   "officialUrl": "https://sikkim.gov.in/departments/ecclesiastical-affairs-department",
+   "headPositionId": "st-sk-pos-minister-1",
+   "sources": [
+    "https://sikkim.gov.in/departments/ecclesiastical-affairs-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Education Department",
+   "aliases": [
+    "Education"
+   ],
+   "description": "Administers government schools, colleges and the state's education policy and curricula.",
+   "officialUrl": "https://sikkim.gov.in/departments/education-department",
+   "headPositionId": "st-sk-pos-minister-10",
+   "sources": [
+    "https://sikkim.gov.in/departments/education-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-election",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Election Department",
+   "aliases": [
+    "Election"
+   ],
+   "description": "Runs the state's electoral rolls and election administration under the Election Commission of India.",
+   "officialUrl": "https://sikkim.gov.in/departments/election-department",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/election-department"
+   ],
+   "confidence": "medium",
+   "notes": "Operationally headed by the Chief Electoral Officer under the Election Commission of India; formally an unallotted department resting with the Chief Minister under the Business Rules."
+  },
+  {
+   "id": "st-sk-dept-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Excise Department",
+   "aliases": [
+    "Excise"
+   ],
+   "description": "Regulates the manufacture, sale and taxation of alcohol and controlled substances in the state.",
+   "officialUrl": "https://sikkim.gov.in/departments/excise-department",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/excise-department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance"
+   ],
+   "description": "Manages the state budget, treasury, taxation and public expenditure.",
+   "officialUrl": "https://sikkim.gov.in/departments/finance-revenue-expenditure-department",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/finance-revenue-expenditure-department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Fisheries Department",
+   "aliases": [
+    "Fisheries"
+   ],
+   "description": "Develops fisheries and aquaculture and supports the state's fishing communities.",
+   "officialUrl": "https://sikkim.gov.in/departments/fisheries-department",
+   "headPositionId": "st-sk-pos-minister-7",
+   "sources": [
+    "https://sikkim.gov.in/departments/fisheries-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-food-and-civil-supplies",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Food & Civil Supplies Department",
+   "aliases": [
+    "Food & Civil Supplies"
+   ],
+   "description": "Runs the public distribution system and food-supply regulation.",
+   "officialUrl": "https://sikkim.gov.in/departments/food-civil-supplies-department",
+   "headPositionId": "st-sk-pos-minister-5",
+   "sources": [
+    "https://sikkim.gov.in/departments/food-civil-supplies-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-forest-and-environment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Forest & Environment Department",
+   "aliases": [
+    "Forest & Environment"
+   ],
+   "description": "Manages the state's forests, wildlife sanctuaries and environmental regulation.",
+   "officialUrl": "https://sikkim.gov.in/departments/forest-environment-and-wildlife-department",
+   "headPositionId": "st-sk-pos-minister-8",
+   "sources": [
+    "https://sikkim.gov.in/departments/forest-environment-and-wildlife-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-health-and-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Health & Family Welfare Department",
+   "aliases": [
+    "Health & Family Welfare"
+   ],
+   "description": "Runs public hospitals, primary health centres and family-welfare programmes in Sikkim.",
+   "officialUrl": "https://sikkim.gov.in/departments/health-family-welfare-department",
+   "headPositionId": "st-sk-pos-minister-6",
+   "sources": [
+    "https://sikkim.gov.in/departments/health-family-welfare-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Home Department",
+   "aliases": [
+    "Home"
+   ],
+   "description": "Oversees police, public order, prisons and internal security in the state.",
+   "officialUrl": "https://sikkim.gov.in/departments/home-department",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/home-department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-dept-horticulture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Horticulture Department",
+   "aliases": [
+    "Horticulture"
+   ],
+   "description": "Promotes horticulture, cash-crop cultivation and post-harvest support for growers.",
+   "officialUrl": "https://sikkim.gov.in/departments/horticulture-cash-crop-department",
+   "headPositionId": "st-sk-pos-minister-7",
+   "sources": [
+    "https://sikkim.gov.in/departments/horticulture-cash-crop-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-information-and-public-relations",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Information & Public Relations Department",
+   "aliases": [
+    "Information & Public Relations"
+   ],
+   "description": "Handles the state government's public communication, press releases and media relations.",
+   "officialUrl": "https://sikkim.gov.in/departments/information-and-public-relations-department",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/information-and-public-relations-department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Information Technology Department",
+   "aliases": [
+    "Information Technology"
+   ],
+   "description": "Drives e-governance, digital infrastructure and IT policy for the state.",
+   "officialUrl": "https://sikkim.gov.in/departments/information-technology-department",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/information-technology-department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Labour Department",
+   "aliases": [
+    "Labour"
+   ],
+   "description": "Enforces labour laws, industrial relations and worker welfare in the state.",
+   "officialUrl": "https://sikkim.gov.in/departments/labour-department",
+   "headPositionId": "st-sk-pos-minister-4",
+   "sources": [
+    "https://sikkim.gov.in/departments/labour-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-land-revenue-and-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Land Revenue & Disaster Management Department",
+   "aliases": [
+    "Land Revenue & Disaster Management"
+   ],
+   "description": "Administers land records, land revenue collection and land-reform measures.",
+   "officialUrl": "https://sikkim.gov.in/departments/land-revenue-disaster-management",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/land-revenue-disaster-management"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-dept-law",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Law Department",
+   "aliases": [
+    "Law"
+   ],
+   "description": "Provides legal advice to government and drafts and vets state legislation.",
+   "officialUrl": "https://sikkim.gov.in/departments/law-parliamentary-affairs-department",
+   "headPositionId": "st-sk-pos-minister-10",
+   "sources": [
+    "https://sikkim.gov.in/departments/law-parliamentary-affairs-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-mines-and-geology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Mines & Geology Department",
+   "aliases": [
+    "Mines & Geology"
+   ],
+   "description": "Regulates mining leases and mineral resources in the state.",
+   "officialUrl": "https://sikkim.gov.in/departments/mines-minerals-and-geology",
+   "headPositionId": "st-sk-pos-minister-8",
+   "sources": [
+    "https://sikkim.gov.in/departments/mines-minerals-and-geology"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-planning-and-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Planning & Development Department",
+   "aliases": [
+    "Planning & Development"
+   ],
+   "description": "Coordinates state planning, economic policy and statistics.",
+   "officialUrl": "https://sikkim.gov.in/departments/development-planning-economic-reforms-affairs-department",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/development-planning-economic-reforms-affairs-department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-dept-power",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Power Department",
+   "aliases": [
+    "Power"
+   ],
+   "description": "Oversees electricity generation, transmission and distribution policy in the state.",
+   "officialUrl": "https://sikkim.gov.in/departments/energy-and-power-department",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/energy-and-power-department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-dept-printing-and-stationery",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Printing & Stationery Department",
+   "aliases": [
+    "Printing & Stationery"
+   ],
+   "description": "Runs the government press and supplies stationery to state offices.",
+   "officialUrl": "https://sikkim.gov.in/departments/printing-stationery-department",
+   "headPositionId": "st-sk-pos-minister-3",
+   "sources": [
+    "https://sikkim.gov.in/departments/printing-stationery-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-public-health-engineering",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Public Health Engineering Department",
+   "aliases": [
+    "Public Health Engineering"
+   ],
+   "description": "Provides piped drinking water and public-health engineering infrastructure.",
+   "officialUrl": "https://sikkim.gov.in/departments/water-security-phe-department",
+   "headPositionId": "st-sk-pos-minister-1",
+   "sources": [
+    "https://sikkim.gov.in/departments/water-security-phe-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-roads-and-bridges",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Roads & Bridges Department",
+   "aliases": [
+    "Roads & Bridges"
+   ],
+   "description": "Constructs and maintains the state's roads and bridges.",
+   "officialUrl": "https://sikkim.gov.in/departments/roads-and-bridges-department",
+   "headPositionId": "st-sk-pos-minister-9",
+   "sources": [
+    "https://sikkim.gov.in/departments/roads-and-bridges-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Rural Development Department",
+   "aliases": [
+    "Rural Development"
+   ],
+   "description": "Implements rural livelihood, infrastructure and poverty-alleviation schemes.",
+   "officialUrl": "https://sikkim.gov.in/departments/rural-management-development-department",
+   "headPositionId": "st-sk-pos-minister-2",
+   "sources": [
+    "https://sikkim.gov.in/departments/rural-management-development-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-science-and-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Science & Technology Department",
+   "aliases": [
+    "Science & Technology"
+   ],
+   "description": "Promotes science, technology and biotechnology research and applications.",
+   "officialUrl": "https://sikkim.gov.in/departments/department-of-science-technology",
+   "headPositionId": "st-sk-pos-minister-8",
+   "sources": [
+    "https://sikkim.gov.in/departments/department-of-science-technology"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-skill-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Skill Development Department",
+   "aliases": [
+    "Skill Development"
+   ],
+   "description": "Runs skill-training, employment and self-employment programmes.",
+   "officialUrl": "https://sikkim.gov.in/departments/state-institute-of-capacity-building",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/state-institute-of-capacity-building"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Social Welfare Department",
+   "aliases": [
+    "Social Welfare"
+   ],
+   "description": "Runs welfare and social-security schemes for disadvantaged and marginalised groups.",
+   "officialUrl": "https://sikkim.gov.in/departments/social-welfare-department",
+   "headPositionId": "st-sk-pos-minister-3",
+   "sources": [
+    "https://sikkim.gov.in/departments/social-welfare-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-sports-and-youth-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Sports & Youth Affairs Department",
+   "aliases": [
+    "Sports & Youth Affairs"
+   ],
+   "description": "Runs sports infrastructure and youth-development programmes.",
+   "officialUrl": "https://sikkim.gov.in/departments/sports-and-youth-affairs-department",
+   "headPositionId": "st-sk-pos-minister-10",
+   "sources": [
+    "https://sikkim.gov.in/departments/sports-and-youth-affairs-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-tourism-and-civil-aviation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Tourism & Civil Aviation Department",
+   "aliases": [
+    "Tourism & Civil Aviation"
+   ],
+   "description": "Promotes tourism infrastructure and the state's tourist destinations.",
+   "officialUrl": "https://sikkim.gov.in/departments/tourism-civil-aviation-department",
+   "headPositionId": "st-sk-pos-minister-11",
+   "sources": [
+    "https://sikkim.gov.in/departments/tourism-civil-aviation-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Transport Department",
+   "aliases": [
+    "Transport"
+   ],
+   "description": "Regulates road transport, vehicle registration and public transport services.",
+   "officialUrl": "https://sikkim.gov.in/departments/transport-department",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://sikkim.gov.in/departments/transport-department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-dept-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Urban Development Department",
+   "aliases": [
+    "Urban Development"
+   ],
+   "description": "Oversees municipal governance, urban planning and civic infrastructure.",
+   "officialUrl": "https://sikkim.gov.in/departments/urban-dev-housing-department",
+   "headPositionId": "st-sk-pos-minister-5",
+   "sources": [
+    "https://sikkim.gov.in/departments/urban-dev-housing-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Water Resources Department",
+   "aliases": [
+    "Water Resources"
+   ],
+   "description": "Develops irrigation infrastructure and manages the state's river and water resources.",
+   "officialUrl": "https://sikkim.gov.in/departments/water-resource-river-development-department",
+   "headPositionId": "st-sk-pos-minister-1",
+   "sources": [
+    "https://sikkim.gov.in/departments/water-resource-river-development-department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-dept-women-child-senior-citizen-and-divyangjan-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-sk-government",
+   "name": "Women, Child, Senior Citizen and Divyangjan Welfare Department",
+   "aliases": [
+    "Women, Child, Senior Citizen and Divyangjan Welfare"
+   ],
+   "description": "Runs child-welfare, nutrition and women's-safety schemes, including anganwadi services.",
+   "officialUrl": "https://sikkim.gov.in/departments/women-child-senior-citizen-and-divyangjan-welfare-department",
+   "headPositionId": "st-sk-pos-minister-3",
+   "sources": [
+    "https://sikkim.gov.in/departments/women-child-senior-citizen-and-divyangjan-welfare-department"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "positions": [],
+ "relations": [
+  {
+   "from": "st-wb-pos-minister-3",
+   "to": "st-wb-dept-agricultural-marketing",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D170911192215847&page=Agricultural-Marketing"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-agricultural-marketing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-18",
+   "to": "st-wb-dept-agriculture",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D170907140022669&page=Agriculture"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-20",
+   "to": "st-wb-dept-animal-resources-development",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171104161241934&page=Animal-Resources-Development"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-animal-resources-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-11",
+   "to": "st-wb-dept-backward-classes-welfare",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171017150714382&page=Backward-Classes-Welfare"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-backward-classes-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-21",
+   "to": "st-wb-dept-consumer-affairs",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171017154447525&page=Consumer-Affairs"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-consumer-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-2",
+   "to": "st-wb-dept-co-operation",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171017172319499&page=Co-operation"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-co-operation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-dept-correctional-administration",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171104170336887&page=Correctional-Administration"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-correctional-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-dept-disaster-management-and-civil-defence",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171017163539655&page=Disaster-Management-and-Civil-Defence"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-disaster-management-and-civil-defence",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-9",
+   "to": "st-wb-dept-environment",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171026152816854&page=Environment"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-environment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-13",
+   "to": "st-wb-dept-finance",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171020140220000&page=Finance"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-32",
+   "to": "st-wb-dept-fire-and-emergency-services",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171017183526213&page=Fire-and-Emergency-Services"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-fire-and-emergency-services",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-20",
+   "to": "st-wb-dept-fisheries",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171017184737480&page=Fisheries"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-2",
+   "to": "st-wb-dept-food-and-supplies",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171017185942366&page=Food-and-Supplies"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-food-and-supplies",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-14",
+   "to": "st-wb-dept-food-processing-industries-and-horticulture",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171104174502424&page=Food-Processing-Industries-and-Horticulture"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-food-processing-industries-and-horticulture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-9",
+   "to": "st-wb-dept-forests",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171017180005140&page=Forests"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-forests",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-15",
+   "to": "st-wb-dept-health-and-family-welfare",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171104175411966&page=Health-and-Family-Welfare"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-health-and-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-12",
+   "to": "st-wb-dept-higher-education",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D190722192535757&page=Higher-Education"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-higher-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-dept-home-and-hill-affairs",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171020123459389&page=Home-and-Hill-Affairs"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-home-and-hill-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-6",
+   "to": "st-wb-dept-housing",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171026145955640&page=Housing"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-housing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-7",
+   "to": "st-wb-dept-industry-commerce-and-enterprises",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D180824112903743&page=Industry,-Commerce-and-Enterprises"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-industry-commerce-and-enterprises",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-dept-information-and-cultural-affairs",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171104154524399&page=Information-&-Cultural-Affairs"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-information-and-cultural-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-14",
+   "to": "st-wb-dept-information-technology-and-electronics",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171104180458821&page=Information-Technology-and-Electronics"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-information-technology-and-electronics",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-16",
+   "to": "st-wb-dept-irrigation-and-waterways",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171018162508574&page=Irrigation-and-Waterways"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-irrigation-and-waterways",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-38",
+   "to": "st-wb-dept-judicial",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171104182519414&page=Judicial"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-judicial",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-10",
+   "to": "st-wb-dept-labour",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171023115944549&page=Labour"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-labour",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-dept-land-and-land-reforms-and-refugee-relief-and-rehabilitation",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D190305165850306&page=Land-and-Land-Reforms-and-Refugee-Relief-and-Rehabilitation"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-land-and-land-reforms-and-refugee-relief-and-rehabilitation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-38",
+   "to": "st-wb-dept-law",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D170911193153844&page=Law"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-law",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-11",
+   "to": "st-wb-dept-mass-education-extension-and-library-services",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171106120119131&page=Mass-Education-Extension-and-Library-Services"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-mass-education-extension-and-library-services",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-6",
+   "to": "st-wb-dept-micro-small-and-medium-enterprises-and-textiles",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171020131559014&page=Micro,-Small-and-Medium-Enterprises-and-Textiles"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-micro-small-and-medium-enterprises-and-textiles",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-4",
+   "to": "st-wb-dept-minority-affairs-and-madrasah-education",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171018171340413&page=Minority-Affairs-and-Madrasah-Education"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-minority-affairs-and-madrasah-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-7",
+   "to": "st-wb-dept-non-conventional-and-renewable-energy-sources",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D191118102924750&page=Non-Conventional-and-Renewable-Energy-Sources"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-non-conventional-and-renewable-energy-sources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-1",
+   "to": "st-wb-dept-north-bengal-development",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171020143832834&page=North-Bengal-Development"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-north-bengal-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-3",
+   "to": "st-wb-dept-panchayats-and-rural-development",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171018172611445&page=Panchayats-and-Rural-Development"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-panchayats-and-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-8",
+   "to": "st-wb-dept-parliamentary-affairs",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171106121346123&page=Parliamentary-Affairs"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-dept-paschimanchal-unnayan-affairs",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171106122417409&page=Paschimanchal-Unnayan-Affairs"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-paschimanchal-unnayan-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-dept-personnel-and-administrative-reforms",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171018180121068&page=Personnel-and-Administrative-Reforms"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-personnel-and-administrative-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-dept-planning-and-statistics",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171106123639518&page=Planning-and-Statistics"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-planning-and-statistics",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-dept-power",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171020165646074&page=Power"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-power",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-19",
+   "to": "st-wb-dept-programme-monitoring",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D220816122624643&page=Programme-Monitoring"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-programme-monitoring",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-7",
+   "to": "st-wb-dept-public-enterprises-and-industrial-reconstruction",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D191204073202606&page=Public-Enterprises-and-Industrial-Reconstruction"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-public-enterprises-and-industrial-reconstruction",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-17",
+   "to": "st-wb-dept-public-health-engineering",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171020170927932&page=Public-Health-Engineering"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-public-health-engineering",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-17",
+   "to": "st-wb-dept-public-works",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171017170617993&page=Public-Works"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-public-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-6",
+   "to": "st-wb-dept-school-education",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171018161534384&page=School-Education"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-school-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-29",
+   "to": "st-wb-dept-science-and-technology-and-biotechnology",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D190305175821427&page=Science-and-Technology-and-Biotechnology"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-science-and-technology-and-biotechnology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-19",
+   "to": "st-wb-dept-self-help-group-and-self-employment",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171020173250687&page=Self-Help-Group-and-Self-Employment"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-self-help-group-and-self-employment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-39",
+   "to": "st-wb-dept-sundarban-affairs",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D190305155018113&page=Sundarban-Affairs"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-sundarban-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-12",
+   "to": "st-wb-dept-technical-education-training-and-skill-development",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171018165634914&page=Technical-Education,-Training-&-Skill-Development"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-technical-education-training-and-skill-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-8",
+   "to": "st-wb-dept-tourism",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171020182119249&page=Tourism"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-10",
+   "to": "st-wb-dept-transport",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D190305174659142&page=Transport"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-4",
+   "to": "st-wb-dept-tribal-development",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171020185144156&page=Tribal-Development"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-tribal-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-5",
+   "to": "st-wb-dept-urban-development-and-municipal-affairs",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171020190026414&page=Urban-Development-and-Municipal-Affairs"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-urban-development-and-municipal-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-1",
+   "to": "st-wb-dept-water-resources-investigation-and-development",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171017174354943&page=Water-resources-Investigation-and-Development"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-water-resources-investigation-and-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-19",
+   "to": "st-wb-dept-women-and-child-development-and-social-welfare",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D170911133209662&page=Women-and-Child-Development-and-Social-Welfare"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-women-and-child-development-and-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-wb-pos-minister-21",
+   "to": "st-wb-dept-youth-services-and-sports",
+   "type": "heads",
+   "source": "https://wb.gov.in/departments-details.aspx?id=D171020191849227&page=Youth-Services-and-Sports"
+  },
+  {
+   "from": "st-wb-pos-chief-secretary",
+   "to": "st-wb-dept-youth-services-and-sports",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-dept-home-and-political",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-home-and-political",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-dept-public-works-buildings-and-national-highways",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-public-works-buildings-and-national-highways",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-dept-public-works-roads",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-public-works-roads",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-dept-power",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-power",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-dept-information-public-relations-printing-and-stationery",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-information-public-relations-printing-and-stationery",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-1",
+   "to": "st-as-dept-transformation-and-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-transformation-and-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-1",
+   "to": "st-as-dept-labour-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-labour-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-1",
+   "to": "st-as-dept-tea-tribes-and-adivasi-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-tea-tribes-and-adivasi-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-2",
+   "to": "st-as-dept-panchayat-and-rural-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-panchayat-and-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-2",
+   "to": "st-as-dept-implementation-of-assam-accord",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-implementation-of-assam-accord",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-2",
+   "to": "st-as-dept-border-protection-and-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-border-protection-and-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-2",
+   "to": "st-as-dept-excise",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-excise",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-3",
+   "to": "st-as-dept-transport",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-3",
+   "to": "st-as-dept-welfare-of-bodoland",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-welfare-of-bodoland",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-4",
+   "to": "st-as-dept-women-and-child-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-women-and-child-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-4",
+   "to": "st-as-dept-tourism",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-5",
+   "to": "st-as-dept-parliamentary-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-5",
+   "to": "st-as-dept-agriculture",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-5",
+   "to": "st-as-dept-irrigation",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-irrigation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-6",
+   "to": "st-as-dept-social-justice-and-empowerment",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-social-justice-and-empowerment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-6",
+   "to": "st-as-dept-soil-conservation",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-soil-conservation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-6",
+   "to": "st-as-dept-welfare-of-minorities-and-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-welfare-of-minorities-and-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-7",
+   "to": "st-as-dept-health-and-family-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-health-and-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-7",
+   "to": "st-as-dept-medical-education-and-research",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-medical-education-and-research",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-8",
+   "to": "st-as-dept-cultural-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-cultural-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-8",
+   "to": "st-as-dept-industries-commerce-and-public-enterprises",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-industries-commerce-and-public-enterprises",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-8",
+   "to": "st-as-dept-act-east-policy-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-act-east-policy-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-9",
+   "to": "st-as-dept-handloom-textiles-and-sericulture",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-handloom-textiles-and-sericulture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-9",
+   "to": "st-as-dept-sports-and-youth-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-sports-and-youth-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-9",
+   "to": "st-as-dept-skill-employment-and-entrepreneurship",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-skill-employment-and-entrepreneurship",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-9",
+   "to": "st-as-dept-indigenous-and-tribal-faith-and-culture",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-indigenous-and-tribal-faith-and-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-10",
+   "to": "st-as-dept-finance",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-10",
+   "to": "st-as-dept-environment-and-forest",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-environment-and-forest",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-10",
+   "to": "st-as-dept-mines-and-minerals",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-mines-and-minerals",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-11",
+   "to": "st-as-dept-food-public-distribution-and-consumer-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-food-public-distribution-and-consumer-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-11",
+   "to": "st-as-dept-housing-and-urban-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-housing-and-urban-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-11",
+   "to": "st-as-dept-cooperation",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-12",
+   "to": "st-as-dept-revenue-and-disaster-management",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-revenue-and-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-12",
+   "to": "st-as-dept-science-technology-and-climate-change",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-science-technology-and-climate-change",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-12",
+   "to": "st-as-dept-general-administration",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-general-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-13",
+   "to": "st-as-dept-public-health-engineering",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-public-health-engineering",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-13",
+   "to": "st-as-dept-hill-areas-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-hill-areas-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-13",
+   "to": "st-as-dept-barak-valley-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-barak-valley-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-14",
+   "to": "st-as-dept-animal-husbandry-and-veterinary",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-animal-husbandry-and-veterinary",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-14",
+   "to": "st-as-dept-fisheries",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-15",
+   "to": "st-as-dept-school-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-school-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-15",
+   "to": "st-as-dept-higher-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-higher-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-15",
+   "to": "st-as-dept-tribal-affairs-plains",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-tribal-affairs-plains",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-15",
+   "to": "st-as-dept-information-technology",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-16",
+   "to": "st-as-dept-water-resources",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-as-pos-minister-16",
+   "to": "st-as-dept-judicial",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-chief-secretary",
+   "to": "st-as-dept-judicial",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-7",
+   "to": "st-sk-dept-agriculture",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/food-security-and-agriculture-development-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-7",
+   "to": "st-sk-dept-animal-husbandry-and-veterinary-services",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/sikkim-ahvs"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-animal-husbandry-and-veterinary-services",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-4",
+   "to": "st-sk-dept-buildings-and-housing",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/building-and-housing-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-buildings-and-housing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-11",
+   "to": "st-sk-dept-commerce-and-industries",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/commerce-and-industries-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-commerce-and-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-2",
+   "to": "st-sk-dept-cooperation",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/cooperation-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-6",
+   "to": "st-sk-dept-culture",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/cultural-affairs-and-heritage-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-desme",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/desme"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-desme",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-personnel",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/department-of-personnel-public-grievances"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-personnel",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-1",
+   "to": "st-sk-dept-ecclesiastical",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/ecclesiastical-affairs-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-ecclesiastical",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-10",
+   "to": "st-sk-dept-education",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/education-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-election",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/election-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-election",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-excise",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/excise-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-excise",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-finance",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/finance-revenue-expenditure-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-7",
+   "to": "st-sk-dept-fisheries",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/fisheries-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-5",
+   "to": "st-sk-dept-food-and-civil-supplies",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/food-civil-supplies-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-food-and-civil-supplies",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-8",
+   "to": "st-sk-dept-forest-and-environment",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/forest-environment-and-wildlife-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-forest-and-environment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-6",
+   "to": "st-sk-dept-health-and-family-welfare",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/health-family-welfare-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-health-and-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-home",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/home-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-7",
+   "to": "st-sk-dept-horticulture",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/horticulture-cash-crop-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-horticulture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-information-and-public-relations",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/information-and-public-relations-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-information-and-public-relations",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-information-technology",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/information-technology-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-4",
+   "to": "st-sk-dept-labour",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/labour-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-labour",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-land-revenue-and-disaster-management",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/land-revenue-disaster-management"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-land-revenue-and-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-10",
+   "to": "st-sk-dept-law",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/law-parliamentary-affairs-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-law",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-8",
+   "to": "st-sk-dept-mines-and-geology",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/mines-minerals-and-geology"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-mines-and-geology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-planning-and-development",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/development-planning-economic-reforms-affairs-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-planning-and-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-power",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/energy-and-power-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-power",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-3",
+   "to": "st-sk-dept-printing-and-stationery",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/printing-stationery-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-printing-and-stationery",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-1",
+   "to": "st-sk-dept-public-health-engineering",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/water-security-phe-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-public-health-engineering",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-9",
+   "to": "st-sk-dept-roads-and-bridges",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/roads-and-bridges-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-roads-and-bridges",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-2",
+   "to": "st-sk-dept-rural-development",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/rural-management-development-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-8",
+   "to": "st-sk-dept-science-and-technology",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/department-of-science-technology"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-science-and-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-skill-development",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/state-institute-of-capacity-building"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-skill-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-3",
+   "to": "st-sk-dept-social-welfare",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/social-welfare-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-10",
+   "to": "st-sk-dept-sports-and-youth-affairs",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/sports-and-youth-affairs-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-sports-and-youth-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-11",
+   "to": "st-sk-dept-tourism-and-civil-aviation",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/tourism-civil-aviation-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-tourism-and-civil-aviation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-dept-transport",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/transport-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-5",
+   "to": "st-sk-dept-urban-development",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/urban-dev-housing-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-urban-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-1",
+   "to": "st-sk-dept-water-resources",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/water-resource-river-development-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-sk-pos-minister-3",
+   "to": "st-sk-dept-women-child-senior-citizen-and-divyangjan-welfare",
+   "type": "heads",
+   "source": "https://sikkim.gov.in/departments/women-child-senior-citizen-and-divyangjan-welfare-department"
+  },
+  {
+   "from": "st-sk-pos-chief-secretary",
+   "to": "st-sk-dept-women-child-senior-citizen-and-divyangjan-welfare",
+   "type": "oversees"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 145,
+  "corrections": [],
+  "reverified_no_change": [
+   "ID rules: all 145 entity ids match st-<code>-dept-* (wb=54, as=51, sk=40), 0 duplicate ids, 0 malformed ids.",
+   "Referential integrity: all 145 headPositionId values resolve inside data/raw/states-wb-as-sk.json's 100 positions (0 dangling); all 290 relations (145 'heads' + 145 'oversees') reference ids that exist in this file or the base states file (0 dangling). 0 st-<code>-pos-secretary-* ids exist to check, since positions:0 in this segment.",
+   "West Bengal (54 depts) vs. the department checklist (Home, Finance, Revenue, Health, School Education, Higher Education, Agriculture, Rural Development, Urban Development, PWD, Power/Energy, Water Resources, Social Welfare, Women & Child, Industries, Transport, Forest & Environment, Tribal/SC welfare, Food & Civil Supplies, Labour, IT, Tourism, Panchayati Raj): all 22 categories present (Revenue is folded into 'Department of Land and Land Reforms and Refugee Relief and Rehabilitation' -- WB has no standalone Revenue Department, confirmed this is the correct official structure). No missing departments found; none added.",
+   "Assam (51 depts) vs. the same checklist: re-fetched assam.gov.in/departments-list directly this pass (the original report could not get content from this client-rendered page; this WebFetch succeeded and returned the current 56-item official menu). All 22 checklist categories present. No missing departments found against the checklist. Non-blocking observation for a future pass: the official menu also lists standalone 'Personnel' and 'Administrative Reforms, Training, Pension & Public Grievances' departments that this file does not have as separate entities; neither is on the given checklist so neither was added, but Personnel/ARTPG is also the department that issues the IAS transfer orders needed for the secretary-posting gap below.",
+   "Sikkim (40 depts) vs. the same checklist: sikkim.gov.in has no static department-index URL (menu-driven nav, confirmed by direct fetch of sikkim.gov.in and the guessed /government/departments path, which 404'd); cross-checked instead against Wikipedia's 'Government of Sikkim' 12-minister portfolio table, which confirms 'Education Department' (not 'Human Resource Development') and the Buildings & Housing / Roads & Bridges PWD split are the correct official names. All 22 checklist categories present. No missing departments found."
+  ],
+  "not_verified": [
+   "Secretary postings (0 in this file, unchanged): could not add or re-verify any this pass. This session's shared WebSearch budget was independently hit at 200/200 on the first query attempted here, matching the original report's own note about the parallel research run's shared budget. WebFetch guesses at likely official directory URLs for WB and Sikkim (wb.gov.in/who-is-who.aspx, sikkim.gov.in/government/who-is-who) both 404'd, and without search there was no reliable way to locate current 2025-2026 IAS transfer-order sources without risking invented postings (disallowed by SCHEMA.md). Filling st-<code>-pos-secretary-<dept-slug> for WB, Assam and Sikkim against fresh transfer orders remains a genuine follow-up requiring a new WebSearch budget."
+  ]
+ }
+}

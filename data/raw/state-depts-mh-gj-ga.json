@@ -1,0 +1,2784 @@
+{
+ "segment": "state-depts-mh-gj-ga",
+ "asOf": "2026-09-25",
+ "notes": "Department lists built from: (1) the already-sourced minister portfolio notes in data/raw/states-mh-gj-ga.json (holder.notes), which this file treats as ground truth and does not re-verify; (2) for Goa, the official department directory at https://www.goa.gov.in/departments/ (fetched directly); (3) for Maharashtra and Gujarat, the standard GAD/Rules-of-Business department nomenclature cross-checked against the sourced 2025-26 portfolio allocations. Network constraints during this research pass: WebSearch quota was exhausted (shared session budget, consumed by parallel background agents), the Wikipedia API returned rate-limit errors on repeated queries, and www.maharashtra.gov.in / digitalgujarat.gov.in were unreachable (connection timeout) from this sandbox, so no live department-list page for Maharashtra or Gujarat could be fetched directly; those two states' lists rely on the sourced minister portfolios plus well-established public-record department nomenclature rather than a freshly fetched official portal page. Administrative Secretary positions (Additional Chief Secretary / Principal Secretary / Secretary) are deliberately OMITTED for every department in this file: IAS secretary-level postings change frequently via transfer orders and could not be confirmed against a live 2025-26 source in this pass (no working WebSearch, Wikipedia rate-limited, state portals unreachable) — per the schema's guidance, omitted rather than guessed. A follow-up pass with working WebSearch/portal access should add these. Some portfolios held only by Ministers of State with no overlapping senior-minister charge (e.g. Gujarat MSME, Sports, Cottage/Khadi/Rural Industries, Transport, Tribal Development) were still given department entities headed by that MoS position, per the actual sourced allocation. A few departments (e.g. Goa's core School/Higher/Technical Education directorates, confirmed to exist on the official Goa departments page) were NOT created here because no minister in the existing sourced data is recorded as holding that portfolio — creating them with a guessed headPositionId would have violated the 'reference existing ids, do not invent' rule; they should be added once the Council-of-Ministers file records who holds Education in each of these three states.",
+ "entities": [
+  {
+   "id": "st-mh-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "General Administration Department",
+   "aliases": [
+    "GAD"
+   ],
+   "description": "Runs the state secretariat's own administration, protocol, appointments and postings of IAS officers, and Maharashtra Bhavans outside the state.",
+   "headPositionId": "st-mh-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Home Department",
+   "aliases": [
+    "Home Ministry Maharashtra"
+   ],
+   "description": "Runs the state police, prisons, fire services and internal security; issues arms licences and controls the excise-linked law and order machinery. Held by the Chief Minister, with junior ministers overseeing rural and urban wings.",
+   "headPositionId": "st-mh-pos-chief-minister",
+   "notes": "MoS Pankaj Bhoyar (st-mh-pos-minister-35) holds the Home (Rural) wing and MoS Yogesh Kadam (st-mh-pos-minister-38) the Home (Urban) wing under the CM.",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-law-and-judiciary",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Law and Judiciary Department",
+   "description": "Drafts and vets state legislation, represents the government in courts and administers the legal affairs, judicial and legislative wings of the secretariat.",
+   "headPositionId": "st-mh-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-information-and-public-relations",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Information and Public Relations Department",
+   "aliases": [
+    "DGIPR"
+   ],
+   "description": "The state's official press and publicity arm; runs government advertising, the Directorate of Information and Public Relations, and state media accreditation.",
+   "headPositionId": "st-mh-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-energy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Energy Department",
+   "description": "Oversees state power generation, transmission and distribution utilities (Mahavitaran, Mahanirmiti, Mahatransco) and electricity tariff/subsidy policy, excluding new and renewable energy.",
+   "headPositionId": "st-mh-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Urban Development Department",
+   "aliases": [
+    "UDD"
+   ],
+   "description": "Frames urban planning, municipal governance and city infrastructure policy for Maharashtra's municipal corporations and councils, including schemes like PMAY (urban) and metro/smart-city projects.",
+   "headPositionId": "st-mh-pos-deputy-cm-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-housing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Housing Department",
+   "description": "Runs the state's public housing programmes and regulates housing boards and MHADA, building affordable homes and redeveloping slums and old buildings.",
+   "headPositionId": "st-mh-pos-deputy-cm-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Public Works Department",
+   "aliases": [
+    "PWD"
+   ],
+   "description": "Builds and maintains state highways, government buildings and bridges. The MoS-35/38 wing tied to Public Undertakings is a separate charge held by Deputy CM Eknath Shinde.",
+   "headPositionId": "st-mh-pos-minister-20",
+   "notes": "Portfolio split: Shivendra Raje Bhosale (st-mh-pos-minister-20) holds PWD excluding Public Undertakings (the larger roads/buildings wing); Deputy CM Eknath Shinde's notes list PWD including Public Undertakings.",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Finance Department",
+   "description": "Prepares the state budget, manages treasury, government borrowing and expenditure control, and releases funds to every other department.",
+   "headPositionId": "st-mh-pos-deputy-cm-2",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-planning",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Planning Department",
+   "description": "Coordinates the state's five-year and annual plans, District Planning Committees and centrally sponsored scheme funding.",
+   "headPositionId": "st-mh-pos-deputy-cm-2",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-state-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "State Excise Department",
+   "description": "Regulates manufacture, sale and taxation of liquor in Maharashtra and enforces prohibition rules in dry areas.",
+   "headPositionId": "st-mh-pos-deputy-cm-2",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Water Resources Department",
+   "aliases": [
+    "Irrigation Department"
+   ],
+   "description": "Builds and operates dams, canals and irrigation projects across the state's river valleys.",
+   "headPositionId": "st-mh-pos-minister-1",
+   "notes": "Split by river-valley development corporation: Radhakrishna Vikhe Patil (minister-1) holds the Godavari & Krishna Valley wing; Girish Mahajan (minister-5) holds the Vidarbha, Tapi & Konkan valley wing.",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Revenue Department",
+   "description": "Maintains land records, conducts land acquisition, collects non-agricultural land revenue and runs the district collectorate/tehsil administration.",
+   "headPositionId": "st-mh-pos-minister-2",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-medical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Medical Education and Drugs Department",
+   "description": "Runs the state's government medical, dental and nursing colleges and their attached hospitals.",
+   "headPositionId": "st-mh-pos-minister-3",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-higher-and-technical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Higher and Technical Education Department",
+   "description": "Regulates state universities, engineering/polytechnic colleges and higher-education scholarships.",
+   "headPositionId": "st-mh-pos-minister-4",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Parliamentary Affairs Department",
+   "description": "Coordinates government business in the Maharashtra Legislative Assembly and Council, including answers to legislature questions.",
+   "headPositionId": "st-mh-pos-minister-4",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Disaster Management Department",
+   "description": "Coordinates flood, drought, fire and other disaster preparedness and response across the state, working with district administrations.",
+   "headPositionId": "st-mh-pos-minister-5",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-water-supply-and-sanitation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Water Supply and Sanitation Department",
+   "description": "Runs rural piped water-supply schemes and sanitation programmes such as Jal Jeevan Mission implementation in Maharashtra.",
+   "headPositionId": "st-mh-pos-minister-6",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-forest",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Forest Department",
+   "description": "Manages state forests, wildlife sanctuaries and tiger reserves, and enforces forest and wildlife protection laws.",
+   "headPositionId": "st-mh-pos-minister-7",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "School Education and Sports Department",
+   "description": "Runs state government and aided schools, sets the school curriculum and administers school scholarships and mid-day meals.",
+   "headPositionId": "st-mh-pos-minister-8",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-soil-and-water-conservation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Soil and Water Conservation Department",
+   "description": "Runs watershed development and soil-conservation works to improve rain-fed farmland and groundwater recharge.",
+   "headPositionId": "st-mh-pos-minister-9",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-food-civil-supplies-and-consumer-protection",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Food, Civil Supplies and Consumer Protection Department",
+   "description": "Runs the public distribution system (ration shops), enforces the Essential Commodities Act and handles consumer-protection grievances.",
+   "headPositionId": "st-mh-pos-minister-10",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-skill-development-and-entrepreneurship",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Skill Development and Entrepreneurship Department",
+   "description": "Runs ITIs and vocational training programmes and state employment/self-employment schemes for youth.",
+   "headPositionId": "st-mh-pos-minister-11",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Industries Department",
+   "description": "Frames industrial policy, runs MIDC industrial estates and administers investment incentives for factories in the state.",
+   "headPositionId": "st-mh-pos-minister-12",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-marathi-language",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Marathi Language Department",
+   "description": "Promotes and standardises the Marathi language, runs the state's Marathi Language Institute and translation work.",
+   "headPositionId": "st-mh-pos-minister-12",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-marketing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Marketing Department",
+   "description": "Regulates Agricultural Produce Market Committees (APMCs/mandis) and farm-produce marketing across the state.",
+   "headPositionId": "st-mh-pos-minister-13",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-protocol",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Protocol Department",
+   "description": "Arranges state protocol for VIP visits, ceremonial functions and precedence at government events.",
+   "headPositionId": "st-mh-pos-minister-13",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-environment-and-climate-change",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Environment and Climate Change Department",
+   "description": "Enforces pollution-control rules through the Maharashtra Pollution Control Board and coordinates the state's climate action plan.",
+   "headPositionId": "st-mh-pos-minister-14",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-animal-husbandry",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Animal Husbandry Department",
+   "description": "Runs veterinary hospitals, livestock development and animal-disease control programmes.",
+   "headPositionId": "st-mh-pos-minister-14",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-obc-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "OBC, VJNT and Bahujan Welfare Department",
+   "aliases": [
+    "OBC Welfare Department"
+   ],
+   "description": "Runs welfare hostels, scholarships and reservation implementation for Other Backward Classes and Vimukta Jati/Nomadic Tribes.",
+   "headPositionId": "st-mh-pos-minister-15",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-dairy-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Dairy Development Department",
+   "description": "Runs state dairy cooperatives and milk-procurement schemes to support dairy farmers.",
+   "headPositionId": "st-mh-pos-minister-15",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-new-and-renewable-energy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "New and Renewable Energy Department",
+   "description": "Promotes solar, wind and other renewable power projects, separate from the main Energy Department's conventional-power mandate.",
+   "headPositionId": "st-mh-pos-minister-15",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-tribal-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Tribal Development Department",
+   "description": "Runs welfare hostels, ashram schools and livelihood schemes for Scheduled Tribe communities.",
+   "headPositionId": "st-mh-pos-minister-16",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Tourism Department",
+   "description": "Promotes tourist destinations, forts and heritage sites and runs the Maharashtra Tourism Development Corporation.",
+   "headPositionId": "st-mh-pos-minister-17",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-mining",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Mining Department",
+   "description": "Grants mining leases and collects royalty on minor and major minerals extracted in the state.",
+   "headPositionId": "st-mh-pos-minister-17",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-ex-servicemen-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Ex-Servicemen Welfare Department",
+   "description": "Runs welfare, pension-linked and resettlement schemes for retired armed-forces personnel domiciled in Maharashtra.",
+   "headPositionId": "st-mh-pos-minister-17",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Information Technology Department",
+   "description": "Drives e-governance projects, state data centres and IT/ITeS investment policy.",
+   "headPositionId": "st-mh-pos-minister-18",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-cultural-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Cultural Affairs Department",
+   "description": "Runs state cultural festivals, archives, museums and grants to arts and heritage bodies.",
+   "headPositionId": "st-mh-pos-minister-18",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-women-and-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Women and Child Development Department",
+   "description": "Runs anganwadis, child nutrition schemes and women's safety and welfare programmes such as one-stop crisis centres.",
+   "headPositionId": "st-mh-pos-minister-19",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Agriculture Department",
+   "description": "Runs farm-input subsidy schemes, crop insurance coordination and agricultural extension services for the state's farmers.",
+   "headPositionId": "st-mh-pos-minister-21",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-rural-development-and-panchayat-raj",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Rural Development and Panchayat Raj Department",
+   "description": "Oversees Zilla Parishads, Panchayat Samitis and Gram Panchayats and runs rural livelihood and employment schemes.",
+   "headPositionId": "st-mh-pos-minister-22",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-food-and-drug-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Food and Drug Administration Department",
+   "aliases": [
+    "FDA Maharashtra"
+   ],
+   "description": "Licenses and inspects food businesses and drug manufacturers/sellers for safety and quality compliance.",
+   "headPositionId": "st-mh-pos-minister-23",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-textiles",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Textiles Department",
+   "description": "Supports the state's cooperative and powerloom textile mills and handloom weavers through subsidy schemes.",
+   "headPositionId": "st-mh-pos-minister-24",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-social-justice-and-special-assistance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Social Justice and Special Assistance Department",
+   "description": "Runs welfare hostels, scholarships and atrocity-relief schemes for Scheduled Castes and other socially disadvantaged groups.",
+   "headPositionId": "st-mh-pos-minister-25",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Transport Department",
+   "description": "Regulates vehicle registration and driving licences through the RTOs and oversees the state road transport corporation (MSRTC).",
+   "headPositionId": "st-mh-pos-minister-26",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-employment-guarantee-and-horticulture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Employment Guarantee Scheme and Horticulture Department",
+   "description": "Runs MGNREGA-linked state employment-guarantee works and horticulture development schemes, including Khar-land (saline coastal land) reclamation.",
+   "headPositionId": "st-mh-pos-minister-27",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-relief-and-rehabilitation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Relief and Rehabilitation Department",
+   "description": "Provides drought, flood and calamity relief payouts and resettles people displaced by dam and other public projects.",
+   "headPositionId": "st-mh-pos-minister-28",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Fisheries Department",
+   "description": "Regulates marine and inland fishing and runs welfare schemes for the state's fishing communities.",
+   "headPositionId": "st-mh-pos-minister-29",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-ports",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Ports Department",
+   "description": "Develops and regulates Maharashtra's minor ports and coastal shipping infrastructure.",
+   "headPositionId": "st-mh-pos-minister-29",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Labour Department",
+   "description": "Enforces labour laws, registers factories/shops and runs the state's labour welfare boards.",
+   "headPositionId": "st-mh-pos-minister-30",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Cooperation and Marketing Department",
+   "aliases": [
+    "Co-operation Department"
+   ],
+   "description": "Regulates cooperative societies, sugar mills and cooperative banks registered in the state.",
+   "headPositionId": "st-mh-pos-minister-31",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-dept-public-health",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mh-government",
+   "name": "Public Health and Family Welfare Department",
+   "description": "Runs state government hospitals and primary health centres and the state's family-welfare and immunisation programmes outside the big-city corporations.",
+   "headPositionId": "st-mh-pos-minister-32",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "General Administration Department",
+   "aliases": [
+    "GAD"
+   ],
+   "description": "Runs the state secretariat's own administration, cadre management of IAS officers and coordination between departments.",
+   "headPositionId": "st-gj-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-administrative-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Administrative Reforms Department",
+   "aliases": [
+    "ARD"
+   ],
+   "description": "Drives e-governance and administrative-process simplification (Swagat grievance redressal, Digital Gujarat) across state departments.",
+   "headPositionId": "st-gj-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-planning",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Planning Department",
+   "description": "Coordinates the state's development plans, District Planning Committees and centrally sponsored scheme funding.",
+   "headPositionId": "st-gj-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Revenue Department",
+   "description": "Maintains land records, conducts land acquisition and runs the district collectorate/mamlatdar administration.",
+   "headPositionId": "st-gj-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-roads-and-buildings",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Roads and Buildings Department",
+   "aliases": [
+    "R&B Department"
+   ],
+   "description": "Builds and maintains state highways, government buildings and bridges.",
+   "headPositionId": "st-gj-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-mines-and-minerals",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Mines and Minerals Department",
+   "description": "Grants mining leases and collects royalty on minor and major minerals extracted in Gujarat.",
+   "headPositionId": "st-gj-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-narmada",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Narmada Department",
+   "description": "Oversees the Sardar Sarovar Narmada dam project and its canal network supplying irrigation and drinking water across the state.",
+   "headPositionId": "st-gj-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-ports-and-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Ports and Transport Department",
+   "aliases": [
+    "Ports Department"
+   ],
+   "description": "Develops and regulates Gujarat's major and minor ports and maritime infrastructure, the state's largest port network in India.",
+   "headPositionId": "st-gj-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-information-and-broadcasting",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Information Department",
+   "aliases": [
+    "Information and Broadcasting Department"
+   ],
+   "description": "Runs official government publicity, press accreditation and public-information campaigns.",
+   "headPositionId": "st-gj-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Home Department",
+   "description": "Runs the state police, prisons and internal security machinery, and issues arms licences.",
+   "headPositionId": "st-gj-pos-deputy-cm-1",
+   "notes": "MoS Kamleshbhai Patel (st-gj-pos-minister-10) holds the linked Jail & Border Security and Civil Defence charges.",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-prohibition-and-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Prohibition and Excise Department",
+   "description": "Enforces Gujarat's liquor-prohibition law and regulates industrial alcohol and excise duty.",
+   "headPositionId": "st-gj-pos-deputy-cm-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-pilgrimage-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Pilgrimage Development Department",
+   "description": "Develops infrastructure at Hindu, Jain and other pilgrimage sites across the state (e.g. Somnath, Ambaji, Pavagadh).",
+   "headPositionId": "st-gj-pos-deputy-cm-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-industries-and-mines",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Industries Department",
+   "description": "Frames industrial policy, runs GIDC industrial estates and administers investment incentives for factories in the state.",
+   "headPositionId": "st-gj-pos-deputy-cm-1",
+   "notes": "MoS Jayram Gamit (st-gj-pos-minister-11) additionally holds MSME.",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-civil-aviation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Civil Aviation Department",
+   "description": "Develops state-owned airports/airstrips and regional air-connectivity schemes.",
+   "headPositionId": "st-gj-pos-deputy-cm-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Tourism Department",
+   "description": "Promotes tourist destinations such as the Rann of Kutch, Statue of Unity and Gir, and runs the Gujarat Tourism Corporation.",
+   "headPositionId": "st-gj-pos-deputy-cm-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-cultural-activities",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Cultural Activities Department",
+   "description": "Runs state cultural festivals, archives and grants to arts and heritage bodies.",
+   "headPositionId": "st-gj-pos-deputy-cm-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-legal",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Legal Department",
+   "aliases": [
+    "Law and Justice Department"
+   ],
+   "description": "Drafts and vets state legislation and represents the government in courts.",
+   "headPositionId": "st-gj-pos-deputy-cm-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-printing-and-stationery",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Printing and Stationery Department",
+   "description": "Runs the Government Press and supplies stationery and official gazette publishing for the state government.",
+   "headPositionId": "st-gj-pos-deputy-cm-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-urban-development-and-housing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Urban Development and Urban Housing Department",
+   "aliases": [
+    "UDD"
+   ],
+   "description": "Frames urban planning and municipal governance policy for Gujarat's municipal corporations and Gujarat Housing Board projects.",
+   "headPositionId": "st-gj-pos-minister-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Finance Department",
+   "description": "Prepares the state budget, manages treasury and government borrowing, and releases funds to every other department.",
+   "headPositionId": "st-gj-pos-minister-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-panchayat-and-rural-housing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Panchayat and Rural Housing Department",
+   "description": "Oversees Panchayats (Taluka and District) and rural housing schemes such as PMAY-Gramin implementation in Gujarat.",
+   "headPositionId": "st-gj-pos-minister-2",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-science-and-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Science and Technology Department",
+   "description": "Promotes IT/ITeS and biotechnology investment and runs state science-education and innovation programmes.",
+   "headPositionId": "st-gj-pos-minister-2",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-energy-and-petrochemicals",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Energy and Petrochemicals Department",
+   "description": "Oversees state power utilities and Gujarat's oil, gas and petrochemical sector policy (GSPC, GACL).",
+   "headPositionId": "st-gj-pos-minister-2",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-higher-and-technical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Higher and Technical Education Department",
+   "description": "Regulates state universities, engineering/polytechnic colleges and higher-education scholarships.",
+   "headPositionId": "st-gj-pos-minister-2",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-legislative-and-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Legislative and Parliamentary Affairs Department",
+   "description": "Coordinates government business in the Gujarat Legislative Assembly, including answers to assembly questions.",
+   "headPositionId": "st-gj-pos-minister-2",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-forests-and-environment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Forests and Environment Department",
+   "description": "Manages state forests and wildlife sanctuaries (including the Gir lion sanctuary) and enforces pollution-control rules through the Gujarat Pollution Control Board.",
+   "headPositionId": "st-gj-pos-minister-3",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-climate-change",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Climate Change Department",
+   "description": "A dedicated department (Gujarat was the first Indian state to create one) coordinating the state's climate-action and renewable-energy-transition policy.",
+   "headPositionId": "st-gj-pos-minister-3",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-agriculture-and-farmers-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Agriculture and Farmers Welfare Department",
+   "description": "Runs farm-input subsidy schemes, crop insurance coordination and agricultural extension services for the state's farmers.",
+   "headPositionId": "st-gj-pos-minister-4",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Fisheries Department",
+   "description": "Regulates marine and inland fishing along Gujarat's long coastline and runs welfare schemes for fishing communities.",
+   "headPositionId": "st-gj-pos-minister-4",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-animal-husbandry-and-cow-breeding",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Animal Husbandry and Cow Breeding Department",
+   "description": "Runs veterinary hospitals, livestock/dairy development and cow-breeding programmes.",
+   "headPositionId": "st-gj-pos-minister-4",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Cooperation Department",
+   "description": "Regulates cooperative societies, sugar mills, milk unions (Amul-model dairies) and cooperative banks registered in the state.",
+   "headPositionId": "st-gj-pos-minister-4",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Rural Development Department",
+   "description": "Runs rural livelihood, MGNREGA and Gram Panchayat infrastructure schemes across the state.",
+   "headPositionId": "st-gj-pos-minister-5",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-labour-and-skill-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Labour, Skill Development and Employment Department",
+   "description": "Enforces labour laws, registers factories/shops and runs ITIs and state employment-exchange services.",
+   "headPositionId": "st-gj-pos-minister-5",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-water-resources-and-water-supply",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Water Resources and Water Supply Department",
+   "description": "Builds irrigation infrastructure outside the Narmada project and runs the state's piped drinking-water supply schemes.",
+   "headPositionId": "st-gj-pos-minister-5",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-food-civil-supplies-and-consumer-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Food, Civil Supplies and Consumer Affairs Department",
+   "description": "Runs the public distribution system (ration shops), enforces the Essential Commodities Act and handles consumer-protection grievances.",
+   "headPositionId": "st-gj-pos-minister-6",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-primary-and-secondary-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Education Department",
+   "aliases": [
+    "Primary and Secondary Education Department"
+   ],
+   "description": "Runs state government and grant-in-aid primary and secondary schools and sets the school curriculum.",
+   "headPositionId": "st-gj-pos-minister-7",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-social-justice-and-empowerment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Social Justice and Empowerment Department",
+   "description": "Runs welfare hostels, scholarships and reservation implementation for Scheduled Castes and other socially disadvantaged groups.",
+   "headPositionId": "st-gj-pos-minister-7",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-women-and-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Women and Child Development Department",
+   "aliases": [
+    "Women & Child Welfare"
+   ],
+   "description": "Runs anganwadis, child nutrition schemes and women's safety and welfare programmes.",
+   "headPositionId": "st-gj-pos-minister-8",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-msme",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Micro, Small and Medium Enterprises Department",
+   "aliases": [
+    "MSME Department"
+   ],
+   "description": "Supports small and medium manufacturers with credit-linked subsidy schemes and industrial-estate plots.",
+   "headPositionId": "st-gj-pos-minister-11",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-sports-and-youth",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Sports and Youth Services Department",
+   "description": "Runs state sports academies, stadiums and youth-development programmes.",
+   "headPositionId": "st-gj-pos-minister-11",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-cottage-khadi-and-rural-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Cottage, Khadi and Rural Industries Department",
+   "description": "Supports village and cottage industries, khadi weavers and rural artisans through the state khadi board.",
+   "headPositionId": "st-gj-pos-minister-12",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Transport Department",
+   "description": "Regulates vehicle registration and driving licences through the RTOs and oversees the state road transport corporation (GSRTC).",
+   "headPositionId": "st-gj-pos-minister-16",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-dept-tribal-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-gj-government",
+   "name": "Tribal Development Department",
+   "description": "Runs welfare hostels, ashram schools and livelihood schemes for Scheduled Tribe communities, concentrated in eastern Gujarat.",
+   "headPositionId": "st-gj-pos-minister-18",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Home Department",
+   "description": "Runs the Goa Police, prisons, fire and emergency services and internal security.",
+   "headPositionId": "st-ga-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Finance",
+   "description": "Prepares the state budget, manages treasury, debt and expenditure, and releases funds to every other department.",
+   "headPositionId": "st-ga-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-vigilance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Vigilance Department",
+   "description": "Investigates corruption complaints against state government employees and departments.",
+   "headPositionId": "st-ga-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-official-language",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Official Language",
+   "aliases": [
+    "Directorate of Official Language"
+   ],
+   "description": "Promotes Konkani (and Marathi) as official languages and runs translation of government documents.",
+   "headPositionId": "st-ga-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-personnel",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Personnel",
+   "description": "Handles recruitment rules, service matters and cadre management of Goa government employees.",
+   "headPositionId": "st-ga-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-health",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Health",
+   "aliases": [
+    "Directorate of Health Services"
+   ],
+   "description": "Runs Goa Medical College and the state's government hospitals, health centres and public-health programmes.",
+   "headPositionId": "st-ga-pos-minister-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Urban Development",
+   "aliases": [
+    "Municipal Administration"
+   ],
+   "description": "Oversees municipal councils and corporations and urban infrastructure and sanitation projects.",
+   "headPositionId": "st-ga-pos-minister-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-town-and-country-planning",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Town and Country Planning Department",
+   "aliases": [
+    "TCP"
+   ],
+   "description": "Prepares regional and outline development plans and regulates land-use conversion and construction across Goa.",
+   "headPositionId": "st-ga-pos-minister-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-women-and-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Directorate of Women and Child Development",
+   "description": "Runs anganwadis, child nutrition schemes and women's safety and welfare programmes in Goa.",
+   "headPositionId": "st-ga-pos-minister-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-forest",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Forest Department",
+   "description": "Manages Goa's forests and wildlife sanctuaries and enforces forest and wildlife protection laws.",
+   "headPositionId": "st-ga-pos-minister-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Water Resources",
+   "description": "Builds irrigation infrastructure and manages Goa's rivers and water-resource projects.",
+   "headPositionId": "st-ga-pos-minister-2",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Cooperation",
+   "aliases": [
+    "Office of the Registrar of Cooperative Societies"
+   ],
+   "description": "Regulates cooperative societies and cooperative banks registered in Goa.",
+   "headPositionId": "st-ga-pos-minister-2",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-provedoria",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Provedoria de Assistência Pública",
+   "aliases": [
+    "Provedoria"
+   ],
+   "description": "A Portuguese-era public charitable institution, unique to Goa, that runs orphanages, old-age homes and welfare shelters.",
+   "headPositionId": "st-ga-pos-minister-2",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Directorate of Transport",
+   "aliases": [
+    "Transport Department"
+   ],
+   "description": "Regulates vehicle registration and driving licences and oversees the Kadamba Transport Corporation bus service.",
+   "headPositionId": "st-ga-pos-minister-3",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Industries",
+   "description": "Frames industrial policy and runs industrial estates and investment-incentive schemes through the Goa Industrial Development Corporation.",
+   "headPositionId": "st-ga-pos-minister-3",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-panchayati-raj",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Directorate of Panchayats",
+   "aliases": [
+    "Panchayati Raj Department"
+   ],
+   "description": "Oversees Village and Zilla Panchayats and rural local self-government in Goa.",
+   "headPositionId": "st-ga-pos-minister-3",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-protocol-and-hospitality",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Protocol and Hospitality Department",
+   "description": "Arranges state protocol for VIP visits, ceremonial functions and precedence at government events.",
+   "headPositionId": "st-ga-pos-minister-3",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Tourism",
+   "description": "Promotes Goa's beaches, heritage and festivals and regulates the state's large tourism and hospitality industry.",
+   "headPositionId": "st-ga-pos-minister-4",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Information Technology, Electronics and Communications",
+   "description": "Drives e-governance projects and IT/electronics investment policy for the state.",
+   "headPositionId": "st-ga-pos-minister-4",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-printing-and-stationery",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Printing and Stationery",
+   "description": "Runs the Government Printing Press and supplies stationery and official gazette publishing.",
+   "headPositionId": "st-ga-pos-minister-4",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Revenue Department",
+   "description": "Maintains land records, conducts land acquisition and runs the taluka-level (mamlatdar) administration.",
+   "headPositionId": "st-ga-pos-minister-5",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Labour Department",
+   "description": "Enforces labour laws, registers factories/shops and runs the state's labour welfare and employment-exchange services.",
+   "headPositionId": "st-ga-pos-minister-5",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-science-technology-and-waste-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Science, Technology and Waste Management",
+   "description": "Runs the state's solid-waste management programme alongside science and technology promotion schemes.",
+   "headPositionId": "st-ga-pos-minister-5",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Directorate of Social Welfare",
+   "description": "Runs welfare hostels, pensions and schemes for Scheduled Castes, Scheduled Tribes, OBCs and persons with disabilities.",
+   "headPositionId": "st-ga-pos-minister-6",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-river-navigation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "River Navigation Department",
+   "description": "Regulates ferries and river-crossing infrastructure on Goa's rivers.",
+   "headPositionId": "st-ga-pos-minister-6",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-drinking-water",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Drinking Water",
+   "description": "Runs Goa's piped drinking-water supply schemes to households.",
+   "headPositionId": "st-ga-pos-minister-6",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-electricity",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Electricity Department",
+   "aliases": [
+    "Power Department"
+   ],
+   "description": "Distributes electricity across Goa and manages the state's power infrastructure.",
+   "headPositionId": "st-ga-pos-minister-7",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-new-and-renewable-energy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of New and Renewable Energy",
+   "description": "Promotes solar and other renewable power projects in the state.",
+   "headPositionId": "st-ga-pos-minister-7",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-museums",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Museums (Goa State Museum)",
+   "aliases": [
+    "Directorate of Museums"
+   ],
+   "description": "Runs the Goa State Museum and other state-owned museums and heritage collections.",
+   "headPositionId": "st-ga-pos-minister-7",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Directorate of Fisheries",
+   "aliases": [
+    "Fisheries Department"
+   ],
+   "description": "Regulates marine and inland fishing along Goa's coastline and runs welfare schemes for fishing communities.",
+   "headPositionId": "st-ga-pos-minister-8",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-animal-husbandry",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Animal Husbandry and Veterinary Services",
+   "description": "Runs veterinary hospitals and livestock development programmes.",
+   "headPositionId": "st-ga-pos-minister-8",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Public Works Department",
+   "aliases": [
+    "PWD"
+   ],
+   "description": "Builds and maintains state roads, bridges and government buildings.",
+   "headPositionId": "st-ga-pos-minister-9",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-captain-of-ports",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Captain of Ports Department",
+   "description": "Regulates Goa's river jetties, ferries and coastal/inland vessel traffic.",
+   "headPositionId": "st-ga-pos-minister-9",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-legal-metrology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Legal Metrology",
+   "description": "Enforces standard weights-and-measures rules on traders and manufacturers in Goa.",
+   "headPositionId": "st-ga-pos-minister-9",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-art-and-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Directorate of Art and Culture",
+   "aliases": [
+    "Department of Art and Culture"
+   ],
+   "description": "Runs state cultural festivals, archives and grants to Goan arts and heritage bodies.",
+   "headPositionId": "st-ga-pos-minister-10",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-sports-and-youth-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Directorate of Sports and Youth Affairs",
+   "description": "Runs state sports infrastructure, coaching schemes and youth-development programmes.",
+   "headPositionId": "st-ga-pos-minister-10",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-dept-tribal-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ga-government",
+   "name": "Department of Tribal Welfare",
+   "description": "Runs welfare hostels and livelihood schemes for Goa's Scheduled Tribe communities.",
+   "headPositionId": "st-ga-pos-minister-10",
+   "confidence": "medium"
+  }
+ ],
+ "positions": [],
+ "relations": [
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-dept-general-administration",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-general-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-dept-home",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-dept-law-and-judiciary",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-law-and-judiciary",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-dept-information-and-public-relations",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-information-and-public-relations",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-dept-energy",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-energy",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-deputy-cm-1",
+   "to": "st-mh-dept-urban-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-urban-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-deputy-cm-1",
+   "to": "st-mh-dept-housing",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-housing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-20",
+   "to": "st-mh-dept-public-works",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-public-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-deputy-cm-2",
+   "to": "st-mh-dept-finance",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-deputy-cm-2",
+   "to": "st-mh-dept-planning",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-planning",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-deputy-cm-2",
+   "to": "st-mh-dept-state-excise",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-state-excise",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-1",
+   "to": "st-mh-dept-water-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-2",
+   "to": "st-mh-dept-revenue",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-revenue",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-3",
+   "to": "st-mh-dept-medical-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-medical-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-4",
+   "to": "st-mh-dept-higher-and-technical-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-higher-and-technical-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-4",
+   "to": "st-mh-dept-parliamentary-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-5",
+   "to": "st-mh-dept-disaster-management",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-6",
+   "to": "st-mh-dept-water-supply-and-sanitation",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-water-supply-and-sanitation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-7",
+   "to": "st-mh-dept-forest",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-forest",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-8",
+   "to": "st-mh-dept-school-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-school-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-9",
+   "to": "st-mh-dept-soil-and-water-conservation",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-soil-and-water-conservation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-10",
+   "to": "st-mh-dept-food-civil-supplies-and-consumer-protection",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-food-civil-supplies-and-consumer-protection",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-11",
+   "to": "st-mh-dept-skill-development-and-entrepreneurship",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-skill-development-and-entrepreneurship",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-12",
+   "to": "st-mh-dept-industries",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-12",
+   "to": "st-mh-dept-marathi-language",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-marathi-language",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-13",
+   "to": "st-mh-dept-marketing",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-marketing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-13",
+   "to": "st-mh-dept-protocol",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-protocol",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-14",
+   "to": "st-mh-dept-environment-and-climate-change",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-environment-and-climate-change",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-14",
+   "to": "st-mh-dept-animal-husbandry",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-animal-husbandry",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-15",
+   "to": "st-mh-dept-obc-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-obc-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-15",
+   "to": "st-mh-dept-dairy-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-dairy-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-15",
+   "to": "st-mh-dept-new-and-renewable-energy",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-new-and-renewable-energy",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-16",
+   "to": "st-mh-dept-tribal-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-tribal-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-17",
+   "to": "st-mh-dept-tourism",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-17",
+   "to": "st-mh-dept-mining",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-mining",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-17",
+   "to": "st-mh-dept-ex-servicemen-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-ex-servicemen-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-18",
+   "to": "st-mh-dept-information-technology",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-18",
+   "to": "st-mh-dept-cultural-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-cultural-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-19",
+   "to": "st-mh-dept-women-and-child-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-women-and-child-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-21",
+   "to": "st-mh-dept-agriculture",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-22",
+   "to": "st-mh-dept-rural-development-and-panchayat-raj",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-rural-development-and-panchayat-raj",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-23",
+   "to": "st-mh-dept-food-and-drug-administration",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-food-and-drug-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-24",
+   "to": "st-mh-dept-textiles",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-textiles",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-25",
+   "to": "st-mh-dept-social-justice-and-special-assistance",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-social-justice-and-special-assistance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-26",
+   "to": "st-mh-dept-transport",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-27",
+   "to": "st-mh-dept-employment-guarantee-and-horticulture",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-employment-guarantee-and-horticulture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-28",
+   "to": "st-mh-dept-relief-and-rehabilitation",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-relief-and-rehabilitation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-29",
+   "to": "st-mh-dept-fisheries",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-29",
+   "to": "st-mh-dept-ports",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-ports",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-30",
+   "to": "st-mh-dept-labour",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-labour",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-31",
+   "to": "st-mh-dept-cooperation",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mh-pos-minister-32",
+   "to": "st-mh-dept-public-health",
+   "type": "heads"
+  },
+  {
+   "from": "st-mh-pos-chief-secretary",
+   "to": "st-mh-dept-public-health",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-dept-general-administration",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-general-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-dept-administrative-reforms",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-administrative-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-dept-planning",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-planning",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-dept-revenue",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-revenue",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-dept-roads-and-buildings",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-roads-and-buildings",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-dept-mines-and-minerals",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-mines-and-minerals",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-dept-narmada",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-narmada",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-dept-ports-and-transport",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-ports-and-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-dept-information-and-broadcasting",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-information-and-broadcasting",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-deputy-cm-1",
+   "to": "st-gj-dept-home",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-deputy-cm-1",
+   "to": "st-gj-dept-prohibition-and-excise",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-prohibition-and-excise",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-deputy-cm-1",
+   "to": "st-gj-dept-pilgrimage-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-pilgrimage-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-deputy-cm-1",
+   "to": "st-gj-dept-industries-and-mines",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-industries-and-mines",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-deputy-cm-1",
+   "to": "st-gj-dept-civil-aviation",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-civil-aviation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-deputy-cm-1",
+   "to": "st-gj-dept-tourism",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-deputy-cm-1",
+   "to": "st-gj-dept-cultural-activities",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-cultural-activities",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-deputy-cm-1",
+   "to": "st-gj-dept-legal",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-legal",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-deputy-cm-1",
+   "to": "st-gj-dept-printing-and-stationery",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-printing-and-stationery",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-1",
+   "to": "st-gj-dept-urban-development-and-housing",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-urban-development-and-housing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-1",
+   "to": "st-gj-dept-finance",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-2",
+   "to": "st-gj-dept-panchayat-and-rural-housing",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-panchayat-and-rural-housing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-2",
+   "to": "st-gj-dept-science-and-technology",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-science-and-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-2",
+   "to": "st-gj-dept-energy-and-petrochemicals",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-energy-and-petrochemicals",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-2",
+   "to": "st-gj-dept-higher-and-technical-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-higher-and-technical-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-2",
+   "to": "st-gj-dept-legislative-and-parliamentary-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-legislative-and-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-3",
+   "to": "st-gj-dept-forests-and-environment",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-forests-and-environment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-3",
+   "to": "st-gj-dept-climate-change",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-climate-change",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-4",
+   "to": "st-gj-dept-agriculture-and-farmers-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-agriculture-and-farmers-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-4",
+   "to": "st-gj-dept-fisheries",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-4",
+   "to": "st-gj-dept-animal-husbandry-and-cow-breeding",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-animal-husbandry-and-cow-breeding",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-4",
+   "to": "st-gj-dept-cooperation",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-5",
+   "to": "st-gj-dept-rural-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-5",
+   "to": "st-gj-dept-labour-and-skill-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-labour-and-skill-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-5",
+   "to": "st-gj-dept-water-resources-and-water-supply",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-water-resources-and-water-supply",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-6",
+   "to": "st-gj-dept-food-civil-supplies-and-consumer-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-food-civil-supplies-and-consumer-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-7",
+   "to": "st-gj-dept-primary-and-secondary-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-primary-and-secondary-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-7",
+   "to": "st-gj-dept-social-justice-and-empowerment",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-social-justice-and-empowerment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-8",
+   "to": "st-gj-dept-women-and-child-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-women-and-child-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-11",
+   "to": "st-gj-dept-msme",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-msme",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-11",
+   "to": "st-gj-dept-sports-and-youth",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-sports-and-youth",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-12",
+   "to": "st-gj-dept-cottage-khadi-and-rural-industries",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-cottage-khadi-and-rural-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-16",
+   "to": "st-gj-dept-transport",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-gj-pos-minister-18",
+   "to": "st-gj-dept-tribal-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-gj-pos-chief-secretary",
+   "to": "st-gj-dept-tribal-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-dept-home",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-dept-finance",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-dept-vigilance",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-vigilance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-dept-official-language",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-official-language",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-dept-personnel",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-personnel",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-1",
+   "to": "st-ga-dept-health",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-health",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-1",
+   "to": "st-ga-dept-urban-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-urban-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-1",
+   "to": "st-ga-dept-town-and-country-planning",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-town-and-country-planning",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-1",
+   "to": "st-ga-dept-women-and-child-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-women-and-child-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-1",
+   "to": "st-ga-dept-forest",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-forest",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-2",
+   "to": "st-ga-dept-water-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-2",
+   "to": "st-ga-dept-cooperation",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-2",
+   "to": "st-ga-dept-provedoria",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-provedoria",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-3",
+   "to": "st-ga-dept-transport",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-3",
+   "to": "st-ga-dept-industries",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-3",
+   "to": "st-ga-dept-panchayati-raj",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-panchayati-raj",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-3",
+   "to": "st-ga-dept-protocol-and-hospitality",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-protocol-and-hospitality",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-4",
+   "to": "st-ga-dept-tourism",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-4",
+   "to": "st-ga-dept-information-technology",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-4",
+   "to": "st-ga-dept-printing-and-stationery",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-printing-and-stationery",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-5",
+   "to": "st-ga-dept-revenue",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-revenue",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-5",
+   "to": "st-ga-dept-labour",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-labour",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-5",
+   "to": "st-ga-dept-science-technology-and-waste-management",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-science-technology-and-waste-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-6",
+   "to": "st-ga-dept-social-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-6",
+   "to": "st-ga-dept-river-navigation",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-river-navigation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-6",
+   "to": "st-ga-dept-drinking-water",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-drinking-water",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-7",
+   "to": "st-ga-dept-electricity",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-electricity",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-7",
+   "to": "st-ga-dept-new-and-renewable-energy",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-new-and-renewable-energy",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-7",
+   "to": "st-ga-dept-museums",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-museums",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-8",
+   "to": "st-ga-dept-fisheries",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-8",
+   "to": "st-ga-dept-animal-husbandry",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-animal-husbandry",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-9",
+   "to": "st-ga-dept-public-works",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-public-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-9",
+   "to": "st-ga-dept-captain-of-ports",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-captain-of-ports",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-9",
+   "to": "st-ga-dept-legal-metrology",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-legal-metrology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-10",
+   "to": "st-ga-dept-art-and-culture",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-art-and-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-10",
+   "to": "st-ga-dept-sports-and-youth-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-sports-and-youth-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ga-pos-minister-10",
+   "to": "st-ga-dept-tribal-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-ga-pos-chief-secretary",
+   "to": "st-ga-dept-tribal-welfare",
+   "type": "oversees"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 132,
+  "method": "1) Structural/schema audit: JSON re-parses cleanly; all 132 entity ids match `st-(mh|gj|ga)-dept-*` (52 MH, 43 GJ, 37 GA, matching the report); 0 duplicate ids across entities+positions; 0 `state_department` kind/sector violations. 2) Reference integrity: all 132 `headPositionId`s resolve to a real position id in data/raw/states-mh-gj-ga.json (0 dangling -- nothing to fix or drop); all 132 `parentId`s resolve to a real state_government entity in the same file; all 264 relations (132 `heads` + 132 `oversees`, matching the report exactly) have `from`/`to` that resolve (heads: dept's own headPositionId or CM/DCM -> dept; oversees: each state's Chief Secretary position -> every dept in that state) -- 0 dangling relation endpoints. 3) Semantic cross-check (not just existence): for every non-CM headPositionId, automated keyword-matched the department name against that minister's `holder.notes` portfolio text in states-mh-gj-ga.json; 126/132 matched on exact wording, the remaining 6 were manually reviewed and confirmed correct (spelling/abbreviation variants only: 'Co-operation' vs 'Cooperation' x2, 'Law & Justice' vs 'Legal', 'MSME' vs spelled-out, 'Panchayati Raj' vs 'Panchayats', 'Power' vs 'Electricity') -- 0 actual mismatches found across all 132 dept->minister assignments. 4) Secretary postings: file correctly has 0 `st-<code>-pos-secretary-*` positions (matches the report's claim of 0); since none were added there is nothing to re-verify against 2025-2026 transfer orders -- the 'at least 25 secretary postings' re-verification task is N/A for this file (fewer than 1 exist). 5) Missing-major-department check against each state's official portal, cross-referenced against the checklist (Home, Finance, Revenue, Health, School/Higher Education, Agriculture, Rural Development, Urban Development, PWD, Power/Energy, Water Resources, Social Welfare, Women & Child, Industries, Transport, Forest & Environment, Tribal/SC welfare, Food & Civil Supplies, Labour, IT, Tourism, Panchayati Raj): Maharashtra's 52 departments cover the full checklist, no gaps found. Gujarat and Goa each have confirmed gaps (see notes below) but they could NOT be safely fixed within this pass: every gap traces to states-mh-gj-ga.json (a different, upstream segment this task does not own) not recording any minister holding that portfolio, so per SCHEMA.md's 'reference existing ids, do not invent' rule, adding the department here would require fabricating a headPositionId -- the same principled omission the file's own original notes already applied to Goa's Education gap. Network constraints during this pass mirrored the ones the original file's notes documented: WebSearch budget was session-wide exhausted (200/200) before this task started, the Wikipedia REST API rate-limited direct queries (429s), and gujaratindia.gov.in/www.maharashtra.gov.in were unreachable (TLS cert mismatch / connection timeout) from this sandbox -- goa.gov.in/departments/ and en.wikipedia.org were reachable via WebFetch and used for the checks that followed.",
+  "corrections": [],
+  "gaps_confirmed_not_fixed": [
+   {
+    "state": "Gujarat",
+    "department": "Health and Family Welfare Department",
+    "evidence": "Absent from all 43 Gujarat entities in this file. Checked all 21 st-gj-pos-minister-* holder.notes plus the CM and Deputy CM in states-mh-gj-ga.json: none list a Health/Medical/Family Welfare portfolio, so no valid headPositionId exists to assign. Every Indian state has an active Health department; this is very likely a gap in the upstream states-mh-gj-ga.json minister-portfolio research, not evidence Gujarat has no Health department.",
+    "recommendation": "Needs a follow-up pass on data/raw/states-mh-gj-ga.json to identify and source the current Gujarat Health & Family Welfare Minister, then this file can add st-gj-dept-health-and-family-welfare with a real headPositionId."
+   },
+   {
+    "state": "Goa",
+    "department": "Directorate of Agriculture",
+    "evidence": "Absent from all 37 Goa entities in this file. Checked the CM and all 10 st-ga-pos-minister-* holder.notes in states-mh-gj-ga.json: none list an Agriculture portfolio. goa.gov.in's own department listing (fetched live) includes 'Directorate of Agriculture' as a major department.",
+    "recommendation": "Same as above: needs the Goa minister holding Agriculture identified in states-mh-gj-ga.json first."
+   },
+   {
+    "state": "Goa",
+    "department": "Department of Environment & Climate Change",
+    "evidence": "Absent from all 37 Goa entities in this file (only 'Forest Department' exists, which is a separate portfolio per goa.gov.in). goa.gov.in's own department listing (fetched live) includes 'Department of Environment & Climate Change' as a distinct major department.",
+    "recommendation": "Same as above."
+   },
+   {
+    "state": "Goa",
+    "department": "School / Higher / Technical Education directorates",
+    "evidence": "Already flagged in this file's own original `notes` field (pre-existing, re-confirmed here, not a new finding): confirmed to exist on goa.gov.in but omitted because no sourced Goa minister holds an Education portfolio.",
+    "recommendation": "Same as above (carried over from the file's original notes)."
+   }
+  ],
+  "notes_on_no_corrections": "This adversarial verification pass found 0 structural or reference errors (clean IDs, 0 duplicates, 0 dangling headPositionId/parentId/relation references, entity/relation counts match the report's own claim exactly: 132 entities [MH 52, GJ 43, GA 37], 264 relations, 0 secretary positions). The 132 headPositionId assignments were semantically spot-checked against the sourced minister portfolios in states-mh-gj-ga.json with 0 actual mismatches. No corrections were needed to existing data. Three genuine department-list gaps beyond the one already flagged in the file's own notes were confirmed (Gujarat Health & Family Welfare; Goa Agriculture; Goa Environment & Climate Change) but were deliberately NOT added, because doing so would require inventing a headPositionId not present in the upstream states-mh-gj-ga.json segment, which SCHEMA.md explicitly prohibits -- this mirrors the file's own existing, principled omission of Goa's Education directorates. All four gaps are listed in `gaps_confirmed_not_fixed` above as a scoped follow-up once states-mh-gj-ga.json records the relevant minister portfolios. Session-wide WebSearch exhaustion and Wikipedia API rate-limiting (both already documented by sibling segments in STATE.md) limited this pass to WebFetch-reachable sources (goa.gov.in, en.wikipedia.org); gujaratindia.gov.in and maharashtra.gov.in remained unreachable, consistent with the file's own original notes."
+ }
+}

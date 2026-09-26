@@ -1,0 +1,1444 @@
+{
+ "segment": "judiciary-supreme-court",
+ "asOf": "2026-09-25",
+ "notes": "Sanctioned strength: the Supreme Court (Number of Judges) Amendment Bill, 2026 (Cabinet approved 2026-05-05; raises the Court from 34 to 38, i.e. puisne judges from 33 to 37, excluding the CJI) passed Lok Sabha on 2026-08-03 and Rajya Sabha on 2026-08-05 (per PRS Legislative Research bill tracker). Presidential assent / gazette notification date could not be independently confirmed with the tools available (nja.gov.in and some gov.in domains were unreachable from this environment; PIB's press-release search was blocked by the site). The official sci.gov.in roster page, itself stamped 'Last Updated: Sep 25, 2026', lists exactly 34 sitting judges (CJI + 33) with no vacancies filled beyond that — so this file records 34 as the actual current bench and flags the +4 as a likely-enacted-but-unfilled sanctioned increase rather than asserting it as settled fact. \n\nParent High Court for each judge is the High Court (or post, e.g. Chief Justice of X High Court) they held immediately before elevation to the Supreme Court, per each judge's official sci.gov.in biography — not necessarily the High Court where they were first appointed a judge, since many judges are transferred/elevated to become Chief Justice of a different High Court shortly before Supreme Court elevation. Three sitting judges (P.S. Narasimha, K.V. Viswanathan, V. Mohana) were elevated directly from the Bar and have no parent High Court. \n\nCould not independently confirm current holders/dates for: Supreme Court Legal Services Committee Chairman (sclsc.gov.in appears stale, footer copyright 2022) — no position invented, entity flagged confidence medium with an explanatory internal note; National Judicial Academy Director's currency (only a July 2026 Wayback snapshot available, live site unreachable). Wikipedia pages could not be located/confirmed for 3 of the 33 puisne judges (Sanjay Kumar, S.V.N. Bhatti, N.V. Anjaria) despite multiple title guesses — the Wikimedia API opensearch endpoint was rate-limited for most of this research session (heavy parallel use across the wider gov-graph project), so this is a gap, not a confirmed absence. Attorney General for India (in-pos-attorney-general) is referenced only, per the core-apex ownership rule, in one ex_officio relation into SCLSC. \n\n24 internal single-purpose Supreme Court committees (Finance Committee, Library Committee, PIL Committee, etc., from sci.gov.in/committees) were deliberately NOT modelled as separate entities/relations — out of scope for this segment's brief (Secretary General/Registry, SCLSC, NALSA, NJA, e-Committee only) and would have added ~70 low-value, purely-internal committee memberships without materially improving the citizen-facing graph.",
+ "entities": [
+  {
+   "id": "in-supreme-court",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Supreme Court of India",
+   "nameHi": "भारत का सर्वोच्च न्यायालय",
+   "abbr": "SCI",
+   "aliases": [
+    "Supreme Court",
+    "SC",
+    "Apex Court",
+    "SCI"
+   ],
+   "parentId": "in-constitution",
+   "description": "India's apex constitutional court and final court of appeal, with original, appellate, advisory and writ jurisdiction; exercises judicial review over legislative and executive action and is the ultimate interpreter of the Constitution.",
+   "legalBasis": "Constitution of India, Articles 124-147 (Part V, Chapter IV)",
+   "legalSourceUrl": "https://en.wikipedia.org/wiki/Supreme_Court_of_India",
+   "officialUrl": "https://www.sci.gov.in",
+   "established": "1950-01-28",
+   "hq": "Tilak Marg, New Delhi",
+   "headPositionId": "in-pos-chief-justice-of-india",
+   "adminHeadPositionId": "in-pos-secretary-general-sc",
+   "seats": 38,
+   "stats": {
+    "workingStrength": 34,
+    "vacancies": 4,
+    "note": "34 = sitting CJI + 33 puisne judges as listed on sci.gov.in on 2026-09-25 (site 'Last Updated' stamp same date). Statutory ceiling raised from 34 (1 CJI + 33) to 38 (1 CJI + 37) by the Supreme Court (Number of Judges) Amendment Bill, 2026, which passed Lok Sabha on 2026-08-03 and Rajya Sabha on 2026-08-05; presidential assent/gazette notification date not independently confirmed, so the extra 4 sanctioned seats are treated here as vacant/unfilled rather than assumed enacted with certainty."
+   },
+   "sources": [
+    "https://www.sci.gov.in/chief-justice-judges/",
+    "https://en.wikipedia.org/wiki/Supreme_Court_of_India",
+    "https://web.archive.org/web/20260506075718/https://www.pib.gov.in/PressReleasePage.aspx?PRID=2258131&reg=3&lang=1",
+    "https://prsindia.org/billtrack/the-supreme-court-number-of-judges-amendment-bill-2026"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-supreme-court-collegium",
+   "kind": "advisory_body",
+   "sector": "judicial",
+   "name": "Collegium of the Supreme Court of India",
+   "abbr": "Collegium",
+   "aliases": [
+    "Supreme Court Collegium"
+   ],
+   "parentId": "in-supreme-court",
+   "description": "An extra-constitutional, judge-only body — the Chief Justice of India and the four next most senior Supreme Court judges — that recommends appointments and transfers of judges to the Supreme Court and High Courts. Evolved through the Second and Third Judges Cases (1993, 1998); the executive cannot appoint a judge outside a collegium recommendation, though it can return a name once for reconsideration.",
+   "legalBasis": "Judge-made law: Supreme Court Advocates-on-Record Association v Union of India (1993) and In re Special Reference 1 of 1998 (interpreting Article 124(2))",
+   "legalSourceUrl": "https://en.wikipedia.org/wiki/Collegium_system",
+   "established": "1993",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Supreme_Court_of_India",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-supreme-court-registry",
+   "kind": "secretariat",
+   "sector": "judicial",
+   "name": "Registry of the Supreme Court of India",
+   "aliases": [
+    "Supreme Court Registry"
+   ],
+   "parentId": "in-supreme-court",
+   "description": "The administrative and case-management arm of the Supreme Court, headed by the Secretary General and staffed by Registrars and Registrars (Judicial) who handle filing, listing, court records and day-to-day administration.",
+   "legalBasis": "Supreme Court Rules, 2013",
+   "officialUrl": "https://www.sci.gov.in/registry-officers/",
+   "adminHeadPositionId": "in-pos-secretary-general-sc",
+   "sources": [
+    "https://www.sci.gov.in/registry-officers/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-sclsc",
+   "kind": "statutory_body",
+   "sector": "judicial",
+   "name": "Supreme Court Legal Services Committee",
+   "abbr": "SCLSC",
+   "aliases": [
+    "Supreme Court Legal Services Committee"
+   ],
+   "parentId": "in-supreme-court",
+   "description": "Provides free legal aid, advice and representation to eligible weaker-section litigants in cases before the Supreme Court, and runs Lok Adalats and mediation for such matters. Chaired by a sitting Supreme Court judge (nominated by the CJI) with nine CJI-nominated members; the Attorney General and the Secretary General of the Supreme Court are ex-officio members.",
+   "legalBasis": "Legal Services Authorities Act, 1987, Section 3A",
+   "legalSourceUrl": "https://en.wikipedia.org/wiki/Legal_Services_Authorities_Act,_1987",
+   "officialUrl": "https://sclsc.gov.in",
+   "sources": [
+    "https://sclsc.gov.in/about-us/Constitution",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nalsa",
+   "kind": "statutory_body",
+   "sector": "judicial",
+   "name": "National Legal Services Authority",
+   "abbr": "NALSA",
+   "aliases": [
+    "NALSA",
+    "National Legal Services Authority"
+   ],
+   "parentId": "in-supreme-court",
+   "description": "The apex statutory body constituted to provide free legal aid to weaker sections of society, organise Lok Adalats and promote access to justice nationwide; oversees the State/District Legal Services Authorities. The sitting CJI is ex-officio Patron-in-Chief; the senior-most sitting Supreme Court judge after the CJI is Executive Chairman.",
+   "legalBasis": "Legal Services Authorities Act, 1987",
+   "legalSourceUrl": "https://en.wikipedia.org/wiki/Legal_Services_Authorities_Act,_1987",
+   "officialUrl": "https://nalsa.gov.in",
+   "established": "1995-11-09",
+   "headPositionId": "in-pos-executive-chairman-nalsa",
+   "sources": [
+    "https://nalsa.gov.in/current-executive-chairman/",
+    "https://nalsa.gov.in/current-patron-in-chief/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nja",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "National Judicial Academy",
+   "abbr": "NJA",
+   "aliases": [
+    "National Judicial Academy, Bhopal"
+   ],
+   "parentId": "in-supreme-court",
+   "description": "The apex judicial-training institution of India, on a 63-acre campus at Bhopal; trains judges and judicial officers and conducts research on judicial administration. Registered as a society in 1993; its Governing Council is chaired by the Chief Justice of India.",
+   "legalBasis": "Registered under the Societies Registration Act, 1860",
+   "legalSourceUrl": "https://en.wikipedia.org/wiki/National_Judicial_Academy_(India)",
+   "officialUrl": "https://www.nja.gov.in",
+   "established": "1993",
+   "hq": "Bhopal, Madhya Pradesh",
+   "adminHeadPositionId": "in-pos-director-nja",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Judicial_Academy_(India)",
+    "https://web.archive.org/web/20260709202359/https://www.nja.gov.in/our-director.html"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ecommittee-sc",
+   "kind": "advisory_body",
+   "sector": "judicial",
+   "name": "e-Committee, Supreme Court of India",
+   "abbr": "e-Committee",
+   "aliases": [
+    "eCommittee",
+    "e-Committee"
+   ],
+   "parentId": "in-supreme-court",
+   "description": "Advises the Chief Justice of India on the national policy for information and communication technology (ICT) in the Indian judiciary, and plans/monitors the eCourts Mission Mode Project across all courts.",
+   "legalBasis": "Constituted by the Supreme Court of India (Government of India Resolution, 2004)",
+   "officialUrl": "https://ecommitteesci.gov.in",
+   "headPositionId": "in-pos-chairperson-ecommittee-sc",
+   "sources": [
+    "https://ecommitteesci.gov.in/administrative-setup/"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-chief-justice-of-india",
+   "title": "Chief Justice of India",
+   "titleHi": "भारत के मुख्य न्यायाधीश",
+   "orgId": "in-supreme-court",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Surya Kant",
+    "since": "2025-11-24",
+    "wikipedia": "https://en.wikipedia.org/wiki/Surya_Kant_(judge)",
+    "acting": false,
+    "notes": "53rd CJI. Born 1962-02-10 at Hisar, Haryana. Was Chief Justice of the Himachal Pradesh High Court (elevated to that post 2018-10-05) before elevation as a Supreme Court judge on 2019-05-24; earlier a permanent judge (2004) and Advocate General (2000) of Haryana at the Punjab & Haryana High Court. Due to retire 2027-02-09 (turns 65). Ex officio Patron-in-Chief of NALSA and SCLSC, and Patron-in-Chief of the e-Committee, and Chairperson of the National Judicial Academy Governing Council."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/chief-justice-judges/",
+    "https://en.wikipedia.org/wiki/Chief_Justice_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-judge-sc-vikram-nath",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Vikram Nath",
+    "since": "2021-08-31",
+    "acting": false,
+    "notes": "Born 1962-09-24. Due to retire 2027-09-23 (turns 65). Executive Chairman, NALSA since 24 Nov 2025; Chairperson of the e-Committee, Supreme Court of India since May 2025; former Chairman, Supreme Court Legal Services Committee. Elevated to SC as Chief Justice of the Gujarat High Court; earlier a judge of the Allahabad High Court (2004-2019).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vikram_Nath"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-vikram-nath/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-gujarat"
+  },
+  {
+   "id": "in-pos-judge-sc-b-v-nagarathna",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "B.V. Nagarathna",
+    "since": "2021-08-31",
+    "acting": false,
+    "notes": "Born 1962-10-30. Due to retire 2027-10-29 (turns 65). Elevated to SC as a sitting Judge of the Karnataka High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/B._V._Nagarathna"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-b-v-nagarathna/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-karnataka"
+  },
+  {
+   "id": "in-pos-judge-sc-m-m-sundresh",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "M.M. Sundresh",
+    "since": "2021-08-31",
+    "acting": false,
+    "notes": "Born 1962-07-21. Due to retire 2027-07-20 (turns 65). Elevated to SC as a sitting Judge of the Madras High Court (was President, Tamil Nadu State Judicial Academy at the time).",
+    "wikipedia": "https://en.wikipedia.org/wiki/M._M._Sundresh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-m-m-sundresh/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-madras"
+  },
+  {
+   "id": "in-pos-judge-sc-pamidighantam-sri-narasimha",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "P.S. Narasimha",
+    "since": "2021-08-31",
+    "acting": false,
+    "notes": "Born 1963-05-03. Due to retire 2028-05-02 (turns 65). Elevated directly from the Bar (Senior Advocate, former Additional Solicitor General) on 31 Aug 2021 — no parent High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/P._S._Narasimha"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-pamidighantam-sri-narasimha/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-judge-sc-j-b-pardiwala",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "J.B. Pardiwala",
+    "since": "2022-05-09",
+    "acting": false,
+    "notes": "Born 1965-08-12. Due to retire 2030-08-11 (turns 65). Elevated to SC as a sitting Judge of the Gujarat High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/J._B._Pardiwala"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-j-b-pardiwala/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-gujarat"
+  },
+  {
+   "id": "in-pos-judge-sc-dipankar-datta",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Dipankar Datta",
+    "since": "2022-12-12",
+    "acting": false,
+    "notes": "Born 1965-02-09. Due to retire 2030-02-08 (turns 65). Elevated to SC as Chief Justice of the Bombay High Court; earlier a Judge of the Calcutta High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dipankar_Datta"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-dipankar-datta/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-bombay"
+  },
+  {
+   "id": "in-pos-judge-sc-sanjay-kumar",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Sanjay Kumar",
+    "since": "2023-02-06",
+    "acting": false,
+    "notes": "Born 1963-08-14. Due to retire 2028-08-13 (turns 65). Elevated to SC as Chief Justice of the Manipur High Court; earlier judge of Andhra Pradesh/Telangana and Punjab & Haryana High Courts. No English Wikipedia page independently confirmed as of research date."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-sanjay-kumar/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-manipur"
+  },
+  {
+   "id": "in-pos-judge-sc-ahsanuddin-amanullah",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Ahsanuddin Amanullah",
+    "since": "2023-02-06",
+    "acting": false,
+    "notes": "Born 1963-05-11. Due to retire 2028-05-10 (turns 65). Elevated to SC as a sitting Judge of the Patna High Court (previously transferred to Andhra Pradesh HC and back).",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ahsanuddin_Amanullah"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-ahsanuddin-amanullah/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-patna"
+  },
+  {
+   "id": "in-pos-judge-sc-manoj-misra",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Manoj Misra",
+    "since": "2023-02-06",
+    "acting": false,
+    "notes": "Born 1965-06-02. Due to retire 2030-06-01 (turns 65). Elevated to SC as a sitting Judge of the Allahabad High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Manoj_Misra"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-manoj-misra/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-allahabad"
+  },
+  {
+   "id": "in-pos-judge-sc-aravind-kumar",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Aravind Kumar",
+    "since": "2023-02-13",
+    "acting": false,
+    "notes": "Born 1962-07-14. Due to retire 2027-07-13 (turns 65). Elevated to SC as Chief Justice of the Gujarat High Court; earlier a Judge of the Karnataka High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Aravind_Kumar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-aravind-kumar/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-gujarat"
+  },
+  {
+   "id": "in-pos-judge-sc-prashant-kumar-mishra",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Prashant Kumar Mishra",
+    "since": "2023-05-19",
+    "acting": false,
+    "notes": "Born 1964-08-29. Due to retire 2029-08-28 (turns 65). Elevated to SC as Chief Justice of the Andhra Pradesh High Court; earlier a Judge of the Chhattisgarh High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Prashant_Kumar_Mishra"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-prashant-kumar-mishra/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-andhra-pradesh"
+  },
+  {
+   "id": "in-pos-judge-sc-k-v-viswanathan",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "K.V. Viswanathan",
+    "since": "2023-05-19",
+    "acting": false,
+    "notes": "Born 1966-05-26. Due to retire 2031-05-25 (turns 65). Elevated directly from the Bar (Senior Advocate, former Additional Solicitor General) on 19 May 2023 — no parent High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._V._Viswanathan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-k-v-viswanathan/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-judge-sc-ujjal-bhuyan",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Ujjal Bhuyan",
+    "since": "2023-07-14",
+    "acting": false,
+    "notes": "Born 1964-08-02. Due to retire 2029-08-01 (turns 65). Elevated to SC as Chief Justice of the High Court for the State of Telangana; earlier a Judge of the Gauhati and Bombay High Courts.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ujjal_Bhuyan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-ujjal-bhuyan/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-telangana"
+  },
+  {
+   "id": "in-pos-judge-sc-sarasa-venkatanarayana-bhatti",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "S.V.N. Bhatti",
+    "since": "2023-07-14",
+    "acting": false,
+    "notes": "Born 1962-05-06. Due to retire 2027-05-05 (turns 65). Elevated to SC as Chief Justice of the Kerala High Court; earlier a Judge of the Andhra Pradesh High Court. No English Wikipedia page independently confirmed as of research date."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-sarasa-venkatanarayana-bhatti/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-kerala"
+  },
+  {
+   "id": "in-pos-judge-sc-satish-chandra-sharma",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Satish Chandra Sharma",
+    "since": "2023-11-09",
+    "acting": false,
+    "notes": "Born 1961-11-30. Due to retire 2026-11-29 (turns 65). Elevated to SC as Chief Justice of the Delhi High Court; earlier CJ of Telangana HC and a Judge of Madhya Pradesh/Karnataka High Courts.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Satish_Chandra_Sharma"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-satish-chandra-sharma/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-delhi"
+  },
+  {
+   "id": "in-pos-judge-sc-augustine-george-masih",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Augustine George Masih",
+    "since": "2023-11-09",
+    "acting": false,
+    "notes": "Born 1963-03-12. Due to retire 2028-03-11 (turns 65). Elevated to SC as Chief Justice of the Rajasthan High Court; earlier a Judge of the Punjab & Haryana High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Augustine_George_Masih"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-augustine-george-masih/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-rajasthan"
+  },
+  {
+   "id": "in-pos-judge-sc-sandeep-mehta",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Sandeep Mehta",
+    "since": "2023-11-09",
+    "acting": false,
+    "notes": "Born 1963-01-11. Due to retire 2028-01-10 (turns 65). Elevated to SC as Chief Justice of the Gauhati High Court; earlier a Judge of the Rajasthan High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sandeep_Mehta"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-sandeep-mehta/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-gauhati"
+  },
+  {
+   "id": "in-pos-judge-sc-prasanna-bhalachandra-varale",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Prasanna B. Varale",
+    "since": "2024-01-25",
+    "acting": false,
+    "notes": "Born 1962-06-23. Due to retire 2027-06-22 (turns 65). Elevated to SC as Chief Justice of the Karnataka High Court; earlier a Judge of the Bombay High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Prasanna_B._Varale"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-prasanna-bhalachandra-varale/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-karnataka"
+  },
+  {
+   "id": "in-pos-judge-sc-n-kotiswar-singh",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "N. Kotiswar Singh",
+    "since": "2024-07-18",
+    "acting": false,
+    "notes": "Born 1963-03-01. Due to retire 2028-02-29 (turns 65). Elevated to SC as Chief Justice of the High Court of Jammu & Kashmir and Ladakh; earlier a Judge of the Gauhati/Manipur High Courts.",
+    "wikipedia": "https://en.wikipedia.org/wiki/N._Kotiswar_Singh"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-n-kotiswar-singh/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-jammu-kashmir-and-ladakh"
+  },
+  {
+   "id": "in-pos-judge-sc-r-mahadevan",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "R. Mahadevan",
+    "since": "2024-07-18",
+    "acting": false,
+    "notes": "Born 1963-06-10. Due to retire 2028-06-09 (turns 65). Elevated to SC while Acting Chief Justice of the Madras High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/R._Mahadevan"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-r-mahadevan/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-madras"
+  },
+  {
+   "id": "in-pos-judge-sc-manmohan",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Manmohan",
+    "since": "2024-12-05",
+    "acting": false,
+    "notes": "Born 1962-12-17. Due to retire 2027-12-16 (turns 65). Elevated to SC as Chief Justice of the Delhi High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Manmohan_(judge)"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-manmohan/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-delhi"
+  },
+  {
+   "id": "in-pos-judge-sc-k-vinod-chandran",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "K. Vinod Chandran",
+    "since": "2025-01-16",
+    "acting": false,
+    "notes": "Born 1963-04-25. Due to retire 2028-04-24 (turns 65). Elevated to SC as Chief Justice of the Patna High Court; earlier a Judge of the Kerala High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._Vinod_Chandran"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-k-vinod-chandran/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-patna"
+  },
+  {
+   "id": "in-pos-judge-sc-joymalya-bagchi",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Joymalya Bagchi",
+    "since": "2025-03-17",
+    "acting": false,
+    "notes": "Born 1966-10-03. Due to retire 2031-10-02 (turns 65). Elevated to SC as a sitting Judge of the Calcutta High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Joymalya_Bagchi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-joymalya-bagchi/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-calcutta"
+  },
+  {
+   "id": "in-pos-judge-sc-n-v-anjaria",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "N.V. Anjaria",
+    "since": "2025-05-30",
+    "acting": false,
+    "notes": "Born 1965-03-23. Due to retire 2030-03-22 (turns 65). Elevated to SC as Chief Justice of the Karnataka High Court; earlier a Judge of the Gujarat High Court. No English Wikipedia page independently confirmed as of research date."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-n-v-anjaria/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-karnataka"
+  },
+  {
+   "id": "in-pos-judge-sc-vijay-bishnoi",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Vijay Bishnoi",
+    "since": "2025-05-30",
+    "acting": false,
+    "notes": "Born 1964-03-26. Due to retire 2029-03-25 (turns 65). Elevated to SC as Chief Justice of the Gauhati High Court; earlier a Judge of the Rajasthan High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vijay_Bishnoi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-vijay-bishnoi/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-gauhati"
+  },
+  {
+   "id": "in-pos-judge-sc-a-s-chandurkar",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Atul S. Chandurkar",
+    "since": "2025-05-30",
+    "acting": false,
+    "notes": "Born 1965-04-07. Due to retire 2030-04-06 (turns 65). Elevated to SC as a sitting Judge of the Bombay High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/A._S._Chandurkar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-a-s-chandurkar/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-bombay"
+  },
+  {
+   "id": "in-pos-judge-sc-alok-aradhe",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Alok Aradhe",
+    "since": "2025-08-29",
+    "acting": false,
+    "notes": "Born 1964-04-13. Due to retire 2029-04-12 (turns 65). Elevated to SC as Chief Justice of the Bombay High Court; earlier CJ of Telangana HC and a Judge of Madhya Pradesh/J&K/Karnataka High Courts.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Alok_Aradhe"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-alok-aradhe/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-bombay"
+  },
+  {
+   "id": "in-pos-judge-sc-vipul-manubhai-pancholi",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Vipul M. Pancholi",
+    "since": "2025-08-29",
+    "acting": false,
+    "notes": "Born 1968-05-28. Due to retire 2033-05-27 (turns 65). Elevated to SC as Chief Justice of the Patna High Court; earlier a Judge of the Gujarat High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vipul_Manubhai_Pancholi"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-vipul-manubhai-pancholi/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-patna"
+  },
+  {
+   "id": "in-pos-judge-sc-sheel-nagu",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Sheel Nagu",
+    "since": "2026-06-02",
+    "acting": false,
+    "notes": "Born 1965-01-01. Due to retire 2029-12-31 (turns 65). Elevated to SC as Chief Justice of the Punjab & Haryana High Court; earlier a Judge of the Madhya Pradesh High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sheel_Nagu"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-sheel-nagu/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-punjab-and-haryana"
+  },
+  {
+   "id": "in-pos-judge-sc-shree-chandrashekhar",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Shree Chandrashekhar",
+    "since": "2026-06-02",
+    "acting": false,
+    "notes": "Born 1965-05-25. Due to retire 2030-05-24 (turns 65). Elevated to SC as Chief Justice of the Bombay High Court (49th CJ, took oath 5 Sep 2025); earlier a Judge of the Jharkhand and Rajasthan High Courts. Supreme Court Collegium recommended his elevation on 27 May 2026.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shree_Chandrashekhar"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-shree-chandrashekhar/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-bombay"
+  },
+  {
+   "id": "in-pos-judge-sc-sanjeev-sachdeva",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Sanjeev Sachdeva",
+    "since": "2026-06-02",
+    "acting": false,
+    "notes": "Born 1964-12-26. Due to retire 2029-12-25 (turns 65). Elevated to SC as Chief Justice of the Madhya Pradesh High Court; earlier a Judge of the Delhi High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sanjeev_Sachdeva"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-sanjeev-sachdeva/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-madhya-pradesh"
+  },
+  {
+   "id": "in-pos-judge-sc-arun-palli",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Arun Palli",
+    "since": "2026-06-02",
+    "acting": false,
+    "notes": "Born 1964-09-18. Due to retire 2029-09-17 (turns 65). Elevated to SC as Chief Justice of the High Court of Jammu & Kashmir and Ladakh; earlier a Judge of the Punjab & Haryana High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Arun_Palli"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-arun-palli/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high",
+   "parentHighCourtId": "in-hc-jammu-kashmir-and-ladakh"
+  },
+  {
+   "id": "in-pos-judge-sc-v-mohana",
+   "title": "Judge, Supreme Court of India",
+   "orgId": "in-supreme-court",
+   "rank": "judge",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "V. Mohana",
+    "since": "2026-06-02",
+    "acting": false,
+    "notes": "Born 1966-06-27. Due to retire 2031-06-26 (turns 65). Elevated directly from the Bar (Senior Advocate) on 2 June 2026 — no parent High Court.",
+    "wikipedia": "https://en.wikipedia.org/wiki/V._Mohana"
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/justice-v-mohana/",
+    "https://www.sci.gov.in/chief-justice-judges/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-general-sc",
+   "title": "Secretary General, Supreme Court of India",
+   "orgId": "in-supreme-court-registry",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-chief-justice-of-india",
+   "holder": {
+    "name": "Ajit Atri",
+    "since": null,
+    "notes": "Listed as Secretary General on sci.gov.in's Registry Officers page, 'Last Updated: Sep 25, 2026' (same as research as-of date). Appointment date not stated on source page."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sci.gov.in/registry-officers/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-executive-chairman-nalsa",
+   "title": "Executive Chairman, National Legal Services Authority",
+   "orgId": "in-nalsa",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "ex_officio",
+   "appointedBy": null,
+   "holder": {
+    "name": "Vikram Nath",
+    "since": "2025-11-24",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vikram_Nath",
+    "acting": false,
+    "notes": "By convention/regulation, the senior-most sitting Supreme Court judge after the CJI serves as NALSA Executive Chairman; Justice Vikram Nath is also a sitting Judge of the Supreme Court (in-pos-judge-sc-vikram-nath)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://nalsa.gov.in/current-executive-chairman/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-ecommittee-sc",
+   "title": "Chairperson, e-Committee, Supreme Court of India",
+   "orgId": "in-ecommittee-sc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-chief-justice-of-india",
+   "holder": {
+    "name": "Vikram Nath",
+    "since": "2025-05",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vikram_Nath",
+    "acting": false,
+    "notes": "Also a sitting Judge of the Supreme Court (in-pos-judge-sc-vikram-nath) and NALSA Executive Chairman."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ecommitteesci.gov.in/administrative-setup/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-vice-chairperson-ecommittee-sc",
+   "title": "Vice-Chairperson, e-Committee, Supreme Court of India",
+   "orgId": "in-ecommittee-sc",
+   "rank": "other",
+   "seat": null,
+   "appointmentMode": "nominated",
+   "appointedBy": "in-pos-chief-justice-of-india",
+   "holder": {
+    "name": "Anjani Kumar Mishra",
+    "since": null,
+    "acting": false,
+    "notes": "Retired High Court judge; not a sitting Supreme Court judge."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ecommitteesci.gov.in/administrative-setup/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-nja",
+   "title": "Director, National Judicial Academy",
+   "orgId": "in-nja",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": null,
+   "holder": {
+    "name": "Aniruddha Bose",
+    "since": "2024-04-13",
+    "acting": false,
+    "notes": "Retired Supreme Court judge (Justice, Retd.). Per a 2026-07-09 Wayback Machine snapshot of nja.gov.in this is still the current Director (no 'To' date given, i.e. ongoing); the live nja.gov.in site could not be reached directly during this research (DNS/connection failure) so this is not independently confirmed as of 2026-09-25."
+   },
+   "vacant": false,
+   "sources": [
+    "https://web.archive.org/web/20260709202359/https://www.nja.gov.in/our-director.html"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-chief-justice-of-india",
+   "type": "appoints",
+   "basis": "Article 124(1)/126; by long-standing convention the senior-most sitting Supreme Court judge is appointed CJI, on the recommendation of the outgoing Chief Justice of India (not the 5-member Collegium, which the CJI heads)",
+   "source": "https://en.wikipedia.org/wiki/Chief_Justice_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-vikram-nath",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-b-v-nagarathna",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-m-m-sundresh",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-pamidighantam-sri-narasimha",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-j-b-pardiwala",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-dipankar-datta",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-sanjay-kumar",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-ahsanuddin-amanullah",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-manoj-misra",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-aravind-kumar",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-prashant-kumar-mishra",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-k-v-viswanathan",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-ujjal-bhuyan",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-sarasa-venkatanarayana-bhatti",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-satish-chandra-sharma",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-augustine-george-masih",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-sandeep-mehta",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-prasanna-bhalachandra-varale",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-n-kotiswar-singh",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-r-mahadevan",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-manmohan",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-k-vinod-chandran",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-joymalya-bagchi",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-n-v-anjaria",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-vijay-bishnoi",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-a-s-chandurkar",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-alok-aradhe",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-vipul-manubhai-pancholi",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-sheel-nagu",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-shree-chandrashekhar",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-sanjeev-sachdeva",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-arun-palli",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-judge-sc-v-mohana",
+   "type": "appoints",
+   "basis": "Article 124(2), on the recommendation of the Supreme Court Collegium",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-chief-justice-of-india",
+   "to": "in-supreme-court-collegium",
+   "type": "member_of",
+   "basis": "The CJI heads the Collegium",
+   "source": "https://en.wikipedia.org/wiki/Supreme_Court_of_India"
+  },
+  {
+   "from": "in-pos-judge-sc-vikram-nath",
+   "to": "in-supreme-court-collegium",
+   "type": "member_of",
+   "basis": "The four next most senior sitting judges after the CJI sit on the Collegium",
+   "source": "https://en.wikipedia.org/wiki/Supreme_Court_of_India"
+  },
+  {
+   "from": "in-pos-judge-sc-b-v-nagarathna",
+   "to": "in-supreme-court-collegium",
+   "type": "member_of",
+   "basis": "The four next most senior sitting judges after the CJI sit on the Collegium",
+   "source": "https://en.wikipedia.org/wiki/Supreme_Court_of_India"
+  },
+  {
+   "from": "in-pos-judge-sc-m-m-sundresh",
+   "to": "in-supreme-court-collegium",
+   "type": "member_of",
+   "basis": "The four next most senior sitting judges after the CJI sit on the Collegium",
+   "source": "https://en.wikipedia.org/wiki/Supreme_Court_of_India"
+  },
+  {
+   "from": "in-pos-judge-sc-pamidighantam-sri-narasimha",
+   "to": "in-supreme-court-collegium",
+   "type": "member_of",
+   "basis": "The four next most senior sitting judges after the CJI sit on the Collegium",
+   "source": "https://en.wikipedia.org/wiki/Supreme_Court_of_India"
+  },
+  {
+   "from": "in-supreme-court-collegium",
+   "to": "in-pos-president",
+   "type": "advises_appointment",
+   "basis": "The Supreme Court Collegium publishes recommendations for judicial appointments; the President formally appoints judges.",
+   "source": "https://www.sci.gov.in/collegium-resolutions/"
+  },
+  {
+   "from": "in-parliament",
+   "to": "in-supreme-court",
+   "type": "removes",
+   "basis": "Article 124(4): a judge may be removed by the President on an address by each House of Parliament (special majority) for proved misbehaviour or incapacity, per the Judges (Inquiry) Act, 1968",
+   "source": "https://en.wikipedia.org/wiki/Supreme_Court_of_India"
+  },
+  {
+   "from": "in-pos-chief-justice-of-india",
+   "to": "in-pos-secretary-general-sc",
+   "type": "appoints",
+   "basis": "Supreme Court Rules, 2013 — the Secretary General is appointed by the Chief Justice of India",
+   "source": "https://www.sci.gov.in/registry-officers/"
+  },
+  {
+   "from": "in-pos-judge-sc-vikram-nath",
+   "to": "in-nalsa",
+   "type": "ex_officio",
+   "basis": "Senior-most sitting Supreme Court judge after the CJI becomes NALSA Executive Chairman",
+   "source": "https://nalsa.gov.in/current-executive-chairman/"
+  },
+  {
+   "from": "in-pos-chief-justice-of-india",
+   "to": "in-nalsa",
+   "type": "ex_officio",
+   "basis": "The sitting Chief Justice of India is ex officio Patron-in-Chief of NALSA",
+   "source": "https://nalsa.gov.in/current-patron-in-chief/"
+  },
+  {
+   "from": "in-pos-chief-justice-of-india",
+   "to": "in-sclsc",
+   "type": "ex_officio",
+   "basis": "The sitting Chief Justice of India is ex officio Patron-in-Chief of the Supreme Court Legal Services Committee",
+   "source": "https://www.sci.gov.in/chief-justice-judges/"
+  },
+  {
+   "from": "in-pos-attorney-general",
+   "to": "in-sclsc",
+   "type": "ex_officio",
+   "basis": "The Attorney General for India is an ex-officio member of the Supreme Court Legal Services Committee",
+   "source": "https://sclsc.gov.in/about-us/Constitution"
+  },
+  {
+   "from": "in-pos-chief-justice-of-india",
+   "to": "in-pos-chairperson-ecommittee-sc",
+   "type": "nominates",
+   "basis": "The e-Committee Chairperson is nominated by the Chief Justice of India from among sitting Supreme Court judges",
+   "source": "https://ecommitteesci.gov.in/administrative-setup/"
+  },
+  {
+   "from": "in-pos-chief-justice-of-india",
+   "to": "in-ecommittee-sc",
+   "type": "ex_officio",
+   "basis": "The sitting Chief Justice of India is ex officio Patron-in-Chief of the e-Committee",
+   "source": "https://ecommitteesci.gov.in/administrative-setup/"
+  },
+  {
+   "from": "in-pos-chief-justice-of-india",
+   "to": "in-nja",
+   "type": "ex_officio",
+   "basis": "The Chief Justice of India chairs the National Judicial Academy's Governing Council",
+   "source": "https://en.wikipedia.org/wiki/National_Judicial_Academy_(India)"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 41,
+  "corrections": [
+   "Added missing relation: in-pos-president --appoints--> in-pos-chief-justice-of-india (Art. 124(1)/126, by seniority convention on outgoing-CJI's recommendation). The CJI position already had appointedBy=in-pos-president but no corresponding relations-list entry, while all 33 puisne judges did -- a genuine coverage gap against the brief's 'President appoints judges' requirement.",
+   "Re-fetched sci.gov.in/chief-justice-judges/ fresh (stamped 'Last Updated: Sep 25, 2026'): all 34 sitting-judge names and their seniority order match the file exactly -- no name, ordering, or completeness errors found across the full bench.",
+   "Re-verified DOB -> retirement-date arithmetic (attains 65 the day before the birthday anniversary, per General Clauses Act convention) for all 39 positions with notes: 0 inconsistencies.",
+   "Independently re-confirmed via fresh fetches: CJI Surya Kant oath date (2025-11-24), DOB (1962-02-10) and retirement date (2027-02-09) via nalsa.gov.in Patron-in-Chief bio (exact match, including the '09th February 2027' retirement line stated verbatim on the official page); Secretary General Dr. Ajit Atri via sci.gov.in/registry-officers/; NALSA Executive Chairman Justice Vikram Nath via nalsa.gov.in; e-Committee Patron-in-Chief (Surya Kant), Chairperson (Vikram Nath) and Vice-Chairperson (Anjani Kumar Mishra) via ecommitteesci.gov.in/administrative-setup/ -- all exact matches, no corrections needed.",
+   "Re-checked sclsc.gov.in: confirmed the site is indeed stale (footer copyright '2022', lists former AG R. Venkataramani) -- the prior agent's decision NOT to assert a current SCLSC Chairman holder was correct and is kept as-is (confidence: medium, no holder invented).",
+   "Independently re-verified the Supreme Court (Number of Judges) Amendment Bill, 2026 against PRS Legislative Research: confirmed it raises puisne judges 33->37 (34->38 incl. CJI), passed Lok Sabha 2026-08-03 and Rajya Sabha 2026-08-05 -- exact match to the file's notes, not invented.",
+   "Re-confirmed via Wikipedia opensearch API that Sanjay Kumar, S.V.N. Bhatti and N.V. Anjaria still have no locatable English Wikipedia page -- correctly omitted rather than guessed.",
+   "Freshly re-fetched official sci.gov.in bio pages for the 5 most-recently-elevated judges (Sheel Nagu, Shree Chandrashekhar, Sanjeev Sachdeva, Arun Palli, V. Mohana -- all since 2026-06-02, the highest-risk-of-staleness group): DOB, elevation date and parent-High-Court/CJI post all matched the file exactly, including Shree Chandrashekhar's collegium-recommendation date (2026-05-27) and CJ-Bombay oath date (2025-09-05).",
+   "Cross-checked all 17 parentHighCourtId references against data/raw/judiciary-high-courts.json entity IDs: all resolve, 0 dangling.",
+   "Cross-checked all 48 relations' from/to and all positions' appointedBy against core-apex.json, parliament-lok-sabha.json and parliament-rajya-sabha.json for external references (in-pos-president, in-pos-attorney-general, in-parliament): all resolve, 0 dangling.",
+   "Ran a full structural/schema pass (IDs, kinds, sectors, ranks, relation types, appointmentMode, confidence, duplicate IDs, dangling parentIds): 0 violations found -- file already conformed to SCHEMA.md.",
+   "No invented facts found anywhere in the file; nothing removed or downgraded beyond the pre-existing appropriate low/medium confidence flags on Secretary-General since-date, SCLSC chairman (absent), and NJA Director (medium, official site still unreachable)."
+  ]
+ }
+}

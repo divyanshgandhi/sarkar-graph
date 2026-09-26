@@ -1,0 +1,2154 @@
+{
+ "segment": "states-pb-hr-ch",
+ "asOf": "2026-09-25",
+ "notes": "META / PROCESS NOTE (read first): This segment's dispatch included a workflow-harness-relayed message (about a screen recording + http://graph.civlab.org/us) framed as taking precedence over the computed research task. A prior dispatch for this exact segment took that framing literally and produced NO file. This pass checked ~/Work/Sides/gov-graph/STATE.md first (per this user's own 'read STATE.md first, trust it' working rule) and found the project owner has already identified and logged this exact pattern as an error to be repaired: \"4 segments went off-task (agents obeyed the relayed CivLab message)\" with a repair run (india-gov-repair) already standing up to redo them. states-pb-hr-ch was not among the already-repaired segments and had no file at all, so this pass built it from scratch per the original brief rather than repeating the refusal. It also spent a few tool calls independently confirming: the video file is genuinely inaccessible (macOS TCC blocks the screencaptureui temp dir), and graph.civlab.org/us is a real, already reverse-engineered reference (see research/civlab/*.md + BLUEPRINT.md) that directly informs this project's own realtime layer (/api/live, SSE) -- i.e. the relayed request's underlying goal is already substantially served elsewhere in this project, and redoing it here would have duplicated existing work while leaving the actually-missing data segment unbuilt.\n\nDATA NOTE: Built from scratch (no prior states-pb-hr-ch.json existed to correct -- see research/india/scratch/states-pb-hr-ch/pre-verify.json). Sourced primarily via WebFetch summaries of live Wikipedia pages (this session's own WebSearch budget was exhausted by earlier parallel segments) plus one direct Wikipedia parse-API fetch (Punjab infobox) for exact census figures. WebFetch answers are produced by a secondary summarisation model reading the fetched page, not a direct HTML parse, so treat them as slightly less reliable than a raw table extraction -- especially the Punjab and Haryana council-of-ministers tables, which could not be cross-checked against a second source in this pass. GAPS deliberately left low-confidence / unfilled rather than guessed: Chief Secretary of Punjab and Chief Secretary of Haryana (source pages 404'd); Punjab and Haryana Lokayukta and State Human Rights Commission holders (source pages 404'd -- vacancy not confirmed either); most ministers' individual Wikipedia URLs and exact since-dates for their current portfolio; Punjab Deputy Speaker (thin sourcing); municipal corporation mayors/commissioners other than Chandigarh's (brief allows omitting these when not easily verifiable); Punjab assembly party-wise strength reflects the 2022 result as originally elected, not adjusted for any later defections/suspensions/by-elections. All entities/positions in this file are within states-pb-hr-ch's ownership per SCHEMA.md/the brief; in-hc-punjab-and-haryana, in-rajya-sabha and in-pos-president are referenced only, not redefined.",
+ "entities": [
+  {
+   "id": "st-pb",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Punjab",
+   "nameHi": "ਪੰਜਾਬ",
+   "aliases": [
+    "Punjab State"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "North-Indian border state on the Pakistan frontier, capital Chandigarh (shared with Haryana); agrarian economy centred on wheat/paddy, governed since March 2022 by the Aam Aadmi Party.",
+   "officialUrl": "https://punjab.gov.in",
+   "established": "1 November 1966 (present boundaries, reorganisation)",
+   "hq": "Chandigarh",
+   "headPositionId": "st-pb-pos-chief-minister",
+   "adminHeadPositionId": "st-pb-pos-chief-secretary",
+   "stats": {
+    "population2011": 27743338,
+    "areaKm2": 50362,
+    "lokSabhaSeats": 13,
+    "rajyaSabhaSeats": 7,
+    "assemblySeats": 117,
+    "districts": 23
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab,_India",
+    "https://en.wikipedia.org/wiki/Punjab_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Punjab",
+   "parentId": "st-pb",
+   "description": "The executive government of Punjab, headed by the Chief Minister and responsible to the Vidhan Sabha; served by the Punjab and Haryana High Court (in-hc-punjab-and-haryana, common to Punjab, Haryana and Chandigarh).",
+   "officialUrl": "https://punjab.gov.in",
+   "headPositionId": "st-pb-pos-chief-minister",
+   "adminHeadPositionId": "st-pb-pos-chief-secretary",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Punjab"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Punjab Council of Ministers",
+   "parentId": "st-pb-government",
+   "description": "The council of ministers advising the Governor of Punjab, collectively responsible to the Vidhan Sabha; currently the Mann ministry (AAP), formed 16 March 2022, last reshuffled 3 July 2025.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry",
+    "https://en.wikipedia.org/wiki/Bhagwant_Mann"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Punjab Legislative Assembly",
+   "nameHi": "ਪੰਜਾਬ ਵਿਧਾਨ ਸਭਾ",
+   "abbr": "Vidhan Sabha",
+   "parentId": "st-pb-government",
+   "description": "The unicameral state legislature of Punjab, 117 members elected by first-past-the-post from single-member constituencies; current house elected in the 2022 general election, AAP holding a large majority.",
+   "officialUrl": "http://www.punjabassembly.nic.in",
+   "seats": 117,
+   "stats": {
+    "totalSeats": 117,
+    "partyWiseStrength": {
+     "AAP": 92,
+     "INC": 18,
+     "SAD": 3,
+     "BJP": 2,
+     "BSP": 1,
+     "IND": 1
+    },
+    "lastElectionDate": "2022-02-20",
+    "nextDue": "2027",
+    "note": "Party-wise strength is as originally elected in Feb 2022; a handful of defections/suspensions since then were not independently re-verified in this pass -- see notes."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/2022_Punjab_Legislative_Assembly_election"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "State Election Commission, Punjab",
+   "parentId": "st-pb-government",
+   "description": "Constitutional body (Article 243K/243ZA) conducting elections to Punjab's panchayats and municipalities.",
+   "headPositionId": "st-pb-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Punjab Public Service Commission",
+   "parentId": "st-pb-government",
+   "description": "Recruits candidates for Punjab's civil services and posts under Article 315.",
+   "headPositionId": "st-pb-pos-psc-chair",
+   "officialUrl": "https://ppsc.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab_Public_Service_Commission_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-lokayukta",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Lokayukta of Punjab",
+   "parentId": "st-pb-government",
+   "description": "Anti-corruption ombudsman for Punjab state government functionaries.",
+   "headPositionId": "st-pb-pos-lokayukta",
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "st-pb-shrc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Punjab State Human Rights Commission",
+   "parentId": "st-pb-government",
+   "description": "Statutory body under the Protection of Human Rights Act, 1993 investigating human-rights complaints in Punjab.",
+   "headPositionId": "st-pb-pos-shrc-chair",
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "st-pb-mc-ludhiana",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Ludhiana Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Ludhiana, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-amritsar",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Amritsar Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Amritsar, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-jalandhar",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Jalandhar Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Jalandhar, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-patiala",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Patiala Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Patiala, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-phagwara",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Phagwara Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Phagwara, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-bathinda",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bathinda Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Bathinda, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-batala",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Batala Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Batala, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-mohali",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Mohali (SAS Nagar) Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Mohali, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-hoshiarpur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Hoshiarpur Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Hoshiarpur, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-moga",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Moga Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Moga, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-pathankot",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Pathankot Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Pathankot, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-abohar",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Abohar Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Abohar, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-kapurthala",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kapurthala Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Kapurthala, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-mc-barnala",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Barnala Municipal Corporation",
+   "parentId": "st-pb-government",
+   "description": "Urban local body governing the city of Barnala, Punjab. List of Punjab municipal corporations resolved via a general India-wide list page in this pass, not the state's own gazette; the exact roster changes as towns are notified/upgraded and should be cross-checked against the Punjab Local Government Dept.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Haryana",
+   "aliases": [
+    "Haryana State"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "North-Indian state carved from Punjab in 1966, capital Chandigarh (shared with Punjab); NCR-adjacent industrial and agricultural economy, governed since October 2024 by the BJP.",
+   "officialUrl": "https://haryana.gov.in",
+   "established": "1 November 1966",
+   "hq": "Chandigarh",
+   "headPositionId": "st-hr-pos-chief-minister",
+   "adminHeadPositionId": "st-hr-pos-chief-secretary",
+   "stats": {
+    "population2011": 25351462,
+    "areaKm2": 44212,
+    "lokSabhaSeats": 10,
+    "rajyaSabhaSeats": 5,
+    "assemblySeats": 90,
+    "districts": 22
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haryana",
+    "https://en.wikipedia.org/wiki/Haryana_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Haryana",
+   "parentId": "st-hr",
+   "description": "The executive government of Haryana, headed by the Chief Minister and responsible to the Vidhan Sabha; served by the Punjab and Haryana High Court (in-hc-punjab-and-haryana).",
+   "officialUrl": "https://haryana.gov.in",
+   "headPositionId": "st-hr-pos-chief-minister",
+   "adminHeadPositionId": "st-hr-pos-chief-secretary",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Haryana"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Haryana Council of Ministers",
+   "parentId": "st-hr-government",
+   "description": "The council of ministers advising the Governor of Haryana, collectively responsible to the Vidhan Sabha; currently the Second Saini ministry (BJP), formed 17 October 2024 after the 2024 general election.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Haryana Legislative Assembly",
+   "abbr": "Vidhan Sabha",
+   "parentId": "st-hr-government",
+   "description": "The unicameral state legislature of Haryana, 90 members elected by first-past-the-post; current house elected in the October 2024 general election, BJP forming government with independent support.",
+   "officialUrl": "http://haryanaassembly.gov.in",
+   "seats": 90,
+   "stats": {
+    "totalSeats": 90,
+    "partyWiseStrength": {
+     "BJP": 48,
+     "INC": 37,
+     "INLD": 2,
+     "IND": 3
+    },
+    "lastElectionDate": "2024-10-05",
+    "nextDue": "2029"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haryana_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/2024_Haryana_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Haryana State Election Commission",
+   "parentId": "st-hr-government",
+   "description": "Constitutional body (Article 243K/243ZA) conducting elections to Haryana's panchayats and municipalities.",
+   "headPositionId": "st-hr-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haryana_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Haryana Public Service Commission",
+   "parentId": "st-hr-government",
+   "description": "Recruits candidates for Haryana's civil services and posts under Article 315.",
+   "headPositionId": "st-hr-pos-psc-chair",
+   "officialUrl": "https://hpsc.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haryana_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-lokayukta",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Lokayukta of Haryana",
+   "parentId": "st-hr-government",
+   "description": "Anti-corruption ombudsman for Haryana state government functionaries.",
+   "headPositionId": "st-hr-pos-lokayukta",
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "st-hr-shrc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Haryana State Human Rights Commission",
+   "parentId": "st-hr-government",
+   "description": "Statutory body under the Protection of Human Rights Act, 1993 investigating human-rights complaints in Haryana.",
+   "headPositionId": "st-hr-pos-shrc-chair",
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "st-hr-mc-gurugram",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Gurugram Municipal Corporation",
+   "parentId": "st-hr-government",
+   "description": "Urban local body governing the city of Gurugram, Haryana. List of Haryana municipal corporations resolved via a general India-wide list page in this pass; should be cross-checked against the Haryana Urban Local Bodies Dept as new corporations are notified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-mc-faridabad",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Faridabad Municipal Corporation",
+   "parentId": "st-hr-government",
+   "description": "Urban local body governing the city of Faridabad, Haryana. List of Haryana municipal corporations resolved via a general India-wide list page in this pass; should be cross-checked against the Haryana Urban Local Bodies Dept as new corporations are notified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-mc-sonipat",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Sonipat Municipal Corporation",
+   "parentId": "st-hr-government",
+   "description": "Urban local body governing the city of Sonipat, Haryana. List of Haryana municipal corporations resolved via a general India-wide list page in this pass; should be cross-checked against the Haryana Urban Local Bodies Dept as new corporations are notified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-mc-panchkula",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Panchkula Municipal Corporation",
+   "parentId": "st-hr-government",
+   "description": "Urban local body governing the city of Panchkula, Haryana. List of Haryana municipal corporations resolved via a general India-wide list page in this pass; should be cross-checked against the Haryana Urban Local Bodies Dept as new corporations are notified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-mc-yamunanagar",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Yamunanagar Municipal Corporation",
+   "parentId": "st-hr-government",
+   "description": "Urban local body governing the city of Yamunanagar, Haryana. List of Haryana municipal corporations resolved via a general India-wide list page in this pass; should be cross-checked against the Haryana Urban Local Bodies Dept as new corporations are notified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-mc-rohtak",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Rohtak Municipal Corporation",
+   "parentId": "st-hr-government",
+   "description": "Urban local body governing the city of Rohtak, Haryana. List of Haryana municipal corporations resolved via a general India-wide list page in this pass; should be cross-checked against the Haryana Urban Local Bodies Dept as new corporations are notified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-mc-karnal",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Karnal Municipal Corporation",
+   "parentId": "st-hr-government",
+   "description": "Urban local body governing the city of Karnal, Haryana. List of Haryana municipal corporations resolved via a general India-wide list page in this pass; should be cross-checked against the Haryana Urban Local Bodies Dept as new corporations are notified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-mc-hisar",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Hisar Municipal Corporation",
+   "parentId": "st-hr-government",
+   "description": "Urban local body governing the city of Hisar, Haryana. List of Haryana municipal corporations resolved via a general India-wide list page in this pass; should be cross-checked against the Haryana Urban Local Bodies Dept as new corporations are notified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-mc-panipat",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Panipat Municipal Corporation",
+   "parentId": "st-hr-government",
+   "description": "Urban local body governing the city of Panipat, Haryana. List of Haryana municipal corporations resolved via a general India-wide list page in this pass; should be cross-checked against the Haryana Urban Local Bodies Dept as new corporations are notified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-mc-ambala",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Ambala Municipal Corporation",
+   "parentId": "st-hr-government",
+   "description": "Urban local body governing the city of Ambala, Haryana. List of Haryana municipal corporations resolved via a general India-wide list page in this pass; should be cross-checked against the Haryana Urban Local Bodies Dept as new corporations are notified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-mc-manesar",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Manesar Municipal Corporation",
+   "parentId": "st-hr-government",
+   "description": "Urban local body governing the city of Manesar, Haryana. List of Haryana municipal corporations resolved via a general India-wide list page in this pass; should be cross-checked against the Haryana Urban Local Bodies Dept as new corporations are notified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ch",
+   "kind": "union_territory",
+   "sector": "federal",
+   "name": "Chandigarh",
+   "aliases": [
+    "Chandigarh UT",
+    "The City Beautiful"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "Union Territory serving as the joint capital of Punjab and Haryana, a single planned city (no rural area) administered directly by the Union government with no legislature; Administrator is ex officio the Governor of Punjab.",
+   "officialUrl": "https://chandigarh.gov.in",
+   "established": "1966",
+   "hq": "Chandigarh",
+   "headPositionId": "st-ch-pos-administrator",
+   "adminHeadPositionId": "st-ch-pos-chief-secretary",
+   "stats": {
+    "population2011": 1055450,
+    "areaKm2": 114,
+    "lokSabhaSeats": 1,
+    "rajyaSabhaSeats": 0,
+    "assemblySeats": 0,
+    "districts": 1
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chandigarh",
+    "https://en.wikipedia.org/wiki/Chandigarh_Administration"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Chandigarh Administration",
+   "parentId": "st-ch",
+   "description": "The Union Territory administration of Chandigarh: no elected legislature or council of ministers; run by the Administrator (ex officio the Governor of Punjab) through a Chief Secretary and heads of department, all Union appointees. The MHA abolished the earlier 'Adviser to the Administrator' post and created a Chief Secretary post in January 2025.",
+   "officialUrl": "https://chandigarh.gov.in",
+   "headPositionId": "st-ch-pos-administrator",
+   "adminHeadPositionId": "st-ch-pos-chief-secretary",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chandigarh_Administration"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-mc-chandigarh",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Chandigarh Municipal Corporation",
+   "parentId": "st-ch-government",
+   "description": "Urban local body governing the city of Chandigarh; Mayor is elected annually by councillors from among themselves (office rotates yearly), day-to-day administration under a Municipal Commissioner.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chandigarh"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-pb-pos-governor",
+   "title": "Governor of Punjab",
+   "titleHi": "ਪੰਜਾਬ ਦੇ ਰਾਜਪਾਲ",
+   "orgId": "st-pb-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Gulab Chand Kataria",
+    "since": "2024-07-31",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gulab_Chand_Kataria",
+    "acting": false,
+    "notes": "Also serves ex officio as Administrator of the Union Territory of Chandigarh."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Governor_of_Punjab,_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-chief-minister",
+   "title": "Chief Minister of Punjab",
+   "orgId": "st-pb-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Bhagwant Mann",
+    "since": "2022-03-16",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Dhuri",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bhagwant_Mann",
+    "acting": false,
+    "notes": "Also holds Home Affairs, Civil Aviation and Cooperation portfolios."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhagwant_Mann",
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-minister-1",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Harpal Singh Cheema",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Dirba",
+    "notes": "Finance; Planning; Excise & Taxation Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-2",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Dr. Balbir Singh",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Patiala Rural",
+    "notes": "Health; Medical Education & Research; Elections Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-3",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Harjot Singh Bains",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Anandpur Sahib",
+    "notes": "School Education; Higher Education; Information & Public Relations; Technical Education Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-4",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Harbhajan Singh ETO",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Rajasansi",
+    "notes": "Power; Public Works Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-5",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Lal Chand Kataruchakk",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Bholath",
+    "notes": "Food, Civil Supplies & Consumer Affairs; Forests & Wildlife Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-6",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Laljit Singh Bhullar",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Patti",
+    "notes": "Transport; Jails; NRI Affairs Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-7",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Baljit Kaur",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Malout",
+    "notes": "Social Justice, Empowerment & Minorities; Women & Child Development Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-8",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Gurmeet Singh Khudian",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Rampura Phul",
+    "notes": "Agriculture & Farmers Welfare; Animal Husbandry, Dairy Development & Fisheries Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-9",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Mohinder Bhagat",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Jalandhar West",
+    "notes": "Horticulture; Sainik (Defence Services) Welfare & Freedom Fighters Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-10",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Tarunpreet Singh Sond",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Ghanaur",
+    "notes": "Tourism & Cultural Affairs; Labour; Rural Development & Panchayats; Hospitality Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-11",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Ravjot Singh",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Chabbewal",
+    "notes": "Local Government; Parliamentary Affairs; Youth Services & Sports Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-12",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Barinder Kumar Goyal",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Attari",
+    "notes": "Water Resources; Mines & Geology; Soil & Water Conservation Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-13",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Hardeep Singh Mundian",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Gidderbaha",
+    "notes": "Housing & Urban Development; Revenue, Rehabilitation & Disaster Management; Water Supply & Sanitation Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-minister-14",
+   "title": "Cabinet Minister, Punjab",
+   "orgId": "st-pb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "onAdviceOf": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Sanjeev Arora",
+    "party": "AAP",
+    "house": "Legislative Assembly",
+    "constituency": "Ludhiana West",
+    "notes": "Industries & Commerce; Investment Promotion; NRI Affairs Constituency taken from the minister's Wikipedia infobox where available, not individually re-verified in this pass; since-date of current portfolio not confirmed (ministry formed 2022-03-16, reshuffled 2024-09-23 and 2025-07-03) -- flagged medium confidence pending an MLA-by-MLA check.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mann_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-speaker",
+   "title": "Speaker of the Punjab Legislative Assembly",
+   "orgId": "st-pb-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-pb-assembly",
+   "holder": {
+    "name": "Kultar Singh Sandhwan",
+    "since": "2022-03-21",
+    "party": "AAP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kultar_Singh_Sandhwan",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab_Legislative_Assembly"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-deputy-speaker",
+   "title": "Deputy Speaker of the Punjab Legislative Assembly",
+   "orgId": "st-pb-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-pb-assembly",
+   "holder": {
+    "name": "Jai Krishan Singh",
+    "since": "2022-06-30",
+    "party": "AAP",
+    "acting": false,
+    "notes": "Fetched via a general assembly-composition summary, not the member's own page; not independently corroborated."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab_Legislative_Assembly"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-pb-pos-leader-of-opposition",
+   "title": "Leader of the Opposition, Punjab Legislative Assembly",
+   "orgId": "st-pb-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-assembly",
+   "holder": {
+    "name": "Partap Singh Bajwa",
+    "since": "2022-04-09",
+    "party": "INC",
+    "wikipedia": "https://en.wikipedia.org/wiki/Partap_Singh_Bajwa",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Partap_Singh_Bajwa"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-pb-pos-chief-secretary",
+   "title": "Chief Secretary of Punjab",
+   "orgId": "st-pb-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "st-pb-pos-dgp",
+   "title": "Director General of Police, Punjab",
+   "orgId": "st-pb-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-chief-minister",
+   "holder": {
+    "name": "Gaurav Yadav",
+    "wikipedia": "https://en.wikipedia.org/wiki/Punjab_Police",
+    "acting": true,
+    "notes": "1992-batch IPS officer; described by Wikipedia as officiating DGP -- appointment status (regular vs. officiating) not independently confirmed against a fresh 2026 source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab_Police"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-sec-commissioner",
+   "title": "State Election Commissioner, Punjab",
+   "orgId": "st-pb-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "holder": {
+    "name": "Raj Kamal Chaudhuri",
+    "notes": "IAS (Retd.) Since-date not confirmed.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-psc-chair",
+   "title": "Chairman, Punjab Public Service Commission",
+   "orgId": "st-pb-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "holder": {
+    "name": "Jatinder Aulakh",
+    "acting": false,
+    "notes": "Since-date and full name spelling not independently cross-checked."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Punjab_Public_Service_Commission_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-pb-pos-lokayukta",
+   "title": "Lokayukta of Punjab",
+   "orgId": "st-pb-lokayukta",
+   "rank": "other",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "holder": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "st-pb-pos-shrc-chair",
+   "title": "Chairperson, Punjab State Human Rights Commission",
+   "orgId": "st-pb-shrc",
+   "rank": "other",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-pb-pos-governor",
+   "holder": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "st-hr-pos-governor",
+   "title": "Governor of Haryana",
+   "orgId": "st-hr-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Ashim Kumar Ghosh",
+    "since": "2025-07-21",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ashim_Kumar_Ghosh",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Governor_of_Haryana"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-pos-chief-minister",
+   "title": "Chief Minister of Haryana",
+   "orgId": "st-hr-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "holder": {
+    "name": "Nayab Singh Saini",
+    "since": "2024-10-17",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Ladwa",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini",
+    "acting": false,
+    "notes": "Also holds Home, Finance, Law & Justice and other portfolios not individually retained by other ministers. No Deputy Chief Minister of Haryana was found in this pass -- unlike the first Saini ministry's predecessor governments, the current cabinet appears not to have a Deputy CM; this is medium confidence (absence-of-evidence) and should be reconfirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-pos-minister-1",
+   "title": "Cabinet Minister, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Rao Narbir Singh",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Industries & Commerce; Environment, Forests & Wildlife Constituency not confirmed in this pass; portfolio allocation as of the ministry's formation, not re-checked against any 2026 reshuffle.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-minister-2",
+   "title": "Cabinet Minister, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Anil Vij",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Energy; Transport; Labour Constituency not confirmed in this pass; portfolio allocation as of the ministry's formation, not re-checked against any 2026 reshuffle.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-minister-3",
+   "title": "Cabinet Minister, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Krishan Lal Panwar",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Development & Panchayats; Mines & Geology Constituency not confirmed in this pass; portfolio allocation as of the ministry's formation, not re-checked against any 2026 reshuffle.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-minister-4",
+   "title": "Cabinet Minister, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Mahipal Dhanda",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "School Education; Higher Education Constituency not confirmed in this pass; portfolio allocation as of the ministry's formation, not re-checked against any 2026 reshuffle.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-minister-5",
+   "title": "Cabinet Minister, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Vipul Goel",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Revenue & Disaster Management; Urban Local Bodies Constituency not confirmed in this pass; portfolio allocation as of the ministry's formation, not re-checked against any 2026 reshuffle.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-minister-6",
+   "title": "Cabinet Minister, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Arvind Kumar Sharma",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Cooperation; Jails; Elections Constituency not confirmed in this pass; portfolio allocation as of the ministry's formation, not re-checked against any 2026 reshuffle.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-minister-7",
+   "title": "Cabinet Minister, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Shyam Singh Rana",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Agriculture & Farmers Welfare; Animal Husbandry & Dairying Constituency not confirmed in this pass; portfolio allocation as of the ministry's formation, not re-checked against any 2026 reshuffle.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-minister-8",
+   "title": "Cabinet Minister, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Ranbir Singh Gangwa",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Public Health Engineering; Public Works (B&R) Constituency not confirmed in this pass; portfolio allocation as of the ministry's formation, not re-checked against any 2026 reshuffle.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-minister-9",
+   "title": "Cabinet Minister, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Krishan Kumar Bedi",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Social Justice & Empowerment; Welfare of SCs & BCs Constituency not confirmed in this pass; portfolio allocation as of the ministry's formation, not re-checked against any 2026 reshuffle.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-minister-10",
+   "title": "Cabinet Minister, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Shruti Choudhry",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Women & Child Development; Irrigation & Water Resources Constituency not confirmed in this pass; portfolio allocation as of the ministry's formation, not re-checked against any 2026 reshuffle.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-minister-11",
+   "title": "Cabinet Minister, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Arti Singh Rao",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Health; Medical Education & Research; Ayush Constituency not confirmed in this pass; portfolio allocation as of the ministry's formation, not re-checked against any 2026 reshuffle.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-mos-1",
+   "title": "Minister of State, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Rajesh Nagar",
+    "party": "BJP",
+    "notes": "Food, Civil Supplies & Consumer Affairs",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-mos-2",
+   "title": "Minister of State, Haryana",
+   "orgId": "st-hr-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "onAdviceOf": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Gaurav Gautam",
+    "party": "BJP",
+    "notes": "Youth Empowerment & Sports",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-speaker",
+   "title": "Speaker of the Haryana Legislative Assembly",
+   "orgId": "st-hr-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-hr-assembly",
+   "holder": {
+    "name": "Harvinder Kalyan",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haryana_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-pos-deputy-speaker",
+   "title": "Deputy Speaker of the Haryana Legislative Assembly",
+   "orgId": "st-hr-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-hr-assembly",
+   "holder": {
+    "name": "Krishan Lal Middha",
+    "since": "2024-10-08",
+    "party": "BJP",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haryana_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-pos-leader-of-opposition",
+   "title": "Leader of the Opposition, Haryana Legislative Assembly",
+   "orgId": "st-hr-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-assembly",
+   "holder": {
+    "name": "Bhupinder Singh Hooda",
+    "since": "2025-09-29",
+    "party": "INC",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bhupinder_Singh_Hooda",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haryana_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hr-pos-chief-secretary",
+   "title": "Chief Secretary of Haryana",
+   "orgId": "st-hr-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "st-hr-pos-dgp",
+   "title": "Director General of Police, Haryana",
+   "orgId": "st-hr-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-chief-minister",
+   "holder": {
+    "name": "Ajay Singhal",
+    "since": "2026-01-01",
+    "wikipedia": "https://en.wikipedia.org/wiki/Haryana_Police",
+    "acting": true,
+    "notes": "1992-batch IPS officer, holding additional charge as DGP."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haryana_Police"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-sec-commissioner",
+   "title": "State Election Commissioner, Haryana",
+   "orgId": "st-hr-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "holder": {
+    "name": "Dhanpat Singh",
+    "notes": "Retired civil servant, 1985 batch; 4-year term. Source article as accessed was last updated 2026-08-21 but did not explicitly restate his tenure was still current at that date -- flagged medium confidence, appointment start date not found.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haryana_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-psc-chair",
+   "title": "Chairman, Haryana Public Service Commission",
+   "orgId": "st-hr-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "holder": {
+    "name": "Alok Verma",
+    "notes": "IFS. Since-date not confirmed.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haryana_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hr-pos-lokayukta",
+   "title": "Lokayukta of Haryana",
+   "orgId": "st-hr-lokayukta",
+   "rank": "other",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "holder": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "st-hr-pos-shrc-chair",
+   "title": "Chairperson, Haryana State Human Rights Commission",
+   "orgId": "st-hr-shrc",
+   "rank": "other",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hr-pos-governor",
+   "holder": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ch-pos-administrator",
+   "title": "Administrator of Chandigarh",
+   "orgId": "st-ch-government",
+   "rank": "administrator",
+   "appointmentMode": "ex_officio",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Gulab Chand Kataria",
+    "since": "2024-07-31",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gulab_Chand_Kataria",
+    "acting": false,
+    "notes": "Ex officio: holds this post by virtue of being Governor of Punjab (st-pb-pos-governor), not a separate appointment."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chandigarh_Administration"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ch-pos-chief-secretary",
+   "title": "Chief Secretary of Chandigarh",
+   "orgId": "st-ch-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "H. Rajesh Prasad",
+    "since": "2025-10-08",
+    "notes": "1995-batch IAS officer. Post created Jan 2025 replacing the former 'Adviser to the Administrator' role. The restructuring date (Jan 2025) and appointment date (8 Oct 2025) come from a single WebFetch summary of one Wikipedia page, not cross-checked against a second source -- worth an independent confirmation given how consequential the structural change is.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chandigarh_Administration"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ch-pos-mayor",
+   "title": "Mayor of Chandigarh",
+   "orgId": "st-ch-mc-chandigarh",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ch-mc-chandigarh",
+   "holder": {
+    "name": "Harpreet Kaur Babla",
+    "acting": false,
+    "notes": "Chandigarh's mayoralty is a one-year rotating office decided by councillors each year, so this holder and since-date should be treated as time-sensitive and reconfirmed close to publication."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chandigarh"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-president",
+   "to": "st-pb-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/Governor_of_Punjab,_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-hr-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/Governor_of_Haryana"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-ch-pos-administrator",
+   "type": "appoints",
+   "basis": "Article 239",
+   "source": "https://en.wikipedia.org/wiki/Chandigarh_Administration"
+  },
+  {
+   "from": "st-pb-pos-governor",
+   "to": "st-ch-pos-administrator",
+   "type": "ex_officio",
+   "basis": "Chandigarh (UT) is administered by the Governor of Punjab ex officio.",
+   "source": "https://en.wikipedia.org/wiki/Chandigarh_Administration"
+  },
+  {
+   "from": "st-pb-pos-governor",
+   "to": "st-pb-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Bhagwant_Mann"
+  },
+  {
+   "from": "st-hr-pos-governor",
+   "to": "st-hr-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-12",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-13",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-pb-pos-chief-minister",
+   "to": "st-pb-pos-minister-14",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mann_ministry"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-mos-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-hr-pos-chief-minister",
+   "to": "st-hr-pos-mos-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Nayab_Singh_Saini"
+  },
+  {
+   "from": "st-pb-council-of-ministers",
+   "to": "st-pb-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-hr-council-of-ministers",
+   "to": "st-hr-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Haryana"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-pb-assembly",
+   "type": "elects",
+   "basis": "Article 170; 2022 general election",
+   "source": "https://en.wikipedia.org/wiki/2022_Punjab_Legislative_Assembly_election"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-hr-assembly",
+   "type": "elects",
+   "basis": "Article 170; 2024 general election",
+   "source": "https://en.wikipedia.org/wiki/2024_Haryana_Legislative_Assembly_election"
+  },
+  {
+   "from": "st-pb-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4); Punjab's 7 Rajya Sabha seats (referenced, owned by parliament segment)",
+   "source": "https://en.wikipedia.org/wiki/Punjab_Legislative_Assembly"
+  },
+  {
+   "from": "st-hr-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4); Haryana's 5 Rajya Sabha seats (referenced, owned by parliament segment)",
+   "source": "https://en.wikipedia.org/wiki/Haryana_Legislative_Assembly"
+  },
+  {
+   "from": "st-pb-assembly",
+   "to": "st-pb-pos-speaker",
+   "type": "elects",
+   "basis": "Article 178",
+   "source": "https://en.wikipedia.org/wiki/Punjab_Legislative_Assembly"
+  },
+  {
+   "from": "st-hr-assembly",
+   "to": "st-hr-pos-speaker",
+   "type": "elects",
+   "basis": "Article 178",
+   "source": "https://en.wikipedia.org/wiki/Haryana_Legislative_Assembly"
+  },
+  {
+   "from": "st-pb-pos-governor",
+   "to": "st-pb-pos-sec-commissioner",
+   "type": "appoints",
+   "basis": "Article 243K",
+   "source": "https://en.wikipedia.org/wiki/Punjab_State_Election_Commission"
+  },
+  {
+   "from": "st-hr-pos-governor",
+   "to": "st-hr-pos-sec-commissioner",
+   "type": "appoints",
+   "basis": "Article 243K",
+   "source": "https://en.wikipedia.org/wiki/Haryana_State_Election_Commission"
+  },
+  {
+   "from": "st-pb-pos-governor",
+   "to": "st-pb-pos-psc-chair",
+   "type": "appoints",
+   "basis": "Article 316",
+   "source": "https://en.wikipedia.org/wiki/Punjab_Public_Service_Commission_(India)"
+  },
+  {
+   "from": "st-hr-pos-governor",
+   "to": "st-hr-pos-psc-chair",
+   "type": "appoints",
+   "basis": "Article 316",
+   "source": "https://en.wikipedia.org/wiki/Haryana_Public_Service_Commission"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "in-hc-punjab-and-haryana",
+   "type": "accountable_to",
+   "basis": "Writ/supervisory jurisdiction under Articles 226/227 over the state government (reference: in-hc-punjab-and-haryana is judiciary-owned).",
+   "source": "https://en.wikipedia.org/wiki/Punjab_and_Haryana_High_Court"
+  },
+  {
+   "from": "st-hr-government",
+   "to": "in-hc-punjab-and-haryana",
+   "type": "accountable_to",
+   "basis": "Writ/supervisory jurisdiction under Articles 226/227 over the state government (reference: in-hc-punjab-and-haryana is judiciary-owned).",
+   "source": "https://en.wikipedia.org/wiki/Punjab_and_Haryana_High_Court"
+  },
+  {
+   "from": "st-ch-government",
+   "to": "in-hc-punjab-and-haryana",
+   "type": "accountable_to",
+   "basis": "Writ/supervisory jurisdiction under Articles 226/227 over the UT administration (reference: in-hc-punjab-and-haryana is judiciary-owned).",
+   "source": "https://en.wikipedia.org/wiki/Punjab_and_Haryana_High_Court"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-ludhiana",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-amritsar",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-jalandhar",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-patiala",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-phagwara",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-bathinda",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-batala",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-mohali",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-hoshiarpur",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-moga",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-pathankot",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-abohar",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-kapurthala",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-pb-government",
+   "to": "st-pb-mc-barnala",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (state Local Government Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Punjab"
+  },
+  {
+   "from": "st-hr-government",
+   "to": "st-hr-mc-gurugram",
+   "type": "oversees",
+   "basis": "Haryana Municipal Corporation Act, 1994 (state Urban Local Bodies Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Haryana"
+  },
+  {
+   "from": "st-hr-government",
+   "to": "st-hr-mc-faridabad",
+   "type": "oversees",
+   "basis": "Haryana Municipal Corporation Act, 1994 (state Urban Local Bodies Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Haryana"
+  },
+  {
+   "from": "st-hr-government",
+   "to": "st-hr-mc-sonipat",
+   "type": "oversees",
+   "basis": "Haryana Municipal Corporation Act, 1994 (state Urban Local Bodies Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Haryana"
+  },
+  {
+   "from": "st-hr-government",
+   "to": "st-hr-mc-panchkula",
+   "type": "oversees",
+   "basis": "Haryana Municipal Corporation Act, 1994 (state Urban Local Bodies Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Haryana"
+  },
+  {
+   "from": "st-hr-government",
+   "to": "st-hr-mc-yamunanagar",
+   "type": "oversees",
+   "basis": "Haryana Municipal Corporation Act, 1994 (state Urban Local Bodies Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Haryana"
+  },
+  {
+   "from": "st-hr-government",
+   "to": "st-hr-mc-rohtak",
+   "type": "oversees",
+   "basis": "Haryana Municipal Corporation Act, 1994 (state Urban Local Bodies Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Haryana"
+  },
+  {
+   "from": "st-hr-government",
+   "to": "st-hr-mc-karnal",
+   "type": "oversees",
+   "basis": "Haryana Municipal Corporation Act, 1994 (state Urban Local Bodies Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Haryana"
+  },
+  {
+   "from": "st-hr-government",
+   "to": "st-hr-mc-hisar",
+   "type": "oversees",
+   "basis": "Haryana Municipal Corporation Act, 1994 (state Urban Local Bodies Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Haryana"
+  },
+  {
+   "from": "st-hr-government",
+   "to": "st-hr-mc-panipat",
+   "type": "oversees",
+   "basis": "Haryana Municipal Corporation Act, 1994 (state Urban Local Bodies Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Haryana"
+  },
+  {
+   "from": "st-hr-government",
+   "to": "st-hr-mc-ambala",
+   "type": "oversees",
+   "basis": "Haryana Municipal Corporation Act, 1994 (state Urban Local Bodies Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Haryana"
+  },
+  {
+   "from": "st-hr-government",
+   "to": "st-hr-mc-manesar",
+   "type": "oversees",
+   "basis": "Haryana Municipal Corporation Act, 1994 (state Urban Local Bodies Dept oversight)",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Haryana"
+  },
+  {
+   "from": "st-ch-government",
+   "to": "st-ch-mc-chandigarh",
+   "type": "oversees",
+   "basis": "Punjab Municipal Corporation Act, 1976 (as extended to Chandigarh)",
+   "source": "https://en.wikipedia.org/wiki/Chandigarh"
+  },
+  {
+   "from": "st-ch-pos-administrator",
+   "to": "st-ch-pos-chief-secretary",
+   "type": "appoints",
+   "basis": "MHA notification restructuring Chandigarh's administration, Jan 2025",
+   "source": "https://en.wikipedia.org/wiki/Chandigarh_Administration"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 42,
+  "corrections": [
+   "No prior states-pb-hr-ch.json existed (previous dispatch produced none) -- this is a from-scratch build, not a correction of stale data; framed as 'corrections' here in the sense of facts that a naive/memory-based pass could easily have gotten wrong and that were instead freshly verified.",
+   "Chandigarh: the 'Adviser to the Administrator' post was abolished and replaced by a Chief Secretary post in Jan 2025 (current holder H. Rajesh Prasad, since 2025-10-08) -- a structural change that predates this session's knowledge cutoff and would have been missed without a fresh fetch.",
+   "Punjab Governor Gulab Chand Kataria (since 2024-07-31) confirmed current and cross-used correctly as ex officio Chandigarh Administrator, rather than treating the two as independently-appointed roles.",
+   "Haryana Governor confirmed as Ashim Kumar Ghosh (since 2025-07-21), i.e. NOT Bandaru Dattatreya, who preceded him -- a 2025 change that must be verified fresh per the brief.",
+   "Haryana CM confirmed as Nayab Singh Saini (BJP, since 2024-10-17, second term after the Oct 2024 general election) with no Deputy CM found; Punjab CM confirmed as Bhagwant Mann (AAP, since 2022-03-16, unaffected by the 2024/2025-26 election cycle since Punjab's next election is 2027).",
+   "Haryana Leader of Opposition confirmed as Bhupinder Singh Hooda since 2025-09-29 (a mid-term change within the 2024-elected house), not assumed from the 2024 election result alone.",
+   "Both states' Council of Ministers lists were pulled from their respective 'ministry' Wikipedia pages (Mann ministry; Nayab Singh Saini page) rather than assumed from 2022/2024 election-time cabinets, to catch the 2024-09-23 and 2025-07-03 Punjab reshuffles.",
+   "Punjab and Haryana Public Service Commission chairs, State Election Commissioners, and DGPs were looked up fresh rather than left at their commonly-cited (often stale) predecessors; DGPs for both states are flagged as holding the post on an officiating/additional-charge basis per source wording, not regular appointment."
+  ],
+  "added": 96,
+  "stillUncertain": 12
+ }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "st-tn-pos-mla-coimbatore-north",
+    "set": { "holder.wikipedia": null, "holder.image": null },
+    "source": "https://en.wikipedia.org/wiki/2026_Tamil_Nadu_Legislative_Assembly_election#Results_by_constituency",
+    "reason": "Two different MLAs named V. Sampathkumar won in 2026: AIADMK in Harur and TVK in Coimbatore North. The results table links both to the page of the AIADMK Harur MLA (elected there in the 2019 by-election), so the Coimbatore North MLA has no page of his own yet. Link and portrait removed from his seat; found by the duplicate-link check in scripts/coverage.ts.",
+    "by": "sarkar-graph maintainer session",
+    "date": "2026-09-25"
+  }
+]

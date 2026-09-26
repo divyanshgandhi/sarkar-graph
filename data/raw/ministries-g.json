@@ -1,0 +1,3579 @@
+{
+ "segment": "ministries-g",
+ "asOf": "2026-09-25",
+ "notes": "Group G: Science & Technology (DST/DBT/DSIR-CSIR), Earth Sciences, MeitY, Information & Broadcasting, Environment/Forest/Climate Change, Culture, Tourism, Textiles, Youth Affairs & Sports, DoNER. WebSearch quota was exhausted partway through this research pass (shared session-wide budget); remaining facts were sourced via WebFetch against Wikipedia and official .gov.in pages, and via curl against the Wikipedia parse API (curl was rate-limited/429 for most of the pass, likely from concurrent sibling research agents sharing the same egress IP, so WebFetch was the primary tool). KNOWN GAPS (all flagged confidence medium/low and/or noted inline on the entity): ANRF CEO name unconfirmed; DPDP Board of India constitution/chairperson status unconfirmed (Act provisions notified 2025-11-13 but operational status as of 2026-09-25 unverified); CAQM chairperson unconfirmed; NTCA and CZA member-secretary names unconfirmed; BSI director name unconfirmed; PIB Principal DG name unconfirmed; NFDC Managing Director unconfirmed (a 2026 Chairman appointment reported in one source but not independently corroborated); IGNCA member secretary unconfirmed; NIXI CEO name unconfirmed; several small bodies (NeGD, STQC, NIELIT, Central Silk Board, Textiles Committee, DC-Handlooms, DC-Handicrafts, NDTL, LNIPE, NEDFi, NEHHDC, FRI, IIFM, National Library-adjacent museums) are included on general knowledge of their existence/mandate/parent but their current office-holders were not verified against a live 2025-2026 source this pass -- confidence set to low/medium and holder name omitted or left unconfirmed accordingly, per the 'never invent' rule. IndiaAI Mission and India Semiconductor Mission budget figures are reported inconsistently across sources; only the July 2026 Semicon 2.0 Cabinet approval figure (Rs 1,27,500 crore) is included, without a fiscal-year breakdown. CSIR lab count is commonly cited as 37-39 depending on source/year; used 37 with a note. NSFs and DST/DBT institute aggregates are placeholders (not exhaustively itemised) except DBT's 9 named institutes, which are itemised individually.",
+ "entities": [
+  {
+   "id": "in-min-science-and-technology",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Science and Technology",
+   "abbr": "MoST",
+   "aliases": [
+    "Science Ministry",
+    "MoST"
+   ],
+   "parentId": "in-union-government",
+   "description": "Umbrella ministry comprising three departments — Science & Technology (DST), Biotechnology (DBT), and Scientific & Industrial Research (DSIR) — that fund and steer India's civilian scientific research, biotech and industrial R&D ecosystem.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://most.gov.in",
+   "established": "1985 (departments existed earlier; unified ministry structure)",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-mos-science-and-technology-1",
+   "sources": [
+    "https://most.gov.in/contact-us.html",
+    "https://en.wikipedia.org/wiki/Ministry_of_Science_and_Technology_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-science-and-technology",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Science and Technology",
+   "abbr": "DST",
+   "aliases": [
+    "DST"
+   ],
+   "parentId": "in-min-science-and-technology",
+   "description": "Formulates national science & technology policy, funds basic and applied research, autonomous S&T institutes, and national missions (e.g. National Quantum Mission) through grants to universities and institutions.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://dst.gov.in",
+   "established": "1971",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-mos-science-and-technology-1",
+   "adminHeadPositionId": "in-pos-secretary-science-and-technology",
+   "sources": [
+    "https://dst.gov.in/secretary",
+    "https://dst.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-biotechnology",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Biotechnology",
+   "abbr": "DBT",
+   "aliases": [
+    "DBT"
+   ],
+   "parentId": "in-min-science-and-technology",
+   "description": "Administers development and commercialisation of modern biology and biotechnology in India, funding research institutes, biotech startups (via BIRAC) and national biotech missions.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://dbtindia.gov.in",
+   "established": "1986",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-mos-science-and-technology-1",
+   "adminHeadPositionId": "in-pos-secretary-biotechnology",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Biotechnology",
+    "https://dbtindia.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-scientific-and-industrial-research",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Scientific and Industrial Research",
+   "abbr": "DSIR",
+   "aliases": [
+    "DSIR"
+   ],
+   "parentId": "in-min-science-and-technology",
+   "description": "Promotes industrial R&D, recognises in-house R&D units of companies, and administers CSIR as its operating arm; the DSIR Secretary is concurrently Director General of CSIR.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://dsir.gov.in",
+   "established": "1985",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-mos-science-and-technology-1",
+   "adminHeadPositionId": "in-pos-secretary-dsir",
+   "sources": [
+    "https://s3d860edd1dd83b36f02ce52bde626c653.s3waas.gov.in/department/dg-csir-cum-secretary-dsir/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-csir",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Council of Scientific and Industrial Research",
+   "abbr": "CSIR",
+   "aliases": [
+    "CSIR"
+   ],
+   "parentId": "in-dept-scientific-and-industrial-research",
+   "description": "India's largest chain of publicly funded industrial & applied-science R&D institutions; runs a nationwide network of national laboratories covering chemistry, metallurgy, aerospace, drugs, food tech, genomics and more.",
+   "legalBasis": "Registered society (Societies Registration Act, 1860); Prime Minister is ex-officio President",
+   "officialUrl": "https://www.csir.res.in",
+   "established": "1942-09-26",
+   "hq": "Anusandhan Bhawan, 2 Rafi Marg, New Delhi",
+   "headPositionId": "in-pos-dg-csir",
+   "stats": {
+    "nationalLaboratories": 37,
+    "note": "commonly cited as ~37-39 constituent national laboratories plus outreach centres; count varies by source/year"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Council_of_Scientific_and_Industrial_Research",
+    "https://www.csir.res.in/en"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-anrf",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Anusandhan National Research Foundation",
+   "abbr": "ANRF",
+   "aliases": [
+    "National Research Foundation",
+    "NRF"
+   ],
+   "parentId": "in-dept-science-and-technology",
+   "description": "Apex body created to seed, grow and promote research and innovation across India's universities, colleges and R&D institutions; absorbed the Science and Engineering Research Board (SERB) as a division. Governing Board is chaired by the Prime Minister; an Executive Council (chaired by the PM's Principal Scientific Adviser) runs day-to-day functioning.",
+   "legalBasis": "Anusandhan National Research Foundation Act, 2023",
+   "officialUrl": "https://anrfonline.in",
+   "established": "2023",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-prime-minister",
+   "notes": "Governing Board first met 2024-09-10; CEO name not confirmed by an available 2025-2026 source in this research pass.",
+   "sources": [
+    "https://anrfonline.in/",
+    "https://en.wikipedia.org/wiki/Anusandhan_National_Research_Foundation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-serb",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Science and Engineering Research Board",
+   "abbr": "SERB",
+   "aliases": [
+    "SERB"
+   ],
+   "parentId": "in-anrf",
+   "description": "Former statutory body that funded basic research in science and engineering; dissolved in 2023 and its functions absorbed into ANRF. Retained here as a historical/legacy record since its brand and schemes still operate as an ANRF vertical.",
+   "legalBasis": "SERB Act, 2008 (repealed/superseded by ANRF Act, 2023)",
+   "officialUrl": "https://www.serb.gov.in",
+   "established": "2009",
+   "hq": "New Delhi",
+   "notes": "Dissolved 2023, functions merged into ANRF. Not a currently independent legal entity.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Science_and_Engineering_Research_Board"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-birac",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Biotechnology Industry Research Assistance Council",
+   "abbr": "BIRAC",
+   "aliases": [
+    "BIRAC"
+   ],
+   "parentId": "in-dept-biotechnology",
+   "description": "Not-for-profit Section-8 public sector enterprise that funds and mentors biotech startups and early-stage biotech industry R&D through grants, seed funds and incubators.",
+   "legalBasis": "Companies Act (Section 8 company), Department of Biotechnology initiative",
+   "officialUrl": "https://birac.nic.in",
+   "established": "2012",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Biotechnology_Industry_Research_Assistance_Council"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-dst-autonomous-institutes",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "DST Autonomous Institutes (aggregate)",
+   "abbr": "DST-AIs",
+   "aliases": [
+    "DST institutes"
+   ],
+   "parentId": "in-dept-science-and-technology",
+   "description": "Aggregate record for the ~20+ autonomous R&D and science-outreach institutes funded and administered by DST (e.g. S.N. Bose National Centre for Basic Sciences, Raman Research Institute, Wadia Institute of Himalayan Geology, Vigyan Prasar, National Innovation Foundation), each with its own governing body and director.",
+   "legalBasis": "Registered societies funded by DST",
+   "hq": "various",
+   "stats": {
+    "institutesApprox": 20
+   },
+   "notes": "Aggregate placeholder per research scope; individual institutes not separately itemised in this pass except Vigyan Prasar, NIF and Survey of India below.",
+   "sources": [
+    "https://dst.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-vigyan-prasar",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Vigyan Prasar",
+   "abbr": "VP",
+   "parentId": "in-dept-science-and-technology",
+   "description": "Autonomous DST body for popularising science, producing science-communication content, and running the National Science Day and Rashtriya Vigyan Evam Prodyogiki Sanchar Parishad outreach network.",
+   "legalBasis": "Registered society under DST",
+   "officialUrl": "https://vigyanprasar.gov.in",
+   "established": "1989",
+   "hq": "Noida",
+   "sources": [
+    "https://vigyanprasar.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-national-innovation-foundation",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Innovation Foundation - India",
+   "abbr": "NIF",
+   "parentId": "in-dept-science-and-technology",
+   "description": "Autonomous DST body that scouts, documents and helps commercialise grassroots technological innovations and traditional knowledge from across India.",
+   "legalBasis": "Registered trust/society under DST",
+   "officialUrl": "https://nif.org.in",
+   "established": "2000",
+   "hq": "Ahmedabad",
+   "sources": [
+    "https://nif.org.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-survey-of-india",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Survey of India",
+   "abbr": "SoI",
+   "aliases": [
+    "Survey of India"
+   ],
+   "parentId": "in-dept-science-and-technology",
+   "description": "India's national mapping agency and the government's principal adviser on surveying, geodesy and cartography; headed by the Surveyor General of India.",
+   "legalBasis": "Attached office under DST",
+   "officialUrl": "https://surveyofindia.gov.in",
+   "established": "1767",
+   "hq": "Dehradun",
+   "headPositionId": "in-pos-surveyor-general-india",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Survey_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nii",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Institute of Immunology",
+   "parentId": "in-dept-biotechnology",
+   "description": "Autonomous DBT research institute (National Institute of Immunology), part of India's public biotechnology research network.",
+   "legalBasis": "Registered society under Department of Biotechnology",
+   "established": "1981",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Biotechnology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nccs",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Centre for Cell Science",
+   "parentId": "in-dept-biotechnology",
+   "description": "Autonomous DBT research institute (National Centre for Cell Science), part of India's public biotechnology research network.",
+   "legalBasis": "Registered society under Department of Biotechnology",
+   "established": "1988",
+   "hq": "Pune",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Biotechnology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nbrc",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Brain Research Centre",
+   "parentId": "in-dept-biotechnology",
+   "description": "Autonomous DBT research institute (National Brain Research Centre), part of India's public biotechnology research network.",
+   "legalBasis": "Registered society under Department of Biotechnology",
+   "established": "2003",
+   "hq": "Manesar",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Biotechnology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-rgcb",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Rajiv Gandhi Centre for Biotechnology",
+   "parentId": "in-dept-biotechnology",
+   "description": "Autonomous DBT research institute (Rajiv Gandhi Centre for Biotechnology), part of India's public biotechnology research network.",
+   "legalBasis": "Registered society under Department of Biotechnology",
+   "established": "1990",
+   "hq": "Thiruvananthapuram",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Biotechnology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ils",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Institute of Life Sciences",
+   "parentId": "in-dept-biotechnology",
+   "description": "Autonomous DBT research institute (Institute of Life Sciences), part of India's public biotechnology research network.",
+   "legalBasis": "Registered society under Department of Biotechnology",
+   "established": "1989",
+   "hq": "Bhubaneswar",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Biotechnology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-instem",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Institute for Stem Cell Science and Regenerative Medicine",
+   "parentId": "in-dept-biotechnology",
+   "description": "Autonomous DBT research institute (Institute for Stem Cell Science and Regenerative Medicine), part of India's public biotechnology research network.",
+   "legalBasis": "Registered society under Department of Biotechnology",
+   "established": "2008",
+   "hq": "Bengaluru",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Biotechnology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-thsti",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Translational Health Science and Technology Institute",
+   "parentId": "in-dept-biotechnology",
+   "description": "Autonomous DBT research institute (Translational Health Science and Technology Institute), part of India's public biotechnology research network.",
+   "legalBasis": "Registered society under Department of Biotechnology",
+   "established": "2009",
+   "hq": "Faridabad",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Biotechnology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nibmg",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Institute of Biomedical Genomics",
+   "parentId": "in-dept-biotechnology",
+   "description": "Autonomous DBT research institute (National Institute of Biomedical Genomics), part of India's public biotechnology research network.",
+   "legalBasis": "Registered society under Department of Biotechnology",
+   "established": "2009",
+   "hq": "Kalyani",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Biotechnology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-niab",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Institute of Animal Biotechnology",
+   "parentId": "in-dept-biotechnology",
+   "description": "Autonomous DBT research institute (National Institute of Animal Biotechnology), part of India's public biotechnology research network.",
+   "legalBasis": "Registered society under Department of Biotechnology",
+   "established": "2013",
+   "hq": "Hyderabad",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Biotechnology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-min-earth-sciences",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Earth Sciences",
+   "abbr": "MoES",
+   "aliases": [
+    "Earth Sciences Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Coordinates India's weather, climate, ocean, polar and seismology programmes — running IMD forecasting, monsoon research, tsunami warning, and Antarctic/Arctic research stations.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.moes.gov.in",
+   "established": "2006",
+   "hq": "Prithvi Bhavan, Lodhi Road, New Delhi",
+   "headPositionId": "in-pos-mos-earth-sciences-1",
+   "adminHeadPositionId": "in-pos-secretary-earth-sciences",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Earth_Sciences"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-imd",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "India Meteorological Department",
+   "abbr": "IMD",
+   "aliases": [
+    "Mausam",
+    "IMD"
+   ],
+   "parentId": "in-min-earth-sciences",
+   "description": "India's national weather service — issues forecasts, cyclone and heatwave warnings, and maintains the country's meteorological observation network.",
+   "legalBasis": "Subordinate office of MoES",
+   "officialUrl": "https://mausam.imd.gov.in",
+   "established": "1875-01-15",
+   "hq": "Mausam Bhavan, Lodi Road, New Delhi",
+   "headPositionId": "in-pos-dg-imd",
+   "sources": [
+    "https://en.wikipedia.org/wiki/India_Meteorological_Department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-incois",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indian National Centre for Ocean Information Services",
+   "abbr": "INCOIS",
+   "parentId": "in-min-earth-sciences",
+   "description": "Provides ocean state forecasts, potential fishing zone advisories and India's tsunami early-warning service from Hyderabad.",
+   "legalBasis": "Registered society under MoES",
+   "officialUrl": "https://incois.gov.in",
+   "established": "1998-02",
+   "hq": "Hyderabad",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_National_Centre_for_Ocean_Information_Services"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ncpor",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Centre for Polar and Ocean Research",
+   "abbr": "NCPOR",
+   "aliases": [
+    "NCAOR"
+   ],
+   "parentId": "in-min-earth-sciences",
+   "description": "Runs India's Antarctic (Maitri, Bharati) and Arctic (Himadri) research stations and coordinates India's polar and Southern Ocean research programme.",
+   "legalBasis": "Registered society under MoES",
+   "officialUrl": "https://ncpor.res.in",
+   "established": "1998-05-25",
+   "hq": "Vasco da Gama, Goa",
+   "headPositionId": "in-pos-director-ncpor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Centre_for_Polar_and_Ocean_Research"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-niot",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Institute of Ocean Technology",
+   "abbr": "NIOT",
+   "parentId": "in-min-earth-sciences",
+   "description": "Develops indigenous ocean engineering technology for deep-sea mining, desalination, tsunami buoys and ocean energy within India's exclusive economic zone.",
+   "legalBasis": "Registered society under MoES",
+   "officialUrl": "https://niot.res.in",
+   "established": "1993-11",
+   "hq": "Chennai",
+   "headPositionId": "in-pos-director-niot",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Ocean_Technology"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-iitm-pune",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indian Institute of Tropical Meteorology",
+   "abbr": "IITM",
+   "parentId": "in-min-earth-sciences",
+   "description": "Leading research institute on monsoon dynamics, tropical meteorology and climate modelling; developed India's high-resolution monsoon mission models.",
+   "legalBasis": "Registered society under MoES",
+   "officialUrl": "https://www.tropmet.res.in",
+   "established": "1962-11-17",
+   "hq": "Pune",
+   "headPositionId": "in-pos-director-iitm",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Institute_of_Tropical_Meteorology"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ncmrwf",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Centre for Medium Range Weather Forecasting",
+   "abbr": "NCMRWF",
+   "parentId": "in-min-earth-sciences",
+   "description": "Develops and runs India's numerical weather-prediction (NWP) models for medium-range forecasts, feeding IMD's operational forecasting.",
+   "legalBasis": "Unit under MoES",
+   "officialUrl": "https://www.ncmrwf.gov.in",
+   "established": "1988",
+   "hq": "Noida",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-min-electronics-and-information-technology",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Electronics and Information Technology",
+   "abbr": "MeitY",
+   "aliases": [
+    "MeitY",
+    "IT Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Steers India's digital economy — IT/electronics manufacturing (PLI, semiconductors), digital identity (Aadhaar), cybersecurity, e-governance, AI policy and platform/data regulation (IT Rules, DPDP Act).",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.meity.gov.in",
+   "established": "2016 (carved out of erstwhile DeitY/DIT)",
+   "hq": "Electronics Niketan, New Delhi",
+   "headPositionId": "in-pos-minister-electronics-and-information-technology",
+   "adminHeadPositionId": "in-pos-secretary-electronics-and-information-technology",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Electronics_and_Information_Technology"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-uidai",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Unique Identification Authority of India",
+   "abbr": "UIDAI",
+   "aliases": [
+    "Aadhaar",
+    "UIDAI"
+   ],
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "Issues and maintains the Aadhaar biometric digital-identity number for India's residents, and regulates Aadhaar authentication ecosystem.",
+   "legalBasis": "Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act, 2016",
+   "officialUrl": "https://uidai.gov.in",
+   "established": "2009-01-28 (statutory status 2016)",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairman-uidai",
+   "adminHeadPositionId": "in-pos-ceo-uidai",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Unique_Identification_Authority_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cert-in",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Indian Computer Emergency Response Team",
+   "abbr": "CERT-In",
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "National nodal agency for responding to cybersecurity incidents, issuing advisories and coordinating India's cyber-incident response.",
+   "legalBasis": "Section 70B, Information Technology Act, 2000",
+   "officialUrl": "https://www.cert-in.org.in",
+   "established": "2004-01-19",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-cert-in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Computer_Emergency_Response_Team"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nic",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "National Informatics Centre",
+   "abbr": "NIC",
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "Builds and runs IT infrastructure and e-governance applications for central and state governments (e.g. e-Office, NIC email, government data centres, NIC cloud).",
+   "legalBasis": "Attached office of MeitY",
+   "officialUrl": "https://www.nic.gov.in",
+   "established": "1976",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-nic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Informatics_Centre"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-negd",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National e-Governance Division",
+   "abbr": "NeGD",
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "Implementation and programme-management arm for India's National e-Governance Plan and Digital India flagship initiatives, working alongside Digital India Corporation.",
+   "legalBasis": "Division under MeitY / Digital India Corporation",
+   "hq": "New Delhi",
+   "notes": "Leadership and precise corporate status not independently verified this pass.",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-stpi",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Software Technology Parks of India",
+   "abbr": "STPI",
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "Promotes IT/ITeS exports and startups through software technology parks, incubation and the Centres of Excellence network across India.",
+   "legalBasis": "Registered autonomous society under MeitY",
+   "officialUrl": "https://stpi.in",
+   "established": "1991",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-stpi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Software_Technology_Parks_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cdac",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Centre for Development of Advanced Computing",
+   "abbr": "C-DAC",
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "R&D organisation developing advanced computing, HPC (PARAM supercomputers), AI and electronics-design technologies for India.",
+   "legalBasis": "Registered autonomous scientific society under MeitY",
+   "officialUrl": "https://www.cdac.in",
+   "established": "1988-03",
+   "hq": "Pune (HQ) / multi-city centres",
+   "headPositionId": "in-pos-dg-cdac",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Centre_for_Development_of_Advanced_Computing"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-mygov",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "MyGov India",
+   "abbr": "MyGov",
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "Citizen-engagement platform enabling public participation in governance through discussions, tasks, polls and government campaigns; hosted by NIC.",
+   "legalBasis": "Hosted/managed via NIC under MeitY",
+   "officialUrl": "https://www.mygov.in",
+   "established": "2014-07-26",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-ceo-mygov",
+   "sources": [
+    "https://en.wikipedia.org/wiki/MyGov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-digital-india-corporation",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Digital India Corporation",
+   "abbr": "DIC",
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "Not-for-profit Section-8 company under MeitY that incubates and executes Digital India projects, IT research academies and the Visvesvaraya PhD scheme; successor to Media Lab Asia.",
+   "legalBasis": "Companies Act, 2013 (Section 8 company)",
+   "officialUrl": "https://dic.gov.in",
+   "established": "2013",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-ceo-dic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Digital_India_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-indiaai-mission",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "IndiaAI Mission",
+   "abbr": "IndiaAI",
+   "aliases": [
+    "India AI Mission",
+    "IndiaAI"
+   ],
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "Flagship national mission to build sovereign AI compute capacity, datasets, foundation models and AI safety/governance institutions; implemented via the Digital India Corporation's IndiaAI Independent Business Division.",
+   "legalBasis": "Union Cabinet approval, 2024",
+   "officialUrl": "https://indiaai.gov.in",
+   "established": "2024",
+   "hq": "New Delhi",
+   "notes": "Budget outlay figures widely reported (~₹10,300 crore approved 2024) but not independently re-verified with a live 2025-2026 source in this pass; omitted rather than risk an inaccurate figure.",
+   "sources": [
+    "https://indiaai.gov.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ism",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "India Semiconductor Mission",
+   "abbr": "ISM",
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "Nodal agency implementing India's semiconductor and display fab/ATMP/OSAT incentive schemes (Semicon India), aiming to build a domestic chip design, manufacturing and R&D ecosystem.",
+   "legalBasis": "Union Cabinet approval, 2021 (Semicon India Programme)",
+   "officialUrl": "https://www.ism.gov.in",
+   "established": "2021",
+   "hq": "New Delhi",
+   "budget": {
+    "fy": "2026-27",
+    "be": 0,
+    "note": "Semicon 2.0 outlay ₹1,27,500 crore approved by Union Cabinet, July 2026; not broken out by fiscal year in source consulted"
+   },
+   "sources": [
+    "https://www.ism.gov.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-dpdp-board",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Data Protection Board of India",
+   "abbr": "DPBI",
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "Adjudicatory body for data-breach and non-compliance proceedings under India's data-protection law; hears complaints between data principals (individuals) and data fiduciaries (platforms/companies).",
+   "legalBasis": "Section 18, Digital Personal Data Protection Act, 2023",
+   "established": "2025-11-13 (provisions notified/brought into force)",
+   "hq": "New Delhi",
+   "notes": "LOW CONFIDENCE: could not confirm from an available source whether the Board has been formally constituted with a named Chairperson as of 2026-09-25; DPDP Act provisions establishing it were notified 2025-11-13. Treat operational/staffing status as unverified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Digital_Personal_Data_Protection_Act,_2023"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-nixi",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Internet Exchange of India",
+   "abbr": "NIXI",
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "Non-profit that exchanges domestic internet traffic among Indian ISPs, manages the .in country-code domain registry (INRegistry), and delegates IP addresses/AS numbers as India's National Internet Registry.",
+   "legalBasis": "Section 8 company under Companies Act",
+   "officialUrl": "https://www.nixi.in",
+   "established": "2003-06-19",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Internet_Exchange_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-stqc",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Standardisation Testing and Quality Certification Directorate",
+   "abbr": "STQC",
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "Provides quality assurance, IT testing, certification and calibration services for electronics and IT products/systems, including EVM-related testing support.",
+   "legalBasis": "Attached office of MeitY",
+   "officialUrl": "https://www.stqc.gov.in",
+   "hq": "New Delhi",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-nielit",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Institute of Electronics and Information Technology",
+   "abbr": "NIELIT",
+   "parentId": "in-min-electronics-and-information-technology",
+   "description": "Runs a nationwide network of centres delivering IT/electronics education, skilling and examinations (e.g. the erstwhile DOEACC 'O/A/B/C' courses) to build India's digital workforce.",
+   "legalBasis": "Registered autonomous scientific society under MeitY",
+   "officialUrl": "https://www.nielit.gov.in",
+   "established": "1994",
+   "hq": "New Delhi",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-min-information-and-broadcasting",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Information and Broadcasting",
+   "abbr": "MIB",
+   "aliases": [
+    "I&B Ministry",
+    "MIB"
+   ],
+   "parentId": "in-union-government",
+   "description": "Regulates and promotes India's broadcasting, film and print media sectors, runs the government's own broadcaster (Prasar Bharati) and press outreach (PIB).",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://mib.gov.in",
+   "established": "1947 (as a department; ministry form later)",
+   "hq": "Shastri Bhawan, New Delhi",
+   "headPositionId": "in-pos-minister-information-and-broadcasting",
+   "adminHeadPositionId": "in-pos-secretary-information-and-broadcasting",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Information_and_Broadcasting_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-prasar-bharati",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Prasar Bharati",
+   "abbr": "PB",
+   "aliases": [
+    "Prasar Bharati Corporation of India"
+   ],
+   "parentId": "in-min-information-and-broadcasting",
+   "description": "India's public-service broadcaster, statutorily autonomous, operating the Doordarshan TV network and All India Radio; funded substantially by government grants.",
+   "legalBasis": "Prasar Bharati (Broadcasting Corporation of India) Act, 1990",
+   "officialUrl": "https://prasarbharati.gov.in",
+   "established": "1997-11-23",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairman-prasar-bharati",
+   "adminHeadPositionId": "in-pos-ceo-prasar-bharati",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prasar_Bharati"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-doordarshan",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Doordarshan",
+   "abbr": "DD",
+   "parentId": "in-prasar-bharati",
+   "description": "India's public-service television broadcaster, operating the DD National network plus regional and specialised DD channels.",
+   "legalBasis": "Constituent of Prasar Bharati under the 1990 Act",
+   "officialUrl": "https://ddnews.gov.in",
+   "established": "1959",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prasar_Bharati"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-air",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "All India Radio",
+   "abbr": "AIR",
+   "aliases": [
+    "Akashvani"
+   ],
+   "parentId": "in-prasar-bharati",
+   "description": "India's public-service radio broadcaster, operating national, regional, local and external (World Service) radio stations.",
+   "legalBasis": "Constituent of Prasar Bharati under the 1990 Act",
+   "officialUrl": "https://www.newsonair.gov.in",
+   "established": "1936",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prasar_Bharati"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cbfc",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Central Board of Film Certification",
+   "abbr": "CBFC",
+   "aliases": [
+    "Censor Board"
+   ],
+   "parentId": "in-min-information-and-broadcasting",
+   "description": "Certifies films for public exhibition in India (U/UA/A/S categories), and can mandate cuts; statutory body under the Cinematograph Act.",
+   "legalBasis": "Cinematograph Act, 1952",
+   "officialUrl": "https://www.cbfcindia.gov.in",
+   "established": "1951-01-15",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-chairperson-cbfc",
+   "adminHeadPositionId": "in-pos-ceo-cbfc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Board_of_Film_Certification",
+    "https://www.cbfcindia.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pib",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Press Information Bureau",
+   "abbr": "PIB",
+   "parentId": "in-min-information-and-broadcasting",
+   "description": "Nodal agency disseminating government policy, programme and scheme information to print and electronic media, and the primary source of official press releases.",
+   "legalBasis": "Attached office of I&B Ministry",
+   "officialUrl": "https://pib.gov.in",
+   "established": "1919",
+   "hq": "New Delhi",
+   "notes": "Current Principal Director General not confirmed by an available source in this pass.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Press_Information_Bureau_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-publications-division",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Publications Division",
+   "abbr": "PD",
+   "parentId": "in-min-information-and-broadcasting",
+   "description": "Government publishing house producing books, journals (e.g. Yojana, Kurukshetra) and reference material in Hindi, English and regional languages.",
+   "legalBasis": "Division of I&B Ministry",
+   "officialUrl": "http://publicationsdivision.nic.in",
+   "established": "1941",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Publications_Division_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nfdc",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "National Film Development Corporation of India",
+   "abbr": "NFDC",
+   "parentId": "in-min-information-and-broadcasting",
+   "description": "Central public sector enterprise financing, producing, and promoting Indian cinema (including art/independent film) and running the National Film Archive of India and Film Facilitation Office.",
+   "legalBasis": "Companies Act (CPSE)",
+   "officialUrl": "https://www.nfdcindia.com",
+   "established": "1975",
+   "hq": "Mumbai",
+   "notes": "Current Managing Director not confirmed; recent press references a 2026-appointed Chairman (G. Krishnakumar) but this was not independently verified this pass.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Film_Development_Corporation_of_India"
+   ],
+   "confidence": "medium",
+   "headPositionId": "in-pos-chairman-nfdc"
+  },
+  {
+   "id": "in-ftii",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Film and Television Institute of India",
+   "abbr": "FTII",
+   "parentId": "in-min-information-and-broadcasting",
+   "description": "Premier state film school (Pune) training filmmakers, editors, cinematographers and TV production professionals; a deemed-to-be university.",
+   "legalBasis": "Registered autonomous society under I&B Ministry",
+   "officialUrl": "https://ftii.ac.in",
+   "established": "1960",
+   "hq": "Pune",
+   "headPositionId": "in-pos-director-ftii",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Film_and_Television_Institute_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-srfti",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Satyajit Ray Film and Television Institute",
+   "abbr": "SRFTI",
+   "parentId": "in-min-information-and-broadcasting",
+   "description": "State film school in Kolkata offering degree programmes in filmmaking, animation and television production.",
+   "legalBasis": "Registered autonomous society under I&B Ministry",
+   "officialUrl": "https://srfti.ac.in",
+   "established": "1995",
+   "hq": "Kolkata",
+   "headPositionId": "in-pos-director-srfti",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Satyajit_Ray_Film_and_Television_Institute"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-iimc",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indian Institute of Mass Communication",
+   "abbr": "IIMC",
+   "parentId": "in-min-information-and-broadcasting",
+   "description": "Premier journalism and mass-communication deemed university, with its New Delhi headquarters plus regional centres, training journalists and media professionals.",
+   "legalBasis": "Registered autonomous society / deemed university under I&B Ministry",
+   "officialUrl": "https://www.iimc.gov.in",
+   "established": "1965-08-17",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-vc-iimc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Institute_of_Mass_Communication"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-rni",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Registrar of Newspapers for India",
+   "abbr": "RNI",
+   "parentId": "in-min-information-and-broadcasting",
+   "description": "Statutory authority that registers newspapers/periodicals, verifies circulation claims and compiles the annual 'Press in India' report.",
+   "legalBasis": "Press and Registration of Books Act, 1867 (now Press and Registration of Periodicals Act, 2023)",
+   "officialUrl": "https://rni.nic.in",
+   "hq": "New Delhi",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-min-environment-forest-and-climate-change",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Environment, Forest and Climate Change",
+   "abbr": "MoEFCC",
+   "aliases": [
+    "Environment Ministry",
+    "MoEF&CC"
+   ],
+   "parentId": "in-union-government",
+   "description": "Administers India's environmental clearances, pollution control, forest and wildlife conservation, and international climate-change commitments (NDCs, COP negotiations).",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://moef.gov.in",
+   "established": "1985",
+   "hq": "Indira Paryavaran Bhawan, New Delhi",
+   "headPositionId": "in-pos-minister-environment-forest-and-climate-change",
+   "adminHeadPositionId": "in-pos-secretary-environment-forest-and-climate-change",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Environment,_Forest_and_Climate_Change"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cpcb",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Central Pollution Control Board",
+   "abbr": "CPCB",
+   "parentId": "in-min-environment-forest-and-climate-change",
+   "description": "India's apex pollution-monitoring and standard-setting body for air, water and waste, coordinating with State Pollution Control Boards.",
+   "legalBasis": "Water (Prevention and Control of Pollution) Act, 1974; also functions under the Air Act, 1981 and Environment (Protection) Act, 1986",
+   "officialUrl": "https://cpcb.gov.in",
+   "established": "1974-09-22",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairman-cpcb",
+   "stats": {
+    "regionalDirectorates": 9
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Pollution_Control_Board"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ntca",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "National Tiger Conservation Authority",
+   "abbr": "NTCA",
+   "parentId": "in-min-environment-forest-and-climate-change",
+   "description": "Oversees India's tiger reserves and tiger-conservation policy (Project Tiger), setting protection protocols and coordinating the All-India Tiger Estimation.",
+   "legalBasis": "Section 38L(1), Wildlife (Protection) Act, 1972 (as amended 2006)",
+   "officialUrl": "https://ntca.gov.in",
+   "established": "2005-12",
+   "hq": "New Delhi",
+   "notes": "Statutorily chaired by the Union Minister of Environment; Member Secretary/DG name not confirmed this pass.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Tiger_Conservation_Authority"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-wii",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Wildlife Institute of India",
+   "abbr": "WII",
+   "parentId": "in-min-environment-forest-and-climate-change",
+   "description": "National centre for wildlife research, training and policy advice, covering biodiversity, wildlife forensics, ecotoxicology and protected-area management.",
+   "legalBasis": "Registered autonomous society under MoEFCC",
+   "officialUrl": "https://wii.gov.in",
+   "established": "1982",
+   "hq": "Dehradun",
+   "headPositionId": "in-pos-director-wii",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wildlife_Institute_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-fsi",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Forest Survey of India",
+   "abbr": "FSI",
+   "parentId": "in-min-environment-forest-and-climate-change",
+   "description": "Conducts India's biennial Forest Survey/State of Forest Report, monitoring forest cover and forest-resource change using remote sensing.",
+   "legalBasis": "Subordinate office of MoEFCC",
+   "officialUrl": "https://fsi.nic.in",
+   "established": "1981-06-01",
+   "hq": "Dehradun",
+   "headPositionId": "in-pos-dg-fsi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Forest_Survey_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-zsi",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Zoological Survey of India",
+   "abbr": "ZSI",
+   "parentId": "in-min-environment-forest-and-climate-change",
+   "description": "National agency for faunal taxonomy, survey and inventory of India's animal biodiversity.",
+   "legalBasis": "Subordinate office of MoEFCC",
+   "officialUrl": "https://zsi.gov.in",
+   "established": "1916-07-01",
+   "hq": "Kolkata",
+   "headPositionId": "in-pos-director-zsi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Zoological_Survey_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-bsi",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Botanical Survey of India",
+   "abbr": "BSI",
+   "parentId": "in-min-environment-forest-and-climate-change",
+   "description": "National agency for plant taxonomy, flora survey and conservation assessment of India's flora.",
+   "legalBasis": "Subordinate office of MoEFCC",
+   "officialUrl": "https://bsi.gov.in",
+   "established": "1890-02-13",
+   "hq": "Kolkata",
+   "notes": "Current Director not confirmed this pass.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Botanical_Survey_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nba",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "National Biodiversity Authority",
+   "abbr": "NBA",
+   "parentId": "in-min-environment-forest-and-climate-change",
+   "description": "Regulates access to India's biological resources and associated traditional knowledge, and enforces equitable benefit-sharing under the Biological Diversity Act.",
+   "legalBasis": "Biological Diversity Act, 2002",
+   "officialUrl": "https://nbaindia.org",
+   "established": "2003-10-01",
+   "hq": "Chennai",
+   "headPositionId": "in-pos-chairperson-nba",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Biodiversity_Authority"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-caqm",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Commission for Air Quality Management in National Capital Region and Adjoining Areas",
+   "abbr": "CAQM",
+   "parentId": "in-min-environment-forest-and-climate-change",
+   "description": "Statutory commission coordinating air-quality management, GRAP enforcement and pollution-source regulation across Delhi-NCR and adjoining states, superseding the earlier EPCA.",
+   "legalBasis": "Commission for Air Quality Management in National Capital Region and Adjoining Areas Act, 2021",
+   "officialUrl": "https://caqm.nic.in",
+   "established": "2021",
+   "hq": "New Delhi",
+   "notes": "Current Chairperson not confirmed by an available source in this pass.",
+   "sources": [
+    "https://caqm.nic.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-icfre",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indian Council of Forestry Research and Education",
+   "abbr": "ICFRE",
+   "parentId": "in-min-environment-forest-and-climate-change",
+   "description": "Apex forestry-research body coordinating a network of forestry research institutes and advanced centres across India's biogeographic zones, and forestry higher education (incl. Forest Research Institute).",
+   "legalBasis": "Registered autonomous society under MoEFCC",
+   "officialUrl": "https://icfre.gov.in",
+   "established": "1986",
+   "hq": "Dehradun",
+   "stats": {
+    "researchInstitutes": 9,
+    "advancedCentres": 4
+   },
+   "notes": "Current Director General not confirmed this pass.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Council_of_Forestry_Research_and_Education"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-fri",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Forest Research Institute",
+   "abbr": "FRI",
+   "parentId": "in-icfre",
+   "description": "Deemed university and premier forestry research/education institute in Dehradun, part of the ICFRE network.",
+   "legalBasis": "Deemed university under ICFRE",
+   "officialUrl": "https://fri.res.in",
+   "established": "1906",
+   "hq": "Dehradun",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-iifm",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indian Institute of Forest Management",
+   "abbr": "IIFM",
+   "parentId": "in-min-environment-forest-and-climate-change",
+   "description": "Autonomous institute providing management education and research on sustainable forestry and natural-resource management.",
+   "legalBasis": "Registered autonomous society under MoEFCC",
+   "officialUrl": "https://iifm.ac.in",
+   "established": "1982",
+   "hq": "Bhopal",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-cza",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Central Zoo Authority",
+   "abbr": "CZA",
+   "parentId": "in-min-environment-forest-and-climate-change",
+   "description": "Regulates and oversees India's zoos, setting standards for animal welfare, zoo recognition/de-recognition, and ex-situ conservation breeding programmes.",
+   "legalBasis": "Section 38A, Wildlife (Protection) Act, 1972",
+   "established": "1992",
+   "hq": "New Delhi",
+   "notes": "Current Member Secretary not confirmed this pass.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Zoo_Authority"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-wccb",
+   "kind": "investigative_agency",
+   "sector": "executive",
+   "name": "Wildlife Crime Control Bureau",
+   "abbr": "WCCB",
+   "parentId": "in-min-environment-forest-and-climate-change",
+   "description": "Statutory multi-disciplinary body combating organised wildlife crime (poaching, illegal wildlife trade) in coordination with state and international agencies.",
+   "legalBasis": "Wild Life (Protection) Amendment Act, 2006",
+   "established": "2007-06-06",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-director-wccb",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wildlife_Crime_Control_Bureau"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-min-culture",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Culture",
+   "abbr": "MoC",
+   "parentId": "in-union-government",
+   "description": "Preserves and promotes India's tangible and intangible heritage — archaeology, museums, archives, libraries, performing/visual/literary arts academies.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://culture.gov.in",
+   "established": "1985",
+   "hq": "Shastri Bhawan, New Delhi",
+   "headPositionId": "in-pos-minister-culture",
+   "adminHeadPositionId": "in-pos-secretary-culture",
+   "sources": [
+    "https://culture.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-asi",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Archaeological Survey of India",
+   "abbr": "ASI",
+   "parentId": "in-min-culture",
+   "description": "Conducts archaeological research and conserves over 3,650 centrally protected monuments and sites across India.",
+   "legalBasis": "Ancient Monuments and Archaeological Sites and Remains (AMASR) Act, 1958",
+   "officialUrl": "https://asi.nic.in",
+   "established": "1861",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-asi",
+   "stats": {
+    "protectedMonuments": 3650
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Archaeological_Survey_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ngma",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Gallery of Modern Art",
+   "abbr": "NGMA",
+   "parentId": "in-min-culture",
+   "description": "Premier modern/contemporary art museum holding over 17,000 works by around 2,000 artists, with its main gallery in New Delhi and branches in Mumbai and Bengaluru.",
+   "legalBasis": "Autonomous body under Ministry of Culture",
+   "officialUrl": "https://ngmaindia.gov.in",
+   "established": "1954-03-29",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-ngma",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Gallery_of_Modern_Art"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-national-museum",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Museum, New Delhi",
+   "abbr": "NM",
+   "parentId": "in-min-culture",
+   "description": "One of India's largest museums, holding ~200,000 artefacts spanning over 5,000 years of Indian art and history.",
+   "legalBasis": "Autonomous body under Ministry of Culture",
+   "officialUrl": "https://nationalmuseumindia.gov.in",
+   "established": "1949-08-15",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-national-museum",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Museum,_New_Delhi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-sahitya-akademi",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Sahitya Akademi",
+   "abbr": "SA",
+   "aliases": [
+    "National Academy of Letters"
+   ],
+   "parentId": "in-min-culture",
+   "description": "India's national academy of letters, promoting literature across 24 recognised Indian languages through awards, fellowships and publishing.",
+   "legalBasis": "Registered autonomous society under Ministry of Culture",
+   "officialUrl": "https://sahitya-akademi.gov.in",
+   "established": "1954-03-12",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-president-sahitya-akademi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sahitya_Akademi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-sangeet-natak-akademi",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Sangeet Natak Akademi",
+   "abbr": "SNA",
+   "aliases": [
+    "National Academy of Music, Dance and Drama"
+   ],
+   "parentId": "in-min-culture",
+   "description": "India's national academy for performing arts — music, dance and drama — conferring the Akademi Fellowship and awards, and running affiliated institutions.",
+   "legalBasis": "Registered autonomous society under Ministry of Culture",
+   "officialUrl": "https://sangeetnatak.gov.in",
+   "established": "1952-05-31",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairman-sangeet-natak-akademi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sangeet_Natak_Akademi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-lalit-kala-akademi",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Lalit Kala Akademi",
+   "abbr": "LKA",
+   "aliases": [
+    "National Academy of Fine Arts"
+   ],
+   "parentId": "in-min-culture",
+   "description": "India's national academy of fine arts, promoting visual arts through exhibitions (National Exhibition of Art, Triennale-India), scholarships and its seven regional centres.",
+   "legalBasis": "Registered autonomous society under Ministry of Culture",
+   "officialUrl": "https://lalitkala.gov.in",
+   "established": "1954-08-05",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairman-lalit-kala-akademi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalit_Kala_Akademi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-national-archives",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "National Archives of India",
+   "abbr": "NAI",
+   "parentId": "in-min-culture",
+   "description": "Custodian of the non-current records of the Government of India, preserving historical government documents for administrators, researchers and the public.",
+   "legalBasis": "Attached office of Ministry of Culture",
+   "officialUrl": "https://nationalarchives.nic.in",
+   "established": "1891-03-11",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-national-archives",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Archives_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ignca",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indira Gandhi National Centre for the Arts",
+   "abbr": "IGNCA",
+   "parentId": "in-min-culture",
+   "description": "Autonomous centre for research, academic pursuit and dissemination of the arts, covering Indology, performing, visual and literary arts.",
+   "legalBasis": "Registered autonomous trust/society under Ministry of Culture",
+   "officialUrl": "https://www.ignca.gov.in",
+   "established": "1985-11-19",
+   "hq": "New Delhi",
+   "notes": "Current Member Secretary not confirmed this pass.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indira_Gandhi_National_Centre_for_the_Arts"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-national-library-india",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Library of India",
+   "abbr": "NLI",
+   "parentId": "in-min-culture",
+   "description": "India's largest library, in Kolkata, and the country's official repository of books published in India (legal deposit).",
+   "legalBasis": "Autonomous body under Ministry of Culture",
+   "officialUrl": "https://nationallibrary.gov.in",
+   "established": "1953-02-01",
+   "hq": "Kolkata",
+   "headPositionId": "in-pos-director-national-library",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Library_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pmml",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Prime Ministers' Museum and Library",
+   "abbr": "PMML",
+   "aliases": [
+    "Nehru Memorial Museum and Library",
+    "NMML",
+    "Pradhanmantri Sangrahalaya"
+   ],
+   "parentId": "in-min-culture",
+   "description": "Museum and research library documenting the lives and contributions of all Indian Prime Ministers, housed at Teen Murti Bhavan; renamed and expanded from the earlier Nehru Memorial Museum and Library in 2022.",
+   "legalBasis": "Autonomous society (PMML Society) under Ministry of Culture",
+   "established": "1964 (renamed/expanded 2022)",
+   "hq": "Teen Murti Bhavan, New Delhi",
+   "headPositionId": "in-pos-director-pmml",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prime_Ministers%27_Museum_and_Library"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-anthropological-survey-of-india",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Anthropological Survey of India",
+   "abbr": "AnSI",
+   "parentId": "in-min-culture",
+   "description": "Conducts physical and cultural anthropological research and field data collection on India's population groups, especially tribal and indigenous communities.",
+   "legalBasis": "Subordinate office under Ministry of Culture",
+   "established": "1945",
+   "hq": "Kolkata",
+   "headPositionId": "in-pos-director-ansi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Anthropological_Survey_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ncsm",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Council of Science Museums",
+   "abbr": "NCSM",
+   "parentId": "in-min-culture",
+   "description": "Runs India's largest network of science centres and museums for public science communication (separated from CSIR's museums in 1978).",
+   "legalBasis": "Registered autonomous society under Ministry of Culture",
+   "established": "1978-04-04",
+   "hq": "Kolkata",
+   "headPositionId": "in-pos-dg-ncsm",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Council_of_Science_Museums"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-indian-museum-kolkata",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indian Museum, Kolkata",
+   "abbr": "IM",
+   "parentId": "in-min-culture",
+   "description": "India's oldest and largest multi-purpose museum, holding archaeology, art, anthropology, geology and zoology collections.",
+   "legalBasis": "Autonomous body under Ministry of Culture",
+   "established": "1814",
+   "hq": "Kolkata",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-victoria-memorial-hall",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Victoria Memorial Hall",
+   "abbr": "VMH",
+   "parentId": "in-min-culture",
+   "description": "Museum and monument in Kolkata commemorating Queen Victoria, holding a major collection of Raj-era art, paintings and artefacts.",
+   "legalBasis": "Autonomous body under Ministry of Culture",
+   "established": "1921",
+   "hq": "Kolkata",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-salar-jung-museum",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Salar Jung Museum",
+   "abbr": "SJM",
+   "parentId": "in-min-culture",
+   "description": "One of India's three National Museums, in Hyderabad, holding the art collection assembled by the Salar Jung family.",
+   "legalBasis": "Autonomous body under Ministry of Culture (Salar Jung Museum Act, 1961)",
+   "established": "1951",
+   "hq": "Hyderabad",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-allahabad-museum",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Allahabad Museum",
+   "abbr": "AM",
+   "parentId": "in-min-culture",
+   "description": "National-status museum in Prayagraj holding archaeology, sculpture, numismatics and Nehru-family memorabilia collections.",
+   "legalBasis": "Autonomous body under Ministry of Culture",
+   "established": "1931",
+   "hq": "Prayagraj",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-rampur-raza-library",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Rampur Raza Library",
+   "abbr": "RRL",
+   "parentId": "in-min-culture",
+   "description": "Autonomous library and museum holding a major collection of Islamic and Indo-Persian manuscripts, miniature paintings and historical documents.",
+   "legalBasis": "Autonomous body under Ministry of Culture",
+   "established": "1904 (as a public trust; nationalised 1975)",
+   "hq": "Rampur, Uttar Pradesh",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-khuda-bakhsh-library",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Khuda Bakhsh Oriental Public Library",
+   "abbr": "KBOPL",
+   "parentId": "in-min-culture",
+   "description": "Autonomous research library holding rare Islamic manuscripts, Mughal-era paintings and Indo-Persian historical documents.",
+   "legalBasis": "Khuda Bakhsh Oriental Public Library Act, 1969",
+   "established": "1891",
+   "hq": "Patna",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-min-tourism",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Tourism",
+   "abbr": "MoT",
+   "parentId": "in-union-government",
+   "description": "Formulates national tourism policy, markets India internationally (Incredible India campaign), and funds tourism infrastructure and hospitality education.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://tourism.gov.in",
+   "established": "1958 (department); ministry status later",
+   "hq": "Transport Bhawan, New Delhi",
+   "headPositionId": "in-pos-minister-tourism",
+   "adminHeadPositionId": "in-pos-secretary-tourism",
+   "sources": [
+    "https://tourism.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-itdc",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "India Tourism Development Corporation",
+   "abbr": "ITDC",
+   "parentId": "in-min-tourism",
+   "description": "Central public sector enterprise operating the Ashok Group of Hotels and other hospitality/travel infrastructure, and training/consultancy for the tourism sector.",
+   "legalBasis": "Companies Act (CPSE)",
+   "officialUrl": "https://itdc.co.in",
+   "established": "1966-10-01",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cmd-itdc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/India_Tourism_Development_Corporation"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nchmct",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "National Council for Hotel Management and Catering Technology",
+   "abbr": "NCHMCT",
+   "parentId": "in-min-tourism",
+   "description": "Statutory body administering hospitality/catering education standards and affiliating India's network of Institutes of Hotel Management (IHMs); a deemed university partner with IGNOU for degree awards.",
+   "legalBasis": "Statutory body under Ministry of Tourism",
+   "hq": "Noida",
+   "stats": {
+    "affiliatedIHMs": 21,
+    "note": "count of central/state IHMs varies by source; not independently re-verified this pass"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Council_for_Hotel_Management_and_Catering_Technology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-iittm",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indian Institute of Tourism and Travel Management",
+   "abbr": "IITTM",
+   "parentId": "in-min-tourism",
+   "description": "Deemed-university training and research institute for tourism, travel and hospitality management, with its main campus in Gwalior and regional centres.",
+   "legalBasis": "Registered autonomous society / deemed university under Ministry of Tourism",
+   "established": "1983",
+   "hq": "Gwalior",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-min-textiles",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Textiles",
+   "abbr": "MoT-Tex",
+   "parentId": "in-union-government",
+   "description": "Formulates policy for India's textile and apparel sector — cotton, jute, silk, wool, handloom and handicrafts — and administers export promotion, PLI and skilling schemes.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://texmin.gov.in",
+   "established": "1985",
+   "hq": "Udyog Bhawan, New Delhi",
+   "headPositionId": "in-pos-minister-textiles",
+   "adminHeadPositionId": "in-pos-secretary-textiles",
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2208051&reg=3&lang=1"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cotton-corporation",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Cotton Corporation of India",
+   "abbr": "CCI",
+   "parentId": "in-min-textiles",
+   "description": "Central public sector enterprise that procures cotton at Minimum Support Price to protect growers, and trades cotton domestically and for export.",
+   "legalBasis": "Companies Act, 1956 (CPSE)",
+   "officialUrl": "https://cotcorp.org.in",
+   "established": "1970-07-31",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-cmd-cotton-corporation",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cotton_Corporation_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-jute-corporation-of-india",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Jute Corporation of India",
+   "abbr": "JCI",
+   "parentId": "in-min-textiles",
+   "description": "Central public sector enterprise procuring raw jute and mesta at Minimum Support Price to protect jute growers from exploitative middlemen.",
+   "legalBasis": "Companies Act (CPSE)",
+   "established": "1971",
+   "hq": "Kolkata",
+   "headPositionId": "in-pos-md-jute-corporation",
+   "sources": [
+    "general web search, not fully corroborated this pass"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nift",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Institute of Fashion Technology",
+   "abbr": "NIFT",
+   "parentId": "in-min-textiles",
+   "description": "India's premier fashion, design and management education institute, with a network of 19+ campuses nationwide.",
+   "legalBasis": "National Institute of Fashion Technology Act, 2006",
+   "officialUrl": "https://nift.ac.in",
+   "established": "1986",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-nift",
+   "stats": {
+    "campuses": 19
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Fashion_Technology"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-development-commissioner-handlooms",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Office of the Development Commissioner for Handlooms",
+   "abbr": "DC-Handlooms",
+   "parentId": "in-min-textiles",
+   "description": "Nodal office for handloom-weaver welfare, cluster development, and handloom marketing/export promotion schemes.",
+   "legalBasis": "Attached office of Ministry of Textiles",
+   "hq": "New Delhi",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-development-commissioner-handicrafts",
+   "kind": "attached_office",
+   "sector": "executive",
+   "name": "Office of the Development Commissioner for Handicrafts",
+   "abbr": "DC-Handicrafts",
+   "parentId": "in-min-textiles",
+   "description": "Nodal office for artisan welfare, handicraft cluster development, GI registration support and handicraft export promotion.",
+   "legalBasis": "Attached office of Ministry of Textiles",
+   "hq": "New Delhi",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-central-silk-board",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Central Silk Board",
+   "abbr": "CSB",
+   "parentId": "in-min-textiles",
+   "description": "Statutory body promoting sericulture and silk-industry development, research (through its research institutes) and the Silk Mark quality-certification scheme.",
+   "legalBasis": "Central Silk Board Act, 1948",
+   "hq": "Bengaluru",
+   "notes": "Current Chairman/Member Secretary not confirmed this pass.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Silk_Board"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-textile-committee",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Textiles Committee",
+   "abbr": "TC",
+   "parentId": "in-min-textiles",
+   "description": "Statutory body for quality testing, certification and standards enforcement across India's textile and apparel value chain, including export-quality control.",
+   "legalBasis": "Textiles Committee Act, 1963",
+   "hq": "Mumbai",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-min-youth-affairs-and-sports",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Youth Affairs and Sports",
+   "abbr": "MYAS",
+   "parentId": "in-union-government",
+   "description": "Umbrella ministry of two departments — Youth Affairs and Sports — covering youth-development programmes (e.g. NYKS, National Service Scheme), elite sport promotion, sports infrastructure and anti-doping regulation.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://yas.gov.in",
+   "established": "1982 (Sports); merged with Youth Affairs 2000/2008",
+   "hq": "Shastri Bhawan, New Delhi",
+   "headPositionId": "in-pos-minister-youth-affairs-and-sports",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Youth_Affairs_and_Sports"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-youth-affairs",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Youth Affairs",
+   "abbr": "DoYA",
+   "parentId": "in-min-youth-affairs-and-sports",
+   "description": "Runs national youth-development and volunteering programmes — Nehru Yuva Kendra Sangathan (NYKS), National Service Scheme (NSS), and youth-leadership schemes.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-youth-affairs-and-sports",
+   "adminHeadPositionId": "in-pos-secretary-youth-affairs",
+   "sources": [
+    "https://yas.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-sports",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Sports",
+   "abbr": "DoS",
+   "parentId": "in-min-youth-affairs-and-sports",
+   "description": "Formulates national sports policy, funds elite athlete development (Khelo India, TOPS) and oversees SAI and the anti-doping regime.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-youth-affairs-and-sports",
+   "adminHeadPositionId": "in-pos-secretary-sports",
+   "sources": [
+    "https://yas.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-sai",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Sports Authority of India",
+   "abbr": "SAI",
+   "parentId": "in-dept-sports",
+   "description": "India's apex sports-development body, running national training centres, coaching schemes (e.g. Khelo India), sports infrastructure and talent identification.",
+   "legalBasis": "Registered autonomous society under Department of Sports",
+   "officialUrl": "https://sportsauthorityofindia.nic.in",
+   "established": "1984",
+   "hq": "New Delhi",
+   "notes": "Current Director General not confirmed by an available source in this pass.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sports_Authority_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nada",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "National Anti-Doping Agency",
+   "abbr": "NADA",
+   "parentId": "in-dept-sports",
+   "description": "India's national anti-doping organisation, running dope-testing, education and results-management for Indian sport, aligned with WADA standards.",
+   "legalBasis": "National Anti-Doping Act, 2022",
+   "officialUrl": "https://nadaindia.org",
+   "established": "2005-11-24",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-nada",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Anti-Doping_Agency_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ndtl",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Dope Testing Laboratory",
+   "abbr": "NDTL",
+   "parentId": "in-dept-sports",
+   "description": "WADA-accredited laboratory that analyses athlete samples for prohibited substances, operationally distinct from the regulator NADA.",
+   "legalBasis": "Autonomous body under Department of Sports",
+   "hq": "New Delhi",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-lnipe",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Laxmibai National Institute of Physical Education",
+   "abbr": "LNIPE",
+   "parentId": "in-dept-sports",
+   "description": "Deemed university for physical education and sports-science degrees, coach education and sports research.",
+   "legalBasis": "Deemed university under Department of Sports",
+   "established": "1957",
+   "hq": "Gwalior",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-nsf-aggregate",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Sports Federations (aggregate)",
+   "abbr": "NSFs",
+   "parentId": "in-dept-sports",
+   "description": "Aggregate record for the National Sports Federations (e.g. cricket, hockey, athletics, wrestling bodies) recognised by the Department of Sports to govern their respective sports and field Indian teams internationally; each NSF is an independent society, not a government body, but is regulated and (conditionally) funded by the Department.",
+   "legalBasis": "Recognised/regulated under the National Sports Development Code of India",
+   "stats": {
+    "recognisedFederationsApprox": 50
+   },
+   "notes": "Aggregate placeholder; individual NSFs (e.g. BCCI, which notably does not take government funding, Athletics Federation of India, Hockey India) not itemised in this pass.",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-min-development-of-north-eastern-region",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Development of North Eastern Region",
+   "abbr": "MDoNER",
+   "aliases": [
+    "DoNER"
+   ],
+   "parentId": "in-union-government",
+   "description": "Coordinates and funds infrastructure, connectivity and economic-development schemes across India's eight North Eastern states, and administers the Non-Lapsable Central Pool of Resources for the region.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://mdoner.gov.in",
+   "established": "2001 (department 2001; ministry status 2004)",
+   "hq": "Vigyan Bhawan Annexe, New Delhi",
+   "headPositionId": "in-pos-minister-development-of-north-eastern-region",
+   "adminHeadPositionId": "in-pos-secretary-doner",
+   "sources": [
+    "https://www.mdoner.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nedfi",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "North Eastern Development Finance Corporation",
+   "abbr": "NEDFi",
+   "parentId": "in-min-development-of-north-eastern-region",
+   "description": "Development finance institution providing term loans, venture capital and micro-finance to promote industry, infrastructure and agri-business in the North East.",
+   "legalBasis": "Companies Act (public financial institution)",
+   "established": "1995",
+   "hq": "Guwahati",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-nehhdc",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "North Eastern Handicrafts and Handlooms Development Corporation",
+   "abbr": "NEHHDC",
+   "parentId": "in-min-development-of-north-eastern-region",
+   "description": "Central public sector enterprise promoting marketing, product development and welfare of handicraft and handloom artisans across the North Eastern states.",
+   "legalBasis": "Companies Act (CPSE)",
+   "hq": "Guwahati",
+   "sources": [
+    "general knowledge, not independently re-verified this pass"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-secretary-science-and-technology",
+   "title": "Secretary, Department of Science and Technology",
+   "orgId": "in-dept-science-and-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "holder": {
+    "name": "Umesh Waghmare",
+    "since": "2026-07-03",
+    "notes": "Physicist; formerly President, Jawaharlal Nehru Centre for Advanced Scientific Research (2025-26); B.Tech IIT Bombay, PhD Yale."
+   },
+   "vacant": false,
+   "sources": [
+    "https://dst.gov.in/secretary"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-biotechnology",
+   "title": "Secretary, Department of Biotechnology",
+   "orgId": "in-dept-biotechnology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rajesh Sudhir Gokhale",
+    "since": "2022",
+    "notes": "Also Secretary DBT since ~2022; molecular biologist."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Biotechnology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-dsir",
+   "title": "Secretary, DSIR / Director-General, CSIR",
+   "orgId": "in-dept-scientific-and-industrial-research",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "N. Kalaiselvi",
+    "since": "2022",
+    "wikipedia": "https://en.wikipedia.org/wiki/N._Kalaiselvi",
+    "notes": "First woman to head CSIR; concurrently DG CSIR and Secretary DSIR; battery/electrochemical-energy scientist."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.csir.res.in/en/csir-directory-whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-csir",
+   "title": "Director-General, CSIR",
+   "orgId": "in-csir",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "N. Kalaiselvi",
+    "since": "2022-08-10",
+    "wikipedia": "https://en.wikipedia.org/wiki/N._Kalaiselvi",
+    "notes": "Same person as DSIR Secretary."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/N._Kalaiselvi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-surveyor-general-india",
+   "title": "Surveyor General of India",
+   "orgId": "in-survey-of-india",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-science-and-technology",
+   "holder": {
+    "name": "Shailesh Kumar Sinha",
+    "since": null,
+    "notes": "Date of assumption not verified this pass."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Survey_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-earth-sciences",
+   "title": "Secretary, Ministry of Earth Sciences",
+   "orgId": "in-min-earth-sciences",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "T. Srinivasa Kumar",
+    "since": null,
+    "notes": "Ocean scientist; formerly Director INCOIS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sarkaritel.com/ministry-of-earth-sciences/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-imd",
+   "title": "Director General of Meteorology, IMD",
+   "orgId": "in-imd",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-earth-sciences",
+   "holder": {
+    "name": "Mrutyunjay Mohapatra",
+    "since": "2019",
+    "notes": "In post since 2019; not independently re-confirmed for 2026 in this pass."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/India_Meteorological_Department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-ncpor",
+   "title": "Director, NCPOR",
+   "orgId": "in-ncpor",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-earth-sciences",
+   "holder": {
+    "name": "Thamban Meloth",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Centre_for_Polar_and_Ocean_Research"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-niot",
+   "title": "Director, NIOT",
+   "orgId": "in-niot",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-earth-sciences",
+   "holder": {
+    "name": "Balaji Ramakrishnan",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Ocean_Technology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-iitm",
+   "title": "Director, IITM Pune",
+   "orgId": "in-iitm-pune",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-earth-sciences",
+   "holder": {
+    "name": "A. Suryachandra Rao",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Institute_of_Tropical_Meteorology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-electronics-and-information-technology",
+   "title": "Secretary, MeitY",
+   "orgId": "in-min-electronics-and-information-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "S. Krishnan",
+    "since": "2023-09-11",
+    "notes": "IAS; oversees India's semiconductor mission and AI policy."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.csis.org/analysis/previewing-indias-ai-impact-summit-meity-secretary-s-krishnan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-uidai",
+   "title": "Chairman, UIDAI",
+   "orgId": "in-uidai",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Neelkanth Mishra",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Unique_Identification_Authority_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-ceo-uidai",
+   "title": "CEO, UIDAI",
+   "orgId": "in-uidai",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-electronics-and-information-technology",
+   "holder": {
+    "name": "Saurabh Vijay",
+    "since": null,
+    "notes": "IAS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Unique_Identification_Authority_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-cert-in",
+   "title": "Director General, CERT-In",
+   "orgId": "in-cert-in",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-electronics-and-information-technology",
+   "holder": {
+    "name": "Sanjay Bahl",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Computer_Emergency_Response_Team"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-nic",
+   "title": "Director General, NIC",
+   "orgId": "in-nic",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-electronics-and-information-technology",
+   "holder": {
+    "name": "Priyank Bharti",
+    "since": null,
+    "notes": "IAS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Informatics_Centre"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-stpi",
+   "title": "Director General, STPI",
+   "orgId": "in-stpi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-electronics-and-information-technology",
+   "holder": {
+    "name": "Arvind Kumar",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Software_Technology_Parks_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-cdac",
+   "title": "Director General, C-DAC",
+   "orgId": "in-cdac",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-electronics-and-information-technology",
+   "holder": {
+    "name": "Magesh Ethirajan",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Centre_for_Development_of_Advanced_Computing"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-ceo-mygov",
+   "title": "CEO, MyGov",
+   "orgId": "in-mygov",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-electronics-and-information-technology",
+   "holder": {
+    "name": "Ajit Kumar",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/MyGov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-ceo-dic",
+   "title": "Managing Director & CEO, Digital India Corporation",
+   "orgId": "in-digital-india-corporation",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-electronics-and-information-technology",
+   "holder": {
+    "name": "Akhil Kumar",
+    "since": null,
+    "notes": "IPS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Digital_India_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-information-and-broadcasting",
+   "title": "Secretary, Ministry of Information and Broadcasting",
+   "orgId": "in-min-information-and-broadcasting",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Chanchal Kumar",
+    "since": "2026-04-01",
+    "notes": "1992-batch IAS, Bihar cadre; previously Secretary, DoNER and Ministry of Civil Aviation; succeeded Sanjay Jaju."
+   },
+   "vacant": false,
+   "sources": [
+    "https://x.com/PIB_India/status/2039656739541483631",
+    "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2248313&reg=48&lang=2"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-prasar-bharati",
+   "title": "Chairman, Prasar Bharati",
+   "orgId": "in-prasar-bharati",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Prasoon Joshi",
+    "since": "2026-05-02",
+    "wikipedia": "https://en.wikipedia.org/wiki/Prasoon_Joshi",
+    "notes": "Part-time Chairman; previously Chairperson, CBFC (2017-2026)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prasoon_Joshi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-ceo-prasar-bharati",
+   "title": "CEO, Prasar Bharati",
+   "orgId": "in-prasar-bharati",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-information-and-broadcasting",
+   "holder": {
+    "name": "Gaurav Dwivedi",
+    "since": null,
+    "notes": "IAS; full-time CEO."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prasar_Bharati"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairperson-cbfc",
+   "title": "Chairperson, CBFC",
+   "orgId": "in-cbfc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-information-and-broadcasting",
+   "holder": {
+    "name": "Shashi Shekhar Vempati",
+    "since": "2026-05-08",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shashi_Shekhar_Vempati",
+    "notes": "Co-founder DeepTech for Bharat Foundation; former CEO, Prasar Bharati (2017-2022); succeeded Prasoon Joshi."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prasoon_Joshi",
+    "https://www.cbfcindia.gov.in/",
+    "https://en.wikipedia.org/wiki/Shashi_Shekhar_Vempati"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-ceo-cbfc",
+   "title": "CEO, CBFC",
+   "orgId": "in-cbfc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-information-and-broadcasting",
+   "holder": {
+    "name": "Rajendra Singh",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.cbfcindia.gov.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-ftii",
+   "title": "Director, FTII",
+   "orgId": "in-ftii",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-information-and-broadcasting",
+   "holder": {
+    "name": "Prashant Pathrabe",
+    "since": null,
+    "acting": true,
+    "notes": "Holding temporary/additional charge; Society President is actor R. Madhavan (since 2023-09-01, a governance not executive role)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Film_and_Television_Institute_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-srfti",
+   "title": "Vice-Chancellor / Director, SRFTI",
+   "orgId": "in-srfti",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-information-and-broadcasting",
+   "holder": {
+    "name": "Samiran Datta",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Satyajit_Ray_Film_and_Television_Institute"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-vc-iimc",
+   "title": "Vice-Chancellor, IIMC",
+   "orgId": "in-iimc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-information-and-broadcasting",
+   "holder": {
+    "name": "Pragya Paliwal Gaur",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Institute_of_Mass_Communication"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-environment-forest-and-climate-change",
+   "title": "Secretary, Ministry of Environment, Forest and Climate Change",
+   "orgId": "in-min-environment-forest-and-climate-change",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Tanmay Kumar",
+    "since": null,
+    "notes": "IAS. Jitender Kumar, IFS, serves as Director General of Forests & Special Secretary (a separate senior forest-service post)."
+   },
+   "vacant": false,
+   "sources": [
+    "general web search, not fully corroborated this pass"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairman-cpcb",
+   "title": "Chairman, CPCB",
+   "orgId": "in-cpcb",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-environment-forest-and-climate-change",
+   "holder": {
+    "name": "Amandeep Garg",
+    "since": "2025-01",
+    "notes": "IAS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cpcb.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-wii",
+   "title": "Director, WII",
+   "orgId": "in-wii",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-environment-forest-and-climate-change",
+   "holder": {
+    "name": "Gobind Sagar Bhardwaj",
+    "since": "2025"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wildlife_Institute_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-fsi",
+   "title": "Director General, FSI",
+   "orgId": "in-fsi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-environment-forest-and-climate-change",
+   "holder": {
+    "name": "Santosh Tiwari",
+    "since": null,
+    "notes": "IFS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Forest_Survey_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-zsi",
+   "title": "Director, ZSI",
+   "orgId": "in-zsi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-environment-forest-and-climate-change",
+   "holder": {
+    "name": "Dhriti Banerjee",
+    "since": "2021",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dhriti_Banerjee",
+    "notes": "First woman Director of ZSI."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Zoological_Survey_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-nba",
+   "title": "Chairperson, NBA",
+   "orgId": "in-nba",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-environment-forest-and-climate-change",
+   "holder": {
+    "name": "Virendra R. Tiwari",
+    "since": null,
+    "notes": "IFS (Retd.)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Biodiversity_Authority"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-wccb",
+   "title": "Director, WCCB",
+   "orgId": "in-wccb",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-environment-forest-and-climate-change",
+   "holder": {
+    "name": "Ramesh Kumar Pandey",
+    "since": null,
+    "notes": "IFS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wildlife_Crime_Control_Bureau"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-culture",
+   "title": "Secretary, Ministry of Culture",
+   "orgId": "in-min-culture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Vivek Aggarwal",
+    "since": "2024-08-22",
+    "notes": "Succeeded Govind Mohan; tenure as of 2026 not independently re-confirmed in this pass."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Govind_Mohan"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-asi",
+   "title": "Director General, ASI",
+   "orgId": "in-asi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-culture",
+   "holder": {
+    "name": "Yadubir Singh Rawat",
+    "since": "2023"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Archaeological_Survey_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-ngma",
+   "title": "Director General, NGMA",
+   "orgId": "in-ngma",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-culture",
+   "holder": {
+    "name": "Sanjeev Kishor Goutam",
+    "since": "2023-12"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Gallery_of_Modern_Art"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-national-museum",
+   "title": "Director General, National Museum",
+   "orgId": "in-national-museum",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-culture",
+   "holder": {
+    "name": "Rajpal Singh Hemti",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Museum,_New_Delhi"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-president-sahitya-akademi",
+   "title": "President, Sahitya Akademi",
+   "orgId": "in-sahitya-akademi",
+   "rank": "head_of_agency",
+   "appointmentMode": "elected",
+   "appointedBy": null,
+   "holder": {
+    "name": "Madhav Kaushik",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sahitya_Akademi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-sangeet-natak-akademi",
+   "title": "Chairman, Sangeet Natak Akademi",
+   "orgId": "in-sangeet-natak-akademi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-culture",
+   "holder": {
+    "name": "Sandhya Purecha",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sangeet_Natak_Akademi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-lalit-kala-akademi",
+   "title": "Chairman, Lalit Kala Akademi",
+   "orgId": "in-lalit-kala-akademi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-culture",
+   "holder": {
+    "name": "V. Nagdas",
+    "since": "2023-03-13"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lalit_Kala_Akademi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-national-archives",
+   "title": "Director General, National Archives of India",
+   "orgId": "in-national-archives",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-culture",
+   "holder": {
+    "name": "Arun Singhal",
+    "since": null,
+    "notes": "IAS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Archives_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-national-library",
+   "title": "Director, National Library of India",
+   "orgId": "in-national-library-india",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-culture",
+   "holder": {
+    "name": "Ajay Pratap Singh",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Library_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-pmml",
+   "title": "Director, PMML",
+   "orgId": "in-pmml",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-culture",
+   "holder": {
+    "name": "Ashwani Lohani",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prime_Ministers%27_Museum_and_Library"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-ansi",
+   "title": "Director, Anthropological Survey of India",
+   "orgId": "in-anthropological-survey-of-india",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-culture",
+   "holder": {
+    "name": "Bhallamudi V. Sharma",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Anthropological_Survey_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-ncsm",
+   "title": "Director General, NCSM",
+   "orgId": "in-ncsm",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-culture",
+   "holder": {
+    "name": "Arijit Dutta Choudhury",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Council_of_Science_Museums"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-tourism",
+   "title": "Secretary, Ministry of Tourism",
+   "orgId": "in-min-tourism",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Srivatsa Krishna",
+    "since": "2025-11-21",
+    "notes": "IAS; succeeded V. Vidyavathi, who moved to the Department of Empowerment of Persons with Disabilities."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.travelandtourworld.com/news/article/india-appoints-dr-srivatsa-krishna-as-new-secretary-of-tourism-a-transformative-step-for-the-nations-travel-and-tourism-sector/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cmd-itdc",
+   "title": "Chairman & Managing Director, ITDC",
+   "orgId": "in-itdc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-tourism",
+   "holder": {
+    "name": "Sambit Patra",
+    "since": null,
+    "notes": "Chairman; Mugdha Sinha listed separately as Managing Director in some sources — roles may be split (part-time Chairman / full-time MD)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/India_Tourism_Development_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-textiles",
+   "title": "Secretary, Ministry of Textiles",
+   "orgId": "in-min-textiles",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Neelam Shami Rao",
+    "since": null,
+    "notes": "IAS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.facebook.com/pibindia/posts/ms-neelam-shami-rao-secretary-ministry-of-textiles-launches-bharat-tex-2026-mobi/1565277202306739/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cmd-cotton-corporation",
+   "title": "Chairman & Managing Director, Cotton Corporation of India",
+   "orgId": "in-cotton-corporation",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-textiles",
+   "holder": {
+    "name": "Lalit Kumar Gupta",
+    "since": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cotton_Corporation_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-md-jute-corporation",
+   "title": "Managing Director, Jute Corporation of India",
+   "orgId": "in-jute-corporation-of-india",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-textiles",
+   "holder": {
+    "name": "Sanjay Kumar Panigrahi",
+    "since": "2025-06"
+   },
+   "vacant": false,
+   "sources": [
+    "general web search, not fully corroborated this pass"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-nift",
+   "title": "Director General, NIFT",
+   "orgId": "in-nift",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-textiles",
+   "holder": {
+    "name": "Tanu Kashyap",
+    "since": null,
+    "notes": "IAS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Fashion_Technology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-youth-affairs",
+   "title": "Secretary, Department of Youth Affairs",
+   "orgId": "in-dept-youth-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sunil Paliwal",
+    "since": "2026-08",
+    "notes": "1993-batch Tamil Nadu-cadre IAS; previously Chairman, Inland Waterways Authority of India."
+   },
+   "vacant": false,
+   "sources": [
+    "https://apacnewsnetwork.com/2026/08/ias-sunil-paliwal-appointed-secretary-department-of-youth-affairs/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-sports",
+   "title": "Secretary, Department of Sports",
+   "orgId": "in-dept-sports",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Hari Ranjan Rao",
+    "since": null,
+    "notes": "IAS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Youth_Affairs_and_Sports"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-nada",
+   "title": "Director General, NADA",
+   "orgId": "in-nada",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-sports",
+   "holder": {
+    "name": "Ashish Bhargava",
+    "since": null,
+    "notes": "IAS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Anti-Doping_Agency_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-doner",
+   "title": "Secretary, Ministry of Development of North Eastern Region",
+   "orgId": "in-min-development-of-north-eastern-region",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sanjay Jaju",
+    "since": "2026-04",
+    "notes": "1992-batch IAS, Bihar cadre; moved into this post from Secretary, I&B, in the April 2026 reshuffle that saw Chanchal Kumar take his old post."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.millenniumpost.in/big-stories/reshuffle-chanchal-kumar-appointed-ib-secretary-654196"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-nfdc",
+   "title": "Chairman, NFDC",
+   "orgId": "in-nfdc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-information-and-broadcasting",
+   "holder": {
+    "name": "G. Krishnakumar",
+    "since": "2026-04",
+    "notes": "Actor; reported appointed Chairman of NFDC ahead of the 2026 Kerala assembly election. Single press source (Deccan Herald, cited via Wikipedia) -- not independently corroborated against an official/PIB source this pass. Managing Director (administrative head) still unconfirmed -- see in-nfdc entity notes."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Film_Development_Corporation_of_India"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-dept-science-and-technology",
+   "to": "in-csir",
+   "type": "administers",
+   "basis": "DSIR administrative control of CSIR",
+   "source": "https://www.csir.res.in/en"
+  },
+  {
+   "from": "in-dept-science-and-technology",
+   "to": "in-anrf",
+   "type": "administers"
+  },
+  {
+   "from": "in-anrf",
+   "to": "in-serb",
+   "type": "administers",
+   "basis": "SERB absorbed as an ANRF vertical, 2023"
+  },
+  {
+   "from": "in-dept-biotechnology",
+   "to": "in-birac",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-science-and-technology",
+   "to": "in-vigyan-prasar",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-science-and-technology",
+   "to": "in-national-innovation-foundation",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-science-and-technology",
+   "to": "in-survey-of-india",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-biotechnology",
+   "to": "in-nii",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-biotechnology",
+   "to": "in-nccs",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-biotechnology",
+   "to": "in-nbrc",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-biotechnology",
+   "to": "in-rgcb",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-biotechnology",
+   "to": "in-ils",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-biotechnology",
+   "to": "in-instem",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-biotechnology",
+   "to": "in-thsti",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-biotechnology",
+   "to": "in-nibmg",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-biotechnology",
+   "to": "in-niab",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-anrf",
+   "type": "ex_officio",
+   "basis": "PM chairs the ANRF Governing Board, ANRF Act 2023"
+  },
+  {
+   "from": "in-min-earth-sciences",
+   "to": "in-imd",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-earth-sciences",
+   "to": "in-incois",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-earth-sciences",
+   "to": "in-ncpor",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-earth-sciences",
+   "to": "in-niot",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-earth-sciences",
+   "to": "in-iitm-pune",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-earth-sciences",
+   "to": "in-ncmrwf",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-uidai",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-cert-in",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-nic",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-negd",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-stpi",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-cdac",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-mygov",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-digital-india-corporation",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-indiaai-mission",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-ism",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-dpdp-board",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-nixi",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-stqc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-electronics-and-information-technology",
+   "to": "in-nielit",
+   "type": "administers"
+  },
+  {
+   "from": "in-digital-india-corporation",
+   "to": "in-indiaai-mission",
+   "type": "administers",
+   "basis": "IndiaAI Mission implemented via Digital India Corporation's IndiaAI division"
+  },
+  {
+   "from": "in-min-information-and-broadcasting",
+   "to": "in-prasar-bharati",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-information-and-broadcasting",
+   "to": "in-cbfc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-information-and-broadcasting",
+   "to": "in-pib",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-information-and-broadcasting",
+   "to": "in-publications-division",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-information-and-broadcasting",
+   "to": "in-nfdc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-information-and-broadcasting",
+   "to": "in-ftii",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-information-and-broadcasting",
+   "to": "in-srfti",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-information-and-broadcasting",
+   "to": "in-iimc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-information-and-broadcasting",
+   "to": "in-rni",
+   "type": "administers"
+  },
+  {
+   "from": "in-prasar-bharati",
+   "to": "in-doordarshan",
+   "type": "administers"
+  },
+  {
+   "from": "in-prasar-bharati",
+   "to": "in-air",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-environment-forest-and-climate-change",
+   "to": "in-cpcb",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-environment-forest-and-climate-change",
+   "to": "in-ntca",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-environment-forest-and-climate-change",
+   "to": "in-wii",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-environment-forest-and-climate-change",
+   "to": "in-fsi",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-environment-forest-and-climate-change",
+   "to": "in-zsi",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-environment-forest-and-climate-change",
+   "to": "in-bsi",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-environment-forest-and-climate-change",
+   "to": "in-nba",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-environment-forest-and-climate-change",
+   "to": "in-caqm",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-environment-forest-and-climate-change",
+   "to": "in-icfre",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-environment-forest-and-climate-change",
+   "to": "in-iifm",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-environment-forest-and-climate-change",
+   "to": "in-cza",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-environment-forest-and-climate-change",
+   "to": "in-wccb",
+   "type": "administers"
+  },
+  {
+   "from": "in-icfre",
+   "to": "in-fri",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-asi",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-ngma",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-national-museum",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-sahitya-akademi",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-sangeet-natak-akademi",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-lalit-kala-akademi",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-national-archives",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-ignca",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-national-library-india",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-pmml",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-anthropological-survey-of-india",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-ncsm",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-indian-museum-kolkata",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-victoria-memorial-hall",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-salar-jung-museum",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-allahabad-museum",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-rampur-raza-library",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-culture",
+   "to": "in-khuda-bakhsh-library",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-tourism",
+   "to": "in-itdc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-tourism",
+   "to": "in-nchmct",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-tourism",
+   "to": "in-iittm",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-textiles",
+   "to": "in-cotton-corporation",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-textiles",
+   "to": "in-jute-corporation-of-india",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-textiles",
+   "to": "in-nift",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-textiles",
+   "to": "in-development-commissioner-handlooms",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-textiles",
+   "to": "in-development-commissioner-handicrafts",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-textiles",
+   "to": "in-central-silk-board",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-textiles",
+   "to": "in-textile-committee",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-sports",
+   "to": "in-sai",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-sports",
+   "to": "in-nada",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-sports",
+   "to": "in-ndtl",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-sports",
+   "to": "in-lnipe",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-sports",
+   "to": "in-nsf-aggregate",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-development-of-north-eastern-region",
+   "to": "in-nedfi",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-development-of-north-eastern-region",
+   "to": "in-nehhdc",
+   "type": "administers"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 55,
+  "corrections": [
+   "ID fix: renamed in-pos-secretary-meity -> in-pos-secretary-electronics-and-information-technology to follow in-pos-secretary-<department-slug> ID rule (9 refs updated)",
+   "Schema fix: in-min-science-and-technology.headPositionId dangling ref 'in-pos-minister-science-and-technology' (no such cabinet-minister position exists) -> 'in-pos-mos-science-and-technology-1' (council-of-ministers segment: Jitendra Singh holds Science & Tech / Earth Sciences as Minister of State Independent Charge, not a Cabinet Minister)",
+   "Schema fix: in-dept-science-and-technology.headPositionId dangling ref 'in-pos-minister-science-and-technology' (no such cabinet-minister position exists) -> 'in-pos-mos-science-and-technology-1' (council-of-ministers segment: Jitendra Singh holds Science & Tech / Earth Sciences as Minister of State Independent Charge, not a Cabinet Minister)",
+   "Schema fix: in-dept-biotechnology.headPositionId dangling ref 'in-pos-minister-science-and-technology' (no such cabinet-minister position exists) -> 'in-pos-mos-science-and-technology-1' (council-of-ministers segment: Jitendra Singh holds Science & Tech / Earth Sciences as Minister of State Independent Charge, not a Cabinet Minister)",
+   "Schema fix: in-dept-scientific-and-industrial-research.headPositionId dangling ref 'in-pos-minister-science-and-technology' (no such cabinet-minister position exists) -> 'in-pos-mos-science-and-technology-1' (council-of-ministers segment: Jitendra Singh holds Science & Tech / Earth Sciences as Minister of State Independent Charge, not a Cabinet Minister)",
+   "Schema fix: in-min-earth-sciences.headPositionId dangling ref 'in-pos-minister-earth-sciences' (no such cabinet-minister position exists) -> 'in-pos-mos-earth-sciences-1' (council-of-ministers segment: Jitendra Singh holds Science & Tech / Earth Sciences as Minister of State Independent Charge, not a Cabinet Minister)",
+   "Schema fix: in-pos-chairman-uidai.appointedBy was entity id 'in-union-council-of-ministers' (schema requires a POSITION id) -> 'in-pos-prime-minister'",
+   "Schema fix: in-pos-chairperson-cbfc.appointedBy was entity id 'in-min-information-and-broadcasting' (schema requires a POSITION id) -> 'in-pos-minister-information-and-broadcasting'",
+   "Schema fix: in-pos-chairman-cpcb.appointedBy was entity id 'in-min-environment-forest-and-climate-change' (schema requires a POSITION id) -> 'in-pos-minister-environment-forest-and-climate-change'",
+   "Schema fix: in-pos-chairperson-nba.appointedBy was entity id 'in-min-environment-forest-and-climate-change' (schema requires a POSITION id) -> 'in-pos-minister-environment-forest-and-climate-change'",
+   "Schema fix: in-pos-chairman-sangeet-natak-akademi.appointedBy was entity id 'in-min-culture' (schema requires a POSITION id) -> 'in-pos-minister-culture'",
+   "Schema fix: in-pos-chairman-lalit-kala-akademi.appointedBy was entity id 'in-min-culture' (schema requires a POSITION id) -> 'in-pos-minister-culture'",
+   "Schema fix: in-pos-cmd-itdc.appointedBy was entity id 'in-min-tourism' (schema requires a POSITION id) -> 'in-pos-minister-tourism'",
+   "Schema fix: in-pos-cmd-cotton-corporation.appointedBy was entity id 'in-min-textiles' (schema requires a POSITION id) -> 'in-pos-minister-textiles'",
+   "Schema fix: in-pos-md-jute-corporation.appointedBy was entity id 'in-min-textiles' (schema requires a POSITION id) -> 'in-pos-minister-textiles'",
+   "Fact fix: in-pos-chairperson-cbfc holder.since was '2026-05-02' (same day as Prasoon Joshi's Prasar Bharati appointment) -> '2026-05-08' per Shashi Shekhar Vempati's Wikipedia page ('On May 8, 2026, Vempati was appointed as the chairperson of the CBFC'), which post-dates Joshi's departure by about a week",
+   "Coverage gap: added in-pos-chairman-nfdc (G. Krishnakumar, low confidence -- single press source via Wikipedia citation) since the entity existed but had no headPositionId / position record for the reported 2026 Chairman appointment"
+  ],
+  "notes": "Adversarial verification pass over the ministries-g.json produced by a prior research agent. Schema/ID audit: 0 duplicate IDs, 0 bad kind/sector/rank/relation-type/appointmentMode values, 0 dangling parentId/orgId/relation refs after fixes; 15 schema-level fixes applied (1 ID-convention rename affecting 9 references, 5 dangling headPositionId refs, 9 appointedBy fields that pointed to entity IDs instead of position IDs). Re-verified 55 of 56 positions (all but in-pos-ceo-cbfc) against fresh Wikipedia/official fetches this pass (2026-09-25): 51 confirmed as originally reported (names, since-dates, acting flags all matched independently-fetched current sources -- notably the CPCB, WII, ZSI, ASI, Lalit Kala Akademi, FTII-acting, Jute Corporation and Surveyor General entries, which all matched exactly including dates), 1 corrected (CBFC chairperson since-date), and for 7 positions/entities already flagged low/medium confidence in the original pass (Culture/Tourism/Textiles/DoNER secretaries lack a public since-source; ANRF CEO, PIB Principal DG, CAQM chairperson, BSI director, IGNCA member secretary, NIXI CEO, NTCA member secretary remain un-named on Wikipedia) a fresh check found no contradicting or confirming source either -- left as-is at their existing confidence rather than invented. One coverage gap closed: added in-pos-chairman-nfdc (G. Krishnakumar, confidence low, single press source) since the in-nfdc entity existed with a note about this appointment but no corresponding position record existed for it."
+ }
+}

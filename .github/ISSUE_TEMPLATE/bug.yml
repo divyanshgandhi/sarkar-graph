@@ -1,0 +1,40 @@
+name: "Bug report"
+description: "Something in the app, the build pipeline, or the live/news layer is broken — not a data accuracy issue."
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For a wrong or missing fact about a government seat/body, use the "Data correction" or "Missing data"
+        templates instead — this one is for the software.
+  - type: textarea
+    id: what
+    attributes:
+      label: "What happened"
+      description: "What you did, what you expected, what actually happened."
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: "Steps to reproduce"
+      description: "As precise as you can — URL/route, what you clicked, what device/browser."
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: "Where"
+      description: "Deployed site, or local dev (pnpm dev)? Include the URL/path if applicable."
+      placeholder: "https://... or localhost:5190/..."
+  - type: textarea
+    id: env
+    attributes:
+      label: "Environment"
+      description: "Browser + OS, or Node version if this is a build/script issue (pnpm graph, pnpm check:layout, pnpm export, etc.)."
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Console output / error / screenshot"
+      description: "Paste any error text, stack trace, or console output. Attach a screenshot if it's visual."

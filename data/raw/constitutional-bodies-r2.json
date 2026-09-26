@@ -1,0 +1,1226 @@
+{
+ "segment": "constitutional-bodies-r2",
+ "asOf": "2026-09-25",
+ "notes": "Second-round pass over the same body set as data/raw/constitutional-bodies.json (round 1). Written to a separate file (constitutional-bodies-r2.json) per this segment's own brief rather than overwriting round 1, since both were produced by independent agents; a later merge step should reconcile them (they largely agree — see per-entity/position notes for the specific deltas r2 found). WebSearch was unavailable for this whole session (shared 200/200 budget already exhausted before this segment started, confirmed by the error: 'this session has used its web search budget (200 of 200 WebSearch calls)') — all r2 research used curl (desktop Chrome UA) against Wikipedia's parse API, official portals (fincomindia.nic.in, cag.gov.in, gstcouncil.gov.in), and WebFetch, plus pypdf against the Sixteenth Finance Commission's own report PDF. eci.gov.in and ncbc.nic.in-style Deputy-EC/Deputy-CAG rosters are JS-rendered SPAs curl cannot read, and browser tools are disallowed for this segment per SCHEMA.md, so Deputy ECs, Deputy CAGs, and the Special Officer for Linguistic Minorities' current holder remain unresolved (confidence: low, holder: null) rather than invented, matching round 1's approach for those same gaps. New/upgraded in r2 versus round 1: full 9-member UPSC roster with exact term-start/end dates (round 1 had only the Chairperson); UPSC sanctioned strength corrected from 11 to 10; CAG since-date (2024-11-21); NCBC Chairperson since-date (2026-03-18) plus 3 named Members and a confirmed-vacant Vice-Chairman seat (round 1 had the Chairperson only, at low confidence); the 16th Finance Commission's actual vertical-devolution recommendation — retaining the States' 41% share unchanged from FC-15 — sourced to Chapter 7 para 7.68 of the Commission's own report PDF (round 1 had explicitly left this blank); confirmation the 16th FC report was tabled in Parliament with no exact day found; an explicit checked-and-not-found result for whether a 17th FC has been constituted (it has not, so far as any source here shows); and the most recent confirmed GST Council meeting (56th, 3-4 September 2025, New Delhi) from the Council's own site.",
+ "entities": [
+  {
+   "id": "in-eci",
+   "kind": "constitutional_body",
+   "sector": "constitutional",
+   "name": "Election Commission of India",
+   "abbr": "ECI",
+   "aliases": [
+    "Nirvachan Sadan",
+    "EC of India"
+   ],
+   "parentId": "in-union-government",
+   "description": "Conducts and supervises elections to the Lok Sabha, Rajya Sabha, state legislatures, and the offices of President and Vice-President; a permanent multi-member constitutional body.",
+   "legalBasis": "Article 324 of the Constitution; Chief Election Commissioner and other Election Commissioners (Appointment, Conditions of Service and Term of Office) Act, 2023",
+   "legalSourceUrl": "https://www.legislative.gov.in/constitution-of-india",
+   "officialUrl": "https://www.eci.gov.in",
+   "established": "1950-01-25",
+   "hq": "Nirvachan Sadan, Ashoka Road, New Delhi",
+   "headPositionId": "in-pos-cec",
+   "employees": {
+    "count": 300,
+    "asOf": "2025",
+    "source": "https://en.wikipedia.org/wiki/Election_Commission_of_India"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Election_Commission_of_India",
+    "https://www.eci.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-eci-ceo-aggregate",
+   "kind": "attached_office",
+   "sector": "constitutional",
+   "name": "Chief Electoral Officers of States and UTs (aggregate)",
+   "aliases": [
+    "State CEOs"
+   ],
+   "parentId": "in-eci",
+   "description": "One Chief Electoral Officer per state/UT, appointed/designated under Section 13A of the Representation of the People Act, 1950, to supervise elections in that state/UT under the ECI's superintendence, direction and control.",
+   "legalBasis": "Representation of the People Act, 1950, Section 13A",
+   "legalSourceUrl": "https://www.indiacode.nic.in/handle/123456789/1555",
+   "officialUrl": "https://www.eci.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "seats": 36,
+   "sources": [
+    "https://www.eci.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-cag",
+   "kind": "constitutional_body",
+   "sector": "constitutional",
+   "name": "Comptroller and Auditor General of India",
+   "abbr": "CAG",
+   "aliases": [
+    "CAG of India"
+   ],
+   "parentId": "in-union-government",
+   "description": "Audits all receipts and expenditure of the Union and state governments, government-owned bodies and corporations, reporting to Parliament and state legislatures; is the head of the Indian Audit and Accounts Department (IA&AD).",
+   "legalBasis": "Article 148 of the Constitution; Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "legalSourceUrl": "https://www.legislative.gov.in/constitution-of-india",
+   "officialUrl": "https://cag.gov.in",
+   "established": "1858",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cag",
+   "employees": {
+    "count": 43576,
+    "asOf": "2020-03-01",
+    "source": "https://en.wikipedia.org/wiki/Comptroller_and_Auditor_General_of_India"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Comptroller_and_Auditor_General_of_India",
+    "https://cag.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-iaad",
+   "kind": "attached_office",
+   "sector": "constitutional",
+   "name": "Indian Audit and Accounts Department",
+   "abbr": "IA&AD",
+   "aliases": [
+    "IAAD"
+   ],
+   "parentId": "in-cag",
+   "description": "The professional cadre and field offices (headed by officers of the Indian Audit and Accounts Service) through which the CAG conducts audits of Union, state and local-body accounts across India.",
+   "legalBasis": "Article 148 read with the CAG's (DPC) Act, 1971",
+   "legalSourceUrl": "https://www.legislative.gov.in/constitution-of-india",
+   "officialUrl": "https://cag.gov.in",
+   "established": "1858",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cag",
+   "sources": [
+    "https://cag.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-upsc",
+   "kind": "constitutional_body",
+   "sector": "constitutional",
+   "name": "Union Public Service Commission",
+   "abbr": "UPSC",
+   "aliases": [
+    "UPSC"
+   ],
+   "parentId": "in-union-government",
+   "description": "Conducts recruitment examinations (Civil Services Examination etc.) and advises the Union government on recruitment rules and service/disciplinary matters for the All India Services and Central Civil Services.",
+   "legalBasis": "Articles 315-323 of the Constitution",
+   "legalSourceUrl": "https://www.legislative.gov.in/constitution-of-india",
+   "officialUrl": "https://upsc.gov.in",
+   "established": "1926-10-01",
+   "hq": "Dholpur House, Shahjahan Road, New Delhi",
+   "headPositionId": "in-pos-chair-upsc",
+   "seats": 10,
+   "stats": {
+    "workingStrength": 9,
+    "vacancies": 1,
+    "asOf": "2026-09-25",
+    "source": "https://en.wikipedia.org/wiki/Union_Public_Service_Commission"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Public_Service_Commission"
+   ],
+   "confidence": "high",
+   "notes": "r2 correction: sanctioned strength is 10 (incl. Chairperson), not 11 as recorded in the round-1 pass — the current Wikipedia members table states 'nine members, including the chairperson, compared to its sanctioned strength of ten members.'"
+  },
+  {
+   "id": "in-finance-commission",
+   "kind": "constitutional_body",
+   "sector": "constitutional",
+   "name": "Sixteenth Finance Commission",
+   "abbr": "16th FC",
+   "aliases": [
+    "Finance Commission of India",
+    "16th Finance Commission",
+    "FC-16"
+   ],
+   "parentId": "in-union-government",
+   "description": "Recommended how the Union divides net tax proceeds between itself and the states (vertical devolution) and among the states (horizontal devolution), and the principles for grants-in-aid and local-body/disaster grants, for the five-year award period 2026-27 to 2030-31.",
+   "legalBasis": "Article 280 of the Constitution; Finance Commission (Miscellaneous Provisions) Act, 1951",
+   "legalSourceUrl": "https://www.legislative.gov.in/constitution-of-india",
+   "officialUrl": "https://fincomindia.nic.in",
+   "established": "2023",
+   "hq": "Jawahar Vyapar Bhawan, Tolstoy Marg, New Delhi",
+   "headPositionId": "in-pos-chair-finance-commission",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sixteenth_Finance_Commission",
+    "https://fincomindia.nic.in/",
+    "https://fincomindia.nic.in/commission-reports-sixteenth",
+    "https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/reports/Vol1-Main-Report.pdf"
+   ],
+   "confidence": "high",
+   "notes": "r2 findings from the official Report of the Sixteenth Finance Commission (Vol I - Main Report, 'Report for 2026-31'; PDF last-modified 2026-02-01 per fincomindia.nic.in server headers; the council's own homepage confirms 'Sixteenth Finance Commission Report tabled in Parliament'; the exact day of submission to the President / tabling in Parliament was not found in machine-readable text on the site and is NOT invented here — treat 'tabled ~Feb 2026' as month-level confidence only). Award period: 2026-27 to 2030-31 (fiscal), confirmed. Vertical devolution recommendation: Chapter 7, para 7.68 of the report states verbatim: 'Presently, for its award period, the Commission recommends retaining the States' share in the divisible pool at its current level of 41 per cent' — i.e. NO change from the Fifteenth Finance Commission's 41%. Seventeenth Finance Commission: no evidence found that it has been constituted as of 2026-09-25 — en.wikipedia.org has no 'Seventeenth Finance Commission' page (checked directly, API returns 'missing'), and fincomindia.nic.in's homepage makes no mention of a 17th FC. The Sixteenth Finance Commission Wikipedia infobox does list a 'Superseding Commission: Seventeenth Finance Commission' field, but this reads as an infobox-template placeholder for 'whichever FC comes next in sequence', not sourced evidence of actual constitution — do not treat as confirmed."
+  },
+  {
+   "id": "in-ncsc",
+   "kind": "constitutional_body",
+   "sector": "constitutional",
+   "name": "National Commission for Scheduled Castes",
+   "abbr": "NCSC",
+   "aliases": [
+    "NCSC"
+   ],
+   "parentId": "in-union-government",
+   "description": "Investigates and monitors safeguards for Scheduled Castes, inquires into specific complaints of rights violations, and advises the Union and state governments on SC welfare and development.",
+   "legalBasis": "Article 338 of the Constitution",
+   "legalSourceUrl": "https://www.legislative.gov.in/constitution-of-india",
+   "officialUrl": "https://ncsc.nic.in",
+   "established": "2004-02-19",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-ncsc",
+   "seats": 5,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Scheduled_Castes"
+   ],
+   "confidence": "high",
+   "notes": "Statutory sanctioned strength under Article 338 is a Chairperson, Vice-Chairperson and 3 other Members (5 total); as of the source checked only a Chairperson and 2 Members are recorded — Vice-Chairperson and one Member seat are unconfirmed/likely vacant. Do not invent names for the unconfirmed seats."
+  },
+  {
+   "id": "in-ncst",
+   "kind": "constitutional_body",
+   "sector": "constitutional",
+   "name": "National Commission for Scheduled Tribes",
+   "abbr": "NCST",
+   "aliases": [
+    "NCST"
+   ],
+   "parentId": "in-union-government",
+   "description": "Investigates and monitors safeguards for Scheduled Tribes, inquires into specific complaints of rights violations, and advises the Union and state governments on ST welfare and development.",
+   "legalBasis": "Article 338A of the Constitution",
+   "legalSourceUrl": "https://www.legislative.gov.in/constitution-of-india",
+   "officialUrl": "https://ncst.gov.in",
+   "established": "2004-02-19",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-ncst",
+   "seats": 5,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Scheduled_Tribes"
+   ],
+   "confidence": "high",
+   "notes": "Statutory sanctioned strength under Article 338A is a Chairperson, Vice-Chairperson and 3 other Members (5 total); as of the source checked, Vice-Chairperson seat is unconfirmed/likely vacant."
+  },
+  {
+   "id": "in-ncbc",
+   "kind": "constitutional_body",
+   "sector": "constitutional",
+   "name": "National Commission for Backward Classes",
+   "abbr": "NCBC",
+   "aliases": [
+    "NCBC"
+   ],
+   "parentId": "in-union-government",
+   "description": "Examines requests for inclusion in/exclusion from the OBC central list and advises the Union government on the welfare and development of socially and educationally backward classes.",
+   "legalBasis": "Article 338B of the Constitution (constitutional status since the 102nd Amendment, 2018); originally a statutory body under the National Commission for Backward Classes Act, 1993.",
+   "legalSourceUrl": "https://www.legislative.gov.in/constitution-of-india",
+   "officialUrl": "https://ncbc.nic.in",
+   "established": "1993-08-14",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-ncbc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Backward_Classes"
+   ],
+   "confidence": "high",
+   "notes": "Constitutional status granted 2018-08-11 via the 102nd Amendment. r2 upgrade: current members table (dated citation [8] on the Wikipedia article) now confirmed with a chairperson succession history, resolving round-1's low-confidence flag."
+  },
+  {
+   "id": "in-gst-council",
+   "kind": "constitutional_body",
+   "sector": "constitutional",
+   "name": "Goods and Services Tax Council",
+   "abbr": "GST Council",
+   "aliases": [
+    "GST Council"
+   ],
+   "parentId": "in-union-government",
+   "description": "Joint forum of the Union and state finance ministers that recommends GST rates, exemptions, thresholds and administrative rules; decisions require a weighted majority (Union 1/3, states 2/3 of votes cast).",
+   "legalBasis": "Article 279A of the Constitution (inserted by the 101st Amendment, 2016)",
+   "legalSourceUrl": "https://www.legislative.gov.in/constitution-of-india",
+   "officialUrl": "https://gstcouncil.gov.in",
+   "established": "2016-09-12",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-finance",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goods_and_Services_Tax_(India)",
+    "https://gstcouncil.gov.in/"
+   ],
+   "confidence": "high",
+   "notes": "Chairperson is the Union Finance Minister ex officio (position in-pos-minister-finance, owned by segment council-of-ministers — referenced, not redefined here). Members are the Union Minister of State for Finance and the Finance/other nominated Minister of every state and UT-with-legislature, ex officio; not individually enumerated here. r2: most recent Council meeting confirmed via the Council's own homepage 'What's New' listing is the 56th GST Council meeting, held 3-4 September 2025 in New Delhi (notice for the meeting explicitly dated); a 55th meeting is also referenced as prior. No meeting later than the 56th was found on the official site as of 2026-09-25 — this may mean the site's front page is not fully current rather than that no later meeting occurred; flagged, not asserted either way."
+  },
+  {
+   "id": "in-gst-council-secretariat",
+   "kind": "secretariat",
+   "sector": "constitutional",
+   "name": "GST Council Secretariat",
+   "parentId": "in-gst-council",
+   "description": "Standing secretariat that services the GST Council, staffed by officers from Union and state governments; headed by a Secretary who is also ex officio the Revenue Secretary.",
+   "legalBasis": "Article 279A(8) of the Constitution",
+   "legalSourceUrl": "https://www.legislative.gov.in/constitution-of-india",
+   "officialUrl": "https://gstcouncil.gov.in",
+   "established": "2016-09-15",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "sources": [
+    "https://gstcouncil.gov.in/"
+   ],
+   "confidence": "medium",
+   "notes": "Head-of-secretariat is ex officio the Secretary, Department of Revenue, Ministry of Finance — that position record is owned by the ministries-finance segment, not redefined here to avoid a duplicate/conflicting holder record."
+  },
+  {
+   "id": "in-special-officer-linguistic-minorities",
+   "kind": "constitutional_body",
+   "sector": "constitutional",
+   "name": "Special Officer for Linguistic Minorities (Commissioner for Linguistic Minorities)",
+   "abbr": "CLM",
+   "aliases": [
+    "Commissioner for Linguistic Minorities"
+   ],
+   "parentId": "in-union-government",
+   "description": "A single-officer constitutional post that investigates matters relating to constitutional safeguards for linguistic minorities and reports to the President, who lays the report before Parliament and forwards it to the states concerned.",
+   "legalBasis": "Article 350B of the Constitution",
+   "legalSourceUrl": "https://www.legislative.gov.in/constitution-of-india",
+   "officialUrl": "https://minorityaffairs.gov.in",
+   "established": "1957",
+   "hq": "Allahabad (Prayagraj)",
+   "headPositionId": "in-pos-clm",
+   "sources": [
+    "https://www.legislative.gov.in/constitution-of-india"
+   ],
+   "confidence": "medium",
+   "notes": "Office sits administratively under the Ministry of Minority Affairs. r2: could not confirm a current named incumbent via Wikipedia (no dedicated article exists) or via eci/minorityaffairs sources reachable by curl/WebFetch in this pass — the ministry's own site and a dedicated Commissioner-for-Linguistic-Minorities page were not reachable/found. Left unresolved rather than invented, same as round 1."
+  },
+  {
+   "id": "in-nclm",
+   "kind": "advisory_body",
+   "sector": "constitutional",
+   "name": "National Commission for Linguistic Minorities (proposed)",
+   "aliases": [
+    "NCLM"
+   ],
+   "parentId": "in-union-government",
+   "description": "A statutory National Commission for Linguistic Minorities (to replace/supplement the single Special Officer above) was recommended by the Sachar Committee (2006) and has been proposed in Parliament at various points; it has not been constituted as an operating body as of the source checked.",
+   "legalBasis": "Proposed; no dedicated constitutional or statutory instrument currently in force",
+   "legalSourceUrl": "https://www.legislative.gov.in/constitution-of-india",
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "sources": [
+    "https://www.legislative.gov.in/constitution-of-india"
+   ],
+   "confidence": "low",
+   "notes": "Included per brief's canonical-ID list; NOT a currently operating body — do not treat as staffed. r2: re-checked, still found no evidence this has been constituted as of 2026-09-25."
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-cec",
+   "title": "Chief Election Commissioner of India",
+   "orgId": "in-eci",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": 6,
+   "holder": {
+    "name": "Gyanesh Kumar",
+    "since": "2025-02",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gyanesh_Kumar",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Election_Commission_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-ec-1",
+   "title": "Election Commissioner of India",
+   "orgId": "in-eci",
+   "rank": "commission_member",
+   "seat": "Election Commissioner 1",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": 6,
+   "holder": {
+    "name": "Sukhbir Singh Sandhu",
+    "since": "2024-03-15",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sukhbir_Singh_Sandhu",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Election_Commission_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-ec-2",
+   "title": "Election Commissioner of India",
+   "orgId": "in-eci",
+   "rank": "commission_member",
+   "seat": "Election Commissioner 2",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": 6,
+   "holder": {
+    "name": "Vivek Joshi",
+    "since": "2025-02",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Election_Commission_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-deputy-ec",
+   "title": "Deputy Election Commissioner(s) of India",
+   "orgId": "in-eci",
+   "rank": "other",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": null,
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": null,
+   "vacant": null,
+   "sources": [
+    "https://www.eci.gov.in"
+   ],
+   "confidence": "low",
+   "notes": "eci.gov.in is a JS-rendered SPA that curl cannot read and browser tools are disallowed for this segment; ECI publishes a Deputy Election Commissioners list but names could not be extracted in this pass. Not invented."
+  },
+  {
+   "id": "in-pos-cag",
+   "title": "Comptroller and Auditor General of India",
+   "orgId": "in-cag",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": 6,
+   "holder": {
+    "name": "K. Sanjay Murthy",
+    "since": "2024-11-21",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._Sanjay_Murthy",
+    "acting": false,
+    "notes": "IAS; term is 6 years or up to age 65, whichever is earlier."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Comptroller_and_Auditor_General_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-deputy-cag",
+   "title": "Deputy Comptroller and Auditor General",
+   "orgId": "in-cag",
+   "rank": "other",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": null,
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": null,
+   "vacant": null,
+   "sources": [
+    "https://cag.gov.in"
+   ],
+   "confidence": "low",
+   "notes": "CAG's own site (cag.gov.in) confirms multiple named portfolios exist, e.g. news items reference a 'Deputy CAG (Railways)' and a 'Deputy CAG (Government Accounts) & Chairperson (GASAB)', but no page giving the current named roster of all Deputy CAGs was found via curl in this pass. Portfolio titles observed but names NOT invented."
+  },
+  {
+   "id": "in-pos-chair-upsc",
+   "title": "Chairperson, Union Public Service Commission",
+   "orgId": "in-upsc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 6,
+   "holder": {
+    "name": "Ajay Kumar",
+    "since": "2025-05-15",
+    "party": null,
+    "notes": "IAS; term runs to 2027-10-01 or age 65, whichever is earlier.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-upsc-1",
+   "title": "Member, Union Public Service Commission",
+   "orgId": "in-upsc",
+   "rank": "commission_member",
+   "seat": "Member 1",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Lieutenant General Raj Shukla (Retd.)",
+    "since": "2022-07-18",
+    "notes": "Indian Army; term runs to 2027-03-26.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-upsc-2",
+   "title": "Member, Union Public Service Commission",
+   "orgId": "in-upsc",
+   "rank": "commission_member",
+   "seat": "Member 2",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Suman Sharma",
+    "since": "2023-05-25",
+    "notes": "IRS; term runs to 2029-05-24.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-upsc-3",
+   "title": "Member, Union Public Service Commission",
+   "orgId": "in-upsc",
+   "rank": "commission_member",
+   "seat": "Member 3",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Bidyut Bihari Swain",
+    "since": "2023-06-01",
+    "notes": "IAS; term runs to 2028-09-04.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-upsc-4",
+   "title": "Member, Union Public Service Commission",
+   "orgId": "in-upsc",
+   "rank": "commission_member",
+   "seat": "Member 4",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Sanjay Verma",
+    "since": "2024-02-01",
+    "notes": "IFS; term runs to 2030-01-27.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-upsc-5",
+   "title": "Member, Union Public Service Commission",
+   "orgId": "in-upsc",
+   "rank": "commission_member",
+   "seat": "Member 5",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Dr. Dinesh Dasa",
+    "since": "2023-09-29",
+    "notes": "Academician member; term runs to 2029-09-28.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-upsc-6",
+   "title": "Member, Union Public Service Commission",
+   "orgId": "in-upsc",
+   "rank": "commission_member",
+   "seat": "Member 6",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Sheel Vardhan Singh",
+    "since": "2024-01-15",
+    "notes": "IPS; term runs to 2028-08-25.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-upsc-7",
+   "title": "Member, Union Public Service Commission",
+   "orgId": "in-upsc",
+   "rank": "commission_member",
+   "seat": "Member 7",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Sujata Chaturvedi",
+    "since": "2025-05-01",
+    "notes": "IAS; term runs to 2030-06-18.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-upsc-8",
+   "title": "Member, Union Public Service Commission",
+   "orgId": "in-upsc",
+   "rank": "commission_member",
+   "seat": "Member 8",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Anuradha Prasad",
+    "since": "2025-05-02",
+    "notes": "IDAS; term runs to 2029-01-22.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-finance-commission",
+   "title": "Chairman, Sixteenth Finance Commission",
+   "orgId": "in-finance-commission",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Arvind Panagariya",
+    "since": "2023-12",
+    "wikipedia": "https://en.wikipedia.org/wiki/Arvind_Panagariya",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sixteenth_Finance_Commission",
+    "https://fincomindia.nic.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-finance-commission-1",
+   "title": "Member, Sixteenth Finance Commission",
+   "orgId": "in-finance-commission",
+   "rank": "commission_member",
+   "seat": "Member 1",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Ajay Narayan Jha",
+    "since": "2023-12",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sixteenth_Finance_Commission",
+    "https://fincomindia.nic.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-finance-commission-2",
+   "title": "Member, Sixteenth Finance Commission",
+   "orgId": "in-finance-commission",
+   "rank": "commission_member",
+   "seat": "Member 2",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Annie George Mathew",
+    "since": "2023-12",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sixteenth_Finance_Commission",
+    "https://fincomindia.nic.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-finance-commission-3",
+   "title": "Member, Sixteenth Finance Commission",
+   "orgId": "in-finance-commission",
+   "rank": "commission_member",
+   "seat": "Member 3",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Manoj Panda",
+    "since": "2023-12",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sixteenth_Finance_Commission",
+    "https://fincomindia.nic.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-finance-commission-parttime",
+   "title": "Part-Time Member, Sixteenth Finance Commission",
+   "orgId": "in-finance-commission",
+   "rank": "commission_member",
+   "seat": "Part-Time Member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Soumya Kanti Ghosh",
+    "since": "2023-12",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sixteenth_Finance_Commission",
+    "https://fincomindia.nic.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-finance-commission",
+   "title": "Secretary, Sixteenth Finance Commission",
+   "orgId": "in-finance-commission",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": null,
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Ritvik Ranjanam Pandey",
+    "since": "2023-12",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sixteenth_Finance_Commission",
+    "https://fincomindia.nic.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-ncsc",
+   "title": "Chairperson, National Commission for Scheduled Castes",
+   "orgId": "in-ncsc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": {
+    "name": "Kishor Makwana",
+    "since": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Scheduled_Castes"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-ncsc-1",
+   "title": "Member, National Commission for Scheduled Castes",
+   "orgId": "in-ncsc",
+   "rank": "commission_member",
+   "seat": "Member 1",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": {
+    "name": "Love Kush Kumar",
+    "since": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Scheduled_Castes"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-member-ncsc-2",
+   "title": "Member, National Commission for Scheduled Castes",
+   "orgId": "in-ncsc",
+   "rank": "commission_member",
+   "seat": "Member 2",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": {
+    "name": "Vaddepalli Ramchander",
+    "since": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Scheduled_Castes"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-ncst",
+   "title": "Chairperson, National Commission for Scheduled Tribes",
+   "orgId": "in-ncst",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": {
+    "name": "Antar Singh Arya",
+    "since": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Scheduled_Tribes"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ncst-1",
+   "title": "Member, National Commission for Scheduled Tribes",
+   "orgId": "in-ncst",
+   "rank": "commission_member",
+   "seat": "Member 1",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": {
+    "name": "Asha Lakra",
+    "since": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Scheduled_Tribes"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ncst-2",
+   "title": "Member, National Commission for Scheduled Tribes",
+   "orgId": "in-ncst",
+   "rank": "commission_member",
+   "seat": "Member 2",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": {
+    "name": "Jatothu Hussain",
+    "since": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Scheduled_Tribes"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ncst-3",
+   "title": "Member, National Commission for Scheduled Tribes",
+   "orgId": "in-ncst",
+   "rank": "commission_member",
+   "seat": "Member 3",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": {
+    "name": "Nirupam Chakma",
+    "since": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Scheduled_Tribes"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-ncbc",
+   "title": "Chairman, National Commission for Backward Classes",
+   "orgId": "in-ncbc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": {
+    "name": "Sadhvi Niranjan Jyoti",
+    "since": "2026-03-18",
+    "party": "BJP",
+    "acting": false,
+    "notes": "Succeeded Hansraj Gangaram Ahir, who served 2022-12-02 to 2026-03-18."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Backward_Classes"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-vice-chair-ncbc",
+   "title": "Vice-Chairman, National Commission for Backward Classes",
+   "orgId": "in-ncbc",
+   "rank": "other",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Backward_Classes"
+   ],
+   "confidence": "high",
+   "notes": "The Commission's own current-members listing (as reproduced on Wikipedia, cited to ncbc.nic.in) shows the Vice-Chairman seat as 'N.A.'"
+  },
+  {
+   "id": "in-pos-member-ncbc-1",
+   "title": "Member, National Commission for Backward Classes",
+   "orgId": "in-ncbc",
+   "rank": "commission_member",
+   "seat": "Member 1",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": {
+    "name": "Bhuvan Bhushan Kamal",
+    "since": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Backward_Classes"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ncbc-2",
+   "title": "Member, National Commission for Backward Classes",
+   "orgId": "in-ncbc",
+   "rank": "commission_member",
+   "seat": "Member 2",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": {
+    "name": "Kaushlendra Singh Patel",
+    "since": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Backward_Classes"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-member-ncbc-3",
+   "title": "Member, National Commission for Backward Classes",
+   "orgId": "in-ncbc",
+   "rank": "commission_member",
+   "seat": "Member 3",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 3,
+   "holder": {
+    "name": "Thalloju Achary",
+    "since": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Backward_Classes"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-clm",
+   "title": "Special Officer / Commissioner for Linguistic Minorities",
+   "orgId": "in-special-officer-linguistic-minorities",
+   "rank": "other",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": null,
+   "vacant": null,
+   "sources": [
+    "https://www.legislative.gov.in/constitution-of-india"
+   ],
+   "confidence": "low",
+   "notes": "Current holder not verified in this pass; ministry site and a dedicated CLM page were not reachable via curl/WebFetch. Not invented."
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cec",
+   "type": "appoints",
+   "basis": "CEC & ECs Act, 2023, s.5(1)",
+   "source": "https://en.wikipedia.org/wiki/Election_Commission_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-ec-1",
+   "type": "appoints",
+   "basis": "CEC & ECs Act, 2023, s.5(1)",
+   "source": "https://en.wikipedia.org/wiki/Election_Commission_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-ec-2",
+   "type": "appoints",
+   "basis": "CEC & ECs Act, 2023, s.5(1)",
+   "source": "https://en.wikipedia.org/wiki/Election_Commission_of_India"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-cec",
+   "type": "advises_appointment",
+   "basis": "CEC & ECs Act, 2023, s.6 (Selection Committee: PM as Chairperson, a Union Cabinet Minister nominated by the PM, and the Leader of the Opposition in the Lok Sabha)",
+   "source": "https://en.wikipedia.org/wiki/Election_Commission_of_India"
+  },
+  {
+   "from": "in-pos-leader-of-opposition-lok-sabha",
+   "to": "in-pos-cec",
+   "type": "advises_appointment",
+   "basis": "CEC & ECs Act, 2023, s.6 — the Leader of the Opposition in the Lok Sabha (or the senior-most-recognized opposition member where there is no LoP) sits on the 3-member Selection Committee",
+   "source": "https://en.wikipedia.org/wiki/Election_Commission_of_India"
+  },
+  {
+   "from": "in-eci",
+   "to": "in-lok-sabha",
+   "type": "oversees",
+   "basis": "Article 324",
+   "source": "https://www.legislative.gov.in/constitution-of-india"
+  },
+  {
+   "from": "in-eci",
+   "to": "in-rajya-sabha",
+   "type": "oversees",
+   "basis": "Article 324 (biennial elections to RS by state assemblies)",
+   "source": "https://www.legislative.gov.in/constitution-of-india"
+  },
+  {
+   "from": "in-eci",
+   "to": "in-eci-ceo-aggregate",
+   "type": "administers",
+   "basis": "Representation of the People Act, 1950, s.13A — CEOs function under ECI's superintendence, direction and control",
+   "source": "https://www.eci.gov.in"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cag",
+   "type": "appoints",
+   "basis": "Article 148(1)",
+   "source": "https://en.wikipedia.org/wiki/Comptroller_and_Auditor_General_of_India"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-cag",
+   "type": "advises_appointment",
+   "basis": "Article 148(1) (appointment on advice of Council of Ministers, by convention the PM)",
+   "source": "https://en.wikipedia.org/wiki/Comptroller_and_Auditor_General_of_India"
+  },
+  {
+   "from": "in-cag",
+   "to": "in-union-government",
+   "type": "audits",
+   "basis": "Article 149; CAG's (DPC) Act 1971",
+   "source": "https://cag.gov.in"
+  },
+  {
+   "from": "in-cag",
+   "to": "in-lok-sabha",
+   "type": "accountable_to",
+   "basis": "Article 151(1) (reports laid before Parliament)",
+   "source": "https://cag.gov.in"
+  },
+  {
+   "from": "in-cag",
+   "to": "in-iaad",
+   "type": "administers",
+   "basis": "Article 148 read with the CAG's (DPC) Act, 1971",
+   "source": "https://cag.gov.in"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-chair-upsc",
+   "type": "appoints",
+   "basis": "Article 316(1)",
+   "source": "https://en.wikipedia.org/wiki/Union_Public_Service_Commission"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-chair-finance-commission",
+   "type": "appoints",
+   "basis": "Article 280(1)",
+   "source": "https://en.wikipedia.org/wiki/Sixteenth_Finance_Commission"
+  },
+  {
+   "from": "in-finance-commission",
+   "to": "in-pos-president",
+   "type": "reports_to",
+   "basis": "Article 281 — the Commission's recommendations, together with an explanatory memorandum, are laid by the President before each House of Parliament",
+   "source": "https://fincomindia.nic.in/"
+  },
+  {
+   "from": "in-finance-commission",
+   "to": "in-union-government",
+   "type": "advises",
+   "basis": "Article 280(3) — recommends distribution of net tax proceeds between the Union and the states",
+   "source": "https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/reports/Vol1-Main-Report.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-chair-ncsc",
+   "type": "appoints",
+   "basis": "Article 338(3)",
+   "source": "https://en.wikipedia.org/wiki/National_Commission_for_Scheduled_Castes"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-chair-ncst",
+   "type": "appoints",
+   "basis": "Article 338A(3)",
+   "source": "https://en.wikipedia.org/wiki/National_Commission_for_Scheduled_Tribes"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-chair-ncbc",
+   "type": "appoints",
+   "basis": "Article 338B(3)",
+   "source": "https://en.wikipedia.org/wiki/National_Commission_for_Backward_Classes"
+  },
+  {
+   "from": "in-pos-minister-finance",
+   "to": "in-gst-council",
+   "type": "ex_officio",
+   "basis": "Article 279A(2)(a) — Union FM is Chairperson",
+   "source": "https://en.wikipedia.org/wiki/Goods_and_Services_Tax_(India)"
+  },
+  {
+   "from": "in-gst-council-secretariat",
+   "to": "in-gst-council",
+   "type": "administers",
+   "basis": "Article 279A(8)",
+   "source": "https://gstcouncil.gov.in/"
+  },
+  {
+   "from": "in-pos-clm",
+   "to": "in-pos-president",
+   "type": "reports_to",
+   "basis": "Article 350B(2)",
+   "source": "https://www.legislative.gov.in/constitution-of-india"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 34,
+  "corrections": [
+   "No factual errors found. Independently re-fetched (fresh curl/WebFetch, not reusing the original agent's cached HTML) and cross-checked every named office-holder in the file against current Wikipedia articles for in-eci, in-cag, in-upsc, in-ncsc, in-ncst, in-ncbc, and Sixteenth_Finance_Commission: CEC Gyanesh Kumar; ECs Sukhbir Singh Sandhu and Vivek Joshi; CAG K. Sanjay Murthy (since 2024-11-21); UPSC Chairperson Ajay Kumar (since 2025-05-15, term to 2027-10-01) plus all 8 sitting Members with their individual term-end dates (Raj Shukla, Suman Sharma, Bidyut Bihari Swain, Sanjay Verma, Dinesh Dasa, Sheel Vardhan Singh, Sujata Chaturvedi, Anuradha Prasad) and the 9-of-10 sanctioned-strength vacancy; NCSC Chairman Kishor Makwana + Members Love Kush Kumar and Vaddepalli Ramchander; NCST Chairman Antar Singh Arya + Members Asha Lakra, Jatothu Hussain, Nirupam Chakma; NCBC Chairman Sadhvi Niranjan Jyoti (since 2026-03-18) + Members Bhuvan Bhushan Kamal, Kaushlendra Singh Patel, Thalloju Achary, and the vacant Vice-Chairman seat; 16th Finance Commission Chairman Arvind Panagariya + Members Ajay Narayan Jha, Annie George Mathew, Manoj Panda, Part-Time Member Soumya Kanti Ghosh, Secretary Ritvik Ranjanam Pandey; that no Seventeenth Finance Commission has been constituted; and that the 56th meeting (3-4 Sep 2025) is still the most recent GST Council meeting shown on gstcouncil.gov.in. Every one of these matched the file exactly — 0 corrections to holder names, dates, or vacancy status were needed.",
+   "Schema/ID audit (python, programmatic): 0 duplicate entity or position ids; all 34 positions' orgId resolve to an entity defined in this file; all non-null headPositionId values resolve to a position in this file (or to the documented external in-pos-minister-finance); no entity or position is missing a required field (id/kind/sector/name/description/sources/confidence for entities, id/title/orgId/rank/appointmentMode/sources/confidence for positions); every relation has non-empty from/to/type; holder-vs-vacant is internally consistent on all 34 positions (no position has both a named holder and vacant:true, or both a null holder and vacant:false). Cross-checked in-pos-leader-of-opposition-lok-sabha and in-pos-minister-finance, the two shared/external ids this segment references, for spelling consistency against ministries-b3.json, parliament-lok-sabha.json, core-apex.json, council-of-ministers.json and ministries-a.json — all consistent, no ID drift.",
+   "Coverage vs. brief: all 8 requested bodies present (in-eci incl. CEO aggregate, in-cag incl. IAAD, in-upsc, in-finance-commission, in-ncsc, in-ncst, in-ncbc, in-gst-council incl. secretariat, in-special-officer-linguistic-minorities, in-nclm). Deputy Election Commissioners, Deputy CAGs, and the Special Officer for Linguistic Minorities' current holder remain unresolved (holder: null, confidence: low) — re-attempted in this pass via Wikipedia's opensearch API and cag.gov.in/en/organisation; opensearch was rate-limited (HTTP 429) and the CAG organisation page 404'd, so the gap could not be closed with tools available in this pass either. Left as-is rather than invented, per SCHEMA.md.",
+   "Link check (not a factual correction): 10 of 11 legalSourceUrl/officialUrl values return HTTP 200. The one exception, in-eci-ceo-aggregate's legalSourceUrl (indiacode.nic.in/handle/123456789/1555, the Representation of the People Act 1950), TLS-connects but then hangs/times out via curl and returns HTTP 403 via WebFetch — consistent with this site's known bot-blocking behaviour rather than a broken/wrong citation. Not changed; entity confidence was already medium.",
+   "Two design choices reviewed and left unchanged as reasonable given SCHEMA.md: (1) vacant is null (not true/false) on the 3 positions with an unconfirmed roster (Deputy EC, Deputy CAG, CLM holder) — this correctly distinguishes 'occupancy unknown' from a confirmed vacancy and matches round-1's approach; (2) GST Council's ~31 state/UT finance-minister members are documented as ex officio in the entity's notes field rather than modelled as an individual position per state (which would duplicate state-owned council-of-ministers records) — satisfies the brief's 'as one aggregate' instruction without a formal aggregate position entity."
+  ]
+ }
+}

@@ -1,0 +1,4293 @@
+{
+ "segment": "state-depts-mz-nl-tr",
+ "asOf": "2026-09-25",
+ "notes": "Mizoram: mizoram.gov.in itself is a client-rendered SPA with no crawlable department list, so the 41 departments were built from the portfolio breakdown already recorded in each minister's `holder.notes` in states-mz-nl-tr.json (high confidence — those notes are themselves sourced). officialUrl was only kept where the department's own *.mizoram.gov.in subdomain resolved and its <title> confirmed the name (checked 2026-09-25); omitted elsewhere rather than guessing. Secretaries: only Home and Finance were confirmed (via each department's own 'List of Officers' page); no consolidated cross-department secretary/posting list could be found within the research budget (no site-wide directory, WebSearch budget exhausted for this run), so all other Mizoram department secretaries are omitted per the schema's 'omit rather than guess' rule. Nagaland: department list and secretaries are sourced from the official State Portal's AHoDs (Administrative Heads of Departments) page (https://nagaland.gov.in/ahods, accessed 2026-09-25, 36 entries with name/designation/department charge) — this is the strongest single source found across all three states. Only 15 of the resulting ~39 departments could be matched to a minister via the existing minister portfolio notes in states-mz-nl-tr.json; the remaining departments' headPositionId defaults to the Chief Minister at confidence:'low' with a note flagging that the minister-in-charge needs confirmation against a current (2025-2026) allocation-of-business notification — Nagaland's coalition cabinet and frequent portfolio reshuffles make this genuinely uncertain rather than a gap in research effort. Tripura: department list is from the official 'Departments & Organizations' index at https://tripura.gov.in/departments (accessed 2026-09-25); secretaries are all from the official 'Senior Officers in Administration' page (https://tripura.gov.in/senior-officers-administration, page-updated-date shown on the page as 22-09-2026, accessed 2026-09-25) — a single authoritative, dated, cross-department posting list, the best source found in this run. Tripura splits several departments (e.g. General Administration, Finance, PWD) into sub-charges each with its own named 'Department' on the departments index; these are modelled as separate state_department entities per the official listing. Where the senior-officers list shows one secretary jointly charging multiple named departments, that is noted under each department's secretary Position. Several sub-departments (Elementary Education, Horticulture & Soil Conservation, Taxes & Excise) could not be matched to either an existing minister note or the senior-officers list and are flagged confidence:'low' with the Chief Minister as a residual default rather than guessing a specific minister.",
+ "entities": [
+  {
+   "id": "st-mz-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Prepares the state budget, controls treasury and public expenditure, and manages Mizoram's borrowing and pension liabilities.",
+   "headPositionId": "st-mz-pos-chief-minister",
+   "confidence": "high",
+   "officialUrl": "https://finance.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-planning-and-programme-implementation",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Planning & Programme Implementation Department",
+   "aliases": [
+    "Planning Department"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Coordinates the state's five-year and annual plans, allocates development funds across departments, and monitors flagship scheme implementation.",
+   "headPositionId": "st-mz-pos-chief-minister",
+   "confidence": "high",
+   "officialUrl": "https://planning.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "General Administration Department",
+   "aliases": [
+    "GAD"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Runs the state secretariat's core administration, cabinet coordination, protocol, and inter-departmental coordination.",
+   "headPositionId": "st-mz-pos-chief-minister",
+   "confidence": "high",
+   "officialUrl": "https://gad.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-vigilance",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Vigilance Department",
+   "aliases": [
+    "Vigilance"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Investigates corruption and misconduct complaints against state government officials and coordinates with the Lokayukta.",
+   "headPositionId": "st-mz-pos-chief-minister",
+   "confidence": "high",
+   "officialUrl": "https://vigilance.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Home Department",
+   "aliases": [
+    "Home"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Oversees Mizoram Police, prisons, fire services, and internal security, and issues Inner Line Permits.",
+   "headPositionId": "st-mz-pos-minister-1",
+   "confidence": "high",
+   "officialUrl": "https://home.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-urban-development-and-poverty-alleviation",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Urban Development & Poverty Alleviation Department",
+   "aliases": [
+    "Urban Development"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Plans urban infrastructure, housing and poverty-alleviation schemes for Aizawl and Mizoram's towns.",
+   "headPositionId": "st-mz-pos-minister-1",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-dept-personnel-and-administrative-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Personnel & Administrative Reforms Department",
+   "aliases": [
+    "DP&AR",
+    "Personnel"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Manages recruitment rules, service matters, and administrative reform for state government employees.",
+   "headPositionId": "st-mz-pos-minister-1",
+   "confidence": "high",
+   "officialUrl": "https://dpar.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-disaster-management-and-rehabilitation",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Disaster Management & Rehabilitation Department",
+   "aliases": [
+    "Disaster Management"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Coordinates disaster preparedness, relief and rehabilitation for floods, landslides and other emergencies in Mizoram.",
+   "headPositionId": "st-mz-pos-minister-1",
+   "confidence": "high",
+   "officialUrl": "https://dmr.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Public Works Department",
+   "aliases": [
+    "PWD"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Builds and maintains state highways, roads, bridges and government buildings across Mizoram.",
+   "headPositionId": "st-mz-pos-minister-2",
+   "confidence": "high",
+   "officialUrl": "https://pwd.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Transport Department",
+   "aliases": [
+    "Transport"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Regulates motor vehicles, driving licences, and road transport permits, and runs state transport services.",
+   "headPositionId": "st-mz-pos-minister-2",
+   "confidence": "high",
+   "officialUrl": "https://transport.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Parliamentary Affairs Department",
+   "aliases": [
+    "Parliamentary Affairs"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Coordinates government business in the Mizoram Legislative Assembly and liaises with MLAs on House proceedings.",
+   "headPositionId": "st-mz-pos-minister-2",
+   "confidence": "high",
+   "officialUrl": "https://pad.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-local-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Local Administration Department",
+   "aliases": [
+    "Local Administration"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Oversees local councils and village administration outside the Autonomous District Councils' jurisdiction.",
+   "headPositionId": "st-mz-pos-minister-3",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-dept-district-council-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "District Council Affairs Department",
+   "aliases": [
+    "District Council"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Liaises between the state government and Mizoram's Autonomous District Councils (Chakma, Lai, Mara).",
+   "headPositionId": "st-mz-pos-minister-3",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-dept-art-and-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Art & Culture Department",
+   "aliases": [
+    "Art and Culture"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Promotes Mizo art, music, literature and cultural heritage and runs state cultural institutions.",
+   "headPositionId": "st-mz-pos-minister-3",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-dept-animal-husbandry-and-veterinary",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Animal Husbandry & Veterinary Department",
+   "aliases": [
+    "AH & Vety"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Runs veterinary services, livestock disease control and animal breeding programmes for farmers.",
+   "headPositionId": "st-mz-pos-minister-3",
+   "confidence": "high",
+   "officialUrl": "https://ahvety.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-environment-forests-and-climate-change",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Environment, Forests & Climate Change Department",
+   "aliases": [
+    "Forest Department",
+    "Environment & Forests"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Manages Mizoram's forests, wildlife protection, and state climate-change and pollution-control policy.",
+   "headPositionId": "st-mz-pos-minister-4",
+   "confidence": "high",
+   "officialUrl": "https://forest.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-sericulture",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Sericulture Department",
+   "aliases": [
+    "Sericulture"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Promotes silk-worm rearing and sericulture-based livelihoods among Mizoram's farmers.",
+   "headPositionId": "st-mz-pos-minister-4",
+   "confidence": "high",
+   "officialUrl": "https://sericulture.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Fisheries Department",
+   "aliases": [
+    "Fisheries"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Promotes fish farming and freshwater fisheries development to improve rural incomes and food supply.",
+   "headPositionId": "st-mz-pos-minister-4",
+   "confidence": "high",
+   "officialUrl": "https://fisheries.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-land-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Land Resources Department",
+   "aliases": [
+    "Land Resources",
+    "LRD"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Runs land-use planning and soil/water conservation programmes, including jhum (shifting cultivation) control schemes.",
+   "headPositionId": "st-mz-pos-minister-4",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "School Education Department",
+   "aliases": [
+    "School Education"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Runs government schools and administers the state's elementary and secondary school education system.",
+   "headPositionId": "st-mz-pos-minister-5",
+   "confidence": "high",
+   "officialUrl": "https://schooleducation.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-higher-and-technical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Higher & Technical Education Department",
+   "aliases": [
+    "Higher Education"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Oversees state colleges, universities and technical/polytechnic institutions.",
+   "headPositionId": "st-mz-pos-minister-5",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-dept-taxation",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Taxation Department",
+   "aliases": [
+    "Taxation"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Administers state GST, VAT and other state taxes, and collects revenue for the Mizoram government.",
+   "headPositionId": "st-mz-pos-minister-5",
+   "confidence": "high",
+   "officialUrl": "https://taxation.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Information & Communications Technology Department",
+   "aliases": [
+    "ICT",
+    "IT Department"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Runs Mizoram's e-governance platforms, state data centre and digital service delivery.",
+   "headPositionId": "st-mz-pos-minister-5",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Agriculture Department",
+   "aliases": [
+    "Agriculture"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Supports crop cultivation, farm inputs and extension services for Mizoram's farmers.",
+   "headPositionId": "st-mz-pos-minister-6",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-dept-irrigation-and-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Irrigation & Water Resources Department",
+   "aliases": [
+    "Irrigation"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Builds and maintains irrigation infrastructure and manages the state's water resources.",
+   "headPositionId": "st-mz-pos-minister-6",
+   "confidence": "high",
+   "officialUrl": "https://irrigation.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Cooperation Department",
+   "aliases": [
+    "Cooperation",
+    "Registrar of Cooperative Societies"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Registers and regulates cooperative societies and promotes the cooperative movement in Mizoram.",
+   "headPositionId": "st-mz-pos-minister-6",
+   "confidence": "high",
+   "officialUrl": "https://cooperation.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-health-and-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Health & Family Welfare Department",
+   "aliases": [
+    "Health"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Runs government hospitals and public-health programmes, including maternal and child health services.",
+   "headPositionId": "st-mz-pos-minister-7",
+   "confidence": "high",
+   "officialUrl": "https://health.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Social Welfare Department",
+   "aliases": [
+    "Social Welfare"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Runs welfare and pension schemes for the elderly, disabled and disadvantaged, and child-protection services.",
+   "headPositionId": "st-mz-pos-minister-7",
+   "confidence": "high",
+   "officialUrl": "https://socialwelfare.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-women-and-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Women & Child Development Department",
+   "aliases": [
+    "WCD"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Runs Anganwadi/ICDS centres, nutrition programmes, and women's safety and empowerment schemes.",
+   "headPositionId": "st-mz-pos-minister-7",
+   "confidence": "high",
+   "officialUrl": "https://wcd.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Tourism Department",
+   "aliases": [
+    "Tourism"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Promotes Mizoram as a tourist destination and develops tourist infrastructure across the state.",
+   "headPositionId": "st-mz-pos-minister-7",
+   "confidence": "high",
+   "officialUrl": "https://tourism.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-power-and-electricity",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Power & Electricity Department",
+   "aliases": [
+    "Power"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Generates and distributes electricity across Mizoram and runs rural electrification schemes.",
+   "headPositionId": "st-mz-pos-minister-8",
+   "confidence": "high",
+   "officialUrl": "https://power.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-commerce-and-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Commerce & Industries Department",
+   "aliases": [
+    "Industries",
+    "Commerce"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Promotes industrial investment, MSMEs and trade in Mizoram, and administers industrial incentive schemes.",
+   "headPositionId": "st-mz-pos-minister-8",
+   "confidence": "high",
+   "officialUrl": "https://industries.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-printing-and-stationery",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Printing & Stationery Department",
+   "aliases": [
+    "Printing & Stationery"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Runs the Government Press and supplies stationery and printed government forms and gazettes.",
+   "headPositionId": "st-mz-pos-minister-8",
+   "confidence": "high",
+   "officialUrl": "https://printingstationery.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-food-civil-supplies-and-consumer-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Food, Civil Supplies & Consumer Affairs Department",
+   "aliases": [
+    "Food & Civil Supplies"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Runs the public distribution system (ration shops), and protects consumer rights through weights-and-measures enforcement.",
+   "headPositionId": "st-mz-pos-minister-9",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-dept-land-revenue-and-settlement",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Land Revenue & Settlement Department",
+   "aliases": [
+    "Land Revenue"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Maintains land records, land settlement and revenue collection on land in Mizoram.",
+   "headPositionId": "st-mz-pos-minister-9",
+   "confidence": "high",
+   "officialUrl": "https://landrevenue.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Rural Development Department",
+   "aliases": [
+    "RD"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Implements rural employment guarantee, housing and livelihood schemes such as MGNREGA and PMAY-G.",
+   "headPositionId": "st-mz-pos-minister-10",
+   "confidence": "high",
+   "officialUrl": "https://rd.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-horticulture",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Horticulture Department",
+   "aliases": [
+    "Horticulture"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Promotes fruit, flower and vegetable cultivation to raise farmer incomes in Mizoram.",
+   "headPositionId": "st-mz-pos-minister-10",
+   "confidence": "high",
+   "officialUrl": "https://horticulture.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-public-health-engineering",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Public Health Engineering Department",
+   "aliases": [
+    "PHED"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Supplies drinking water and builds sanitation infrastructure across Mizoram.",
+   "headPositionId": "st-mz-pos-minister-10",
+   "confidence": "high",
+   "officialUrl": "https://phed.mizoram.gov.in"
+  },
+  {
+   "id": "st-mz-dept-labour-employment-and-skill-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Labour, Employment, Skill Development & Entrepreneurship Department",
+   "aliases": [
+    "Labour"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Enforces labour laws, runs employment exchanges, and delivers skill-training and entrepreneurship programmes.",
+   "headPositionId": "st-mz-pos-minister-11",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-dept-sports-and-youth-services",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Sports & Youth Services Department",
+   "aliases": [
+    "Sports"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Develops sports infrastructure and youth-development programmes across Mizoram.",
+   "headPositionId": "st-mz-pos-minister-11",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mz-dept-excise-and-narcotics",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Excise & Narcotics Department",
+   "aliases": [
+    "Excise & Narcotics"
+   ],
+   "parentId": "st-mz-government",
+   "description": "Regulates liquor excise and leads Mizoram's narcotics/drug-trafficking control enforcement.",
+   "headPositionId": "st-mz-pos-minister-11",
+   "confidence": "high",
+   "officialUrl": "https://excise.mizoram.gov.in"
+  },
+  {
+   "id": "st-nl-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Home Department",
+   "aliases": [
+    "Home"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Oversees Nagaland Police, internal security, and civil administration; held by the Chief Minister with day-to-day charge under the Home Commissioner.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-nl-dept-environment-forest-and-climate-change",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Environment, Forest & Climate Change Department",
+   "aliases": [
+    "EF&CC"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Manages Nagaland's forests, wildlife and environmental clearances, and coordinates state climate-change policy.",
+   "headPositionId": "st-nl-pos-minister-1",
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-dept-roads-and-bridges",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Roads & Bridges Department",
+   "aliases": [
+    "R&B"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Builds and maintains state roads and bridges across Nagaland's hill terrain.",
+   "headPositionId": "st-nl-pos-minister-2",
+   "confidence": "medium",
+   "notes": "Administrative secretary not independently confirmed; likely grouped under the Works & Housing charge."
+  },
+  {
+   "id": "st-nl-dept-public-health-engineering",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Public Health Engineering Department",
+   "aliases": [
+    "PHED"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Supplies drinking water and manages rural water-supply and sanitation infrastructure.",
+   "headPositionId": "st-nl-pos-minister-3",
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Cooperation Department",
+   "aliases": [
+    "Cooperation"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Registers and supports cooperative societies to strengthen farmer and self-help-group livelihoods.",
+   "headPositionId": "st-nl-pos-minister-3",
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-dept-power",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Power Department",
+   "aliases": [
+    "Power"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Generates and distributes electricity and runs rural electrification schemes across Nagaland.",
+   "headPositionId": "st-nl-pos-minister-4",
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-dept-economics-statistics-and-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Economics & Statistics and Parliamentary Affairs Department",
+   "aliases": [
+    "Parliamentary Affairs"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Compiles state economic data and statistics, and coordinates government business in the Nagaland Legislative Assembly.",
+   "headPositionId": "st-nl-pos-minister-4",
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Rural Development Department",
+   "aliases": [
+    "RD"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Implements rural employment, housing and village-development schemes such as MGNREGA and PMAY-G.",
+   "headPositionId": "st-nl-pos-minister-5",
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-dept-works-and-housing",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Works & Housing Department",
+   "aliases": [
+    "Housing"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Constructs and maintains government buildings and administers state housing schemes.",
+   "headPositionId": "st-nl-pos-minister-6",
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-dept-mechanical-engineering",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Mechanical Engineering Department",
+   "aliases": [
+    "Mechanical Engineering"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Maintains government vehicle fleets and heavy machinery used on public-works projects.",
+   "headPositionId": "st-nl-pos-minister-6",
+   "confidence": "medium",
+   "notes": "Administrative secretary not independently confirmed."
+  },
+  {
+   "id": "st-nl-dept-health-and-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Health & Family Welfare Department",
+   "aliases": [
+    "Health"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Runs government hospitals and public-health programmes, including maternal and child health services.",
+   "headPositionId": "st-nl-pos-minister-7",
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-dept-women-resource-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Women Resource Development Department",
+   "aliases": [
+    "WRD"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Runs skill-development, livelihood and empowerment programmes for women across Nagaland.",
+   "headPositionId": "st-nl-pos-minister-8",
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-dept-horticulture",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Horticulture Department",
+   "aliases": [
+    "Horticulture"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Promotes fruit, flower and vegetable cultivation to raise farmer incomes.",
+   "headPositionId": "st-nl-pos-minister-8",
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Tourism Department",
+   "aliases": [
+    "Tourism"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Promotes Nagaland as a tourist destination (including the Hornbill Festival) and develops tourism infrastructure.",
+   "headPositionId": "st-nl-pos-minister-9",
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-dept-higher-and-technical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Higher & Technical Education Department",
+   "aliases": [
+    "Higher Education"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Oversees state colleges, universities and technical/polytechnic institutions.",
+   "headPositionId": "st-nl-pos-minister-9",
+   "confidence": "high"
+  },
+  {
+   "id": "st-nl-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Prepares the state budget, controls treasury and public expenditure, and manages Nagaland's borrowing and pension liabilities.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes; Finance Commissioner Kesonyu Yhome is also Commissioner & Secretary to the CM, suggesting the CM holds this portfolio directly. Needs confirmation."
+  },
+  {
+   "id": "st-nl-dept-personnel-and-administrative-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Personnel & Administrative Reforms Department",
+   "aliases": [
+    "P&AR"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Manages recruitment rules, service matters, and administrative reform for state government employees.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Water Resources Department",
+   "aliases": [
+    "Water Resources"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Builds and maintains irrigation and water-resource infrastructure.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "School Education Department",
+   "aliases": [
+    "School Education"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Runs government schools and administers Nagaland's elementary and secondary school education system.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Agriculture Department",
+   "aliases": [
+    "Agriculture"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Supports crop cultivation, farm inputs and extension services for Nagaland's farmers.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-land-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Land Revenue Department",
+   "aliases": [
+    "Land Revenue"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Maintains land records and administers land revenue matters.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-urban-development-and-municipal-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Urban Development & Municipal Affairs Department",
+   "aliases": [
+    "Urban Development",
+    "DUDA"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Plans urban infrastructure and administers municipal governance, including the Directorate of Urban Development Agencies (DUDA).",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Transport Department",
+   "aliases": [
+    "Transport"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Regulates motor vehicles and driving licences and runs road transport permits and services.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-science-technology-and-soil-water-conservation",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Science, Technology & Soil and Water Conservation Department",
+   "aliases": [
+    "S&T"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Runs state science and technology promotion programmes and soil/water conservation projects.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-information-technology-and-communications",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Information Technology & Communications Department",
+   "aliases": [
+    "IT&C"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Runs Nagaland's e-governance platforms and digital service delivery.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-land-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Land Resources Department",
+   "aliases": [
+    "Land Resources"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Runs land-use planning and soil/water conservation programmes to support agriculture.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-fisheries-and-aquatic-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Fisheries & Aquatic Resources Department",
+   "aliases": [
+    "Fisheries"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Promotes fish farming and freshwater fisheries development.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-sericulture",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Sericulture Department",
+   "aliases": [
+    "Sericulture"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Promotes silk-worm rearing and sericulture-based livelihoods among Nagaland's farmers.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-labour-employment-skill-development-and-entrepreneurship",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Labour & Employment, Skill Development & Entrepreneurship Department",
+   "aliases": [
+    "Labour"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Enforces labour laws, runs employment exchanges, and delivers skill-training and entrepreneurship programmes.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-youth-resources-and-sports",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Youth Resources & Sports Department",
+   "aliases": [
+    "Sports"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Develops sports infrastructure and youth-development programmes across Nagaland.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-industries-and-commerce",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Industries & Commerce Department",
+   "aliases": [
+    "Industries"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Promotes industrial investment, MSMEs and trade in Nagaland.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-geology-and-mining",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Geology & Mining Department",
+   "aliases": [
+    "Geology & Mining"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Regulates mineral exploration and mining activity in Nagaland.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Social Welfare Department",
+   "aliases": [
+    "Social Welfare"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Runs welfare and pension schemes for the elderly, disabled and disadvantaged, and child-protection services.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-food-civil-supplies-legal-metrology-and-consumer-protection",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Food & Civil Supplies, Legal Metrology & Consumer Protection Department",
+   "aliases": [
+    "Food & Civil Supplies"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Runs the public distribution system (ration shops) and enforces weights-and-measures and consumer-protection rules.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-animal-husbandry-and-veterinary-services",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Animal Husbandry & Veterinary Services Department",
+   "aliases": [
+    "AH & Vety"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Runs veterinary services, livestock disease control and animal breeding programmes for farmers.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-evaluation",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Evaluation Department",
+   "aliases": [
+    "Evaluation"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Monitors and evaluates the implementation of state government schemes and projects.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-art-and-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Art & Culture Department",
+   "aliases": [
+    "Art and Culture"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Promotes Naga art, music and cultural heritage and runs state cultural institutions.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Excise Department",
+   "aliases": [
+    "Excise"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Regulates liquor excise in Nagaland, which has statewide prohibition under the Nagaland Liquor Total Prohibition Act.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-nl-dept-tribal-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Tribal Affairs Department",
+   "aliases": [
+    "Tribal Affairs"
+   ],
+   "parentId": "st-nl-government",
+   "description": "Coordinates welfare programmes and government liaison for Nagaland's tribal communities.",
+   "headPositionId": "st-nl-pos-chief-minister",
+   "confidence": "low",
+   "notes": "Minister-in-charge not listed in existing minister portfolio notes."
+  },
+  {
+   "id": "st-tr-dept-agriculture-and-farmers-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Agriculture and Farmers' Welfare Department",
+   "aliases": [
+    "Agriculture"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Supports crop cultivation, farm inputs, extension services and farmer-welfare schemes.",
+   "headPositionId": "st-tr-pos-minister-1",
+   "confidence": "high",
+   "officialUrl": "http://agri.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-law",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Law Department",
+   "aliases": [
+    "Law and Parliamentary Affairs"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Provides legal advice to government, drafts legislation, and runs the Legal Remembrancer's office.",
+   "headPositionId": "st-tr-pos-minister-1",
+   "confidence": "high",
+   "officialUrl": "http://law.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-election",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Election Department",
+   "aliases": [
+    "Election"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Maintains electoral rolls and administers state-level election machinery under the Chief Electoral Officer.",
+   "headPositionId": "st-tr-pos-minister-1",
+   "confidence": "high",
+   "officialUrl": "https://ceotripura.nic.in"
+  },
+  {
+   "id": "st-tr-dept-power",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Power Department",
+   "aliases": [
+    "Power"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Generates and distributes electricity across Tripura and oversees the Tripura State Electricity Corporation.",
+   "headPositionId": "st-tr-pos-minister-1",
+   "confidence": "high"
+  },
+  {
+   "id": "st-tr-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Prepares the state budget, controls treasury and public expenditure, and manages Tripura's borrowing and pension liabilities.",
+   "headPositionId": "st-tr-pos-minister-2",
+   "confidence": "high",
+   "officialUrl": "http://finance.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-planning-and-coordination",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Planning and Coordination Department",
+   "aliases": [
+    "Planning"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Coordinates the state's development plans and statistics, and allocates plan funds across departments.",
+   "headPositionId": "st-tr-pos-minister-2",
+   "confidence": "high",
+   "officialUrl": "http://planning.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Information Technology Department",
+   "aliases": [
+    "IT"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs Tripura's e-governance platforms, state data centre and digital service delivery.",
+   "headPositionId": "st-tr-pos-minister-2",
+   "confidence": "high",
+   "officialUrl": "http://dit.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-industries-and-commerce",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Industries and Commerce Department",
+   "aliases": [
+    "Industries"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Promotes industrial investment, MSMEs and trade in Tripura, and administers industrial incentive schemes.",
+   "headPositionId": "st-tr-pos-minister-3",
+   "confidence": "high",
+   "officialUrl": "https://industries.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-prisons",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Prisons Department",
+   "aliases": [
+    "Jail"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Administers Tripura's jails and correctional facilities.",
+   "headPositionId": "st-tr-pos-minister-3",
+   "confidence": "high",
+   "officialUrl": "http://prisons.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-welfare-for-obc",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Welfare for OBC Department",
+   "aliases": [
+    "OBC Welfare"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs scholarship, hostel and welfare schemes for Other Backward Classes.",
+   "headPositionId": "st-tr-pos-minister-3",
+   "confidence": "high",
+   "officialUrl": "http://obcw.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-food-civil-supplies-and-consumer-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Food, Civil Supplies and Consumer Affairs Department",
+   "aliases": [
+    "FCA"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs the public distribution system (ration shops) and protects consumer rights through weights-and-measures enforcement.",
+   "headPositionId": "st-tr-pos-minister-4",
+   "confidence": "high",
+   "officialUrl": "http://fcatripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Transport Department",
+   "aliases": [
+    "Transport"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Regulates motor vehicles and driving licences and runs road transport services and permits.",
+   "headPositionId": "st-tr-pos-minister-4",
+   "confidence": "high",
+   "officialUrl": "https://transport.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Tourism Department",
+   "aliases": [
+    "Tourism"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Promotes Tripura as a tourist destination and develops tourist infrastructure across the state.",
+   "headPositionId": "st-tr-pos-minister-4",
+   "confidence": "high",
+   "officialUrl": "https://tripuratourism.gov.in"
+  },
+  {
+   "id": "st-tr-dept-youth-affairs-and-sports",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Youth Affairs & Sports Department",
+   "aliases": [
+    "YAS"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Develops sports infrastructure and youth-development programmes across Tripura.",
+   "headPositionId": "st-tr-pos-minister-5",
+   "confidence": "high",
+   "officialUrl": "http://yas.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-social-welfare-and-social-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Social Welfare and Social Education Department",
+   "aliases": [
+    "Social Welfare"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs welfare and pension schemes for the elderly, disabled and disadvantaged, and child-protection services.",
+   "headPositionId": "st-tr-pos-minister-5",
+   "confidence": "high",
+   "officialUrl": "https://socialwelfare.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Labour Department",
+   "aliases": [
+    "Labour"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Enforces labour laws, runs employment exchanges (E.S.) and manpower-planning (M.P.) services.",
+   "headPositionId": "st-tr-pos-minister-5",
+   "confidence": "high",
+   "officialUrl": "http://labour.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-tribal-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Tribal Welfare (TRP & PTG) Department",
+   "aliases": [
+    "TW",
+    "TRP & PTG"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs welfare, education and livelihood schemes for Scheduled Tribes and Particularly Vulnerable Tribal Groups.",
+   "headPositionId": "st-tr-pos-minister-6",
+   "confidence": "high",
+   "officialUrl": "http://twd.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-handloom-handicrafts-and-sericulture",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Handloom, Handicrafts & Sericulture Department",
+   "aliases": [
+    "Handloom"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Promotes weaving, handicrafts and sericulture-based livelihoods among artisans.",
+   "headPositionId": "st-tr-pos-minister-6",
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tr-dept-economics-and-statistics",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Economics and Statistics Department",
+   "aliases": [
+    "Statistics"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Compiles state economic data, national-income and other official statistics for planning.",
+   "headPositionId": "st-tr-pos-minister-6",
+   "confidence": "high",
+   "officialUrl": "http://ecostat.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-welfare-of-scs",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Welfare of SCs Department",
+   "aliases": [
+    "SC Welfare"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs scholarship, hostel and welfare schemes for Scheduled Castes.",
+   "headPositionId": "st-tr-pos-minister-7",
+   "confidence": "high",
+   "officialUrl": "http://scw.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-animal-resources-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Animal Resources Development Department",
+   "aliases": [
+    "ARDD"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs veterinary services, livestock disease control and animal breeding programmes for farmers.",
+   "headPositionId": "st-tr-pos-minister-7",
+   "confidence": "high",
+   "officialUrl": "http://ardd.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Fisheries Department",
+   "aliases": [
+    "Fisheries"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Promotes fish farming and freshwater fisheries development to improve rural incomes and food supply.",
+   "headPositionId": "st-tr-pos-minister-7",
+   "confidence": "high",
+   "officialUrl": "http://fisheries.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Cooperation Department",
+   "aliases": [
+    "Cooperation"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Registers and regulates cooperative societies and promotes the cooperative movement in Tripura.",
+   "headPositionId": "st-tr-pos-minister-8",
+   "confidence": "high",
+   "officialUrl": "https://cooperation.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-welfare-for-minorities",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Welfare for Minorities Department",
+   "aliases": [
+    "Minorities Welfare"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs scholarship and welfare schemes for religious minority communities.",
+   "headPositionId": "st-tr-pos-minister-8",
+   "confidence": "high",
+   "officialUrl": "http://minoritieswelfare.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-forest",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Forest Department",
+   "aliases": [
+    "Forests"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Manages Tripura's forests and wildlife protection, and runs the Tripura Forest Development and Plantation Corporation.",
+   "headPositionId": "st-tr-pos-minister-9",
+   "confidence": "high",
+   "officialUrl": "http://forest.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-science-technology-and-environment",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Science, Technology and Environment Department",
+   "aliases": [
+    "Environment",
+    "DSTE"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs state science and technology promotion programmes and administers environmental clearances and pollution-control policy.",
+   "headPositionId": "st-tr-pos-minister-9",
+   "confidence": "high",
+   "officialUrl": "https://dste.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-general-administration-political",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "General Administration (Political) Department",
+   "aliases": [
+    "GA (Political)"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Handles political and constitutional coordination matters within the state secretariat.",
+   "headPositionId": "st-tr-pos-minister-9",
+   "confidence": "medium",
+   "officialUrl": "https://political.tripura.gov.in",
+   "notes": "Assigned via the minister's 'Administration' portfolio note; the senior-officers list shows this charge actually with Secretary Brijesh Pandey under a different minister grouping — needs confirmation."
+  },
+  {
+   "id": "st-tr-dept-general-administration-administrative-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "General Administration (Administrative Reforms) Department",
+   "aliases": [
+    "GA (AR)"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Coordinates administrative and governance reforms across state departments.",
+   "headPositionId": "st-tr-pos-minister-9",
+   "confidence": "medium",
+   "officialUrl": "https://gaar.tripura.gov.in",
+   "notes": "Assigned via the minister's 'Administration' portfolio note; needs confirmation against a current allocation-of-business order."
+  },
+  {
+   "id": "st-tr-dept-general-administration-personnel-and-training",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "General Administration (Personnel & Training) Department",
+   "aliases": [
+    "GA (P&T)"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Manages recruitment rules, service matters and training for state government employees.",
+   "headPositionId": "st-tr-pos-minister-9",
+   "confidence": "medium",
+   "officialUrl": "https://gapnt.tripura.gov.in",
+   "notes": "Assigned via the minister's 'Administration' portfolio note; needs confirmation against a current allocation-of-business order."
+  },
+  {
+   "id": "st-tr-dept-general-administration-printing-and-stationery",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "General Administration (Printing & Stationery) Department",
+   "aliases": [
+    "GA (Printing & Stationery)"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs the Government Press and e-Gazette, and supplies stationery and printed government forms.",
+   "headPositionId": "st-tr-pos-minister-9",
+   "confidence": "medium",
+   "officialUrl": "https://e-gazette.tripura.gov.in/eGazette/aboutus.jsp",
+   "notes": "Assigned via the minister's 'Administration' portfolio note; needs confirmation against a current allocation-of-business order."
+  },
+  {
+   "id": "st-tr-dept-general-administration-secretariat-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "General Administration (Secretariat Administration) Department",
+   "aliases": [
+    "GA (Secretariat Administration)"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Administers the state secretariat's internal establishment and office management.",
+   "headPositionId": "st-tr-pos-minister-9",
+   "confidence": "medium",
+   "notes": "Assigned via the minister's 'Administration' portfolio note; needs confirmation against a current allocation-of-business order."
+  },
+  {
+   "id": "st-tr-dept-higher-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Higher Education Department",
+   "aliases": [
+    "Higher Education"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Oversees state colleges, universities and technical/polytechnic institutions.",
+   "headPositionId": "st-tr-pos-minister-10",
+   "confidence": "high",
+   "officialUrl": "http://highereducation.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-panchayat",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Panchayat Department",
+   "aliases": [
+    "Panchayat"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Administers Tripura's three-tier Panchayati Raj institutions and rural local self-government.",
+   "headPositionId": "st-tr-pos-minister-10",
+   "confidence": "high",
+   "officialUrl": "https://panchayat.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Home Department",
+   "aliases": [
+    "Home"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Oversees Tripura Police, prisons and internal security; the Chief Minister holds this portfolio directly.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "high",
+   "officialUrl": "https://police.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-health-and-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Health and Family Welfare Department",
+   "aliases": [
+    "Health"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs government hospitals and public-health programmes, including maternal and child health services.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "high",
+   "officialUrl": "http://health.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Public Works Department",
+   "aliases": [
+    "PWD"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Builds and maintains state roads, bridges and government buildings across Tripura (excludes drinking water, which sits with a separate department).",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "high",
+   "officialUrl": "https://pwd.tripura.gov.in"
+  },
+  {
+   "id": "st-tr-dept-drinking-water-and-sanitation",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Drinking Water & Sanitation Department",
+   "aliases": [
+    "DWS"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Supplies piped drinking water and builds sanitation infrastructure across Tripura.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "medium",
+   "officialUrl": "https://dws.tripura.gov.in",
+   "notes": "Split out of PWD; assigned to the CM (PWD's minister-in-charge) as the closest match — not explicitly separated in the existing minister portfolio notes."
+  },
+  {
+   "id": "st-tr-dept-fire-and-emergency-services",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Fire & Emergency Services Department",
+   "aliases": [
+    "Fire Service"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs Tripura's fire and emergency response services.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "medium",
+   "officialUrl": "http://fireservice.tripura.gov.in",
+   "notes": "Grouped with Home in the senior-officers list; assigned to the CM (Home's minister-in-charge)."
+  },
+  {
+   "id": "st-tr-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Revenue Department",
+   "aliases": [
+    "Revenue"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Maintains land records and administers land revenue, relief, rehabilitation and disaster management.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "medium",
+   "officialUrl": "http://revenue.tripura.gov.in",
+   "notes": "Not explicit in existing minister portfolio notes; the senior-officers list groups it with Urban Development and School Education under one secretary, suggesting the CM's 'unallocated portfolios' charge."
+  },
+  {
+   "id": "st-tr-dept-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Urban Development Department",
+   "aliases": [
+    "UD"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Plans urban infrastructure, housing and municipal governance for Agartala and Tripura's towns.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "medium",
+   "officialUrl": "https://udd.tripura.gov.in",
+   "notes": "Not explicit in existing minister portfolio notes; treated as part of the CM's unallocated portfolios pending confirmation."
+  },
+  {
+   "id": "st-tr-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "School Education Department",
+   "aliases": [
+    "Education (School)"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs government schools and administers the state's secondary school education system.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "medium",
+   "officialUrl": "http://schooleducation.tripura.gov.in",
+   "notes": "Not explicit in existing minister portfolio notes; treated as part of the CM's unallocated portfolios pending confirmation."
+  },
+  {
+   "id": "st-tr-dept-elementary-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Elementary Education Department",
+   "aliases": [
+    "Elementary Education"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Runs government primary schools and administers the state's elementary education system.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "low",
+   "officialUrl": "https://elementaryeducation.tripura.gov.in",
+   "notes": "Not explicit in existing minister portfolio notes or the senior-officers list; assigned to the CM as a residual default pending confirmation."
+  },
+  {
+   "id": "st-tr-dept-horticulture-and-soil-conservation",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Horticulture and Soil Conservation Department",
+   "aliases": [
+    "Horticulture"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Promotes fruit, flower and vegetable cultivation and soil-conservation practices to raise farmer incomes.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "low",
+   "officialUrl": "http://horti.tripura.gov.in",
+   "notes": "Not explicit in existing minister portfolio notes or the senior-officers list; assigned to the CM as a residual default pending confirmation."
+  },
+  {
+   "id": "st-tr-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Rural Development Department",
+   "aliases": [
+    "RD"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Implements rural employment, housing and village-development schemes such as MGNREGA and PMAY-G.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "medium",
+   "officialUrl": "http://rural.tripura.gov.in",
+   "notes": "Senior-officers list shows this grouped with Power/PWD (Drinking Water) under Secretary Abhishek Singh, under the CM's residual Home/PWD charge; minister-in-charge not explicit in existing portfolio notes."
+  },
+  {
+   "id": "st-tr-dept-taxes-and-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Taxes and Excise Department",
+   "aliases": [
+    "Taxes"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Administers state GST, VAT, excise duty and other state taxes.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "low",
+   "officialUrl": "http://taxes.tripura.gov.in",
+   "notes": "Not explicit in existing minister portfolio notes or the senior-officers list; assigned to the CM as a residual default pending confirmation."
+  },
+  {
+   "id": "st-tr-dept-small-savings-group-insurance-and-institutional-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "name": "Small Savings, Group Insurance & Institutional Finance Department",
+   "aliases": [
+    "Small Savings"
+   ],
+   "parentId": "st-tr-government",
+   "description": "Promotes small-savings schemes, group insurance and institutional finance access for state employees and citizens.",
+   "headPositionId": "st-tr-pos-chief-minister",
+   "confidence": "medium",
+   "officialUrl": "http://dif.tripura.gov.in",
+   "notes": "Split out of Finance; assigned to the CM given his 'unallocated portfolios' per the existing minister notes."
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-mz-pos-secretary-home",
+   "title": "Secretary, Home Department, Government of Mizoram",
+   "orgId": "st-mz-dept-home",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "Vanlalmawia",
+    "notes": "Listed on Home Department's official 'Minister in Charge & List of Officers' page."
+   },
+   "confidence": "medium",
+   "sources": [
+    "https://home.mizoram.gov.in/page/list-of-officers-and-staffs-of-home-department"
+   ]
+  },
+  {
+   "id": "st-mz-pos-secretary-finance",
+   "title": "Secretary, Finance Department, Government of Mizoram",
+   "orgId": "st-mz-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mz-pos-chief-minister",
+   "holder": {
+    "name": "Ramchuana, MFAS",
+    "notes": "Mizoram Finance & Accounts Service (MFAS) officer; listed on Finance Department's official officer list. Finance Commissioner Vanlaldina Fanai (ICAS) is the senior-most officer in the department."
+   },
+   "confidence": "medium",
+   "sources": [
+    "https://finance.mizoram.gov.in/page/list-of-officers-under-finance-department-government-of-mizoram"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-home",
+   "title": "Home Commissioner and Principal Secretary to the Chief Minister, Nagaland",
+   "orgId": "st-nl-dept-home",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Abhijit Sinha, IAS",
+    "notes": "Also Principal Resident Commissioner, Nagaland House, New Delhi."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-environment-forest-and-climate-change",
+   "title": "Principal Secretary, Environment, Forest & Climate Change (EF&CC) & Development Commissioner",
+   "orgId": "st-nl-dept-environment-forest-and-climate-change",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Y. Kikheto Sema, IAS",
+    "notes": "Mohammed Ali Shihab, IAS is also listed as Commissioner & Secretary, P&AR and EF&CC — the department appears to carry joint charge."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-public-health-engineering",
+   "title": "Secretary, PHED",
+   "orgId": "st-nl-dept-public-health-engineering",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Zarenthung Ezung, NCS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-cooperation",
+   "title": "Commissioner & Secretary, Cooperation and IPR",
+   "orgId": "st-nl-dept-cooperation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Orenthung Lotha, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-power",
+   "title": "Principal Secretary, Power, Tribal Affairs and CMO",
+   "orgId": "st-nl-dept-power",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "K. D. Vizo, ITS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-tribal-affairs",
+   "title": "Principal Secretary, Power, Tribal Affairs and CMO",
+   "orgId": "st-nl-dept-tribal-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "K. D. Vizo, ITS",
+    "notes": "Joint charge with Power."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-economics-statistics-and-parliamentary-affairs",
+   "title": "Secretary, Economics & Statistics and Parliamentary Affairs",
+   "orgId": "st-nl-dept-economics-statistics-and-parliamentary-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Akunu S. Meyase, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-rural-development",
+   "title": "Commissioner & Secretary to the Governor, Nagaland and Rural Development",
+   "orgId": "st-nl-dept-rural-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Thavaseelan K, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-works-and-housing",
+   "title": "Finance Commissioner and Commissioner & Secretary to the Chief Minister, Nagaland and Works & Housing",
+   "orgId": "st-nl-dept-works-and-housing",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Kesonyu Yhome, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-health-and-family-welfare",
+   "title": "Commissioner & Secretary, Health & Family Welfare",
+   "orgId": "st-nl-dept-health-and-family-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Kevileno Angami, NCS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-women-resource-development",
+   "title": "Secretary, Women Resource Development Department",
+   "orgId": "st-nl-dept-women-resource-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Renboni Mozhui, NCS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-horticulture",
+   "title": "Commissioner & Secretary, Horticulture",
+   "orgId": "st-nl-dept-horticulture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Akumla Chuba, NCS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-tourism",
+   "title": "Commissioner & Secretary, Tourism",
+   "orgId": "st-nl-dept-tourism",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Kovi Meyase, NCS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-higher-and-technical-education",
+   "title": "Secretary, Higher & Technical Education",
+   "orgId": "st-nl-dept-higher-and-technical-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Sarita Yadav, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-finance",
+   "title": "Finance Commissioner and Commissioner & Secretary to the Chief Minister, Nagaland and Works & Housing",
+   "orgId": "st-nl-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Kesonyu Yhome, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-personnel-and-administrative-reforms",
+   "title": "Commissioner & Secretary, P&AR, Environment, Forest & Climate Change (EF&CC)",
+   "orgId": "st-nl-dept-personnel-and-administrative-reforms",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Mohammed Ali Shihab, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-water-resources",
+   "title": "Commissioner & Secretary, Water Resources and School Education",
+   "orgId": "st-nl-dept-water-resources",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Asangla Imti, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-school-education",
+   "title": "Commissioner & Secretary, Water Resources and School Education",
+   "orgId": "st-nl-dept-school-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Asangla Imti, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-agriculture",
+   "title": "APC and Commissioner & Secretary, Agriculture, Land Revenue",
+   "orgId": "st-nl-dept-agriculture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Zasekuolie Chusi, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-land-revenue",
+   "title": "APC and Commissioner & Secretary, Agriculture, Land Revenue",
+   "orgId": "st-nl-dept-land-revenue",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Zasekuolie Chusi, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-urban-development-and-municipal-affairs",
+   "title": "Commissioner & Secretary, Urban Development and Municipal Affairs",
+   "orgId": "st-nl-dept-urban-development-and-municipal-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Kekhrievor Kevichusa, NCS",
+    "notes": "Sotsula, IAS is separately Commissioner & Secretary, DUDA."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-transport",
+   "title": "Secretary, Transport",
+   "orgId": "st-nl-dept-transport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Zhothisa Dawhuo, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-science-technology-and-soil-water-conservation",
+   "title": "Principal Secretary, Science & Technology and Soil & Water Conservation",
+   "orgId": "st-nl-dept-science-technology-and-soil-water-conservation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "I. Himato Zhimomi"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-information-technology-and-communications",
+   "title": "Commissioner & Secretary, Information Technology & Communications",
+   "orgId": "st-nl-dept-information-technology-and-communications",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Arenla Jamir, NCS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-land-resources",
+   "title": "Commissioner & Secretary, Land Resources and Fisheries & Aquatic Resource",
+   "orgId": "st-nl-dept-land-resources",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "G. Hukugha Sema, IRS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-fisheries-and-aquatic-resources",
+   "title": "Commissioner & Secretary, Land Resources and Fisheries & Aquatic Resource",
+   "orgId": "st-nl-dept-fisheries-and-aquatic-resources",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "G. Hukugha Sema, IRS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-sericulture",
+   "title": "Secretary, Sericulture",
+   "orgId": "st-nl-dept-sericulture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "T Yanpvuthung Kikon, NCS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-labour-employment-skill-development-and-entrepreneurship",
+   "title": "Commissioner & Secretary, Labour & Employment, Skill Development & Entrepreneurship",
+   "orgId": "st-nl-dept-labour-employment-skill-development-and-entrepreneurship",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Robert Longchari, NCS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-youth-resources-and-sports",
+   "title": "Commissioner & Secretary, Youth Resources & Sports",
+   "orgId": "st-nl-dept-youth-resources-and-sports",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Anthony Ngullie, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-industries-and-commerce",
+   "title": "Secretary, Industries & Commerce, PD ELEMENT",
+   "orgId": "st-nl-dept-industries-and-commerce",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Kumar Ramnikant, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-geology-and-mining",
+   "title": "Commissioner & Secretary, Geology & Mining",
+   "orgId": "st-nl-dept-geology-and-mining",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "John Kevi Angami"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-social-welfare",
+   "title": "Secretary, Social Welfare",
+   "orgId": "st-nl-dept-social-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Limawabang Jamir, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-food-civil-supplies-legal-metrology-and-consumer-protection",
+   "title": "Secretary, Food & Civil Supplies and Legal Metrology & Consumer Protection",
+   "orgId": "st-nl-dept-food-civil-supplies-legal-metrology-and-consumer-protection",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Wonchio Odyuo, NCS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-animal-husbandry-and-veterinary-services",
+   "title": "Secretary, Animal Husbandry & Veterinary Services",
+   "orgId": "st-nl-dept-animal-husbandry-and-veterinary-services",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Angelina Tajen, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-evaluation",
+   "title": "Secretary, Evaluation and NRE",
+   "orgId": "st-nl-dept-evaluation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Linda Solo, NCS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-art-and-culture",
+   "title": "Secretary, Art & Culture",
+   "orgId": "st-nl-dept-art-and-culture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "Bodeno S. Colo, NCS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-nl-pos-secretary-excise",
+   "title": "Secretary, Excise Department",
+   "orgId": "st-nl-dept-excise",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-nl-pos-chief-minister",
+   "holder": {
+    "name": "T. Wati Aier, NCS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://nagaland.gov.in/ahods"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-agriculture-and-farmers-welfare",
+   "title": "Secretary, Agriculture & Farmers' Welfare Department",
+   "orgId": "st-tr-dept-agriculture-and-farmers-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Apurba Roy, IAS (Re-employment)",
+    "notes": "Also G.A. (P&T), Director SIPARD, Member Tripura VAT Tribunal."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-law",
+   "title": "LR & Secretary, Law",
+   "orgId": "st-tr-dept-law",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Sankari Das, TJS Gr-I",
+    "notes": "Also Legal Remembrancer."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-election",
+   "title": "Secretary, Election",
+   "orgId": "st-tr-dept-election",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Brijesh Pandey, IAS",
+    "notes": "Also Chief Electoral Officer, Tripura."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-power",
+   "title": "Secretary, Power",
+   "orgId": "st-tr-dept-power",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Abhishek Singh, IAS",
+    "notes": "Ex-Officio Chairman, TSECL; also PWD (Drinking Water) and RD (incl. Panchayats)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-finance",
+   "title": "Secretary, Finance (incl. Audit & excl. Small Savings, GI & IF)",
+   "orgId": "st-tr-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Parshant Kumar Goyal, IAS",
+    "notes": "Also Industries & Commerce (IT)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-planning-and-coordination",
+   "title": "Secretary, Planning (including Statistics) Department",
+   "orgId": "st-tr-dept-planning-and-coordination",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Vikas Singh, IAS",
+    "notes": "Also Education (Higher). Brahmneet Kaur, IAS is separately listed as Special Secretary, Planning & Co-ordination (in addition), while also Special Resident Commissioner, Tripura Bhawan, New Delhi."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-industries-and-commerce",
+   "title": "Secretary, Industries & Commerce",
+   "orgId": "st-tr-dept-industries-and-commerce",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Kiran Gitte, IAS",
+    "notes": "Also Secretary to the CM, Information & Cultural Affairs, Health & Family Welfare, PWD (incl. R&B, excl. DWS)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-prisons",
+   "title": "Secretary, Home (prisons)",
+   "orgId": "st-tr-dept-prisons",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Brijesh Pandey, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-welfare-for-obc",
+   "title": "Special Secretary, OBC Welfare",
+   "orgId": "st-tr-dept-welfare-for-obc",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Kuntal Das, IAS",
+    "notes": "Also Industries & Commerce (Handloom, Handicrafts & Sericulture)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-food-civil-supplies-and-consumer-affairs",
+   "title": "Principal Secretary, Food, Civil Supplies & CA",
+   "orgId": "st-tr-dept-food-civil-supplies-and-consumer-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Shantanu, IAS",
+    "notes": "Also Science, Technology & Environment Department."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-transport",
+   "title": "Secretary, Transport",
+   "orgId": "st-tr-dept-transport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Uttam Kumar Chakma, IAS",
+    "notes": "Also Tourism Department, Secretary to the Governor of Tripura, Ex-Officio Chairman TUTCL."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-tourism",
+   "title": "Secretary, Tourism Department",
+   "orgId": "st-tr-dept-tourism",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Uttam Kumar Chakma, IAS",
+    "notes": "Also Transport, Secretary to the Governor."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-youth-affairs-and-sports",
+   "title": "Secretary, Education (YAS) Deptt.",
+   "orgId": "st-tr-dept-youth-affairs-and-sports",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Tapas Roy, IAS",
+    "notes": "Also Co-operation Department, Labour (incl. ES & MP), GA (Secretariat Administration)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-social-welfare-and-social-education",
+   "title": "Special Secretary, Social Welfare and Social Education Dept.",
+   "orgId": "st-tr-dept-social-welfare-and-social-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Tapan Kumar Das, IAS"
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-labour",
+   "title": "Secretary, Labour (including E.S & M.P)",
+   "orgId": "st-tr-dept-labour",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Tapas Roy, IAS",
+    "notes": "Also Co-operation, Education (YAS), GA (Secretariat Administration)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-tribal-welfare",
+   "title": "Secretary, Tribal Welfare (incl. TRP & PTG), in addition",
+   "orgId": "st-tr-dept-tribal-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Dr. K. Sasikumar, IFS",
+    "notes": "Also CCF (Territorial), CCF (Vigilance & Legal)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-handloom-handicrafts-and-sericulture",
+   "title": "Special Secretary, Industries & Commerce (Handloom, Handicrafts & Sericulture)",
+   "orgId": "st-tr-dept-handloom-handicrafts-and-sericulture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Kuntal Das, IAS",
+    "notes": "Also OBC Welfare."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-economics-and-statistics",
+   "title": "Secretary, Planning (including Statistics) Department",
+   "orgId": "st-tr-dept-economics-and-statistics",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Vikas Singh, IAS",
+    "notes": "Also Education (Higher)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-welfare-of-scs",
+   "title": "Special Secretary, SC Welfare Department",
+   "orgId": "st-tr-dept-welfare-of-scs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "S. Prabhu, IFS",
+    "notes": "Also Fisheries, Animal Resources Development, CCF (IT & Statistics)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-animal-resources-development",
+   "title": "Special Secretary, Animal Resources Development Department",
+   "orgId": "st-tr-dept-animal-resources-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "S. Prabhu, IFS",
+    "notes": "Also Fisheries, SC Welfare."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-fisheries",
+   "title": "Special Secretary, Fisheries Department",
+   "orgId": "st-tr-dept-fisheries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "S. Prabhu, IFS",
+    "notes": "Also Animal Resources Development, SC Welfare."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-cooperation",
+   "title": "Secretary, Co-operation Department",
+   "orgId": "st-tr-dept-cooperation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Tapas Roy, IAS",
+    "notes": "Also Education (YAS), Labour, GA (Secretariat Administration)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-welfare-for-minorities",
+   "title": "Special Secretary, Minorities Welfare Department",
+   "orgId": "st-tr-dept-welfare-for-minorities",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Nirmal Adhikari, IAS",
+    "notes": "Also Director, Minorities Welfare; MD, Tripura Minorities Co-operative Development Corpn. Ltd."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-forest",
+   "title": "Principal Secretary, PCCF & HoFF And Principal Secretary (Forests)",
+   "orgId": "st-tr-dept-forest",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "R. K. Samal, IFS",
+    "notes": "Also MD TFDPC Ltd. (addl. charge), PCCF (Administration & Personnel Relations), Chief Wildlife Warden, Member Secretary Tripura Biodiversity Board."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-science-technology-and-environment",
+   "title": "Principal Secretary, Science, Technology & Environment Department",
+   "orgId": "st-tr-dept-science-technology-and-environment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Shantanu, IAS",
+    "notes": "Also Food, Civil Supplies & CA."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-general-administration-political",
+   "title": "Secretary, GA (Political) Department",
+   "orgId": "st-tr-dept-general-administration-political",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Brijesh Pandey, IAS",
+    "notes": "Also Election, PWD (Sanitation part of DWS), Home (prisons), GA (Printing & Stationery)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-general-administration-administrative-reforms",
+   "title": "Special Secretary, GA (AR)",
+   "orgId": "st-tr-dept-general-administration-administrative-reforms",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Anindya Kumar Bhattacharya, IAS (Re-employment)",
+    "notes": "Also Director, Vigilance (independent charge)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-general-administration-personnel-and-training",
+   "title": "Secretary, G.A. (P&T)",
+   "orgId": "st-tr-dept-general-administration-personnel-and-training",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Jitendra Kumar Sinha, IAS",
+    "notes": "Chief Secretary; also G.A. (C&C) and Home (excl. prisons & Fire & ES)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-general-administration-printing-and-stationery",
+   "title": "Secretary, GA (Printing & Stationery)",
+   "orgId": "st-tr-dept-general-administration-printing-and-stationery",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Brijesh Pandey, IAS",
+    "notes": "Also Election, PWD (Sanitation part of DWS), Home (prisons), GA (Political)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-general-administration-secretariat-administration",
+   "title": "Secretary, GA (Secretariat Administration)",
+   "orgId": "st-tr-dept-general-administration-secretariat-administration",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Tapas Roy, IAS",
+    "notes": "Also Co-operation, Education (YAS), Labour."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-higher-education",
+   "title": "Secretary, Education (Higher)",
+   "orgId": "st-tr-dept-higher-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Vikas Singh, IAS",
+    "notes": "Also Planning (including Statistics)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-panchayat",
+   "title": "Secretary, R.D. (incl. Panchayats), in addition",
+   "orgId": "st-tr-dept-panchayat",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Abhishek Singh, IAS",
+    "notes": "Also Power, PWD (Drinking Water), Home (excl. Jail and Fire & ES)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-home",
+   "title": "Secretary, Home (excluding prisons & Fire & ES)",
+   "orgId": "st-tr-dept-home",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Jitendra Kumar Sinha, IAS",
+    "notes": "Chief Secretary; also G.A. (P&T), G.A. (C&C)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-health-and-family-welfare",
+   "title": "Secretary, Health & Family Welfare",
+   "orgId": "st-tr-dept-health-and-family-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Kiran Gitte, IAS",
+    "notes": "Also Secretary to the CM, Information & Cultural Affairs, PWD (incl. R&B, excl. DWS), Industries & Commerce."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-public-works",
+   "title": "Secretary, Public Works (inclu. R&B) (exclu. DWS)",
+   "orgId": "st-tr-dept-public-works",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Kiran Gitte, IAS",
+    "notes": "Also Secretary to the CM, Information & Cultural Affairs, Health & Family Welfare, Industries & Commerce."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-drinking-water-and-sanitation",
+   "title": "Secretary, Public Works (Drinking Water)",
+   "orgId": "st-tr-dept-drinking-water-and-sanitation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Abhishek Singh, IAS",
+    "notes": "Also Power, R.D. (incl. Panchayats), Home (excl. Jail and Fire & ES). PWD (Sanitation part of DWS) is separately with Brijesh Pandey, IAS."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-fire-and-emergency-services",
+   "title": "Special Secretary, Home (Fire & Emergency Services) Deptt. (Independent Charge)",
+   "orgId": "st-tr-dept-fire-and-emergency-services",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Tamal Majumder, IAS",
+    "notes": "Also Director, Fire & Emergency Services; Special Secretary, Urban Development Deptt., in addition."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-revenue",
+   "title": "Secretary, Revenue (including Relief, Rehabilitation & Disaster Management)",
+   "orgId": "st-tr-dept-revenue",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Dr. Milind Dharmrao Ramteke, IAS",
+    "notes": "Also Urban Development, Education (School), Resident Commissioner Tripura Bhavan New Delhi."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-urban-development",
+   "title": "Secretary, Urban Development",
+   "orgId": "st-tr-dept-urban-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Dr. Milind Dharmrao Ramteke, IAS",
+    "notes": "Also Education (School), Revenue. Tamal Majumder, IAS separately listed as Special Secretary, Urban Development Deptt. (in addition)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-school-education",
+   "title": "Secretary, Education (School)",
+   "orgId": "st-tr-dept-school-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Dr. Milind Dharmrao Ramteke, IAS",
+    "notes": "Also Urban Development, Revenue."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-rural-development",
+   "title": "Secretary, R.D. (incl. Panchayats), in addition",
+   "orgId": "st-tr-dept-rural-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Abhishek Singh, IAS",
+    "notes": "Also Power, PWD (Drinking Water), Home (excl. Jail and Fire & ES)."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  },
+  {
+   "id": "st-tr-pos-secretary-small-savings-group-insurance-and-institutional-finance",
+   "title": "Special Secretary, Finance (Small Savings, GI & IF)",
+   "orgId": "st-tr-dept-small-savings-group-insurance-and-institutional-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tr-pos-chief-minister",
+   "holder": {
+    "name": "Smt. Rakhi Biswas, IAS",
+    "notes": "Also Director, Small Savings, GI & IF."
+   },
+   "confidence": "high",
+   "sources": [
+    "https://tripura.gov.in/senior-officers-administration"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "from": "st-mz-pos-chief-minister",
+   "to": "st-mz-dept-finance",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-chief-minister",
+   "to": "st-mz-dept-planning-and-programme-implementation",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-planning-and-programme-implementation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-chief-minister",
+   "to": "st-mz-dept-general-administration",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-general-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-chief-minister",
+   "to": "st-mz-dept-vigilance",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-vigilance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-1",
+   "to": "st-mz-dept-home",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-1",
+   "to": "st-mz-dept-urban-development-and-poverty-alleviation",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-urban-development-and-poverty-alleviation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-1",
+   "to": "st-mz-dept-personnel-and-administrative-reforms",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-personnel-and-administrative-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-1",
+   "to": "st-mz-dept-disaster-management-and-rehabilitation",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-disaster-management-and-rehabilitation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-2",
+   "to": "st-mz-dept-public-works",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-public-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-2",
+   "to": "st-mz-dept-transport",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-2",
+   "to": "st-mz-dept-parliamentary-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-3",
+   "to": "st-mz-dept-local-administration",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-local-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-3",
+   "to": "st-mz-dept-district-council-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-district-council-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-3",
+   "to": "st-mz-dept-art-and-culture",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-art-and-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-3",
+   "to": "st-mz-dept-animal-husbandry-and-veterinary",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-animal-husbandry-and-veterinary",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-4",
+   "to": "st-mz-dept-environment-forests-and-climate-change",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-environment-forests-and-climate-change",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-4",
+   "to": "st-mz-dept-sericulture",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-sericulture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-4",
+   "to": "st-mz-dept-fisheries",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-4",
+   "to": "st-mz-dept-land-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-land-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-5",
+   "to": "st-mz-dept-school-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-school-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-5",
+   "to": "st-mz-dept-higher-and-technical-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-higher-and-technical-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-5",
+   "to": "st-mz-dept-taxation",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-taxation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-5",
+   "to": "st-mz-dept-information-technology",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-6",
+   "to": "st-mz-dept-agriculture",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-6",
+   "to": "st-mz-dept-irrigation-and-water-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-irrigation-and-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-6",
+   "to": "st-mz-dept-cooperation",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-7",
+   "to": "st-mz-dept-health-and-family-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-health-and-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-7",
+   "to": "st-mz-dept-social-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-7",
+   "to": "st-mz-dept-women-and-child-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-women-and-child-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-7",
+   "to": "st-mz-dept-tourism",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-8",
+   "to": "st-mz-dept-power-and-electricity",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-power-and-electricity",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-8",
+   "to": "st-mz-dept-commerce-and-industries",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-commerce-and-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-8",
+   "to": "st-mz-dept-printing-and-stationery",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-printing-and-stationery",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-9",
+   "to": "st-mz-dept-food-civil-supplies-and-consumer-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-food-civil-supplies-and-consumer-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-9",
+   "to": "st-mz-dept-land-revenue-and-settlement",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-land-revenue-and-settlement",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-10",
+   "to": "st-mz-dept-rural-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-10",
+   "to": "st-mz-dept-horticulture",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-horticulture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-10",
+   "to": "st-mz-dept-public-health-engineering",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-public-health-engineering",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-11",
+   "to": "st-mz-dept-labour-employment-and-skill-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-labour-employment-and-skill-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-11",
+   "to": "st-mz-dept-sports-and-youth-services",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-sports-and-youth-services",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mz-pos-minister-11",
+   "to": "st-mz-dept-excise-and-narcotics",
+   "type": "heads"
+  },
+  {
+   "from": "st-mz-pos-chief-secretary",
+   "to": "st-mz-dept-excise-and-narcotics",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-home",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-1",
+   "to": "st-nl-dept-environment-forest-and-climate-change",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-environment-forest-and-climate-change",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-2",
+   "to": "st-nl-dept-roads-and-bridges",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-roads-and-bridges",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-3",
+   "to": "st-nl-dept-public-health-engineering",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-public-health-engineering",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-3",
+   "to": "st-nl-dept-cooperation",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-4",
+   "to": "st-nl-dept-power",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-power",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-4",
+   "to": "st-nl-dept-economics-statistics-and-parliamentary-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-economics-statistics-and-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-5",
+   "to": "st-nl-dept-rural-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-6",
+   "to": "st-nl-dept-works-and-housing",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-works-and-housing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-6",
+   "to": "st-nl-dept-mechanical-engineering",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-mechanical-engineering",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-7",
+   "to": "st-nl-dept-health-and-family-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-health-and-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-8",
+   "to": "st-nl-dept-women-resource-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-women-resource-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-8",
+   "to": "st-nl-dept-horticulture",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-horticulture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-9",
+   "to": "st-nl-dept-tourism",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-minister-9",
+   "to": "st-nl-dept-higher-and-technical-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-higher-and-technical-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-finance",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-personnel-and-administrative-reforms",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-personnel-and-administrative-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-water-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-school-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-school-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-agriculture",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-land-revenue",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-land-revenue",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-urban-development-and-municipal-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-urban-development-and-municipal-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-transport",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-science-technology-and-soil-water-conservation",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-science-technology-and-soil-water-conservation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-information-technology-and-communications",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-information-technology-and-communications",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-land-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-land-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-fisheries-and-aquatic-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-fisheries-and-aquatic-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-sericulture",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-sericulture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-labour-employment-skill-development-and-entrepreneurship",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-labour-employment-skill-development-and-entrepreneurship",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-youth-resources-and-sports",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-youth-resources-and-sports",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-industries-and-commerce",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-industries-and-commerce",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-geology-and-mining",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-geology-and-mining",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-social-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-food-civil-supplies-legal-metrology-and-consumer-protection",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-food-civil-supplies-legal-metrology-and-consumer-protection",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-animal-husbandry-and-veterinary-services",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-animal-husbandry-and-veterinary-services",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-evaluation",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-evaluation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-art-and-culture",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-art-and-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-excise",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-excise",
+   "type": "oversees"
+  },
+  {
+   "from": "st-nl-pos-chief-minister",
+   "to": "st-nl-dept-tribal-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-nl-pos-chief-secretary",
+   "to": "st-nl-dept-tribal-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-1",
+   "to": "st-tr-dept-agriculture-and-farmers-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-agriculture-and-farmers-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-1",
+   "to": "st-tr-dept-law",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-law",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-1",
+   "to": "st-tr-dept-election",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-election",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-1",
+   "to": "st-tr-dept-power",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-power",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-2",
+   "to": "st-tr-dept-finance",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-2",
+   "to": "st-tr-dept-planning-and-coordination",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-planning-and-coordination",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-2",
+   "to": "st-tr-dept-information-technology",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-3",
+   "to": "st-tr-dept-industries-and-commerce",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-industries-and-commerce",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-3",
+   "to": "st-tr-dept-prisons",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-prisons",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-3",
+   "to": "st-tr-dept-welfare-for-obc",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-welfare-for-obc",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-4",
+   "to": "st-tr-dept-food-civil-supplies-and-consumer-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-food-civil-supplies-and-consumer-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-4",
+   "to": "st-tr-dept-transport",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-4",
+   "to": "st-tr-dept-tourism",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-5",
+   "to": "st-tr-dept-youth-affairs-and-sports",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-youth-affairs-and-sports",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-5",
+   "to": "st-tr-dept-social-welfare-and-social-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-social-welfare-and-social-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-5",
+   "to": "st-tr-dept-labour",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-labour",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-6",
+   "to": "st-tr-dept-tribal-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-tribal-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-6",
+   "to": "st-tr-dept-handloom-handicrafts-and-sericulture",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-handloom-handicrafts-and-sericulture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-6",
+   "to": "st-tr-dept-economics-and-statistics",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-economics-and-statistics",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-7",
+   "to": "st-tr-dept-welfare-of-scs",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-welfare-of-scs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-7",
+   "to": "st-tr-dept-animal-resources-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-animal-resources-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-7",
+   "to": "st-tr-dept-fisheries",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-8",
+   "to": "st-tr-dept-cooperation",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-8",
+   "to": "st-tr-dept-welfare-for-minorities",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-welfare-for-minorities",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-9",
+   "to": "st-tr-dept-forest",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-forest",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-9",
+   "to": "st-tr-dept-science-technology-and-environment",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-science-technology-and-environment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-9",
+   "to": "st-tr-dept-general-administration-political",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-general-administration-political",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-9",
+   "to": "st-tr-dept-general-administration-administrative-reforms",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-general-administration-administrative-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-9",
+   "to": "st-tr-dept-general-administration-personnel-and-training",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-general-administration-personnel-and-training",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-9",
+   "to": "st-tr-dept-general-administration-printing-and-stationery",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-general-administration-printing-and-stationery",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-9",
+   "to": "st-tr-dept-general-administration-secretariat-administration",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-general-administration-secretariat-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-10",
+   "to": "st-tr-dept-higher-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-higher-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-minister-10",
+   "to": "st-tr-dept-panchayat",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-panchayat",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-home",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-health-and-family-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-health-and-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-public-works",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-public-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-drinking-water-and-sanitation",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-drinking-water-and-sanitation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-fire-and-emergency-services",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-fire-and-emergency-services",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-revenue",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-revenue",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-urban-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-urban-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-school-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-school-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-elementary-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-elementary-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-horticulture-and-soil-conservation",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-horticulture-and-soil-conservation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-rural-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-taxes-and-excise",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-taxes-and-excise",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tr-pos-chief-minister",
+   "to": "st-tr-dept-small-savings-group-insurance-and-institutional-finance",
+   "type": "heads"
+  },
+  {
+   "from": "st-tr-pos-chief-secretary",
+   "to": "st-tr-dept-small-savings-group-insurance-and-institutional-finance",
+   "type": "oversees"
+  }
+ ]
+}

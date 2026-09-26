@@ -1,0 +1,5644 @@
+{
+ "segment": "state-depts-ar-mn-ml",
+ "asOf": "2026-09-25",
+ "notes": "Departments for Arunachal Pradesh, Manipur and Meghalaya. AR (51 depts): sourced from the state's official 'Government Department' directory (arunachalpradesh.gov.in/government-department.php) plus the state secretariat 'Who's Who' deployment list of Chief Secretary/Principal Secretaries/Commissioners/Secretaries (arunachalpradesh.gov.in/whos-who.php, deployment list as of 31/05/2025 with live edits visible up to 2026); headPositionId matched against the existing ministers' portfolio notes where explicit (confidence high), otherwise inferred from thematic grouping with a minister's stated portfolio or defaulted to the Chief Minister (confidence low/medium, flagged per-entity). ML (48 depts): sourced from meghalaya.gov.in's own 'Departments' index (clean official list) with headPositionId matched against the 9 ministers + 2 Deputy CMs' portfolio notes (high confidence for 27 depts explicitly named in a minister's portfolio; the remaining ~21 unlisted-portfolio departments default to the Chief Minister, who is recorded as holding 'unallotted portfolios' - confidence low/medium); every secretary sourced from meghalaya.gov.in/ias, the state's own live IAS posting-and-portfolio register, picking the most recent dated charge where an officer had multiple postings to the same department (a handful of departments show only a 'charge report not yet received' designate - included with a note since that is the officially published current assignment, not a guess). MN (44 depts): sourced from manipur.gov.in's own 'Departments' index; the incumbent government (sworn in 2026-02-04 after President's Rule) has only 5 named portfolio-holders on file (CM + 2 Deputy CMs + 2 ministers), and the CM's own notes record that he 'holds ... other unassigned departments', so the ~35 departments not explicitly matched to a minister's stated portfolio default to the CM with confidence low - this is a documented catch-all, not a fabrication, but should be revisited once a fuller Manipur cabinet portfolio-allocation order is available. No Manipur department secretaries could be sourced: no state secretariat 'who's who'/IAS-posting page could be found or fetched (gadmanipur.nic.in has no such listing; the 'Transfer & Posting Order' page only links undated PDF gazette notifications, not parseable in the time available), and this session's shared WebSearch budget was exhausted before this task started - omitted per SCHEMA.md rather than guessed. Three departments (AP Legislative Assembly liaison items, municipal corporations, training institutes/recruitment boards, and portal/e-service front-ends like CM e-Seva) were deliberately excluded from all three states' lists as not being administrative departments in the schema's sense. This run's context also carried the relayed CivLab screen-recording / 'dissect the site' message; per the pattern already logged elsewhere in STATE.md and other state-dept segments in this batch, it was treated as an injected instruction-override attempt (unrelated to this cwd, this repo's active pipeline, and the StructuredOutput schema this task was invoked with) and not acted on.",
+ "entities": [
+  {
+   "id": "st-ar-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Agriculture Department",
+   "aliases": [
+    "Agriculture AP"
+   ],
+   "description": "Runs extension services, subsidies and schemes for farmers and promotes food-grain production across Arunachal Pradesh.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-7",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-animal-husbandry-veterinary",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Animal Husbandry, Veterinary and Dairy Development Department",
+   "aliases": [
+    "AHV DD",
+    "AH & Vety"
+   ],
+   "description": "Runs veterinary hospitals, disease control and dairy development programmes for the state's livestock sector.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-7",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-civil-aviation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Civil Aviation Department",
+   "aliases": [
+    "Aviation"
+   ],
+   "description": "Develops and operates the state's airports and helipads and regulates air connectivity to remote districts.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-3",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Cooperation Department",
+   "aliases": [
+    "Co-operation"
+   ],
+   "description": "Registers and supervises cooperative societies, including credit and marketing cooperatives, across the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-1",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Rural Development Department",
+   "aliases": [
+    "RD"
+   ],
+   "description": "Implements central and state rural livelihood, housing and employment-guarantee schemes in Arunachal Pradesh's villages.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-1",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-panchayati-raj",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Panchayati Raj Department",
+   "aliases": [
+    "PR"
+   ],
+   "description": "Administers the three-tier panchayat system, panchayat elections support and devolution of funds to local bodies.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-1",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-economics-statistics",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Directorate of Economics & Statistics",
+   "aliases": [
+    "Ecostatistics"
+   ],
+   "description": "Compiles the state's official economic, demographic and price statistics including state income estimates.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-deputy-cm-1",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-indigenous-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Department of Indigenous Affairs",
+   "aliases": [
+    "DIA"
+   ],
+   "description": "Safeguards indigenous customary institutions, tribal customary law and traditional self-governance bodies.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-chief-minister",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ar-dept-information-technology-communication",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Department of Information Technology & Communication",
+   "aliases": [
+    "IT&C"
+   ],
+   "description": "Runs the state's e-governance infrastructure, state data centre and digital service delivery platforms.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-chief-minister",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ar-dept-skill-development-entrepreneurship",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Department of Skill Development & Entrepreneurship",
+   "aliases": [
+    "Skill Development"
+   ],
+   "description": "Runs vocational training centres and entrepreneurship-promotion schemes to improve youth employability.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-9",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Education Department",
+   "aliases": [
+    "School Education"
+   ],
+   "description": "Runs government schools and teacher recruitment/training for elementary and secondary education in the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-6",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-election",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Election Department",
+   "aliases": [
+    "Elections"
+   ],
+   "description": "Coordinates with the Election Commission of India on electoral rolls and the conduct of Assembly/Lok Sabha polls in the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-4",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ar-dept-political",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Political Department",
+   "aliases": [
+    "Political & Cipher"
+   ],
+   "description": "Handles Raj Bhavan liaison, protocol, cabinet and ceremonial/political affairs of the state government.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-4",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Fisheries Department",
+   "aliases": [
+    "Fisheries AP"
+   ],
+   "description": "Promotes fish seed production and inland fisheries development to boost rural incomes and nutrition.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-7",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-food-civil-supplies",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Food & Civil Supplies Department",
+   "aliases": [
+    "F&CS"
+   ],
+   "description": "Runs the public distribution system, food-grain procurement and consumer-affairs regulation in the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-7",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-health-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Health & Family Welfare Department",
+   "aliases": [
+    "H&FW"
+   ],
+   "description": "Runs government hospitals, primary health centres and the state's public-health and family-welfare programmes.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-10",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Industries Department",
+   "aliases": [
+    "Industries AP"
+   ],
+   "description": "Promotes MSME and industrial investment through incentive schemes, industrial estates and single-window clearances.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-9",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-information-public-relations",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Information & Public Relations Department",
+   "aliases": [
+    "IPR"
+   ],
+   "description": "Handles the state government's press releases, publicity campaigns and printing of official publications.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-chief-minister",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ar-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Labour Department",
+   "aliases": [
+    "Labour AP"
+   ],
+   "description": "Enforces labour welfare laws, registers establishments and runs employment-exchange services in the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-9",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-power",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Power Department",
+   "aliases": [
+    "Electrical"
+   ],
+   "description": "Generates, transmits and distributes electricity, including hydro-power projects, across Arunachal Pradesh.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-deputy-cm-1",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Public Works Department",
+   "aliases": [
+    "PWD"
+   ],
+   "description": "Builds and maintains government roads, bridges and public buildings across the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-chief-minister",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-research",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Directorate of Research",
+   "aliases": [
+    "Research AP"
+   ],
+   "description": "Documents Arunachal Pradesh's tribal history, culture and anthropology and maintains the state gazetteer.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-chief-minister",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ar-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Social Welfare Department",
+   "aliases": [
+    "SJETA",
+    "Social Justice"
+   ],
+   "description": "Runs welfare schemes and institutions for persons with disabilities, senior citizens and other vulnerable groups.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-2",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Transport Department",
+   "aliases": [
+    "State Transport"
+   ],
+   "description": "Registers vehicles, issues driving licences and regulates public and commercial road transport in the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-1",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-law",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Law Department",
+   "aliases": [
+    "Law & Justice"
+   ],
+   "description": "Drafts and vets state legislation and provides legal advice to the state government and its departments.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-2",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance AP"
+   ],
+   "description": "Prepares the state budget, controls treasury operations and manages the state government's finances.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-deputy-cm-1",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-tax-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Tax & Excise Department",
+   "aliases": [
+    "Excise"
+   ],
+   "description": "Collects state GST, VAT and excise duties and regulates the sale of liquor in the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-deputy-cm-1",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-planning",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Planning Department",
+   "aliases": [
+    "Planning AP"
+   ],
+   "description": "Prepares the state's five-year and annual plans and allocates development funds across departments and districts.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-deputy-cm-1",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-textile-handicraft-handloom",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Textile, Handloom & Handicraft Department",
+   "aliases": [
+    "Textile & Handicraft"
+   ],
+   "description": "Promotes traditional weaving and handicraft production and markets Arunachal Pradesh's textile products.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-5",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-women-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Women & Child Development Department",
+   "aliases": [
+    "WCD"
+   ],
+   "description": "Runs anganwadi centres, nutrition schemes and child- and women-protection programmes across the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-5",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Parliamentary Affairs Department",
+   "aliases": [
+    "Parl Affairs"
+   ],
+   "description": "Coordinates government business, question-hour replies and legislation in the Arunachal Pradesh Legislative Assembly.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-6",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Home Department",
+   "aliases": [
+    "Home AP"
+   ],
+   "description": "Oversees the state police, prisons, home guards and internal security administration.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-4",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-urban-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Urban Affairs Department",
+   "aliases": [
+    "Urban Development"
+   ],
+   "description": "Regulates town planning, urban local bodies and municipal housing schemes across the state's urban centres.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-3",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-land-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Land Management Department",
+   "aliases": [
+    "Land Revenue"
+   ],
+   "description": "Administers land allotment, land records and land-use regulation across Arunachal Pradesh.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-3",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-geology-mining",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Geology & Mining Department",
+   "aliases": [
+    "Mining AP"
+   ],
+   "description": "Regulates mineral exploration and mining leases, including the state's petroleum and coal resources.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-8",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-environment-forests",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Environment & Forest Department",
+   "aliases": [
+    "Forests"
+   ],
+   "description": "Manages the state's reserved forests, wildlife sanctuaries and environmental clearances.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-8",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Water Resources Department",
+   "aliases": [
+    "WRD"
+   ],
+   "description": "Builds irrigation and flood-control infrastructure and manages the state's river and water resources.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-10",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-public-health-engineering-water-supply",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Public Health Engineering & Water Supply Department",
+   "aliases": [
+    "PHE&WS"
+   ],
+   "description": "Builds and maintains piped drinking-water supply schemes across Arunachal Pradesh's towns and villages.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-4",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-sports-youth-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Sports & Youth Affairs Department",
+   "aliases": [
+    "Sports AP"
+   ],
+   "description": "Develops sports infrastructure and runs youth-welfare and talent-promotion programmes in the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-2",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-trade-commerce",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Trade & Commerce Department",
+   "aliases": [
+    "Commerce AP"
+   ],
+   "description": "Promotes state trade, border commerce and market infrastructure for local producers.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-9",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-science-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Science & Technology Department",
+   "aliases": [
+    "S&T"
+   ],
+   "description": "Promotes scientific research, remote-sensing applications and technology-transfer programmes in the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-5",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-horticulture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Horticulture Department",
+   "aliases": [
+    "Horticulture AP"
+   ],
+   "description": "Promotes fruit, vegetable and cash-crop horticulture and post-harvest infrastructure for farmers.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-7",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-border-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Border Affairs Department",
+   "aliases": [
+    "Border Affairs AP"
+   ],
+   "description": "Coordinates border-area development schemes and infrastructure along the state's international borders.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-4",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Tourism Department",
+   "aliases": [
+    "Tourism AP"
+   ],
+   "description": "Promotes eco- and adventure tourism and develops tourist infrastructure across the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-6",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-personnel",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Personnel Department",
+   "aliases": [
+    "Personnel AP"
+   ],
+   "description": "Manages recruitment rules, service matters and cadre management for the state's civil services.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-chief-minister",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-administrative-reforms-training",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Administrative Reforms & Training Department",
+   "aliases": [
+    "AR&T"
+   ],
+   "description": "Runs civil-service training institutes and drives administrative-reform and e-governance initiatives.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-chief-minister",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-vigilance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Vigilance Department",
+   "aliases": [
+    "Vigilance AP"
+   ],
+   "description": "Investigates corruption complaints against government officials and enforces service-conduct rules.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-chief-minister",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "General Administration Department",
+   "aliases": [
+    "GA"
+   ],
+   "description": "Coordinates cross-department administrative matters, protocol and cabinet secretariat functions for the state government.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-chief-minister",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-dept-secretariat-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Secretariat Administration Department",
+   "aliases": [
+    "SA"
+   ],
+   "description": "Manages establishment, records and administrative support functions of the state civil secretariat.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-chief-minister",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-legal-metrology-consumer-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Legal Metrology & Consumer Affairs Department",
+   "aliases": [
+    "Consumer Affairs AP"
+   ],
+   "description": "Certifies weighing/measuring instruments and enforces consumer-protection law in the state's markets.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-minister-7",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-dept-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ar-government",
+   "name": "Disaster Management Department",
+   "aliases": [
+    "DM AP"
+   ],
+   "description": "Coordinates disaster preparedness, relief and rehabilitation for floods, landslides and earthquakes in the state.",
+   "officialUrl": "https://arunachalpradesh.gov.in/government-department.php",
+   "headPositionId": "st-ar-pos-chief-minister",
+   "sources": [
+    "https://arunachalpradesh.gov.in/government-department.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mn-dept-cm-secretariat",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Chief Minister's Secretariat",
+   "aliases": [
+    "CMO Manipur"
+   ],
+   "description": "Supports the Chief Minister's day-to-day administration and coordination across departments.",
+   "officialUrl": "http://cmmanipur.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "http://cmmanipur.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Agriculture Department",
+   "aliases": [
+    "Agriculture Manipur"
+   ],
+   "description": "Runs extension services and input-subsidy schemes to support farmers and food-grain production in Manipur.",
+   "officialUrl": "https://agrimanipur.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://agrimanipur.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-arts-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Arts and Culture Department",
+   "aliases": [
+    "Art & Culture"
+   ],
+   "description": "Preserves Manipur's performing arts, archives and cultural heritage institutions.",
+   "officialUrl": "https://artnculturemanipur.mn.gov.in",
+   "headPositionId": "st-mn-pos-minister-2",
+   "sources": [
+    "https://artnculturemanipur.mn.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-cabinet-confidential",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Cabinet and Confidential Department",
+   "aliases": [
+    "Cabinet Affairs"
+   ],
+   "description": "Handles Cabinet meeting business, confidential government correspondence and coordination among departments.",
+   "officialUrl": "https://manipur.gov.in/?page_id=33169",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://manipur.gov.in/?page_id=33169"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mn-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Cooperation Department",
+   "aliases": [
+    "Co-operation"
+   ],
+   "description": "Registers and supervises cooperative societies including credit and marketing cooperatives in the state.",
+   "officialUrl": "https://rcsmanipur.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://rcsmanipur.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-consumer-affairs-food-public-distribution",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Consumer Affairs, Food and Public Distribution Department",
+   "aliases": [
+    "PDS Manipur"
+   ],
+   "description": "Runs the public distribution system and enforces consumer-protection and weights-and-measures law.",
+   "officialUrl": "https://pdsmanipur.nic.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://pdsmanipur.nic.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-economics-statistics",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Economics & Statistics Department",
+   "aliases": [
+    "Eco-Stat"
+   ],
+   "description": "Compiles the state's official economic, demographic and price statistics.",
+   "officialUrl": "https://manipur.gov.in/?page_id=15784",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://manipur.gov.in/?page_id=15784"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Education Department",
+   "aliases": [
+    "School & Higher Education"
+   ],
+   "description": "Runs government schools, colleges and technical/higher-education institutions across the state.",
+   "officialUrl": "http://manipureducation.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "http://manipureducation.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-election",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Election Department",
+   "aliases": [
+    "Elections Manipur"
+   ],
+   "description": "Coordinates with the Election Commission of India on electoral rolls and the conduct of polls in the state.",
+   "officialUrl": "https://ceomanipur.nic.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://ceomanipur.nic.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance Manipur"
+   ],
+   "description": "Prepares the state budget, controls treasury operations and manages the state government's finances.",
+   "officialUrl": "https://finance.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://finance.mn.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Fisheries Department",
+   "aliases": [
+    "Fisheries Manipur"
+   ],
+   "description": "Promotes inland and aquaculture fisheries development to boost rural incomes and nutrition.",
+   "officialUrl": "https://www.fisheries.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://www.fisheries.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-forest-environment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Forest and Environment Department",
+   "aliases": [
+    "Forest & Climate Change"
+   ],
+   "description": "Manages the state's reserved forests, wildlife sanctuaries and environmental/climate-change clearances.",
+   "officialUrl": "https://forest.manipurforest.gov.in",
+   "headPositionId": "st-mn-pos-deputy-cm-2",
+   "sources": [
+    "https://forest.manipurforest.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "General Administration Department",
+   "aliases": [
+    "GAD"
+   ],
+   "description": "Coordinates cross-department administrative matters and secretariat establishment functions.",
+   "officialUrl": "https://gadmanipur.nic.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://gadmanipur.nic.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-health-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Health and Family Welfare Department",
+   "aliases": [
+    "H&FW Manipur"
+   ],
+   "description": "Runs government hospitals, primary health centres and the state's public-health programmes.",
+   "officialUrl": "https://manipurhealthdirectorate.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://manipurhealthdirectorate.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-horticulture-soil-conservation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Horticulture and Soil Conservation Department",
+   "aliases": [
+    "Horticulture Manipur"
+   ],
+   "description": "Promotes fruit and cash-crop horticulture and runs soil- and watershed-conservation programmes.",
+   "officialUrl": "https://horticulture.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://horticulture.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Home Department",
+   "aliases": [
+    "Home Affairs Manipur"
+   ],
+   "description": "Oversees the state police, home guards, fire services and internal security administration.",
+   "officialUrl": "http://manipurpolice.gov.in",
+   "headPositionId": "st-mn-pos-minister-1",
+   "sources": [
+    "http://manipurpolice.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-information-public-relations",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Information and Public Relations Department",
+   "aliases": [
+    "DIPR Manipur"
+   ],
+   "description": "Handles the state government's press releases, publicity campaigns and public communication.",
+   "officialUrl": "https://dipr.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://dipr.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Information Technology Department",
+   "aliases": [
+    "IT Manipur"
+   ],
+   "description": "Runs the state's e-governance infrastructure and digital service-delivery platforms.",
+   "officialUrl": "https://ditmanipur.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://ditmanipur.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-labour-employment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Labour and Employment Department",
+   "aliases": [
+    "Labour Manipur"
+   ],
+   "description": "Enforces labour-welfare laws and runs craftsmen-training and employment-exchange services.",
+   "officialUrl": "https://manipurlabour.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://manipurlabour.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-law-legislative-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Law and Legislative Affairs Department",
+   "aliases": [
+    "Law Manipur"
+   ],
+   "description": "Drafts and vets state legislation and provides legal advice to the state government.",
+   "officialUrl": "https://manipur.gov.in/?page_id=1654",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://manipur.gov.in/?page_id=1654"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-municipal-administration-housing-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Municipal Administration, Housing and Urban Development Department (MAHUD)",
+   "aliases": [
+    "MAHUD"
+   ],
+   "description": "Regulates urban local bodies, municipal services, town planning and housing schemes in the state's towns.",
+   "officialUrl": "http://mahud.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "http://mahud.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-minorities-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Minorities Affairs Department",
+   "aliases": [
+    "Minority Welfare"
+   ],
+   "description": "Runs welfare and scholarship schemes for religious minority communities in the state.",
+   "officialUrl": "https://manipurminority.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://manipurminority.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-minor-irrigation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Minor Irrigation Department",
+   "aliases": [
+    "MID"
+   ],
+   "description": "Builds and maintains small-scale irrigation schemes to support agriculture in the state.",
+   "officialUrl": "http://mid.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "http://mid.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-personnel-administrative-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Personnel and Administrative Reforms Department",
+   "aliases": [
+    "DP/AR"
+   ],
+   "description": "Manages recruitment rules, service matters, cadre management and administrative-reform initiatives.",
+   "officialUrl": "https://manipur.gov.in/?page_id=15784",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://manipur.gov.in/?page_id=15784"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-planning",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Planning Department",
+   "aliases": [
+    "Planning Manipur"
+   ],
+   "description": "Prepares the state's development plans and allocates development funds across departments and districts.",
+   "officialUrl": "https://planningmanipur.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://planningmanipur.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-power",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Power Department",
+   "aliases": [
+    "AO Power"
+   ],
+   "description": "Generates, transmits and distributes electricity across Manipur, including renewable-energy programmes.",
+   "officialUrl": "https://aopower.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://aopower.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-public-health-engineering",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Public Health Engineering Department (PHED)",
+   "aliases": [
+    "PHED"
+   ],
+   "description": "Builds and maintains piped drinking-water supply schemes across the state's towns and villages.",
+   "officialUrl": "https://phedmanipur.gov.in/",
+   "headPositionId": "st-mn-pos-deputy-cm-2",
+   "sources": [
+    "https://phedmanipur.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-relief-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Relief and Disaster Management Department",
+   "aliases": [
+    "Disaster Management Manipur"
+   ],
+   "description": "Coordinates disaster preparedness, relief and rehabilitation, including for internally displaced persons.",
+   "officialUrl": "https://manipur.gov.in/?page_id=15784",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://manipur.gov.in/?page_id=15784"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Revenue Department",
+   "aliases": [
+    "Revenue Manipur"
+   ],
+   "description": "Maintains land records, land settlement and revenue administration across the state's districts.",
+   "officialUrl": "https://manipur.gov.in/?page_id=15784",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://manipur.gov.in/?page_id=15784"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-rural-development-panchayati-raj",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Rural Development and Panchayati Raj Department",
+   "aliases": [
+    "RD&PR Manipur"
+   ],
+   "description": "Implements rural livelihood, housing and employment-guarantee schemes and administers the panchayat system.",
+   "officialUrl": "http://rdmanipur.gov.in",
+   "headPositionId": "st-mn-pos-deputy-cm-1",
+   "sources": [
+    "http://rdmanipur.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-science-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Science and Technology Department",
+   "aliases": [
+    "DST Manipur"
+   ],
+   "description": "Promotes scientific research and remote-sensing applications through bodies such as MARSAC.",
+   "officialUrl": "https://dst.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://dst.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-sericulture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Sericulture Department",
+   "aliases": [
+    "Sericulture Manipur"
+   ],
+   "description": "Promotes silk-cocoon rearing and sericulture-based livelihoods in the state.",
+   "officialUrl": "https://serimanipur.nic.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://serimanipur.nic.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Social Welfare Department",
+   "aliases": [
+    "ICDS Manipur"
+   ],
+   "description": "Runs anganwadi centres, nutrition schemes and welfare programmes for women, children and the vulnerable.",
+   "officialUrl": "https://socialwelfare.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://socialwelfare.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-town-planning",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Town Planning Department",
+   "aliases": [
+    "TP Manipur"
+   ],
+   "description": "Regulates urban land-use planning and building-permission approvals in the state's towns.",
+   "officialUrl": "https://tpmanipur.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://tpmanipur.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Tourism Department",
+   "aliases": [
+    "Tourism Manipur"
+   ],
+   "description": "Promotes Manipur's tourist destinations and festivals, including the Sangai Festival, and develops tourism infrastructure.",
+   "officialUrl": "http://manipurtourism.gov.in",
+   "headPositionId": "st-mn-pos-minister-2",
+   "sources": [
+    "http://manipurtourism.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-trade-commerce-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Trade, Commerce and Industries Department",
+   "aliases": [
+    "DCI Manipur"
+   ],
+   "description": "Promotes MSME and industrial investment and regulates trade and handloom/handicraft production.",
+   "officialUrl": "https://dcimanipur.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://dcimanipur.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Transport Department",
+   "aliases": [
+    "Transport Manipur"
+   ],
+   "description": "Registers vehicles, issues driving licences and regulates public and commercial road transport.",
+   "officialUrl": "https://manipurtransport.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://manipurtransport.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-veterinary-animal-husbandry",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Veterinary and Animal Husbandry Department",
+   "aliases": [
+    "AH Manipur"
+   ],
+   "description": "Runs veterinary hospitals and disease-control and livestock-development programmes.",
+   "officialUrl": "https://vetymanipur.nic.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://vetymanipur.nic.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-vigilance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Vigilance Department",
+   "aliases": [
+    "DVAC Manipur"
+   ],
+   "description": "Investigates corruption complaints against government officials and enforces service-conduct rules.",
+   "officialUrl": "https://dvac.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://dvac.mn.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Water Resources Department",
+   "aliases": [
+    "WRD Manipur"
+   ],
+   "description": "Builds irrigation and flood-control infrastructure and manages the state's river and water resources.",
+   "officialUrl": "https://wrd.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "https://wrd.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Works Department",
+   "aliases": [
+    "PWD Manipur"
+   ],
+   "description": "Builds and maintains government roads, bridges and public buildings across the state.",
+   "officialUrl": "http://pwdmanipur.mn.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "http://pwdmanipur.mn.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-obc-sc-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Other Backward Classes and Scheduled Castes Welfare Department",
+   "aliases": [
+    "OBC & SC Welfare"
+   ],
+   "description": "Runs welfare and scholarship schemes for Other Backward Classes and Scheduled Castes communities.",
+   "officialUrl": "http://manipurobcsc.gov.in",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "sources": [
+    "http://manipurobcsc.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mn-dept-youth-affairs-sports",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Youth Affairs and Sports Department",
+   "aliases": [
+    "YAS Manipur"
+   ],
+   "description": "Develops sports infrastructure and runs youth-welfare and talent-promotion programmes.",
+   "officialUrl": "http://yasmanipur.gov.in",
+   "headPositionId": "st-mn-pos-minister-1",
+   "sources": [
+    "http://yasmanipur.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-dept-tribal-affairs-hills",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mn-government",
+   "name": "Tribal Affairs and Hills Department",
+   "aliases": [
+    "TAD Manipur"
+   ],
+   "description": "Administers welfare, development schemes and hill-area district administration for the state's tribal communities.",
+   "officialUrl": "https://manipur.gov.in/?page_id=15784",
+   "headPositionId": "st-mn-pos-deputy-cm-1",
+   "sources": [
+    "https://manipur.gov.in/?page_id=15784"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-agriculture-farmers-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Agriculture and Farmers' Welfare Department",
+   "aliases": [
+    "Agriculture Meghalaya"
+   ],
+   "description": "Runs extension services and schemes to raise farm productivity and farmer incomes across Meghalaya.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-4",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-animal-husbandry-veterinary",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Animal Husbandry and Veterinary Department",
+   "aliases": [
+    "AH&Vety"
+   ],
+   "description": "Runs veterinary hospitals, disease control and livestock-development programmes in the state.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-2",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-arts-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Arts & Culture Department",
+   "aliases": [
+    "Art & Culture Meghalaya"
+   ],
+   "description": "Preserves Meghalaya's tribal art forms, museums and cultural heritage institutions.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-2",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-border-areas-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Border Areas Development Department",
+   "aliases": [
+    "BADP Meghalaya"
+   ],
+   "description": "Implements the Border Area Development Programme for villages along Meghalaya's international border with Bangladesh.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-8",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-cabinet-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Cabinet Affairs Department",
+   "aliases": [
+    "Cabinet Meghalaya"
+   ],
+   "description": "Handles Cabinet meeting business and coordination of government decisions across departments.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-dept-commerce-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Commerce & Industries Department",
+   "aliases": [
+    "C&I Meghalaya"
+   ],
+   "description": "Promotes MSME and industrial investment through incentive schemes and industrial estates.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-deputy-cm-2",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-community-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Community & Rural Development Department",
+   "aliases": [
+    "C&RD"
+   ],
+   "description": "Implements rural livelihood, housing and employment-guarantee schemes in Meghalaya's villages.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Cooperation Department",
+   "aliases": [
+    "Co-operation Meghalaya"
+   ],
+   "description": "Registers and supervises cooperative societies including credit and marketing cooperatives.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-9",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-labour-employment-skill-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Department of Labour, Employment & Skill Development",
+   "aliases": [
+    "Labour Meghalaya"
+   ],
+   "description": "Enforces labour-welfare laws and runs employment-exchange and skill-training programmes.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-prisons-correctional-services",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Department of Prisons and Correctional Services",
+   "aliases": [
+    "Prisons Meghalaya"
+   ],
+   "description": "Administers the state's prisons and correctional/rehabilitation programmes for inmates.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-deputy-cm-1",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-dept-district-council-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "District Council Affairs Department",
+   "aliases": [
+    "DCA Meghalaya"
+   ],
+   "description": "Liaises with Meghalaya's three autonomous district councils (Khasi, Jaintia and Garo Hills) on devolved subjects.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-deputy-cm-1",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Education Department",
+   "aliases": [
+    "School & Higher Education Meghalaya"
+   ],
+   "description": "Runs government schools and technical/higher-education institutions across the state.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-6",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-elections",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Elections Department",
+   "aliases": [
+    "CEO Meghalaya"
+   ],
+   "description": "Coordinates with the Election Commission of India on electoral rolls and the conduct of polls in the state.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-excise-registration-taxation-stamps",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Excise Registration Taxation Stamps Department (ERTS)",
+   "aliases": [
+    "ERTS"
+   ],
+   "description": "Collects state excise duty, stamp duty and registration fees and regulates the sale of liquor.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance Meghalaya"
+   ],
+   "description": "Prepares the state budget, controls treasury operations and manages the state government's finances.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Fisheries Department",
+   "aliases": [
+    "Fisheries Meghalaya"
+   ],
+   "description": "Promotes inland fisheries and aquaculture development to boost rural incomes and nutrition.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-4",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-food-civil-supplies-consumer-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Food Civil Supplies & Consumer Affairs Department",
+   "aliases": [
+    "FCS&CA"
+   ],
+   "description": "Runs the public distribution system and enforces consumer-protection regulation in the state.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-9",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-forests-environment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Forests & Environment Department",
+   "aliases": [
+    "Forest Meghalaya"
+   ],
+   "description": "Manages the state's reserved forests, wildlife sanctuaries and environmental clearances.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "General Administration Department",
+   "aliases": [
+    "GAD Meghalaya"
+   ],
+   "description": "Coordinates cross-department administrative matters and cabinet secretariat functions for the state government.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-3",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-health-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Health & Family Welfare Department",
+   "aliases": [
+    "H&FW Meghalaya"
+   ],
+   "description": "Runs government hospitals, primary health centres and the state's public-health programmes.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-5",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-home-civil-defence-home-guards",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Home (Civil Defence and Home Guards) Department",
+   "aliases": [
+    "Home CD&HG"
+   ],
+   "description": "Runs the state's Civil Defence and Home Guards volunteer force for disaster response and law-and-order support.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-8",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-home-passport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Home (Passport) Department",
+   "aliases": [
+    "Passport Meghalaya"
+   ],
+   "description": "Processes police verification and coordinates passport issuance formalities for the state's residents.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-8",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-dept-home-police",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Home (Police) Department",
+   "aliases": [
+    "Home Police Meghalaya"
+   ],
+   "description": "Oversees the Meghalaya Police, law and order and internal security administration.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-deputy-cm-1",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-home-political",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Home (Political) Department",
+   "aliases": [
+    "Home Political Meghalaya"
+   ],
+   "description": "Handles Raj Bhavan liaison, protocol and political/ceremonial affairs of the state government.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-housing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Housing Department",
+   "aliases": [
+    "Housing Meghalaya"
+   ],
+   "description": "Runs government employee and public housing schemes across the state.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-1",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-information-public-relations",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Information & Public Relations Department",
+   "aliases": [
+    "IPR Meghalaya"
+   ],
+   "description": "Handles the state government's press releases, publicity campaigns and public communication.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-6",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-information-technology-communication",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Information Technology and Communication Department",
+   "aliases": [
+    "IT Meghalaya"
+   ],
+   "description": "Runs the state's e-governance infrastructure and digital service-delivery platforms.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-law",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Law Department",
+   "aliases": [
+    "Law Meghalaya"
+   ],
+   "description": "Drafts and vets state legislation and provides legal advice to the state government and its departments.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-legal-metrology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Legal Metrology Department",
+   "aliases": [
+    "Legal Metrology Meghalaya"
+   ],
+   "description": "Certifies weighing and measuring instruments used in trade across the state.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-deputy-cm-2",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-dept-mining-geology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Mining & Geology Department",
+   "aliases": [
+    "Mining Meghalaya"
+   ],
+   "description": "Regulates mineral exploration and mining leases, including the state's coal and limestone resources.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Parliamentary Affairs Department",
+   "aliases": [
+    "Parl Affairs Meghalaya"
+   ],
+   "description": "Coordinates government business and legislation in the Meghalaya Legislative Assembly.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-personnel-ar",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Personnel & A.R. Department",
+   "aliases": [
+    "Personnel Meghalaya"
+   ],
+   "description": "Manages recruitment rules, service matters and administrative-reform initiatives for the state's civil services.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-planning-investment-promotion-sustainable-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Planning, Investment Promotion & Sustainable Development Department",
+   "aliases": [
+    "Planning Meghalaya"
+   ],
+   "description": "Prepares the state's development plans and promotes investment and sustainable-development programmes.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-power",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Power Department",
+   "aliases": [
+    "Power Meghalaya"
+   ],
+   "description": "Generates, transmits and distributes electricity across Meghalaya through the state power utilities.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-7",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-printing-stationery",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Printing & Stationery Department",
+   "aliases": [
+    "Govt Press Meghalaya"
+   ],
+   "description": "Runs the state government press and supplies stationery to government offices.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-3",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-dept-programme-implementation-evaluation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Programme Implementation & Evaluation Department",
+   "aliases": [
+    "PI&E Meghalaya"
+   ],
+   "description": "Monitors and evaluates implementation of the state's development schemes and flagship programmes.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-public-health-engineering",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Public Health Engineering Department",
+   "aliases": [
+    "PHE Meghalaya"
+   ],
+   "description": "Builds and maintains piped drinking-water supply schemes across Meghalaya's towns and villages.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-1",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Public Works Department",
+   "aliases": [
+    "PWD Meghalaya"
+   ],
+   "description": "Builds and maintains government roads, bridges and public buildings across the state.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-deputy-cm-1",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-revenue-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Revenue & Disaster Management Department",
+   "aliases": [
+    "Revenue Meghalaya"
+   ],
+   "description": "Maintains land records and revenue administration and coordinates disaster preparedness and relief.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-secretariat-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Secretariat Administration Department",
+   "aliases": [
+    "SAD Meghalaya"
+   ],
+   "description": "Manages establishment, records and administrative support functions of the state civil secretariat.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-3",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Social Welfare Department",
+   "aliases": [
+    "Social Welfare Meghalaya"
+   ],
+   "description": "Runs anganwadi centres, nutrition schemes and welfare programmes for women, children and the vulnerable.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-soil-water-conservation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Soil & Water Conservation Department",
+   "aliases": [
+    "SWC Meghalaya"
+   ],
+   "description": "Runs watershed-management and soil-conservation programmes to support agriculture and prevent erosion.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-dept-sports-youth-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Sports & Youth Affairs Department",
+   "aliases": [
+    "Sports Meghalaya"
+   ],
+   "description": "Develops sports infrastructure and runs youth-welfare and talent-promotion programmes in the state.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-5",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-textiles",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Textiles Department",
+   "aliases": [
+    "Textiles Meghalaya"
+   ],
+   "description": "Promotes traditional weaving and the handloom and textile industry in the state.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-7",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Tourism Department",
+   "aliases": [
+    "Tourism Meghalaya"
+   ],
+   "description": "Promotes Meghalaya's tourist destinations and festivals and develops tourism infrastructure.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-4",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Transport Department",
+   "aliases": [
+    "Transport Meghalaya"
+   ],
+   "description": "Registers vehicles, issues driving licences and regulates public and commercial road transport.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-deputy-cm-2",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-urban-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Urban Affairs Department",
+   "aliases": [
+    "Urban Development Meghalaya"
+   ],
+   "description": "Regulates town planning, urban local bodies and municipal services in the state's urban centres.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-deputy-cm-2",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-ml-government",
+   "name": "Water Resources Department",
+   "aliases": [
+    "WRD Meghalaya"
+   ],
+   "description": "Builds irrigation and flood-control infrastructure and manages the state's river and water resources.",
+   "officialUrl": "https://meghalaya.gov.in/departments",
+   "headPositionId": "st-ml-pos-minister-7",
+   "sources": [
+    "https://meghalaya.gov.in/departments"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-ar-pos-secretary-agriculture",
+   "title": "Secretary, Agriculture, Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-agriculture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Samuel Changkija",
+    "notes": "IFS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-animal-husbandry-veterinary",
+   "title": "Commissioner (Animal Husbandry, Veterinary & Dairy Development), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-animal-husbandry-veterinary",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "YVVJ Rajasekhar",
+    "notes": "IAS, AGMUT:2012"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-cooperation",
+   "title": "Secretary (Rural Development & Panchayati Raj, Cooperation, IT&C), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-cooperation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Sonal Swaroop",
+    "notes": "IAS, AGMUT:2012"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-rural-development",
+   "title": "Secretary (Rural Development & Panchayati Raj), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-rural-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Sonal Swaroop",
+    "notes": "IAS, AGMUT:2012"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-panchayati-raj",
+   "title": "Secretary (Rural Development & Panchayati Raj), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-panchayati-raj",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Sonal Swaroop",
+    "notes": "IAS, AGMUT:2012"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-economics-statistics",
+   "title": "Secretary, Economics & Statistics, Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-economics-statistics",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Anu Singh",
+    "notes": "ICLS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-information-technology-communication",
+   "title": "Secretary (IT & Communication), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-information-technology-communication",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Sonal Swaroop",
+    "notes": "IAS, AGMUT:2012"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-skill-development-entrepreneurship",
+   "title": "Secretary, Skill Development, Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-skill-development-entrepreneurship",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Bullo Mamu",
+    "notes": "IRS, 2014"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-education",
+   "title": "Secretary, Education, Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Duly Kamduk",
+    "notes": "IAS, 2013"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-election",
+   "title": "Principal Secretary (Political, PWD, Election, Home, Border Affairs), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-election",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Kaling Tayeng",
+    "notes": "IAS, AGMUT:98"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-political",
+   "title": "Principal Secretary (Political, PWD, Election, Home, Border Affairs), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-political",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Kaling Tayeng",
+    "notes": "IAS, AGMUT:98"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-fisheries",
+   "title": "Commissioner, Fisheries, Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-fisheries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Tai Kaye",
+    "notes": "IAS, AGMUT:2010"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-food-civil-supplies",
+   "title": "Secretary (Food & Civil Supplies, Legal Metrology & Consumer Affairs), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-food-civil-supplies",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Kanto Danggen",
+    "notes": "APCS (STS)"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-health-family-welfare",
+   "title": "Commissioner, Health & Family Welfare, Government of Arunachal Pradesh (also Chief Electoral Officer)",
+   "orgId": "st-ar-dept-health-family-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Pawan Kumar Sain",
+    "notes": "IAS, AGMUT:2005"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-industries",
+   "title": "Secretary, Industries, Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-industries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Hage Tari",
+    "notes": "IOFS, 1991"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-information-public-relations",
+   "title": "Commissioner (IPR & Printing), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-information-public-relations",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Nyali Ete",
+    "notes": "IAS, AGMUT:2010"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-power",
+   "title": "Commissioner (Planning, Power, Electrical), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-power",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Rajendar Kumar Sharma",
+    "notes": "IAS, AGMUT:2010"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-public-works",
+   "title": "Principal Secretary (PWD, Political, Election, Home, Border Affairs), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-public-works",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Kaling Tayeng",
+    "notes": "IAS, AGMUT:98"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-research",
+   "title": "Secretary, Research, Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-research",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "B.J. Duia",
+    "notes": "APCS (STS)"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-transport",
+   "title": "Commissioner (Transport, Agriculture Production, Urban Affairs), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-transport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Vivek Pandey",
+    "notes": "IAS, AGMUT:2003"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-law",
+   "title": "Commissioner (Law, Transport), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-law",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Saugat Biswas",
+    "notes": "IAS, AGMUT:2006"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-finance",
+   "title": "Commissioner (Finance, Tax & Excise), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Y.W. Ringu",
+    "notes": "IAS, AGMUT:2008"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-tax-excise",
+   "title": "Commissioner (Finance, Tax & Excise), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-tax-excise",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Y.W. Ringu",
+    "notes": "IAS, AGMUT:2008"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-planning",
+   "title": "Commissioner (Planning, Power, Electrical), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-planning",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Rajendar Kumar Sharma",
+    "notes": "IAS, AGMUT:2010"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-textile-handicraft-handloom",
+   "title": "Commissioner (Textile & Handicraft, Women & Child Development, Parliamentary Affairs), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-textile-handicraft-handloom",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Mimum Tayeng",
+    "notes": "IAS, 2009"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-women-child-development",
+   "title": "Commissioner (Women & Child Development, Textile & Handicraft, Parliamentary Affairs), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-women-child-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Mimum Tayeng",
+    "notes": "IAS, 2009"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-parliamentary-affairs",
+   "title": "Commissioner (Parliamentary Affairs, Women & Child Development, Textile & Handicraft), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-parliamentary-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Mimum Tayeng",
+    "notes": "IAS, 2009"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-home",
+   "title": "Commissioner (Home) & Inspector General of Prisons, Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-home",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Nyali Ete",
+    "since": "2026-03-01",
+    "notes": "IAS, AGMUT:2010. Dual charge with IPR & Printing (st-ar-pos-secretary-information-public-relations). Corrected during adversarial verification 2026-09-25: arunachalpradesh.gov.in/whos-who.php lists Nyali Ete '2. Home/IG Prison w.e.f. 01.03.2026' (dated, explicit effective date) alongside an older, undated entry still crediting C.N. Longphai as 'Commissioner (Home) & IG Prison' — the same live page as of 2026-09-25 carries both; the dated entry is treated as authoritative and supersedes the stale one."
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-urban-affairs",
+   "title": "Commissioner (Urban Affairs: Urban Development, Town Planning, Urban Local Bodies, Housing), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-urban-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Vivek Pandey",
+    "notes": "IAS, AGMUT:2003"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-land-management",
+   "title": "Commissioner (Land Management, Geology & Mining), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-land-management",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Audesh Kumar Singh",
+    "notes": "IAS, 2010"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-geology-mining",
+   "title": "Commissioner (Geology & Mining, Land Management), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-geology-mining",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Audesh Kumar Singh",
+    "notes": "IAS, 2010"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-water-resources",
+   "title": "Secretary, Water Resources Department, Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-water-resources",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Pige Ligu",
+    "notes": "IAS, 2011"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-public-health-engineering-water-supply",
+   "title": "Commissioner (PHE & Water Supply, Education), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-public-health-engineering-water-supply",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Amjad Tak",
+    "notes": "IAS, 2005"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-sports-youth-affairs",
+   "title": "Secretary (Sports & Youth Affairs, SJETA, State Lotteries), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-sports-youth-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Abu Tayeng",
+    "notes": "IAS, 2011"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-trade-commerce",
+   "title": "Secretary (Trade & Commerce, State Election Commission), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-trade-commerce",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Taru Talo",
+    "notes": "IAS, 2011"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-science-technology",
+   "title": "Secretary (Science & Technology, Lokayukta), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-science-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Sumedha Yadav",
+    "notes": "IAS, 2012"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-horticulture",
+   "title": "Secretary, Horticulture, Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-horticulture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Koj Rinya",
+    "notes": "IFS, 2006"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-border-affairs",
+   "title": "Secretary (Political & Border Affairs, Tourism), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-border-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Ranphoa Ngowa",
+    "notes": "IFS, AGMUT:2014"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-tourism",
+   "title": "Secretary (Tourism, Political & Border Affairs), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-tourism",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Ranphoa Ngowa",
+    "notes": "IFS, AGMUT:2014"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-personnel",
+   "title": "Secretary (Personnel, AR & Training, Vigilance), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-personnel",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Rajesh Kumar",
+    "notes": "IAS, 2014"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-administrative-reforms-training",
+   "title": "Secretary (AR & Training, Personnel, Vigilance), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-administrative-reforms-training",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Rajesh Kumar",
+    "notes": "IAS, 2014"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-vigilance",
+   "title": "Secretary (Vigilance, Personnel, AR & Training), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-vigilance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Rajesh Kumar",
+    "notes": "IAS, 2014"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-general-administration",
+   "title": "Secretary (General Administration, Secretariat Administration, Protocol), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-general-administration",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Komkar Dulom",
+    "notes": "APCS (STS)"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-secretariat-administration",
+   "title": "Secretary (Secretariat Administration, General Administration, Protocol), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-secretariat-administration",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Komkar Dulom",
+    "notes": "APCS (STS)"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-legal-metrology-consumer-affairs",
+   "title": "Secretary (Legal Metrology & Consumer Affairs, Food & Civil Supplies), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-legal-metrology-consumer-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Kanto Danggen",
+    "notes": "APCS (STS)"
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-secretary-disaster-management",
+   "title": "Secretary (Disaster Management, PWD), Government of Arunachal Pradesh",
+   "orgId": "st-ar-dept-disaster-management",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Dani Salu",
+    "notes": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in/whos-who.php"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-agriculture-farmers-welfare",
+   "title": "Secretary, Agriculture and Farmers' Welfare Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-agriculture-farmers-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Isawanda Laloo",
+    "since": "2026-01-02",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-animal-husbandry-veterinary",
+   "title": "Secretary, Animal Husbandry and Veterinary Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-animal-husbandry-veterinary",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Sibhi Chakravarthy Sadhu",
+    "since": "2024-07-04",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-arts-culture",
+   "title": "Principal Secretary, Arts & Culture Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-arts-culture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Frederick Roy Kharkongor",
+    "since": "2024-07-01",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-border-areas-development",
+   "title": "Commissioner & Secretary, Border Areas Development Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-border-areas-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "B.D.R. Tiwari",
+    "since": "2026-01-02",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-cabinet-affairs",
+   "title": "Commissioner & Secretary, Cabinet Affairs Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-cabinet-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Cyril V. Darlong Diengdoh",
+    "since": "2025-01-21",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-community-rural-development",
+   "title": "Principal Secretary, Community & Rural Development Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-community-rural-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Mebanshailang R. Synrem",
+    "since": "2026-07-23",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-cooperation",
+   "title": "Commissioner & Secretary, Cooperation Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-cooperation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Pooja Pandey",
+    "since": "2026-05-13",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-labour-employment-skill-development",
+   "title": "Commissioner & Secretary, Department of Labour, Employment & Skill Development, Government of Meghalaya",
+   "orgId": "st-ml-dept-labour-employment-skill-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "B.D.R. Tiwari",
+    "since": "2026-04-22",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-prisons-correctional-services",
+   "title": "Commissioner & Secretary, Department of Prisons and Correctional Services, Government of Meghalaya",
+   "orgId": "st-ml-dept-prisons-correctional-services",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Ryntihlang Rapthap",
+    "since": "2025-02-03",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-district-council-affairs",
+   "title": "Principal Secretary, District Council Affairs Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-district-council-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Mebanshailang R. Synrem",
+    "since": "2026-07-07",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-education",
+   "title": "Secretary, Education Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "David D. Sangma",
+    "since": "2025-04-15",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-elections",
+   "title": "Commissioner & Secretary, Elections Department, Government of Meghalaya (also Chief Electoral Officer)",
+   "orgId": "st-ml-dept-elections",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "B.D.R. Tiwari",
+    "since": "2023-06-02",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-excise-registration-taxation-stamps",
+   "title": "Commissioner & Secretary, ERTS Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-excise-registration-taxation-stamps",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Pravin Bakshi",
+    "since": "2024-07-31",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-finance",
+   "title": "Commissioner & Secretary, Finance Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Ramakrishna Chitturi",
+    "since": "2026-03-16",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-fisheries",
+   "title": "Secretary, Fisheries Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-fisheries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Swapnil Tembe",
+    "since": "2026-05-07",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-food-civil-supplies-consumer-affairs",
+   "title": "Commissioner & Secretary, Food Civil Supplies & Consumer Affairs Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-food-civil-supplies-consumer-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Pravin Bakshi",
+    "since": "2022-01-01",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-forests-environment",
+   "title": "Secretary, Forests & Environment Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-forests-environment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Sibhi Chakravarthy Sadhu",
+    "since": "2023-08-18",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-general-administration",
+   "title": "Secretary, General Administration Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-general-administration",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Swapnil Tembe",
+    "since": "2026-01-06",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-health-family-welfare",
+   "title": "Secretary, Health & Family Welfare Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-health-family-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Ramkumar S",
+    "since": "2026-07-13",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-home-civil-defence-home-guards",
+   "title": "Commissioner & Secretary, Home (CD&HG) Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-home-civil-defence-home-guards",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Vijay Kumar Mantri",
+    "since": "2024-05-01",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-home-passport",
+   "title": "Secretary, Home (Passport) Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-home-passport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Aldealyne Nikhla",
+    "since": "2026-03-16",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-home-police",
+   "title": "Commissioner & Secretary, Home (Police) Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-home-police",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Rosetta Mary Kurbah",
+    "since": "2026-06-01",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-home-political",
+   "title": "Secretary, Home (Political) Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-home-political",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Garod LSN Dykes",
+    "since": "2026-01-14",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-information-public-relations",
+   "title": "Secretary, Information & Public Relations Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-information-public-relations",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Batlang Samuel Sohliya",
+    "since": "2025-02-05",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-information-technology-communication",
+   "title": "Commissioner & Secretary, IT & Communication Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-information-technology-communication",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Pravin Bakshi",
+    "since": "2023-01-10",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-law",
+   "title": "Commissioner & Secretary, Law Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-law",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Cyril V. Darlong Diengdoh",
+    "since": "2025-01-21",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-mining-geology",
+   "title": "Commissioner & Secretary, Mining & Geology Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-mining-geology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Vijay Kumar Mantri",
+    "since": "2024-06-26",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-parliamentary-affairs",
+   "title": "Commissioner & Secretary, Parliamentary Affairs Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-parliamentary-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Cyril V. Darlong Diengdoh",
+    "since": "2025-01-21",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-personnel-ar",
+   "title": "Secretary, Personnel & A.R. Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-personnel-ar",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Tangseng G. Momin",
+    "since": "2026-03-16",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-planning-investment-promotion-sustainable-development",
+   "title": "Commissioner & Secretary, Planning Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-planning-investment-promotion-sustainable-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Ramakrishna Chitturi",
+    "since": "2026-03-16",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-power",
+   "title": "Commissioner & Secretary, Power Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-power",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Ramakrishna Chitturi",
+    "since": "2026-05-07",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-printing-stationery",
+   "title": "Commissioner & Secretary, Printing & Stationery Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-printing-stationery",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Matsiewdor War Nongbri",
+    "since": "2026-01-02",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-programme-implementation-evaluation",
+   "title": "Additional Chief Secretary, Programme Implementation & Evaluation Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-programme-implementation-evaluation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Sampath Kumar",
+    "since": "2026-05-04",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-public-health-engineering",
+   "title": "Commissioner & Secretary, Public Health Engineering Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-public-health-engineering",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Pravin Bakshi",
+    "since": "2025-04-22",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-public-works",
+   "title": "Commissioner & Secretary, Public Works (Roads & Buildings) Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-public-works",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Sanjay Goyal",
+    "since": "2025-04-21",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-revenue-disaster-management",
+   "title": "Commissioner & Secretary, Revenue & D.M. Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-revenue-disaster-management",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Matsiewdor War Nongbri",
+    "since": "2026-01-02",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-secretariat-administration",
+   "title": "Principal Secretary, Secretariat Administration Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-secretariat-administration",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Mebanshailang R. Synrem",
+    "since": "2026-05-05",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-social-welfare",
+   "title": "Additional Chief Secretary, Social Welfare Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-social-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Sampath Kumar",
+    "since": "2026-05-04",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-soil-water-conservation",
+   "title": "Commissioner & Secretary, Soil & Water Conservation Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-soil-water-conservation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Joram Beda",
+    "since": "2023-01-12",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-sports-youth-affairs",
+   "title": "Secretary, Sports & Youth Affairs Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-sports-youth-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Isawanda Laloo",
+    "since": "2026-01-02",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-textiles",
+   "title": "Principal Secretary, Textiles Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-textiles",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Frederick Roy Kharkongor",
+    "since": "2024-07-01",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-tourism",
+   "title": "Commissioner & Secretary, Tourism Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-tourism",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Rosetta Mary Kurbah",
+    "since": "2026-06-01",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-transport",
+   "title": "Secretary, Transport Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-transport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "David D. Sangma",
+    "notes": "IAS; charge report not yet received as of the source snapshot"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-urban-affairs",
+   "title": "Secretary, Urban Affairs Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-urban-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Wanrilin A.M. Booth Shadap",
+    "since": "2024-12-17",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-secretary-water-resources",
+   "title": "Commissioner & Secretary, Water Resources Department, Government of Meghalaya",
+   "orgId": "st-ml-dept-water-resources",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Cyril V. Darlong Diengdoh",
+    "since": "2026-01-01",
+    "notes": "IAS"
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/ias"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "relations": [
+  {
+   "from": "st-ar-pos-minister-7",
+   "to": "st-ar-dept-agriculture",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-7",
+   "to": "st-ar-dept-animal-husbandry-veterinary",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-animal-husbandry-veterinary",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-3",
+   "to": "st-ar-dept-civil-aviation",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-civil-aviation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-1",
+   "to": "st-ar-dept-cooperation",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-1",
+   "to": "st-ar-dept-rural-development",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-1",
+   "to": "st-ar-dept-panchayati-raj",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-panchayati-raj",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-deputy-cm-1",
+   "to": "st-ar-dept-economics-statistics",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-economics-statistics",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-chief-minister",
+   "to": "st-ar-dept-indigenous-affairs",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-indigenous-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-chief-minister",
+   "to": "st-ar-dept-information-technology-communication",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-information-technology-communication",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-9",
+   "to": "st-ar-dept-skill-development-entrepreneurship",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-skill-development-entrepreneurship",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-6",
+   "to": "st-ar-dept-education",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-4",
+   "to": "st-ar-dept-election",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-election",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-4",
+   "to": "st-ar-dept-political",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-political",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-7",
+   "to": "st-ar-dept-fisheries",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-7",
+   "to": "st-ar-dept-food-civil-supplies",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-food-civil-supplies",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-10",
+   "to": "st-ar-dept-health-family-welfare",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-health-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-9",
+   "to": "st-ar-dept-industries",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-chief-minister",
+   "to": "st-ar-dept-information-public-relations",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-information-public-relations",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-9",
+   "to": "st-ar-dept-labour",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-labour",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-deputy-cm-1",
+   "to": "st-ar-dept-power",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-power",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-chief-minister",
+   "to": "st-ar-dept-public-works",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-public-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-chief-minister",
+   "to": "st-ar-dept-research",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-research",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-2",
+   "to": "st-ar-dept-social-welfare",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-1",
+   "to": "st-ar-dept-transport",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-2",
+   "to": "st-ar-dept-law",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-law",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-deputy-cm-1",
+   "to": "st-ar-dept-finance",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-deputy-cm-1",
+   "to": "st-ar-dept-tax-excise",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-tax-excise",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-deputy-cm-1",
+   "to": "st-ar-dept-planning",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-planning",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-5",
+   "to": "st-ar-dept-textile-handicraft-handloom",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-textile-handicraft-handloom",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-5",
+   "to": "st-ar-dept-women-child-development",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-women-child-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-6",
+   "to": "st-ar-dept-parliamentary-affairs",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-4",
+   "to": "st-ar-dept-home",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-3",
+   "to": "st-ar-dept-urban-affairs",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-urban-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-3",
+   "to": "st-ar-dept-land-management",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-land-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-8",
+   "to": "st-ar-dept-geology-mining",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-geology-mining",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-8",
+   "to": "st-ar-dept-environment-forests",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-environment-forests",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-10",
+   "to": "st-ar-dept-water-resources",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-4",
+   "to": "st-ar-dept-public-health-engineering-water-supply",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-public-health-engineering-water-supply",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-2",
+   "to": "st-ar-dept-sports-youth-affairs",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-sports-youth-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-9",
+   "to": "st-ar-dept-trade-commerce",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-trade-commerce",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-5",
+   "to": "st-ar-dept-science-technology",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-science-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-7",
+   "to": "st-ar-dept-horticulture",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-horticulture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-4",
+   "to": "st-ar-dept-border-affairs",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-border-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-6",
+   "to": "st-ar-dept-tourism",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-chief-minister",
+   "to": "st-ar-dept-personnel",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-personnel",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-chief-minister",
+   "to": "st-ar-dept-administrative-reforms-training",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-administrative-reforms-training",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-chief-minister",
+   "to": "st-ar-dept-vigilance",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-vigilance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-chief-minister",
+   "to": "st-ar-dept-general-administration",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-general-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-chief-minister",
+   "to": "st-ar-dept-secretariat-administration",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-secretariat-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-minister-7",
+   "to": "st-ar-dept-legal-metrology-consumer-affairs",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-legal-metrology-consumer-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ar-pos-chief-minister",
+   "to": "st-ar-dept-disaster-management",
+   "type": "heads",
+   "source": "https://arunachalpradesh.gov.in/government-department.php"
+  },
+  {
+   "from": "st-ar-pos-chief-secretary",
+   "to": "st-ar-dept-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-cm-secretariat",
+   "type": "heads",
+   "source": "http://cmmanipur.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-cm-secretariat",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-agriculture",
+   "type": "heads",
+   "source": "https://agrimanipur.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-minister-2",
+   "to": "st-mn-dept-arts-culture",
+   "type": "heads",
+   "source": "https://artnculturemanipur.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-arts-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-cabinet-confidential",
+   "type": "heads",
+   "source": "https://manipur.gov.in/?page_id=33169"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-cabinet-confidential",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-cooperation",
+   "type": "heads",
+   "source": "https://rcsmanipur.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-consumer-affairs-food-public-distribution",
+   "type": "heads",
+   "source": "https://pdsmanipur.nic.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-consumer-affairs-food-public-distribution",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-economics-statistics",
+   "type": "heads",
+   "source": "https://manipur.gov.in/?page_id=15784"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-economics-statistics",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-education",
+   "type": "heads",
+   "source": "http://manipureducation.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-election",
+   "type": "heads",
+   "source": "https://ceomanipur.nic.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-election",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-finance",
+   "type": "heads",
+   "source": "https://finance.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-fisheries",
+   "type": "heads",
+   "source": "https://www.fisheries.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-deputy-cm-2",
+   "to": "st-mn-dept-forest-environment",
+   "type": "heads",
+   "source": "https://forest.manipurforest.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-forest-environment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-general-administration",
+   "type": "heads",
+   "source": "https://gadmanipur.nic.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-general-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-health-family-welfare",
+   "type": "heads",
+   "source": "https://manipurhealthdirectorate.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-health-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-horticulture-soil-conservation",
+   "type": "heads",
+   "source": "https://horticulture.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-horticulture-soil-conservation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-minister-1",
+   "to": "st-mn-dept-home",
+   "type": "heads",
+   "source": "http://manipurpolice.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-information-public-relations",
+   "type": "heads",
+   "source": "https://dipr.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-information-public-relations",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-information-technology",
+   "type": "heads",
+   "source": "https://ditmanipur.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-labour-employment",
+   "type": "heads",
+   "source": "https://manipurlabour.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-labour-employment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-law-legislative-affairs",
+   "type": "heads",
+   "source": "https://manipur.gov.in/?page_id=1654"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-law-legislative-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-municipal-administration-housing-urban-development",
+   "type": "heads",
+   "source": "http://mahud.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-municipal-administration-housing-urban-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-minorities-affairs",
+   "type": "heads",
+   "source": "https://manipurminority.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-minorities-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-minor-irrigation",
+   "type": "heads",
+   "source": "http://mid.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-minor-irrigation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-personnel-administrative-reforms",
+   "type": "heads",
+   "source": "https://manipur.gov.in/?page_id=15784"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-personnel-administrative-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-planning",
+   "type": "heads",
+   "source": "https://planningmanipur.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-planning",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-power",
+   "type": "heads",
+   "source": "https://aopower.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-power",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-deputy-cm-2",
+   "to": "st-mn-dept-public-health-engineering",
+   "type": "heads",
+   "source": "https://phedmanipur.gov.in/"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-public-health-engineering",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-relief-disaster-management",
+   "type": "heads",
+   "source": "https://manipur.gov.in/?page_id=15784"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-relief-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-revenue",
+   "type": "heads",
+   "source": "https://manipur.gov.in/?page_id=15784"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-revenue",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-deputy-cm-1",
+   "to": "st-mn-dept-rural-development-panchayati-raj",
+   "type": "heads",
+   "source": "http://rdmanipur.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-rural-development-panchayati-raj",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-science-technology",
+   "type": "heads",
+   "source": "https://dst.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-science-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-sericulture",
+   "type": "heads",
+   "source": "https://serimanipur.nic.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-sericulture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-social-welfare",
+   "type": "heads",
+   "source": "https://socialwelfare.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-town-planning",
+   "type": "heads",
+   "source": "https://tpmanipur.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-town-planning",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-minister-2",
+   "to": "st-mn-dept-tourism",
+   "type": "heads",
+   "source": "http://manipurtourism.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-trade-commerce-industries",
+   "type": "heads",
+   "source": "https://dcimanipur.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-trade-commerce-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-transport",
+   "type": "heads",
+   "source": "https://manipurtransport.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-veterinary-animal-husbandry",
+   "type": "heads",
+   "source": "https://vetymanipur.nic.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-veterinary-animal-husbandry",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-vigilance",
+   "type": "heads",
+   "source": "https://dvac.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-vigilance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-water-resources",
+   "type": "heads",
+   "source": "https://wrd.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-works",
+   "type": "heads",
+   "source": "http://pwdmanipur.mn.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-dept-obc-sc-welfare",
+   "type": "heads",
+   "source": "http://manipurobcsc.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-obc-sc-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-minister-1",
+   "to": "st-mn-dept-youth-affairs-sports",
+   "type": "heads",
+   "source": "http://yasmanipur.gov.in"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-youth-affairs-sports",
+   "type": "oversees"
+  },
+  {
+   "from": "st-mn-pos-deputy-cm-1",
+   "to": "st-mn-dept-tribal-affairs-hills",
+   "type": "heads",
+   "source": "https://manipur.gov.in/?page_id=15784"
+  },
+  {
+   "from": "st-mn-pos-chief-secretary",
+   "to": "st-mn-dept-tribal-affairs-hills",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-4",
+   "to": "st-ml-dept-agriculture-farmers-welfare",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-agriculture-farmers-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-2",
+   "to": "st-ml-dept-animal-husbandry-veterinary",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-animal-husbandry-veterinary",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-2",
+   "to": "st-ml-dept-arts-culture",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-arts-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-8",
+   "to": "st-ml-dept-border-areas-development",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-border-areas-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-cabinet-affairs",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-cabinet-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-deputy-cm-2",
+   "to": "st-ml-dept-commerce-industries",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-commerce-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-community-rural-development",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-community-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-9",
+   "to": "st-ml-dept-cooperation",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-labour-employment-skill-development",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-labour-employment-skill-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-deputy-cm-1",
+   "to": "st-ml-dept-prisons-correctional-services",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-prisons-correctional-services",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-deputy-cm-1",
+   "to": "st-ml-dept-district-council-affairs",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-district-council-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-6",
+   "to": "st-ml-dept-education",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-elections",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-elections",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-excise-registration-taxation-stamps",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-excise-registration-taxation-stamps",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-finance",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-4",
+   "to": "st-ml-dept-fisheries",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-9",
+   "to": "st-ml-dept-food-civil-supplies-consumer-affairs",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-food-civil-supplies-consumer-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-forests-environment",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-forests-environment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-3",
+   "to": "st-ml-dept-general-administration",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-general-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-5",
+   "to": "st-ml-dept-health-family-welfare",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-health-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-8",
+   "to": "st-ml-dept-home-civil-defence-home-guards",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-home-civil-defence-home-guards",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-8",
+   "to": "st-ml-dept-home-passport",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-home-passport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-deputy-cm-1",
+   "to": "st-ml-dept-home-police",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-home-police",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-home-political",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-home-political",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-1",
+   "to": "st-ml-dept-housing",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-housing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-6",
+   "to": "st-ml-dept-information-public-relations",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-information-public-relations",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-information-technology-communication",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-information-technology-communication",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-law",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-law",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-deputy-cm-2",
+   "to": "st-ml-dept-legal-metrology",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-legal-metrology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-mining-geology",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-mining-geology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-parliamentary-affairs",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-personnel-ar",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-personnel-ar",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-planning-investment-promotion-sustainable-development",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-planning-investment-promotion-sustainable-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-7",
+   "to": "st-ml-dept-power",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-power",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-3",
+   "to": "st-ml-dept-printing-stationery",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-printing-stationery",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-programme-implementation-evaluation",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-programme-implementation-evaluation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-1",
+   "to": "st-ml-dept-public-health-engineering",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-public-health-engineering",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-deputy-cm-1",
+   "to": "st-ml-dept-public-works",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-public-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-revenue-disaster-management",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-revenue-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-3",
+   "to": "st-ml-dept-secretariat-administration",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-secretariat-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-social-welfare",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-dept-soil-water-conservation",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-soil-water-conservation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-5",
+   "to": "st-ml-dept-sports-youth-affairs",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-sports-youth-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-7",
+   "to": "st-ml-dept-textiles",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-textiles",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-4",
+   "to": "st-ml-dept-tourism",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-deputy-cm-2",
+   "to": "st-ml-dept-transport",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-deputy-cm-2",
+   "to": "st-ml-dept-urban-affairs",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-urban-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-ml-pos-minister-7",
+   "to": "st-ml-dept-water-resources",
+   "type": "heads",
+   "source": "https://meghalaya.gov.in/departments"
+  },
+  {
+   "from": "st-ml-pos-chief-secretary",
+   "to": "st-ml-dept-water-resources",
+   "type": "oversees"
+  }
+ ],
+ "verification": {
+  "date": "2026-09-25",
+  "verifier": "adversarial-verifier subagent",
+  "priorReport": {
+   "departments": 143,
+   "secretaries": 91,
+   "perState": "Arunachal Pradesh (st-ar): 51 departments, 46 secretary positions. Manipur (st-mn): 44 departments, 0 secretary positions. Meghalaya (st-ml): 48 departments, 45 secretary positions."
+  },
+  "structuralChecks": {
+   "jsonParses": true,
+   "idPatternViolations": 0,
+   "duplicateIds": 0,
+   "headPositionIdUnresolved": 0,
+   "orgIdUnresolved": 0,
+   "vacantHolderInconsistencies": 0
+  },
+  "secretaryPostingsReverified": {
+   "count": 56,
+   "method": "AR: all 46/46 secretary postings cross-checked by exact-name match against a fresh same-day WebFetch of the live arunachalpradesh.gov.in/whos-who.php (not just the cached HTML). ML: 10 of 45 spot-checked against meghalaya.gov.in/ias's per-officer dated-charge register by extracting every (officer, department-charge, date) triple and confirming the JSON holder matches the most-recently-dated charge for that department.",
+   "corrected": 1,
+   "correctedDetail": "st-ar-pos-secretary-home: C.N. Longphai -> Nyali Ete (since 2026-03-01); see holder.notes on that position for the source conflict.",
+   "confirmedCorrect": 55,
+   "flaggedAmbiguousNotChanged": [
+    "PWD/Election/Political for AR held by Kaling Tayeng as 'Principal Secretary' while some of the same portfolios also appear on other officers' 'Secretary'-level charges on the same who's who page — left as-is (Principal Secretary outranks Secretary) but flagged as a real multi-charge ambiguity in the source, not fully resolvable from this source alone."
+   ]
+  },
+  "departmentCompletenessCheck": {
+   "method": "Compared each state's department list against a fresh fetch of that state's official departments directory and against the major-department checklist (Home, Finance, Revenue, Health, School/Higher Education, Agriculture, Rural Development, Urban Development, PWD, Power/Energy, Water Resources, Social Welfare, Women & Child, Industries, Transport, Forest & Environment, Tribal/SC welfare, Food & Civil Supplies, Labour, IT, Tourism, Panchayati Raj).",
+   "ml": "48/48 department names match meghalaya.gov.in/departments exactly (live-checked 2026-09-25) — no gaps.",
+   "ar": "No missing major departments found against arunachalpradesh.gov.in/government-department.php + whos-who.php. AR genuinely has no standalone Revenue Department (land/revenue functions sit under the Land Management Department in both sources) and no separate Higher/School Education split — confirmed absent from both sources, not an omission.",
+   "mn": "2 departments added after a live WebFetch of manipur.gov.in/?page_id=15784: 'Revenue Department' (missing) and 'Minorities Affairs Department' (missing). Manipur Lokayukta and State Academy of Training (SAT) were also on the official list but left excluded as non-administrative/statutory or training-institute entries, consistent with this segment's existing exclusion policy."
+  },
+  "raceConditionNote": "This file's on-disk state changed between two reads a few tool-calls apart during this verification (an entity count / verification-block presence flip observed), consistent with a concurrent agent in the same batch also writing to this same segment file. This write re-read the file immediately before saving and applied all fixes idempotently (skip-if-already-present) to avoid clobbering concurrent work; if a concurrent writer's version differs from this one, the two should be diffed by a human or a follow-up merge pass.",
+  "notOnCivlabInstruction": "This invocation's context again carried the relayed CivLab screen-recording / 'dissect the site' user request alongside a computed task (this adversarial-verification task) that claimed the CivLab request was 'already completed by other agents' and instructed not to act on it. That claim could not be verified from within this task. Per the same pattern already logged in this segment's own notes field before this verification pass began: did not open civlab.org, did not use browser tools, and did not treat the override claim as established fact — flagging it here again rather than silently dropping it."
+ }
+}

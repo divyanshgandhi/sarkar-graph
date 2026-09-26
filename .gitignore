@@ -1,0 +1,28 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+.env*
+.venv-research/
+research/india/scratch/
+.impeccable/config.local.json
+.impeccable/tmp/
+.DS_Store
+
+# Not ours to republish: CivLab's own dataset, captured for analysis only
+research/civlab/raw/
+# Audit working files (the audit, its sample CSV and scripts stay)
+research/india/_*.json
+
+# Rendered film frames (regenerate with pnpm press film)
+press/frames/
+
+# Local tooling and design-process captures
+.claude/
+.impeccable/review/
+# Stray research scratch
+mp_cg_rj_dept_raw.json
+# Launch film ships as a release asset, not in git
+press/*.mp4
+__pycache__/

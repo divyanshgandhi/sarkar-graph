@@ -1,0 +1,22 @@
+[
+  {
+    "id": "st-mp-pos-mla-gurh",
+    "set": {
+      "holder.wikipedia": "https://en.wikipedia.org/wiki/Nagendra_Singh_(Gurh_politician)"
+    },
+    "source": "https://en.wikipedia.org/wiki/Nagendra_Singh_(Gurh_politician)",
+    "reason": "Coverage-report investigation of MP's MLA count found two different positions (Gurh and Nagod) both pointing holder.wikipedia at the same URL, en.wikipedia.org/wiki/Nagendra_Singh — which is actually the biography of the late ICJ judge/CEC Nagendra Singh (1914-1988), not either MLA. Wikipedia's Nagendra_Singh_(disambiguation) page lists them as two distinct living MP politicians: 'Nagendra Singh (Gurh politician)' (b. 1942, 5-time MLA from Gurh, Rewa district) and 'Nagendra Singh (politician, born 1943)' (MLA from Nagod). This is not the duplicate-MLA integrity issue itself (both are legitimate, differently-seated positions, correctly counted once each), just a mislinked source URL, fixed here to the correct per-person page.",
+    "by": "gov-graph-verification-agent",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "st-mp-pos-mla-nagod",
+    "set": {
+      "holder.wikipedia": "https://en.wikipedia.org/wiki/Nagendra_Singh_(politician,_born_1943)"
+    },
+    "source": "https://en.wikipedia.org/wiki/Nagendra_Singh_(politician,_born_1943)",
+    "reason": "See the Gurh correction in this same file: both st-mp-pos-mla-gurh and st-mp-pos-mla-nagod had holder.wikipedia pointing at the disambiguation-adjacent page for the late ICJ judge Nagendra Singh instead of the correct politician page. This is the Nagod MLA's own page (assumed office 2018, previously MLA 2003-2013, also ex-MP for Khajuraho 2014-2019).",
+    "by": "gov-graph-verification-agent",
+    "date": "2026-09-25"
+  }
+]

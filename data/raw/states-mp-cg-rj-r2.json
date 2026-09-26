@@ -1,0 +1,3368 @@
+{
+ "segment": "states-mp-cg-rj-r2",
+ "asOf": "2026-09-25",
+ "notes": "Segment covers Madhya Pradesh, Chhattisgarh, Rajasthan in full per SCHEMA/MINISTRIES ownership rules. This is a REPAIR run (r2): a prior attempt at this segment (scratch/states-mp-cg-rj/) went off-task after its context was contaminated by an unrelated relayed message about a site called 'CivLab' and did not produce data/raw/states-mp-cg-rj.json; this run ignores that unrelated message per the repair instructions and completes the assigned research. WebSearch was exhausted for this session (200/200 used by other parallel segments) after 3 initial queries returned no results; all research after that point used WebFetch + curl against the Wikipedia parse API (occasionally rate-limited by concurrent parallel agents; retried) plus stable general knowledge for uncontested structural facts (unicameral legislatures, Article citations). Key verified facts: MP Governor Mangubhai C. Patel's incumbency was reconfirmed via a Wikipedia revision updated 7 September 2026 (no 2025-26 change). CG cabinet reflects the 20 Aug 2025 reshuffle (3 new ministers replacing Brijmohan Agrawal, who left 19 Jun 2024 for the Lok Sabha). RJ Assembly party strength was taken from the current infobox (BJP 118/INC 67) rather than the as-declared 2023 result (BJP 115/INC 70/Others 15) because the former purports to reflect post-by-election reality; the 'Others' 2-seat detail (a party labelled 'Shiv Sena' in the source, which is unusual for Rajasthan) could not be independently confirmed and may be a source/extraction error - flagged low confidence on that specific line only. GAPS / lower-confidence areas, consistent with the precedent set by the sibling states-mh-gj-ga.json segment: (1) Individual Wikipedia URLs were verified only for top office-holders (Governors, CMs, Deputy CMs, Speakers, LoPs) - not for the ~64 rank-and-file cabinet/MoS ministers across the three states, to avoid inventing unverified links; a follow-up pass should add these. (2) Constituencies were sourced for all 14 Chhattisgarh ministers but could not be confirmed for individual Madhya Pradesh or Rajasthan ministers without inventing them, so are omitted there. (3) Chief Secretary and DGP appointment dates for all three states, and the exact current heads of the Madhya Pradesh/Chhattisgarh/Rajasthan State Human Rights Commissions and the Chhattisgarh State Election Commission, could not be confirmed and are recorded as low confidence or omitted rather than guessed. (4) Ramnivas Rawat's current portfolio in the Madhya Pradesh cabinet is uncertain: Wikipedia's ministry table shows he left the Forest and Environment portfolio on 4 Dec 2024, but he still appears as a minister in the district-wise minister list; flagged low confidence rather than guessing a portfolio. (5) Municipal corporation lists (MP 16, CG 14, RJ 10) were sourced from a single Wikipedia summary table and not cross-checked against each state's Urban Development Department list; mayors/administrators were not resolved for any corporation given time constraints - a follow-up pass should add these plus each corporation's official website. (6) Legislative Council: none of the three states has a Vidhan Parishad (all unicameral), so no st-<code>-legislative-council entities were created, per schema. (7) State Election Commission head for Chhattisgarh specifically could not be found.\n\n--- Adversarial verification pass (2026-09-25) ---\nStructural check (python): 0 duplicate IDs, 0 dangling parentId/orgId/relation references, all kind/sector/rank values in schema vocab, all entities/positions carry confidence+sources. Coverage counts (64 entities / 96 positions / 76 relations) verified internally consistent with the brief's stated composition (3 states, 3 state_governments, 3 councils, 3 legislatures, 12 commissions [SEC/PSC/Lokayukta/SHRC x3], 40 municipal corporations; 3 governors, 3 CMs, 6 deputy CMs, 61 state ministers, 3 speakers, 3 deputy speakers [all vacant/unconfirmed], 3 LoPs, 3 chief secretaries, 11 head_of_agency; 6 appoints + 67 advises_appointment + 3 accountable_to relations). Fresh 2025-2026 web verification (WebSearch budget was exhausted session-wide, so verification used WebFetch against Wikipedia biography pages plus Google News RSS) confirmed as correct: all 3 Governors, all 3 CMs, all 6 Deputy CMs, all 3 Speakers, all 3 LoPs, MP/CG Chief Secretaries, MP/CG/RJ DGPs (1 spelling fix), all 11 CG cabinet ministers with portfolios, all 29 MP ministers/MoS with portfolios (cross-checked against the live Mohan_Yadav_ministry Wikipedia page), and the RJ Assembly party-strength breakdown including the previously-flagged 'Shiv Sena 2 seats' line. Found and corrected 4 stale/wrong facts (see verification.corrections): RJ Chief Secretary's start date, CG DGP name spelling, and two commission chairs (MP Lokayukta, RJ PSC Chairman) whose file holders had been superseded by 2024/2026 appointments not reflected in the sources the original run used. Ramnivas Rawat's MP cabinet portfolio remains genuinely unresolved: a fresh search surfaced a conflicting/undated 'new Forest and Environment Minister' headline alongside an ongoing Vijaypur seat legal dispute, so the existing LOW CONFIDENCE flag was left in place rather than overwritten with an unconfirmed claim. Not independently re-verified in this pass (time-boxed): MP/RJ State Election Commissioners, MP PSC Chairman, CG/MP/RJ State Human Rights Commission heads, municipal corporation mayors/administrators, and per-minister Wikipedia URLs for rank-and-file ministers — these carry the same gaps/medium-or-omitted confidence the original run already flagged.",
+ "entities": [
+  {
+   "id": "st-mp",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Madhya Pradesh",
+   "aliases": [
+    "MP",
+    "Madhya Pradesh State"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "India's second-largest state by area, in central India; known as the 'heart of India', with Bhopal as capital and Indore as its largest city.",
+   "officialUrl": "https://www.mp.gov.in",
+   "stats": {
+    "population2011": 72597565,
+    "areaKm2": 308252,
+    "lokSabhaSeats": 29,
+    "rajyaSabhaSeats": 11,
+    "assemblySeats": 230,
+    "districts": 55
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Madhya Pradesh",
+   "aliases": [
+    "Madhya Pradesh Sarkar",
+    "MP Government"
+   ],
+   "parentId": "st-mp",
+   "description": "The executive government administering the state of Madhya Pradesh, headed by the Governor as constitutional head and the Chief Minister as head of government.",
+   "officialUrl": "https://www.mp.gov.in",
+   "headPositionId": "st-mp-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Madhya Pradesh Council of Ministers",
+   "aliases": [
+    "Mohan Yadav ministry",
+    "MP Cabinet"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The body of ministers, headed by the Chief Minister, that exercises the executive power of Madhya Pradesh and is collectively responsible to the Legislative Assembly.",
+   "headPositionId": "st-mp-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Madhya Pradesh Legislative Assembly",
+   "aliases": [
+    "MP Vidhan Sabha",
+    "Madhya Pradesh Vidhan Sabha"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The unicameral state legislature of Madhya Pradesh, seated at Bhopal, with 230 members directly elected from single-member constituencies.",
+   "seats": 230,
+   "stats": {
+    "partyWiseSeats": {
+     "BJP": 165,
+     "INC": 64,
+     "BAP": 1
+    },
+    "lastElection": "2023-11-17",
+    "nextElectionDue": "2028"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Madhya Pradesh State Election Commission",
+   "aliases": [
+    "MP SEC"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The constitutional body under Article 243K responsible for conducting elections to Panchayats and Municipalities in Madhya Pradesh.",
+   "headPositionId": "st-mp-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Madhya Pradesh Public Service Commission",
+   "abbr": "MPPSC",
+   "parentId": "st-mp-government",
+   "description": "The constitutional body under Article 315 that conducts recruitment examinations and advises on civil service appointments for the Madhya Pradesh government.",
+   "headPositionId": "st-mp-pos-psc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-lokayukta",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Lokayukta of Madhya Pradesh",
+   "parentId": "st-mp-government",
+   "description": "The state anti-corruption ombudsman institution that investigates complaints against public servants and ministers in Madhya Pradesh.",
+   "headPositionId": "st-mp-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-shrc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Madhya Pradesh State Human Rights Commission",
+   "abbr": "MPHRC",
+   "parentId": "st-mp-government",
+   "description": "The state statutory body established 1 September 1995 under the Protection of Human Rights Act, 1993, that inquires into complaints of human-rights violations in Madhya Pradesh.",
+   "established": "1995-09-01",
+   "sources": [
+    "https://en.wikipedia.org/wiki/State_Human_Rights_Commission"
+   ],
+   "confidence": "low",
+   "notes": "Current chairperson could not be confirmed against a 2025-2026 source; omitted rather than guessed."
+  },
+  {
+   "id": "st-mp-mc-indore",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Indore Municipal Corporation",
+   "aliases": [
+    "Indore Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Indore, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-bhopal",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bhopal Municipal Corporation",
+   "aliases": [
+    "Bhopal Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Bhopal, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-jabalpur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Jabalpur Municipal Corporation",
+   "aliases": [
+    "Jabalpur Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Jabalpur, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-gwalior",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Gwalior Municipal Corporation",
+   "aliases": [
+    "Gwalior Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Gwalior, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-ujjain",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Ujjain Municipal Corporation",
+   "aliases": [
+    "Ujjain Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Ujjain, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-sagar",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Sagar Municipal Corporation",
+   "aliases": [
+    "Sagar Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Sagar, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-burhanpur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Burhanpur Municipal Corporation",
+   "aliases": [
+    "Burhanpur Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Burhanpur, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-dewas",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Dewas Municipal Corporation",
+   "aliases": [
+    "Dewas Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Dewas, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-satna",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Satna Municipal Corporation",
+   "aliases": [
+    "Satna Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Satna, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-ratlam",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Ratlam Municipal Corporation",
+   "aliases": [
+    "Ratlam Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Ratlam, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-khandwa",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Khandwa Municipal Corporation",
+   "aliases": [
+    "Khandwa Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Khandwa, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-chhindwara",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Chhindwara Municipal Corporation",
+   "aliases": [
+    "Chhindwara Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Chhindwara, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-katni",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Katni Municipal Corporation",
+   "aliases": [
+    "Katni Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Katni, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-rewa",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Rewa Municipal Corporation",
+   "aliases": [
+    "Rewa Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Rewa, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-morena",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Morena Municipal Corporation",
+   "aliases": [
+    "Morena Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Morena, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-mc-singrauli",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Singrauli Municipal Corporation",
+   "aliases": [
+    "Singrauli Nagar Nigam"
+   ],
+   "parentId": "st-mp-government",
+   "description": "The urban local body governing the city of Singrauli, Madhya Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Chhattisgarh",
+   "aliases": [
+    "CG",
+    "Chhattisgarh State"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "A mineral-rich, heavily forested state in central India carved out of eastern Madhya Pradesh in November 2000, with Raipur as its capital.",
+   "officialUrl": "https://cgstate.gov.in",
+   "stats": {
+    "population2011": 25540198,
+    "areaKm2": 135192,
+    "lokSabhaSeats": 11,
+    "rajyaSabhaSeats": 5,
+    "assemblySeats": 90,
+    "districts": 33
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Chhattisgarh",
+   "aliases": [
+    "Chhattisgarh Sarkar",
+    "CG Government"
+   ],
+   "parentId": "st-cg",
+   "description": "The executive government administering the state of Chhattisgarh, headed by the Governor as constitutional head and the Chief Minister as head of government.",
+   "officialUrl": "https://cgstate.gov.in",
+   "headPositionId": "st-cg-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Chhattisgarh Council of Ministers",
+   "aliases": [
+    "Sai ministry",
+    "Chhattisgarh Cabinet"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The body of ministers, headed by the Chief Minister, that exercises the executive power of Chhattisgarh and is collectively responsible to the Legislative Assembly.",
+   "headPositionId": "st-cg-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Chhattisgarh Legislative Assembly",
+   "aliases": [
+    "CG Vidhan Sabha",
+    "Chhattisgarh Vidhan Sabha"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The unicameral state legislature of Chhattisgarh, seated at Raipur, with 90 members directly elected from single-member constituencies.",
+   "seats": 90,
+   "stats": {
+    "partyWiseSeats": {
+     "BJP": 54,
+     "INC": 35,
+     "GGP": 1
+    },
+    "lastElection": "2023-11-17",
+    "nextElectionDue": "2028"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Chhattisgarh State Election Commission",
+   "parentId": "st-cg-government",
+   "description": "The constitutional body under Article 243K responsible for conducting elections to Panchayats and Municipalities in Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh"
+   ],
+   "confidence": "low",
+   "notes": "Current State Election Commissioner could not be confirmed against a 2025-2026 source; omitted rather than guessed."
+  },
+  {
+   "id": "st-cg-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Chhattisgarh Public Service Commission",
+   "abbr": "CGPSC",
+   "parentId": "st-cg-government",
+   "description": "The constitutional body under Article 315 that conducts recruitment examinations and advises on civil service appointments for the Chhattisgarh government.",
+   "headPositionId": "st-cg-pos-psc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-lokayukta",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Lokayog of Chhattisgarh",
+   "aliases": [
+    "Chhattisgarh Lokayukta"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The state anti-corruption ombudsman institution that investigates complaints against public servants and ministers in Chhattisgarh.",
+   "headPositionId": "st-cg-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-shrc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Chhattisgarh State Human Rights Commission",
+   "parentId": "st-cg-government",
+   "description": "The state statutory body established 16 April 2001 under the Protection of Human Rights Act, 1993, that inquires into complaints of human-rights violations in Chhattisgarh.",
+   "established": "2001-04-16",
+   "sources": [
+    "https://en.wikipedia.org/wiki/State_Human_Rights_Commission"
+   ],
+   "confidence": "low",
+   "notes": "Current chairperson could not be confirmed against a 2025-2026 source; omitted rather than guessed."
+  },
+  {
+   "id": "st-cg-mc-raipur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Raipur Municipal Corporation",
+   "aliases": [
+    "Raipur Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Raipur, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-bilaspur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bilaspur Municipal Corporation",
+   "aliases": [
+    "Bilaspur Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Bilaspur, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-jagdalpur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Jagdalpur Municipal Corporation",
+   "aliases": [
+    "Jagdalpur Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Jagdalpur, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-durg",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Durg Municipal Corporation",
+   "aliases": [
+    "Durg Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Durg, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-korba",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Korba Municipal Corporation",
+   "aliases": [
+    "Korba Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Korba, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-rajnandgaon",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Rajnandgaon Municipal Corporation",
+   "aliases": [
+    "Rajnandgaon Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Rajnandgaon, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-raigarh",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Raigarh Municipal Corporation",
+   "aliases": [
+    "Raigarh Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Raigarh, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-ambikapur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Ambikapur Municipal Corporation",
+   "aliases": [
+    "Ambikapur Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Ambikapur, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-dhamtari",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Dhamtari Municipal Corporation",
+   "aliases": [
+    "Dhamtari Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Dhamtari, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-chirmiri",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Chirmiri Municipal Corporation",
+   "aliases": [
+    "Chirmiri Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Chirmiri, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-bhilai",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bhilai Municipal Corporation",
+   "aliases": [
+    "Bhilai Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Bhilai, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-birgaon",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Birgaon Municipal Corporation",
+   "aliases": [
+    "Birgaon Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Birgaon, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-risali",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Risali Municipal Corporation",
+   "aliases": [
+    "Risali Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Risali, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-mc-bhilai-charoda",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bhilai Charoda Municipal Corporation",
+   "aliases": [
+    "Bhilai Charoda Nagar Nigam"
+   ],
+   "parentId": "st-cg-government",
+   "description": "The urban local body governing the city of Bhilai Charoda, Chhattisgarh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Rajasthan",
+   "aliases": [
+    "RJ",
+    "Rajasthan State"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "India's largest state by area, in the northwest, dominated by the Thar Desert, with Jaipur ('the Pink City') as its capital.",
+   "officialUrl": "https://rajasthan.gov.in",
+   "stats": {
+    "population2011": 68548437,
+    "areaKm2": 342239,
+    "lokSabhaSeats": 25,
+    "rajyaSabhaSeats": 10,
+    "assemblySeats": 200,
+    "districts": 41
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Rajasthan",
+   "aliases": [
+    "Rajasthan Sarkar",
+    "RJ Government"
+   ],
+   "parentId": "st-rj",
+   "description": "The executive government administering the state of Rajasthan, headed by the Governor as constitutional head and the Chief Minister as head of government.",
+   "officialUrl": "https://rajasthan.gov.in",
+   "headPositionId": "st-rj-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Rajasthan Council of Ministers",
+   "aliases": [
+    "Sharma ministry",
+    "Rajasthan Cabinet"
+   ],
+   "parentId": "st-rj-government",
+   "description": "The body of ministers, headed by the Chief Minister, that exercises the executive power of Rajasthan and is collectively responsible to the Legislative Assembly.",
+   "headPositionId": "st-rj-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Rajasthan Legislative Assembly",
+   "aliases": [
+    "RJ Vidhan Sabha",
+    "Rajasthan Vidhan Sabha"
+   ],
+   "parentId": "st-rj-government",
+   "description": "The unicameral state legislature of Rajasthan, seated at Jaipur, with 200 members directly elected from single-member constituencies.",
+   "seats": 200,
+   "stats": {
+    "partyWiseSeats": {
+     "BJP": 118,
+     "INC": 67,
+     "BAP": 4,
+     "Independent": 8,
+     "RLD": 1,
+     "Others": 2
+    },
+    "lastElection": "2023-11-25",
+    "nextElectionDue": "2028",
+    "note": "2023 election result at declaration was BJP 115 / INC 70 / Others 15 (incl. the Karanpur seat decided 2024-01-05); current strength (BJP 118 / INC 67 / BAP 4 / Independent 8 / RLD 1 / Shiv Sena 2) reflects subsequent by-elections and defections. Re-verified 2026-09-25 directly against the current Rajasthan Legislative Assembly Wikipedia infobox: the 'Others' 2 seats are confirmed as 'Shiv Sena (2022-present)' (Eknath Shinde faction), gained via members who merged in from BSP; this is no longer flagged low-confidence."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/2023_Rajasthan_Legislative_Assembly_election"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Rajasthan State Election Commission",
+   "parentId": "st-rj-government",
+   "description": "The constitutional body under Article 243K responsible for conducting elections to Panchayati Raj institutions and Urban Local Bodies in Rajasthan.",
+   "headPositionId": "st-rj-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Rajasthan Public Service Commission",
+   "abbr": "RPSC",
+   "parentId": "st-rj-government",
+   "description": "The constitutional body under Article 315 that conducts recruitment examinations and advises on civil service appointments for the Rajasthan government.",
+   "headPositionId": "st-rj-pos-psc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-lokayukta",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Lokayukta of Rajasthan",
+   "parentId": "st-rj-government",
+   "description": "The state anti-corruption ombudsman institution that investigates complaints against public servants and ministers in Rajasthan.",
+   "headPositionId": "st-rj-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-shrc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Rajasthan State Human Rights Commission",
+   "parentId": "st-rj-government",
+   "description": "The state statutory body established 18 January 1999 under the Protection of Human Rights Act, 1993, that inquires into complaints of human-rights violations in Rajasthan.",
+   "established": "1999-01-18",
+   "sources": [
+    "https://en.wikipedia.org/wiki/State_Human_Rights_Commission"
+   ],
+   "confidence": "low",
+   "notes": "Current chairperson could not be confirmed against a 2025-2026 source; omitted rather than guessed."
+  },
+  {
+   "id": "st-rj-mc-jaipur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Jaipur Municipal Corporation",
+   "aliases": [
+    "Jaipur Nagar Nigam"
+   ],
+   "parentId": "st-rj-government",
+   "description": "The urban local body governing the city of Jaipur, Rajasthan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-mc-jodhpur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Jodhpur Municipal Corporation",
+   "aliases": [
+    "Jodhpur Nagar Nigam"
+   ],
+   "parentId": "st-rj-government",
+   "description": "The urban local body governing the city of Jodhpur, Rajasthan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-mc-kota",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Kota Municipal Corporation",
+   "aliases": [
+    "Kota Nagar Nigam"
+   ],
+   "parentId": "st-rj-government",
+   "description": "The urban local body governing the city of Kota, Rajasthan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-mc-bhilwara",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bhilwara Municipal Corporation",
+   "aliases": [
+    "Bhilwara Nagar Nigam"
+   ],
+   "parentId": "st-rj-government",
+   "description": "The urban local body governing the city of Bhilwara, Rajasthan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-mc-bikaner",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bikaner Municipal Corporation",
+   "aliases": [
+    "Bikaner Nagar Nigam"
+   ],
+   "parentId": "st-rj-government",
+   "description": "The urban local body governing the city of Bikaner, Rajasthan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-mc-ajmer",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Ajmer Municipal Corporation",
+   "aliases": [
+    "Ajmer Nagar Nigam"
+   ],
+   "parentId": "st-rj-government",
+   "description": "The urban local body governing the city of Ajmer, Rajasthan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-mc-alwar",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Alwar Municipal Corporation",
+   "aliases": [
+    "Alwar Nagar Nigam"
+   ],
+   "parentId": "st-rj-government",
+   "description": "The urban local body governing the city of Alwar, Rajasthan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-mc-udaipur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Udaipur Municipal Corporation",
+   "aliases": [
+    "Udaipur Nagar Nigam"
+   ],
+   "parentId": "st-rj-government",
+   "description": "The urban local body governing the city of Udaipur, Rajasthan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-mc-bharatpur",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Bharatpur Municipal Corporation",
+   "aliases": [
+    "Bharatpur Nagar Nigam"
+   ],
+   "parentId": "st-rj-government",
+   "description": "The urban local body governing the city of Bharatpur, Rajasthan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-mc-pali",
+   "kind": "municipal_corporation",
+   "sector": "federal",
+   "name": "Pali Municipal Corporation",
+   "aliases": [
+    "Pali Nagar Nigam"
+   ],
+   "parentId": "st-rj-government",
+   "description": "The urban local body governing the city of Pali, Rajasthan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-mp-pos-governor",
+   "title": "Governor of Madhya Pradesh",
+   "orgId": "st-mp-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Mangubhai C. Patel",
+    "since": "2021-07-08",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mangubhai_C._Patel",
+    "notes": "Confirmed still in office as of a Wikipedia revision updated 7 September 2026."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_governors_of_Madhya_Pradesh",
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-chief-minister",
+   "title": "Chief Minister of Madhya Pradesh",
+   "orgId": "st-mp-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "holder": {
+    "name": "Mohan Yadav",
+    "since": "2023-12-13",
+    "party": "BJP",
+    "constituency": "Ujjain South",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mohan_Yadav"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Madhya Pradesh",
+   "orgId": "st-mp-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Rajendra Shukla",
+    "since": "2023-12-13",
+    "party": "BJP",
+    "notes": "Public Health, Medical Education"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-deputy-cm-2",
+   "title": "Deputy Chief Minister of Madhya Pradesh",
+   "orgId": "st-mp-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Jagdish Devda",
+    "since": "2023-12-13",
+    "party": "BJP",
+    "notes": "Finance, Commercial Tax"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-1",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Prahlad Singh Patel",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Panchayat and Rural Development. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-2",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Rakesh Singh",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Public Works. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-3",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Uday Pratap Singh",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Transport; School Education. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-4",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Kailash Vijayvargiya",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Urban Development and Housing; Parliamentary Affairs. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-5",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Vishvas Sarang",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Sports and Youth Affairs; Co-operatives. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-6",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Pradhuman Singh Tomar",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Energy. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-7",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Tulsi Ram Silawat",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Water Resources. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-8",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Adal Singh Kansana",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Farmers' Welfare and Agricultural Development. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-9",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Narayan Singh Kushwah",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Social Justice; Horticulture and Food Processing. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-10",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Kunwar Vijay Shah",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Tribal Affairs; Public Assets Management; Bhopal Gas Tragedy Relief and Rehabilitation. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-11",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Karan Singh Verma",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Revenue. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-12",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Sampatiya Uikey",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Public Health Engineering. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-13",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Nirmala Bhuria",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Women and Child Development. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-14",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Govind Singh Rajput",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Food and Civil Supplies. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-15",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Inder Singh Parmar",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Higher Education; Technical Education. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-16",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Nagar Singh Chouhan",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Scheduled Castes Welfare. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-17",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Chetanya Kasyap",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Micro, Small and Medium Enterprises. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-18",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Rakesh Shukla",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: New and Renewable Energy. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-19",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Ramnivas Rawat",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Forest and Environment (LOW CONFIDENCE: Wikipedia's ministry table records him leaving this portfolio 4 Dec 2024; his current portfolio as of 2026-09-25 could not be independently confirmed, though he still appears as MP's minister for Sheopur district). Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mp-pos-minister-20",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Krishna Gaur",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Other Backward Classes and Minority Welfare. Tier: Minister of State (Independent Charge)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-21",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Dharmendra Singh Lodhi",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Culture, Tourism, Religious Trust and Endowments. Tier: Minister of State (Independent Charge)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-22",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Dilip Jaiswal",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Cottage and Village Industries. Tier: Minister of State (Independent Charge)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-23",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Gautam Tetwal",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Skill Development and Employment. Tier: Minister of State (Independent Charge)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-24",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Lakhan Patel",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Dairy and Animal Husbandry. Tier: Minister of State (Independent Charge)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-25",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Narayan Singh Panwar",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Fisheries and Fishermen Welfare. Tier: Minister of State (Independent Charge)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-26",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Radha Ravindra Singh",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Panchayat and Rural Development (MoS). Tier: Minister of State."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-27",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Pratima Bagri",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Urban Development and Housing (MoS). Tier: Minister of State."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-28",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Dileep Ahirwar",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Forest and Environment (MoS). Tier: Minister of State."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-minister-29",
+   "title": "Minister, Government of Madhya Pradesh",
+   "orgId": "st-mp-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Narendra Shivaji Patel",
+    "since": "2023-12-25",
+    "party": "BJP",
+    "notes": "Portfolio: Public Health (MoS). Tier: Minister of State."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-speaker",
+   "title": "Speaker of the Madhya Pradesh Legislative Assembly",
+   "orgId": "st-mp-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "holder": {
+    "name": "Narendra Singh Tomar",
+    "since": "2023-12-20",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Narendra_Singh_Tomar"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-deputy-speaker",
+   "title": "Deputy Speaker of the Madhya Pradesh Legislative Assembly",
+   "orgId": "st-mp-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "vacant": true,
+   "holder": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "medium",
+   "notes": "Reported vacant as of the source's most recent revision; not independently reconfirmed via the state assembly's official site."
+  },
+  {
+   "id": "st-mp-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Madhya Pradesh Legislative Assembly",
+   "orgId": "st-mp-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Umang Singhar",
+    "since": "2023-12-16",
+    "party": "INC",
+    "wikipedia": "https://en.wikipedia.org/wiki/Umang_Singhar"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mp-pos-chief-secretary",
+   "title": "Chief Secretary of Madhya Pradesh",
+   "orgId": "st-mp-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Ashok Barnwal",
+    "acting": false,
+    "notes": "IAS officer; exact date of appointment as Chief Secretary not independently confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Madhya_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-pos-dgp",
+   "title": "Director General of Police, Madhya Pradesh",
+   "orgId": "st-mp-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "onAdviceOf": "st-mp-pos-chief-minister",
+   "holder": {
+    "name": "Kailash Makwana",
+    "acting": false,
+    "notes": "IPS officer; exact date of appointment not independently confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh_Police"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-pos-sec-commissioner",
+   "title": "State Election Commissioner, Madhya Pradesh",
+   "orgId": "st-mp-sec",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "holder": {
+    "name": "Manoj Kumar Shrivastava",
+    "since": "2025-01-01"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-pos-psc-chair",
+   "title": "Chairman, Madhya Pradesh Public Service Commission",
+   "orgId": "st-mp-psc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "holder": {
+    "name": "Rajesh Lal Mehra",
+    "notes": "Exact appointment date not independently confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madhya_Pradesh_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mp-pos-lokayukta",
+   "title": "Lokayukta of Madhya Pradesh",
+   "orgId": "st-mp-lokayukta",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mp-pos-governor",
+   "holder": {
+    "name": "Justice Satyendra Kumar Singh",
+    "since": "2024-03-11",
+    "notes": "Retired Madhya Pradesh High Court judge, sworn in as Lokayukta 11 March 2024, succeeding Justice Naresh Kumar Gupta (who held the post since 2017 and whose continuation was last confirmed Oct 2023). Re-verified 2026-09-25 via Google News: his appointment process was challenged (Leader of Opposition Umang Singhar alleged it was made without due process, per ThePrint/PTI reports as recent as 15 Apr 2026 showing the MP government still defending the appointment in the Supreme Court), but no report found of him being removed or replaced since 2024, so he remains the current Lokayukta as of 2026-09-25."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-pos-governor",
+   "title": "Governor of Chhattisgarh",
+   "orgId": "st-cg-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Ramen Deka",
+    "since": "2024-07-31",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ramen_Deka"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_governors_of_Chhattisgarh",
+    "https://en.wikipedia.org/wiki/Chhattisgarh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-chief-minister",
+   "title": "Chief Minister of Chhattisgarh",
+   "orgId": "st-cg-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "holder": {
+    "name": "Vishnu Deo Sai",
+    "since": "2023-12-13",
+    "party": "BJP",
+    "constituency": "Kunkuri",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Chhattisgarh",
+   "orgId": "st-cg-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Arun Sao",
+    "since": "2023-12-13",
+    "party": "BJP",
+    "constituency": "Lormi",
+    "notes": "Public Works Department; Public Health Engineering; Law & Legislative Affairs; Urban Administration & Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-deputy-cm-2",
+   "title": "Deputy Chief Minister of Chhattisgarh",
+   "orgId": "st-cg-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Vijay Sharma",
+    "since": "2023-12-13",
+    "party": "BJP",
+    "constituency": "Kawardha",
+    "notes": "Home Affairs; Rural Development and Panchayat; Technical Education; Science and Technology"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-minister-1",
+   "title": "Minister, Government of Chhattisgarh",
+   "orgId": "st-cg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Gajendra Yadav",
+    "since": "2025-08-20",
+    "party": "BJP",
+    "constituency": "Durg City",
+    "notes": "Portfolio: School Education; Law and Legislative Affairs; Village Industries."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-minister-2",
+   "title": "Minister, Government of Chhattisgarh",
+   "orgId": "st-cg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Ramvichar Netam",
+    "since": "2023-12-22",
+    "party": "BJP",
+    "constituency": "Ramanujganj",
+    "notes": "Portfolio: Agriculture; Scheduled Tribes Development."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-minister-3",
+   "title": "Minister, Government of Chhattisgarh",
+   "orgId": "st-cg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Dayaldas Baghel",
+    "since": "2023-12-22",
+    "party": "BJP",
+    "constituency": "Navagarh",
+    "notes": "Portfolio: Food, Civil Supplies and Consumer Protection."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-minister-4",
+   "title": "Minister, Government of Chhattisgarh",
+   "orgId": "st-cg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Kedar Nath Kashyap",
+    "since": "2023-12-22",
+    "party": "BJP",
+    "constituency": "Narayanpur",
+    "notes": "Portfolio: Parliamentary Affairs; Water Resources; Forest and Climate Change; Cooperatives."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-minister-5",
+   "title": "Minister, Government of Chhattisgarh",
+   "orgId": "st-cg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Lakhan Lal Dewangan",
+    "since": "2023-12-22",
+    "party": "BJP",
+    "constituency": "Korba",
+    "notes": "Portfolio: Commerce and Industry; Labour."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-minister-6",
+   "title": "Minister, Government of Chhattisgarh",
+   "orgId": "st-cg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Shyam Bihari Jaiswal",
+    "since": "2023-12-22",
+    "party": "BJP",
+    "constituency": "Manendragarh",
+    "notes": "Portfolio: Health and Family Welfare; Medical Education; OBC and Minorities Development; 20-Point Implementation."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-minister-7",
+   "title": "Minister, Government of Chhattisgarh",
+   "orgId": "st-cg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "O. P. Choudhary",
+    "since": "2023-12-22",
+    "party": "BJP",
+    "constituency": "Raigarh",
+    "notes": "Portfolio: Finance; Commercial Tax; Housing; Environment; Planning, Economics and Statistics."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-minister-8",
+   "title": "Minister, Government of Chhattisgarh",
+   "orgId": "st-cg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Laxmi Rajwade",
+    "since": "2023-12-22",
+    "party": "BJP",
+    "constituency": "Bhatgaon",
+    "notes": "Portfolio: Women and Child Development; Social Welfare."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-minister-9",
+   "title": "Minister, Government of Chhattisgarh",
+   "orgId": "st-cg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Tank Ram Verma",
+    "since": "2023-12-22",
+    "party": "BJP",
+    "constituency": "Baloda Bazar",
+    "notes": "Portfolio: Revenue; Disaster Management; Sports and Youth Welfare."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-minister-10",
+   "title": "Minister, Government of Chhattisgarh",
+   "orgId": "st-cg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Rajesh Agrawal",
+    "since": "2025-08-20",
+    "party": "BJP",
+    "constituency": "Ambikapur",
+    "notes": "Portfolio: Tourism and Culture; Religious Trusts (Dharmik Nyas) and Dharmsva."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-minister-11",
+   "title": "Minister, Government of Chhattisgarh",
+   "orgId": "st-cg-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Guru Khushwant Saheb",
+    "since": "2025-08-20",
+    "party": "BJP",
+    "constituency": "Arang",
+    "notes": "Portfolio: Skill Development; Technical Education; Scheduled Caste Development."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sai_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-speaker",
+   "title": "Speaker of the Chhattisgarh Legislative Assembly",
+   "orgId": "st-cg-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "holder": {
+    "name": "Raman Singh",
+    "since": "2023-12-19",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Raman_Singh"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-deputy-speaker",
+   "title": "Deputy Speaker of the Chhattisgarh Legislative Assembly",
+   "orgId": "st-cg-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "vacant": true,
+   "holder": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh_Legislative_Assembly"
+   ],
+   "confidence": "low",
+   "notes": "Not mentioned in the available source; could not confirm whether the seat has been filled for the 2023-2028 term."
+  },
+  {
+   "id": "st-cg-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Chhattisgarh Legislative Assembly",
+   "orgId": "st-cg-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Charan Das Mahant",
+    "since": "2023-12-16",
+    "party": "INC",
+    "wikipedia": "https://en.wikipedia.org/wiki/Charan_Das_Mahant"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-cg-pos-chief-secretary",
+   "title": "Chief Secretary of Chhattisgarh",
+   "orgId": "st-cg-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Vikas Sheel",
+    "acting": false,
+    "notes": "IAS officer; exact date of appointment as Chief Secretary not independently confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Chhattisgarh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-pos-dgp",
+   "title": "Director General of Police, Chhattisgarh",
+   "orgId": "st-cg-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "onAdviceOf": "st-cg-pos-chief-minister",
+   "holder": {
+    "name": "Arun Dev Gautam",
+    "acting": false,
+    "notes": "IPS officer (1992-batch), appointed full-time DGP of Chhattisgarh. Re-verified 2026-09-25 via Google News (Times of India, The Statesman, thenewsmanofindia.com, Elets eGov all use 'Arun Dev Gautam'; ThePrint's initial 'acting DGP' report used the variant spelling 'Arun Deo Gautam'). Exact appointment date not independently confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh_Police"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-pos-psc-chair",
+   "title": "Chairman, Chhattisgarh Public Service Commission",
+   "orgId": "st-cg-psc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "holder": {
+    "name": "Rita Shandilya",
+    "notes": "Exact appointment date not independently confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chhattisgarh_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-cg-pos-lokayukta",
+   "title": "Lokayukta of Chhattisgarh",
+   "orgId": "st-cg-lokayukta",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-cg-pos-governor",
+   "holder": {
+    "name": "T. P. Sharma",
+    "notes": "Exact appointment date not independently confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-pos-governor",
+   "title": "Governor of Rajasthan",
+   "orgId": "st-rj-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Haribhau Kisanrao Bagade",
+    "since": "2024-07-31",
+    "wikipedia": "https://en.wikipedia.org/wiki/Haribhau_Bagade"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_governors_of_Rajasthan",
+    "https://en.wikipedia.org/wiki/Rajasthan"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-chief-minister",
+   "title": "Chief Minister of Rajasthan",
+   "orgId": "st-rj-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "holder": {
+    "name": "Bhajan Lal Sharma",
+    "since": "2023-12-15",
+    "party": "BJP",
+    "constituency": "Sanganer",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Rajasthan",
+   "orgId": "st-rj-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Diya Kumari",
+    "since": "2023-12-15",
+    "party": "BJP",
+    "notes": "Finance; Tourism; Women and Child Development; Art and Cultural Affairs; Public Works; Child Empowerment"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-deputy-cm-2",
+   "title": "Deputy Chief Minister of Rajasthan",
+   "orgId": "st-rj-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Prem Chand Bairwa",
+    "since": "2023-12-15",
+    "party": "BJP",
+    "notes": "Higher Education; Road Transport and Highways; Technical Education; Ayurveda, Yoga and Naturopathy"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-1",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Kirodi Lal Meena",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Agriculture and Industry; Rural Development; Disaster Management Assistance and Civil Defense; Public Prosecution Redressal. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-2",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Gajendra Singh Khimsar",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Medical and Health Services. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-3",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Rajyavardhan Singh Rathore",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Industry and Commerce; Information Technology and Communication; Youth Affairs and Sports; Skill, Planning and Entrepreneurship; Sainik Welfare. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-4",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Babulal Kharadi",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Tribal Area Development; Home Guards. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-5",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Jogaram Patel",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Parliamentary Affairs; Law and Legal Affairs; Justice. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-6",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Suresh Singh Rawat",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Water Resources; Water Resources Planning. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-7",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Madan Dilawar",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: School Education; Panchayati Raj; Sanskrit Education. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-8",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Avinash Gehlot",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Social Justice and Empowerment. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-9",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Joraram Kumawat",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Animal Husbandry and Dairy; Cow Husbandry; Devasthan. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-10",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Hemant Meena",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Revenue; Colonization. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-11",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Sumit Godara",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Food and Civil Supplies; Consumer Affairs. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-12",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Kanhaiya Lal Choudhary",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Public Health Engineering; Ground Water. Tier: Cabinet Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-13",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Sanjay Sharma",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Forest, Environment and Climate Change; Science and Technology. Tier: Minister of State (Independent Charge)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-14",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Gautam Kumar",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Cooperative; Civil Development. Tier: Minister of State (Independent Charge)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-15",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Jhabar Singh Kharra",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Urban Development; Health Governance. Tier: Minister of State (Independent Charge)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-16",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Heeralal Nagar",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Energy. Tier: Minister of State (Independent Charge)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-17",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Otaram Dewasi",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Panchayati Raj and Rural Development (MoS); Disaster Management Assistance and Civil Defense. Tier: Minister of State."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-18",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Manju Baghmar",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Public Works (MoS); Women and Child Development; Child Empowerment. Tier: Minister of State."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-19",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Vijay Singh Chaudhary",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Revenue; Colonization; Sainik Kalyan (MoS). Tier: Minister of State."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-20",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "KK Vishnoi",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Industry and Commerce; Youth Affairs and Sports; Skill Planning and Entrepreneurship (MoS). Tier: Minister of State."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-minister-21",
+   "title": "Minister, Government of Rajasthan",
+   "orgId": "st-rj-council-of-ministers",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Jawahar Singh Bedham",
+    "since": "2023-12-30",
+    "party": "BJP",
+    "notes": "Portfolio: Home; Cow Husbandry; Animal Husbandry and Dairy; Fisheries (MoS). Tier: Minister of State."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sharma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-speaker",
+   "title": "Speaker of the Rajasthan Legislative Assembly",
+   "orgId": "st-rj-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "holder": {
+    "name": "Vasudev Devnani",
+    "since": "2023-12-21",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vasudev_Devnani"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-deputy-speaker",
+   "title": "Deputy Speaker of the Rajasthan Legislative Assembly",
+   "orgId": "st-rj-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "vacant": true,
+   "holder": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan_Legislative_Assembly"
+   ],
+   "confidence": "low",
+   "notes": "Not mentioned in the available source; could not confirm whether the seat has been filled for the 2023-2028 term."
+  },
+  {
+   "id": "st-rj-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Rajasthan Legislative Assembly",
+   "orgId": "st-rj-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Tika Ram Jully",
+    "since": "2024-01-16",
+    "party": "INC",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tika_Ram_Jully"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-chief-secretary",
+   "title": "Chief Secretary of Rajasthan",
+   "orgId": "st-rj-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "V. Srinivas",
+    "since": "2025-11-17",
+    "notes": "IAS officer (1992 batch AGMUT... actually Rajasthan cadre). Re-verified 2026-09-25: his own Wikipedia biography (title 'V._Srinivas') gives 'Assumed office 17 November 2025' as Chief Secretary of Rajasthan, succeeding his prior post as Secretary, DARPG (ended 16 Nov 2025). The previously recorded date 2023-12-31 (from the generic 'Government of Rajasthan' page) appears to be an extraction error, possibly confused with CM Bhajan Lal Sharma's swearing-in date. Google News confirms he received a 6-month extension around 20 Aug 2026, keeping him in post through Feb 2027, and multiple ET Government/BuckStopper articles through Sep 2026 confirm he is the sitting Chief Secretary."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Rajasthan",
+    "https://en.wikipedia.org/wiki/V._Srinivas"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-rj-pos-dgp",
+   "title": "Director General of Police, Rajasthan",
+   "orgId": "st-rj-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "onAdviceOf": "st-rj-pos-chief-minister",
+   "holder": {
+    "name": "Rajeev Kumar Sharma",
+    "acting": false,
+    "notes": "IPS officer; exact date of appointment not independently confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan_Police"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-pos-sec-commissioner",
+   "title": "State Election Commissioner, Rajasthan",
+   "orgId": "st-rj-sec",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "holder": {
+    "name": "Rajeshwar Singh",
+    "notes": "Exact appointment date not independently confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-pos-psc-chair",
+   "title": "Chairman, Rajasthan Public Service Commission",
+   "orgId": "st-rj-psc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "holder": {
+    "name": "Kesari Singh Rathore",
+    "since": "2026-06-21",
+    "acting": true,
+    "notes": "Given additional charge as RPSC Chairman on 21 June 2026 following the retirement of predecessor Utkal Ranjan Sahoo (in office since 12 June 2025). Re-verified 2026-09-25 via Google News: multiple reports through late July/August 2026 (The BuckStopper, bhaskarenglish.in) show him actively serving as 'Chairman Kesari Singh Rathore' (e.g. security measures against paper leaks, exam-centre inspections), so the 'additional charge' appears to have continued rather than being reversed. The exact formal/acting status as of 2026-09-25 could not be independently confirmed beyond the 'additional charge' framing of the original June 2026 appointment."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajasthan_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-rj-pos-lokayukta",
+   "title": "Lokayukta of Rajasthan",
+   "orgId": "st-rj-lokayukta",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-rj-pos-governor",
+   "holder": {
+    "name": "Justice Pratap Krishna Lohara",
+    "notes": "Retired High Court judge; exact appointment date not independently confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-president",
+   "to": "st-mp-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/List_of_governors_of_Madhya_Pradesh"
+  },
+  {
+   "from": "st-mp-pos-governor",
+   "to": "st-mp-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-deputy-cm-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-deputy-cm-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-12",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-13",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-14",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-15",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-16",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-17",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-18",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-19",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-20",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-21",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-22",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-23",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-24",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-25",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-26",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-27",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-28",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-pos-minister-29",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-council-of-ministers",
+   "to": "st-mp-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Madhya_Pradesh_Legislative_Assembly"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-cg-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/List_of_governors_of_Chhattisgarh"
+  },
+  {
+   "from": "st-cg-pos-governor",
+   "to": "st-cg-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-deputy-cm-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-deputy-cm-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sai_ministry"
+  },
+  {
+   "from": "st-cg-council-of-ministers",
+   "to": "st-cg-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Chhattisgarh_Legislative_Assembly"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-rj-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/List_of_governors_of_Rajasthan"
+  },
+  {
+   "from": "st-rj-pos-governor",
+   "to": "st-rj-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-deputy-cm-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-deputy-cm-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-12",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-13",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-14",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-15",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-16",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-17",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-18",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-19",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-20",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-pos-minister-21",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Sharma_ministry"
+  },
+  {
+   "from": "st-rj-council-of-ministers",
+   "to": "st-rj-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)",
+   "source": "https://en.wikipedia.org/wiki/Rajasthan_Legislative_Assembly"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 30,
+  "corrections": [
+   "st-rj-pos-chief-secretary: holder.since corrected 2023-12-31 -> 2025-11-17 (was extraction error; V. Srinivas's own Wikipedia bio + 2026 news confirm Nov 2025 appointment as RJ Chief Secretary, not Dec 2023); confidence medium->high",
+   "st-cg-pos-dgp: holder.name spelling corrected 'Arun Deo Gautam' -> 'Arun Dev Gautam' (majority spelling across Times of India, The Statesman, Elets eGov, thenewsmanofindia.com; 'Deo' variant traced to a single ThePrint acting-appointment report)",
+   "st-mp-pos-lokayukta: holder corrected 'Justice Naresh Kumar Gupta' (2017-era, stale) -> 'Justice Satyendra Kumar Singh' (sworn in 2024-03-11; Naresh Kumar Gupta's term as Lokayukta ended by March 2024 per contemporaneous press, and the file had carried the pre-2024 holder)",
+   "st-rj-pos-psc-chair: holder corrected 'Utkal Ranjan Sahoo' (since 2025-06-12, stale) -> 'Kesari Singh Rathore' (given additional charge 2026-06-21 after Sahoo's retirement; confirmed active in role through Aug 2026 press coverage); confidence high->medium given 'additional charge' ambiguity",
+   "st-rj-assembly: party-strength note updated — the previously-flagged 'Shiv Sena 2 seats' detail was re-verified directly against Wikipedia's current infobox and confirmed correct (Shiv Sena (2022-present), ex-BSP defectors), so the uncertainty caveat was removed"
+  ]
+ }
+}

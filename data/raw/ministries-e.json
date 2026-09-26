@@ -1,0 +1,4127 @@
+{
+ "segment": "ministries-e",
+ "asOf": "2026-09-25",
+ "notes": "Group E (Agriculture & FW/DARE-ICAR, Fisheries/AH&D, Food Processing, Consumer Affairs/Food & PD, Rural Development + Land Resources, Panchayati Raj, Chemicals & Fertilizers + Pharmaceuticals). Political appointments (ministers/MoS) are sourced to the official Cabinet Secretariat 'List of Council of Ministers with Portfolios (as on 23.06.2026)' PDF (cabsec.gov.in) — the most authoritative available single source; no reshuffle was confirmed between then and the 2026-09-25 as-of date, though press coverage (The Week, 18 Sept 2026) speculated a reshuffle might follow PM Modi's 23-24 September 2026 'Chintan Shivir' meeting with ministers — nothing had been announced as of research time, so the 23.06.2026 list is used as-is. KNOWN GAPS / LOW-CONFIDENCE ITEMS: (1) Secretary, Department of Consumer Affairs — could not confirm a specific named, dated current holder (search returned conflicting/stale candidates); position intentionally omitted from output rather than guessed. (2) Secretary, Ministry of Panchayati Raj — same issue; omitted. (3) Secretary, Department of Fertilizers (Rajat Kumar Mishra) — single indirect source, not cross-checked against an official page; confidence low. (4) Chairman, Central Warehousing Corporation — Wikipedia names Ashutosh Agnihotri, but other 2025-26 reporting has him leaving FCI CMD for Addl. Secretary MoEFCC at end-2025, so this is likely stale; confidence low, flagged in the position's notes. (5) ICAR's institute count (~113 units) is from a Wikipedia figure last verified circa 2020 in the source I could reach — the real 2026 count is almost certainly different (ICAR periodically adds/merges institutes); needs a fresh ICAR annual report check. (6) Direct network access to several *.gov.in / *.nic.in domains (consumeraffairs.nic.in, panchayatiraj.gov.in, fert.nic.in, cacp.dacnet.nic.in) timed out or failed DNS resolution from this research environment; where a mirror, PIB release, or Wikipedia page existed I used that instead, otherwise the field is left low-confidence/blank rather than invented. (7) Six pharma/fertiliser CPSEs (HIL, HAL-Antibiotics, IDPL, Bengal Chemicals, KAPL, RDPL, FACT, BVFCL, MFL, HURL) are entered with structural facts (ownership, HQ, founding) but NO current CMD/MD holder — several (HAL-Antibiotics, IDPL in particular) have been financially sick or under closure/disinvestment review for years and I could not confirm current operating status or leadership; do not treat their presence here as confirmation they are fully operational. (8) MGNREGA's 2025 repeal and replacement by the Viksit Bharat-Guarantee for Rozgar and Ajeevika Mission (Gramin) Act is a genuinely surprising, high-impact finding confirmed via the current Wikipedia infobox (citing PRS Legislative Research, which shows the bill passed both Houses 18 Dec 2025) — flagged here because it is easy to mistake for a hallucination; I could not find the President's assent date or in-force/commencement date, so 'established' on that entity notes the passage date only. (9) A number of missions/sub-schemes (SPMRM, DDU-GKY, PMAY-G, NSAP, DILRMP, RGSA, RKVY, Mega Food Park Scheme, PMFME, PMBJP, Rashtriya Gokul Mission, National Livestock Mission) are entered with structural facts recalled from general/background knowledge rather than a freshly fetched 2025-26 source this pass; marked confidence:low/medium and should be re-verified against official scheme pages before publication. (10) CDSCO is referenced only (owned by the health segment) per the ministry brief; NCDRC is referenced only (owned by the judiciary segment) via one relation. [Adversarial verification pass 2026-09-25: fixed a stale/unsourced Fertilizers-Secretary holder, flagged a live conflict on the AHD-Secretary holder, cleaned up a confused CWC-chair note, and confirmed/upgraded confidence on 8 other agency-head and secretary positions with fresh 2025-2026 sourcing. See top-level 'verification' block for details.]",
+ "entities": [
+  {
+   "id": "in-min-agriculture-and-farmers-welfare",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Agriculture and Farmers Welfare",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Ministry of Agriculture",
+    "Krishi Mantralaya",
+    "MoA&FW",
+    "Agriculture Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "The nodal ministry for crop agriculture policy, farmer income-support and credit schemes, agricultural research/education (via ICAR) and crop insurance; it runs PM-KISAN and PMFBY.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://agriwelfare.gov.in",
+   "established": "1947 (as a ministry; reorganised many times)",
+   "hq": null,
+   "headPositionId": "in-pos-minister-agriculture-and-farmers-welfare",
+   "adminHeadPositionId": "in-pos-secretary-agriculture-and-farmers-welfare",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://agriwelfare.gov.in",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-agriculture-and-farmers-welfare",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Agriculture and Farmers Welfare",
+   "nameHi": null,
+   "abbr": "DA&FW",
+   "aliases": [
+    "DAC&FW",
+    "Department of Agriculture, Cooperation and Farmers Welfare (former name)"
+   ],
+   "parentId": "in-min-agriculture-and-farmers-welfare",
+   "description": "Runs crop-husbandry policy, minimum support price operations liaison, seeds, fertiliser-use extension, farm credit, PM-KISAN and PMFBY; the larger of the ministry's two departments (DA&FW).",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://agriwelfare.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": "in-pos-secretary-agriculture-and-farmers-welfare",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://agriwelfare.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-agricultural-research-and-education",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Agricultural Research and Education",
+   "nameHi": null,
+   "abbr": "DARE",
+   "aliases": [
+    "DARE"
+   ],
+   "parentId": "in-min-agriculture-and-farmers-welfare",
+   "description": "The department that funds and directs India's agricultural research system; its Secretary is concurrently Director-General of ICAR, which the department administers.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://icar.org.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": "in-pos-secretary-dare",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://icar.org.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-min-fisheries-animal-husbandry-and-dairying",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Fisheries, Animal Husbandry and Dairying",
+   "nameHi": null,
+   "abbr": "MoFAH&D",
+   "aliases": [
+    "MoFAHD",
+    "Fisheries Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Carved out of the Agriculture Ministry in 2019; covers fisheries development, livestock health and breeding, and the dairy cooperative sector (through NDDB).",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://dof.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": "in-pos-minister-fisheries-animal-husbandry-and-dairying",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://dof.gov.in",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-fisheries",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Fisheries",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-min-fisheries-animal-husbandry-and-dairying",
+   "description": "Administers the Pradhan Mantri Matsya Sampada Yojana and India's fisheries and aquaculture development, including the National Fisheries Development Board.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://dof.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": "in-pos-secretary-fisheries",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://dof.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-animal-husbandry-and-dairying",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Animal Husbandry and Dairying",
+   "nameHi": null,
+   "abbr": "DAHD",
+   "aliases": [],
+   "parentId": "in-min-fisheries-animal-husbandry-and-dairying",
+   "description": "Runs national livestock-health, breed-improvement and dairy-development programmes (Rashtriya Gokul Mission, National Livestock Mission) and administers NDDB.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://dahd.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": "in-pos-secretary-animal-husbandry-and-dairying",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://dahd.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-min-food-processing-industries",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Food Processing Industries",
+   "nameHi": null,
+   "abbr": "MoFPI",
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "Promotes food-processing investment and infrastructure (mega food parks, cold chains) and runs the PM Formalisation of Micro Food Processing Enterprises scheme.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.mofpi.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": "in-pos-minister-food-processing-industries",
+   "adminHeadPositionId": "in-pos-secretary-food-processing-industries",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://www.mofpi.gov.in",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-min-consumer-affairs-food-and-public-distribution",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Consumer Affairs, Food and Public Distribution",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Ministry of Consumer Affairs",
+    "Food Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Umbrella ministry for consumer protection, weights/measures, standards (BIS), food procurement and the public distribution system; has two departments.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://consumeraffairs.nic.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": "in-pos-minister-consumer-affairs-food-and-public-distribution",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://consumeraffairs.nic.in",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-consumer-affairs",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Consumer Affairs",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-min-consumer-affairs-food-and-public-distribution",
+   "description": "Administers the Consumer Protection Act 2019 (via CCPA and the consumer commissions), Legal Metrology, BIS standards and the National Test House.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://consumeraffairs.nic.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://consumeraffairs.nic.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-food-and-public-distribution",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Food and Public Distribution",
+   "nameHi": null,
+   "abbr": "DFPD",
+   "aliases": [],
+   "parentId": "in-min-consumer-affairs-food-and-public-distribution",
+   "description": "Runs foodgrain procurement, buffer-stock and the public distribution system through FCI, CWC and WDRA, and administers PMGKAY free-foodgrain distribution under the NFSA.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; National Food Security Act, 2013",
+   "legalSourceUrl": null,
+   "officialUrl": "https://dfpd.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": "in-pos-secretary-food-and-public-distribution",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://dfpd.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-min-rural-development",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Rural Development",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "India's principal poverty-alleviation and rural-infrastructure ministry: rural roads (PMGSY), rural housing (PMAY-G), rural livelihoods (DAY-NRLM) and the rural employment guarantee (now VB-G RAM-G).",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://rural.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": "in-pos-minister-rural-development",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://rural.gov.in",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-rural-development",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Rural Development",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-min-rural-development",
+   "description": "Runs DAY-NRLM, PMAY-Gramin, PMGSY (through NRIDA), the National Social Assistance Programme and the successor to MGNREGA.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://rural.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": "in-pos-secretary-rural-development",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://rural.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-land-resources",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Land Resources",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-min-rural-development",
+   "description": "Runs land-records digitisation (DILRMP) and watershed/wasteland development programmes.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://dolr.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": "in-pos-secretary-land-resources",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://dolr.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-min-panchayati-raj",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Panchayati Raj",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "Nodal ministry for the three-tier rural local self-government system mandated by the 73rd Constitutional Amendment; runs the Rashtriya Gram Swaraj Abhiyan for panchayat capacity-building.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; Part IX, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": "https://panchayatiraj.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": "in-pos-minister-panchayati-raj",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://panchayatiraj.gov.in",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-min-chemicals-and-fertilizers",
+   "kind": "ministry",
+   "sector": "executive",
+   "name": "Ministry of Chemicals and Fertilizers",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-union-government",
+   "description": "Runs India's chemicals/petrochemicals industrial policy, the fertiliser subsidy system and pharmaceutical pricing/production policy across three departments.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://chemicals.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": "in-pos-minister-chemicals-and-fertilizers",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://chemicals.gov.in",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-chemicals-and-petrochemicals",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Chemicals and Petrochemicals",
+   "nameHi": null,
+   "abbr": "DCPC",
+   "aliases": [],
+   "parentId": "in-min-chemicals-and-fertilizers",
+   "description": "Administers chemicals/petrochemicals industry policy and the CIPET and IPFT training/research institutes.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://chemicals.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": "in-pos-secretary-chemicals-and-petrochemicals",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://chemicals.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-dept-fertilizers",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Fertilizers",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-min-chemicals-and-fertilizers",
+   "description": "Administers the fertiliser subsidy (Nutrient Based Subsidy scheme) and owns/oversees the central fertiliser PSUs.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://fert.nic.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": "in-pos-secretary-fertilizers",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://fert.nic.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-dept-pharmaceuticals",
+   "kind": "department",
+   "sector": "executive",
+   "name": "Department of Pharmaceuticals",
+   "nameHi": null,
+   "abbr": "DoP",
+   "aliases": [],
+   "parentId": "in-min-chemicals-and-fertilizers",
+   "description": "Regulates drug pricing (through NPPA), affordable-medicine retail (Jan Aushadhi, through BPPI) and pharma education/research (NIPERs); drug safety/licensing (CDSCO) sits with the Health Ministry instead.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "legalSourceUrl": null,
+   "officialUrl": "https://pharmaceuticals.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": "in-pos-secretary-pharmaceuticals",
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://pharmaceuticals.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-icar",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Indian Council of Agricultural Research",
+   "nameHi": null,
+   "abbr": "ICAR",
+   "aliases": [
+    "ICAR"
+   ],
+   "parentId": "in-dept-agricultural-research-and-education",
+   "description": "India's apex agricultural research body: a registered society running dozens of national institutes, national research centres, national bureaux and agricultural universities. Wikipedia (as of ~2020, not independently recounted this pass) listed roughly 113 constituent units — 4 deemed universities, 65 institutes, 15 national research centres, 6 national bureaux and 13 project directorates, plus 11 zonal Agricultural Technology Application Research Institutes (ATARIs); the current count needs a fresh ICAR annual-report check.",
+   "legalBasis": "Registered as a society under the Societies Registration Act, 1860 (1929); administered under DARE",
+   "legalSourceUrl": null,
+   "officialUrl": "https://icar.org.in",
+   "established": "1929",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": "in-pos-secretary-dare",
+   "seats": null,
+   "stats": {
+    "constituentUnitsApprox": 113,
+    "asOfNote": "Wikipedia figure, circa 2020, not re-verified in this pass"
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://icar.org.in",
+    "https://en.wikipedia.org/wiki/Indian_Council_of_Agricultural_Research"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-cacp",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "Commission for Agricultural Costs and Prices",
+   "nameHi": null,
+   "abbr": "CACP",
+   "aliases": [],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Attached office of the Agriculture Department that recommends Minimum Support Prices (MSP) for major crops each season; advisory only — MSP is set by the Union Cabinet.",
+   "legalBasis": "Government of India Resolution (established as Agricultural Prices Commission, 1965; renamed 1985)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://cacp.dacnet.nic.in",
+   "established": "1965",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-cacp",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Commission_for_Agricultural_Costs_and_Prices"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nafed",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Agricultural Cooperative Marketing Federation of India",
+   "nameHi": null,
+   "abbr": "NAFED",
+   "aliases": [
+    "NAFED"
+   ],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "A national apex multi-state cooperative society (not a CPSE) that undertakes price-support procurement of pulses/oilseeds on the government's behalf and markets agricultural produce for farmer cooperatives.",
+   "legalBasis": "Multi-State Cooperative Societies Act, 2002",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.nafed-india.com",
+   "established": "1958",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-nafed",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://www.nafed-india.com/chairman-nafed"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nsc-seeds",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "National Seeds Corporation",
+   "nameHi": null,
+   "abbr": "NSC",
+   "aliases": [],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Central public sector undertaking that produces and distributes certified/foundation seed and multiplies breeder seed from ICAR institutes.",
+   "legalBasis": "Companies Act (Government of India undertaking)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.indiaseeds.com",
+   "established": "1963",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://www.indiaseeds.com"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-sfci",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "State Farms Corporation of India",
+   "nameHi": null,
+   "abbr": "SFCI",
+   "aliases": [],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Central public sector undertaking that runs government seed/demonstration farms and produces quality seed.",
+   "legalBasis": "Companies Act (Government of India undertaking)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://sfci.nic.in",
+   "established": "1969",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-sfac",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Small Farmers' Agribusiness Consortium",
+   "nameHi": null,
+   "abbr": "SFAC",
+   "aliases": [],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Society that promotes Farmer Producer Organisations (FPOs) and agribusiness venture-capital assistance for small and marginal farmers.",
+   "legalBasis": "Registered society under DA&FW",
+   "legalSourceUrl": null,
+   "officialUrl": "https://sfacindia.com",
+   "established": "1994",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://sfacindia.com"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-dmi-agriculture",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Directorate of Marketing and Inspection",
+   "nameHi": null,
+   "abbr": "DMI",
+   "aliases": [
+    "AGMARK"
+   ],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Subordinate office that grades and standardises agricultural produce (AGMARK) and advises on agricultural marketing infrastructure and regulation.",
+   "legalBasis": "Agricultural Produce (Grading and Marking) Act, 1937",
+   "legalSourceUrl": null,
+   "officialUrl": "https://dmi.gov.in",
+   "established": "1935",
+   "hq": "Faridabad",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://dmi.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-nraa",
+   "kind": "advisory_body",
+   "sector": "executive",
+   "name": "National Rainfed Area Authority",
+   "nameHi": null,
+   "abbr": "NRAA",
+   "aliases": [],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Advisory body on rainfed-area development and watershed management, housed in NITI Aayog/the Agriculture Department.",
+   "legalBasis": "Government of India order",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "2006",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-niphm",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Institute of Plant Health Management",
+   "nameHi": null,
+   "abbr": "NIPHM",
+   "aliases": [],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Autonomous institute that trains extension officers and farmers in integrated pest management, plant quarantine and pesticide management.",
+   "legalBasis": "Registered society under DA&FW",
+   "legalSourceUrl": null,
+   "officialUrl": "https://niphm.gov.in",
+   "established": "2006",
+   "hq": "Hyderabad",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://niphm.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-cfqcti",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Central Fertiliser Quality Control and Training Institute",
+   "nameHi": null,
+   "abbr": "CFQC&TI",
+   "aliases": [],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Subordinate office (with regional labs) that tests fertiliser quality and trains state fertiliser-inspection staff.",
+   "legalBasis": "Fertiliser (Control) Order, 1985",
+   "legalSourceUrl": null,
+   "officialUrl": "https://cfqctifaridabad.nic.in",
+   "established": null,
+   "hq": "Faridabad",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-pm-kisan",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+   "nameHi": null,
+   "abbr": "PM-KISAN",
+   "aliases": [
+    "PM Kisan Samman Nidhi",
+    "PM-KISAN"
+   ],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Direct income-support scheme paying eligible landholding farmer families ₹6,000/year in three instalments straight to their bank accounts via Aadhaar-seeded DBT.",
+   "legalBasis": "Cabinet Committee on Economic Affairs approval, February 2019",
+   "legalSourceUrl": null,
+   "officialUrl": "https://pmkisan.gov.in",
+   "established": "2019-02-24",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/PM_Kisan_Samman_Nidhi",
+    "https://pmkisan.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-mission-pmfby",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Pradhan Mantri Fasal Bima Yojana",
+   "nameHi": null,
+   "abbr": "PMFBY",
+   "aliases": [
+    "PMFBY",
+    "Fasal Bima Yojana",
+    "crop insurance scheme"
+   ],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Government-subsidised crop-insurance scheme protecting farmers against yield losses from natural calamities, pests and disease; implemented through empanelled insurers including AIC.",
+   "legalBasis": "Cabinet approval, January 2016",
+   "legalSourceUrl": null,
+   "officialUrl": "https://pmfby.gov.in",
+   "established": "2016-02-18",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pradhan_Mantri_Fasal_Bima_Yojana"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-aic",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Agriculture Insurance Company of India",
+   "nameHi": null,
+   "abbr": "AIC",
+   "aliases": [],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Central public-sector general insurer, majority government-owned, that is the largest implementing insurer for PMFBY and other crop-insurance schemes.",
+   "legalBasis": "Companies Act (Government of India undertaking, promoted by GIC, NABARD and public-sector banks)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.aicofindia.com",
+   "established": "2002",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Agriculture_Insurance_Company_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-nddb",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "National Dairy Development Board",
+   "nameHi": null,
+   "abbr": "NDDB",
+   "aliases": [],
+   "parentId": "in-dept-animal-husbandry-and-dairying",
+   "description": "Statutory body (an Institution of National Importance) that promotes India's dairy cooperative structure ('Operation Flood'/Amul model) — production, procurement and marketing of milk.",
+   "legalBasis": "National Dairy Development Board Act, 1987",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.nddb.coop",
+   "established": "1965-07-16",
+   "hq": "Anand, Gujarat",
+   "headPositionId": "in-pos-chair-nddb",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Dairy_Development_Board",
+    "https://www.nddb.coop"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nfdb",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Fisheries Development Board",
+   "nameHi": null,
+   "abbr": "NFDB",
+   "aliases": [],
+   "parentId": "in-dept-fisheries",
+   "description": "Autonomous body under the Department of Fisheries that funds and coordinates fisheries and aquaculture development schemes, including under the Pradhan Mantri Matsya Sampada Yojana.",
+   "legalBasis": "Registered society under the Department of Fisheries",
+   "legalSourceUrl": null,
+   "officialUrl": "https://nfdb.gov.in",
+   "established": "2006",
+   "hq": "Hyderabad",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://nfdb.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-caa-fisheries",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Coastal Aquaculture Authority",
+   "nameHi": null,
+   "abbr": "CAA",
+   "aliases": [],
+   "parentId": "in-dept-fisheries",
+   "description": "Statutory regulator that registers and regulates coastal shrimp/fish farms to protect the coastal environment.",
+   "legalBasis": "Coastal Aquaculture Authority Act, 2005",
+   "legalSourceUrl": null,
+   "officialUrl": "https://caa.gov.in",
+   "established": "2005",
+   "hq": "Chennai",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://caa.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-cifnet",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Central Institute of Fisheries, Nautical and Engineering Training",
+   "nameHi": null,
+   "abbr": "CIFNET",
+   "aliases": [],
+   "parentId": "in-dept-fisheries",
+   "description": "Subordinate office that trains marine fishing crews and fisheries engineers.",
+   "legalBasis": "Government of India order",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Kochi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-rashtriya-gokul",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Rashtriya Gokul Mission",
+   "nameHi": null,
+   "abbr": "RGM",
+   "aliases": [],
+   "parentId": "in-dept-animal-husbandry-and-dairying",
+   "description": "Flagship cattle/buffalo indigenous-breed development and conservation mission under the National Programme for Bovine Breeding and Dairy Development.",
+   "legalBasis": "Government of India scheme approval",
+   "legalSourceUrl": null,
+   "officialUrl": "https://dahd.gov.in",
+   "established": "2014-12",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://dahd.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-national-livestock",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "National Livestock Mission",
+   "nameHi": null,
+   "abbr": "NLM",
+   "aliases": [],
+   "parentId": "in-dept-animal-husbandry-and-dairying",
+   "description": "Scheme for livestock development covering breed improvement, fodder development, and entrepreneurship in poultry/small ruminants/pigs.",
+   "legalBasis": "Government of India scheme approval",
+   "legalSourceUrl": null,
+   "officialUrl": "https://dahd.gov.in",
+   "established": "2014-15",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://dahd.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-niftem",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Institute of Food Technology Entrepreneurship and Management",
+   "nameHi": null,
+   "abbr": "NIFTEM",
+   "aliases": [
+    "IIFPT",
+    "NIFTEM-K",
+    "NIFTEM-T"
+   ],
+   "parentId": "in-min-food-processing-industries",
+   "description": "Institute of National Importance for food-technology education, entrepreneurship and R&D, with campuses at Kundli (Haryana) and Thanjavur (Tamil Nadu, the former IIFPT).",
+   "legalBasis": "National Institute of Food Technology Entrepreneurship and Management Act, 2021",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.niftem.ac.in",
+   "established": null,
+   "hq": "Kundli, Haryana",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://www.niftem.ac.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-mega-food-parks",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Mega Food Park Scheme",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-min-food-processing-industries",
+   "description": "Scheme funding cluster-based food-processing infrastructure (mega food parks) linking farm produce to retail/export markets.",
+   "legalBasis": "Government of India scheme approval",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.mofpi.gov.in",
+   "established": "2008",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://www.mofpi.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-pmfme",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "PM Formalisation of Micro Food Processing Enterprises Scheme",
+   "nameHi": null,
+   "abbr": "PMFME",
+   "aliases": [],
+   "parentId": "in-min-food-processing-industries",
+   "description": "Scheme supporting formalisation, credit access and branding for unorganised micro food-processing units, often on a one-district-one-product basis.",
+   "legalBasis": "Government of India scheme approval (Atmanirbhar Bharat package)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.mofpi.gov.in",
+   "established": "2020",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://www.mofpi.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-fci",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Food Corporation of India",
+   "nameHi": null,
+   "abbr": "FCI",
+   "aliases": [],
+   "parentId": "in-dept-food-and-public-distribution",
+   "description": "Statutory corporation that procures foodgrain (chiefly rice and wheat) at MSP, maintains buffer stocks for food security, and supplies grain to the public distribution system.",
+   "legalBasis": "Food Corporations Act, 1964",
+   "legalSourceUrl": null,
+   "officialUrl": "https://fci.gov.in",
+   "established": "1965",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cmd-fci",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://fci.gov.in",
+    "https://en.wikipedia.org/wiki/Food_Corporation_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cwc",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Central Warehousing Corporation",
+   "nameHi": null,
+   "abbr": "CWC",
+   "aliases": [],
+   "parentId": "in-dept-food-and-public-distribution",
+   "description": "Statutory public warehousing corporation storing foodgrain and other commodities across India, working alongside State Warehousing Corporations.",
+   "legalBasis": "Warehousing Corporations Act, 1962",
+   "legalSourceUrl": null,
+   "officialUrl": "https://cewacor.nic.in",
+   "established": "1957",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-cwc",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Warehousing_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-wdra",
+   "kind": "regulator",
+   "sector": "executive",
+   "name": "Warehousing Development and Regulatory Authority",
+   "nameHi": null,
+   "abbr": "WDRA",
+   "aliases": [],
+   "parentId": "in-dept-food-and-public-distribution",
+   "description": "Regulator that licenses warehouses and registers Negotiable Warehouse Receipts (NWRs), enabling farmers to pledge stored produce for credit.",
+   "legalBasis": "Warehousing (Development and Regulation) Act, 2007",
+   "legalSourceUrl": null,
+   "officialUrl": "https://wdra.gov.in",
+   "established": "2010",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://wdra.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-bis",
+   "kind": "statutory_body",
+   "sector": "executive",
+   "name": "Bureau of Indian Standards",
+   "nameHi": null,
+   "abbr": "BIS",
+   "aliases": [],
+   "parentId": "in-dept-consumer-affairs",
+   "description": "India's national standards body: sets and certifies (ISI mark) product/service standards, hallmarks precious metals, and runs the Sathyabama-run product-certification and lab-testing systems.",
+   "legalBasis": "Bureau of Indian Standards Act, 2016",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.bis.gov.in",
+   "established": "1986 (predecessor Indian Standards Institution, 1947)",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-bis",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bureau_of_Indian_Standards"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nth",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "National Test House",
+   "nameHi": null,
+   "abbr": "NTH",
+   "aliases": [],
+   "parentId": "in-dept-consumer-affairs",
+   "description": "Subordinate office providing third-party materials/product testing and calibration services, with regional laboratories, under the Department of Consumer Affairs.",
+   "legalBasis": "Government of India order",
+   "legalSourceUrl": null,
+   "officialUrl": "https://nth.gov.in",
+   "established": null,
+   "hq": "Kolkata (HQ) with regional labs",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-legal-metrology",
+   "kind": "regulator",
+   "sector": "executive",
+   "name": "Legal Metrology Division",
+   "nameHi": null,
+   "abbr": "Legal Metrology",
+   "aliases": [],
+   "parentId": "in-dept-consumer-affairs",
+   "description": "Central regulator for weights and measures (packaged-commodity declarations, weighing/measuring instrument approval); enforcement is largely by State Legal Metrology departments.",
+   "legalBasis": "Legal Metrology Act, 2009",
+   "legalSourceUrl": null,
+   "officialUrl": "https://consumeraffairs.nic.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://consumeraffairs.nic.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-ccpa",
+   "kind": "regulator",
+   "sector": "executive",
+   "name": "Central Consumer Protection Authority",
+   "nameHi": null,
+   "abbr": "CCPA",
+   "aliases": [],
+   "parentId": "in-dept-consumer-affairs",
+   "description": "Regulator with powers to investigate and act against unfair trade practices, misleading/false advertising and violations of consumer rights, including recalls.",
+   "legalBasis": "Consumer Protection Act, 2019, Section 10",
+   "legalSourceUrl": null,
+   "officialUrl": "https://ccpa.gov.in",
+   "established": "2020",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chief-commissioner-ccpa",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Consumer_Protection_Authority"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-sugar-directorate",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Directorate of Sugar and Vegetable Oils",
+   "nameHi": null,
+   "abbr": "Sugar Directorate",
+   "aliases": [],
+   "parentId": "in-dept-food-and-public-distribution",
+   "description": "Subordinate office that administers sugar-sector policy (cane pricing liaison, sugar-mill data, export/stock rules) within the Food & PD department.",
+   "legalBasis": "Essential Commodities Act, 1955 (sugar orders)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://dfpd.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://dfpd.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-pmgkay",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Pradhan Mantri Garib Kalyan Anna Yojana",
+   "nameHi": null,
+   "abbr": "PMGKAY",
+   "aliases": [
+    "PMGKAY",
+    "free ration scheme"
+   ],
+   "parentId": "in-dept-food-and-public-distribution",
+   "description": "Free-foodgrain scheme — 5 kg/person/month on top of NFSA entitlements — launched as COVID-19 relief in March 2020 and since folded into free (rather than subsidised) NFSA distribution, with the free-grain policy extended to December 2028.",
+   "legalBasis": "Cabinet approval, March 2020; extension Cabinet approvals through 2028; operates within the National Food Security Act, 2013 framework",
+   "legalSourceUrl": null,
+   "officialUrl": "https://dfpd.gov.in",
+   "established": "2020-03-26",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pradhan_Mantri_Garib_Kalyan_Anna_Yojana"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-nirdpr",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Institute of Rural Development and Panchayati Raj",
+   "nameHi": null,
+   "abbr": "NIRDPR",
+   "aliases": [],
+   "parentId": "in-dept-rural-development",
+   "description": "Apex national training and research institute for rural development and panchayati raj functionaries, with a main campus in Hyderabad and centres in Guwahati and Delhi.",
+   "legalBasis": "Registered society under the Ministry of Rural Development (established 1964 as National Institute of Community Development)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://nirdpr.org.in",
+   "established": "1964",
+   "hq": "Hyderabad",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Rural_Development_and_Panchayati_Raj"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-mission-nrlm",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "DAY-NRLM (National Rural Livelihood Mission)",
+   "nameHi": null,
+   "abbr": "DAY-NRLM",
+   "aliases": [
+    "NRLM",
+    "DAY-NRLM",
+    "NRETP",
+    "Aajeevika"
+   ],
+   "parentId": "in-dept-rural-development",
+   "description": "Self-help-group-based poverty-alleviation mission mobilising rural women into SHGs for savings, credit and livelihood promotion; the World Bank-supported National Rural Economic Transformation Project (NRETP) is a sub-project deepening NRLM's livelihoods and financial-inclusion work in select states.",
+   "legalBasis": "Restructuring of the Swarnajayanti Gram Swarozgar Yojana; renamed Deendayal Antyodaya Yojana-NRLM in 2015",
+   "legalSourceUrl": null,
+   "officialUrl": "https://aajeevika.gov.in",
+   "established": "2011-06",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Rural_Livelihood_Mission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-mission-vb-g-ram-g",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission (Gramin)",
+   "nameHi": null,
+   "abbr": "VB-G RAM-G",
+   "aliases": [
+    "MGNREGA",
+    "NREGA",
+    "Mahatma Gandhi National Rural Employment Guarantee Scheme",
+    "100 days work scheme",
+    "Rozgar Guarantee"
+   ],
+   "parentId": "in-dept-rural-development",
+   "description": "The rural employment-guarantee mission that replaced MGNREGA: raises the guaranteed-work entitlement from 100 to 125 days/year, revises Centre-State funding shares (60:40 generally, 90:10 for NE/Himalayan states), and adds steering committees and tech-based monitoring. The enabling Act was passed by both Houses on 18 December 2025, repealing the Mahatma Gandhi National Rural Employment Guarantee Act, 2005.",
+   "legalBasis": "Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission (Gramin) Act, 2025 (repeals the MGNREGA, 2005)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://rural.gov.in",
+   "established": "2025-12-18 (passed by Parliament; commencement date not independently confirmed)",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mahatma_Gandhi_National_Rural_Employment_Guarantee_Act,_2005",
+    "https://prsindia.org/billtrack/the-viksit-bharat-%E2%80%93-guarantee-for-rozgar-and-ajeevika-mission-gramin-vb-%E2%80%93-g-ram-g-bill-2025"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nrida",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "National Rural Infrastructure Development Agency",
+   "nameHi": null,
+   "abbr": "NRIDA",
+   "aliases": [],
+   "parentId": "in-dept-rural-development",
+   "description": "Implementing agency for PMGSY (rural roads) and other rural-infrastructure programmes on behalf of the Department of Rural Development.",
+   "legalBasis": "Registered society under the Ministry of Rural Development",
+   "legalSourceUrl": null,
+   "officialUrl": "https://pmgsy.nic.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://pmgsy.nic.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-pmgsy",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Pradhan Mantri Gram Sadak Yojana",
+   "nameHi": null,
+   "abbr": "PMGSY",
+   "aliases": [
+    "PMGSY",
+    "PMGSY-IV"
+   ],
+   "parentId": "in-dept-rural-development",
+   "description": "Centrally sponsored scheme to give unconnected rural habitations all-weather road connectivity; now in its fourth phase (PMGSY-IV, covering smaller habitations and left-wing-extremism/aspirational districts), implemented through NRIDA.",
+   "legalBasis": "Government of India scheme approval, December 2000",
+   "legalSourceUrl": null,
+   "officialUrl": "https://pmgsy.nic.in",
+   "established": "2000-12-25",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pradhan_Mantri_Gram_Sadak_Yojana",
+    "https://www.socialnews.xyz/2026/05/01/shivraj-chouhan-launches-pmgsy-iv-in-odisha-push-for-rural-road-connectivity"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-mission-spmrm",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Shyama Prasad Mukherji Rurban Mission",
+   "nameHi": null,
+   "abbr": "SPMRM",
+   "aliases": [],
+   "parentId": "in-dept-rural-development",
+   "description": "Mission clustering neighbouring villages into 'rurban' growth clusters with urban-grade infrastructure while preserving rural character.",
+   "legalBasis": "Government of India scheme approval",
+   "legalSourceUrl": null,
+   "officialUrl": "https://rural.gov.in",
+   "established": "2016",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://rural.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-ddu-gky",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Deen Dayal Upadhyaya Grameen Kaushalya Yojana",
+   "nameHi": null,
+   "abbr": "DDU-GKY",
+   "aliases": [],
+   "parentId": "in-dept-rural-development",
+   "description": "Placement-linked skill-training scheme for rural youth from poor families, run under the NRLM umbrella.",
+   "legalBasis": "Government of India scheme approval",
+   "legalSourceUrl": null,
+   "officialUrl": "https://ddugky.gov.in",
+   "established": "2014",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://ddugky.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-pmay-gramin",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Pradhan Mantri Awaas Yojana – Gramin",
+   "nameHi": null,
+   "abbr": "PMAY-G",
+   "aliases": [
+    "PMAY-G",
+    "Indira Awaas Yojana (predecessor)"
+   ],
+   "parentId": "in-dept-rural-development",
+   "description": "Rural housing scheme giving pucca houses with basic amenities to houseless/inadequately-housed rural families; the restructured successor to the Indira Awaas Yojana.",
+   "legalBasis": "Government of India scheme approval",
+   "legalSourceUrl": null,
+   "officialUrl": "https://pmayg.nic.in",
+   "established": "2016",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://pmayg.nic.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-nsap",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "National Social Assistance Programme",
+   "nameHi": null,
+   "abbr": "NSAP",
+   "aliases": [],
+   "parentId": "in-dept-rural-development",
+   "description": "Umbrella social-pension scheme for elderly, widowed and disabled people below the poverty line (old-age, widow and disability pensions, and a family-benefit grant), part-funded by the Centre and topped up by states.",
+   "legalBasis": "Government of India scheme approval, Article 41 (Directive Principles)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://nsap.nic.in",
+   "established": "1995",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://nsap.nic.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-dilrmp",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Digital India Land Records Modernisation Programme",
+   "nameHi": null,
+   "abbr": "DILRMP",
+   "aliases": [],
+   "parentId": "in-dept-land-resources",
+   "description": "Programme to digitise land records, computerise registration and integrate them towards a conclusive land-titling system.",
+   "legalBasis": "Government of India scheme approval (merger of NLRMP, 2008)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://dolr.gov.in",
+   "established": "2008",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://dolr.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-rgsa",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Rashtriya Gram Swaraj Abhiyan",
+   "nameHi": null,
+   "abbr": "RGSA",
+   "aliases": [],
+   "parentId": "in-min-panchayati-raj",
+   "description": "Capacity-building scheme for Panchayati Raj Institutions covering training, e-governance (eGramSwaraj) and devolution support.",
+   "legalBasis": "Government of India scheme approval",
+   "legalSourceUrl": null,
+   "officialUrl": "https://panchayatiraj.gov.in",
+   "established": "2018",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://panchayatiraj.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hil",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Hindustan Insecticides Limited",
+   "nameHi": null,
+   "abbr": "HIL",
+   "aliases": [],
+   "parentId": "in-dept-chemicals-and-petrochemicals",
+   "description": "Central public sector undertaking manufacturing technical-grade pesticides (originally DDT for malaria control) and agrochemicals, with plants in Kerala, Maharashtra and Punjab.",
+   "legalBasis": "Companies Act (Government of India undertaking)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.hil.gov.in",
+   "established": "1954-03",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hindustan_Insecticides_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-cipet",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Central Institute of Petrochemicals Engineering and Technology",
+   "nameHi": null,
+   "abbr": "CIPET",
+   "aliases": [],
+   "parentId": "in-dept-chemicals-and-petrochemicals",
+   "description": "National institute for skill development, education and R&D in plastics/petrochemicals engineering, with a large multi-city network of centres (40+ operational plus several under development).",
+   "legalBasis": "Registered society under the Department of Chemicals and Petrochemicals (formerly Central Institute of Plastics Engineering and Technology)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.cipet.gov.in",
+   "established": "1968",
+   "hq": "Chennai",
+   "headPositionId": "in-pos-dg-cipet",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "centresApprox": 43,
+    "centresUnderDevelopment": 9
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Institute_of_Petrochemicals_Engineering_and_Technology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ipft",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Institute of Pesticide Formulation Technology",
+   "nameHi": null,
+   "abbr": "IPFT",
+   "aliases": [],
+   "parentId": "in-dept-chemicals-and-petrochemicals",
+   "description": "Institute researching and developing pesticide-formulation technology and providing testing/consultancy to the agrochemical industry.",
+   "legalBasis": "Registered society under the Department of Chemicals and Petrochemicals",
+   "legalSourceUrl": null,
+   "officialUrl": "https://ipft.gov.in",
+   "established": "1978",
+   "hq": "Gurugram",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://ipft.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-nfl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "National Fertilizers Limited",
+   "nameHi": null,
+   "abbr": "NFL",
+   "aliases": [],
+   "parentId": "in-dept-fertilizers",
+   "description": "Navratna central public sector undertaking and India's second-largest urea producer, with plants at Nangal, Bathinda, Panipat and Vijaipur.",
+   "legalBasis": "Companies Act (Government of India undertaking)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.nfl.india.com",
+   "established": "1974-08-23",
+   "hq": "Noida, Uttar Pradesh",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Fertilizers_Limited"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-rcf",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Rashtriya Chemicals and Fertilizers",
+   "nameHi": null,
+   "abbr": "RCF",
+   "aliases": [],
+   "parentId": "in-dept-fertilizers",
+   "description": "Central public sector undertaking (Government of India holds a majority stake) manufacturing urea and complex fertilisers plus industrial chemicals, headquartered in Mumbai.",
+   "legalBasis": "Companies Act (formed 1978 from the split of Fertilizer Corporation of India)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://rcfltd.com",
+   "established": "1978",
+   "hq": "Mumbai",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rashtriya_Chemicals_and_Fertilizers"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-fact",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Fertilizers and Chemicals Travancore",
+   "nameHi": null,
+   "abbr": "FACT",
+   "aliases": [],
+   "parentId": "in-dept-fertilizers",
+   "description": "One of India's oldest fertiliser companies, a central public sector undertaking based in Kochi, Kerala, producing ammonium sulphate/factamfos fertilisers and caprolactam.",
+   "legalBasis": "Companies Act (Government of India undertaking)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://fact.co.in",
+   "established": "1943",
+   "hq": "Kochi, Kerala",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fertilizers_and_Chemicals_Travancore"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-bvfcl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Brahmaputra Valley Fertilizer Corporation Limited",
+   "nameHi": null,
+   "abbr": "BVFCL",
+   "aliases": [],
+   "parentId": "in-dept-fertilizers",
+   "description": "Central public sector undertaking operating urea plants at Namrup, Assam, serving the north-eastern fertiliser market.",
+   "legalBasis": "Companies Act (Government of India undertaking)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://bvfcl.com",
+   "established": null,
+   "hq": "Namrup, Assam",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://bvfcl.com"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hurl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Hindustan Urvarak and Rasayan Limited",
+   "nameHi": null,
+   "abbr": "HURL",
+   "aliases": [],
+   "parentId": "in-dept-fertilizers",
+   "description": "Joint-venture company (Coal India, NTPC, IOCL, FCIL and HFCL) reviving and operating revamped gas-based urea plants at Gorakhpur, Sindri and Barauni.",
+   "legalBasis": "Companies Act (joint-venture government undertaking)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://hurl.net.in",
+   "established": "2016",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://hurl.net.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mfl-fertilizers",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Madras Fertilizers Limited",
+   "nameHi": null,
+   "abbr": "MFL",
+   "aliases": [],
+   "parentId": "in-dept-fertilizers",
+   "description": "Central public sector undertaking producing urea and complex fertilisers from a plant at Manali, Chennai; originally a joint venture with AMOCO and NIOC.",
+   "legalBasis": "Companies Act (Government of India undertaking)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.madrasfert.co.in",
+   "established": "1966",
+   "hq": "Chennai",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://www.madrasfert.co.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-nppa",
+   "kind": "regulator",
+   "sector": "executive",
+   "name": "National Pharmaceutical Pricing Authority",
+   "nameHi": null,
+   "abbr": "NPPA",
+   "aliases": [],
+   "parentId": "in-dept-pharmaceuticals",
+   "description": "Independent regulator that fixes/revises ceiling prices of scheduled (essential) medicines and monitors drug availability and prices nationally.",
+   "legalBasis": "Government of India Resolution, 29 August 1997",
+   "legalSourceUrl": null,
+   "officialUrl": "https://nppaindia.nic.in",
+   "established": "1997",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chair-nppa",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Pharmaceutical_Pricing_Authority"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-niper-aggregate",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "NIPERs (National Institutes of Pharmaceutical Education and Research)",
+   "nameHi": null,
+   "abbr": "NIPER",
+   "aliases": [],
+   "parentId": "in-dept-pharmaceuticals",
+   "description": "Institutes of National Importance for pharmaceutical education/research; seven campuses — Mohali (1998, the original), Hyderabad, Ahmedabad, Kolkata, Guwahati, Hajipur and Raebareli (2007-08).",
+   "legalBasis": "National Institute of Pharmaceutical Education and Research Act, 1998",
+   "legalSourceUrl": null,
+   "officialUrl": "https://niper.gov.in",
+   "established": "1998",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "campuses": 7
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Pharmaceutical_Education_and_Research"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-bppi",
+   "kind": "autonomous_body",
+   "sector": "executive",
+   "name": "Bureau of Pharma PSUs of India",
+   "nameHi": null,
+   "abbr": "BPPI",
+   "aliases": [],
+   "parentId": "in-dept-pharmaceuticals",
+   "description": "Implementing agency for the Pradhan Mantri Bhartiya Janaushadhi Pariyojana, running Jan Aushadhi Kendra outlets that sell generic medicines at low prices; set up by pooling the pharma CPSEs.",
+   "legalBasis": "Registered society under the Department of Pharmaceuticals",
+   "legalSourceUrl": null,
+   "officialUrl": "https://janaushadhi.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://janaushadhi.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-pmbjp",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Pradhan Mantri Bhartiya Janaushadhi Pariyojana",
+   "nameHi": null,
+   "abbr": "PMBJP",
+   "aliases": [
+    "Jan Aushadhi",
+    "PMBJP"
+   ],
+   "parentId": "in-dept-pharmaceuticals",
+   "description": "Scheme establishing dedicated outlets (Jan Aushadhi Kendras) selling quality generic medicines at prices well below branded equivalents, implemented through BPPI.",
+   "legalBasis": "Government of India scheme approval, 2008",
+   "legalSourceUrl": null,
+   "officialUrl": "https://janaushadhi.gov.in",
+   "established": "2008",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://janaushadhi.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hal-antibiotics",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Hindustan Antibiotics Limited",
+   "nameHi": null,
+   "abbr": "HAL (pharma)",
+   "aliases": [],
+   "parentId": "in-dept-pharmaceuticals",
+   "description": "Central public sector undertaking (Pimpri, Pune) manufacturing bulk drugs/antibiotics (notably penicillin); has faced prolonged financial stress, with disinvestment/closure repeatedly considered — current operational status not independently verified in this pass.",
+   "legalBasis": "Companies Act (Government of India undertaking)",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1954",
+   "hq": "Pimpri, Pune",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-idpl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Indian Drugs and Pharmaceuticals Limited",
+   "nameHi": null,
+   "abbr": "IDPL",
+   "aliases": [],
+   "parentId": "in-dept-pharmaceuticals",
+   "description": "Central public sector undertaking that was once India's largest bulk-drug maker; has been financially sick for years, with several units referred for closure/strategic disinvestment — current operational status not independently verified in this pass.",
+   "legalBasis": "Companies Act (Government of India undertaking)",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1961",
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-bcpl-pharma",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Bengal Chemicals and Pharmaceuticals Limited",
+   "nameHi": null,
+   "abbr": "BCPL",
+   "aliases": [],
+   "parentId": "in-dept-pharmaceuticals",
+   "description": "Central public sector undertaking (founded by P.C. Ray) producing pharmaceuticals and fine chemicals from plants in West Bengal.",
+   "legalBasis": "Companies Act (Government of India undertaking)",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1901",
+   "hq": "Kolkata",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-kapl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Karnataka Antibiotics and Pharmaceuticals Limited",
+   "nameHi": null,
+   "abbr": "KAPL",
+   "aliases": [],
+   "parentId": "in-dept-pharmaceuticals",
+   "description": "Central public sector undertaking manufacturing bulk drugs and formulations (notably anti-TB and anti-malarial drugs) from Bengaluru.",
+   "legalBasis": "Companies Act (Government of India undertaking, Government of Karnataka is a minority shareholder)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.kaplltd.co.in",
+   "established": "1981",
+   "hq": "Bengaluru",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://www.kaplltd.co.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-rdpl",
+   "kind": "cpse",
+   "sector": "executive",
+   "name": "Rajasthan Drugs and Pharmaceuticals Limited",
+   "nameHi": null,
+   "abbr": "RDPL",
+   "aliases": [],
+   "parentId": "in-dept-pharmaceuticals",
+   "description": "Central public sector undertaking manufacturing bulk drugs, based in Jaipur.",
+   "legalBasis": "Companies Act (Government of India undertaking)",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1978",
+   "hq": "Jaipur",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [],
+   "confidence": "low"
+  },
+  {
+   "id": "in-dppqs",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Directorate of Plant Protection, Quarantine and Storage",
+   "nameHi": null,
+   "abbr": "DPPQS",
+   "aliases": [],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Subordinate office regulating pesticide registration/quality, plant quarantine at ports of entry, and locust control, under the Insecticides Act and the Destructive Insects and Pests Act.",
+   "legalBasis": "Insecticides Act, 1968; Destructive Insects and Pests Act, 1914",
+   "legalSourceUrl": null,
+   "officialUrl": "https://ppqs.gov.in",
+   "established": null,
+   "hq": "Faridabad",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://ppqs.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-mission-rkvy",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Rashtriya Krishi Vikas Yojana",
+   "nameHi": null,
+   "abbr": "RKVY",
+   "aliases": [],
+   "parentId": "in-dept-agriculture-and-farmers-welfare",
+   "description": "Umbrella state-plan scheme giving states flexible funding to raise agriculture/allied-sector growth, planned through State Agriculture Plans.",
+   "legalBasis": "Government of India scheme approval, National Development Council",
+   "legalSourceUrl": null,
+   "officialUrl": "https://rkvy.nic.in",
+   "established": "2007",
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://rkvy.nic.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-cpdo",
+   "kind": "subordinate_office",
+   "sector": "executive",
+   "name": "Central Poultry Development Organisation",
+   "nameHi": null,
+   "abbr": "CPDO",
+   "aliases": [],
+   "parentId": "in-dept-animal-husbandry-and-dairying",
+   "description": "Network of central poultry farms/training institutes (Central Poultry Development Organisation, four zonal units) that supply improved poultry germplasm and train poultry farmers.",
+   "legalBasis": "Government of India order",
+   "legalSourceUrl": null,
+   "officialUrl": "https://dahd.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://dahd.gov.in"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-minister-agriculture-and-farmers-welfare",
+   "title": "Minister of Agriculture and Farmers Welfare",
+   "titleHi": null,
+   "orgId": "in-min-agriculture-and-farmers-welfare",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Shivraj Singh Chouhan",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Shivraj_Singh_Chouhan",
+    "acting": false,
+    "notes": "Also Minister of Rural Development (see in-pos-minister-rural-development)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-agriculture-and-farmers-welfare-1",
+   "title": "Minister of State for Agriculture and Farmers Welfare",
+   "titleHi": null,
+   "orgId": "in-min-agriculture-and-farmers-welfare",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Ram Nath Thakur",
+    "since": "2024-06-10",
+    "party": "JD(U)",
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Ram_Nath_Thakur",
+    "acting": false,
+    "notes": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-agriculture-and-farmers-welfare-2",
+   "title": "Minister of State for Agriculture and Farmers Welfare",
+   "titleHi": null,
+   "orgId": "in-min-agriculture-and-farmers-welfare",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Bhagirath Choudhary",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-fisheries-animal-husbandry-and-dairying",
+   "title": "Minister of Fisheries, Animal Husbandry and Dairying",
+   "titleHi": null,
+   "orgId": "in-min-fisheries-animal-husbandry-and-dairying",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Rajiv Ranjan Singh (alias Lalan Singh)",
+    "since": "2024-06-10",
+    "party": "JD(U)",
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Also Minister of Panchayati Raj (see in-pos-minister-panchayati-raj)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-fisheries-animal-husbandry-and-dairying-1",
+   "title": "Minister of State for Fisheries, Animal Husbandry and Dairying",
+   "titleHi": null,
+   "orgId": "in-min-fisheries-animal-husbandry-and-dairying",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "S. P. Singh Baghel",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Also MoS Panchayati Raj (see in-pos-mos-panchayati-raj-1)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-food-processing-industries",
+   "title": "Minister of Food Processing Industries",
+   "titleHi": null,
+   "orgId": "in-min-food-processing-industries",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Chirag Paswan",
+    "since": "2024-06-10",
+    "party": "LJP(RV)",
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Chirag_Paswan",
+    "acting": false,
+    "notes": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-food-processing-industries-1",
+   "title": "Minister of State for Food Processing Industries",
+   "titleHi": null,
+   "orgId": "in-min-food-processing-industries",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Ravneet Singh (Bittu)",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Also MoS Railways."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-consumer-affairs-food-and-public-distribution",
+   "title": "Minister of Consumer Affairs, Food and Public Distribution",
+   "titleHi": null,
+   "orgId": "in-min-consumer-affairs-food-and-public-distribution",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Pralhad Joshi",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Pralhad_Joshi",
+    "acting": false,
+    "notes": "Also Minister of New and Renewable Energy."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-consumer-affairs-food-and-public-distribution-1",
+   "title": "Minister of State for Consumer Affairs, Food and Public Distribution",
+   "titleHi": null,
+   "orgId": "in-min-consumer-affairs-food-and-public-distribution",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "B. L. Verma",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Banwari_Lal_Verma",
+    "acting": false,
+    "notes": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-consumer-affairs-food-and-public-distribution-2",
+   "title": "Minister of State for Consumer Affairs, Food and Public Distribution",
+   "titleHi": null,
+   "orgId": "in-min-consumer-affairs-food-and-public-distribution",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Nimuben Jayantibhai Bambhaniya",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Nimuben_Bambhaniya",
+    "acting": false,
+    "notes": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-rural-development",
+   "title": "Minister of Rural Development",
+   "titleHi": null,
+   "orgId": "in-min-rural-development",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Shivraj Singh Chouhan",
+    "since": "2024-06-11",
+    "party": "BJP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Shivraj_Singh_Chouhan",
+    "acting": false,
+    "notes": "Also Minister of Agriculture and Farmers Welfare."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-rural-development-1",
+   "title": "Minister of State for Rural Development",
+   "titleHi": null,
+   "orgId": "in-min-rural-development",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Chandra Sekhar Pemmasani",
+    "since": "2024-06-10",
+    "party": "TDP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Chandra_Sekhar_Pemmasani",
+    "acting": false,
+    "notes": "Also MoS Communications."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-rural-development-2",
+   "title": "Minister of State for Rural Development",
+   "titleHi": null,
+   "orgId": "in-min-rural-development",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Kamlesh Paswan",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-panchayati-raj",
+   "title": "Minister of Panchayati Raj",
+   "titleHi": null,
+   "orgId": "in-min-panchayati-raj",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Rajiv Ranjan Singh (alias Lalan Singh)",
+    "since": "2024-06-10",
+    "party": "JD(U)",
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Also Minister of Fisheries, Animal Husbandry and Dairying."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-panchayati-raj-1",
+   "title": "Minister of State for Panchayati Raj",
+   "titleHi": null,
+   "orgId": "in-min-panchayati-raj",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "S. P. Singh Baghel",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Also MoS Fisheries, Animal Husbandry and Dairying."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-chemicals-and-fertilizers",
+   "title": "Minister of Chemicals and Fertilizers",
+   "titleHi": null,
+   "orgId": "in-min-chemicals-and-fertilizers",
+   "rank": "cabinet_minister",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "J. P. Nadda",
+    "since": "2024-06-09",
+    "party": "BJP",
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/J._P._Nadda",
+    "acting": false,
+    "notes": "Also Minister of Health and Family Welfare (his primary portfolio)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-chemicals-and-fertilizers-1",
+   "title": "Minister of State for Chemicals and Fertilizers",
+   "titleHi": null,
+   "orgId": "in-min-chemicals-and-fertilizers",
+   "rank": "minister_of_state",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "termYears": null,
+   "holder": {
+    "name": "Anupriya Patel",
+    "since": "2024-06-10",
+    "party": "Apna Dal (Sonelal)",
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Also MoS Health and Family Welfare."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-agriculture-and-farmers-welfare",
+   "title": "Secretary, Department of Agriculture and Farmers Welfare",
+   "titleHi": null,
+   "orgId": "in-dept-agriculture-and-farmers-welfare",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Atish Chandra",
+    "since": "2026-02-28",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "1994-batch IAS, Bihar cadre; succeeded Devesh Chaturvedi on his retirement."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.global-agriculture.com/india-region/atish-chandra-assumes-charge-as-secretary-department-of-agriculture-farmers-welfare/",
+    "https://news.google.com/rss/search?q=%22Atish+Chandra%22+Agriculture+Secretary"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-dare",
+   "title": "Secretary, DARE and Director-General, ICAR",
+   "titleHi": null,
+   "orgId": "in-dept-agricultural-research-and-education",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Mangi Lal Jat",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Combined DARE Secretary / ICAR Director-General post; appointed by the Appointments Committee of the Cabinet for a 3-year term."
+   },
+   "vacant": false,
+   "sources": [
+    "https://icar.org.in/en/contact-us",
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2123110&reg=48&lang=2",
+    "https://news.google.com/rss/search?q=DARE+Secretary+ICAR+Director+General+2026"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-fisheries",
+   "title": "Secretary, Department of Fisheries",
+   "titleHi": null,
+   "orgId": "in-dept-fisheries",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Abhilaksh Likhi",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2216176&reg=3&lang=1",
+    "https://news.google.com/rss/search?q=%22Abhilaksh+Likhi%22+Fisheries+Secretary"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-animal-husbandry-and-dairying",
+   "title": "Secretary, Department of Animal Husbandry and Dairying",
+   "titleHi": null,
+   "orgId": "in-dept-animal-husbandry-and-dairying",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Naresh Pal Gangwar",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Confirmed via LIVE re-scrape of the official dahd.gov.in 'Who's Who' page on 2026-09-25 (as-of date): still lists 'Mr. Naresh Pal Gangwar, Secretary(AHD)'. NOTE A CONFLICTING SIGNAL: Gangwar was named Higher Education Secretary on 2026-07-24, reportedly reverted to continue as AHD Secretary by 2026-08-11 (per The BuckStopper/TheWire.in), and then a single press item (Elets eGov, 'Naresh Pal Gangwar appointed Rajasthan's new Principal Secretary IT', dated 2026-09-19, found via Google News search, original URL unresolved without JS) suggests he left for a Rajasthan state government posting -- 6 days before our as-of date. The official Union department website (a higher-priority source per the schema's quality bar) has not reflected any such change as of 2026-09-25. Keeping Gangwar as holder on the strength of the primary official source, but flagging this as an unresolved discrepancy that should be re-checked in the next pass."
+   },
+   "vacant": false,
+   "sources": [
+    "https://dahd.gov.in/who-s-who",
+    "https://news.google.com/rss/search?q=Gangwar+Rajasthan+Principal+Secretary+IT"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-food-processing-industries",
+   "title": "Secretary, Ministry of Food Processing Industries",
+   "titleHi": null,
+   "orgId": "in-min-food-processing-industries",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Avinash Purushottam Das Joshi",
+    "since": "2025-07-04",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "1994-batch IAS, Assam-Meghalaya cadre. Appointment on 2025-07-03/04 confirmed by multiple contemporaneous press sources (IndianMandarins, APAC Media, Indianmasterminds, Veloxx media), found via Google News search."
+   },
+   "vacant": false,
+   "sources": [
+    "https://news.google.com/rss/search?q=%22Secretary%22+%22Food+Processing+Industries%22+IAS+2026"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-food-and-public-distribution",
+   "title": "Secretary, Department of Food and Public Distribution",
+   "titleHi": null,
+   "orgId": "in-dept-food-and-public-distribution",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Sanjeev Chopra",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://ddnews.gov.in/en/ai-impact-summit-2026-india-showcases-ai-driven-overhaul-of-public-distribution-system/",
+    "https://news.google.com/rss/search?q=%22Sanjeev+Chopra%22+Food+Public+Distribution+Secretary"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-rural-development",
+   "title": "Secretary, Department of Rural Development",
+   "titleHi": null,
+   "orgId": "in-dept-rural-development",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Rohit Kansal",
+    "since": "2026-03-31",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "1995-batch IAS, AGMUT cadre; succeeded Shailesh Kumar Singh on retirement."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.businessworld.in/article/rohit-kansal-takes-charge-as-rural-development-secretary-after-key-transition-600182",
+    "https://news.google.com/rss/search?q=%22Rohit+Kansal%22+Rural+Development+Secretary+2026"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-land-resources",
+   "title": "Secretary, Department of Land Resources",
+   "titleHi": null,
+   "orgId": "in-dept-land-resources",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Narendra Bhooshan",
+    "since": "2026-04",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "1992-batch IAS, Uttar Pradesh cadre."
+   },
+   "vacant": false,
+   "sources": [
+    "https://egov.eletsonline.com/2026/04/narendra-bhooshan-named-secretary-land-resources-department/",
+    "https://news.google.com/rss/search?q=%22Narendra+Bhooshan%22+Land+Resources+Secretary"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-chemicals-and-petrochemicals",
+   "title": "Secretary, Department of Chemicals and Petrochemicals",
+   "titleHi": null,
+   "orgId": "in-dept-chemicals-and-petrochemicals",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Tejveer Singh",
+    "since": "2026-04-07",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "1994-batch IAS, Punjab cadre."
+   },
+   "vacant": false,
+   "sources": [
+    "https://chemicals.gov.in/who-who",
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2249792&reg=3&lang=1"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-fertilizers",
+   "title": "Secretary, Department of Fertilizers",
+   "titleHi": null,
+   "orgId": "in-dept-fertilizers",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Arti Ahuja",
+    "since": "2026-09-19",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "CORRECTED: previous holder Rajat Kumar Mishra was unsourced. Press coverage (Elets eGov, 'Centre Appoints Arti Ahuja as Secretary, Ministry of Chemicals & Fertilizers', 19 Sep 2026, found via Google News search -- original article URL could not be resolved without JS rendering) reports Ahuja's appointment on/around 2026-09-19. Ahuja previously held Secretary, Dept. of Chemicals & Petrochemicals (2022) and additional charge of Fertilizer Secretary (2022), so a Fertilizers posting fits her career track; D/o Chemicals & Petrochemicals is independently confirmed held by Tejveer Singh (chemicals.gov.in who's-who, live-checked 2026-09-25), so the two roles do not conflict. Single-source correction -- re-verify against fert.nic.in/PIB when reachable (DNS for fert.nic.in failed in this pass)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://news.google.com/rss/search?q=%22Arti+Ahuja%22+Secretary+Fertilizers"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-pharmaceuticals",
+   "title": "Secretary, Department of Pharmaceuticals",
+   "titleHi": null,
+   "orgId": "in-dept-pharmaceuticals",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Manoj Joshi",
+    "since": "2026-01-05",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "1989-batch IAS, Kerala cadre; moved from Secretary, Land Resources; succeeded Amit Aggarwal, who moved to Secretary, Telecommunications."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ehealth.eletsonline.com/2026/01/manoj-joshi-takes-charge-as-secretary-department-of-pharmaceuticals/",
+    "https://news.google.com/rss/search?q=%22Manoj+Joshi%22+Pharmaceuticals+Secretary+2026"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-cacp",
+   "title": "Chairman, Commission for Agricultural Costs and Prices",
+   "titleHi": null,
+   "orgId": "in-cacp",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Vijay Paul Sharma",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Last independently confirmed reappointment: 'Govt re-appoints Vijay Paul Sharma as CACP Chairman', BusinessLine/Krishi Jagran/The Tribune, Jan 2022. No 2025-2026 source found confirming he is still Chairman, and no source found naming a replacement either. DOWNGRADED per quality bar: current holder not confirmed against a 2025-2026 source in this pass."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Commission_for_Agricultural_Costs_and_Prices"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chair-nafed",
+   "title": "Chairman, NAFED",
+   "titleHi": null,
+   "orgId": "in-nafed",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "elected",
+   "appointedBy": null,
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Jethabhai Ahir",
+    "since": "2024-05-22",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Elected chairman of the cooperative's board, not a government appointee; also a BJP MLA and Deputy Speaker of the Gujarat Assembly. Succeeded long-time chairman Bijender Singh."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.indianmandarins.com/news/nafed-jetha-ahir-elected-uncontested-new-chairman/28878"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-nddb",
+   "title": "Chairman, National Dairy Development Board",
+   "titleHi": null,
+   "orgId": "in-nddb",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Meenesh Shah",
+    "since": "2021",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Original appointment year (2021) per Wikipedia, not independently re-verified. Fresh press search (Jan 2026: Times of India / Indian Cooperative / FoodTechBiz, 'Govt of India extends NDDB Chairman Dr Meenesh Shah's tenure by 3.5 years') confirms his tenure was extended in January 2026, and multiple 2026 sources (Fortune India Jul 2026, AgroSpectrum Jul 2026, northeasttoday.in Jun 2026) continue to refer to him as sitting NDDB Chairman through mid-2026."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Dairy_Development_Board",
+    "https://news.google.com/rss/search?q=%22Meenesh+Shah%22+NDDB+chairman"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-bis",
+   "title": "Director-General, Bureau of Indian Standards",
+   "titleHi": null,
+   "orgId": "in-bis",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Sanjay Garg",
+    "since": "2026-05-23",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS. 'Sanjay Garg Assumes Charge as Director General of Bureau of Indian Standards', News On AIR, 23 May 2026."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bureau_of_Indian_Standards",
+    "https://news.google.com/rss/search?q=%22Sanjay+Garg%22+BIS+Director+General"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chair-cwc",
+   "title": "Chairman, Central Warehousing Corporation",
+   "titleHi": null,
+   "orgId": "in-cwc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Ashutosh Agnihotri",
+    "since": "2025-06",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Confirmed via a fresh fetch of the Wikipedia infobox for Central Warehousing Corporation on 2026-09-25: 'Sh. Ashutosh Agnihotri, IAS, Chairman'. Career trail from Google News search: CMD, FCI (Jan 2025) -> Chairman, CWC (Jun 2025, per PSU Connect / Logistics Insider) -> succeeded at FCI by Rabindra Kumar Agarwal (31 Dec 2025). The previous note in this file claiming he had left for Additional Secretary, MoEFCC was NOT corroborated by any source found in this pass and has been removed as unverified."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Warehousing_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cmd-fci",
+   "title": "Chairman and Managing Director, Food Corporation of India",
+   "titleHi": null,
+   "orgId": "in-fci",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Rabindra Kumar Agarwal",
+    "since": "2025-12-31",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "1997-batch IAS, Kerala cadre; was Central Registrar of Cooperative Societies; succeeded Ashutosh Agnihotri, who moved to Additional Secretary, Ministry of Environment, Forest and Climate Change."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.indiancooperative.com/co-op-news-snippets/crcs-agarwal-appointed-cmd-of-food-corporation-of-india/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chief-commissioner-ccpa",
+   "title": "Chief Commissioner, Central Consumer Protection Authority",
+   "titleHi": null,
+   "orgId": "in-ccpa",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Nidhi Khare",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS. Confirmed active as CCPA Chief Commissioner through Sep 2026 via multiple press mentions (Indian Express, Moneycontrol, ET Government, FM Bharat, latest dated 16 Sep 2026)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Consumer_Protection_Authority",
+    "https://news.google.com/rss/search?q=%22Nidhi+Khare%22+CCPA"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-cipet",
+   "title": "Director-General, CIPET",
+   "titleHi": null,
+   "orgId": "in-cipet",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Shishir Sinha",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Institute_of_Petrochemicals_Engineering_and_Technology"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-nppa",
+   "title": "Chairman, National Pharmaceutical Pricing Authority",
+   "titleHi": null,
+   "orgId": "in-nppa",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "P. Krishnamurthy",
+    "since": "2024-10-28",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS. Appointed chairperson per Pharmabiz.com, 'Centre appoints P Krishnamurthy IAS as chairperson of NPPA', 28 Oct 2024; no replacement found in 2025-2026 press search."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Pharmaceutical_Pricing_Authority",
+    "https://news.google.com/rss/search?q=NPPA+chairman+%22Krishnamurthy%22"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-dept-consumer-affairs",
+   "to": "in-ncdrc",
+   "type": "oversees",
+   "basis": "Consumer Protection Act, 2019 — administrative/financial sponsorship of the National Consumer Disputes Redressal Commission (owned by the judiciary segment; referenced, not redefined, here)",
+   "source": "https://en.wikipedia.org/wiki/Consumer_Protection_Act,_2019"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-agriculture-and-farmers-welfare",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-agriculture-and-farmers-welfare",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-agriculture-and-farmers-welfare-1",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-agriculture-and-farmers-welfare-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-agriculture-and-farmers-welfare-2",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-agriculture-and-farmers-welfare-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-fisheries-animal-husbandry-and-dairying",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-fisheries-animal-husbandry-and-dairying",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-fisheries-animal-husbandry-and-dairying-1",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-fisheries-animal-husbandry-and-dairying-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-food-processing-industries",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-food-processing-industries",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-food-processing-industries-1",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-food-processing-industries-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-consumer-affairs-food-and-public-distribution",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-consumer-affairs-food-and-public-distribution",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-consumer-affairs-food-and-public-distribution-1",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-consumer-affairs-food-and-public-distribution-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-consumer-affairs-food-and-public-distribution-2",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-consumer-affairs-food-and-public-distribution-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-rural-development",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-rural-development",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-rural-development-1",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-rural-development-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-rural-development-2",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-rural-development-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-panchayati-raj",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-panchayati-raj",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-panchayati-raj-1",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-panchayati-raj-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-minister-chemicals-and-fertilizers",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-chemicals-and-fertilizers",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-mos-chemicals-and-fertilizers-1",
+   "type": "appoints",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-chemicals-and-fertilizers-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1), Constitution of India",
+   "source": "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-secretary-agriculture-and-farmers-welfare",
+   "type": "appoints",
+   "basis": "Appointments Committee of the Cabinet (chaired by the PM), Government of India (Transaction of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-secretary-dare",
+   "type": "appoints",
+   "basis": "Appointments Committee of the Cabinet (chaired by the PM), Government of India (Transaction of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-secretary-fisheries",
+   "type": "appoints",
+   "basis": "Appointments Committee of the Cabinet (chaired by the PM), Government of India (Transaction of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-secretary-animal-husbandry-and-dairying",
+   "type": "appoints",
+   "basis": "Appointments Committee of the Cabinet (chaired by the PM), Government of India (Transaction of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-secretary-food-processing-industries",
+   "type": "appoints",
+   "basis": "Appointments Committee of the Cabinet (chaired by the PM), Government of India (Transaction of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-secretary-food-and-public-distribution",
+   "type": "appoints",
+   "basis": "Appointments Committee of the Cabinet (chaired by the PM), Government of India (Transaction of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-secretary-rural-development",
+   "type": "appoints",
+   "basis": "Appointments Committee of the Cabinet (chaired by the PM), Government of India (Transaction of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-secretary-land-resources",
+   "type": "appoints",
+   "basis": "Appointments Committee of the Cabinet (chaired by the PM), Government of India (Transaction of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-secretary-chemicals-and-petrochemicals",
+   "type": "appoints",
+   "basis": "Appointments Committee of the Cabinet (chaired by the PM), Government of India (Transaction of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-secretary-fertilizers",
+   "type": "appoints",
+   "basis": "Appointments Committee of the Cabinet (chaired by the PM), Government of India (Transaction of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-secretary-pharmaceuticals",
+   "type": "appoints",
+   "basis": "Appointments Committee of the Cabinet (chaired by the PM), Government of India (Transaction of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-cacp",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-nafed",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-nsc-seeds",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-sfci",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-sfac",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-dmi-agriculture",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-nraa",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-niphm",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-cfqcti",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-dppqs",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-aic",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-mission-pm-kisan",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-mission-pmfby",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agriculture-and-farmers-welfare",
+   "to": "in-mission-rkvy",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-agricultural-research-and-education",
+   "to": "in-icar",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-fisheries",
+   "to": "in-nfdb",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-fisheries",
+   "to": "in-caa-fisheries",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-fisheries",
+   "to": "in-cifnet",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-animal-husbandry-and-dairying",
+   "to": "in-nddb",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-animal-husbandry-and-dairying",
+   "to": "in-mission-rashtriya-gokul",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-animal-husbandry-and-dairying",
+   "to": "in-mission-national-livestock",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-animal-husbandry-and-dairying",
+   "to": "in-cpdo",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-min-food-processing-industries",
+   "to": "in-niftem",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-min-food-processing-industries",
+   "to": "in-mission-mega-food-parks",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-min-food-processing-industries",
+   "to": "in-mission-pmfme",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-consumer-affairs",
+   "to": "in-bis",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-consumer-affairs",
+   "to": "in-nth",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-consumer-affairs",
+   "to": "in-legal-metrology",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-consumer-affairs",
+   "to": "in-ccpa",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-food-and-public-distribution",
+   "to": "in-fci",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-food-and-public-distribution",
+   "to": "in-cwc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-food-and-public-distribution",
+   "to": "in-wdra",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-food-and-public-distribution",
+   "to": "in-sugar-directorate",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-food-and-public-distribution",
+   "to": "in-mission-pmgkay",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-rural-development",
+   "to": "in-nirdpr",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-rural-development",
+   "to": "in-mission-nrlm",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-rural-development",
+   "to": "in-mission-vb-g-ram-g",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-rural-development",
+   "to": "in-nrida",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-rural-development",
+   "to": "in-mission-pmgsy",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-rural-development",
+   "to": "in-mission-spmrm",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-rural-development",
+   "to": "in-mission-ddu-gky",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-rural-development",
+   "to": "in-mission-pmay-gramin",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-rural-development",
+   "to": "in-mission-nsap",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-land-resources",
+   "to": "in-mission-dilrmp",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-min-panchayati-raj",
+   "to": "in-mission-rgsa",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-chemicals-and-petrochemicals",
+   "to": "in-hil",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-chemicals-and-petrochemicals",
+   "to": "in-cipet",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-chemicals-and-petrochemicals",
+   "to": "in-ipft",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-fertilizers",
+   "to": "in-nfl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-fertilizers",
+   "to": "in-rcf",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-fertilizers",
+   "to": "in-fact",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-fertilizers",
+   "to": "in-bvfcl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-fertilizers",
+   "to": "in-hurl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-fertilizers",
+   "to": "in-mfl-fertilizers",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-pharmaceuticals",
+   "to": "in-nppa",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-pharmaceuticals",
+   "to": "in-niper-aggregate",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-pharmaceuticals",
+   "to": "in-bppi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-pharmaceuticals",
+   "to": "in-mission-pmbjp",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-pharmaceuticals",
+   "to": "in-hal-antibiotics",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-pharmaceuticals",
+   "to": "in-idpl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-pharmaceuticals",
+   "to": "in-bcpl-pharma",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-pharmaceuticals",
+   "to": "in-kapl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-dept-pharmaceuticals",
+   "to": "in-rdpl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-fci",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-cwc",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-nddb",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-hil",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-nfl",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-rcf",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-fact",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-bvfcl",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-hurl",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-mfl-fertilizers",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-hal-antibiotics",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-idpl",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-bcpl-pharma",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-kapl",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-rdpl",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-aic",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-nsc-seeds",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-cag",
+   "to": "in-sfci",
+   "type": "audits",
+   "basis": "Comptroller and Auditor General's (Duties, Powers and Conditions of Service) Act, 1971",
+   "source": null
+  },
+  {
+   "from": "in-nrida",
+   "to": "in-mission-pmgsy",
+   "type": "administers",
+   "basis": "Rural roads programme delivery structure",
+   "source": null
+  },
+  {
+   "from": "in-bppi",
+   "to": "in-mission-pmbjp",
+   "type": "administers",
+   "basis": "Scheme implementing-agency arrangement",
+   "source": null
+  },
+  {
+   "from": "in-aic",
+   "to": "in-mission-pmfby",
+   "type": "administers",
+   "basis": "Empanelled implementing insurer arrangement",
+   "source": null
+  },
+  {
+   "from": "in-icar",
+   "to": "in-mission-rkvy",
+   "type": "member_of",
+   "basis": "ICAR research feeds state RKVY plans (informal linkage, not a strict hierarchy)",
+   "source": null
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 35,
+  "corrections": [
+   "in-pos-secretary-fertilizers: holder corrected from unsourced 'Rajat Kumar Mishra' to 'Arti Ahuja' (~2026-09-19) per fresh press search; confidence low->medium.",
+   "in-pos-secretary-animal-husbandry-and-dairying: holder unchanged (Naresh Pal Gangwar) but confidence high->medium after live dahd.gov.in re-check found a conflicting Sep-2026 press report of a move to Rajasthan; flagged in notes for follow-up.",
+   "in-pos-chair-cwc: removed an unsourced/unconfirmed note claiming a move to MoEFCC; confirmed Ashutosh Agnihotri as CWC Chairman via live Wikipedia check; added since~2025-06; confidence low->medium.",
+   "in-pos-chair-nddb: confirmed current via press search (tenure extended Jan 2026, cited through Jul 2026); confidence low->high.",
+   "in-pos-secretary-food-processing-industries: confirmed holder Avinash (Purushottam Das) Joshi via multiple July-2025 press sources; confidence medium->high; fuller name added.",
+   "in-pos-chair-nppa: added since=2024-10-28 (Pharmabiz); confidence medium->high.",
+   "in-pos-chair-nafed: added since=2024-05-22, directly confirmed by re-fetching the cited indianmandarins.com article; confidence medium->high.",
+   "in-pos-dg-bis: added since=2026-05-23 (News On AIR); confidence low->high.",
+   "in-pos-chief-commissioner-ccpa: confirmed current (Nidhi Khare) via press mentions through Sep 2026; confidence medium->high.",
+   "in-pos-chair-cacp: downgraded confidence medium->low; last confirmation found dates to Jan 2022, no fresh 2025-2026 source located.",
+   "Re-confirmed current (no holder change, fresher 2026 sources added / confidence raised to high where needed): in-pos-secretary-agriculture-and-farmers-welfare, in-pos-secretary-dare, in-pos-secretary-fisheries, in-pos-secretary-food-and-public-distribution, in-pos-secretary-rural-development, in-pos-secretary-land-resources, in-pos-secretary-pharmaceuticals, in-pos-secretary-chemicals-and-petrochemicals.",
+   "All 7 Cabinet Ministers + 10 Ministers of State for this segment (17 political positions) re-checked: confirmed no completed Union Cabinet reshuffle as of 2026-09-25 despite active press speculation through Aug-Sep 2026 ('Chintan Shivir', reshuffle 'buzz'/'soon' headlines); the cabsec.gov.in 23.06.2026 Council of Ministers list remains the current authoritative source. No changes made.",
+   "Independently verified the MGNREGA-successor mission entity in-mission-vb-g-ram-g against PRS India's bill tracker page (direct fetch): confirmed the Viksit Bharat - Guarantee for Rozgar and Ajeevika Mission (Gramin) Bill, 2025 passed both Houses on 18 Dec 2025, raises the guarantee to 125 days/year, and sets a 60:40 (90:10 NE/Himalayan) funding split -- matches the file exactly. No correction needed; this also satisfies the brief's 'MGNREGA as mission entity' coverage item.",
+   "Structural/schema check: no duplicate entity or position IDs; no dangling parentId / headPositionId / adminHeadPositionId / orgId within the segment; no invalid kind/sector/rank/relation-type values; all relation endpoints resolve internally or to documented external references (in-cag, in-ncdrc, in-pos-president, in-pos-prime-minister) owned by other segments. No corrections needed.",
+   "Coverage vs. brief: all listed items present and correctly scoped (ICAR w/ institute-count caveat, CACP, NAFED, NDDB, NFDB, FCI/CMD, CWC, WDRA, BIS/DG, NCDRC referenced not redefined, NTH, Legal Metrology, CCPA, NIRDPR, NRLM/NRETP, MGNREGA via successor mission, PMGSY/NRIDA, NPPA, CDSCO referenced not redefined, 6 fertiliser PSUs, HIL, 5 pharma PSUs, NIPERs aggregate, IPFT/CIPET, PM-KISAN, PMFBY, PMGKAY); no missing entity identified in this pass."
+  ]
+ }
+}

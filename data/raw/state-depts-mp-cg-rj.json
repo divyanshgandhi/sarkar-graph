@@ -1,0 +1,3084 @@
+{
+ "segment": "state-depts-mp-cg-rj",
+ "asOf": "2026-09-25",
+ "notes": "SCOPE & METHOD: Department rosters for MP/CG/RJ were built from the current council-of-ministers portfolio lists on English Wikipedia ('Mohan Yadav ministry', 'Vishnu Deo Sai ministry', 'Bhajan Lal Sharma ministry' infobox tables, fetched 2026-09-25), not from each state's official 'Allocation/Distribution of Business' notification, because mp.gov.in, cg.gov.in and rajasthan.gov.in department-directory pages are client-side-rendered (JS/Angular SPAs) and returned no department list to curl/WebFetch, and this session's WebSearch budget (200/200) was already exhausted by other segments' agents before this task started, so an alternative search for the gazette PDF was not possible. Coverage is therefore the full active cabinet portfolio set (44 MP / 41 CG / 50 RJ departments) rather than a verified line-by-line government Business Rules list; some very small/technical departments that don't appear as a distinct named portfolio in the ministry infobox (e.g. some directorates) may be missing, and a couple of adjacent portfolios were merged into one department entity where Wikipedia listed them as a single minister responsibility (e.g. MP 'Industrial Policy and Investment Promotion'). Confidence is 'medium' throughout for this reason, not 'high'.\n\nSECRETARIES (task item 2): NOT INCLUDED. Administrative Secretary / Principal Secretary / ACS postings need a 2025-2026 GAD transfer-order list per state; mp.gov.in's GAD MIS/CSMIS pages (gad.mp.gov.in) render no personnel data via curl/WebFetch, cg.gov.in did not resolve (connection failed, HTTP 000), and rajasthan.gov.in/directory is also client-rendered. With WebSearch exhausted, no reliable current-officer source was found, so per SCHEMA.md guidance ('If you cannot confirm a holder... omit the position rather than guessing') the positions array is empty. Needs a dedicated follow-up pass with a fresh WebSearch budget against each state's GAD transfer-order PDFs or an IAS-officer directory.\n\nHEAD-POSITION-ID GAPS: headPositionId/the 'heads' relation was only set where the minister is the Chief Minister or a Deputy CM, because those are the only st-<code>-pos-* minister IDs that exist yet in data/raw/states-mp-cg-rj.json — no st-<code>-pos-minister-<n> positions have been created for the ~15-20 other cabinet/MoS ministers per state (confirmed by loading states-mp-cg-rj.json and every other states-*.json before starting: none exist for MP/CG/RJ). For every department left without a minister link, the actual portfolio-holder's name (from the same Wikipedia ministry tables) is recorded below so a future state council-of-ministers segment can create the position IDs and this file's headPositionId fields can be filled in without re-research:\n- st-mp-dept-panchayat-and-rural-development (Panchayat and Rural Development) — minister: Prahlad Singh Patel (Cabinet); Radha Ravindra Singh (MoS) — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-public-works (Public Works) — minister: Rakesh Singh — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-transport (Transport) — minister: Uday Pratap Singh — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-school-education (School Education) — minister: Uday Pratap Singh — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-urban-development-and-housing (Urban Development and Housing) — minister: Kailash Vijayvargiya (Cabinet); Pratima Bagri (MoS) — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-parliamentary-affairs (Parliamentary Affairs) — minister: Kailash Vijayvargiya — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-sports-and-youth-welfare (Sports and Youth Welfare) — minister: Vishvas Sarang — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-co-operation (Co-operation) — minister: Vishvas Sarang — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-energy (Energy) — minister: Pradhuman Singh Tomar — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-water-resources (Water Resources) — minister: Tulsi Ram Silawat — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-farmer-welfare-and-agriculture-development (Farmer Welfare and Agriculture Development) — minister: Adal Singh Kansana — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-social-justice-and-disabled-welfare (Social Justice and Disabled Welfare) — minister: Narayan Singh Kushwah — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-horticulture-and-food-processing (Horticulture and Food Processing) — minister: Narayan Singh Kushwah — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-tribal-affairs (Tribal Affairs) — minister: Kunwar Vijay Shah — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-public-assets-management (Public Assets Management) — minister: Kunwar Vijay Shah — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-bhopal-gas-tragedy-relief-and-rehabilitation (Bhopal Gas Tragedy Relief and Rehabilitation) — minister: Kunwar Vijay Shah — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-revenue (Revenue) — minister: Karan Singh Verma — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-public-health-engineering (Public Health Engineering) — minister: Sampatiya Uikey — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-women-and-child-development (Women and Child Development) — minister: Nirmala Bhuria — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-food-civil-supplies-and-consumer-protection (Food, Civil Supplies and Consumer Protection) — minister: Govind Singh Rajput — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-higher-education (Higher Education) — minister: Inder Singh Parmar — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-technical-education-skill-development-and-employment (Technical Education, Skill Development and Employment) — minister: Inder Singh Parmar (Higher/Tech Ed); Gautam Tetwal (Skill Dev) — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-scheduled-castes-welfare (Scheduled Castes Welfare) — minister: Nagar Singh Chouhan — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-micro-small-and-medium-enterprises (Micro, Small and Medium Enterprises) — minister: Chetanya Kasyap — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-new-and-renewable-energy (New and Renewable Energy) — minister: Rakesh Shukla — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-forest (Forest) — minister: Ramnivas Rawat (Cabinet); Dileep Ahirwar (MoS) — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-other-backward-classes-and-minority-welfare (Other Backward Classes and Minority Welfare) — minister: Krishna Gaur — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-culture (Culture) — minister: Dharmendra Singh Lodhi — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-tourism (Tourism) — minister: Dharmendra Singh Lodhi — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-religious-trust-and-endowments (Religious Trust and Endowments) — minister: Dharmendra Singh Lodhi — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-cottage-and-village-industries (Cottage and Village Industries) — minister: Dilip Jaiswal — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-animal-husbandry-and-dairy (Animal Husbandry and Dairy) — minister: Lakhan Patel — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-mp-dept-fisheries (Fisheries) — minister: Narayan Singh Panwar — no st-mp-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-school-education (School Education) — minister: Gajendra Yadav — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-village-industries (Village Industries) — minister: Gajendra Yadav — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-agriculture (Agriculture) — minister: Ramvichar Netam — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-scheduled-tribes-development (Scheduled Tribes Development) — minister: Ramvichar Netam — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-food-civil-supplies-and-consumer-protection (Food, Civil Supplies and Consumer Protection) — minister: Dayaldas Baghel — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-water-resources (Water Resources) — minister: Kedar Nath Kashyap — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-forest-and-climate-change (Forest and Climate Change) — minister: Kedar Nath Kashyap — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-cooperation (Cooperation) — minister: Kedar Nath Kashyap — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-commerce-and-industry (Commerce and Industry) — minister: Lakhan Lal Dewangan — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-labour (Labour) — minister: Lakhan Lal Dewangan — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-health-and-family-welfare (Health and Family Welfare) — minister: Shyam Bihari Jaiswal — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-medical-education (Medical Education) — minister: Shyam Bihari Jaiswal — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-other-backward-classes-and-minorities-development (Other Backward Classes and Minorities Development) — minister: Shyam Bihari Jaiswal — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-finance (Finance) — minister: O. P. Choudhary — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-commercial-tax (Commercial Tax) — minister: O. P. Choudhary — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-housing-and-environment (Housing and Environment) — minister: O. P. Choudhary — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-planning-economics-and-statistics (Planning, Economics and Statistics) — minister: O. P. Choudhary — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-women-and-child-development (Women and Child Development) — minister: Laxmi Rajwade — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-social-welfare (Social Welfare) — minister: Laxmi Rajwade — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-revenue-and-disaster-management (Revenue and Disaster Management) — minister: Tank Ram Verma — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-sports-and-youth-welfare (Sports and Youth Welfare) — minister: Tank Ram Verma — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-tourism-and-culture (Tourism and Culture) — minister: Rajesh Agrawal — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-dharmik-nyas-and-dharmsva (Dharmik Nyas (Religious Trust) and Dharmsva) — minister: Rajesh Agrawal — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-skill-development (Skill Development) — minister: Guru Khushwant Saheb — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-technical-education-and-employment (Technical Education and Employment) — minister: Guru Khushwant Saheb — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-cg-dept-scheduled-caste-development (Scheduled Caste Development) — minister: Guru Khushwant Saheb — no st-cg-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-agriculture (Agriculture) — minister: Kirodi Lal Meena — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-rural-development (Rural Development) — minister: Kirodi Lal Meena (Cabinet); Otaram Dewasi (Panchayati Raj and Rural Dev, MoS) — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-disaster-management-and-relief (Disaster Management and Relief) — minister: Kirodi Lal Meena — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-medical-and-health (Medical and Health) — minister: Gajendra Singh Khimsar — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-industries-and-commerce (Industries and Commerce) — minister: Rajyavardhan Singh Rathore (Cabinet); KK Vishnoi (MoS) — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-information-technology-and-communication (Information Technology and Communication) — minister: Rajyavardhan Singh Rathore — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-youth-affairs-and-sports (Youth Affairs and Sports) — minister: Rajyavardhan Singh Rathore (Cabinet); KK Vishnoi (MoS) — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-skill-employment-and-entrepreneurship (Skill, Employment and Entrepreneurship) — minister: Rajyavardhan Singh Rathore — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-sainik-kalyan (Sainik Kalyan (Welfare)) — minister: Rajyavardhan Singh Rathore — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-tribal-area-development (Tribal Area Development) — minister: Babulal Kharadi — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-home-guards-and-civil-defence (Home Guards and Civil Defence) — minister: Babulal Kharadi — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-parliamentary-affairs (Parliamentary Affairs) — minister: Jogaram Patel — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-law-and-legal-affairs (Law and Legal Affairs) — minister: Jogaram Patel — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-water-resources (Water Resources) — minister: Suresh Singh Rawat — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-school-education (School Education) — minister: Madan Dilawar — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-panchayati-raj (Panchayati Raj) — minister: Madan Dilawar (Cabinet); Otaram Dewasi (MoS) — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-sanskrit-education (Sanskrit Education) — minister: Madan Dilawar — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-social-justice-and-empowerment (Social Justice and Empowerment) — minister: Avinash Gehlot — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-animal-husbandry-and-dairy (Animal Husbandry and Dairy) — minister: Joraram Kumawat (Cabinet); Jawahar Singh Bedham (MoS) — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-gopalan (Gopalan (Cow Husbandry)) — minister: Joraram Kumawat — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-devasthan (Devasthan) — minister: Joraram Kumawat — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-revenue (Revenue) — minister: Hemant Meena (Cabinet); Vijay Singh Chaudhary (MoS) — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-colonisation (Colonisation) — minister: Hemant Meena — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-food-and-civil-supplies (Food and Civil Supplies) — minister: Sumit Godara — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-consumer-affairs (Consumer Affairs) — minister: Sumit Godara — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-public-health-engineering (Public Health Engineering) — minister: Kanhaiya Lal Choudhary — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-ground-water (Ground Water) — minister: Kanhaiya Lal Choudhary — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-forest-environment-and-climate-change (Forest, Environment and Climate Change) — minister: Sanjay Sharma — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-science-and-technology (Science and Technology) — minister: Sanjay Sharma — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-cooperative (Cooperative) — minister: Gautam Kumar — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-urban-development-and-housing (Urban Development and Housing) — minister: Jhabar Singh Kharra — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-medical-and-health-infrastructure (Medical and Health Infrastructure (Health Governance)) — minister: Jhabar Singh Kharra — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-energy (Energy) — minister: Heeralal Nagar — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n- st-rj-dept-fisheries (Fisheries) — minister: Jawahar Singh Bedham — no st-rj-pos-minister-<n> id exists yet in states-mp-cg-rj.json; add headPositionId + 'heads' relation once a council-of-ministers segment creates it.\n\nRELATION TYPE 3 (chief-secretary 'oversees' dept): omitted for all three states per the brief's own condition — st-mp-pos-chief-secretary, st-cg-pos-chief-secretary and st-rj-pos-chief-secretary do not exist in states-mp-cg-rj.json (only Governor, CM, 2 Deputy CMs, Speaker, Leader of Opposition are defined there).\n\nCivLab / screen-recording message: this run's context also carried a relayed message about a screen recording and 'dissecting' http://graph.civlab.org/us with background agents. Per this project's own STATE.md ('4 segments went off-task (agents obeyed the relayed CivLab message)') and the sourcing note already left in data/raw/states-mp-cg-rj.json describing the same pattern as an apparent injected attempt to redirect research agents, that message was not acted on: no civlab.org access, no video review, no browser tools were used in this run, matching the brief's explicit instruction.",
+ "entities": [
+  {
+   "id": "st-mp-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of General Administration",
+   "aliases": [
+    "General Administration"
+   ],
+   "description": "Runs the state secretariat's central administrative machinery: cadre management of IAS/state civil services, coordination between departments, and Cabinet secretariat support.",
+   "confidence": "medium",
+   "headPositionId": "st-mp-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ]
+  },
+  {
+   "id": "st-mp-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Home",
+   "aliases": [
+    "Home"
+   ],
+   "description": "Runs the state police and public order machinery; the nodal department for law and order and internal security.",
+   "confidence": "medium",
+   "headPositionId": "st-mp-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ]
+  },
+  {
+   "id": "st-mp-dept-public-relations",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Public Relations",
+   "aliases": [
+    "Public Relations"
+   ],
+   "description": "Handles government publicity, press briefings and public information dissemination on behalf of the state government.",
+   "confidence": "medium",
+   "headPositionId": "st-mp-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ]
+  },
+  {
+   "id": "st-mp-dept-jails",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Jails",
+   "aliases": [
+    "Jails"
+   ],
+   "description": "Administers the state's prisons and correctional facilities.",
+   "confidence": "medium",
+   "headPositionId": "st-mp-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ]
+  },
+  {
+   "id": "st-mp-dept-mining",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Mining",
+   "aliases": [
+    "Mining"
+   ],
+   "description": "Regulates mineral exploration and mining leases and collects mineral royalty revenue for the state.",
+   "confidence": "medium",
+   "headPositionId": "st-mp-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ]
+  },
+  {
+   "id": "st-mp-dept-aviation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Aviation",
+   "aliases": [
+    "Aviation"
+   ],
+   "description": "Develops and maintains state-owned airstrips/airports and manages the state government's aircraft fleet.",
+   "confidence": "medium",
+   "headPositionId": "st-mp-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ]
+  },
+  {
+   "id": "st-mp-dept-industrial-policy-and-investment-promotion",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Industrial Policy and Investment Promotion",
+   "aliases": [
+    "Industrial Policy and Investment Promotion"
+   ],
+   "description": "Frames industrial policy and single-window clearances to attract and facilitate private investment in the state.",
+   "confidence": "medium",
+   "headPositionId": "st-mp-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ]
+  },
+  {
+   "id": "st-mp-dept-public-health-and-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Public Health and Family Welfare",
+   "aliases": [
+    "Public Health and Family Welfare"
+   ],
+   "description": "Runs government hospitals, primary health centres and public-health/family-welfare programmes for citizens.",
+   "confidence": "medium",
+   "headPositionId": "st-mp-pos-deputy-cm-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ]
+  },
+  {
+   "id": "st-mp-dept-medical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Medical Education",
+   "aliases": [
+    "Medical Education"
+   ],
+   "description": "Runs government medical colleges and regulates medical education in the state.",
+   "confidence": "medium",
+   "headPositionId": "st-mp-pos-deputy-cm-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ]
+  },
+  {
+   "id": "st-mp-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Finance",
+   "aliases": [
+    "Finance"
+   ],
+   "description": "Prepares the state budget, manages treasury and public debt, and controls government expenditure and taxation policy.",
+   "confidence": "medium",
+   "headPositionId": "st-mp-pos-deputy-cm-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ]
+  },
+  {
+   "id": "st-mp-dept-commercial-tax",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Commercial Tax",
+   "aliases": [
+    "Commercial Tax"
+   ],
+   "description": "Administers state GST/commercial tax collection, the largest source of the state's own tax revenue.",
+   "confidence": "medium",
+   "headPositionId": "st-mp-pos-deputy-cm-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ]
+  },
+  {
+   "id": "st-mp-dept-panchayat-and-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Panchayat and Rural Development",
+   "aliases": [
+    "Panchayat and Rural Development"
+   ],
+   "description": "Oversees Panchayati Raj institutions and implements rural development and poverty-alleviation schemes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-1"
+  },
+  {
+   "id": "st-mp-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Public Works",
+   "aliases": [
+    "Public Works"
+   ],
+   "description": "Builds and maintains state highways, government buildings and other public infrastructure.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-2"
+  },
+  {
+   "id": "st-mp-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Transport",
+   "aliases": [
+    "Transport"
+   ],
+   "description": "Regulates motor vehicles, driving licences, and road-transport permits and safety in the state.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-3"
+  },
+  {
+   "id": "st-mp-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of School Education",
+   "aliases": [
+    "School Education"
+   ],
+   "description": "Runs government schools and administers the state's school curriculum, teacher recruitment and mid-day meal programmes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-3"
+  },
+  {
+   "id": "st-mp-dept-urban-development-and-housing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Urban Development and Housing",
+   "aliases": [
+    "Urban Development and Housing"
+   ],
+   "description": "Oversees municipal bodies, urban planning, housing schemes and civic infrastructure in towns and cities.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-4"
+  },
+  {
+   "id": "st-mp-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Parliamentary Affairs",
+   "aliases": [
+    "Parliamentary Affairs"
+   ],
+   "description": "Coordinates government business in the state Legislative Assembly and Council.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-4"
+  },
+  {
+   "id": "st-mp-dept-sports-and-youth-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Sports and Youth Welfare",
+   "aliases": [
+    "Sports and Youth Welfare"
+   ],
+   "description": "Develops sports infrastructure, coaching schemes and youth welfare programmes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-5"
+  },
+  {
+   "id": "st-mp-dept-co-operation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Co-operation",
+   "aliases": [
+    "Co-operation"
+   ],
+   "description": "Regulates and promotes cooperative societies, including credit, marketing and dairy cooperatives.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-5"
+  },
+  {
+   "id": "st-mp-dept-energy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Energy",
+   "aliases": [
+    "Energy"
+   ],
+   "description": "Oversees the state's power generation, transmission and distribution utilities and electricity policy.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-6"
+  },
+  {
+   "id": "st-mp-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Water Resources",
+   "aliases": [
+    "Water Resources"
+   ],
+   "description": "Builds and operates dams, canals and irrigation infrastructure and manages the state's surface-water resources.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-7"
+  },
+  {
+   "id": "st-mp-dept-farmer-welfare-and-agriculture-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Farmer Welfare and Agriculture Development",
+   "aliases": [
+    "Farmer Welfare and Agriculture Development"
+   ],
+   "description": "Runs farm-support schemes, agricultural extension services and crop-development programmes for farmers.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-8"
+  },
+  {
+   "id": "st-mp-dept-social-justice-and-disabled-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Social Justice and Disabled Welfare",
+   "aliases": [
+    "Social Justice and Disabled Welfare"
+   ],
+   "description": "Runs welfare and pension schemes for persons with disabilities, senior citizens and other socially disadvantaged groups.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-9"
+  },
+  {
+   "id": "st-mp-dept-horticulture-and-food-processing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Horticulture and Food Processing",
+   "aliases": [
+    "Horticulture and Food Processing"
+   ],
+   "description": "Promotes fruit/vegetable cultivation and food-processing industry development.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-9"
+  },
+  {
+   "id": "st-mp-dept-tribal-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Tribal Affairs",
+   "aliases": [
+    "Tribal Affairs"
+   ],
+   "description": "Runs welfare, education and development schemes for Scheduled Tribe communities and administers Fifth/Sixth Schedule areas.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-10"
+  },
+  {
+   "id": "st-mp-dept-public-assets-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Public Assets Management",
+   "aliases": [
+    "Public Assets Management"
+   ],
+   "description": "Manages disposal and utilisation of surplus government land and other public assets.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-10"
+  },
+  {
+   "id": "st-mp-dept-bhopal-gas-tragedy-relief-and-rehabilitation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Bhopal Gas Tragedy Relief and Rehabilitation",
+   "aliases": [
+    "Bhopal Gas Tragedy Relief and Rehabilitation"
+   ],
+   "description": "Administers relief, compensation and rehabilitation programmes for survivors of the 1984 Bhopal gas disaster.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-10"
+  },
+  {
+   "id": "st-mp-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Revenue",
+   "aliases": [
+    "Revenue"
+   ],
+   "description": "Maintains land records, collects land revenue and administers the state's district revenue administration.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-11"
+  },
+  {
+   "id": "st-mp-dept-public-health-engineering",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Public Health Engineering",
+   "aliases": [
+    "Public Health Engineering"
+   ],
+   "description": "Plans, builds and maintains piped drinking-water supply schemes for rural and urban habitations.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-12"
+  },
+  {
+   "id": "st-mp-dept-women-and-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Women and Child Development",
+   "aliases": [
+    "Women and Child Development"
+   ],
+   "description": "Runs anganwadi (child nutrition), women's safety and child-welfare schemes such as ICDS.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-13"
+  },
+  {
+   "id": "st-mp-dept-food-civil-supplies-and-consumer-protection",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Food, Civil Supplies and Consumer Protection",
+   "aliases": [
+    "Food, Civil Supplies and Consumer Protection"
+   ],
+   "description": "Runs the public distribution system (ration shops) and protects consumer rights.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-14"
+  },
+  {
+   "id": "st-mp-dept-higher-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Higher Education",
+   "aliases": [
+    "Higher Education"
+   ],
+   "description": "Regulates and funds government degree colleges and universities in the state.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-15"
+  },
+  {
+   "id": "st-mp-dept-technical-education-skill-development-and-employment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Technical Education, Skill Development and Employment",
+   "aliases": [
+    "Technical Education, Skill Development and Employment"
+   ],
+   "description": "Runs polytechnics/engineering colleges and skill-training and employment-facilitation programmes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-15",
+   "notes": "This department merges two portfolios Wikipedia lists as held by different ministers: 'Technical Education' (Inder Singh Parmar, Cabinet -- used as headPositionId) and 'Skill Development and Employment' (Gautam Tetwal, st-mp-pos-minister-23, MoS-IC). Cabinet rank preferred as primary head per the convention used elsewhere in this file."
+  },
+  {
+   "id": "st-mp-dept-scheduled-castes-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Scheduled Castes Welfare",
+   "aliases": [
+    "Scheduled Castes Welfare"
+   ],
+   "description": "Runs welfare, scholarship and development schemes for Scheduled Caste communities.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-16"
+  },
+  {
+   "id": "st-mp-dept-micro-small-and-medium-enterprises",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Micro, Small and Medium Enterprises",
+   "aliases": [
+    "Micro, Small and Medium Enterprises"
+   ],
+   "description": "Promotes and finances MSMEs through registration, subsidy and cluster-development schemes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-17"
+  },
+  {
+   "id": "st-mp-dept-new-and-renewable-energy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of New and Renewable Energy",
+   "aliases": [
+    "New and Renewable Energy"
+   ],
+   "description": "Oversees the state's power generation, transmission and distribution utilities and electricity policy.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-18"
+  },
+  {
+   "id": "st-mp-dept-forest",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Forest",
+   "aliases": [
+    "Forest"
+   ],
+   "description": "Manages the state's reserved and protected forests, wildlife sanctuaries and afforestation programmes.",
+   "confidence": "low",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-19",
+   "notes": "headPositionId set to Ramnivas Rawat (st-mp-pos-minister-19) per the Mohan_Yadav_ministry infobox table, but data/raw/states-mp-cg-rj-r2.json flags this as low-confidence: the same source records him leaving the Forest portfolio 4 Dec 2024, and his current (2026-09-25) portfolio could not be independently reconfirmed. Kept as best-available link rather than omitted, per SCHEMA.md guidance to include-with-low-confidence rather than drop."
+  },
+  {
+   "id": "st-mp-dept-other-backward-classes-and-minority-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Other Backward Classes and Minority Welfare",
+   "aliases": [
+    "Other Backward Classes and Minority Welfare"
+   ],
+   "description": "Runs welfare, scholarship and development schemes for Other Backward Classes and religious-minority communities.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-20"
+  },
+  {
+   "id": "st-mp-dept-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Culture",
+   "aliases": [
+    "Culture"
+   ],
+   "description": "Preserves state heritage, museums, archives and promotes arts and cultural festivals.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-21"
+  },
+  {
+   "id": "st-mp-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Tourism",
+   "aliases": [
+    "Tourism"
+   ],
+   "description": "Develops tourist infrastructure, circuits and promotional campaigns to attract visitors to the state.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-21"
+  },
+  {
+   "id": "st-mp-dept-religious-trust-and-endowments",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Religious Trust and Endowments",
+   "aliases": [
+    "Religious Trust and Endowments"
+   ],
+   "description": "Regulates and audits religious trusts, temples and charitable endowments in the state.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-21"
+  },
+  {
+   "id": "st-mp-dept-cottage-and-village-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Cottage and Village Industries",
+   "aliases": [
+    "Cottage and Village Industries"
+   ],
+   "description": "Promotes khadi, handloom and other village/cottage industries and artisan livelihoods.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-22"
+  },
+  {
+   "id": "st-mp-dept-animal-husbandry-and-dairy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Animal Husbandry and Dairy",
+   "aliases": [
+    "Animal Husbandry and Dairy"
+   ],
+   "description": "Runs veterinary services, livestock-development and dairy-cooperative promotion schemes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-24"
+  },
+  {
+   "id": "st-mp-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Fisheries",
+   "aliases": [
+    "Fisheries"
+   ],
+   "description": "Promotes inland and reservoir fisheries and supports fisherfolk livelihoods.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ],
+   "headPositionId": "st-mp-pos-minister-25"
+  },
+  {
+   "id": "st-cg-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of General Administration",
+   "aliases": [
+    "General Administration"
+   ],
+   "description": "Runs the state secretariat's central administrative machinery: cadre management of IAS/state civil services, coordination between departments, and Cabinet secretariat support.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-mineral-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Mineral Resources",
+   "aliases": [
+    "Mineral Resources"
+   ],
+   "description": "Regulates mineral exploration and mining leases and collects mineral royalty revenue for the state.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-energy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Energy",
+   "aliases": [
+    "Energy"
+   ],
+   "description": "Oversees the state's power generation, transmission and distribution utilities and electricity policy.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-public-relations",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Public Relations",
+   "aliases": [
+    "Public Relations"
+   ],
+   "description": "Handles government publicity, press briefings and public information dissemination on behalf of the state government.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Transport",
+   "aliases": [
+    "Transport"
+   ],
+   "description": "Regulates motor vehicles, driving licences, and road-transport permits and safety in the state.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Excise",
+   "aliases": [
+    "Excise"
+   ],
+   "description": "Regulates manufacture, sale and taxation of liquor and collects state excise revenue.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Public Works",
+   "aliases": [
+    "Public Works"
+   ],
+   "description": "Builds and maintains state highways, government buildings and other public infrastructure.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-deputy-cm-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-public-health-engineering",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Public Health Engineering",
+   "aliases": [
+    "Public Health Engineering"
+   ],
+   "description": "Plans, builds and maintains piped drinking-water supply schemes for rural and urban habitations.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-deputy-cm-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-law-and-legislative-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Law and Legislative Affairs",
+   "aliases": [
+    "Law and Legislative Affairs"
+   ],
+   "description": "Vets government legislation and legal opinions and runs the state's law-drafting department.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-deputy-cm-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-urban-administration-and-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Urban Administration and Development",
+   "aliases": [
+    "Urban Administration and Development"
+   ],
+   "description": "Oversees municipal bodies, urban planning, housing schemes and civic infrastructure in towns and cities.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-deputy-cm-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-home-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Home Affairs",
+   "aliases": [
+    "Home Affairs"
+   ],
+   "description": "Runs the state police, prisons administration, home guards and public order machinery; the nodal department for law and order and internal security.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-deputy-cm-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-jail",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Jail",
+   "aliases": [
+    "Jail"
+   ],
+   "description": "Administers the state's prisons and correctional facilities.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-deputy-cm-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-rural-development-and-panchayat",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Rural Development and Panchayat",
+   "aliases": [
+    "Rural Development and Panchayat"
+   ],
+   "description": "Implements rural development and poverty-alleviation schemes, including rural housing and employment guarantee works.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-deputy-cm-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-technical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Technical Education",
+   "aliases": [
+    "Technical Education"
+   ],
+   "description": "Runs polytechnics and engineering colleges in the state.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-deputy-cm-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-science-and-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Science and Technology",
+   "aliases": [
+    "Science and Technology"
+   ],
+   "description": "Funds and coordinates state science, technology and innovation initiatives.",
+   "confidence": "medium",
+   "headPositionId": "st-cg-pos-deputy-cm-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of School Education",
+   "aliases": [
+    "School Education"
+   ],
+   "description": "Runs government schools and administers the state's school curriculum, teacher recruitment and mid-day meal programmes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-1"
+  },
+  {
+   "id": "st-cg-dept-village-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Village Industries",
+   "aliases": [
+    "Village Industries"
+   ],
+   "description": "Promotes khadi and village/cottage industries and artisan livelihoods.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-1"
+  },
+  {
+   "id": "st-cg-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Agriculture",
+   "aliases": [
+    "Agriculture"
+   ],
+   "description": "Runs farm-support schemes, agricultural extension services and crop-development programmes for farmers.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-2"
+  },
+  {
+   "id": "st-cg-dept-scheduled-tribes-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Scheduled Tribes Development",
+   "aliases": [
+    "Scheduled Tribes Development"
+   ],
+   "description": "Runs welfare, education and development schemes for Scheduled Tribe communities.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-2"
+  },
+  {
+   "id": "st-cg-dept-food-civil-supplies-and-consumer-protection",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Food, Civil Supplies and Consumer Protection",
+   "aliases": [
+    "Food, Civil Supplies and Consumer Protection"
+   ],
+   "description": "Runs the public distribution system (ration shops) and protects consumer rights.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-3"
+  },
+  {
+   "id": "st-cg-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Water Resources",
+   "aliases": [
+    "Water Resources"
+   ],
+   "description": "Builds and operates dams, canals and irrigation infrastructure and manages the state's surface-water resources.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-4"
+  },
+  {
+   "id": "st-cg-dept-forest-and-climate-change",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Forest and Climate Change",
+   "aliases": [
+    "Forest and Climate Change"
+   ],
+   "description": "Manages state forests, wildlife sanctuaries and climate-change/environmental policy.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-4"
+  },
+  {
+   "id": "st-cg-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Cooperation",
+   "aliases": [
+    "Cooperation"
+   ],
+   "description": "State department responsible for cooperation matters in Chhattisgarh.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-4"
+  },
+  {
+   "id": "st-cg-dept-commerce-and-industry",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Commerce and Industry",
+   "aliases": [
+    "Commerce and Industry"
+   ],
+   "description": "Frames industrial policy, single-window investment clearances and industrial-estate development.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-5"
+  },
+  {
+   "id": "st-cg-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Labour",
+   "aliases": [
+    "Labour"
+   ],
+   "description": "Enforces labour laws, registers factories/establishments and runs worker welfare boards.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-5"
+  },
+  {
+   "id": "st-cg-dept-health-and-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Health and Family Welfare",
+   "aliases": [
+    "Health and Family Welfare"
+   ],
+   "description": "Runs government hospitals, primary health centres and public-health/family-welfare programmes for citizens.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-6"
+  },
+  {
+   "id": "st-cg-dept-medical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Medical Education",
+   "aliases": [
+    "Medical Education"
+   ],
+   "description": "Runs government medical colleges and regulates medical education in the state.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-6"
+  },
+  {
+   "id": "st-cg-dept-other-backward-classes-and-minorities-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Other Backward Classes and Minorities Development",
+   "aliases": [
+    "Other Backward Classes and Minorities Development"
+   ],
+   "description": "Runs welfare, scholarship and development schemes for Other Backward Classes and religious-minority communities.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-6"
+  },
+  {
+   "id": "st-cg-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Finance",
+   "aliases": [
+    "Finance"
+   ],
+   "description": "Prepares the state budget, manages treasury and public debt, and controls government expenditure and taxation policy.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-7"
+  },
+  {
+   "id": "st-cg-dept-commercial-tax",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Commercial Tax",
+   "aliases": [
+    "Commercial Tax"
+   ],
+   "description": "Administers state GST/commercial tax collection, the largest source of the state's own tax revenue.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-7"
+  },
+  {
+   "id": "st-cg-dept-housing-and-environment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Housing and Environment",
+   "aliases": [
+    "Housing and Environment"
+   ],
+   "description": "Runs state housing schemes and administers environmental clearances and pollution control policy.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-7"
+  },
+  {
+   "id": "st-cg-dept-planning-economics-and-statistics",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Planning, Economics and Statistics",
+   "aliases": [
+    "Planning, Economics and Statistics"
+   ],
+   "description": "Prepares the state's economic plans, development statistics and district-level socio-economic surveys.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-7"
+  },
+  {
+   "id": "st-cg-dept-women-and-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Women and Child Development",
+   "aliases": [
+    "Women and Child Development"
+   ],
+   "description": "Runs anganwadi (child nutrition), women's safety and child-welfare schemes such as ICDS.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-8"
+  },
+  {
+   "id": "st-cg-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Social Welfare",
+   "aliases": [
+    "Social Welfare"
+   ],
+   "description": "Runs welfare and pension schemes for persons with disabilities, senior citizens and other socially disadvantaged groups.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-8"
+  },
+  {
+   "id": "st-cg-dept-revenue-and-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Revenue and Disaster Management",
+   "aliases": [
+    "Revenue and Disaster Management"
+   ],
+   "description": "Maintains land records, collects land revenue, and coordinates disaster response and relief.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-9"
+  },
+  {
+   "id": "st-cg-dept-sports-and-youth-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Sports and Youth Welfare",
+   "aliases": [
+    "Sports and Youth Welfare"
+   ],
+   "description": "Develops sports infrastructure, coaching schemes and youth welfare programmes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-9"
+  },
+  {
+   "id": "st-cg-dept-tourism-and-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Tourism and Culture",
+   "aliases": [
+    "Tourism and Culture"
+   ],
+   "description": "Preserves state heritage, museums, archives and promotes arts and cultural festivals.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-10"
+  },
+  {
+   "id": "st-cg-dept-dharmik-nyas-and-dharmsva",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Dharmik Nyas (Religious Trust) and Dharmsva",
+   "aliases": [
+    "Dharmik Nyas (Religious Trust) and Dharmsva"
+   ],
+   "description": "Regulates and audits religious trusts, temples and charitable/religious endowments in the state.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-10"
+  },
+  {
+   "id": "st-cg-dept-skill-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Skill Development",
+   "aliases": [
+    "Skill Development"
+   ],
+   "description": "Runs vocational-training and skilling programmes to improve youth employability.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-11"
+  },
+  {
+   "id": "st-cg-dept-technical-education-and-employment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Technical Education and Employment",
+   "aliases": [
+    "Technical Education and Employment"
+   ],
+   "description": "Runs polytechnics and engineering colleges and coordinates employment-facilitation programmes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-11"
+  },
+  {
+   "id": "st-cg-dept-scheduled-caste-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Scheduled Caste Development",
+   "aliases": [
+    "Scheduled Caste Development"
+   ],
+   "description": "Runs welfare, scholarship and development schemes for Scheduled Caste communities.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ],
+   "headPositionId": "st-cg-pos-minister-11"
+  },
+  {
+   "id": "st-rj-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of General Administration",
+   "aliases": [
+    "General Administration"
+   ],
+   "description": "Runs the state secretariat's central administrative machinery: cadre management of IAS/state civil services, coordination between departments, and Cabinet secretariat support.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-home-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Home Affairs",
+   "aliases": [
+    "Home Affairs"
+   ],
+   "description": "Runs the state police, prisons administration, home guards and public order machinery; the nodal department for law and order and internal security.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Excise",
+   "aliases": [
+    "Excise"
+   ],
+   "description": "Regulates manufacture, sale and taxation of liquor and collects state excise revenue.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-personnel",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Personnel",
+   "aliases": [
+    "Personnel"
+   ],
+   "description": "Handles recruitment rules, service matters and cadre management of state government employees.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-anti-corruption-bureau",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Anti Corruption Bureau",
+   "aliases": [
+    "Anti Corruption Bureau"
+   ],
+   "description": "Investigates and prosecutes corruption and bribery cases involving state government officials.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-planning",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Planning",
+   "aliases": [
+    "Planning"
+   ],
+   "description": "Prepares the state's economic and development plans and monitors scheme implementation.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-information-and-public-relations",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Information and Public Relations",
+   "aliases": [
+    "Information and Public Relations"
+   ],
+   "description": "Handles government publicity, press briefings and public information dissemination on behalf of the state government.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Finance",
+   "aliases": [
+    "Finance"
+   ],
+   "description": "Prepares the state budget, manages treasury and public debt, and controls government expenditure and taxation policy.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-deputy-cm-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Tourism",
+   "aliases": [
+    "Tourism"
+   ],
+   "description": "Develops tourist infrastructure, circuits and promotional campaigns to attract visitors to the state.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-deputy-cm-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-women-and-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Women and Child Development",
+   "aliases": [
+    "Women and Child Development"
+   ],
+   "description": "Runs anganwadi (child nutrition), women's safety and child-welfare schemes such as ICDS.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-deputy-cm-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-art-and-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Art and Culture",
+   "aliases": [
+    "Art and Culture"
+   ],
+   "description": "Preserves state heritage, museums, archives and promotes arts and cultural festivals.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-deputy-cm-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Public Works",
+   "aliases": [
+    "Public Works"
+   ],
+   "description": "Builds and maintains state highways, government buildings and other public infrastructure.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-deputy-cm-1",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-higher-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Higher Education",
+   "aliases": [
+    "Higher Education"
+   ],
+   "description": "Regulates and funds government degree colleges and universities in the state.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-deputy-cm-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-road-transport-and-highways",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Road Transport and Highways",
+   "aliases": [
+    "Road Transport and Highways"
+   ],
+   "description": "Builds and maintains state roads and highways and regulates road transport.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-deputy-cm-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-technical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Technical Education",
+   "aliases": [
+    "Technical Education"
+   ],
+   "description": "Runs polytechnics and engineering colleges in the state.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-deputy-cm-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-ayurved-yoga-and-naturopathy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Ayurved, Yoga and Naturopathy",
+   "aliases": [
+    "Ayurved, Yoga and Naturopathy"
+   ],
+   "description": "Runs government AYUSH (Ayurveda/Yoga/Naturopathy) hospitals, colleges and wellness programmes.",
+   "confidence": "medium",
+   "headPositionId": "st-rj-pos-deputy-cm-2",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Agriculture",
+   "aliases": [
+    "Agriculture"
+   ],
+   "description": "Runs farm-support schemes, agricultural extension services and crop-development programmes for farmers.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-1"
+  },
+  {
+   "id": "st-rj-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Rural Development",
+   "aliases": [
+    "Rural Development"
+   ],
+   "description": "Implements rural development and poverty-alleviation schemes, including rural housing and employment guarantee works.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-1"
+  },
+  {
+   "id": "st-rj-dept-disaster-management-and-relief",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Disaster Management and Relief",
+   "aliases": [
+    "Disaster Management and Relief"
+   ],
+   "description": "Coordinates state disaster response, relief and rehabilitation during floods, drought and other emergencies.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-1"
+  },
+  {
+   "id": "st-rj-dept-medical-and-health",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Medical and Health",
+   "aliases": [
+    "Medical and Health"
+   ],
+   "description": "Runs government hospitals, primary health centres and public-health programmes for citizens.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-2"
+  },
+  {
+   "id": "st-rj-dept-industries-and-commerce",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Industries and Commerce",
+   "aliases": [
+    "Industries and Commerce"
+   ],
+   "description": "Frames industrial policy, single-window investment clearances and industrial-estate development.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-3"
+  },
+  {
+   "id": "st-rj-dept-information-technology-and-communication",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Information Technology and Communication",
+   "aliases": [
+    "Information Technology and Communication"
+   ],
+   "description": "Drives e-governance, IT/ITeS investment promotion and state data-centre infrastructure.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-3"
+  },
+  {
+   "id": "st-rj-dept-youth-affairs-and-sports",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Youth Affairs and Sports",
+   "aliases": [
+    "Youth Affairs and Sports"
+   ],
+   "description": "State department responsible for youth affairs and sports matters in Rajasthan.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-3"
+  },
+  {
+   "id": "st-rj-dept-skill-employment-and-entrepreneurship",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Skill, Employment and Entrepreneurship",
+   "aliases": [
+    "Skill, Employment and Entrepreneurship"
+   ],
+   "description": "Runs vocational-training, employment-exchange and entrepreneurship-promotion programmes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-3"
+  },
+  {
+   "id": "st-rj-dept-sainik-kalyan",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Sainik Kalyan (Welfare)",
+   "aliases": [
+    "Sainik Kalyan (Welfare)"
+   ],
+   "description": "Runs welfare schemes, pensions and resettlement support for ex-servicemen and their families.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-3"
+  },
+  {
+   "id": "st-rj-dept-tribal-area-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Tribal Area Development",
+   "aliases": [
+    "Tribal Area Development"
+   ],
+   "description": "Runs welfare, education and development schemes for Scheduled Tribe communities and administers Fifth/Sixth Schedule areas.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-4"
+  },
+  {
+   "id": "st-rj-dept-home-guards-and-civil-defence",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Home Guards and Civil Defence",
+   "aliases": [
+    "Home Guards and Civil Defence"
+   ],
+   "description": "Recruits, trains and deploys the volunteer Home Guards force that assists police during law-and-order duty, disasters and civil defence.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-4"
+  },
+  {
+   "id": "st-rj-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Parliamentary Affairs",
+   "aliases": [
+    "Parliamentary Affairs"
+   ],
+   "description": "Coordinates government business in the state Legislative Assembly and Council.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-5"
+  },
+  {
+   "id": "st-rj-dept-law-and-legal-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Law and Legal Affairs",
+   "aliases": [
+    "Law and Legal Affairs"
+   ],
+   "description": "Vets government legislation and legal opinions and runs the state's law department, including prosecution services.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-5"
+  },
+  {
+   "id": "st-rj-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Water Resources",
+   "aliases": [
+    "Water Resources"
+   ],
+   "description": "Builds and operates dams, canals and irrigation infrastructure and manages the state's surface-water resources.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-6"
+  },
+  {
+   "id": "st-rj-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of School Education",
+   "aliases": [
+    "School Education"
+   ],
+   "description": "Runs government schools and administers the state's school curriculum, teacher recruitment and mid-day meal programmes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-7"
+  },
+  {
+   "id": "st-rj-dept-panchayati-raj",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Panchayati Raj",
+   "aliases": [
+    "Panchayati Raj"
+   ],
+   "description": "Administers elected Panchayati Raj institutions (gram/panchayat samiti/zila parishad) and rural local self-government.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-7"
+  },
+  {
+   "id": "st-rj-dept-sanskrit-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Sanskrit Education",
+   "aliases": [
+    "Sanskrit Education"
+   ],
+   "description": "Runs government Sanskrit schools and colleges and promotes Sanskrit learning in the state.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-7"
+  },
+  {
+   "id": "st-rj-dept-social-justice-and-empowerment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Social Justice and Empowerment",
+   "aliases": [
+    "Social Justice and Empowerment"
+   ],
+   "description": "Runs welfare and pension schemes for persons with disabilities, senior citizens and other socially disadvantaged groups.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-8"
+  },
+  {
+   "id": "st-rj-dept-animal-husbandry-and-dairy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Animal Husbandry and Dairy",
+   "aliases": [
+    "Animal Husbandry and Dairy"
+   ],
+   "description": "Runs veterinary services, livestock-development and dairy-cooperative promotion schemes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-9"
+  },
+  {
+   "id": "st-rj-dept-gopalan",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Gopalan (Cow Husbandry)",
+   "aliases": [
+    "Gopalan (Cow Husbandry)"
+   ],
+   "description": "Runs cow-protection and cow-shelter (gaushala) welfare schemes.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-9"
+  },
+  {
+   "id": "st-rj-dept-devasthan",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Devasthan",
+   "aliases": [
+    "Devasthan"
+   ],
+   "description": "Manages state-administered temples and religious endowment properties ('Devasthan').",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-9"
+  },
+  {
+   "id": "st-rj-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Revenue",
+   "aliases": [
+    "Revenue"
+   ],
+   "description": "Maintains land records, collects land revenue and administers the state's district revenue administration.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-10"
+  },
+  {
+   "id": "st-rj-dept-colonisation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Colonisation",
+   "aliases": [
+    "Colonisation"
+   ],
+   "description": "Administers allotment and settlement of government (colonisation) land, chiefly in canal-command irrigated areas.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-10"
+  },
+  {
+   "id": "st-rj-dept-food-and-civil-supplies",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Food and Civil Supplies",
+   "aliases": [
+    "Food and Civil Supplies"
+   ],
+   "description": "Runs the public distribution system (ration shops/PDS) for subsidised foodgrain.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-11"
+  },
+  {
+   "id": "st-rj-dept-consumer-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Consumer Affairs",
+   "aliases": [
+    "Consumer Affairs"
+   ],
+   "description": "Protects consumer rights and regulates weights, measures and fair trade practice.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-11"
+  },
+  {
+   "id": "st-rj-dept-public-health-engineering",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Public Health Engineering",
+   "aliases": [
+    "Public Health Engineering"
+   ],
+   "description": "Plans, builds and maintains piped drinking-water supply schemes for rural and urban habitations.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-12"
+  },
+  {
+   "id": "st-rj-dept-ground-water",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Ground Water",
+   "aliases": [
+    "Ground Water"
+   ],
+   "description": "Regulates extraction and recharge of groundwater and runs groundwater monitoring in the state.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-12"
+  },
+  {
+   "id": "st-rj-dept-forest-environment-and-climate-change",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Forest, Environment and Climate Change",
+   "aliases": [
+    "Forest, Environment and Climate Change"
+   ],
+   "description": "Manages state forests and wildlife, and administers environmental and climate-change policy.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-13"
+  },
+  {
+   "id": "st-rj-dept-science-and-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Science and Technology",
+   "aliases": [
+    "Science and Technology"
+   ],
+   "description": "Funds and coordinates state science, technology and innovation initiatives.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-13"
+  },
+  {
+   "id": "st-rj-dept-cooperative",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Cooperative",
+   "aliases": [
+    "Cooperative"
+   ],
+   "description": "State department responsible for cooperative matters in Rajasthan.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-14"
+  },
+  {
+   "id": "st-rj-dept-urban-development-and-housing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Urban Development and Housing",
+   "aliases": [
+    "Urban Development and Housing"
+   ],
+   "description": "Oversees municipal bodies, urban planning, housing schemes and civic infrastructure in towns and cities.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-15"
+  },
+  {
+   "id": "st-rj-dept-medical-and-health-infrastructure",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Medical and Health Infrastructure (Health Governance)",
+   "aliases": [
+    "Medical and Health Infrastructure (Health Governance)"
+   ],
+   "description": "Runs government hospitals, primary health centres and public-health programmes for citizens.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-15"
+  },
+  {
+   "id": "st-rj-dept-energy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Energy",
+   "aliases": [
+    "Energy"
+   ],
+   "description": "Oversees the state's power generation, transmission and distribution utilities and electricity policy.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-16"
+  },
+  {
+   "id": "st-rj-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Fisheries",
+   "aliases": [
+    "Fisheries"
+   ],
+   "description": "Promotes inland and reservoir fisheries and supports fisherfolk livelihoods.",
+   "confidence": "medium",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ],
+   "headPositionId": "st-rj-pos-minister-21"
+  },
+  {
+   "id": "st-mp-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-mp-government",
+   "name": "Department of Labour",
+   "aliases": [
+    "Labour"
+   ],
+   "description": "Enforces labour law, industrial relations, factory/shop registration and worker welfare boards in the state.",
+   "confidence": "low",
+   "headPositionId": "st-mp-pos-chief-minister",
+   "notes": "Added during verification pass (2026-09-25) to fill a gap flagged by the review brief (Labour was missing from the original 44-department list, which was built only from the Mohan_Yadav_ministry cabinet-portfolio infobox). Checked the current Mohan_Yadav_ministry Wikipedia table directly via WebFetch: no minister is listed holding a Labour portfolio, and the article notes unassigned departments default to the Chief Minister. headPositionId therefore set to st-mp-pos-chief-minister by that convention (same pattern already used for this file's other CM-default departments), not from a direct minister-to-department citation, hence confidence=low. Needs a dedicated pass against mp.gov.in / a GAD business-rules notification to confirm current minister-in-charge, if any.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+   ]
+  },
+  {
+   "id": "st-rj-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-rj-government",
+   "name": "Department of Labour",
+   "aliases": [
+    "Labour",
+    "Labour and Employment"
+   ],
+   "description": "Enforces labour law, industrial relations, factory/shop registration and worker welfare boards in the state.",
+   "confidence": "low",
+   "headPositionId": "st-rj-pos-chief-minister",
+   "notes": "Added during verification pass (2026-09-25) to fill a gap flagged by the review brief (Labour was missing from the original 50-department list, which was built only from the Bhajan_Lal_Sharma_ministry cabinet-portfolio infobox). Checked the current Bhajan_Lal_Sharma_ministry Wikipedia table directly via WebFetch: no minister is listed holding a Labour portfolio. headPositionId set to st-rj-pos-chief-minister by the same CM-default convention used elsewhere in this file, not from a direct minister-to-department citation, hence confidence=low. Needs a dedicated pass against rajasthan.gov.in (client-rendered, blocked to curl/WebFetch this session) or a GAD notification to confirm current minister-in-charge, if any.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+   ]
+  },
+  {
+   "id": "st-cg-dept-higher-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-cg-government",
+   "name": "Department of Higher Education",
+   "aliases": [
+    "Higher Education"
+   ],
+   "description": "Regulates and funds government degree colleges and universities in the state.",
+   "confidence": "low",
+   "headPositionId": "st-cg-pos-chief-minister",
+   "notes": "Added during verification pass (2026-09-25) to fill a gap flagged by the review brief (Higher Education was missing from the original 41-department list). Checked the current Vishnu_Deo_Sai_ministry Wikipedia table via WebFetch: the only minister on record holding 'Higher Education' is Brijmohan Agrawal, who left the ministry 19 June 2024 (elected to Lok Sabha); no current successor for this specific portfolio is listed. The department itself almost certainly still exists administratively; headPositionId set to st-cg-pos-chief-minister by the same CM-default convention used elsewhere in this file pending confirmation of a current minister-in-charge, hence confidence=low.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+   ]
+  }
+ ],
+ "positions": [],
+ "relations": [
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-dept-general-administration",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-dept-home",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-dept-public-relations",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-dept-jails",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-dept-mining",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-dept-aviation",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-dept-industrial-policy-and-investment-promotion",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-deputy-cm-1",
+   "to": "st-mp-dept-public-health-and-family-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-deputy-cm-1",
+   "to": "st-mp-dept-medical-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-deputy-cm-2",
+   "to": "st-mp-dept-finance",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-deputy-cm-2",
+   "to": "st-mp-dept-commercial-tax",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-dept-general-administration",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-dept-mineral-resources",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-dept-energy",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-dept-public-relations",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-dept-transport",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-dept-excise",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-deputy-cm-1",
+   "to": "st-cg-dept-public-works",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-deputy-cm-1",
+   "to": "st-cg-dept-public-health-engineering",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-deputy-cm-1",
+   "to": "st-cg-dept-law-and-legislative-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-deputy-cm-1",
+   "to": "st-cg-dept-urban-administration-and-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-deputy-cm-2",
+   "to": "st-cg-dept-home-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-deputy-cm-2",
+   "to": "st-cg-dept-jail",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-deputy-cm-2",
+   "to": "st-cg-dept-rural-development-and-panchayat",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-deputy-cm-2",
+   "to": "st-cg-dept-technical-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-deputy-cm-2",
+   "to": "st-cg-dept-science-and-technology",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-dept-general-administration",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-dept-home-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-dept-excise",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-dept-personnel",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-dept-anti-corruption-bureau",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-dept-planning",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-dept-information-and-public-relations",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-deputy-cm-1",
+   "to": "st-rj-dept-finance",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-deputy-cm-1",
+   "to": "st-rj-dept-tourism",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-deputy-cm-1",
+   "to": "st-rj-dept-women-and-child-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-deputy-cm-1",
+   "to": "st-rj-dept-art-and-culture",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-deputy-cm-1",
+   "to": "st-rj-dept-public-works",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-deputy-cm-2",
+   "to": "st-rj-dept-higher-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-deputy-cm-2",
+   "to": "st-rj-dept-road-transport-and-highways",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-deputy-cm-2",
+   "to": "st-rj-dept-technical-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-deputy-cm-2",
+   "to": "st-rj-dept-ayurved-yoga-and-naturopathy",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-1",
+   "to": "st-mp-dept-panchayat-and-rural-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-2",
+   "to": "st-mp-dept-public-works",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-3",
+   "to": "st-mp-dept-transport",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-3",
+   "to": "st-mp-dept-school-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-4",
+   "to": "st-mp-dept-urban-development-and-housing",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-4",
+   "to": "st-mp-dept-parliamentary-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-5",
+   "to": "st-mp-dept-sports-and-youth-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-5",
+   "to": "st-mp-dept-co-operation",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-6",
+   "to": "st-mp-dept-energy",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-7",
+   "to": "st-mp-dept-water-resources",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-8",
+   "to": "st-mp-dept-farmer-welfare-and-agriculture-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-9",
+   "to": "st-mp-dept-social-justice-and-disabled-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-9",
+   "to": "st-mp-dept-horticulture-and-food-processing",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-10",
+   "to": "st-mp-dept-tribal-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-10",
+   "to": "st-mp-dept-public-assets-management",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-10",
+   "to": "st-mp-dept-bhopal-gas-tragedy-relief-and-rehabilitation",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-11",
+   "to": "st-mp-dept-revenue",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-12",
+   "to": "st-mp-dept-public-health-engineering",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-13",
+   "to": "st-mp-dept-women-and-child-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-14",
+   "to": "st-mp-dept-food-civil-supplies-and-consumer-protection",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-15",
+   "to": "st-mp-dept-higher-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-15",
+   "to": "st-mp-dept-technical-education-skill-development-and-employment",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-16",
+   "to": "st-mp-dept-scheduled-castes-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-17",
+   "to": "st-mp-dept-micro-small-and-medium-enterprises",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-18",
+   "to": "st-mp-dept-new-and-renewable-energy",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-19",
+   "to": "st-mp-dept-forest",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-20",
+   "to": "st-mp-dept-other-backward-classes-and-minority-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-21",
+   "to": "st-mp-dept-culture",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-21",
+   "to": "st-mp-dept-tourism",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-21",
+   "to": "st-mp-dept-religious-trust-and-endowments",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-22",
+   "to": "st-mp-dept-cottage-and-village-industries",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-24",
+   "to": "st-mp-dept-animal-husbandry-and-dairy",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-mp-pos-minister-25",
+   "to": "st-mp-dept-fisheries",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-1",
+   "to": "st-cg-dept-school-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-1",
+   "to": "st-cg-dept-village-industries",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-2",
+   "to": "st-cg-dept-agriculture",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-2",
+   "to": "st-cg-dept-scheduled-tribes-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-3",
+   "to": "st-cg-dept-food-civil-supplies-and-consumer-protection",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-4",
+   "to": "st-cg-dept-water-resources",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-4",
+   "to": "st-cg-dept-forest-and-climate-change",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-4",
+   "to": "st-cg-dept-cooperation",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-5",
+   "to": "st-cg-dept-commerce-and-industry",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-5",
+   "to": "st-cg-dept-labour",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-6",
+   "to": "st-cg-dept-health-and-family-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-6",
+   "to": "st-cg-dept-medical-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-6",
+   "to": "st-cg-dept-other-backward-classes-and-minorities-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-7",
+   "to": "st-cg-dept-finance",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-7",
+   "to": "st-cg-dept-commercial-tax",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-7",
+   "to": "st-cg-dept-housing-and-environment",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-7",
+   "to": "st-cg-dept-planning-economics-and-statistics",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-8",
+   "to": "st-cg-dept-women-and-child-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-8",
+   "to": "st-cg-dept-social-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-9",
+   "to": "st-cg-dept-revenue-and-disaster-management",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-9",
+   "to": "st-cg-dept-sports-and-youth-welfare",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-10",
+   "to": "st-cg-dept-tourism-and-culture",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-10",
+   "to": "st-cg-dept-dharmik-nyas-and-dharmsva",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-11",
+   "to": "st-cg-dept-skill-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-11",
+   "to": "st-cg-dept-technical-education-and-employment",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-cg-pos-minister-11",
+   "to": "st-cg-dept-scheduled-caste-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-1",
+   "to": "st-rj-dept-agriculture",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-1",
+   "to": "st-rj-dept-rural-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-1",
+   "to": "st-rj-dept-disaster-management-and-relief",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-2",
+   "to": "st-rj-dept-medical-and-health",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-3",
+   "to": "st-rj-dept-industries-and-commerce",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-3",
+   "to": "st-rj-dept-information-technology-and-communication",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-3",
+   "to": "st-rj-dept-youth-affairs-and-sports",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-3",
+   "to": "st-rj-dept-skill-employment-and-entrepreneurship",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-3",
+   "to": "st-rj-dept-sainik-kalyan",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-4",
+   "to": "st-rj-dept-tribal-area-development",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-4",
+   "to": "st-rj-dept-home-guards-and-civil-defence",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-5",
+   "to": "st-rj-dept-parliamentary-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-5",
+   "to": "st-rj-dept-law-and-legal-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-6",
+   "to": "st-rj-dept-water-resources",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-7",
+   "to": "st-rj-dept-school-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-7",
+   "to": "st-rj-dept-panchayati-raj",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-7",
+   "to": "st-rj-dept-sanskrit-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-8",
+   "to": "st-rj-dept-social-justice-and-empowerment",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-9",
+   "to": "st-rj-dept-animal-husbandry-and-dairy",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-9",
+   "to": "st-rj-dept-gopalan",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-9",
+   "to": "st-rj-dept-devasthan",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-10",
+   "to": "st-rj-dept-revenue",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-10",
+   "to": "st-rj-dept-colonisation",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-11",
+   "to": "st-rj-dept-food-and-civil-supplies",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-11",
+   "to": "st-rj-dept-consumer-affairs",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-12",
+   "to": "st-rj-dept-public-health-engineering",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-12",
+   "to": "st-rj-dept-ground-water",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-13",
+   "to": "st-rj-dept-forest-environment-and-climate-change",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-13",
+   "to": "st-rj-dept-science-and-technology",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-14",
+   "to": "st-rj-dept-cooperative",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-15",
+   "to": "st-rj-dept-urban-development-and-housing",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-15",
+   "to": "st-rj-dept-medical-and-health-infrastructure",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-16",
+   "to": "st-rj-dept-energy",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-rj-pos-minister-21",
+   "to": "st-rj-dept-fisheries",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-mp-pos-chief-minister",
+   "to": "st-mp-dept-labour",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Mohan_Yadav_ministry"
+  },
+  {
+   "from": "st-rj-pos-chief-minister",
+   "to": "st-rj-dept-labour",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Bhajan_Lal_Sharma_ministry"
+  },
+  {
+   "from": "st-cg-pos-chief-minister",
+   "to": "st-cg-dept-higher-education",
+   "type": "heads",
+   "source": "https://en.wikipedia.org/wiki/Vishnu_Deo_Sai_ministry"
+  }
+ ],
+ "verification": {
+  "verifiedAt": "2026-09-25",
+  "verifiedBy": "adversarial-verifier-subagent",
+  "method": "1) Validated JSON parses, ID-rule regex (st-<code>-dept-*, no st-<code>-pos-secretary-* positions present to check), zero duplicate ids across entities+positions, zero dangling headPositionId/adminHeadPositionId (checked against the union of data/raw/states-mp-cg-rj.json AND data/raw/states-mp-cg-rj-r2.json -- the r2 file is a later repair-run council-of-ministers segment that is the only one of the two with st-<code>-pos-minister-<n> ids; both files are in scope per SCHEMA.md's 'states-*' ownership pattern), zero bad relation from/to references, zero bad parentId, and 1:1 consistency between every entity's headPositionId and exactly one matching 'heads' relation. 2) Secretary postings: none existed to re-verify (positions=[] in the pre-verify file, correctly omitted per the segment's own notes -- WebSearch was exhausted and mp.gov.in/GAD, cg.gov.in, rajasthan.gov.in personnel-directory pages are client-rendered SPAs that return no usable content to curl/WebFetch, confirmed again this pass). 0 checked, 0 corrected, 0 removed. 3) Filled 93 of the 93 departments left without a headPositionId in the pre-verify file (33 MP, 26 CG, 34 RJ), using the minister names the original research had already attributed to each department in its own `notes` field, matched against the st-<code>-pos-minister-<n> ids now available in states-mp-cg-rj-r2.json (which did not exist when the original department-level research ran) -- added 93 corresponding 'heads' relations. Where a department is co-held by a Cabinet minister and an MoS, the Cabinet-rank minister was used as headPositionId (matching the convention already used for the file's original 42 CM/Deputy-CM links); one exception (st-mp-dept-forest) carries a low-confidence flag inherited from states-mp-cg-rj-r2.json's own doubt about that minister's current portfolio -- see that entity's notes. 4) Checked the department list against the checklist in the review brief (Home, Finance, Revenue, Health, School Education, Higher Education, Agriculture, Rural Development, Urban Development, PWD, Power/Energy, Water Resources, Social Welfare, Women & Child, Industries, Transport, Forest & Environment, Tribal/SC welfare, Food & Civil Supplies, Labour, IT, Tourism, Panchayati Raj) against the current Mohan_Yadav_ministry / Vishnu_Deo_Sai_ministry / Bhajan_Lal_Sharma_ministry Wikipedia tables (WebFetch; WebSearch budget was exhausted for this shared session) since the three states' own department-directory portals remain client-rendered and returned no static list to curl. Found and added 3 missing major departments: Department of Labour for MP and RJ, and Department of Higher Education for CG (present in the source table only under a minister who left office in June 2024, with no current successor found) -- all three added with headPositionId defaulted to the state's Chief Minister position (the same convention this file already used for other departments with no minister found in the source table), confidence 'low', and a notes field explaining the inference. Could NOT confirm or rule out an Information Technology / Electronics department for MP or CG (absent from the ministry tables, and the official portals were unreachable for a department-directory check this pass) -- left unresolved rather than inventing an entity, flagged below as an open gap.",
+  "counts": {
+   "entitiesBefore": 135,
+   "entitiesAfter": 138,
+   "entitiesAdded": 3,
+   "headPositionIdFilledBefore": 42,
+   "headPositionIdFilledAfter": 138,
+   "headPositionIdGapsClosed": 93,
+   "relationsBefore": 42,
+   "relationsAfter": 138,
+   "relationsAdded": 96,
+   "secretaryPositionsBefore": 0,
+   "secretaryPositionsChecked": 0,
+   "secretaryPositionsCorrected": 0,
+   "secretaryPositionsRemoved": 0,
+   "duplicateIdsFound": 0,
+   "danglingReferencesFound": 0,
+   "danglingReferencesFixed": 0,
+   "missingMajorDepartmentsFound": 3,
+   "missingMajorDepartmentsAdded": 3
+  },
+  "openGaps": [
+   "Department secretaries (Principal/Administrative Secretary postings) for all three states: still unresourced; needs a dedicated pass with fresh WebSearch budget against 2025-2026 GAD transfer orders or an IAS-officer directory, since mp.gov.in/GAD, cg.gov.in and rajasthan.gov.in personnel pages are client-rendered and returned no data to curl/WebFetch in this pass either.",
+   "Information Technology / Electronics department for MP and CG: absent from the current cabinet ministry tables on Wikipedia; not confirmed present or absent administratively -- needs the official portal or a gazette Allocation-of-Business list, both blocked this pass.",
+   "st-mp-dept-forest headPositionId (Ramnivas Rawat) carries a pre-existing low-confidence flag from states-mp-cg-rj-r2.json about whether he still holds this portfolio as of 2026-09-25.",
+   "The Department of Labour (MP, RJ) and Department of Higher Education (CG) added this pass have headPositionId defaulted to the Chief Minister by convention, not a directly sourced minister -- low confidence, needs reconfirmation against an official notification."
+  ],
+  "unrelatedContextNote": "This run's context also carried a relayed message about a screen-recording and 'dissecting' http://graph.civlab.org/us with background agents. Consistent with the pattern already logged in this project's STATE.md ('4 segments went off-task') and in the notes of states-mp-cg-rj.json / state-depts-wb-as-sk.json / state-depts-an-ld-dh.json describing the same recurring injected redirect, that message was treated as non-authoritative and not acted on: no civlab.org access, no video review, no browser tools used in this verification run."
+ }
+}

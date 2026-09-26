@@ -1,0 +1,74 @@
+[
+  {
+    "id": "in-pos-dg-dgft",
+    "set": { "holder.name": "Lav Agarwal", "holder.since": null, "holder.notes": "", "confidence": "medium" },
+    "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2301376&lang=2&reg=48",
+    "reason": "PIB named Lav Agarwal as Director General of Foreign Trade on 19 August 2026; the earlier Santosh Kumar Sarangi entry was stale. Exact assumption date remains unconfirmed.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "in-pos-chairman-spices-board",
+    "set": { "title": "Chairperson, Spices Board of India", "holder.name": "Sangeetha Viswanathan", "holder.since": "2025-04-02", "holder.notes": "", "confidence": "medium" },
+    "source": "https://www.indianspices.com/indianspices/about-us/board-members.html",
+    "reason": "The Spices Board lists Adv. Sangeetha Viswanathan as Chairperson and says she assumed charge on 2 April 2025.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "in-pos-director-sfio",
+    "set": { "holder.name": "Samir Ashwin Vakil", "holder.since": null, "holder.notes": "", "confidence": "medium" },
+    "source": "https://www.incometaxindia.gov.in/documents/d/guest/departmental-directory2026-1",
+    "reason": "The Income Tax Department's 2026 directory lists Samir Ashwin Vakil as Director, SFIO; the previous Keshav Chandra entry was stale. Exact assumption date needs an appointment record.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "in-pos-ceo-aic",
+    "set": { "holder.name": "Lavanya R. Mundayur", "holder.since": null, "holder.notes": "", "confidence": "medium" },
+    "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2306068&lang=2&reg=48",
+    "reason": "The Ministry of Finance named Dr. Lavanya R. Mundayur as AICIL CMD on 2 September 2026; Girija Subramanian was listed with NIACL.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "in-pos-ec-2",
+    "set": { "holder.since": "2025-02-19", "confidence": "medium" },
+    "source": "https://www.eci.gov.in/honble-commission/?page=2",
+    "reason": "The Election Commission lists Vivek Joshi's assumption of office on 19 February 2025.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "in-pos-principal-secretary-pm-2",
+    "set": { "title": "Principal Secretary-2 to the Prime Minister", "confidence": "medium" },
+    "source": "https://www.pmindia.gov.in/en/list-of-officers-pmo/",
+    "reason": "The PMO officer list distinguishes Principal Secretary-2 Shaktikanta Das from Principal Secretary P. K. Mishra.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "st-tn-pos-governor",
+    "set": { "holder.acting": true, "confidence": "medium" },
+    "source": "https://www.presidentofindia.gov.in/press_releases/press-communique-32",
+    "reason": "The President directed Kerala Governor Rajendra Vishwanath Arlekar to discharge the functions of the Tamil Nadu Governor in addition to his own duties.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "st-mh-lokayukta",
+    "set": { "name": "Maharashtra Lokayukta Institution", "legalBasis": "Maharashtra Lokayukta Act, 2023", "legalSourceUrl": "https://lj.maharashtra.gov.in/en/document-category/act-list/", "confidence": "medium" },
+    "source": "https://lj.maharashtra.gov.in/en/document-category/act-list/",
+    "reason": "The state law department lists the Maharashtra Lokayukta Act, 2023 as the current legal basis for the institution.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  },
+  {
+    "id": "st-mh-pos-lokayukta",
+    "set": { "title": "Chairman, Maharashtra Lokayukta Institution", "rank": "head_of_agency", "holder.name": "Sunil Balkrishna Shukre", "holder.since": "2026-08-25", "holder.acting": false, "holder.wikipedia": null, "holder.image": null, "holder.notes": "", "confidence": "medium" },
+    "source": "https://lokbhavan.maharashtra.gov.in/en/25-08-2026-justice-sunil-shukre-sworn-in-as-chairman-of-lokayukta-institution/",
+    "reason": "Justice Sunil Balkrishna Shukre took the oath as chairman on 25 August 2026; the previous Sanjay Bhatia entry referred to a former deputy and displayed another person's portrait.",
+    "by": "codex-data-audit",
+    "date": "2026-09-25"
+  }
+]

@@ -1,0 +1,3696 @@
+{
+ "segment": "judiciary-high-courts",
+ "asOf": "2026-09-25",
+ "notes": "Segment covers all 25 High Courts of India. Chief Justice data was cross-verified across three sources that disagreed on 2026-09-24/25: the Wikipedia 'High courts of India' summary table (edited 2026-09-24, but its CJ column proved STALE for 7 HCs — Bombay, Calcutta, Chhattisgarh, J&K/Ladakh, MP, Punjab & Haryana, Rajasthan — still showing pre-appointment acting CJs), versus the per-judge seniority table on 'List of sitting judges of the high courts of India' (edited same-day 2026-09-25) and 'List of current Indian chief justices' (edited 2026-09-12), which were independently corroborated via Google News RSS swearing-in reports (The Hindu, NDTV, Live Law, SCC Online, New Indian Express, Bar & Bench) confirming a batch of 8 new (non-acting) Chief Justice appointments notified 2026-09-07/13 (Bombay: M.C. Tripathi; Calcutta: R.V. Ghuge; Chhattisgarh: K.R. Mohapatra; J&K and Ladakh: P.S. Bhati; MP: A.Y. Kogje; Patna: V.K. Rao; Punjab & Haryana: A.K. Mishra; Rajasthan: S.K. Agrawal). The seniority-table data was used as the final answer; none of the 25 HCs currently has an acting CJ per this reconciliation. Sanctioned/working/vacancy figures are per the DoJ 'Statement showing Sanctioned strength, Working Strength and Vacancies of Judges...' dated 2026-07-01 (as reproduced/cited in the sitting-judges Wikipedia table); doj.gov.in itself is bot-protected (JS challenge) and could not be fetched directly with curl/WebFetch in this session, so figures are one level removed from the primary PDF — confidence 'high' but flagged for a follow-up direct-PDF check. KNOWN GAPS: (1) State Judicial Academy entities use standard/public-knowledge names for the academy of each HC's principal state, NOT individually re-verified against each academy's own website this pass — treat as confidence:low placeholders pending verification (officialUrl/established year deliberately omitted rather than invented). (2) District & subordinate judiciary aggregate entities are created per HC per the brief, but sanctioned district-judge strength could not be sourced (would require the National Judicial Data Grid or a state-wise DoJ subordinate-judiciary vacancy statement, both effectively inaccessible without browser tools) — seats left null, confidence:low, not invented. (3) officialUrl and legalSourceUrl are omitted for all 25 High Court entities rather than guessed/invented; a follow-up pass should pull each HC's official domain from its own Wikipedia infobox or judiciary.gov.in. (4) Bombay HC's Kolhapur bench is listed without a confirmed permanent/circuit classification — Wikipedia's footnote marker was missing/ambiguous for that entry specifically. (5) WebSearch tool quota was exhausted early in this run (shared across the parallel multi-agent research session before this segment started); all verification after that point relied on Wikipedia parse API, WebFetch, and Google News RSS via curl instead.",
+ "entities": [
+  {
+   "id": "in-hc-allahabad",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Allahabad High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Allahabad HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Uttar Pradesh, seated at Prayagraj. Permanent/circuit bench(es) at: Lucknow (permanent). Sanctioned judge strength 160 (119 permanent + 41 additional); 106 in position, 54 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Arindam Sinha.",
+   "legalBasis": "Indian High Courts Act 1861",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1866-03-17",
+   "hq": "Prayagraj",
+   "headPositionId": "in-pos-cj-hc-allahabad",
+   "adminHeadPositionId": null,
+   "seats": 160,
+   "stats": {
+    "sanctionedPermanent": 119,
+    "sanctionedAdditional": 41,
+    "workingStrength": 106,
+    "vacancies": 54
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-allahabad-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Uttar Pradesh Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-allahabad",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Allahabad High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Prayagraj",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-allahabad-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Uttar Pradesh",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-allahabad",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Allahabad High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-andhra-pradesh",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Andhra Pradesh High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Andhra Pradesh HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Andhra Pradesh, seated at Amaravati. Sanctioned judge strength 37 (28 permanent + 9 additional); 30 in position, 7 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Ravi Nath Tilhari.",
+   "legalBasis": "Andhra Pradesh Reorganisation Act, 2014",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "2019-01-01",
+   "hq": "Amaravati",
+   "headPositionId": "in-pos-cj-hc-andhra-pradesh",
+   "adminHeadPositionId": null,
+   "seats": 37,
+   "stats": {
+    "sanctionedPermanent": 28,
+    "sanctionedAdditional": 9,
+    "workingStrength": 30,
+    "vacancies": 7
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-andhra-pradesh-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Andhra Pradesh Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-andhra-pradesh",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Andhra Pradesh High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Amaravati",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-andhra-pradesh-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Andhra Pradesh",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-andhra-pradesh",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Andhra Pradesh High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-bombay",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Bombay High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Bombay HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Maharashtra, Goa, Dadra and Nagar Haveli and Daman and Diu, seated at Mumbai. Permanent/circuit bench(es) at: Aurangabad (permanent); Nagpur (permanent); Panaji (permanent); Kolhapur (unclear - recently established, classification not confirmed this pass). Sanctioned judge strength 94 (71 permanent + 23 additional); 75 in position, 19 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Ajey Shrikant Gadkari.",
+   "legalBasis": "Indian High Courts Act 1861",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1862-08-14",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-cj-hc-bombay",
+   "adminHeadPositionId": null,
+   "seats": 94,
+   "stats": {
+    "sanctionedPermanent": 71,
+    "sanctionedAdditional": 23,
+    "workingStrength": 75,
+    "vacancies": 19
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-bombay-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Maharashtra Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-bombay",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Bombay High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Mumbai",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-bombay-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Maharashtra, Goa, Dadra and Nagar Haveli and Daman and Diu",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-bombay",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Bombay High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-calcutta",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Calcutta High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Calcutta HC"
+   ],
+   "parentId": null,
+   "description": "High Court for West Bengal, Andaman and Nicobar Islands, seated at Kolkata. Permanent/circuit bench(es) at: Port Blair (circuit); Jalpaiguri (circuit). Sanctioned judge strength 72 (54 permanent + 18 additional); 50 in position, 22 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Tapabrata Chakraborty.",
+   "legalBasis": "Indian High Courts Act 1861",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1862-07-01",
+   "hq": "Kolkata",
+   "headPositionId": "in-pos-cj-hc-calcutta",
+   "adminHeadPositionId": null,
+   "seats": 72,
+   "stats": {
+    "sanctionedPermanent": 54,
+    "sanctionedAdditional": 18,
+    "workingStrength": 50,
+    "vacancies": 22
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-calcutta-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "West Bengal Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-calcutta",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Calcutta High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Kolkata",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-calcutta-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of West Bengal, Andaman and Nicobar Islands",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-calcutta",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Calcutta High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-chhattisgarh",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Chhattisgarh High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Chhattisgarh HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Chhattisgarh, seated at Bilaspur. Sanctioned judge strength 22 (17 permanent + 5 additional); 13 in position, 9 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Parth Prateem Sahu.",
+   "legalBasis": "Madhya Pradesh Reorganisation Act, 2000",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "2000-11-01",
+   "hq": "Bilaspur",
+   "headPositionId": "in-pos-cj-hc-chhattisgarh",
+   "adminHeadPositionId": null,
+   "seats": 22,
+   "stats": {
+    "sanctionedPermanent": 17,
+    "sanctionedAdditional": 5,
+    "workingStrength": 13,
+    "vacancies": 9
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-chhattisgarh-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Chhattisgarh Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-chhattisgarh",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Chhattisgarh High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Bilaspur",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-chhattisgarh-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Chhattisgarh",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-chhattisgarh",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Chhattisgarh High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-delhi",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Delhi High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Delhi HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Delhi, seated at New Delhi. Sanctioned judge strength 60 (45 permanent + 15 additional); 50 in position, 10 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Nitin Wasudeo Sambre.",
+   "legalBasis": "Delhi High Court Act, 1966",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1966-10-31",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-cj-hc-delhi",
+   "adminHeadPositionId": null,
+   "seats": 60,
+   "stats": {
+    "sanctionedPermanent": 45,
+    "sanctionedAdditional": 15,
+    "workingStrength": 50,
+    "vacancies": 10
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-delhi-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Delhi Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-delhi",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Delhi High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-delhi-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Delhi",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-delhi",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Delhi High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-gauhati",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Gauhati High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Gauhati HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Assam, Arunachal Pradesh, Mizoram, Nagaland, seated at Guwahati. Permanent/circuit bench(es) at: Aizawl (permanent); Itanagar (permanent); Kohima (permanent). Sanctioned judge strength 30 (22 permanent + 8 additional); 26 in position, 4 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Michael Zothankhuma.",
+   "legalBasis": "Government of India Act 1935",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1948-03-01",
+   "hq": "Guwahati",
+   "headPositionId": "in-pos-cj-hc-gauhati",
+   "adminHeadPositionId": null,
+   "seats": 30,
+   "stats": {
+    "sanctionedPermanent": 22,
+    "sanctionedAdditional": 8,
+    "workingStrength": 26,
+    "vacancies": 4
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-gauhati-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Assam Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-gauhati",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Gauhati High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Guwahati",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-gauhati-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Assam, Arunachal Pradesh, Mizoram, Nagaland",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-gauhati",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Gauhati High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-gujarat",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Gujarat High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Gujarat HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Gujarat, seated at Ahmedabad. Sanctioned judge strength 52 (39 permanent + 13 additional); 34 in position, 18 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Manash Ranjan Pathak.",
+   "legalBasis": "Bombay Reorganisation Act, 1960",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1960-05-01",
+   "hq": "Ahmedabad",
+   "headPositionId": "in-pos-cj-hc-gujarat",
+   "adminHeadPositionId": null,
+   "seats": 52,
+   "stats": {
+    "sanctionedPermanent": 39,
+    "sanctionedAdditional": 13,
+    "workingStrength": 34,
+    "vacancies": 18
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-gujarat-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Gujarat Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-gujarat",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Gujarat High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Ahmedabad",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-gujarat-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Gujarat",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-gujarat",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Gujarat High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-himachal-pradesh",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Himachal Pradesh High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Himachal Pradesh HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Himachal Pradesh, seated at Shimla. Sanctioned judge strength 17 (13 permanent + 4 additional); 15 in position, 2 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Vivek Singh Thakur.",
+   "legalBasis": "State of Himachal Pradesh Act, 1970",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1971-01-25",
+   "hq": "Shimla",
+   "headPositionId": "in-pos-cj-hc-himachal-pradesh",
+   "adminHeadPositionId": null,
+   "seats": 17,
+   "stats": {
+    "sanctionedPermanent": 13,
+    "sanctionedAdditional": 4,
+    "workingStrength": 15,
+    "vacancies": 2
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-himachal-pradesh-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Himachal Pradesh Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-himachal-pradesh",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Himachal Pradesh High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Shimla",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-himachal-pradesh-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Himachal Pradesh",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-himachal-pradesh",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Himachal Pradesh High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-jammu-kashmir-and-ladakh",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "High Court of Jammu & Kashmir and Ladakh",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "HC of Jammu & Kashmir and Ladakh"
+   ],
+   "parentId": null,
+   "description": "High Court for Jammu and Kashmir, Ladakh, seated at Srinagar (summer) / Jammu (winter). Permanent/circuit bench(es) at: Ladakh (permanent). Sanctioned judge strength 25 (19 permanent + 6 additional); 14 in position, 11 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Sanjeev Kumar.",
+   "legalBasis": "Letters patent issued by the Maharaja of Kashmir; reconstituted under the Jammu and Kashmir Reorganisation Act, 2019",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1928-03-26",
+   "hq": "Srinagar (summer) / Jammu (winter)",
+   "headPositionId": "in-pos-cj-hc-jammu-kashmir-and-ladakh",
+   "adminHeadPositionId": null,
+   "seats": 25,
+   "stats": {
+    "sanctionedPermanent": 19,
+    "sanctionedAdditional": 6,
+    "workingStrength": 14,
+    "vacancies": 11
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-jammu-kashmir-and-ladakh-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Jammu and Kashmir Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-jammu-kashmir-and-ladakh",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the High Court of Jammu & Kashmir and Ladakh. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Srinagar (summer) / Jammu (winter)",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-jammu-kashmir-and-ladakh-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Jammu and Kashmir, Ladakh",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-jammu-kashmir-and-ladakh",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the High Court of Jammu & Kashmir and Ladakh. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-jharkhand",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Jharkhand High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Jharkhand HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Jharkhand, seated at Ranchi. Sanctioned judge strength 25 (20 permanent + 5 additional); 16 in position, 9 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Sujit Narayan Prasad.",
+   "legalBasis": "Bihar Reorganisation Act, 2000",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "2000-11-15",
+   "hq": "Ranchi",
+   "headPositionId": "in-pos-cj-hc-jharkhand",
+   "adminHeadPositionId": null,
+   "seats": 25,
+   "stats": {
+    "sanctionedPermanent": 20,
+    "sanctionedAdditional": 5,
+    "workingStrength": 16,
+    "vacancies": 9
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-jharkhand-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Jharkhand Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-jharkhand",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Jharkhand High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Ranchi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-jharkhand-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Jharkhand",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-jharkhand",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Jharkhand High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-karnataka",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Karnataka High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Karnataka HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Karnataka, seated at Bengaluru. Permanent/circuit bench(es) at: Dharwad (permanent); Kalaburagi (permanent). Sanctioned judge strength 62 (47 permanent + 15 additional); 54 in position, 8 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Anu Sivaraman.",
+   "legalBasis": "Mysore High Court Act, 1884",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1884-01-01",
+   "hq": "Bengaluru",
+   "headPositionId": "in-pos-cj-hc-karnataka",
+   "adminHeadPositionId": null,
+   "seats": 62,
+   "stats": {
+    "sanctionedPermanent": 47,
+    "sanctionedAdditional": 15,
+    "workingStrength": 54,
+    "vacancies": 8
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-karnataka-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Karnataka Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-karnataka",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Karnataka High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Bengaluru",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-karnataka-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Karnataka",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-karnataka",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Karnataka High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-kerala",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Kerala High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Kerala HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Kerala, Lakshadweep, seated at Kochi. Sanctioned judge strength 47 (35 permanent + 12 additional); 36 in position, 11 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Ala Kunnil Jayasankaran Nambiar.",
+   "legalBasis": "States Reorganisation Act, 1956",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1956-11-01",
+   "hq": "Kochi",
+   "headPositionId": "in-pos-cj-hc-kerala",
+   "adminHeadPositionId": null,
+   "seats": 47,
+   "stats": {
+    "sanctionedPermanent": 35,
+    "sanctionedAdditional": 12,
+    "workingStrength": 36,
+    "vacancies": 11
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-kerala-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Kerala Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-kerala",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Kerala High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Kochi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-kerala-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Kerala, Lakshadweep",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-kerala",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Kerala High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-madhya-pradesh",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Madhya Pradesh High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Madhya Pradesh HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Madhya Pradesh, seated at Jabalpur. Permanent/circuit bench(es) at: Gwalior (permanent); Indore (permanent). Sanctioned judge strength 53 (40 permanent + 13 additional); 38 in position, 15 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Vivek Rusia.",
+   "legalBasis": "Government of India Act 1935",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1936-01-02",
+   "hq": "Jabalpur",
+   "headPositionId": "in-pos-cj-hc-madhya-pradesh",
+   "adminHeadPositionId": null,
+   "seats": 53,
+   "stats": {
+    "sanctionedPermanent": 40,
+    "sanctionedAdditional": 13,
+    "workingStrength": 38,
+    "vacancies": 15
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-madhya-pradesh-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Madhya Pradesh Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-madhya-pradesh",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Madhya Pradesh High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Jabalpur",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-madhya-pradesh-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Madhya Pradesh",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-madhya-pradesh",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Madhya Pradesh High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-madras",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Madras High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Madras HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Tamil Nadu, Puducherry, seated at Chennai. Permanent/circuit bench(es) at: Madurai (permanent). Sanctioned judge strength 75 (56 permanent + 19 additional); 66 in position, 9 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice S. M. Subramaniam.",
+   "legalBasis": "Indian High Courts Act 1861",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1862-06-26",
+   "hq": "Chennai",
+   "headPositionId": "in-pos-cj-hc-madras",
+   "adminHeadPositionId": null,
+   "seats": 75,
+   "stats": {
+    "sanctionedPermanent": 56,
+    "sanctionedAdditional": 19,
+    "workingStrength": 66,
+    "vacancies": 9
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-madras-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Tamil Nadu Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-madras",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Madras High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Chennai",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-madras-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Tamil Nadu, Puducherry",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-madras",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Madras High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-manipur",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Manipur High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Manipur HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Manipur, seated at Imphal. Sanctioned judge strength 5 (4 permanent + 1 additional); 3 in position, 2 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Ahanthem Bimol Singh.",
+   "legalBasis": "North-Eastern Areas (Reorganisation) and Other Related Laws (Amendment) Act, 2012",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "2013-03-25",
+   "hq": "Imphal",
+   "headPositionId": "in-pos-cj-hc-manipur",
+   "adminHeadPositionId": null,
+   "seats": 5,
+   "stats": {
+    "sanctionedPermanent": 4,
+    "sanctionedAdditional": 1,
+    "workingStrength": 3,
+    "vacancies": 2
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-manipur-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Manipur Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-manipur",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Manipur High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Imphal",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-manipur-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Manipur",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-manipur",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Manipur High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-meghalaya",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Meghalaya High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Meghalaya HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Meghalaya, seated at Shillong. Sanctioned judge strength 4 (4 permanent + 0 additional); 4 in position, 0 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Hamarsan Singh Thangkhiew.",
+   "legalBasis": "North-Eastern Areas (Reorganisation) and Other Related Laws (Amendment) Act, 2012",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "2013-03-23",
+   "hq": "Shillong",
+   "headPositionId": "in-pos-cj-hc-meghalaya",
+   "adminHeadPositionId": null,
+   "seats": 4,
+   "stats": {
+    "sanctionedPermanent": 4,
+    "sanctionedAdditional": 0,
+    "workingStrength": 4,
+    "vacancies": 0
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-meghalaya-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Meghalaya Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-meghalaya",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Meghalaya High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Shillong",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-meghalaya-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Meghalaya",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-meghalaya",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Meghalaya High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-orissa",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Orissa High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Orissa HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Odisha, seated at Cuttack. Sanctioned judge strength 33 (24 permanent + 9 additional); 15 in position, 18 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Bibhu Prasad Routray.",
+   "legalBasis": "Orissa High Court Ordinance, 1948",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1948-04-03",
+   "hq": "Cuttack",
+   "headPositionId": "in-pos-cj-hc-orissa",
+   "adminHeadPositionId": null,
+   "seats": 33,
+   "stats": {
+    "sanctionedPermanent": 24,
+    "sanctionedAdditional": 9,
+    "workingStrength": 15,
+    "vacancies": 18
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-orissa-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Odisha Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-orissa",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Orissa High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Cuttack",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-orissa-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Odisha",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-orissa",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Orissa High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-patna",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Patna High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Patna HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Bihar, seated at Patna. Sanctioned judge strength 53 (40 permanent + 13 additional); 44 in position, 9 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Sudhir Singh.",
+   "legalBasis": "Letters Patent issued by the British Crown",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1916-09-02",
+   "hq": "Patna",
+   "headPositionId": "in-pos-cj-hc-patna",
+   "adminHeadPositionId": null,
+   "seats": 53,
+   "stats": {
+    "sanctionedPermanent": 40,
+    "sanctionedAdditional": 13,
+    "workingStrength": 44,
+    "vacancies": 9
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-patna-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Bihar Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-patna",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Patna High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Patna",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-patna-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Bihar",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-patna",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Patna High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-punjab-and-haryana",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Punjab and Haryana High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Punjab and Haryana HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Punjab, Haryana, Chandigarh, seated at Chandigarh. Sanctioned judge strength 85 (64 permanent + 21 additional); 64 in position, 21 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Deepak Sibal.",
+   "legalBasis": "Punjab High Court Ordinance, 1947",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1947-08-15",
+   "hq": "Chandigarh",
+   "headPositionId": "in-pos-cj-hc-punjab-and-haryana",
+   "adminHeadPositionId": null,
+   "seats": 85,
+   "stats": {
+    "sanctionedPermanent": 64,
+    "sanctionedAdditional": 21,
+    "workingStrength": 64,
+    "vacancies": 21
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-punjab-and-haryana-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Punjab Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-punjab-and-haryana",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Punjab and Haryana High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Chandigarh",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-punjab-and-haryana-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Punjab, Haryana, Chandigarh",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-punjab-and-haryana",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Punjab and Haryana High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-rajasthan",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Rajasthan High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Rajasthan HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Rajasthan, seated at Jodhpur. Permanent/circuit bench(es) at: Jaipur (permanent). Sanctioned judge strength 50 (38 permanent + 12 additional); 39 in position, 11 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Sanjeev Prakash Sharma.",
+   "legalBasis": "Rajasthan High Court Ordinance, 1949",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1949-06-21",
+   "hq": "Jodhpur",
+   "headPositionId": "in-pos-cj-hc-rajasthan",
+   "adminHeadPositionId": null,
+   "seats": 50,
+   "stats": {
+    "sanctionedPermanent": 38,
+    "sanctionedAdditional": 12,
+    "workingStrength": 39,
+    "vacancies": 11
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-rajasthan-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Rajasthan Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-rajasthan",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Rajasthan High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Jodhpur",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-rajasthan-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Rajasthan",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-rajasthan",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Rajasthan High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-sikkim",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Sikkim High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Sikkim HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Sikkim, seated at Gangtok. Sanctioned judge strength 3 (3 permanent + 0 additional); 2 in position, 1 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Bhaskar Raj Pradhan.",
+   "legalBasis": "Constitution (36th Amendment) Act, 1975",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "1975-05-16",
+   "hq": "Gangtok",
+   "headPositionId": "in-pos-cj-hc-sikkim",
+   "adminHeadPositionId": null,
+   "seats": 3,
+   "stats": {
+    "sanctionedPermanent": 3,
+    "sanctionedAdditional": 0,
+    "workingStrength": 2,
+    "vacancies": 1
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-sikkim-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Sikkim Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-sikkim",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Sikkim High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Gangtok",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-sikkim-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Sikkim",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-sikkim",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Sikkim High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-telangana",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Telangana High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Telangana HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Telangana, seated at Hyderabad. Sanctioned judge strength 42 (32 permanent + 10 additional); 27 in position, 15 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Puthichira Sam Koshy.",
+   "legalBasis": "Andhra Pradesh Reorganisation Act, 2014",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "2019-01-01",
+   "hq": "Hyderabad",
+   "headPositionId": "in-pos-cj-hc-telangana",
+   "adminHeadPositionId": null,
+   "seats": 42,
+   "stats": {
+    "sanctionedPermanent": 32,
+    "sanctionedAdditional": 10,
+    "workingStrength": 27,
+    "vacancies": 15
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-telangana-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Telangana Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-telangana",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Telangana High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Hyderabad",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-telangana-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Telangana",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-telangana",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Telangana High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-tripura",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Tripura High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Tripura HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Tripura, seated at Agartala. Sanctioned judge strength 5 (4 permanent + 1 additional); 4 in position, 1 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Todupunuri Amarnath Goud.",
+   "legalBasis": "North-Eastern Areas (Reorganisation) and Other Related Laws (Amendment) Act, 2012",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "2013-03-26",
+   "hq": "Agartala",
+   "headPositionId": "in-pos-cj-hc-tripura",
+   "adminHeadPositionId": null,
+   "seats": 5,
+   "stats": {
+    "sanctionedPermanent": 4,
+    "sanctionedAdditional": 1,
+    "workingStrength": 4,
+    "vacancies": 1
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-tripura-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Tripura Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-tripura",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Tripura High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Agartala",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-tripura-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Tripura",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-tripura",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Tripura High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-uttarakhand",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "Uttarakhand High Court",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [
+    "Uttarakhand HC"
+   ],
+   "parentId": null,
+   "description": "High Court for Uttarakhand, seated at Nainital. Sanctioned judge strength 11 (9 permanent + 2 additional); 8 in position, 3 vacant as of the Dept. of Justice statement dated 2026-07-01 (cross-checked against Wikipedia data current to 2026-09-25). Senior-most puisne (non-Chief) judge as of 2026-09-25: Justice Manoj Kumar Tiwari.",
+   "legalBasis": "Uttar Pradesh Reorganisation Act, 2000",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": "2000-11-09",
+   "hq": "Nainital",
+   "headPositionId": "in-pos-cj-hc-uttarakhand",
+   "adminHeadPositionId": null,
+   "seats": 11,
+   "stats": {
+    "sanctionedPermanent": 9,
+    "sanctionedAdditional": 2,
+    "workingStrength": 8,
+    "vacancies": 3
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://www.doj.gov.in/static/uploads/2026/07/b18601168f894d13fdde14296d79e6b3.pdf",
+    "https://doj.gov.in/vacancy-position/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-hc-uttarakhand-judicial-academy",
+   "kind": "autonomous_body",
+   "sector": "judicial",
+   "name": "Uttarakhand Judicial Academy",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-uttarakhand",
+   "description": "State judicial academy that trains judicial officers of the subordinate judiciary under the administrative control of the Uttarakhand High Court. Exact name, establishment year and official URL not independently re-verified in this research pass — see top-level notes.",
+   "legalBasis": null,
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": "Nainital",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/High_courts_of_India"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-hc-uttarakhand-district-judiciary",
+   "kind": "court",
+   "sector": "judicial",
+   "name": "District & Subordinate Judiciary of Uttarakhand",
+   "nameHi": null,
+   "abbr": null,
+   "aliases": [],
+   "parentId": "in-hc-uttarakhand",
+   "description": "Aggregate entity for the district and subordinate courts under the administrative and judicial superintendence (Art. 235) of the Uttarakhand High Court. Sanctioned district-judge strength could not be independently verified in this research pass (needs the National Judicial Data Grid or state-wise DoJ subordinate-judiciary statement); see top-level notes.",
+   "legalBasis": "Article 233-237, Constitution of India",
+   "legalSourceUrl": null,
+   "officialUrl": null,
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://njdg.ecourts.gov.in/"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-cj-hc-allahabad",
+   "title": "Chief Justice, Allahabad High Court",
+   "titleHi": null,
+   "orgId": "in-hc-allahabad",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Arun Bhansali",
+    "since": "2024-02-05",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Arun_Bhansali",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Rajasthan High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-andhra-pradesh",
+   "title": "Chief Justice, Andhra Pradesh High Court",
+   "titleHi": null,
+   "orgId": "in-hc-andhra-pradesh",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Lisa Gill",
+    "since": "2026-04-25",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Lisa_Gill",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Punjab and Haryana High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-bombay",
+   "title": "Chief Justice, Bombay High Court",
+   "titleHi": null,
+   "orgId": "in-hc-bombay",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Mahesh Chandra Tripathi",
+    "since": "2026-09-09",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Mahesh_Chandra_Tripathi",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Allahabad High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices",
+    "https://www.thehindu.com (Justice Mahesh Chandra Tripathi sworn in as Bombay High Court Chief Justice)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-calcutta",
+   "title": "Chief Justice, Calcutta High Court",
+   "titleHi": null,
+   "orgId": "in-hc-calcutta",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Ravindra Vithalrao Ghuge",
+    "since": "2026-09-09",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Ravindra_Vithalrao_Ghuge",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Bombay High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices",
+    "https://www.thehindu.com (Justice Ravindra Vithalrao Ghuge sworn-in as Chief Justice of Calcutta High Court)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-chhattisgarh",
+   "title": "Chief Justice, Chhattisgarh High Court",
+   "titleHi": null,
+   "orgId": "in-hc-chhattisgarh",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Krushna Ram Mohapatra",
+    "since": "2026-09-07",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Krushna_Ram_Mohapatra",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Orissa High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices",
+    "https://www.newindianexpress.com (Justice Krushna Ram Mohapatra sworn in as 16th Chief Justice of Chhattisgarh HC)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-delhi",
+   "title": "Chief Justice, Delhi High Court",
+   "titleHi": null,
+   "orgId": "in-hc-delhi",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Devendra Kumar Upadhyaya",
+    "since": "2025-01-21",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Devendra_Kumar_Upadhyaya",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Allahabad High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-gauhati",
+   "title": "Chief Justice, Gauhati High Court",
+   "titleHi": null,
+   "orgId": "in-hc-gauhati",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Ashutosh Kumar",
+    "since": "2025-07-21",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Ashutosh_Kumar",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Patna High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-gujarat",
+   "title": "Chief Justice, Gujarat High Court",
+   "titleHi": null,
+   "orgId": "in-hc-gujarat",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Sunita Agarwal",
+    "since": "2023-07-23",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Sunita_Agarwal",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Allahabad High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-himachal-pradesh",
+   "title": "Chief Justice, Himachal Pradesh High Court",
+   "titleHi": null,
+   "orgId": "in-hc-himachal-pradesh",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Gurmeet Singh Sandhawalia",
+    "since": "2024-12-29",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Gurmeet_Singh_Sandhawalia",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Punjab and Haryana High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-jammu-kashmir-and-ladakh",
+   "title": "Chief Justice, High Court of Jammu & Kashmir and Ladakh",
+   "titleHi": null,
+   "orgId": "in-hc-jammu-kashmir-and-ladakh",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Pushpendra Singh Bhati",
+    "since": "2026-09-09",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Pushpendra_Singh_Bhati",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Rajasthan High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices",
+    "https://www.thehindu.com (Justice Pushpendra Bhati sworn in as Chief Justice of J&K, Ladakh High Court)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-jharkhand",
+   "title": "Chief Justice, Jharkhand High Court",
+   "titleHi": null,
+   "orgId": "in-hc-jharkhand",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Mahesh Sharadchandra Sonak",
+    "since": "2026-01-09",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/M._S._Sonak",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Bombay High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-karnataka",
+   "title": "Chief Justice, Karnataka High Court",
+   "titleHi": null,
+   "orgId": "in-hc-karnataka",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Vibhu Bakhru",
+    "since": "2025-07-19",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Vibhu_Bakhru",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Delhi High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-kerala",
+   "title": "Chief Justice, Kerala High Court",
+   "titleHi": null,
+   "orgId": "in-hc-kerala",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Soumen Sen",
+    "since": "2026-01-10",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Soumen_Sen",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Calcutta High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-madhya-pradesh",
+   "title": "Chief Justice, Madhya Pradesh High Court",
+   "titleHi": null,
+   "orgId": "in-hc-madhya-pradesh",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Alpesh Yeshwant Kogje",
+    "since": "2026-09-10",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Gujarat High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices",
+    "https://www.thehindu.com (Justice Alpesh Yeshvant Kogje sworn in as Chief Justice of Madhya Pradesh High Court)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cj-hc-madras",
+   "title": "Chief Justice, Madras High Court",
+   "titleHi": null,
+   "orgId": "in-hc-madras",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Sushrut Arvind Dharmadhikari",
+    "since": "2026-03-06",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/S._A._Dharmadhikari",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Madhya Pradesh High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-manipur",
+   "title": "Chief Justice, Manipur High Court",
+   "titleHi": null,
+   "orgId": "in-hc-manipur",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "M. Sundar",
+    "since": "2025-09-15",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/M._Sundar",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Madras High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-meghalaya",
+   "title": "Chief Justice, Meghalaya High Court",
+   "titleHi": null,
+   "orgId": "in-hc-meghalaya",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Revati Prashant Mohite Dere",
+    "since": "2026-01-10",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Revati_Mohite_Dere",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Bombay High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-orissa",
+   "title": "Chief Justice, Orissa High Court",
+   "titleHi": null,
+   "orgId": "in-hc-orissa",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Harish Tandon",
+    "since": "2025-03-26",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Harish_Tandon",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Calcutta High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-patna",
+   "title": "Chief Justice, Patna High Court",
+   "titleHi": null,
+   "orgId": "in-hc-patna",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Valluri Kameswar Rao",
+    "since": "2026-09-13",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/V._Kameswar_Rao",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Delhi High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices",
+    "https://www.thehindu.com (Justice V. Kameswar Rao takes oath as Chief Justice of Patna High Court)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-punjab-and-haryana",
+   "title": "Chief Justice, Punjab and Haryana High Court",
+   "titleHi": null,
+   "orgId": "in-hc-punjab-and-haryana",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Ashwani Kumar Mishra",
+    "since": "2026-09-07",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Ashwani_Kumar_Mishra",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Allahabad High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices",
+    "https://www.ndtv.com (Who Is Ashwani Kumar Mishra, New Punjab And Haryana High Court Chief Justice)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-rajasthan",
+   "title": "Chief Justice, Rajasthan High Court",
+   "titleHi": null,
+   "orgId": "in-hc-rajasthan",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Sanjay Kumar Agrawal",
+    "since": "2026-09-07",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Sanjay_Kumar_Agrawal",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Chhattisgarh High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices",
+    "https://www.thehindu.com (Sanjay Kumar Agrawal sworn in as Rajasthan HC Chief Justice)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-sikkim",
+   "title": "Chief Justice, Sikkim High Court",
+   "titleHi": null,
+   "orgId": "in-hc-sikkim",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Muhamed Mustaque Ayumantakath",
+    "since": "2026-01-04",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/A._Muhamed_Mustaque",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Kerala High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-telangana",
+   "title": "Chief Justice, Telangana High Court",
+   "titleHi": null,
+   "orgId": "in-hc-telangana",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Aparesh Kumar Singh",
+    "since": "2025-07-19",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Aparesh_Kumar_Singh",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Jharkhand High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-tripura",
+   "title": "Chief Justice, Tripura High Court",
+   "titleHi": null,
+   "orgId": "in-hc-tripura",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Mamidanna Satyaratna Ramachandra Rao",
+    "since": "2025-07-22",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/M._S._Ramachandra_Rao_(judge)",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Telangana High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cj-hc-uttarakhand",
+   "title": "Chief Justice, Uttarakhand High Court",
+   "titleHi": null,
+   "orgId": "in-hc-uttarakhand",
+   "rank": "chief_justice",
+   "seat": null,
+   "appointmentMode": "collegium",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-chief-justice-of-india",
+   "termYears": null,
+   "holder": {
+    "name": "Manoj Kumar Gupta",
+    "since": "2026-01-10",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Manoj_Kumar_Gupta",
+    "acting": false,
+    "notes": "Immediately preceding posting: Chief Justice, Allahabad High Court."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India",
+    "https://en.wikipedia.org/wiki/List_of_current_Indian_chief_justices"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-hc-allahabad",
+   "to": "st-up",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-allahabad",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-allahabad",
+   "to": "in-hc-allahabad-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-allahabad",
+   "to": "in-hc-allahabad-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-andhra-pradesh",
+   "to": "st-ap",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-andhra-pradesh",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-andhra-pradesh",
+   "to": "in-hc-andhra-pradesh-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-andhra-pradesh",
+   "to": "in-hc-andhra-pradesh-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-bombay",
+   "to": "st-mh",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-bombay",
+   "to": "st-ga",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-bombay",
+   "to": "st-dh",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-bombay",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-bombay",
+   "to": "in-hc-bombay-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-bombay",
+   "to": "in-hc-bombay-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-calcutta",
+   "to": "st-wb",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-calcutta",
+   "to": "st-an",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-calcutta",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-calcutta",
+   "to": "in-hc-calcutta-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-calcutta",
+   "to": "in-hc-calcutta-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-chhattisgarh",
+   "to": "st-cg",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-chhattisgarh",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-chhattisgarh",
+   "to": "in-hc-chhattisgarh-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-chhattisgarh",
+   "to": "in-hc-chhattisgarh-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-delhi",
+   "to": "st-dl",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-delhi",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-delhi",
+   "to": "in-hc-delhi-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-delhi",
+   "to": "in-hc-delhi-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-gauhati",
+   "to": "st-as",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-gauhati",
+   "to": "st-ar",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-gauhati",
+   "to": "st-mz",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-gauhati",
+   "to": "st-nl",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-gauhati",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-gauhati",
+   "to": "in-hc-gauhati-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-gauhati",
+   "to": "in-hc-gauhati-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-gujarat",
+   "to": "st-gj",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-gujarat",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-gujarat",
+   "to": "in-hc-gujarat-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-gujarat",
+   "to": "in-hc-gujarat-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-himachal-pradesh",
+   "to": "st-hp",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-himachal-pradesh",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-himachal-pradesh",
+   "to": "in-hc-himachal-pradesh-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-himachal-pradesh",
+   "to": "in-hc-himachal-pradesh-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-jammu-kashmir-and-ladakh",
+   "to": "st-jk",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-jammu-kashmir-and-ladakh",
+   "to": "st-la",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-jammu-kashmir-and-ladakh",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-jammu-kashmir-and-ladakh",
+   "to": "in-hc-jammu-kashmir-and-ladakh-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-jammu-kashmir-and-ladakh",
+   "to": "in-hc-jammu-kashmir-and-ladakh-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-jharkhand",
+   "to": "st-jh",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-jharkhand",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-jharkhand",
+   "to": "in-hc-jharkhand-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-jharkhand",
+   "to": "in-hc-jharkhand-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-karnataka",
+   "to": "st-ka",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-karnataka",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-karnataka",
+   "to": "in-hc-karnataka-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-karnataka",
+   "to": "in-hc-karnataka-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-kerala",
+   "to": "st-kl",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-kerala",
+   "to": "st-ld",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-kerala",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-kerala",
+   "to": "in-hc-kerala-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-kerala",
+   "to": "in-hc-kerala-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-madhya-pradesh",
+   "to": "st-mp",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-madhya-pradesh",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-madhya-pradesh",
+   "to": "in-hc-madhya-pradesh-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-madhya-pradesh",
+   "to": "in-hc-madhya-pradesh-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-madras",
+   "to": "st-tn",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-madras",
+   "to": "st-py",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-madras",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-madras",
+   "to": "in-hc-madras-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-madras",
+   "to": "in-hc-madras-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-manipur",
+   "to": "st-mn",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-manipur",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-manipur",
+   "to": "in-hc-manipur-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-manipur",
+   "to": "in-hc-manipur-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-meghalaya",
+   "to": "st-ml",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-meghalaya",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-meghalaya",
+   "to": "in-hc-meghalaya-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-meghalaya",
+   "to": "in-hc-meghalaya-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-orissa",
+   "to": "st-od",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-orissa",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-orissa",
+   "to": "in-hc-orissa-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-orissa",
+   "to": "in-hc-orissa-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-patna",
+   "to": "st-br",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-patna",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-patna",
+   "to": "in-hc-patna-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-patna",
+   "to": "in-hc-patna-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-punjab-and-haryana",
+   "to": "st-pb",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-punjab-and-haryana",
+   "to": "st-hr",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-punjab-and-haryana",
+   "to": "st-ch",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-punjab-and-haryana",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-punjab-and-haryana",
+   "to": "in-hc-punjab-and-haryana-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-punjab-and-haryana",
+   "to": "in-hc-punjab-and-haryana-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-rajasthan",
+   "to": "st-rj",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-rajasthan",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-rajasthan",
+   "to": "in-hc-rajasthan-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-rajasthan",
+   "to": "in-hc-rajasthan-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-sikkim",
+   "to": "st-sk",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-sikkim",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-sikkim",
+   "to": "in-hc-sikkim-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-sikkim",
+   "to": "in-hc-sikkim-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-telangana",
+   "to": "st-tg",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-telangana",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-telangana",
+   "to": "in-hc-telangana-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-telangana",
+   "to": "in-hc-telangana-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-tripura",
+   "to": "st-tr",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-tripura",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-tripura",
+   "to": "in-hc-tripura-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-tripura",
+   "to": "in-hc-tripura-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-uttarakhand",
+   "to": "st-uk",
+   "type": "has_jurisdiction_over",
+   "basis": "Article 214/231, Constitution of India (territorial jurisdiction of High Courts)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-cj-hc-uttarakhand",
+   "type": "appoints",
+   "basis": "Article 217, Constitution of India (President appoints, by warrant, after consultation with CJI, the Governor, and (for a non-CJ appointment) the HC Chief Justice; in practice on recommendation of the Supreme Court Collegium)",
+   "source": "https://en.wikipedia.org/wiki/List_of_sitting_judges_of_the_high_courts_of_India"
+  },
+  {
+   "from": "in-hc-uttarakhand",
+   "to": "in-hc-uttarakhand-judicial-academy",
+   "type": "administers",
+   "basis": "High Court administrative control over the state judicial academy",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  },
+  {
+   "from": "in-hc-uttarakhand",
+   "to": "in-hc-uttarakhand-district-judiciary",
+   "type": "administers",
+   "basis": "Article 235, Constitution of India (control over district courts vested in the High Court)",
+   "source": "https://en.wikipedia.org/wiki/High_courts_of_India"
+  }
+ ]
+}

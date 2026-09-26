@@ -1,0 +1,3284 @@
+{
+ "segment": "states-wb-as-sk",
+ "asOf": "2026-09-25",
+ "notes": "Gaps / low-confidence items, and methodology notes:\n(1) West Bengal, Assam and Sikkim underwent (or in Sikkim's case, did not undergo) their scheduled 2025-2026 elections; all office-holder facts below were cross-checked against at least one primary Wikipedia infobox/table fetched live via the Wikipedia parse API on 2026-09-25, not from training-data memory. Two WebFetch summarisation passes were caught inventing plausible-looking but unverifiable detail (a full 'Adhikari ministry' roster, and a 'Manoj Kumar Agarwal' Chief Secretary claim) -- both were independently re-verified against the raw HTML tables (via curl + bs4) before being trusted; the Manoj Kumar Agarwal / Ravi Kota / Ravindra Telang Chief-Secretary trio and the DGP trio were each cross-confirmed against two independent Wikipedia pages (the state government/police infobox AND the 'Chief secretary (India)' / 'Director general of police' national roster tables).\n(2) West Bengal: BJP's landslide 2026 win (208/294 initial tally; assembly infobox shows 207 after adjustments) makes Suvendu Adhikari the first BJP Chief Minister of West Bengal, ending Mamata Banerjee's tenure (she lost her own Bhabanipur seat to Adhikari). No Deputy CM was appointed. The Assembly's infobox does not yet list a Deputy Speaker -- recorded vacant/low-confidence, likely just not yet elected at time of the source snapshot. The West Bengal State Election Commissioner and Public Service Commission Chair could not be confirmed with high confidence: the WBSEC Wikipedia infobox names a 'Chief Electoral Officer' (Neelam Meena) under a parent body of 'Election Commission of India', which looks like a conflation of the (ECI-linked) CEO office with the constitutionally distinct Article-243K State Election Commission -- flagged low confidence rather than guessed at. WB Public Service Commission Chairperson is listed as Vacant on Wikipedia (possibly stale). WB State Human Rights Commission chairperson unconfirmed (vacant/low confidence). Kolkata Municipal Corporation's ruling party is shown as 'TBD' in the source table (a KMC election was pending/due in 2026) so no mayor is recorded.\n(3) Assam: the NDA (BJP+AGP+BPF) retained power in the April 2026 election (102/126 seats); Himanta Biswa Sarma continues as CM under the 'Second Sarma ministry' (formed 12 May 2026). The 16-member council-of-ministers table published on Wikipedia does not distinguish Cabinet Minister vs Minister-of-State rank (unlike West Bengal's table), so all 16 non-CM ministers are recorded at rank cabinet_minister with a note flagging this assumption; individual constituencies were not published in that table (only home-division groupings) so are omitted rather than guessed. Assam's Lokayukta entry actually names an 'Upa-Lokayukta' (Deputy) -- Justice Hitesh Kumar Sarma -- the full Lokayukta's current occupant was not independently confirmed, so this is flagged medium confidence. Assam State Election Commissioner, Public Service Commission Chairman and Human Rights Commission Chairperson could not be confirmed within the tools available (no populated Wikipedia infobox; apsc.nic.in could not be fetched due to a TLS certificate error) -- all three recorded vacant/low confidence rather than invented.\n(4) Sikkim: no assembly election occurred in 2025-2026 (last election 2024, next due 2029); Prem Singh Tamang (SKM) continues as CM, and SKM holds all 32 assembly seats, so there is no Leader of Opposition. The Deputy Chief Minister post is recorded Vacant per the Government of Sikkim infobox. Sikkim has no State Human Rights Commission (no such body found; omitted rather than invented -- distinct from an unconfirmed-holder case). Sikkim's State Election Commission and Lokayukta entities repeat the same 'parent department: Election Commission of India' labelling oddity noted for West Bengal above; the named office-holders (K. C. Lepcha; Justice A. P. Subba) are recorded at medium/high confidence since they come from otherwise well-formed infoboxes, but the parent-body labelling itself is not repeated as fact.\n(5) Lok Sabha and Rajya Sabha seat counts (WB 42/16, Assam 14/7, Sikkim 1/1) reflect the current (pre-2026-census) delimitation, which has not changed since the last delimitation freeze; Rajya Sabha counts were cross-checked against the Rajya Sabha state-wise allocation table. District counts, area and 2011 census population are from each state's Wikipedia infobox.\n(6) Municipal corporations: full lists for all three states (7 in West Bengal, 3 in Assam, 1 in Sikkim) are from Wikipedia's 'List of municipal corporations in India' state-by-state tables; mayors were not separately verified per the task's 'if easily verifiable' allowance and are omitted (only ruling party is recorded where the source table gave one).\n(7) High Courts serving each state (Calcutta HC for WB, Gauhati HC for Assam, Sikkim HC for Sikkim) are judiciary-segment-owned and referenced only by their canonical in-hc-* ids, not redefined here.\n(8) Party abbreviation DTC (West Bengal's post-defeat AITC breakaway, led into opposition by Ritabrata Banerjee) = Democratic Trinamool Congress; MAITC in both West Bengal and Assam assembly tallies appears to denote a Mamata-aligned AITC remnant/rebrand, not independently resolved beyond the Wikipedia infobox label.\n(9) The WebSearch tool's shared session budget (200 calls) was already exhausted by other parallel segment agents before this segment began; all research after that point used WebFetch, curl + the Wikipedia parse API, and python/bs4 table parsing instead, which is why methodology note (1) above exists.",
+ "entities": [
+  {
+   "id": "st-wb",
+   "kind": "state",
+   "sector": "federal",
+   "name": "West Bengal",
+   "parentId": "in-states-and-uts",
+   "description": "West Bengal is a State of India with its capital at Kolkata.",
+   "officialUrl": "https://wb.gov.in",
+   "stats": {
+    "population2011": 91276115,
+    "areaKm2": 88752,
+    "lokSabhaSeats": 42,
+    "rajyaSabhaSeats": 16,
+    "assemblySeats": 294,
+    "districts": 23
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bengal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of West Bengal",
+   "parentId": "st-wb",
+   "description": "The executive government of West Bengal, headed by the Governor as constitutional head and the Chief Minister as head of government.",
+   "officialUrl": "https://wb.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_West_Bengal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "West Bengal Council of Ministers",
+   "parentId": "st-wb-government",
+   "description": "The Council of Ministers of West Bengal, headed by the Chief Minister, collectively responsible to the Legislative Assembly.",
+   "headPositionId": "st-wb-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry",
+    "https://en.wikipedia.org/wiki/2026_West_Bengal_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "West Bengal Legislative Assembly",
+   "parentId": "st-wb",
+   "description": "The unicameral state legislature of West Bengal (294 seats), elected by first-past-the-post for a 5-year term.",
+   "seats": 294,
+   "stats": {
+    "lastElection": "2026-04-23",
+    "nextElectionDue": "2031",
+    "partyStrength": {
+     "BJP": 207,
+     "MAITC": 15,
+     "DTC": 65,
+     "INC": 2,
+     "LF+": 2,
+     "CPI(M)": 1,
+     "AISF": 1,
+     "AJUP": 1,
+     "Vacant": 2
+    }
+   },
+   "legalBasis": "Constitution of India, Article 168 & 170",
+   "officialUrl": "https://wb.gov.in",
+   "notes": "Two-phase poll (23 & 29 April 2026) with one seat repolled 21 May 2026; results declared 4 May 2026. BJP won 208 of 294 seats in initial tally per election-results reporting; the assembly's own infobox (post seat adjustments/by-elections) shows Government (BJP) 207, Official Opposition (DTC, the post-defeat breakaway from AITC) 65, and other opposition (MAITC/INC/LF+/CPI(M)/AISF/AJUP) 20, with 2 seats vacant.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026_West_Bengal_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/West_Bengal_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "West Bengal State Election Commission",
+   "parentId": "st-wb",
+   "description": "Independent constitutional body conducting elections to panchayats and municipalities in West Bengal.",
+   "legalBasis": "Constitution of India, Article 243K / 243ZA",
+   "headPositionId": "st-wb-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bengal_State_Election_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-wb-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "West Bengal Public Service Commission",
+   "parentId": "st-wb",
+   "description": "Constitutional body conducting recruitment examinations for the civil services of West Bengal.",
+   "legalBasis": "Constitution of India, Article 315-316",
+   "headPositionId": "st-wb-pos-psc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bengal_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-lokayukta",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "West Bengal Lokayukta",
+   "parentId": "st-wb",
+   "description": "Anti-corruption ombudsman for West Bengal, investigating grievances against public functionaries.",
+   "headPositionId": "st-wb-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bengal_Lokayukta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-shrc",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "West Bengal State Human Rights Commission",
+   "parentId": "st-wb",
+   "description": "Statutory body for the protection and promotion of human rights in West Bengal.",
+   "legalBasis": "Protection of Human Rights Act, 1993",
+   "headPositionId": "st-wb-pos-shrc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bengal_Human_Rights_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-wb-mc-kolkata",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Kolkata Municipal Corporation",
+   "parentId": "st-wb",
+   "description": "Urban local body governing Kolkata city in Kolkata district, West Bengal.",
+   "stats": {
+    "wards": 144,
+    "established": 1876,
+    "lastElection": "2021",
+    "areaKm2": 206.08,
+    "population2011": 4496694
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India",
+    "https://en.wikipedia.org/wiki/Kolkata_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-wb-mc-howrah",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Howrah Municipal Corporation",
+   "parentId": "st-wb",
+   "description": "Urban local body governing Howrah city in Howrah district, West Bengal.",
+   "stats": {
+    "wards": 66,
+    "established": 1980,
+    "lastElection": "2015",
+    "areaKm2": 63.55,
+    "population2011": 1370448
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India",
+    "https://en.wikipedia.org/wiki/Howrah_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-wb-mc-durgapur",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Durgapur Municipal Corporation",
+   "parentId": "st-wb",
+   "description": "Urban local body governing Durgapur city in Paschim Bardhaman district, West Bengal.",
+   "stats": {
+    "wards": 43,
+    "established": 1994,
+    "lastElection": "2017",
+    "areaKm2": 154.2,
+    "population2011": 566517
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India",
+    "https://en.wikipedia.org/wiki/Durgapur_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-wb-mc-asansol",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Asansol Municipal Corporation",
+   "parentId": "st-wb",
+   "description": "Urban local body governing Asansol city in Paschim Bardhaman district, West Bengal.",
+   "stats": {
+    "wards": 106,
+    "established": 1994,
+    "lastElection": "2022",
+    "rulingParty": "AITC",
+    "areaKm2": 326.48,
+    "population2011": 1153138
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India",
+    "https://en.wikipedia.org/wiki/Asansol_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-wb-mc-bidhannagar",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Bidhannagar Municipal Corporation",
+   "parentId": "st-wb",
+   "description": "Urban local body governing Bidhannagar city in North 24 Parganas district, West Bengal.",
+   "stats": {
+    "wards": 41,
+    "established": 2015,
+    "areaKm2": 60.05,
+    "population2011": 632107
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India",
+    "https://en.wikipedia.org/wiki/Bidhannagar_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-wb-mc-siliguri",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Siliguri Municipal Corporation",
+   "parentId": "st-wb",
+   "description": "Urban local body governing Siliguri city in Darjeeling and Jalpaiguri district, West Bengal.",
+   "stats": {
+    "wards": 47,
+    "established": 1994,
+    "areaKm2": 117.45,
+    "population2011": 513264
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India",
+    "https://en.wikipedia.org/wiki/Siliguri_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-wb-mc-chandannagar",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Chandernagore Municipal Corporation",
+   "parentId": "st-wb",
+   "description": "Urban local body governing Chandernagore city in Hooghly district, West Bengal.",
+   "stats": {
+    "wards": 33,
+    "established": 1994,
+    "areaKm2": 22.0,
+    "population2011": 166761
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India",
+    "https://en.wikipedia.org/wiki/Chandernagore_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-as",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Assam",
+   "parentId": "in-states-and-uts",
+   "description": "Assam is a State of India with its capital at Dispur.",
+   "officialUrl": "https://assam.gov.in",
+   "stats": {
+    "population2011": 31205576,
+    "areaKm2": 78438,
+    "lokSabhaSeats": 14,
+    "rajyaSabhaSeats": 7,
+    "assemblySeats": 126,
+    "districts": 35
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Assam",
+   "parentId": "st-as",
+   "description": "The executive government of Assam, headed by the Governor as constitutional head and the Chief Minister as head of government.",
+   "officialUrl": "https://assam.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Assam"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Assam Council of Ministers",
+   "parentId": "st-as-government",
+   "description": "The Council of Ministers of Assam, headed by the Chief Minister, collectively responsible to the Legislative Assembly.",
+   "headPositionId": "st-as-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry",
+    "https://en.wikipedia.org/wiki/2026_Assam_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Assam Legislative Assembly",
+   "parentId": "st-as",
+   "description": "The unicameral state legislature of Assam (126 seats), elected by first-past-the-post for a 5-year term.",
+   "seats": 126,
+   "stats": {
+    "lastElection": "2026-04-09",
+    "nextElectionDue": "2031",
+    "partyStrength": {
+     "BJP": 82,
+     "AGP": 10,
+     "BPF": 10,
+     "INC": 19,
+     "RD": 2,
+     "AIUDF": 2,
+     "MAITC": 1
+    }
+   },
+   "legalBasis": "Constitution of India, Article 168 & 170",
+   "officialUrl": "https://assam.gov.in",
+   "notes": "NDA (BJP+AGP+BPF) won 102 of 126 seats; INC fell to its lowest-ever tally (19, down from 29 in 2021). Turnout ~85.96%.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026_Assam_Legislative_Assembly_election",
+    "https://en.wikipedia.org/wiki/Assam_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Assam State Election Commission",
+   "parentId": "st-as",
+   "description": "Independent constitutional body conducting elections to panchayats and municipalities in Assam.",
+   "legalBasis": "Constitution of India, Article 243K / 243ZA",
+   "headPositionId": "st-as-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_State_Election_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-as-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Assam Public Service Commission",
+   "parentId": "st-as",
+   "description": "Constitutional body conducting recruitment examinations for the civil services of Assam.",
+   "legalBasis": "Constitution of India, Article 315-316",
+   "headPositionId": "st-as-pos-psc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-lokayukta",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "Assam Lokayukta",
+   "parentId": "st-as",
+   "description": "Anti-corruption ombudsman for Assam, investigating grievances against public functionaries.",
+   "headPositionId": "st-as-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-as-shrc",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "Assam State Human Rights Commission",
+   "parentId": "st-as",
+   "description": "Statutory body for the protection and promotion of human rights in Assam.",
+   "legalBasis": "Protection of Human Rights Act, 1993",
+   "headPositionId": "st-as-pos-shrc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_Human_Rights_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-as-mc-guwahati",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Guwahati Municipal Corporation",
+   "parentId": "st-as",
+   "description": "Urban local body governing Guwahati city in Kamrup Metropolitan district, Assam.",
+   "stats": {
+    "wards": 60,
+    "established": 1971,
+    "lastElection": "2022",
+    "rulingParty": "BJP",
+    "areaKm2": 216.0,
+    "population2011": 1260419
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India",
+    "https://en.wikipedia.org/wiki/Guwahati_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-as-mc-dibrugarh",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Dibrugarh Municipal Corporation",
+   "parentId": "st-as",
+   "description": "Urban local body governing Dibrugarh city in Dibrugarh district, Assam.",
+   "stats": {
+    "wards": 22,
+    "established": 2024,
+    "areaKm2": 15.5,
+    "population2011": 258000
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India",
+    "https://en.wikipedia.org/wiki/Dibrugarh_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-as-mc-silchar",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Silchar Municipal Corporation",
+   "parentId": "st-as",
+   "description": "Urban local body governing Silchar city in Cachar district, Assam.",
+   "stats": {
+    "wards": 42,
+    "established": 2024,
+    "areaKm2": 69.7,
+    "population2011": 650000
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India",
+    "https://en.wikipedia.org/wiki/Silchar_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk",
+   "kind": "state",
+   "sector": "federal",
+   "name": "Sikkim",
+   "parentId": "in-states-and-uts",
+   "description": "Sikkim is a State of India with its capital at Gangtok.",
+   "officialUrl": "https://www.sikkim.gov.in",
+   "stats": {
+    "population2011": 610577,
+    "areaKm2": 7096,
+    "lokSabhaSeats": 1,
+    "rajyaSabhaSeats": 1,
+    "assemblySeats": 32,
+    "districts": 6
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sikkim"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Sikkim",
+   "parentId": "st-sk",
+   "description": "The executive government of Sikkim, headed by the Governor as constitutional head and the Chief Minister as head of government.",
+   "officialUrl": "https://www.sikkim.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Sikkim"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Sikkim Council of Ministers",
+   "parentId": "st-sk-government",
+   "description": "The Council of Ministers of Sikkim, headed by the Chief Minister, collectively responsible to the Legislative Assembly.",
+   "headPositionId": "st-sk-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Sikkim Legislative Assembly",
+   "parentId": "st-sk",
+   "description": "The unicameral state legislature of Sikkim (32 seats), elected by first-past-the-post for a 5-year term.",
+   "seats": 32,
+   "stats": {
+    "lastElection": "2024-04-19",
+    "nextElectionDue": "2029",
+    "partyStrength": {
+     "SKM": 32
+    }
+   },
+   "legalBasis": "Constitution of India, Article 168 & 170",
+   "officialUrl": "https://www.sikkim.gov.in",
+   "notes": "SKM holds all 32 seats (including the one Sangha/monastic seat); there is no Leader of Opposition in the 11th Assembly.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sikkim_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Sikkim State Election Commission",
+   "parentId": "st-sk",
+   "description": "Independent constitutional body conducting elections to panchayats and municipalities in Sikkim.",
+   "legalBasis": "Constitution of India, Article 243K / 243ZA",
+   "headPositionId": "st-sk-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sikkim_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Sikkim Public Service Commission",
+   "parentId": "st-sk",
+   "description": "Constitutional body conducting recruitment examinations for the civil services of Sikkim.",
+   "legalBasis": "Constitution of India, Article 315-316",
+   "headPositionId": "st-sk-pos-psc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sikkim_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-lokayukta",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "Sikkim Lokayukta",
+   "parentId": "st-sk",
+   "description": "Anti-corruption ombudsman for Sikkim, investigating grievances against public functionaries.",
+   "headPositionId": "st-sk-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sikkim_Lokayukta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-mc-gangtok",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Gangtok Municipal Corporation",
+   "parentId": "st-sk",
+   "description": "Urban local body governing Gangtok city in East Sikkim district, Sikkim.",
+   "stats": {
+    "wards": 19,
+    "established": 2010,
+    "lastElection": "2026",
+    "rulingParty": "SKM",
+    "areaKm2": 19.02,
+    "population2011": 98658
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India",
+    "https://en.wikipedia.org/wiki/Gangtok_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-wb-pos-governor",
+   "title": "Governor of West Bengal",
+   "orgId": "st-wb-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "R. N. Ravi",
+    "since": "2026-03-12",
+    "party": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/R._N._Ravi",
+    "notes": "Retired IPS officer; previously Governor of Tamil Nadu (2021-2026), Nagaland (2019-2021) and Meghalaya (2019-2020), and Deputy National Security Advisor. Succeeded C. V. Ananda Bose as Governor of West Bengal."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/R._N._Ravi",
+    "https://en.wikipedia.org/wiki/West_Bengal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-chief-minister",
+   "title": "Chief Minister of West Bengal",
+   "orgId": "st-wb-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "holder": {
+    "name": "Suvendu Adhikari",
+    "since": "2026-05-09",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Bhabanipur",
+    "wikipedia": "https://en.wikipedia.org/wiki/Suvendu_Adhikari",
+    "notes": "First BJP Chief Minister of West Bengal, after BJP's landslide win in the April-May 2026 assembly election. Won Bhabanipur, the seat long held by outgoing CM Mamata Banerjee, who lost her own re-election bid there. Also holds Home and Hill Affairs, Land and Land Reforms & Refugee Relief and Rehabilitation, Power, Information and Cultural Affairs, Personnel and Administrative Reforms, and all departments not allotted to other ministers."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry",
+    "https://en.wikipedia.org/wiki/2026_West_Bengal_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-speaker",
+   "title": "Speaker of the West Bengal Legislative Assembly",
+   "orgId": "st-wb-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": null,
+   "holder": {
+    "name": "Rathindra Bose",
+    "since": "2026-05-15",
+    "party": "BJP",
+    "wikipedia": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bengal_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-deputy-speaker",
+   "title": "Deputy Speaker of the West Bengal Legislative Assembly",
+   "orgId": "st-wb-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": null,
+   "holder": null,
+   "vacant": true,
+   "notes": "Not listed in the Assembly's Wikipedia infobox as of the fetched revision; likely still to be elected/vacant.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bengal_Legislative_Assembly"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-wb-pos-leader-of-opposition",
+   "title": "Leader of Opposition, West Bengal Legislative Assembly",
+   "orgId": "st-wb-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": null,
+   "holder": {
+    "name": "Ritabrata Banerjee",
+    "since": "2026-06-03",
+    "party": "DTC",
+    "constituency": "Uluberia Purba",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ritabrata_Banerjee",
+    "notes": "Party abbreviation DTC = Democratic Trinamool Congress, a breakaway faction formed from AITC after its 2026 electoral defeat. Succeeded Sovandeb Chattopadhyay."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ritabrata_Banerjee",
+    "https://en.wikipedia.org/wiki/West_Bengal_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-chief-secretary",
+   "title": "Chief Secretary of West Bengal",
+   "orgId": "st-wb-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Manoj Kumar Agarwal",
+    "notes": "IAS, 1990 IAS batch."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_secretary_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-dgp",
+   "title": "Director General of Police, West Bengal",
+   "orgId": "st-wb-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Siddh Nath Gupta",
+    "acting": true,
+    "notes": "IPS, 1992 IPS batch."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bengal_Police",
+    "https://en.wikipedia.org/wiki/Director_general_of_police"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-sec-commissioner",
+   "title": "State Election Commissioner, West Bengal",
+   "orgId": "st-wb-sec",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "holder": {
+    "name": "Rajiv Sinha",
+    "notes": "Corrected 2026-09-25 re-verification: the WBSEC Wikipedia infobox's 'Chief Electoral Officer' field names Neelam Meena, but that is the ECI-linked CEO office (conducts Lok Sabha/Assembly polls), not the Article-243K State Election Commissioner. The article body text explicitly states 'Rajiv Sinha is the current Chief Commissioner of West Bengal State Election Commission' (four-year term); no exact since-date is given. Previous holder recorded here (Neelam Meena) was the wrong office entirely."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bengal_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-wb-pos-psc-chair",
+   "title": "Chairman, West Bengal Public Service Commission",
+   "orgId": "st-wb-psc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "holder": null,
+   "vacant": true,
+   "notes": "Wikipedia's West Bengal Public Service Commission infobox lists the Chairperson post as Vacant; this could be stale (page undated in the fetched revision) so recorded at low confidence.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bengal_Public_Service_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-wb-pos-lokayukta",
+   "title": "Lokayukta of West Bengal",
+   "orgId": "st-wb-lokayukta",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "holder": {
+    "name": "Rabindranath Samanta",
+    "notes": "Justice (retd.)",
+    "since": "2025-12"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bengal_Lokayukta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-shrc-chair",
+   "title": "Chairperson, West Bengal State Human Rights Commission",
+   "orgId": "st-wb-shrc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "holder": {
+    "name": "Indra Prasanna Mukerji",
+    "notes": "Justice (retd.), former Chief Justice of Meghalaya High Court (3 Oct 2024 - 5 Sep 2025). Corrected 2026-09-25 re-verification: cross-confirmed on two independent Wikipedia pages (West Bengal Human Rights Commission infobox, and his own biography page which states 'Presently he is serving as the Chairperson of the West Bengal Human Rights Commission'). No exact since-date found."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Bengal_Human_Rights_Commission",
+    "https://en.wikipedia.org/wiki/Indra_Prasanna_Mukerji"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-as-pos-governor",
+   "title": "Governor of Assam",
+   "orgId": "st-as-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Lakshman Prasad Acharya",
+    "since": "2024-07-30",
+    "party": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Lakshman_Acharya",
+    "notes": "Unchanged through the 2026 election; assumed office 30 July 2024, succeeding Gulab Chand Kataria."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/Assam"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-chief-minister",
+   "title": "Chief Minister of Assam",
+   "orgId": "st-as-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "holder": {
+    "name": "Himanta Biswa Sarma",
+    "since": "2021-05-10",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "constituency": "Jalukbari",
+    "wikipedia": "https://en.wikipedia.org/wiki/Himanta_Biswa_Sarma",
+    "notes": "Continued as CM after the NDA's landslide win (102/126 seats) in the April 2026 Assam election; the Second Sarma ministry was formed 12 May 2026, an NDA coalition of BJP, Asom Gana Parishad (AGP) and Bodoland People's Front (BPF)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry",
+    "https://en.wikipedia.org/wiki/2026_Assam_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-speaker",
+   "title": "Speaker of the Assam Legislative Assembly",
+   "orgId": "st-as-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": null,
+   "holder": {
+    "name": "Ranjeet Kumar Dass",
+    "since": "2026-05-21",
+    "party": "BJP",
+    "wikipedia": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-deputy-speaker",
+   "title": "Deputy Speaker of the Assam Legislative Assembly",
+   "orgId": "st-as-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": null,
+   "holder": {
+    "name": "Habbey Teron",
+    "since": "2026-06-21",
+    "party": "BJP",
+    "wikipedia": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Assam Legislative Assembly",
+   "orgId": "st-as-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": null,
+   "holder": {
+    "name": "Wazed Ali Choudhury",
+    "since": "2026-05-27",
+    "party": "INC",
+    "constituency": null,
+    "wikipedia": null,
+    "notes": "Deputy Leader of Opposition: Joy Prakash Das (INC), since 2026-05-27."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-chief-secretary",
+   "title": "Chief Secretary of Assam",
+   "orgId": "st-as-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Ravi Kota",
+    "notes": "IAS, 1993 IAS batch."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_secretary_(India)",
+    "https://assam.gov.in/chief-secretary"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-dgp",
+   "title": "Director General of Police, Assam",
+   "orgId": "st-as-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Harmeet Singh",
+    "acting": false,
+    "notes": "IPS, 1992 IPS batch."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_Police",
+    "https://en.wikipedia.org/wiki/Director_general_of_police"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-sec-commissioner",
+   "title": "State Election Commissioner, Assam",
+   "orgId": "st-as-sec",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "holder": null,
+   "vacant": true,
+   "notes": "Assam State Election Commission's Wikipedia infobox does not list a current commissioner; not independently confirmed within available tools.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_State_Election_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-as-pos-psc-chair",
+   "title": "Chairman, Assam Public Service Commission",
+   "orgId": "st-as-psc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "holder": {
+    "name": "Debaraj Upadhaya",
+    "notes": "IPS (Retd.). Corrected 2026-09-25 re-verification: Assam Public Service Commission Wikipedia article names him as Chairman ('As of January 2025, Shri Debaraj Upadhaya, IPS (Retd.) is the commission Chairman'). Source is dated January 2025, ~20 months before this as-of date, so a change since then cannot be ruled out; recorded at medium (not high) confidence and apsc.nic.in could still not be fetched to cross-check (certificate error persists)."
+   },
+   "vacant": false,
+   "notes": "Assam Public Service Commission's current Chairman could not be confirmed (page lacks a populated infobox; apsc.nic.in could not be fetched -- certificate error).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-as-pos-lokayukta",
+   "title": "Lokayukta of Assam",
+   "orgId": "st-as-lokayukta",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "holder": {
+    "name": "Hitesh Kumar Sarma",
+    "notes": "Justice, Upa-Lokayukta (Deputy Lokayukta)"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-as-pos-shrc-chair",
+   "title": "Chairperson, Assam State Human Rights Commission",
+   "orgId": "st-as-shrc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "holder": null,
+   "vacant": true,
+   "notes": "Re-verified 2026-09-25: Wikipedia's infobox names a stale 2011 appointee (Justice Aftab Hussain Saikia) but the article's own composition table lists the Chairman post's 'Current' column as Vacant, confirming the original vacant/low-confidence call was correct rather than a missed holder.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Assam_Human_Rights_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-sk-pos-governor",
+   "title": "Governor of Sikkim",
+   "orgId": "st-sk-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Om Prakash Mathur",
+    "since": "2024-07-31",
+    "party": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Om_Prakash_Mathur",
+    "notes": "Former BJP Rajya Sabha MP from Rajasthan (2008-2014, 2016-2022); succeeded Lakshman Acharya as Governor of Sikkim."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Om_Prakash_Mathur",
+    "https://en.wikipedia.org/wiki/Sikkim"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-chief-minister",
+   "title": "Chief Minister of Sikkim",
+   "orgId": "st-sk-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "holder": {
+    "name": "Prem Singh Tamang",
+    "since": "2019-05-27",
+    "party": "SKM",
+    "house": "Sikkim Legislative Assembly",
+    "constituency": "Rhenock",
+    "wikipedia": "https://en.wikipedia.org/wiki/Prem_Singh_Tamang",
+    "notes": "No Sikkim assembly election occurred in 2025-2026 (last election 2024, next due 2029); the Second Tamang ministry (formed 10 June 2024) remains in office. SKM holds all 32 assembly seats."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Sikkim",
+   "orgId": "st-sk-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": null,
+   "vacant": true,
+   "notes": "Government of Sikkim infobox lists the Deputy Chief Minister post as Vacant.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Sikkim"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-pos-speaker",
+   "title": "Speaker of the Sikkim Legislative Assembly",
+   "orgId": "st-sk-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": null,
+   "holder": {
+    "name": "Mingma Narbu Sherpa",
+    "since": "2024-06-12",
+    "party": "SKM",
+    "wikipedia": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sikkim_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-deputy-speaker",
+   "title": "Deputy Speaker of the Sikkim Legislative Assembly",
+   "orgId": "st-sk-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": null,
+   "holder": {
+    "name": "Raj Kumari Thapa",
+    "since": "2024-06-12",
+    "party": "SKM",
+    "wikipedia": null
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sikkim_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Sikkim Legislative Assembly",
+   "orgId": "st-sk-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": null,
+   "holder": null,
+   "vacant": true,
+   "notes": "No Leader of Opposition: the ruling party holds all seats in this Assembly.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sikkim_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-chief-secretary",
+   "title": "Chief Secretary of Sikkim",
+   "orgId": "st-sk-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "Ravindra Telang",
+    "notes": "IAS, 1995 IAS batch."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Sikkim",
+    "https://en.wikipedia.org/wiki/Chief_secretary_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-dgp",
+   "title": "Director General of Police, Sikkim",
+   "orgId": "st-sk-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "Akshay Sachdeva",
+    "acting": false,
+    "notes": "IPS, 1991 IPS batch."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Director_general_of_police"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-sec-commissioner",
+   "title": "State Election Commissioner, Sikkim",
+   "orgId": "st-sk-sec",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "holder": {
+    "name": "K. C. Lepcha",
+    "notes": "IAS (Retd.), State Election Commissioner. Wikipedia's infobox again lists 'Election Commission of India' as parent department, which conflates the SEC with the ECI's state CEO office; recorded at medium confidence."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sikkim_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-sk-pos-psc-chair",
+   "title": "Chairman, Sikkim Public Service Commission",
+   "orgId": "st-sk-psc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "holder": {
+    "name": "C. P. Tongden",
+    "notes": "Chairman"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sikkim_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-lokayukta",
+   "title": "Lokayukta of Sikkim",
+   "orgId": "st-sk-lokayukta",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "holder": {
+    "name": "A. P. Subba",
+    "notes": "Justice, Lokayukta Chairperson Serves a 5-year term or until age 70, whichever is earlier; term from 2020 due for renewal/reappointment check.",
+    "since": "2020-07-10"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sikkim_Lokayukta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-1",
+   "title": "Minister, North Bengal Development Water Resources Investigation and Development",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Nisith Pramanik",
+    "since": "2026-05-09",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Mathabhanga (SC)",
+    "notes": "Portfolio: North Bengal Development Water Resources Investigation and Development. Lok Sabha constituency covering seat: Cooch Behar."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-2",
+   "title": "Minister, Food and Supplies Co-operation",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Ashok Kirtania",
+    "since": "2026-05-09",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Bangaon Uttar (SC)",
+    "notes": "Portfolio: Food and Supplies Co-operation. Lok Sabha constituency covering seat: Bangaon."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-3",
+   "title": "Minister, Panchayats and Rural Development Agricultural Marketing",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Dilip Ghosh",
+    "since": "2026-05-09",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Kharagpur Sadar",
+    "notes": "Portfolio: Panchayats and Rural Development Agricultural Marketing. Lok Sabha constituency covering seat: Medinipur."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-4",
+   "title": "Minister, Tribal Development Minority Affairs and Madrasah Education",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Kshudiram Tudu",
+    "since": "2026-05-09",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Ranibandh (ST)",
+    "notes": "Portfolio: Tribal Development Minority Affairs and Madrasah Education. Lok Sabha constituency covering seat: Bankura."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-5",
+   "title": "Minister, Urban Development and Municipal Affairs",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Agnimitra Paul",
+    "since": "2026-05-09",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Asansol Dakshin",
+    "notes": "Portfolio: Urban Development and Municipal Affairs. Lok Sabha constituency covering seat: Asansol."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-6",
+   "title": "Minister, School Education Micro, Small & Medium Enterprises and Textiles Housing",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Dipak Barman",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Falakata (SC)",
+    "notes": "Portfolio: School Education Micro, Small & Medium Enterprises and Textiles Housing."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-7",
+   "title": "Cabinet Minister",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Tapas Roy",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Maniktala",
+    "notes": "Portfolio: Industry, Commerce and Enterprises Public Enterprises and Industrial Reconstruction Non-Conventional and Renewable Energy Sources."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-8",
+   "title": "Minister, Parliamentary Affairs Tourism",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Shankar Ghosh",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Siliguri",
+    "notes": "Portfolio: Parliamentary Affairs Tourism."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-9",
+   "title": "Minister, Environment Forests",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Manoj Kumar Oraon",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Kumargram (ST)",
+    "notes": "Portfolio: Environment Forests. Lok Sabha constituency covering seat: Alipurduars (ST)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-10",
+   "title": "Minister, Transport Labour",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Arjun Singh",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Noapara",
+    "notes": "Portfolio: Transport Labour. Lok Sabha constituency covering seat: Barrackpore."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-11",
+   "title": "Minister, Backward Classes Welfare Mass Education Extension and Library Services",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Gouri Shankar Ghosh",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Murshidabad",
+    "notes": "Portfolio: Backward Classes Welfare Mass Education Extension and Library Services. Lok Sabha constituency covering seat: Murshidabad."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-12",
+   "title": "Minister, Higher Education and Technical Education, Training & Skill Development",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Jagannath Chattopadhyay",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Suri",
+    "notes": "Portfolio: Higher Education and Technical Education, Training & Skill Development. Lok Sabha constituency covering seat: Birbhum."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-13",
+   "title": "Minister, Finance",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Swapan Dasgupta",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Rashbehari",
+    "notes": "Portfolio: Finance."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-14",
+   "title": "Cabinet Minister",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Kalyan Chakraborty",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Khardaha",
+    "notes": "Portfolio: Information Technology and Electronics Science and Technology and Bio-Technology Food Processing Industries and Horticulture. Lok Sabha constituency covering seat: Dum Dum."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-15",
+   "title": "Minister, Health and Family Welfare",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Sharadwat Mukherjee",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Bidhannagar",
+    "notes": "Portfolio: Health and Family Welfare. Lok Sabha constituency covering seat: Barasat."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-16",
+   "title": "Minister, Irrigation and Waterways",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Arup Kumar Das",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Kanthi Dakshin",
+    "notes": "Portfolio: Irrigation and Waterways."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-17",
+   "title": "Minister, Public Health Engineering Public Works",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Ajay Kumar Poddar",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Kulti",
+    "notes": "Portfolio: Public Health Engineering Public Works."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-18",
+   "title": "Minister, Agriculture",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Dudh Kumar Mondal",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Mayureswar",
+    "notes": "Portfolio: Agriculture. Lok Sabha constituency covering seat: Bolpur (SC)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-19",
+   "title": "Minister of State",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Malati Rava Roy",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Tufanganj",
+    "notes": "Portfolio: Women and Child Development and Social Welfare Self Help Group and Self Employment Programme Monitoring. Lok Sabha constituency covering seat: Alipurduars (ST)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-20",
+   "title": "Minister, Animal Resources Development Fisheries",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Rajesh Mahata",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Gopiballavpur",
+    "notes": "Portfolio: Animal Resources Development Fisheries."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-21",
+   "title": "Minister, Youth Services and Sports Consumer Affairs",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Indranil Khan",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Behala Paschim",
+    "notes": "Portfolio: Youth Services and Sports Consumer Affairs. Lok Sabha constituency covering seat: Kolkata Dakshin."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-22",
+   "title": "Minister, Tribal Development Irrigation and Waterways",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Joyel Murmu",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Habibpur (ST)",
+    "notes": "Portfolio: Tribal Development Irrigation and Waterways. Lok Sabha constituency covering seat: Maldaha Uttar."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-23",
+   "title": "Minister, Higher Education Technical Education, Training & Skill Development",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Hare Krishna Bera",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Tamluk",
+    "notes": "Portfolio: Higher Education Technical Education, Training & Skill Development. Lok Sabha constituency covering seat: Tamluk."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-24",
+   "title": "Minister, Finance Transport",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Anandamay Barman",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Matigara-Naxalbari (SC)",
+    "notes": "Portfolio: Finance Transport. Lok Sabha constituency covering seat: Darjeeling."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-25",
+   "title": "Minister, Agricultural Marketing Micro, Small & Medium Enterprises and Textiles",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Ashok Dinda",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Moyna",
+    "notes": "Portfolio: Agricultural Marketing Micro, Small & Medium Enterprises and Textiles."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-26",
+   "title": "Minister, Public Works Backward Classes Welfare",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Nadiar Chand Bouri",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Para (SC)",
+    "notes": "Portfolio: Public Works Backward Classes Welfare. Lok Sabha constituency covering seat: Purulia."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-27",
+   "title": "Minister, Home and Hill Affairs Minority Affairs and Madrasah Education",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Bishal Lama",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Kalchini (ST)",
+    "notes": "Portfolio: Home and Hill Affairs Minority Affairs and Madrasah Education."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-28",
+   "title": "Minister, Food and Supplies Panchayats and Rural Development",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Santanu Pramanik",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Bhagabanpur",
+    "notes": "Portfolio: Food and Supplies Panchayats and Rural Development. Lok Sabha constituency covering seat: Kanthi."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-29",
+   "title": "Minister, Industry, Commerce and Enterprises Science and Technology and Biotechnology",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Moumita Biswas Mishra",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Bardhaman Dakshin",
+    "notes": "Portfolio: Industry, Commerce and Enterprises Science and Technology and Biotechnology. Lok Sabha constituency covering seat: Bardhaman–Durgapur."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-30",
+   "title": "Minister, Parliamentary Affairs Urban Development",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Umesh Rai",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Howrah Uttar",
+    "notes": "Portfolio: Parliamentary Affairs Urban Development. Lok Sabha constituency covering seat: Howrah."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-31",
+   "title": "Minister, Information and Cultural Affairs Tourism",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Purnima Chakraborty",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Shyampukur",
+    "notes": "Portfolio: Information and Cultural Affairs Tourism. Lok Sabha constituency covering seat: Kolkata Uttar."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-32",
+   "title": "Minister, School Education Fire and Emergency Services",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Koushik Chowdhury",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Raiganj",
+    "notes": "Portfolio: School Education Fire and Emergency Services."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-33",
+   "title": "Minister, Public Health Engineering Labour",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Bhaskar Bhattacharya",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Sreerampur",
+    "notes": "Portfolio: Public Health Engineering Labour. Lok Sabha constituency covering seat: Sreerampur."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-34",
+   "title": "Minister, Co-operation Environment Forests",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Dibakar Gharami",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Sonamukhi (SC)",
+    "notes": "Portfolio: Co-operation Environment Forests. Lok Sabha constituency covering seat: Bishnupur (SC)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-35",
+   "title": "Minister, Food Processing Industries and Horticulture Agriculture",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Amiya Kisku",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Nayagram (ST)",
+    "notes": "Portfolio: Food Processing Industries and Horticulture Agriculture. Lok Sabha constituency covering seat: Jhargram (ST)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-36",
+   "title": "Minister, Housing",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Kalita Maji",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Ausgram (SC)",
+    "notes": "Portfolio: Housing. Lok Sabha constituency covering seat: Bolpur (SC)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-37",
+   "title": "Minister, Power Non-Conventional and Renewable Energy Sources",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Gargi Das Ghosh",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Kandi",
+    "notes": "Portfolio: Power Non-Conventional and Renewable Energy Sources. Lok Sabha constituency covering seat: Baharampur."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-38",
+   "title": "Minister, Law Judicial North Bengal Development",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Biraj Biswas",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Karandighi",
+    "notes": "Portfolio: Law Judicial North Bengal Development. Lok Sabha constituency covering seat: Raiganj."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-39",
+   "title": "Minister, Land and Land Reforms & Refugee Relief and Rehabilitation Sundarban Affairs",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Dipankar Jana",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Kakdwip",
+    "notes": "Portfolio: Land and Land Reforms & Refugee Relief and Rehabilitation Sundarban Affairs. Lok Sabha constituency covering seat: Mathurapur."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-wb-pos-minister-40",
+   "title": "Minister, Health and Family Welfare",
+   "orgId": "st-wb-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-wb-pos-governor",
+   "onAdviceOf": "st-wb-pos-chief-minister",
+   "holder": {
+    "name": "Sumana Sarkar",
+    "since": "2026-06-01",
+    "party": "BJP",
+    "house": "West Bengal Legislative Assembly",
+    "constituency": "Balagarh (SC)",
+    "notes": "Portfolio: Health and Family Welfare. Lok Sabha constituency covering seat: Hooghly."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-1",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Rameswar Teli",
+    "since": "2026-05-12",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Transformation and Development; Labour Welfare; Tea Tribes and Adivasi Welfare. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-2",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Atul Bora",
+    "since": "2026-05-12",
+    "party": "AGP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Panchayat and Rural Development; Implementation of Assam Accord; Border Protection and Development; Excise. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-3",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Charan Boro",
+    "since": "2026-05-12",
+    "party": "BPF",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Transport; Welfare of Bodoland. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-4",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Ajanta Neog",
+    "since": "2026-05-12",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Women and Child Development; Tourism. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-5",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Pijush Hazarika",
+    "since": "2026-06-05",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Parliamentary Affairs; Agriculture; Irrigation. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-6",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Ashwini Roy Sarkar",
+    "since": "2026-06-05",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Social Justice and Empowerment; Soil Conservation; Welfare of Minorities and Development. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-7",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Ashok Singhal",
+    "since": "2026-06-05",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Health and Family Welfare; Medical Education and Research. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-8",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Bimal Bora",
+    "since": "2026-06-05",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Cultural Affairs; Industries, Commerce and Public Enterprises; Act East Policy Affairs. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-9",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Biswajit Daimary",
+    "since": "2026-06-05",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Handloom, Textiles and Sericulture; Sports and Youth Welfare; Skill, Employment and Entrepreneurship; Indigenous and Tribal Faith and Culture. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-10",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Jayanta Malla Baruah",
+    "since": "2026-06-05",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Finance; Environment and Forest; Mines and Minerals. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-11",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Kaushik Rai",
+    "since": "2026-06-05",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Food, Public Distribution and Consumer Affairs; Housing and Urban Affairs; Cooperation. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-12",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Keshab Mahanta",
+    "since": "2026-06-05",
+    "party": "AGP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Revenue and Disaster Management; Science, Technology and Climate Change; General Administration. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-13",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Krishnendu Paul",
+    "since": "2026-06-05",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Public Health Engineering; Hill Areas Development; Barak Valley Development. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-14",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Nilima Devi",
+    "since": "2026-06-05",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Animal Husbandry and Veterinary; Fisheries. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-15",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Ranoj Pegu",
+    "since": "2026-06-05",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: School Education; Higher Education; Tribal Affairs (Plains); Information Technology. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-as-pos-minister-16",
+   "title": "Cabinet Minister",
+   "orgId": "st-as-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-as-pos-governor",
+   "onAdviceOf": "st-as-pos-chief-minister",
+   "holder": {
+    "name": "Sushanta Borgohain",
+    "since": "2026-06-05",
+    "party": "BJP",
+    "house": "Assam Legislative Assembly",
+    "notes": "Portfolio: Water Resources; Judicial. No cabinet/MoS rank distinction is published for the Second Sarma ministry's member table; all are recorded as cabinet_minister rank."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-minister-1",
+   "title": "Cabinet Minister",
+   "orgId": "st-sk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "Sonam Lama",
+    "since": "2024-06-10",
+    "party": "SKM",
+    "house": "Sikkim Legislative Assembly",
+    "constituency": "Sangha",
+    "notes": "Portfolio: Public Health Engineering; Water Resources; Ecclesiastical Department(s)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-minister-2",
+   "title": "Cabinet Minister",
+   "orgId": "st-sk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "Arun Kumar Upreti",
+    "since": "2024-06-10",
+    "party": "SKM",
+    "house": "Sikkim Legislative Assembly",
+    "constituency": "Arithang",
+    "notes": "Portfolio: Rural Development; Cooperation Department(s)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-minister-3",
+   "title": "Cabinet Minister",
+   "orgId": "st-sk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "Samdup Lepcha",
+    "since": "2024-06-10",
+    "party": "SKM",
+    "house": "Sikkim Legislative Assembly",
+    "constituency": "Lachen-Mangan",
+    "notes": "Portfolio: Social Welfare; Women and Child Development; Printing and Stationery Department(s)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-minister-4",
+   "title": "Cabinet Minister",
+   "orgId": "st-sk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "Bhim Hang Limboo",
+    "since": "2024-06-10",
+    "party": "SKM",
+    "house": "Sikkim Legislative Assembly",
+    "constituency": "Yangthang",
+    "notes": "Portfolio: Buildings & Housing; Labour Department(s)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-minister-5",
+   "title": "Cabinet Minister",
+   "orgId": "st-sk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "Bhoj Raj Rai",
+    "since": "2024-06-10",
+    "party": "SKM",
+    "house": "Sikkim Legislative Assembly",
+    "constituency": "Poklok-Kamrang",
+    "notes": "Portfolio: Urban Development; Food & Civil Supplies Department(s)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-minister-6",
+   "title": "Cabinet Minister",
+   "orgId": "st-sk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "G.T. Dhungel",
+    "since": "2024-06-10",
+    "party": "SKM",
+    "house": "Sikkim Legislative Assembly",
+    "constituency": "Upper Tadong",
+    "notes": "Portfolio: Health & Family Welfare; Culture Department(s)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-minister-7",
+   "title": "Cabinet Minister",
+   "orgId": "st-sk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "Puran Kumar Gurung",
+    "since": "2024-06-10",
+    "party": "SKM",
+    "house": "Sikkim Legislative Assembly",
+    "constituency": "Chujachen",
+    "notes": "Portfolio: Agriculture; Horticulture; Animal Husbandry & Veterinary Services; Fisheries Development Department(s)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-minister-8",
+   "title": "Cabinet Minister",
+   "orgId": "st-sk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "Pintso Namgyal Lepcha",
+    "since": "2024-06-10",
+    "party": "SKM",
+    "house": "Sikkim Legislative Assembly",
+    "constituency": "Djongu",
+    "notes": "Portfolio: Forest & Environment; Mines and Geology; Science & Technology Department(s)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-minister-9",
+   "title": "Cabinet Minister",
+   "orgId": "st-sk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "Nar Bahadur Dahal",
+    "since": "2024-06-10",
+    "party": "SKM",
+    "house": "Sikkim Legislative Assembly",
+    "constituency": "Khamdong-Singtam",
+    "notes": "Portfolio: Roads & Bridges Department(s)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-minister-10",
+   "title": "Cabinet Minister",
+   "orgId": "st-sk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "Raju Basnet",
+    "since": "2024-06-10",
+    "party": "SKM",
+    "house": "Sikkim Legislative Assembly",
+    "constituency": "Namchaybong",
+    "notes": "Portfolio: Education; Sports & Youth Affairs; Law; Parliamentary Affairs Department(s)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-sk-pos-minister-11",
+   "title": "Cabinet Minister",
+   "orgId": "st-sk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-sk-pos-governor",
+   "onAdviceOf": "st-sk-pos-chief-minister",
+   "holder": {
+    "name": "Tshering Thendup Bhutia",
+    "since": "2024-06-10",
+    "party": "SKM",
+    "house": "Sikkim Legislative Assembly",
+    "constituency": "Yoksam-Tashiding",
+    "notes": "Portfolio: Tourism and Civil Aviation; Commerce & Industries Department(s)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-president",
+   "to": "st-wb-pos-governor",
+   "type": "appoints",
+   "basis": "Constitution of India, Article 155",
+   "source": "https://en.wikipedia.org/wiki/R._N._Ravi"
+  },
+  {
+   "from": "st-wb-pos-governor",
+   "to": "st-wb-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Constitution of India, Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Suvendu_Adhikari_ministry"
+  },
+  {
+   "from": "st-wb-pos-governor",
+   "to": "st-wb-pos-chief-secretary",
+   "type": "appoints",
+   "source": "https://en.wikipedia.org/wiki/Chief_secretary_(India)"
+  },
+  {
+   "from": "st-wb-pos-governor",
+   "to": "st-wb-pos-sec-commissioner",
+   "type": "appoints",
+   "basis": "Constitution of India, Article 243K",
+   "source": "https://en.wikipedia.org/wiki/West_Bengal_State_Election_Commission"
+  },
+  {
+   "from": "st-wb-pos-governor",
+   "to": "st-wb-pos-psc-chair",
+   "type": "appoints",
+   "basis": "Constitution of India, Article 316",
+   "source": "https://en.wikipedia.org/wiki/West_Bengal_Public_Service_Commission"
+  },
+  {
+   "from": "st-wb-pos-governor",
+   "to": "st-wb-pos-lokayukta",
+   "type": "appoints",
+   "source": "https://en.wikipedia.org/wiki/West_Bengal_Lokayukta"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-wb-assembly",
+   "type": "elects",
+   "basis": "Constitution of India, Article 170"
+  },
+  {
+   "from": "st-wb-council-of-ministers",
+   "to": "st-wb-assembly",
+   "type": "accountable_to",
+   "basis": "Constitution of India, Article 164(2)"
+  },
+  {
+   "from": "st-wb-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Constitution of India, Article 80"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-as-pos-governor",
+   "type": "appoints",
+   "basis": "Constitution of India, Article 155",
+   "source": "https://en.wikipedia.org/wiki/Assam_Legislative_Assembly"
+  },
+  {
+   "from": "st-as-pos-governor",
+   "to": "st-as-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Constitution of India, Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Sarma_ministry"
+  },
+  {
+   "from": "st-as-pos-governor",
+   "to": "st-as-pos-chief-secretary",
+   "type": "appoints",
+   "source": "https://en.wikipedia.org/wiki/Chief_secretary_(India)"
+  },
+  {
+   "from": "st-as-pos-governor",
+   "to": "st-as-pos-sec-commissioner",
+   "type": "appoints",
+   "basis": "Constitution of India, Article 243K",
+   "source": "https://en.wikipedia.org/wiki/Assam_State_Election_Commission"
+  },
+  {
+   "from": "st-as-pos-governor",
+   "to": "st-as-pos-psc-chair",
+   "type": "appoints",
+   "basis": "Constitution of India, Article 316",
+   "source": "https://en.wikipedia.org/wiki/Assam_Public_Service_Commission"
+  },
+  {
+   "from": "st-as-pos-governor",
+   "to": "st-as-pos-lokayukta",
+   "type": "appoints",
+   "source": "https://en.wikipedia.org/wiki/Assam_Lokayukta"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-as-assembly",
+   "type": "elects",
+   "basis": "Constitution of India, Article 170"
+  },
+  {
+   "from": "st-as-council-of-ministers",
+   "to": "st-as-assembly",
+   "type": "accountable_to",
+   "basis": "Constitution of India, Article 164(2)"
+  },
+  {
+   "from": "st-as-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Constitution of India, Article 80"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-sk-pos-governor",
+   "type": "appoints",
+   "basis": "Constitution of India, Article 155",
+   "source": "https://en.wikipedia.org/wiki/Om_Prakash_Mathur"
+  },
+  {
+   "from": "st-sk-pos-governor",
+   "to": "st-sk-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Constitution of India, Article 164(1)",
+   "source": "https://en.wikipedia.org/wiki/Second_Tamang_ministry"
+  },
+  {
+   "from": "st-sk-pos-governor",
+   "to": "st-sk-pos-chief-secretary",
+   "type": "appoints",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Sikkim"
+  },
+  {
+   "from": "st-sk-pos-governor",
+   "to": "st-sk-pos-sec-commissioner",
+   "type": "appoints",
+   "basis": "Constitution of India, Article 243K",
+   "source": "https://en.wikipedia.org/wiki/Sikkim_State_Election_Commission"
+  },
+  {
+   "from": "st-sk-pos-governor",
+   "to": "st-sk-pos-psc-chair",
+   "type": "appoints",
+   "basis": "Constitution of India, Article 316",
+   "source": "https://en.wikipedia.org/wiki/Sikkim_Public_Service_Commission"
+  },
+  {
+   "from": "st-sk-pos-governor",
+   "to": "st-sk-pos-lokayukta",
+   "type": "appoints",
+   "source": "https://en.wikipedia.org/wiki/Sikkim_Lokayukta"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-sk-assembly",
+   "type": "elects",
+   "basis": "Constitution of India, Article 170"
+  },
+  {
+   "from": "st-sk-council-of-ministers",
+   "to": "st-sk-assembly",
+   "type": "accountable_to",
+   "basis": "Constitution of India, Article 164(2)"
+  },
+  {
+   "from": "st-sk-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Constitution of India, Article 80"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-12",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-13",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-14",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-15",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-16",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-17",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-18",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-19",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-20",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-21",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-22",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-23",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-24",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-25",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-26",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-27",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-28",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-29",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-30",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-31",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-32",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-33",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-34",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-35",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-36",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-37",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-38",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-39",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-chief-minister",
+   "to": "st-wb-pos-minister-40",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-12",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-13",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-14",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-15",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-as-pos-chief-minister",
+   "to": "st-as-pos-minister-16",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-sk-pos-chief-minister",
+   "to": "st-sk-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Constitution of India, Article 164(1)"
+  },
+  {
+   "from": "st-wb-pos-governor",
+   "to": "st-wb-pos-shrc-chair",
+   "type": "appoints",
+   "basis": "Protection of Human Rights Act, 1993, Section 22",
+   "source": "https://en.wikipedia.org/wiki/West_Bengal_Human_Rights_Commission"
+  },
+  {
+   "from": "st-as-pos-governor",
+   "to": "st-as-pos-shrc-chair",
+   "type": "appoints",
+   "basis": "Protection of Human Rights Act, 1993, Section 22",
+   "source": "https://en.wikipedia.org/wiki/Assam_Human_Rights_Commission"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 47,
+  "corrections": [
+   "st-wb-pos-sec-commissioner: corrected holder from 'Neelam Meena' (wrong office - CEO not SEC) to 'Rajiv Sinha' (actual WB State Election Commissioner per WBSEC Wikipedia article body text); confidence low->medium",
+   "st-wb-pos-shrc-chair: corrected from vacant/unconfirmed to holder 'Indra Prasanna Mukerji', cross-verified on two independent Wikipedia pages; confidence low->medium, vacant true->false",
+   "st-as-pos-psc-chair: corrected from vacant/unconfirmed to holder 'Debaraj Upadhaya' (Chairman, sourced 'as of January 2025'); confidence low->medium, vacant true->false, flagged for potential staleness since source is ~20 months old",
+   "st-wb-pos-lokayukta: added since date '2025-12' (Rabindranath Samanta appointed December 2025, per Wikipedia)",
+   "st-sk-pos-lokayukta: added since date '2020-07-10' for A. P. Subba, confirmed via fresh fetch of Sikkim Lokayukta Wikipedia page",
+   "st-as-pos-shrc-chair: no holder change (remains vacant/low confidence) but added a note confirming the infobox's 2011 name is stale and the article's composition table itself lists the post as Vacant, per fresh 2026-09-25 re-check",
+   "added 2 missing 'appoints' relations (Governor -> SHRC Chair) for West Bengal and Assam, for consistency with the file's existing Lokayukta/PSC/SEC appointment relations"
+  ]
+ }
+}

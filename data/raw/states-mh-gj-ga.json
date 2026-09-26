@@ -1,0 +1,3679 @@
+{
+ "segment": "states-mh-gj-ga",
+ "asOf": "2026-09-25",
+ "notes": "Segment covers Maharashtra, Gujarat, Goa in full per SCHEMA/MINISTRIES ownership rules. Key verified 2025-26 changes: Maharashtra Governor changed to Jishnu Dev Varma (10 Mar 2026); Deputy CM Ajit Pawar died in an air-charter crash 28 Jan 2026 and was succeeded as Deputy CM by his wife Sunetra Pawar (31 Jan 2026), who also became NCP national president (26 Feb 2026) — corroborated independently on both the Ajit Pawar and Sunetra Pawar Wikipedia pages, flagged here given its unusual and high-impact nature. Goa Governor changed to Ashok Gajapathi Raju (26 Jul 2025). Gujarat Governor Acharya Devvrat's tenure (since 2019) could not be independently reconfirmed against a 2025-26 source; flagged medium confidence in case of an unreported transfer. Gujarat gained a Deputy CM (Harsh Sanghavi, 17 Oct 2025) and a new district, Vav-Tharad (2 Oct 2025, carved from Banaskantha), raising its district count to 34. Maharashtra minister Dhananjay Munde resigned from the cabinet (Food & Civil Supplies) on 4 March 2025 amid the Beed sarpanch-murder political fallout, confirmed via Wikipedia; he is correctly omitted from the active minister list. (A later reshuffle around 20 May 2025 is when Chhagan Bhujbal is understood to have taken over the Food & Civil Supplies portfolio.) GAPS / lower-confidence areas: (1) Individual Wikipedia URLs were verified only for top office-holders (Governors, CMs, Deputy CMs, Speakers, a few others) — not for the ~50 rank-and-file cabinet/MoS ministers, to avoid inventing unverified links; a follow-up pass should add these. (2) Chief Secretary appointment dates for Gujarat and Goa, MPSC/GPSC/Goa PSC chair appointment dates, and Goa's DGP name could not be confirmed from available sources. (3) Maharashtra, Gujarat and Goa State Human Rights Commission chair tenures are low confidence (thin sourcing). (4) Mayors were resolved only for Panaji (Goa's single municipal corporation); Mumbai's BMC and other Maharashtra/Gujarat corporations have had no elected mayor/corporators since their last councils' terms expired (elections repeatedly postponed) — administrator rule — so no mayor holder was recorded for them; this should be confirmed and made explicit per corporation in a follow-up pass. (5) Maharashtra Deputy Chairman of the Legislative Council and LoP-in-Council are thinly sourced. (6) WebSearch was unavailable for this run (session budget exhausted); all research used WebFetch against Wikipedia pages plus stable general knowledge for uncontested figures (seat counts, etc.) — a follow-up pass should cross-check against PIB/official state portals per the schema's preferred-source order.",
+ "entities": [
+  {
+   "id": "st-mh",
+   "kind": "state",
+   "name": "Maharashtra",
+   "parentId": "in-states-and-uts",
+   "aliases": [
+    "Maharashtra State"
+   ],
+   "description": "India's second-most populous state and its largest state economy; home to Mumbai, the country's financial capital.",
+   "officialUrl": "https://www.maharashtra.gov.in",
+   "stats": {
+    "population2011": 112374333,
+    "areaKm2": 307713,
+    "lokSabhaSeats": 48,
+    "rajyaSabhaSeats": 19,
+    "assemblySeats": 288,
+    "legislativeCouncilSeats": 78,
+    "districts": 36
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mh-government",
+   "kind": "state_government",
+   "name": "Government of Maharashtra",
+   "parentId": "st-mh",
+   "headPositionId": "st-mh-pos-chief-minister",
+   "adminHeadPositionId": "st-mh-pos-chief-secretary",
+   "description": "The executive government of Maharashtra, headed by the Chief Minister and responsible to the Legislative Assembly; served by the Bombay High Court (in-hc-bombay) with benches at Nagpur, Chhatrapati Sambhajinagar and Panaji (Goa).",
+   "officialUrl": "https://www.maharashtra.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Maharashtra"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mh-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "name": "Maharashtra Council of Ministers",
+   "parentId": "st-mh-government",
+   "description": "The council of ministers advising the Governor of Maharashtra, collectively responsible to the Legislative Assembly.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mh-assembly",
+   "kind": "state_legislature",
+   "name": "Maharashtra Legislative Assembly",
+   "nameHi": "महाराष्ट्र विधानसभा",
+   "abbr": "Vidhan Sabha",
+   "parentId": "st-mh",
+   "seats": 288,
+   "description": "The lower and directly-elected house of the Maharashtra state legislature.",
+   "stats": {
+    "lastElection": "2024-11-20",
+    "nextDue": "2029",
+    "term": "5 years",
+    "partyWise": {
+     "BJP": 132,
+     "Shiv Sena": 57,
+     "NCP": 41,
+     "Others (Maha Yuti)": 7,
+     "Shiv Sena (UBT)": 20,
+     "INC": 16,
+     "NCP (SP)": 10,
+     "Others (MVA: CPI(M), PWP)": 2,
+     "SP/AIMIM/Others": 3
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mh-legislative-council",
+   "kind": "state_chamber",
+   "name": "Maharashtra Legislative Council",
+   "nameHi": "महाराष्ट्र विधान परिषद",
+   "abbr": "Vidhan Parishad",
+   "parentId": "st-mh",
+   "seats": 78,
+   "description": "The upper, permanent (non-dissoluble) house of the Maharashtra legislature; 66 members elected (by MLAs, local authorities, teachers' and graduates' constituencies) and 12 nominated by the Governor, one-third retiring every two years.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_Legislative_Council"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mh-sec",
+   "kind": "state_commission",
+   "name": "Maharashtra State Election Commission",
+   "parentId": "st-mh",
+   "description": "Constitutional body (Article 243K/243ZA) that conducts elections to municipal corporations, municipal councils, panchayats and other local bodies in Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_State_Election_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mh-psc",
+   "kind": "state_commission",
+   "name": "Maharashtra Public Service Commission",
+   "abbr": "MPSC",
+   "parentId": "st-mh",
+   "description": "Constitutional body (Article 315) that conducts recruitment examinations for the Maharashtra civil services.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_Public_Service_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mh-lokayukta",
+   "kind": "statutory_body",
+   "name": "Lokayukta of Maharashtra",
+   "parentId": "st-mh",
+   "description": "State anti-corruption ombudsman investigating grievances against public officials, constituted under the Maharashtra Lokayukta and Upa-Lokayuktas Act, 1971 (superseded by the Maharashtra Lokayukta Act, 2022).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mh-shrc",
+   "kind": "statutory_body",
+   "name": "Maharashtra State Human Rights Commission",
+   "abbr": "MSHRC",
+   "parentId": "st-mh",
+   "description": "Statutory body under the Protection of Human Rights Act, 1993 that investigates human-rights violations in Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra"
+   ],
+   "confidence": "low",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mh-mc-brihanmumbai",
+   "kind": "municipal_corporation",
+   "name": "Brihanmumbai Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [
+    "BMC",
+    "MCGM"
+   ],
+   "hq": "Greater Mumbai",
+   "description": "Urban local body governing Greater Mumbai, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-thane",
+   "kind": "municipal_corporation",
+   "name": "Thane Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Thane",
+   "description": "Urban local body governing Thane, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-navi-mumbai",
+   "kind": "municipal_corporation",
+   "name": "Navi Mumbai Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [
+    "NMMC"
+   ],
+   "hq": "Navi Mumbai",
+   "description": "Urban local body governing Navi Mumbai, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-kalyan-dombivli",
+   "kind": "municipal_corporation",
+   "name": "Kalyan-Dombivli Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [
+    "KDMC"
+   ],
+   "hq": "Kalyan-Dombivli",
+   "description": "Urban local body governing Kalyan-Dombivli, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-ulhasnagar",
+   "kind": "municipal_corporation",
+   "name": "Ulhasnagar Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Ulhasnagar",
+   "description": "Urban local body governing Ulhasnagar, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-bhiwandi-nizampur",
+   "kind": "municipal_corporation",
+   "name": "Bhiwandi-Nizampur City Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Bhiwandi",
+   "description": "Urban local body governing Bhiwandi, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-mira-bhayandar",
+   "kind": "municipal_corporation",
+   "name": "Mira-Bhayandar Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Mira-Bhayandar",
+   "description": "Urban local body governing Mira-Bhayandar, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-vasai-virar",
+   "kind": "municipal_corporation",
+   "name": "Vasai-Virar City Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Vasai-Virar",
+   "description": "Urban local body governing Vasai-Virar, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-panvel",
+   "kind": "municipal_corporation",
+   "name": "Panvel Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Panvel",
+   "description": "Urban local body governing Panvel, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-pune",
+   "kind": "municipal_corporation",
+   "name": "Pune Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [
+    "PMC"
+   ],
+   "hq": "Pune",
+   "description": "Urban local body governing Pune, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-pimpri-chinchwad",
+   "kind": "municipal_corporation",
+   "name": "Pimpri-Chinchwad Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [
+    "PCMC"
+   ],
+   "hq": "Pimpri-Chinchwad",
+   "description": "Urban local body governing Pimpri-Chinchwad, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-solapur",
+   "kind": "municipal_corporation",
+   "name": "Solapur Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Solapur",
+   "description": "Urban local body governing Solapur, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-kolhapur",
+   "kind": "municipal_corporation",
+   "name": "Kolhapur Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Kolhapur",
+   "description": "Urban local body governing Kolhapur, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-sangli-miraj-kupwad",
+   "kind": "municipal_corporation",
+   "name": "Sangli, Miraj and Kupwad City Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Sangli",
+   "description": "Urban local body governing Sangli, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-ichalkaranji",
+   "kind": "municipal_corporation",
+   "name": "Ichalkaranji Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Ichalkaranji",
+   "description": "Urban local body governing Ichalkaranji, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-nashik",
+   "kind": "municipal_corporation",
+   "name": "Nashik Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Nashik",
+   "description": "Urban local body governing Nashik, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-malegaon",
+   "kind": "municipal_corporation",
+   "name": "Malegaon Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Malegaon",
+   "description": "Urban local body governing Malegaon, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-dhule",
+   "kind": "municipal_corporation",
+   "name": "Dhule Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Dhule",
+   "description": "Urban local body governing Dhule, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-jalgaon",
+   "kind": "municipal_corporation",
+   "name": "Jalgaon City Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Jalgaon",
+   "description": "Urban local body governing Jalgaon, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-ahmednagar",
+   "kind": "municipal_corporation",
+   "name": "Ahmednagar Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Ahmednagar (Ahilyanagar)",
+   "description": "Urban local body governing Ahmednagar (Ahilyanagar), Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-chhatrapati-sambhajinagar",
+   "kind": "municipal_corporation",
+   "name": "Chhatrapati Sambhajinagar Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [
+    "Aurangabad Municipal Corporation"
+   ],
+   "hq": "Chhatrapati Sambhajinagar",
+   "description": "Urban local body governing Chhatrapati Sambhajinagar, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-jalna",
+   "kind": "municipal_corporation",
+   "name": "Jalna City Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Jalna",
+   "description": "Urban local body governing Jalna, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-nanded-waghala",
+   "kind": "municipal_corporation",
+   "name": "Nanded-Waghala City Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Nanded",
+   "description": "Urban local body governing Nanded, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-latur",
+   "kind": "municipal_corporation",
+   "name": "Latur City Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Latur",
+   "description": "Urban local body governing Latur, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-parbhani",
+   "kind": "municipal_corporation",
+   "name": "Parbhani City Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Parbhani",
+   "description": "Urban local body governing Parbhani, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-amravati",
+   "kind": "municipal_corporation",
+   "name": "Amravati Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Amravati",
+   "description": "Urban local body governing Amravati, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-akola",
+   "kind": "municipal_corporation",
+   "name": "Akola Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Akola",
+   "description": "Urban local body governing Akola, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-nagpur",
+   "kind": "municipal_corporation",
+   "name": "Nagpur Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Nagpur",
+   "description": "Urban local body governing Nagpur, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-mc-chandrapur",
+   "kind": "municipal_corporation",
+   "name": "Chandrapur City Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-mh",
+   "aliases": [],
+   "hq": "Chandrapur",
+   "description": "Urban local body governing Chandrapur, Maharashtra.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj",
+   "kind": "state",
+   "name": "Gujarat",
+   "parentId": "in-states-and-uts",
+   "description": "Western coastal state, India's leading industrial and port state, with the longest coastline of any state.",
+   "officialUrl": "https://gujaratindia.gov.in",
+   "stats": {
+    "population2011": 60439692,
+    "areaKm2": 196024,
+    "lokSabhaSeats": 26,
+    "rajyaSabhaSeats": 11,
+    "assemblySeats": 182,
+    "districts": 34
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-gj-government",
+   "kind": "state_government",
+   "name": "Government of Gujarat",
+   "parentId": "st-gj",
+   "headPositionId": "st-gj-pos-chief-minister",
+   "adminHeadPositionId": "st-gj-pos-chief-secretary",
+   "description": "The executive government of Gujarat, headed by the Chief Minister and responsible to the Legislative Assembly; served by the Gujarat High Court (in-hc-gujarat) at Ahmedabad.",
+   "officialUrl": "https://gujaratindia.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-gj-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "name": "Gujarat Council of Ministers",
+   "parentId": "st-gj-government",
+   "description": "The council of ministers advising the Governor of Gujarat, collectively responsible to the Legislative Assembly.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-gj-assembly",
+   "kind": "state_legislature",
+   "name": "Gujarat Legislative Assembly",
+   "nameHi": "गुजरात विधानસભા",
+   "abbr": "Vidhan Sabha",
+   "parentId": "st-gj",
+   "seats": 182,
+   "description": "The unicameral state legislature of Gujarat (Gujarat has no Legislative Council).",
+   "stats": {
+    "lastElection": "2022-12-01",
+    "nextDue": "2027",
+    "term": "5 years",
+    "partyWise": {
+     "BJP": 162,
+     "INC": 12,
+     "AAP": 4,
+     "Independent": 2,
+     "Samajwadi Party": 1,
+     "Independent (Opposition)": 1
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-gj-sec",
+   "kind": "state_commission",
+   "name": "Gujarat State Election Commission",
+   "parentId": "st-gj",
+   "description": "Constitutional body (Article 243K/243ZA) that conducts elections to Gujarat's municipal corporations, municipalities and panchayats.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat_State_Election_Commission"
+   ],
+   "confidence": "low",
+   "sector": "federal"
+  },
+  {
+   "id": "st-gj-psc",
+   "kind": "state_commission",
+   "name": "Gujarat Public Service Commission",
+   "abbr": "GPSC",
+   "parentId": "st-gj",
+   "description": "Constitutional body (Article 315) that conducts recruitment examinations for Gujarat's civil services.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat_Public_Service_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-gj-lokayukta",
+   "kind": "statutory_body",
+   "name": "Lokayukta of Gujarat",
+   "parentId": "st-gj",
+   "description": "State anti-corruption ombudsman for Gujarat, constituted under the Gujarat Lokayukta Act, 1986.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat_Lokayukta"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-gj-shrc",
+   "kind": "statutory_body",
+   "name": "Gujarat State Human Rights Commission",
+   "abbr": "GSHRC",
+   "parentId": "st-gj",
+   "description": "Statutory body under the Protection of Human Rights Act, 1993 that investigates human-rights violations in Gujarat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat"
+   ],
+   "confidence": "low",
+   "sector": "federal"
+  },
+  {
+   "id": "st-gj-mc-ahmedabad",
+   "kind": "municipal_corporation",
+   "name": "Ahmedabad Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-gj",
+   "aliases": [
+    "AMC"
+   ],
+   "hq": "Ahmedabad",
+   "description": "Urban local body governing Ahmedabad, Gujarat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Category:Municipal_corporations_in_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-mc-surat",
+   "kind": "municipal_corporation",
+   "name": "Surat Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-gj",
+   "aliases": [
+    "SMC"
+   ],
+   "hq": "Surat",
+   "description": "Urban local body governing Surat, Gujarat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Category:Municipal_corporations_in_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-mc-vadodara",
+   "kind": "municipal_corporation",
+   "name": "Vadodara Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-gj",
+   "aliases": [
+    "VMC"
+   ],
+   "hq": "Vadodara",
+   "description": "Urban local body governing Vadodara, Gujarat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Category:Municipal_corporations_in_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-mc-rajkot",
+   "kind": "municipal_corporation",
+   "name": "Rajkot Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-gj",
+   "aliases": [
+    "RMC"
+   ],
+   "hq": "Rajkot",
+   "description": "Urban local body governing Rajkot, Gujarat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Category:Municipal_corporations_in_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-mc-bhavnagar",
+   "kind": "municipal_corporation",
+   "name": "Bhavnagar Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-gj",
+   "aliases": [],
+   "hq": "Bhavnagar",
+   "description": "Urban local body governing Bhavnagar, Gujarat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Category:Municipal_corporations_in_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-mc-jamnagar",
+   "kind": "municipal_corporation",
+   "name": "Jamnagar Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-gj",
+   "aliases": [],
+   "hq": "Jamnagar",
+   "description": "Urban local body governing Jamnagar, Gujarat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Category:Municipal_corporations_in_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-mc-junagadh",
+   "kind": "municipal_corporation",
+   "name": "Junagadh Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-gj",
+   "aliases": [],
+   "hq": "Junagadh",
+   "description": "Urban local body governing Junagadh, Gujarat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Category:Municipal_corporations_in_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-mc-gandhinagar",
+   "kind": "municipal_corporation",
+   "name": "Gandhinagar Municipal Corporation",
+   "sector": "local",
+   "parentId": "st-gj",
+   "aliases": [],
+   "hq": "Gandhinagar",
+   "description": "Urban local body governing Gandhinagar, Gujarat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Category:Municipal_corporations_in_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga",
+   "kind": "state",
+   "name": "Goa",
+   "parentId": "in-states-and-uts",
+   "description": "India's smallest state by area, on the west coast; a former Portuguese colony merged into India in 1961 and made a full state in 1987.",
+   "officialUrl": "https://www.goa.gov.in",
+   "stats": {
+    "population2011": 1458545,
+    "areaKm2": 3702,
+    "lokSabhaSeats": 2,
+    "rajyaSabhaSeats": 1,
+    "assemblySeats": 40,
+    "districts": 2
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ga-government",
+   "kind": "state_government",
+   "name": "Government of Goa",
+   "parentId": "st-ga",
+   "headPositionId": "st-ga-pos-chief-minister",
+   "adminHeadPositionId": "st-ga-pos-chief-secretary",
+   "description": "The executive government of Goa, headed by the Chief Minister and responsible to the Legislative Assembly; served by the Bombay High Court's Goa bench at Panaji (in-hc-bombay).",
+   "officialUrl": "https://www.goa.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ga-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "name": "Goa Council of Ministers",
+   "parentId": "st-ga-government",
+   "description": "The council of ministers advising the Governor of Goa, collectively responsible to the Legislative Assembly.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ga-assembly",
+   "kind": "state_legislature",
+   "name": "Goa Legislative Assembly",
+   "parentId": "st-ga",
+   "seats": 40,
+   "description": "The unicameral state legislature of Goa.",
+   "stats": {
+    "lastElection": "2022-02-14",
+    "nextDue": "2027",
+    "term": "5 years",
+    "partyWise": {
+     "BJP": 26,
+     "INC": 3,
+     "MGP": 2,
+     "AAP": 2,
+     "Independent": 3,
+     "GFP": 1,
+     "RGP": 1,
+     "Vacant": 2
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ga-sec",
+   "kind": "state_commission",
+   "name": "Goa State Election Commission",
+   "parentId": "st-ga",
+   "description": "Constitutional body (Article 243K/243ZA) that conducts elections to Goa's municipal councils, the Corporation of the City of Panaji, and panchayats.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_State_Election_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ga-psc",
+   "kind": "state_commission",
+   "name": "Goa Public Service Commission",
+   "abbr": "GPSC",
+   "parentId": "st-ga",
+   "description": "Constitutional body (Article 315) that conducts recruitment examinations for Goa's civil services.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Public_Service_Commission"
+   ],
+   "confidence": "low",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ga-lokayukta",
+   "kind": "statutory_body",
+   "name": "Lokayukta of Goa",
+   "parentId": "st-ga",
+   "description": "State anti-corruption ombudsman for Goa, constituted under the Goa Lokayukta Act, 2011.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Lokayukta"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ga-mc-panaji",
+   "kind": "municipal_corporation",
+   "name": "Corporation of the City of Panaji",
+   "abbr": "CCP",
+   "sector": "local",
+   "parentId": "st-ga",
+   "hq": "Panaji",
+   "description": "Goa's sole municipal corporation, governing the state capital Panaji; traces its roots to an 1843 Portuguese municipal charter and gained corporation status in 2003. Goa's other towns are governed by municipal councils, not corporations.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Corporation_of_the_City_of_Panaji"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ga-shrc",
+   "kind": "statutory_body",
+   "sector": "federal",
+   "name": "Goa State Human Rights Commission",
+   "abbr": "GHRC",
+   "aliases": [
+    "Goa Human Rights Commission"
+   ],
+   "parentId": "st-ga",
+   "description": "Statutory body under the Protection of Human Rights Act, 1993 that investigates human-rights violations in Goa; constituted 2011.",
+   "legalBasis": "Protection of Human Rights Act, 1993",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Human_Rights_Commission"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-mh-pos-governor",
+   "title": "Governor of Maharashtra",
+   "titleHi": "महाराष्ट्र के राज्यपाल",
+   "orgId": "st-mh-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Jishnu Dev Varma",
+    "since": "2026-03-10",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jishnu_Dev_Varma",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Governor_of_Maharashtra"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-chief-minister",
+   "title": "Chief Minister of Maharashtra",
+   "titleHi": "महाराष्ट्र के मुख्यमंत्री",
+   "orgId": "st-mh-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "holder": {
+    "name": "Devendra Fadnavis",
+    "since": "2024-12-05",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Nagpur South West",
+    "wikipedia": "https://en.wikipedia.org/wiki/Devendra_Fadnavis",
+    "acting": false,
+    "notes": "Also holds General Administration, Home Affairs, Law & Judiciary, Information & Public Relations, Energy (excluding non-conventional) portfolios."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Maharashtra",
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Eknath Shinde",
+    "since": "2024-12-05",
+    "party": "Shiv Sena",
+    "house": "Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Eknath_Shinde",
+    "acting": false,
+    "notes": "Urban Development; Housing; Public Works (including Public Undertakings)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-deputy-cm-2",
+   "title": "Deputy Chief Minister of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Sunetra Pawar",
+    "since": "2026-01-31",
+    "party": "NCP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sunetra_Pawar",
+    "acting": false,
+    "notes": "Finance; Planning; State Excise. Sworn in as the first woman Deputy CM of Maharashtra after her husband and predecessor Ajit Pawar died in an air-charter crash on 28 January 2026; she was elected NCP national president on 26 February 2026."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sunetra_Pawar",
+    "https://en.wikipedia.org/wiki/Ajit_Pawar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-1",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Radhakrishna Vikhe Patil",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Water Resources (Godavari & Krishna Valley)"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-2",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Chandrashekhar Bawankule",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Revenue"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-3",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Hasan Mushrif",
+    "party": "NCP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Medical Education"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-4",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Chandrakant Patil",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Higher & Technical Education; Parliamentary Affairs"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-5",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Girish Mahajan",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Water Resources (Vidarbha, Tapi, Konkan); Disaster Management"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-6",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Gulab Raghunath Patil",
+    "party": "Shiv Sena",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Water Supply; Sanitation"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-7",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Ganesh Naik",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Forest"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-8",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Dadaji Bhuse",
+    "party": "Shiv Sena",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "School Education"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-9",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Sanjay Rathod",
+    "party": "Shiv Sena",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Soil & Water Conservation"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-10",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Chhagan Bhujbal",
+    "party": "NCP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Food and Civil Supplies; Consumer Affairs (from 20 May 2025)"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-11",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Mangal Prabhat Lodha",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Skill Development & Entrepreneurship"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-12",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Uday Samant",
+    "party": "Shiv Sena",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Industries; Marathi Language"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-13",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Jayakumar Rawal",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Marketing; Protocol"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-14",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Pankaja Munde",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Environment & Climate Change; Animal Husbandry"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-15",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Atul Save",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "OBC & OBC-Bahujan Welfare; Dairy Development; New and Renewable Energy"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-16",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Ashok Uike",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Tribal Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-17",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Shambhuraj Desai",
+    "party": "Shiv Sena",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Tourism; Mining; Ex-Servicemen Welfare"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-18",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Ashish Shelar",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Information Technology; Cultural Affairs"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-19",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Aditi Tatkare",
+    "party": "NCP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Women & Child Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-20",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Shivendra Raje Bhosale",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Public Works (excluding Public Undertakings)"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-21",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Dattatray Bharne",
+    "party": "NCP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Agriculture (from 31 July 2025, succeeding Manikrao Kokate)"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-22",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Jaykumar Gore",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Rural Development; Panchayat Raj"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-23",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Narhari Zirwal",
+    "party": "NCP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Food & Drug Administration; Special Assistance"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-24",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Sanjay Savkare",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Textiles"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-25",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Sanjay Shirsat",
+    "party": "Shiv Sena",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Social Justice"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-26",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Pratap Sarnaik",
+    "party": "Shiv Sena",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Transport"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-27",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Bharatshet Gogawale",
+    "party": "Shiv Sena",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Horticulture; Employment Guarantee; Khar Land Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-28",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Makrand Jadhav-Patil",
+    "party": "NCP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Relief & Rehabilitation"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-29",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Nitesh Rane",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Fisheries; Ports Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-30",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Akash Fundkar",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Labour"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-31",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Babasaheb Patil",
+    "party": "NCP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Co-operation"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-32",
+   "title": "Cabinet Minister, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Prakashrao Abitkar",
+    "party": "Shiv Sena",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Public Health and Family Welfare"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-33",
+   "title": "Minister of State, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Madhuri Misal",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Urban Development; Transport; Social Justice; Medical Education; Minority Development and Aukaf"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-34",
+   "title": "Minister of State, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Ashish Jaiswal",
+    "party": "Shiv Sena",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Finance; Planning; Agriculture; Relief and Rehabilitation; Law and Judiciary; Labour"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-35",
+   "title": "Minister of State, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Pankaj Bhoyar",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Home Affairs (Rural); Housing; School Education; Co-operation; Mining"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-36",
+   "title": "Minister of State, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Meghana Bordikar",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Water Supply; Sanitation; Public Health and Family Welfare; Energy; New and Renewable Energy; Women and Child Development; Public Works (including Public Undertakings)"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-37",
+   "title": "Minister of State, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Indranil Naik",
+    "party": "NCP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Industries; Public Works (excluding Public Undertakings); Higher & Technical Education; Tribal Development; Tourism; Soil and Water Conservation"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-38",
+   "title": "Minister of State, Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Yogesh Kadam",
+    "party": "Shiv Sena",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Home Affairs (Urban); Revenue; Rural Development; Panchayat Raj; Food and Civil Supplies; Consumer Affairs; Food and Drug Administration"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-minister-39",
+   "title": "Minister of State (Independent charge, unassigned), Government of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "vacant": true,
+   "holder": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Third_Fadnavis_ministry"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mh-pos-speaker",
+   "title": "Speaker, Maharashtra Legislative Assembly",
+   "orgId": "st-mh-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mh-assembly",
+   "holder": {
+    "name": "Rahul Narwekar",
+    "since": "2024-12-09",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rahul_Narwekar",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-deputy-speaker",
+   "title": "Deputy Speaker, Maharashtra Legislative Assembly",
+   "orgId": "st-mh-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mh-assembly",
+   "holder": {
+    "name": "Anna Bansode",
+    "since": "2025-03-25",
+    "party": "NCP",
+    "house": "Legislative Assembly",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Maharashtra Legislative Assembly",
+   "orgId": "st-mh-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mh-assembly",
+   "vacant": true,
+   "holder": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-chairman-legislative-council",
+   "title": "Chairman, Maharashtra Legislative Council",
+   "orgId": "st-mh-legislative-council",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mh-legislative-council",
+   "holder": {
+    "name": "Ram Shinde",
+    "since": "2024-12-19",
+    "party": "BJP",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_Legislative_Council"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-deputy-chairman-legislative-council",
+   "title": "Deputy Chairman, Maharashtra Legislative Council",
+   "orgId": "st-mh-legislative-council",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mh-legislative-council",
+   "holder": {
+    "name": "Sachin Ahir",
+    "since": "2026-07-01",
+    "party": "Shiv Sena",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_Legislative_Council"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-pos-leader-of-opposition-council",
+   "title": "Leader of Opposition, Maharashtra Legislative Council",
+   "orgId": "st-mh-legislative-council",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mh-legislative-council",
+   "vacant": true,
+   "holder": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_Legislative_Council"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mh-pos-chief-secretary",
+   "title": "Chief Secretary of Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Rajesh Aggarwal",
+    "since": "2025-12-01",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Secretary_of_Maharashtra",
+    "https://en.wikipedia.org/wiki/List_of_chief_secretaries_of_Maharashtra"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-dgp",
+   "title": "Director General of Police, Maharashtra",
+   "orgId": "st-mh-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Sadanand Date",
+    "since": "2026-01-03",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_Police",
+    "https://en.wikipedia.org/wiki/Sadanand_Date"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-state-election-commissioner",
+   "title": "State Election Commissioner, Maharashtra",
+   "orgId": "st-mh-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "holder": {
+    "name": "Dinesh T. Waghmare",
+    "since": "2025-01-28",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_State_Election_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mh-pos-chairman-psc",
+   "title": "Chairman, Maharashtra Public Service Commission",
+   "orgId": "st-mh-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "holder": {
+    "name": "Vivek Bhimanwar",
+    "acting": false,
+    "notes": "Appointment date not confirmed from available sources."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra_Public_Service_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mh-pos-lokayukta",
+   "title": "Lokayukta of Maharashtra",
+   "orgId": "st-mh-lokayukta",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "onAdviceOf": "st-mh-pos-chief-minister",
+   "holder": {
+    "name": "Sanjay Bhatia",
+    "acting": true,
+    "notes": "Serving as Upa-Lokayukta and Lokayukta-in-charge; the substantive Lokayukta post appears vacant as of the source consulted."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-mh-pos-chairperson-shrc",
+   "title": "Chairperson, Maharashtra State Human Rights Commission",
+   "orgId": "st-mh-shrc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mh-pos-governor",
+   "holder": {
+    "name": "A. M. Badar",
+    "since": "2025-03",
+    "notes": "Retired judge, Kerala High Court.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maharashtra"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-gj-pos-governor",
+   "title": "Governor of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Acharya Devvrat",
+    "since": "2019-07-22",
+    "wikipedia": "https://en.wikipedia.org/wiki/Acharya_Devvrat",
+    "acting": false,
+    "notes": "Longest-serving current Governor among mh/gj/ga; verify no 2025-26 transfer occurred."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Governor_of_Gujarat",
+    "https://en.wikipedia.org/wiki/Acharya_Devvrat"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-gj-pos-chief-minister",
+   "title": "Chief Minister of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "holder": {
+    "name": "Bhupendra Patel",
+    "since": "2021-09-13",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Ghatlodia",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bhupendra_Patel",
+    "acting": false,
+    "notes": "General Administration, Administrative Reforms, Planning, Revenue, Roads & Buildings, Mines & Minerals, Narmada, Ports, Information & Broadcasting."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Gujarat"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-gj-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Harsh Sanghavi",
+    "since": "2025-10-17",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Majura",
+    "wikipedia": "https://en.wikipedia.org/wiki/Harsh_Sanghavi",
+    "acting": false,
+    "notes": "Home, Police Housing, Prohibition & Excise, Pilgrimage Development, Industries, Civil Aviation, Tourism, Cultural Activities, Law & Justice, Salt Industries, Printing & Stationery."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Harsh_Sanghavi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-gj-pos-minister-1",
+   "title": "Cabinet Minister, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Kanubhai Desai",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Urban Development & Housing; Finance"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-2",
+   "title": "Cabinet Minister, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Rushikesh Patel",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Panchayat; Science & Technology; Energy & Petrochemicals; Higher & Technical Education; Rural Housing; Legislative & Parliamentary Affairs"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-3",
+   "title": "Cabinet Minister, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Arjun Modhwadia",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Forest & Environment; Climate Change"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-4",
+   "title": "Cabinet Minister, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Jitu Vaghani",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Agriculture & Farmers Welfare; Fisheries; Animal Husbandry & Cow Breeding; Cooperation"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-5",
+   "title": "Cabinet Minister, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Kunwarjibhai Bavaliya",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Rural Development; Labour & Skill Development; Water Resources & Water Supply; Food & Civil Supplies"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-6",
+   "title": "Cabinet Minister, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Ramanbhai Solanki",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Food, Civil Supplies & Consumer Affairs"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-7",
+   "title": "Cabinet Minister, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Pradyuman Vaja",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Higher & Technical Education; Primary & Secondary Education; Social Justice & Empowerment"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-8",
+   "title": "Cabinet Minister, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Manisha Vakil",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Women & Child Welfare"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-9",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Trikam Changa Ahir",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Higher & Technical Education"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-10",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Kamleshbhai Patel",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Police Housing; Finance; Jail & Border Security; Civil Defence; Prohibition & Excise"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-11",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Jayram Gamit",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Industries; Cultural Activities; MSME; Civil Aviation; Sports; Tourism; Salt Industries; Printing"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-12",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Swarupji Thakor",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Cottage, Khadi & Rural Industries"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-13",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Parshottambhai Solanki",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Fisheries; Animal Husbandry & Cow Breeding"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-14",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Ramesh Katara",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Animal Husbandry; Agriculture & Farmers Welfare; Cooperation"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-15",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Sanjaysinh Mahida",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Panchayat & Rural Housing; Rural Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-16",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Pravinkumar Gordhanji Mali",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Forest & Environment; Climate Change; Transport"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-17",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Rivaba Jadeja",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Primary, Secondary & Adult Education"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-18",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Punamchand Baranda",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Food & Civil Supplies; Tribal Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-19",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Kaushik Kantibhai Vekariya",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Legislative & Parliamentary Affairs; Law & Justice; Energy & Petrochemicals"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-20",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Darshna Vaghela",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Urban Development & Housing"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-minister-21",
+   "title": "Minister of State, Government of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "onAdviceOf": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Kantilal Amrutiya",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Labour, Skill Development & Employment"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-speaker",
+   "title": "Speaker, Gujarat Legislative Assembly",
+   "orgId": "st-gj-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-gj-assembly",
+   "holder": {
+    "name": "Shankar Chaudhary",
+    "since": "2022-12-20",
+    "party": "BJP",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-gj-pos-deputy-speaker",
+   "title": "Deputy Speaker, Gujarat Legislative Assembly",
+   "orgId": "st-gj-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-gj-assembly",
+   "holder": {
+    "name": "Purnesh Modi",
+    "since": "2026-02-16",
+    "party": "BJP",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-gj-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Gujarat Legislative Assembly",
+   "orgId": "st-gj-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-gj-assembly",
+   "vacant": true,
+   "holder": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-gj-pos-chief-secretary",
+   "title": "Chief Secretary of Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Manoj Kumar Das",
+    "acting": false,
+    "notes": "IAS; exact date of appointment not confirmed from available sources."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Gujarat"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-gj-pos-dgp",
+   "title": "Director General of Police, Gujarat",
+   "orgId": "st-gj-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-chief-minister",
+   "holder": {
+    "name": "Gyanender Singh Malik",
+    "since": "2026-06-08",
+    "acting": false,
+    "notes": "Succeeded K.L.N. Rao."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat_Police"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-gj-pos-state-election-commissioner",
+   "title": "State Election Commissioner, Gujarat",
+   "orgId": "st-gj-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "holder": {
+    "name": "Sanjay Prasad",
+    "since": "2019-09-03",
+    "acting": false,
+    "notes": "Statutory term is 5 years or age 65, whichever is earlier — this would have expired around 2024; could not confirm a successor from available sources, flagged low confidence."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat_State_Election_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-gj-pos-chairman-psc",
+   "title": "Chairman, Gujarat Public Service Commission",
+   "orgId": "st-gj-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "holder": {
+    "name": "Hasmukh Patel",
+    "since": "2024-11-11",
+    "notes": "IPS (Retd.)",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-gj-pos-lokayukta",
+   "title": "Lokayukta of Gujarat",
+   "orgId": "st-gj-lokayukta",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "holder": {
+    "name": "Justice Rajesh H. Shukla",
+    "since": "2020-06-23",
+    "acting": false,
+    "notes": "Retired judge, Gujarat High Court."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat_Lokayukta",
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-gj-pos-chairperson-shrc",
+   "title": "Chairperson, Gujarat State Human Rights Commission",
+   "orgId": "st-gj-shrc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-gj-pos-governor",
+   "holder": {
+    "name": "Justice Kaushal Jayendra Thaker",
+    "acting": false,
+    "notes": "Appointment date not confirmed from available sources."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gujarat"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ga-pos-governor",
+   "title": "Governor of Goa",
+   "orgId": "st-ga-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 5,
+   "holder": {
+    "name": "Pusapati Ashok Gajapathi Raju",
+    "since": "2025-07-26",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ashok_Gajapathi_Raju_Pusapati",
+    "acting": false,
+    "notes": "21st Governor of Goa."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Governor_of_Goa"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ga-pos-chief-minister",
+   "title": "Chief Minister of Goa",
+   "orgId": "st-ga-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "holder": {
+    "name": "Pramod Sawant",
+    "since": "2022-03-28",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Sanquelim",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pramod_Sawant",
+    "acting": false,
+    "notes": "Home, Finance, Vigilance, Official Languages, Personnel, RDA. First took office 19 March 2019; current (second) term since the 2022 election. Goa currently has no Deputy Chief Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Minister_of_Goa"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ga-pos-minister-1",
+   "title": "Cabinet Minister, Government of Goa",
+   "orgId": "st-ga-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "onAdviceOf": "st-ga-pos-chief-minister",
+   "holder": {
+    "name": "Vishwajit Pratapsingh Rane",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Health; Urban Development; Town & Country Planning; Women & Child Development; Forest"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-pos-minister-2",
+   "title": "Cabinet Minister, Government of Goa",
+   "orgId": "st-ga-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "onAdviceOf": "st-ga-pos-chief-minister",
+   "holder": {
+    "name": "Subhash Shirodkar",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Water Resources; Co-operation; Provedoria"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-pos-minister-3",
+   "title": "Cabinet Minister, Government of Goa",
+   "orgId": "st-ga-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "onAdviceOf": "st-ga-pos-chief-minister",
+   "holder": {
+    "name": "Mauvin Godinho",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Transport; Industries; Panchayati Raj; Protocol"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-pos-minister-4",
+   "title": "Cabinet Minister, Government of Goa",
+   "orgId": "st-ga-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "onAdviceOf": "st-ga-pos-chief-minister",
+   "holder": {
+    "name": "Rohan Khaunte",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Tourism; Information Technology; Printing & Stationery"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-pos-minister-5",
+   "title": "Cabinet Minister, Government of Goa",
+   "orgId": "st-ga-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "onAdviceOf": "st-ga-pos-chief-minister",
+   "holder": {
+    "name": "Atanasio Monserrate",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Revenue; Labour & Employment; Waste Management"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-pos-minister-6",
+   "title": "Cabinet Minister, Government of Goa",
+   "orgId": "st-ga-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "onAdviceOf": "st-ga-pos-chief-minister",
+   "holder": {
+    "name": "Subhash Phal Desai",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Social Welfare; River Navigation; Drinking Water; Welfare of Persons with Disabilities"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-pos-minister-7",
+   "title": "Cabinet Minister, Government of Goa",
+   "orgId": "st-ga-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "onAdviceOf": "st-ga-pos-chief-minister",
+   "holder": {
+    "name": "Sudin Dhavalikar",
+    "party": "MGP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Power; New and Renewable Energy; Museum"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-pos-minister-8",
+   "title": "Cabinet Minister, Government of Goa",
+   "orgId": "st-ga-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "onAdviceOf": "st-ga-pos-chief-minister",
+   "holder": {
+    "name": "Nilkanth Halarnkar",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Fisheries; Animal Husbandry & Veterinary Services; Factories and Boilers"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-pos-minister-9",
+   "title": "Cabinet Minister, Government of Goa",
+   "orgId": "st-ga-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "onAdviceOf": "st-ga-pos-chief-minister",
+   "holder": {
+    "name": "Digambar Kamat",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Public Works; Captain of Ports; Legal Metrology"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-pos-minister-10",
+   "title": "Cabinet Minister, Government of Goa",
+   "orgId": "st-ga-government",
+   "rank": "state_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "onAdviceOf": "st-ga-pos-chief-minister",
+   "holder": {
+    "name": "Ramesh Tawadkar",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "acting": false,
+    "notes": "Art & Culture; Sports & Youth Affairs; Tribal Welfare"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-pos-speaker",
+   "title": "Speaker, Goa Legislative Assembly",
+   "orgId": "st-ga-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ga-assembly",
+   "holder": {
+    "name": "Ganesh Gaonkar",
+    "since": "2025-09-25",
+    "party": "BJP",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ga-pos-deputy-speaker",
+   "title": "Deputy Speaker, Goa Legislative Assembly",
+   "orgId": "st-ga-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ga-assembly",
+   "holder": {
+    "name": "Joshua de Souza",
+    "since": "2022-07-22",
+    "party": "BJP",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Legislative_Assembly"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Goa Legislative Assembly",
+   "orgId": "st-ga-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ga-assembly",
+   "holder": {
+    "name": "Yuri Alemao",
+    "since": "2022-09-30",
+    "party": "INC",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ga-pos-chief-secretary",
+   "title": "Chief Secretary of Goa",
+   "orgId": "st-ga-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-chief-minister",
+   "holder": {
+    "name": "V. Candavelou",
+    "notes": "IAS; exact date of appointment not confirmed from available sources.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Goa"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ga-pos-dgp",
+   "title": "Director General of Police, Goa",
+   "orgId": "st-ga-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-chief-minister",
+   "vacant": true,
+   "holder": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Police"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ga-pos-state-election-commissioner",
+   "title": "State Election Commissioner, Goa",
+   "orgId": "st-ga-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "holder": {
+    "name": "W. V. Ramanamurthy",
+    "since": "2021-03-18",
+    "notes": "IAS (Retired).",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ga-pos-chairman-psc",
+   "title": "Chairman, Goa Public Service Commission",
+   "orgId": "st-ga-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "holder": {
+    "name": "Jose Manuel Noronha",
+    "notes": "Last confirmed as chairman in 2018 in the source consulted; current incumbency could not be verified — flagged low confidence.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Public_Service_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ga-pos-lokayukta",
+   "title": "Lokayukta of Goa",
+   "orgId": "st-ga-lokayukta",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "holder": {
+    "name": "Justice Ambadas H. Joshi",
+    "since": "2021-05-07",
+    "notes": "Retired judge.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Lokayukta"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ga-pos-mayor-panaji",
+   "title": "Mayor, Corporation of the City of Panaji",
+   "orgId": "st-ga-mc-panaji",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ga-mc-panaji",
+   "holder": {
+    "name": "Rohit Monserrate",
+    "since": "2026-03-11",
+    "notes": "Re-elected Mayor of Panaji after the March 2026 municipal election (BJP-backed panel won 27 of 30 seats). Deputy Mayor: Vasant Ashok Agshikar. Municipal Commissioner: Clen Madeira.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Corporation_of_the_City_of_Panaji"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ga-pos-chairperson-shrc",
+   "title": "Chairperson, Goa State Human Rights Commission",
+   "orgId": "st-ga-shrc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ga-pos-governor",
+   "holder": {
+    "name": "Utkarsh V. Bakre",
+    "notes": "Former High Court judge; exact since-date of appointment not confirmed. First chairperson (2011) was Justice Prafulla Kumar Mishra, retired CJ of Patna HC; Bakre is understood to be a later successor.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Human_Rights_Commission"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-electorate",
+   "to": "st-mh-assembly",
+   "type": "elects",
+   "basis": "Article 170"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-mh-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/Governor_of_Maharashtra"
+  },
+  {
+   "from": "st-mh-pos-governor",
+   "to": "st-mh-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-deputy-cm-1",
+   "type": "advises_appointment"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-deputy-cm-2",
+   "type": "advises_appointment"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-12",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-13",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-14",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-15",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-16",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-17",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-18",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-19",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-20",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-21",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-22",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-23",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-24",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-25",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-26",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-27",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-28",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-29",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-30",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-31",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-32",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-33",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-34",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-35",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-36",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-37",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-38",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-pos-chief-minister",
+   "to": "st-mh-pos-minister-39",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-mh-council-of-ministers",
+   "to": "st-mh-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)"
+  },
+  {
+   "from": "st-mh-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) — Maharashtra returns 19 members"
+  },
+  {
+   "from": "st-mh-pos-governor",
+   "to": "st-mh-pos-lokayukta",
+   "type": "appoints",
+   "basis": "Maharashtra Lokayukta Act"
+  },
+  {
+   "from": "st-mh-pos-governor",
+   "to": "st-mh-pos-chairperson-shrc",
+   "type": "appoints",
+   "basis": "Protection of Human Rights Act, 1993"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-gj-assembly",
+   "type": "elects",
+   "basis": "Article 170"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-gj-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155"
+  },
+  {
+   "from": "st-gj-pos-governor",
+   "to": "st-gj-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-deputy-cm-1",
+   "type": "advises_appointment"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-11",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-12",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-13",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-14",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-15",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-16",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-17",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-18",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-19",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-20",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-pos-chief-minister",
+   "to": "st-gj-pos-minister-21",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-gj-council-of-ministers",
+   "to": "st-gj-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)"
+  },
+  {
+   "from": "st-gj-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) — Gujarat returns 11 members"
+  },
+  {
+   "from": "st-gj-pos-governor",
+   "to": "st-gj-pos-lokayukta",
+   "type": "appoints",
+   "basis": "Gujarat Lokayukta Act, 1986"
+  },
+  {
+   "from": "st-gj-pos-governor",
+   "to": "st-gj-pos-chairperson-shrc",
+   "type": "appoints",
+   "basis": "Protection of Human Rights Act, 1993"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-ga-assembly",
+   "type": "elects",
+   "basis": "Article 170"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-ga-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155"
+  },
+  {
+   "from": "st-ga-pos-governor",
+   "to": "st-ga-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-pos-minister-7",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-pos-minister-8",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-pos-minister-9",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-ga-pos-chief-minister",
+   "to": "st-ga-pos-minister-10",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-ga-council-of-ministers",
+   "to": "st-ga-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)"
+  },
+  {
+   "from": "st-ga-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) — Goa returns 1 member"
+  },
+  {
+   "from": "st-ga-pos-governor",
+   "to": "st-ga-pos-lokayukta",
+   "type": "appoints",
+   "basis": "Goa Lokayukta Act, 2011"
+  },
+  {
+   "from": "st-ga-pos-governor",
+   "to": "st-ga-pos-chairperson-shrc",
+   "type": "appoints",
+   "basis": "Protection of Human Rights Act, 1993"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 30,
+  "corrections": [
+   "Added missing entity st-ga-shrc (Goa State Human Rights Commission) — brief requires SHRC coverage for every state; MH and GJ had it, GA was omitted despite Goa having had its own SHRC since 2011. Confirmed via https://en.wikipedia.org/wiki/Goa_Human_Rights_Commission.",
+   "Added missing position st-ga-pos-chairperson-shrc, holder Justice Utkarsh V. Bakre, confidence low (since-date unconfirmed).",
+   "Added relation st-ga-pos-governor appoints st-ga-pos-chairperson-shrc (mirrors MH/GJ SHRC relations already present).",
+   "Re-verified st-mh-pos-deputy-speaker (Anna Bansode) against a fresh 2026 source (https://en.wikipedia.org/wiki/Maharashtra_Legislative_Assembly); confidence medium -> high.",
+   "Re-verified st-mh-pos-chief-secretary (Rajesh Aggarwal) against a fresh 2026 source (https://en.wikipedia.org/wiki/List_of_chief_secretaries_of_Maharashtra); confidence medium -> high.",
+   "Re-verified st-mh-pos-dgp (Sadanand Date) against a fresh 2026 source (https://en.wikipedia.org/wiki/Sadanand_Date); confidence medium -> high.",
+   "Re-verified st-mh-pos-state-election-commissioner (Dinesh T. Waghmare) against a fresh 2026 source (https://en.wikipedia.org/wiki/Maharashtra_State_Election_Commission); confidence medium -> high.",
+   "Re-verified st-gj-pos-governor (Acharya Devvrat) against a fresh 2026 source (https://en.wikipedia.org/wiki/Acharya_Devvrat); confidence medium -> high.",
+   "Re-verified st-gj-pos-deputy-speaker (Purnesh Modi) against a fresh 2026 source (https://en.wikipedia.org/wiki/Gujarat_Legislative_Assembly); confidence medium -> high.",
+   "Re-verified st-gj-pos-dgp (Gyanender Singh Malik) against a fresh 2026 source (https://en.wikipedia.org/wiki/Gujarat_Police); confidence medium -> high.",
+   "Re-verified st-gj-pos-lokayukta (Justice Rajesh H. Shukla) against a fresh 2026 source (https://en.wikipedia.org/wiki/Lokayukta); confidence medium -> high.",
+   "Re-verified st-ga-pos-lokayukta (Justice Ambadas H. Joshi) against a fresh 2026 source (https://en.wikipedia.org/wiki/Goa_Lokayukta); confidence medium -> high.",
+   "Corrected notes: Dhananjay Munde's exit was a confirmed resignation on 2025-03-04 (Wikipedia), not merely an unconfirmed post-reshuffle status; the resulting omission from the active minister list was already correct."
+  ]
+ }
+}

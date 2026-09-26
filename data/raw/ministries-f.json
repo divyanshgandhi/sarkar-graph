@@ -1,0 +1,3378 @@
+{
+ "segment": "ministries-f",
+ "asOf": "2026-09-25",
+ "notes": "Segment ministries-f covers: Health & Family Welfare (+ Health Research/ICMR), AYUSH, Education (+ School Education & Literacy, Higher Education), Women & Child Development, Social Justice & Empowerment (+ Empowerment of Persons with Disabilities), Tribal Affairs, Minority Affairs, Labour & Employment, and Skill Development & Entrepreneurship — 9 ministries / 6 constituent departments, ~107 subordinate/autonomous/statutory bodies and CPSEs (including all 27 AIIMS by name, individually, per instructions; IITs/IIMs/NITs/Central Universities as 4 aggregate entities with full name lists in each entity's `notes`), 53 named political and bureaucratic positions, and ~119 formal-power relations.\n\nKNOWN GAPS / LOW-CONFIDENCE AREAS (flagged per-position/entity with confidence:\"low\" and notes; summarised here):\n1. Bureaucratic reshuffle churn: India had an unusually large secretary-level bureaucratic reshuffle in July-August 2026 (following the Dharmendra Pradhan resignation / \"Cockroach\" protests over exam irregularities). Most Group-F Secretary names here come from a single non-official aggregator (sarkaritel.com, directory dated 2026-08-26) cross-checked against PIB/news for Health, Higher Education, Social Justice, Skill Development and Tribal Affairs; Minority Affairs and Labour & Employment secretary names (Srivatsa Krishna; Chandra Bhushan Kumar) are NOT independently cross-checked beyond that one directory and should be treated as medium/low confidence pending a primary-source (PIB/DoPT order) check.\n2. Ministry of Education: the cabsec.gov.in official portfolio list (as on 23.06.2026) still names Dharmendra Pradhan as Education Minister, but he resigned on 2026-07-25 amid nationwide student protests over exam irregularities; Pralhad Joshi has held ADDITIONAL CHARGE of Education since then alongside his existing portfolios. As of the 2026-09-25 as-of date no successor with full/independent charge had been announced; a Cabinet reshuffle was rumoured around a 23-24 September 2026 \"Chintan Shivir\" but not confirmed. This entity's holder is therefore marked acting:true and should be re-checked after any September/October 2026 reshuffle.\n3. Agency/PSU head names NOT confirmed for 2025-2026 (marked confidence:\"low\", holder either omitted or flagged as a possibly-stale recollection in notes): DGHS Director General, DCGI, NMC Chairperson, NBEMS President, NHA CEO, NACO DG, NCDC Director, CGHS DG, HLL Lifecare CMD, KVS Commissioner, NVS Commissioner, NTA Director General, EPFO Central PF Commissioner, ESIC Director General, NCSK Chairperson holder is Wikipedia-sourced only. These need a fresh PIB/official-site check before publication.\n4. FSSAI Chairperson/CEO (Punya Salila Srivastava / Rajit Punhani) and NCERT Director, UGC Chairman, CBSE Chairperson, NIOS Chairman sourced only from Wikipedia article body text (not a dedicated \"who's who\" page), confidence medium — worth a primary-source spot check.\n5. WebSearch quota was exhausted mid-session (shared session-wide budget); remaining research relied on WebFetch, curl, and the Wikipedia parse/query API, which is why the later ministries in this file (Tribal, Minority, Labour, Skill) have proportionally more low-confidence agency-head positions than Health/Education.\n6. Aggregate entities (IITs, IIMs, NITs, Central Universities, AIIMS) use 2026-09-25 Wikipedia snapshots for membership lists; a small number of newly \"announced\"/\"proposed\" institutions (e.g. AIIMS Manipur, AIIMS Karnataka, AIIMS Kerala, AIIMS Nagaki) are not yet operational and are marked as such in their descriptions.\n7. Central Waqf Council's legal basis now sits under the Waqf (Amendment) Act, 2025 — a major 2025 legal change to Waqf governance; this segment did not research downstream structural changes (e.g. non-Muslim member composition changes) in detail beyond noting the amendment.\n8. Budget figures were intentionally omitted throughout (per SCHEMA.md, budget numbers are owned by the union-budget segment).\n9. Council of Ministers portfolio data is anchored to the official cabsec.gov.in PDF \"as on 23.06.2026\" cross-checked against news for the Group-F ministers/MoS specifically; it was NOT re-verified line-by-line for non-Group-F portfolios mentioned only incidentally (e.g. a minister's \"also holds X\" notes).",
+ "entities": [
+  {
+   "id": "in-min-health-and-family-welfare",
+   "kind": "ministry",
+   "name": "Ministry of Health and Family Welfare",
+   "abbr": "MoHFW",
+   "aliases": [
+    "Health Ministry",
+    "MoHFW",
+    "Union Health Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Runs India's public-health policy, disease control, medical education regulation and health insurance programmes (Ayushman Bharat), through two departments: Health & Family Welfare, and Health Research.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.mohfw.gov.in",
+   "established": "1947",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-health-and-family-welfare",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://www.mohfw.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-health-and-family-welfare",
+   "kind": "department",
+   "name": "Department of Health and Family Welfare",
+   "aliases": [
+    "DoHFW"
+   ],
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "The main administrative department of the health ministry: public health programmes, hospitals, medical education regulation (via NMC/NBEMS), drug regulation (CDSCO) and health insurance (NHA).",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.mohfw.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-health-and-family-welfare",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-health-research",
+   "kind": "department",
+   "name": "Department of Health Research",
+   "abbr": "DHR",
+   "aliases": [
+    "DHR"
+   ],
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "Coordinates biomedical research policy and administers the Indian Council of Medical Research (ICMR); the Secretary, DHR is ex-officio Director-General of ICMR.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; created 2007",
+   "officialUrl": "https://dhr.gov.in",
+   "established": "2007",
+   "adminHeadPositionId": "in-pos-secretary-health-research",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://dhr.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dghs",
+   "kind": "attached_office",
+   "name": "Directorate General of Health Services",
+   "abbr": "DGHS",
+   "parentId": "in-dept-health-and-family-welfare",
+   "description": "The technical wing of the health ministry: runs central government hospitals/institutes, medical stores depots and public-health advisory functions, headed by the Director General of Health Services.",
+   "officialUrl": "https://dghs.gov.in",
+   "headPositionId": "in-pos-dghs",
+   "sources": [
+    "https://dghs.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-icmr",
+   "kind": "statutory_body",
+   "name": "Indian Council of Medical Research",
+   "abbr": "ICMR",
+   "aliases": [
+    "ICMR"
+   ],
+   "parentId": "in-dept-health-research",
+   "description": "India's apex biomedical research body, running ~30 national research institutes on TB, malaria, cancer, nutrition and other health priorities; funded through the Department of Health Research.",
+   "legalBasis": "Registered society (1949, successor to the 1911 Indian Research Fund Association)",
+   "officialUrl": "https://main.icmr.nic.in",
+   "established": "1911/1949",
+   "headPositionId": "in-pos-secretary-health-research",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Council_of_Medical_Research"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cdsco",
+   "kind": "regulator",
+   "name": "Central Drugs Standard Control Organisation",
+   "abbr": "CDSCO",
+   "parentId": "in-dept-health-and-family-welfare",
+   "description": "India's national regulator for pharmaceuticals, medical devices and cosmetics — approves new drugs/devices, sets standards and runs post-market surveillance, headed by the Drugs Controller General of India (DCGI).",
+   "legalBasis": "Drugs and Cosmetics Act, 1940",
+   "officialUrl": "https://cdsco.gov.in",
+   "headPositionId": "in-pos-dcgi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Drugs_Standard_Control_Organisation"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-fssai",
+   "kind": "regulator",
+   "name": "Food Safety and Standards Authority of India",
+   "abbr": "FSSAI",
+   "parentId": "in-dept-health-and-family-welfare",
+   "description": "Statutory food-safety regulator: sets food standards, licenses food businesses and enforces the Food Safety and Standards Act through State/UT food safety officers.",
+   "legalBasis": "Food Safety and Standards Act, 2006",
+   "officialUrl": "https://fssai.gov.in",
+   "established": "2008",
+   "headPositionId": "in-pos-chairperson-fssai",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Food_Safety_and_Standards_Authority_of_India"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nmc",
+   "kind": "regulator",
+   "name": "National Medical Commission",
+   "abbr": "NMC",
+   "parentId": "in-dept-health-and-family-welfare",
+   "description": "Regulates medical education and practitioners in modern (allopathic) medicine: accredits medical colleges, licenses doctors and oversees NEET-based admissions; replaced the Medical Council of India in 2020.",
+   "legalBasis": "National Medical Commission Act, 2019",
+   "officialUrl": "https://www.nmc.org.in",
+   "established": "2020-09-25",
+   "headPositionId": "in-pos-chairperson-nmc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Medical_Commission"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nbems",
+   "kind": "autonomous_body",
+   "name": "National Board of Examinations in Medical Sciences",
+   "abbr": "NBEMS",
+   "parentId": "in-dept-health-and-family-welfare",
+   "description": "Conducts postgraduate medical entrance/exit exams (NEET-PG, NEET-SS, FMGE) and awards the DNB/DrNB postgraduate medical qualifications, in parallel to university-based medical postgraduate education.",
+   "established": "1975",
+   "officialUrl": "https://natboard.edu.in",
+   "headPositionId": "in-pos-president-nbems",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Board_of_Examinations_in_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nha",
+   "kind": "statutory_body",
+   "name": "National Health Authority",
+   "abbr": "NHA",
+   "aliases": [
+    "Ayushman Bharat PM-JAY",
+    "PM-JAY"
+   ],
+   "parentId": "in-dept-health-and-family-welfare",
+   "description": "Implements Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PM-JAY), India's flagship public health-insurance scheme covering hospitalisation for economically vulnerable families, and the Ayushman Bharat Digital Mission.",
+   "legalBasis": "Registered society, 2019",
+   "officialUrl": "https://nha.gov.in",
+   "established": "2019",
+   "headPositionId": "in-pos-ceo-nha",
+   "sources": [
+    "https://nha.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-naco",
+   "kind": "attached_office",
+   "name": "National AIDS Control Organisation",
+   "abbr": "NACO",
+   "parentId": "in-dept-health-and-family-welfare",
+   "description": "Runs India's HIV/AIDS prevention and control programme through State AIDS Control Societies, blood-safety surveillance and antiretroviral treatment centres.",
+   "established": "1992",
+   "officialUrl": "https://naco.gov.in",
+   "headPositionId": "in-pos-dg-naco",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_AIDS_Control_Organisation"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncdc",
+   "kind": "subordinate_office",
+   "name": "National Centre for Disease Control",
+   "abbr": "NCDC",
+   "parentId": "in-dghs",
+   "description": "India's lead public-health institute for epidemiology and communicable-disease surveillance and outbreak response, operating under DGHS with branches across the country.",
+   "established": "1963 (renamed NCDC 2009)",
+   "officialUrl": "https://ncdc.mohfw.gov.in",
+   "headPositionId": "in-pos-director-ncdc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Centre_for_Disease_Control"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cghs",
+   "kind": "subordinate_office",
+   "name": "Central Government Health Scheme",
+   "abbr": "CGHS",
+   "parentId": "in-dept-health-and-family-welfare",
+   "description": "Provides healthcare to serving and retired central government employees and other eligible beneficiaries through wellness centres in 80+ cities.",
+   "established": "1954-07-01",
+   "officialUrl": "https://cghs.gov.in",
+   "headPositionId": "in-pos-dg-cghs",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Government_Health_Scheme"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-hll-lifecare",
+   "kind": "cpse",
+   "name": "HLL Lifecare Limited",
+   "abbr": "HLL",
+   "aliases": [
+    "Hindustan Latex Limited"
+   ],
+   "parentId": "in-dept-health-and-family-welfare",
+   "description": "Central public-sector healthcare-products manufacturer (condoms, contraceptives, surgical sutures, blood bags) and operator of the Amrit low-cost-medicine pharmacy chain; a long-pending disinvestment has not been completed.",
+   "hq": "Thiruvananthapuram, Kerala",
+   "officialUrl": "https://www.lifecarehll.com",
+   "headPositionId": "in-pos-cmd-hll",
+   "sources": [
+    "https://en.wikipedia.org/wiki/HLL_Lifecare"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nihfw",
+   "kind": "autonomous_body",
+   "name": "National Institute of Health and Family Welfare",
+   "abbr": "NIHFW",
+   "parentId": "in-dept-health-and-family-welfare",
+   "description": "Apex training and research institute for health administrators and public-health managers, and a WHO collaborating centre.",
+   "officialUrl": "https://nihfw.ac.in",
+   "sources": [
+    "https://nihfw.ac.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-delhi",
+   "kind": "autonomous_body",
+   "name": "AIIMS Delhi",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Delhi, Delhi.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": "https://www.aiims.edu",
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "1956",
+   "hq": "Delhi, Delhi",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-bhopal",
+   "kind": "autonomous_body",
+   "name": "AIIMS Bhopal",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Bhopal, Madhya Pradesh.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2015",
+   "hq": "Bhopal, Madhya Pradesh",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-bhubaneswar",
+   "kind": "autonomous_body",
+   "name": "AIIMS Bhubaneswar",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Bhubaneswar, Odisha.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2012",
+   "hq": "Bhubaneswar, Odisha",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-jodhpur",
+   "kind": "autonomous_body",
+   "name": "AIIMS Jodhpur",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Jodhpur, Rajasthan.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2015",
+   "hq": "Jodhpur, Rajasthan",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-patna",
+   "kind": "autonomous_body",
+   "name": "AIIMS Patna",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Patna, Bihar.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2015",
+   "hq": "Patna, Bihar",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-raipur",
+   "kind": "autonomous_body",
+   "name": "AIIMS Raipur",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Raipur, Chhattisgarh.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2015",
+   "hq": "Raipur, Chhattisgarh",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-rishikesh",
+   "kind": "autonomous_body",
+   "name": "AIIMS Rishikesh",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Rishikesh, Uttarakhand.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2015",
+   "hq": "Rishikesh, Uttarakhand",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-raebareli",
+   "kind": "autonomous_body",
+   "name": "AIIMS Raebareli",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Raebareli, Uttar Pradesh.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2018",
+   "hq": "Raebareli, Uttar Pradesh",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-mangalagiri",
+   "kind": "autonomous_body",
+   "name": "AIIMS Mangalagiri",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Mangalagiri-Tadepalli, Andhra Pradesh.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2018",
+   "hq": "Mangalagiri-Tadepalli, Andhra Pradesh",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-nagpur",
+   "kind": "autonomous_body",
+   "name": "AIIMS Nagpur",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Nagpur, Maharashtra.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2018",
+   "hq": "Nagpur, Maharashtra",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-kalyani",
+   "kind": "autonomous_body",
+   "name": "AIIMS Kalyani",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Kalyani, West Bengal.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2018",
+   "hq": "Kalyani, West Bengal",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-gorakhpur",
+   "kind": "autonomous_body",
+   "name": "AIIMS Gorakhpur",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Gorakhpur, Uttar Pradesh.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2019",
+   "hq": "Gorakhpur, Uttar Pradesh",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-bathinda",
+   "kind": "autonomous_body",
+   "name": "AIIMS Bathinda",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Bathinda, Punjab.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2019",
+   "hq": "Bathinda, Punjab",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-guwahati",
+   "kind": "autonomous_body",
+   "name": "AIIMS Guwahati",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Changsari, Assam.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2020",
+   "hq": "Changsari, Assam",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-jammu",
+   "kind": "autonomous_body",
+   "name": "AIIMS Jammu",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Vijay Pur, Jammu and Kashmir.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2020",
+   "hq": "Vijay Pur, Jammu and Kashmir",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-bilaspur",
+   "kind": "autonomous_body",
+   "name": "AIIMS Bilaspur",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Bilaspur, Himachal Pradesh.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2020",
+   "hq": "Bilaspur, Himachal Pradesh",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-madurai",
+   "kind": "autonomous_body",
+   "name": "AIIMS Madurai",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Classes begun; campus not yet fully constructed. Located in Madurai, Tamil Nadu.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "medium",
+   "established": "2021",
+   "hq": "Madurai, Tamil Nadu",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-darbhanga",
+   "kind": "autonomous_body",
+   "name": "AIIMS Darbhanga",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Under construction. Located in Darbhanga, Bihar.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "medium",
+   "hq": "Darbhanga, Bihar",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-awantipora",
+   "kind": "autonomous_body",
+   "name": "AIIMS Awantipora",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Under construction. Located in Awantipora, Jammu and Kashmir.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "medium",
+   "hq": "Awantipora, Jammu and Kashmir",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-deoghar",
+   "kind": "autonomous_body",
+   "name": "AIIMS Deoghar",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Deoghar, Jharkhand.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2019",
+   "hq": "Deoghar, Jharkhand",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-rajkot",
+   "kind": "autonomous_body",
+   "name": "AIIMS Rajkot",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Rajkot, Gujarat.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2020",
+   "hq": "Rajkot, Gujarat",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-bibinagar",
+   "kind": "autonomous_body",
+   "name": "AIIMS Bibinagar",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Functional. Located in Bibinagar, Telangana.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "high",
+   "established": "2019",
+   "hq": "Bibinagar, Telangana",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-rewari",
+   "kind": "autonomous_body",
+   "name": "AIIMS Rewari",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Under construction. Located in Rewari, Haryana.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "medium",
+   "hq": "Rewari, Haryana",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-manipur",
+   "kind": "autonomous_body",
+   "name": "AIIMS Manipur",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Announced. Sanctioned for Manipur; exact site not yet finalised.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-karnataka",
+   "kind": "autonomous_body",
+   "name": "AIIMS Karnataka",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Proposed. Sanctioned for Karnataka; exact site not yet finalised.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-kerala",
+   "kind": "autonomous_body",
+   "name": "AIIMS Kerala",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Proposed. Located in Kozhikode, Kerala.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "medium",
+   "hq": "Kozhikode, Kerala",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aiims-nagaki",
+   "kind": "autonomous_body",
+   "name": "AIIMS Nagaki",
+   "parentId": "in-min-health-and-family-welfare",
+   "description": "One of the AIIMS network of Institutes of National Importance for medical education, research and tertiary care. Status as of 2026-09-25: Proposed (announced 2026). Located in Nagaki, Nagaland.",
+   "legalBasis": "All India Institute of Medical Sciences Act, 1956 (as amended 2012)",
+   "officialUrl": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Institutes_of_Medical_Sciences"
+   ],
+   "confidence": "medium",
+   "hq": "Nagaki, Nagaland",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-ayush",
+   "kind": "ministry",
+   "name": "Ministry of AYUSH",
+   "aliases": [
+    "AYUSH Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Promotes and regulates India's traditional systems of medicine — Ayurveda, Yoga & Naturopathy, Unani, Siddha and Homoeopathy — including their education, research councils and pharmacopoeia standards.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; carved out of Health Ministry as independent ministry 2014",
+   "officialUrl": "https://ayush.gov.in",
+   "established": "2014-11-09",
+   "headPositionId": "in-pos-minister-ayush",
+   "adminHeadPositionId": "in-pos-secretary-ayush",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://ayush.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-pcimh",
+   "kind": "statutory_body",
+   "name": "Pharmacopoeia Commission for Indian Medicine and Homoeopathy",
+   "abbr": "PCIM&H",
+   "parentId": "in-min-ayush",
+   "description": "Sets and publishes official quality/pharmacopoeial standards for Ayurveda, Siddha, Unani and Homoeopathy drugs, and administers their pharmacovigilance.",
+   "hq": "Ghaziabad, Uttar Pradesh",
+   "officialUrl": "https://pcimh.gov.in",
+   "sources": [
+    "https://pcimh.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ccras",
+   "kind": "autonomous_body",
+   "name": "Central Council for Research in Ayurvedic Sciences",
+   "abbr": "CCRAS",
+   "parentId": "in-min-ayush",
+   "description": "Apex body for Ayurveda research, running a network of national institutes and regional research centres.",
+   "sources": [
+    "https://ayush.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ccrum",
+   "kind": "autonomous_body",
+   "name": "Central Council for Research in Unani Medicine",
+   "abbr": "CCRUM",
+   "parentId": "in-min-ayush",
+   "description": "Apex body for research in Unani medicine.",
+   "sources": [
+    "https://ayush.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ccrh",
+   "kind": "autonomous_body",
+   "name": "Central Council for Research in Homoeopathy",
+   "abbr": "CCRH",
+   "parentId": "in-min-ayush",
+   "description": "Apex body for research in Homoeopathy.",
+   "sources": [
+    "https://ayush.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ccryn",
+   "kind": "autonomous_body",
+   "name": "Central Council for Research in Yoga and Naturopathy",
+   "abbr": "CCRYN",
+   "parentId": "in-min-ayush",
+   "description": "Apex body for research in Yoga and Naturopathy.",
+   "sources": [
+    "https://ayush.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ccrs",
+   "kind": "autonomous_body",
+   "name": "Central Council for Research in Siddha",
+   "abbr": "CCRS",
+   "parentId": "in-min-ayush",
+   "description": "Apex body for research in Siddha medicine.",
+   "sources": [
+    "https://ayush.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncism",
+   "kind": "regulator",
+   "name": "National Commission for Indian System of Medicine",
+   "abbr": "NCISM",
+   "parentId": "in-min-ayush",
+   "description": "Regulates Ayurveda, Siddha, Unani and Sowa-Rigpa medical education and practitioners (accreditation, curricula, central registers); replaced the Central Council of Indian Medicine in 2021.",
+   "legalBasis": "National Commission for Indian System of Medicine Act, 2020",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Indian_System_of_Medicine"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nch",
+   "kind": "regulator",
+   "name": "National Commission for Homoeopathy",
+   "abbr": "NCH",
+   "parentId": "in-min-ayush",
+   "description": "Regulates homoeopathic medical education and practitioners; replaced the Central Council of Homoeopathy in 2021.",
+   "legalBasis": "National Commission for Homoeopathy Act, 2020",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Homoeopathy"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-education",
+   "kind": "ministry",
+   "name": "Ministry of Education",
+   "aliases": [
+    "MoE",
+    "Education Ministry",
+    "formerly Ministry of Human Resource Development",
+    "MHRD"
+   ],
+   "parentId": "in-union-government",
+   "description": "Sets school and higher-education policy for India (curriculum frameworks, NEP 2020 implementation) through two departments — School Education & Literacy, and Higher Education — and regulates entrance exams, universities and technical institutes via UGC, AICTE, NCERT, NTA and others.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961 (renamed from Ministry of Human Resource Development in 2020)",
+   "officialUrl": "https://www.education.gov.in",
+   "headPositionId": "in-pos-minister-education",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://www.education.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-school-education-and-literacy",
+   "kind": "department",
+   "name": "Department of School Education and Literacy",
+   "parentId": "in-min-education",
+   "description": "Administers school education policy, mid-day meals, teacher education, and boards/bodies such as CBSE, NCERT, NCTE, KVS and NVS.",
+   "adminHeadPositionId": "in-pos-secretary-school-education-and-literacy",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-higher-education",
+   "kind": "department",
+   "name": "Department of Higher Education",
+   "parentId": "in-min-education",
+   "description": "Administers university and technical-education policy and funding, and bodies such as UGC, AICTE, NTA, IITs, IIMs, NITs and central universities.",
+   "adminHeadPositionId": "in-pos-secretary-higher-education",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncert",
+   "kind": "autonomous_body",
+   "name": "National Council of Educational Research and Training",
+   "abbr": "NCERT",
+   "parentId": "in-dept-school-education-and-literacy",
+   "description": "Develops the national school curriculum framework and textbooks, and conducts the National Talent Search Examination; also houses the National Council for Teacher Education secretariat.",
+   "established": "1961-07-27",
+   "officialUrl": "https://ncert.nic.in",
+   "headPositionId": "in-pos-director-ncert",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Council_of_Educational_Research_and_Training"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncte",
+   "kind": "statutory_body",
+   "name": "National Council for Teacher Education",
+   "abbr": "NCTE",
+   "parentId": "in-dept-school-education-and-literacy",
+   "description": "Regulates teacher-education institutions and programmes nationally — norms, recognition and standards for teacher training courses.",
+   "legalBasis": "National Council for Teacher Education Act, 1993",
+   "established": "1995",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Council_for_Teacher_Education"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cbse",
+   "kind": "autonomous_body",
+   "name": "Central Board of Secondary Education",
+   "abbr": "CBSE",
+   "parentId": "in-dept-school-education-and-literacy",
+   "description": "India's largest school examination board, affiliating over 27,000 schools in India and abroad and conducting Class 10/12 board exams.",
+   "established": "1929",
+   "officialUrl": "https://cbse.gov.in",
+   "headPositionId": "in-pos-chairperson-cbse",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Board_of_Secondary_Education"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-kvs",
+   "kind": "autonomous_body",
+   "name": "Kendriya Vidyalaya Sangathan",
+   "abbr": "KVS",
+   "parentId": "in-dept-school-education-and-literacy",
+   "description": "Runs the ~1,250-school Kendriya Vidyalaya chain for children of central-government transferable employees (plus three schools abroad), one of the world's largest school chains.",
+   "established": "1963",
+   "officialUrl": "https://kvsangathan.nic.in",
+   "headPositionId": "in-pos-commissioner-kvs",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kendriya_Vidyalaya_Sangathan"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nvs",
+   "kind": "autonomous_body",
+   "name": "Navodaya Vidyalaya Samiti",
+   "abbr": "NVS",
+   "parentId": "in-dept-school-education-and-literacy",
+   "description": "Runs the Jawahar Navodaya Vidyalaya system of ~650 free, fully-residential schools for academically talented children mostly from rural areas, one per district.",
+   "established": "1986",
+   "officialUrl": "https://navodaya.gov.in",
+   "headPositionId": "in-pos-commissioner-nvs",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jawahar_Navodaya_Vidyalaya"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nios",
+   "kind": "autonomous_body",
+   "name": "National Institute of Open Schooling",
+   "abbr": "NIOS",
+   "parentId": "in-dept-school-education-and-literacy",
+   "description": "The world's largest open-schooling system, offering secondary/senior-secondary and vocational certification outside the formal school system through study centres in India and abroad.",
+   "established": "1989",
+   "officialUrl": "https://www.nios.ac.in",
+   "headPositionId": "in-pos-chairman-nios",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Open_Schooling"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ugc",
+   "kind": "statutory_body",
+   "name": "University Grants Commission",
+   "abbr": "UGC",
+   "parentId": "in-dept-higher-education",
+   "description": "Coordinates, funds and sets standards for university education in India, recognises universities and disburses grants and doctoral fellowships.",
+   "legalBasis": "University Grants Commission Act, 1956",
+   "established": "1953-12-28",
+   "officialUrl": "https://www.ugc.gov.in",
+   "headPositionId": "in-pos-chairman-ugc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/University_Grants_Commission_(India)"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aicte",
+   "kind": "statutory_body",
+   "name": "All India Council for Technical Education",
+   "abbr": "AICTE",
+   "parentId": "in-dept-higher-education",
+   "description": "National regulator for technical, management, pharmacy and architecture education — approves and monitors AICTE-affiliated colleges and courses.",
+   "legalBasis": "All India Council for Technical Education Act, 1987",
+   "established": "1945",
+   "officialUrl": "https://www.aicte-india.org",
+   "sources": [
+    "https://en.wikipedia.org/wiki/All_India_Council_for_Technical_Education"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nta",
+   "kind": "autonomous_body",
+   "name": "National Testing Agency",
+   "abbr": "NTA",
+   "parentId": "in-dept-higher-education",
+   "description": "Conducts national entrance examinations for higher education (JEE Main, NEET-UG, UGC-NET, CUET and others); stopped conducting recruitment exams from 2025 after repeated paper-leak controversies.",
+   "established": "2017-11",
+   "officialUrl": "https://www.nta.ac.in",
+   "headPositionId": "in-pos-dg-nta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Testing_Agency"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-naac",
+   "kind": "autonomous_body",
+   "name": "National Assessment and Accreditation Council",
+   "abbr": "NAAC",
+   "parentId": "in-dept-higher-education",
+   "description": "Assesses and accredits Indian higher-education institutions on an eight-grade scale; in Feb 2025 the CBI arrested its chairman and several inspection-committee members in a bribery-for-accreditation scandal, after which NAAC suspended implicated assessors and reviewed hundreds of past assessments.",
+   "established": "1994",
+   "hq": "Bengaluru",
+   "officialUrl": "https://naac.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Assessment_and_Accreditation_Council"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nirf",
+   "kind": "mission",
+   "name": "National Institutional Ranking Framework",
+   "abbr": "NIRF",
+   "parentId": "in-dept-higher-education",
+   "description": "Annual methodology and ranking exercise (not a standalone body) run by the Ministry of Education / National Board of Accreditation to rank Indian higher-education institutions across 11+ categories.",
+   "established": "2015-09-29",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institutional_Ranking_Framework"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iits",
+   "kind": "autonomous_body",
+   "name": "Indian Institutes of Technology",
+   "abbr": "IITs",
+   "parentId": "in-dept-higher-education",
+   "description": "Network of 23 autonomous public engineering/technology Institutes of National Importance, governed jointly through the IIT Council (chaired ex officio by the Education Minister).",
+   "legalBasis": "Institutes of Technology Act, 1961",
+   "seats": 23,
+   "notes": "All 23 IITs as of 2026-09-25: IIT Kharagpur; IIT Bombay; IIT Kanpur; IIT Madras; IIT Delhi; IIT Guwahati; IIT Roorkee; IIT Jodhpur; IIT Hyderabad; IIT Gandhinagar; IIT Ropar; IIT Patna; IIT Bhubaneswar; IIT Indore; IIT Mandi; IIT (BHU) Varanasi; IIT Palakkad; IIT Tirupati; IIT (ISM) Dhanbad; IIT Bhilai; IIT Dharwad; IIT Jammu; IIT Goa.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Institutes_of_Technology"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iims",
+   "kind": "autonomous_body",
+   "name": "Indian Institutes of Management",
+   "abbr": "IIMs",
+   "parentId": "in-dept-higher-education",
+   "description": "Network of 22 autonomous public business schools declared Institutes of National Importance, coordinated through the IIM Coordination Forum with full operational autonomy since the IIM Act 2017.",
+   "legalBasis": "Indian Institutes of Management Act, 2017",
+   "seats": 22,
+   "notes": "All 22 IIMs as of 2026-09-25: IIM Calcutta; IIM Ahmedabad; IIM Bangalore; IIM Lucknow; IIM Indore; IIM Kozhikode; IIM Shillong; IIM Raipur; IIM Ranchi; IIM Rohtak; IIM Kashipur; IIM Tiruchirappalli; IIM Udaipur; IIM Amritsar; IIM Bodh Gaya; IIM Nagpur; IIM Sambalpur; IIM Sirmaur; IIM Visakhapatnam; IIM Jammu; IIM Mumbai; IIM Guwahati.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Institutes_of_Management"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nits",
+   "kind": "autonomous_body",
+   "name": "National Institutes of Technology",
+   "abbr": "NITs",
+   "parentId": "in-dept-higher-education",
+   "description": "Network of 32 centrally-funded technical Institutes of National Importance (list includes IIEST Shibpur), coordinated through the NIT Council.",
+   "legalBasis": "National Institutes of Technology, Science Education, and Research Act, 2007",
+   "seats": 32,
+   "notes": "All 32 NITs/NIT-equivalents as of 2026-09-25: NIT Karnataka (Surathkal); NIT Warangal; MANIT Bhopal; IIEST Shibpur; VNIT Nagpur; NIT Durgapur; NIT Jamshedpur; NIT Srinagar; NIT Silchar; MNNIT Allahabad; SVNIT Surat; NIT Calicut; NIT Rourkela; MNIT Jaipur; NIT Kurukshetra; NIT Tiruchirappalli; NIT Hamirpur; NIT Jalandhar; NIT Patna; NIT Raipur; NIT Agartala; NIT Arunachal Pradesh; NIT Delhi; NIT Goa; NIT Manipur; NIT Meghalaya; NIT Mizoram; NIT Nagaland; NIT Puducherry; NIT Sikkim; NIT Uttarakhand; NIT Andhra Pradesh.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institutes_of_Technology"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-central-universities",
+   "kind": "autonomous_body",
+   "name": "Central Universities of India",
+   "abbr": "Central Universities",
+   "parentId": "in-dept-higher-education",
+   "description": "India's 57 central (Union-government-established/funded) universities, established mostly under individual Acts of Parliament and funded through the UGC.",
+   "legalBasis": "Individual Acts of Parliament per university; funded via UGC Act, 1956",
+   "seats": 57,
+   "notes": "All 57 institutions Wikipedia's 'Central university (India)' list groups as central universities as of 2026-09-25 (a few, e.g. National Sports University, Indian Maritime University, are technically separate Institutions of National Importance rather than UGC-Act central universities, but are centrally administered on the same footing): Central Tribal University of Andhra Pradesh; Central University of Andhra Pradesh; National Sanskrit University; Rajiv Gandhi University; Assam University; Tezpur University; Central University of South Bihar; Mahatma Gandhi Central University; Nalanda University; Dr. Rajendra Prasad Central Agriculture University; Guru Ghasidas Vishwavidyalaya; Central Sanskrit University; Indira Gandhi National Open University; Jamia Millia Islamia; Jawaharlal Nehru University; Shri Lal Bahadur Shastri National Sanskrit University; South Asian University; University of Delhi; Central University of Gujarat; Gati Shakti Vishwavidyalaya; Central University of Haryana; Central University of Himachal Pradesh; Central University of Jammu; Central University of Kashmir; Central University of Jharkhand; Central University of Karnataka; Central University of Kerala; Sindhu Central University; Dr. Hari Singh Gour University; Indira Gandhi National Tribal University; Mahatma Gandhi Antarrashtriya Hindi Vishwavidyalaya; Central Agricultural University; Manipur University; National Sports University; North Eastern Hill University; Mizoram University; Nagaland University; Central University of Odisha; Pondicherry University; Central University of Punjab; Central University of Rajasthan; Sikkim University; Central University of Tamil Nadu; Indian Maritime University; English and Foreign Languages University; Maulana Azad National Urdu University; University of Hyderabad; Sammakka Sarakka Central Tribal University; Tripura University; Aligarh Muslim University; University of Allahabad; Babasaheb Bhimrao Ambedkar University; Banaras Hindu University; Rajiv Gandhi National Aviation University; Rani Lakshmi Bai Central Agricultural University; Hemwati Nandan Bahuguna Garhwal University; Visva-Bharati University.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_university_(India)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-women-and-child-development",
+   "kind": "ministry",
+   "name": "Ministry of Women and Child Development",
+   "abbr": "WCD",
+   "parentId": "in-union-government",
+   "description": "Runs India's women's-welfare and child-protection policy and schemes: anganwadi nutrition services (Poshan/ICDS), adoption regulation, child protection, and women's safety and empowerment programmes.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://wcd.nic.in",
+   "headPositionId": "in-pos-minister-women-and-child-development",
+   "adminHeadPositionId": "in-pos-secretary-women-and-child-development",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://wcd.nic.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cara",
+   "kind": "statutory_body",
+   "name": "Central Adoption Resource Authority",
+   "abbr": "CARA",
+   "parentId": "in-min-women-and-child-development",
+   "description": "Nodal statutory body regulating in-country and inter-country adoption of Indian children, and India's Central Authority under the 1993 Hague Adoption Convention.",
+   "legalBasis": "Juvenile Justice (Care and Protection of Children) Act, 2015",
+   "established": "1990",
+   "officialUrl": "https://cara.wcd.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Adoption_Resource_Authority"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nipccd",
+   "kind": "autonomous_body",
+   "name": "National Institute of Public Cooperation and Child Development",
+   "abbr": "NIPCCD",
+   "parentId": "in-min-women-and-child-development",
+   "description": "Apex training, research and documentation institute for child development and women's-empowerment programmes, with regional centres in Guwahati, Bengaluru, Lucknow and Indore.",
+   "established": "1966",
+   "officialUrl": "https://nipccd.nic.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Public_Cooperation_and_Child_Development"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-poshan-abhiyaan",
+   "kind": "mission",
+   "name": "Saksham Anganwadi and Poshan 2.0 (POSHAN Abhiyaan)",
+   "aliases": [
+    "POSHAN Abhiyaan",
+    "Anganwadi Services",
+    "ICDS",
+    "Integrated Child Development Services"
+   ],
+   "parentId": "in-min-women-and-child-development",
+   "description": "India's flagship nutrition mission, delivered through ~1.4 million Anganwadi Centres nationwide, providing supplementary nutrition, pre-school education and health referral for children under 6 and pregnant/lactating mothers; merged the erstwhile ICDS scheme with the National Nutrition Mission in 2021-22 as 'Saksham Anganwadi and Poshan 2.0'.",
+   "established": "1975 (ICDS); 2018 (Poshan Abhiyaan); 2021 (Poshan 2.0)",
+   "sources": [
+    "https://wcd.nic.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-rashtriya-mahila-kosh",
+   "kind": "autonomous_body",
+   "name": "Rashtriya Mahila Kosh",
+   "abbr": "RMK",
+   "aliases": [
+    "National Credit Fund for Women"
+   ],
+   "parentId": "in-min-women-and-child-development",
+   "description": "Provides micro-credit to poor women, mainly through NGOs/SHG-federation intermediaries, for income-generation activities.",
+   "established": "1993",
+   "sources": [
+    "https://wcd.nic.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-social-justice-and-empowerment",
+   "kind": "ministry",
+   "name": "Ministry of Social Justice and Empowerment",
+   "parentId": "in-union-government",
+   "description": "Runs welfare, protection and economic-empowerment policy for Scheduled Castes, Other Backward Classes, senior citizens, Safai Karamcharis and persons with disabilities, through two departments.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://socialjustice.gov.in",
+   "headPositionId": "in-pos-minister-social-justice-and-empowerment",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://socialjustice.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-social-justice-and-empowerment",
+   "kind": "department",
+   "name": "Department of Social Justice and Empowerment",
+   "parentId": "in-min-social-justice-and-empowerment",
+   "description": "Handles welfare and development schemes for Scheduled Castes, Other Backward Classes, senior citizens and Safai Karamcharis.",
+   "adminHeadPositionId": "in-pos-secretary-social-justice-and-empowerment",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-empowerment-of-persons-with-disabilities",
+   "kind": "department",
+   "name": "Department of Empowerment of Persons with Disabilities",
+   "abbr": "DEPwD",
+   "parentId": "in-min-social-justice-and-empowerment",
+   "description": "Administers disability-rights law and welfare schemes, including the Rights of Persons with Disabilities Act, 2016 and the Chief Commissioner for Persons with Disabilities.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; department created 2012",
+   "adminHeadPositionId": "in-pos-secretary-empowerment-of-persons-with-disabilities",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nsfdc",
+   "kind": "cpse",
+   "name": "National Scheduled Castes Finance and Development Corporation",
+   "abbr": "NSFDC",
+   "parentId": "in-dept-social-justice-and-empowerment",
+   "description": "Government-owned non-profit corporation providing concessional finance and skill-training support for economic empowerment of Scheduled Caste families below double the poverty line.",
+   "established": "1989",
+   "officialUrl": "https://nsfdc.nic.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Scheduled_Castes_Finance_and_Development_Corporation"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nbcfdc",
+   "kind": "cpse",
+   "name": "National Backward Classes Finance and Development Corporation",
+   "abbr": "NBCFDC",
+   "parentId": "in-dept-social-justice-and-empowerment",
+   "description": "Government-owned non-profit corporation providing concessional finance for self-employment and skill development of persons from Other Backward Classes and denotified/nomadic tribes.",
+   "established": "1992",
+   "sources": [
+    "https://socialjustice.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nskfdc",
+   "kind": "cpse",
+   "name": "National Safai Karamcharis Finance and Development Corporation",
+   "abbr": "NSKFDC",
+   "parentId": "in-dept-social-justice-and-empowerment",
+   "description": "Government-owned corporation providing concessional finance and self-employment/rehabilitation support for Safai Karamcharis (sanitation workers), manual scavengers and their dependants.",
+   "established": "1997",
+   "sources": [
+    "https://socialjustice.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncsk",
+   "kind": "advisory_body",
+   "name": "National Commission for Safai Karamcharis",
+   "abbr": "NCSK",
+   "parentId": "in-dept-social-justice-and-empowerment",
+   "description": "Investigates conditions of Safai Karamcharis (sanitation/manual-scavenging workers) and recommends welfare programmes; currently a non-statutory body periodically extended by government resolution rather than under its lapsed 1993 Act.",
+   "legalBasis": "Constituted 1994 under NCSK Act, 1993 (Act lapsed Feb 2004; body since continued by executive resolution)",
+   "established": "1994-08-12",
+   "headPositionId": "in-pos-chairperson-ncsk",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Safai_Karamcharis"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nisd",
+   "kind": "autonomous_body",
+   "name": "National Institute of Social Defence",
+   "abbr": "NISD",
+   "parentId": "in-dept-social-justice-and-empowerment",
+   "description": "Training and research institute on 'social defence' issues — drug-demand reduction, elder care, and welfare of persons in need of care and protection.",
+   "sources": [
+    "https://socialjustice.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ambedkar-foundation",
+   "kind": "autonomous_body",
+   "name": "Dr. Ambedkar Foundation",
+   "parentId": "in-dept-social-justice-and-empowerment",
+   "description": "Runs commemorative, scholarship and welfare schemes in memory of B. R. Ambedkar, including international/national Ambedkar award schemes and the Mahaparinirvan Diwas observance.",
+   "established": "1992",
+   "officialUrl": "https://ambedkarfoundation.nic.in",
+   "sources": [
+    "https://ambedkarfoundation.nic.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ccpd",
+   "kind": "statutory_body",
+   "name": "Chief Commissioner for Persons with Disabilities",
+   "abbr": "CCPD",
+   "parentId": "in-dept-empowerment-of-persons-with-disabilities",
+   "description": "Quasi-judicial office safeguarding the rights of persons with disabilities and adjudicating individual grievances under the disability-rights law; historically held ex officio by the DEPwD Secretary.",
+   "legalBasis": "Rights of Persons with Disabilities Act, 2016",
+   "headPositionId": "in-pos-ccpd",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Commissioner_for_Persons_with_Disabilities"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-tribal-affairs",
+   "kind": "ministry",
+   "name": "Ministry of Tribal Affairs",
+   "parentId": "in-union-government",
+   "description": "Nodal ministry for welfare and development of Scheduled Tribes — education (EMRS), livelihoods and minor-forest-produce marketing (TRIFED), and concessional finance (NSTFDC).",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; created as separate ministry 1999",
+   "officialUrl": "https://tribal.nic.in",
+   "headPositionId": "in-pos-minister-tribal-affairs",
+   "adminHeadPositionId": "in-pos-secretary-tribal-affairs",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://tribal.nic.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nstfdc",
+   "kind": "cpse",
+   "name": "National Scheduled Tribes Finance and Development Corporation",
+   "abbr": "NSTFDC",
+   "parentId": "in-min-tribal-affairs",
+   "description": "Apex government-owned corporation providing concessional finance and skill upgradation support for the economic development of Scheduled Tribes, channelised through State Channelizing Agencies.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Scheduled_Tribes_Finance_and_Development_Corporation"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-trifed",
+   "kind": "cpse",
+   "name": "Tribal Cooperative Marketing Development Federation of India",
+   "abbr": "TRIFED",
+   "parentId": "in-min-tribal-affairs",
+   "description": "National apex cooperative body for marketing tribal minor forest produce and handicrafts (via the 'Tribes India' brand and Van Dhan Yojana), and for fair-price procurement support to tribal gatherers.",
+   "established": "1987",
+   "officialUrl": "https://trifed.tribal.gov.in",
+   "sources": [
+    "https://trifed.tribal.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nests",
+   "kind": "autonomous_body",
+   "name": "National Education Society for Tribal Students",
+   "abbr": "NESTS",
+   "parentId": "in-min-tribal-affairs",
+   "description": "Society that manages the Eklavya Model Residential Schools (EMRS) — fully residential CBSE-affiliated schools for Scheduled Tribe students, targeting one EMRS per block with ≥50% ST population and ≥20,000 tribal persons.",
+   "established": "2019 (society); EMRS scheme since 1997-98",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Eklavya_Model_Residential_School"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ntri",
+   "kind": "autonomous_body",
+   "name": "National Tribal Research Institute",
+   "abbr": "NTRI",
+   "parentId": "in-min-tribal-affairs",
+   "description": "Apex research institute for tribal affairs, coordinating a network of State Tribal Research Institutes on tribal culture, ethnography and policy research.",
+   "established": "2019",
+   "sources": [
+    "https://tribal.nic.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-minority-affairs",
+   "kind": "ministry",
+   "name": "Ministry of Minority Affairs",
+   "parentId": "in-union-government",
+   "description": "Nodal ministry for welfare, education and economic-empowerment schemes for India's notified minority communities (Muslims, Christians, Sikhs, Buddhists, Parsis, Jains), and administers Waqf and Haj matters.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; created as separate ministry 2006",
+   "officialUrl": "https://www.minorityaffairs.gov.in",
+   "headPositionId": "in-pos-minister-minority-affairs",
+   "adminHeadPositionId": "in-pos-secretary-minority-affairs",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://www.minorityaffairs.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nmdfc",
+   "kind": "cpse",
+   "name": "National Minorities Development and Finance Corporation",
+   "abbr": "NMDFC",
+   "parentId": "in-min-minority-affairs",
+   "description": "Government-owned non-profit corporation providing concessional finance for self-employment and income-generation activities for people from notified minority communities.",
+   "established": "1994-09",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Minorities_Development_and_Finance_Corporation"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-central-waqf-council",
+   "kind": "statutory_body",
+   "name": "Central Waqf Council",
+   "parentId": "in-min-minority-affairs",
+   "description": "Statutory advisory body to the Union Government on Waqf-Board administration and proper management of Waqf (Islamic charitable-endowment) properties across State Waqf Boards.",
+   "legalBasis": "Waqf Act, 1995, as amended by the Waqf (Amendment) Act, 2025",
+   "established": "1964",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Waqf_Council"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-haj-committee",
+   "kind": "statutory_body",
+   "name": "Haj Committee of India",
+   "parentId": "in-min-minority-affairs",
+   "description": "Statutory body organising and facilitating the annual Haj pilgrimage to Saudi Arabia for Indian Muslims, acting as nodal agency for State Haj Committees.",
+   "legalBasis": "Haj Committee Act, 2002",
+   "established": "2002",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haj_Committee_of_India"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-maef",
+   "kind": "autonomous_body",
+   "name": "Maulana Azad Education Foundation",
+   "abbr": "MAEF",
+   "parentId": "in-min-minority-affairs",
+   "description": "Registered society running scholarship and educational-infrastructure schemes for educationally backward minority communities.",
+   "established": "1989",
+   "sources": [
+    "https://www.minorityaffairs.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-labour-and-employment",
+   "kind": "ministry",
+   "name": "Ministry of Labour and Employment",
+   "parentId": "in-union-government",
+   "description": "Sets labour law and social-security policy (the four consolidated Labour Codes), and runs employees' provident fund and health-insurance schemes, mines safety regulation and industrial-relations machinery.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://labour.gov.in",
+   "headPositionId": "in-pos-minister-labour-and-employment",
+   "adminHeadPositionId": "in-pos-secretary-labour-and-employment",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://labour.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-epfo",
+   "kind": "statutory_body",
+   "name": "Employees' Provident Fund Organisation",
+   "abbr": "EPFO",
+   "parentId": "in-min-labour-and-employment",
+   "description": "Administers India's mandatory retirement provident-fund, pension and insurance schemes for organised-sector employees (firms with 20+ workers), through the Central Board of Trustees; among the world's largest social-security organisations by membership.",
+   "legalBasis": "Employees' Provident Funds and Miscellaneous Provisions Act, 1952 (now folded into the Code on Social Security, 2020)",
+   "established": "1951/1952",
+   "officialUrl": "https://www.epfindia.gov.in",
+   "headPositionId": "in-pos-cpfc-epfo",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Employees%27_Provident_Fund_Organisation"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-esic",
+   "kind": "statutory_body",
+   "name": "Employees' State Insurance Corporation",
+   "abbr": "ESIC",
+   "parentId": "in-min-labour-and-employment",
+   "description": "Administers India's health-insurance and cash-benefit social-security scheme for organised-sector workers below a wage ceiling, running its own network of ESIC hospitals, dispensaries and medical colleges.",
+   "legalBasis": "Employees' State Insurance Act, 1948",
+   "officialUrl": "https://www.esic.gov.in",
+   "headPositionId": "in-pos-dg-esic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Employees%27_State_Insurance"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dge",
+   "kind": "attached_office",
+   "name": "Directorate General of Employment",
+   "abbr": "DGE",
+   "parentId": "in-min-labour-and-employment",
+   "description": "Compiles national employment-market information and runs the National Career Service portal connecting job-seekers, employers and skilling/career-counselling services.",
+   "sources": [
+    "https://labour.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dgms",
+   "kind": "attached_office",
+   "name": "Directorate General of Mines Safety",
+   "abbr": "DGMS",
+   "parentId": "in-min-labour-and-employment",
+   "description": "Regulates occupational safety, health and welfare of workers in coal, metalliferous and oil mines under the Mines Act, 1952; headquartered in Dhanbad.",
+   "legalBasis": "Mines Act, 1952",
+   "hq": "Dhanbad, Jharkhand",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Directorate_General_of_Mines_Safety"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-clc",
+   "kind": "attached_office",
+   "name": "Office of the Chief Labour Commissioner (Central)",
+   "abbr": "CLC(C)",
+   "parentId": "in-min-labour-and-employment",
+   "description": "Central enforcement machinery for labour laws (minimum wages, industrial disputes, contract labour) in central-sphere establishments, and chief conciliation authority for central-sphere industrial disputes.",
+   "sources": [
+    "https://labour.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-vvgnli",
+   "kind": "autonomous_body",
+   "name": "V. V. Giri National Labour Institute",
+   "abbr": "VVGNLI",
+   "parentId": "in-min-labour-and-employment",
+   "description": "Apex labour-research, training and policy institute (formerly the Central Labour Institute), named after former President V. V. Giri.",
+   "hq": "Noida, Uttar Pradesh",
+   "officialUrl": "https://vvgnli.gov.in",
+   "sources": [
+    "https://vvgnli.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-labour-bureau",
+   "kind": "attached_office",
+   "name": "Labour Bureau",
+   "parentId": "in-min-labour-and-employment",
+   "description": "Statistical wing of the ministry, compiling India's labour-market data — Consumer Price Index for Industrial/Agricultural/Rural Workers, employment-unemployment surveys and wage-rate indices.",
+   "hq": "Chandigarh",
+   "established": "1946",
+   "sources": [
+    "https://labourbureaunew.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-skill-development-and-entrepreneurship",
+   "kind": "ministry",
+   "name": "Ministry of Skill Development and Entrepreneurship",
+   "abbr": "MSDE",
+   "parentId": "in-union-government",
+   "description": "Runs India's vocational-training and skilling policy (Skill India Mission), industrial training institutes, apprenticeship regulation and entrepreneurship-promotion programmes.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; created as separate ministry 2014",
+   "officialUrl": "https://www.msde.gov.in",
+   "established": "2014-11-09",
+   "headPositionId": "in-pos-minister-skill-development-and-entrepreneurship",
+   "adminHeadPositionId": "in-pos-secretary-skill-development-and-entrepreneurship",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://www.msde.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nsdc",
+   "kind": "cpse",
+   "name": "National Skill Development Corporation",
+   "abbr": "NSDC",
+   "parentId": "in-min-skill-development-and-entrepreneurship",
+   "description": "Not-for-profit public-private-partnership company (51% private, 49% government-held) that funds and catalyses private-sector vocational-training capacity, sector skill councils and skilling partnerships.",
+   "established": "2008-07-31",
+   "officialUrl": "https://www.nsdcindia.org",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Skill_Development_Corporation"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncvet",
+   "kind": "regulator",
+   "name": "National Council for Vocational Education and Training",
+   "abbr": "NCVET",
+   "parentId": "in-min-skill-development-and-entrepreneurship",
+   "description": "Regulates vocational-education and skill-training institutions and awarding bodies, formed in 2018 by merging the National Council for Vocational Training (NCVT) and National Skill Development Agency (NSDA).",
+   "established": "2018-10-10",
+   "headPositionId": "in-pos-chairperson-ncvet",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Council_for_Vocational_Education_and_Training"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dgt",
+   "kind": "attached_office",
+   "name": "Directorate General of Training",
+   "abbr": "DGT",
+   "parentId": "in-min-skill-development-and-entrepreneurship",
+   "description": "Runs India's public Industrial Training Institute (ITI) system, apprenticeship-training scheme, and vocational-instructor training (Craftsmen/Apprentices Training Schemes).",
+   "sources": [
+    "https://www.msde.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-niesbud",
+   "kind": "autonomous_body",
+   "name": "National Institute for Entrepreneurship and Small Business Development",
+   "abbr": "NIESBUD",
+   "parentId": "in-min-skill-development-and-entrepreneurship",
+   "description": "Apex training and research body for entrepreneurship development and small-business promotion, running Entrepreneurship Development Programmes nationally.",
+   "hq": "Noida, Uttar Pradesh",
+   "officialUrl": "https://niesbud.nic.in",
+   "sources": [
+    "https://niesbud.nic.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nia-ayurveda",
+   "kind": "autonomous_body",
+   "name": "National Institute of Ayurveda",
+   "abbr": "NIA",
+   "parentId": "in-min-ayush",
+   "description": "Deemed-to-be university (De-novo category, since 2020) for Ayurveda teaching, clinical training and research; one of AYUSH's flagship national institutes.",
+   "hq": "Jaipur, Rajasthan",
+   "established": "1976-02-07",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Ayurveda"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cbwe",
+   "kind": "attached_office",
+   "name": "Central Board for Workers Education",
+   "abbr": "CBWE",
+   "parentId": "in-min-labour-and-employment",
+   "description": "Runs worker-education, trade-union leadership and labour-literacy training programmes for organised- and unorganised-sector workers through regional/sub-regional centres.",
+   "hq": "Nagpur, Maharashtra",
+   "sources": [
+    "https://labour.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-indian-institutes-of-skills",
+   "kind": "autonomous_body",
+   "name": "Indian Institutes of Skills",
+   "abbr": "IIS",
+   "parentId": "in-min-skill-development-and-entrepreneurship",
+   "description": "A small, growing network of flagship, industry-partnered vocational-training institutes (modelled loosely on the IIT/IIM brand) — the first opened in Mumbai (with Tata Group) in 2022, followed by further IIS in Kanpur, Ahmedabad, Bhubaneswar and Faridabad.",
+   "established": "2022",
+   "sources": [
+    "https://www.msde.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-minister-health-and-family-welfare",
+   "title": "Minister of Health and Family Welfare",
+   "orgId": "in-min-health-and-family-welfare",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jagat Prakash Nadda",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/J._P._Nadda",
+    "notes": "Also Minister of Chemicals and Fertilizers (outside this segment); BJP national president."
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-health-and-family-welfare-1",
+   "title": "Minister of State for Health and Family Welfare",
+   "orgId": "in-min-health-and-family-welfare",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Prataprao Ganpatrao Jadhav",
+    "since": "2024-06-10",
+    "party": "Shiv Sena (Shinde)",
+    "house": "Lok Sabha",
+    "constituency": "Buldhana, Maharashtra",
+    "wikipedia": "https://en.wikipedia.org/wiki/Prataprao_Jadhav",
+    "notes": "Primary charge is Minister of State (Independent Charge), AYUSH — see in-pos-minister-ayush."
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-health-and-family-welfare-2",
+   "title": "Minister of State for Health and Family Welfare",
+   "orgId": "in-min-health-and-family-welfare",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Anupriya Patel",
+    "since": "2024-06-10",
+    "party": "Apna Dal (Sonelal)",
+    "house": "Lok Sabha",
+    "constituency": "Mirzapur, Uttar Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Anupriya_Patel",
+    "notes": "Also Minister of State, Chemicals and Fertilizers (outside this segment)."
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-health-and-family-welfare",
+   "title": "Secretary, Department of Health and Family Welfare",
+   "orgId": "in-dept-health-and-family-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cabinet-secretary",
+   "holder": {
+    "name": "Punya Salila Srivastava",
+    "since": "2024",
+    "wikipedia": null,
+    "notes": "IAS, AGMUT cadre (1993 batch); also ex-officio Chairperson, FSSAI."
+   },
+   "sources": [
+    "https://www.sarkaritel.com/secretaries-to-government-of-india/",
+    "https://www.mohfw.gov.in/?q=en%2Fwhoswho-19",
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2250578&reg=3&lang=2",
+    "https://www.latestly.com/agency-news/india-news-health-secretary-punya-salila-srivastava-highlights-indias-public-health-initiatives-at-harvard-t-h-chan-school-7616599.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-health-research",
+   "title": "Secretary, Department of Health Research / Director-General, ICMR",
+   "orgId": "in-dept-health-research",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cabinet-secretary",
+   "holder": {
+    "name": "Rajiv Bahl",
+    "since": "2022",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rajiv_Bahl",
+    "notes": "Paediatrician; ex-WHO; holds the DHR Secretary and ICMR Director-General posts together by convention."
+   },
+   "sources": [
+    "https://www.sarkaritel.com/secretaries-to-government-of-india/",
+    "https://en.wikipedia.org/wiki/Rajiv_Bahl",
+    "https://health.economictimes.indiatimes.com/news/policy/80th-i-day-dhr-icmr-celebrates-with-renewed-commitment-to-health-research-medical-innovation-and-nation-building/133272517"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dghs",
+   "title": "Director General of Health Services",
+   "orgId": "in-dghs",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-health-and-family-welfare",
+   "holder": {
+    "name": "Atul Goel",
+    "since": "2022",
+    "notes": "Not independently confirmed against a 2025–2026 source this session; name is the last publicly known DGHS and may be outdated."
+   },
+   "sources": [
+    "https://dghs.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-dcgi",
+   "title": "Drugs Controller General of India",
+   "orgId": "in-cdsco",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-health-and-family-welfare",
+   "holder": {
+    "name": "Rajeev Singh Raghuvanshi",
+    "since": "2022-11",
+    "notes": "Not independently confirmed against a 2025–2026 source this session; name is the last publicly known DCGI and may be outdated."
+   },
+   "sources": [
+    "https://cdsco.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chairperson-fssai",
+   "title": "Chairperson, FSSAI",
+   "orgId": "in-fssai",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Punya Salila Srivastava",
+    "since": null,
+    "acting": true,
+    "notes": "Non-executive chairperson; per Wikipedia (2025 revision) she holds this ex officio alongside being Health Secretary. Not independently re-confirmed this session."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Food_Safety_and_Standards_Authority_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-ceo-fssai",
+   "title": "Chief Executive Officer, FSSAI",
+   "orgId": "in-fssai",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Rajit Punhani",
+    "since": null,
+    "notes": "Per Wikipedia (2025 revision); not independently re-confirmed this session."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Food_Safety_and_Standards_Authority_of_India",
+    "https://www.business-standard.com/companies/people/follow-regulations-do-not-mislead-customers-fssai-ceo-to-food-companies-126091001580_1.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-nmc",
+   "title": "Chairperson, National Medical Commission",
+   "orgId": "in-nmc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "B. N. Gangadhar",
+    "since": "2022-11",
+    "notes": "Not independently confirmed against a 2025–2026 source this session; name is the last publicly known chair and may be outdated."
+   },
+   "sources": [
+    "https://www.nmc.org.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-president-nbems",
+   "title": "President, NBEMS",
+   "orgId": "in-nbems",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": null,
+    "notes": "Current President not confirmed this session — no reliable 2025–2026 source found."
+   },
+   "vacant": false,
+   "sources": [
+    "https://natboard.edu.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-ceo-nha",
+   "title": "Chief Executive Officer, National Health Authority",
+   "orgId": "in-nha",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": null,
+    "notes": "Current CEO not confirmed this session — no reliable 2025–2026 source found (prior CEOs have included Dr R.S. Sharma and Dr Dinesh Arora; do not treat either as confirmed current)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://nha.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-dg-naco",
+   "title": "Director General, NACO",
+   "orgId": "in-naco",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-health-and-family-welfare",
+   "holder": {
+    "name": null,
+    "notes": "Current DG not confirmed this session."
+   },
+   "vacant": false,
+   "sources": [
+    "https://naco.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-director-ncdc",
+   "title": "Director, National Centre for Disease Control",
+   "orgId": "in-ncdc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-dghs",
+   "holder": {
+    "name": null,
+    "notes": "Current Director not confirmed this session."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ncdc.mohfw.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-dg-cghs",
+   "title": "Director General, CGHS",
+   "orgId": "in-cghs",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-health-and-family-welfare",
+   "holder": {
+    "name": null,
+    "notes": "Current DG not confirmed this session."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cghs.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-cmd-hll",
+   "title": "Chairman and Managing Director, HLL Lifecare",
+   "orgId": "in-hll-lifecare",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-health-and-family-welfare",
+   "holder": {
+    "name": null,
+    "notes": "Current CMD not confirmed this session."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.lifecarehll.com"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-minister-ayush",
+   "title": "Minister of State (Independent Charge) for AYUSH",
+   "orgId": "in-min-ayush",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Prataprao Ganpatrao Jadhav",
+    "since": "2024-07-02",
+    "party": "Shiv Sena (Shinde)",
+    "house": "Lok Sabha",
+    "constituency": "Buldhana, Maharashtra",
+    "wikipedia": "https://en.wikipedia.org/wiki/Prataprao_Jadhav",
+    "notes": "Also Minister of State, Health and Family Welfare — see in-pos-mos-health-and-family-welfare-1."
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-ayush",
+   "title": "Secretary, Ministry of AYUSH",
+   "orgId": "in-min-ayush",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cabinet-secretary",
+   "holder": {
+    "name": "Rajesh Kotecha",
+    "since": "2018",
+    "notes": "Vaidya Rajesh Kotecha; Ayurveda physician by training."
+   },
+   "sources": [
+    "https://www.sarkaritel.com/secretaries-to-government-of-india/",
+    "https://www.rediff.com/news/commentary/2026/jun/21/ayush-secretary-gets-fifth-extension-till-june-28-next-year/67876f2e0277bc71673e27cc32c6bf52"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-education",
+   "title": "Minister of Education",
+   "orgId": "in-min-education",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pralhad Joshi",
+    "since": "2026-07-25",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Dharwad, Karnataka",
+    "acting": true,
+    "wikipedia": "https://en.wikipedia.org/wiki/Pralhad_Joshi",
+    "notes": "Holds ADDITIONAL CHARGE of Education after Dharmendra Pradhan resigned as Education Minister on 25 July 2026 amid nationwide student protests over exam irregularities; Joshi continues to also hold Consumer Affairs, Food & Public Distribution and New & Renewable Energy (both outside this segment). No successor with full/independent charge of Education had been announced as of 2026-09-25; a wider cabinet reshuffle was anticipated around a 23–24 September 2026 'Chintan Shivir' but not confirmed by the as-of date."
+   },
+   "sources": [
+    "https://www.scconline.com/blog/post/2026/07/25/dharmendra-pradhan-resignation-education-ministry-pralhad-joshi-2026/",
+    "https://www.aljazeera.com/news/2026/7/26/who-is-indias-new-education-minister-pralhad-joshi",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-education-1",
+   "title": "Minister of State for Education",
+   "orgId": "in-min-education",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jayant Chaudhary",
+    "since": "2024-06-10",
+    "party": "Rashtriya Lok Dal",
+    "house": "Rajya Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jayant_Chaudhary",
+    "notes": "Primary charge is MoS (Independent Charge), Skill Development and Entrepreneurship — see in-pos-minister-skill-development-and-entrepreneurship."
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-education-2",
+   "title": "Minister of State for Education",
+   "orgId": "in-min-education",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sukanta Majumdar",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Balurghat, West Bengal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sukanta_Majumdar",
+    "notes": "Also Minister of State, Development of North Eastern Region (outside this segment); also BJP West Bengal state president."
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-school-education-and-literacy",
+   "title": "Secretary, Department of School Education and Literacy",
+   "orgId": "in-dept-school-education-and-literacy",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cabinet-secretary",
+   "holder": {
+    "name": "T. K. Anil Kumar",
+    "since": null,
+    "notes": "IAS, Karnataka cadre (1995 batch)."
+   },
+   "sources": [
+    "https://www.sarkaritel.com/secretaries-to-government-of-india/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-higher-education",
+   "title": "Secretary, Department of Higher Education",
+   "orgId": "in-dept-higher-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cabinet-secretary",
+   "holder": {
+    "name": "Deepti Gaur Mukerjee",
+    "since": "2026-08-10",
+    "notes": "IAS, Madhya Pradesh cadre (1993 batch); moved from Secretary, Ministry of Corporate Affairs. Appointed after a brief, contested appointment of Naresh Pal Gangwar (announced 2026-07-24, put in abeyance amid subsidy-related allegations) was not proceeded with; she succeeded Vineet Joshi."
+   },
+   "sources": [
+    "https://digitallearning.eletsonline.com/2026/08/deepti-gaur-mukerjee-appointed-secretary-of-higher-education-department/",
+    "https://www.sarkaritel.com/secretaries-to-government-of-india/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-ncert",
+   "title": "Director, NCERT",
+   "orgId": "in-ncert",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-education",
+   "holder": {
+    "name": "Dinesh Prasad Saklani",
+    "since": "2022-02",
+    "notes": "Per Wikipedia (2025 revision); not independently re-confirmed this session."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Council_of_Educational_Research_and_Training"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairperson-cbse",
+   "title": "Chairperson, CBSE",
+   "orgId": "in-cbse",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-education",
+   "holder": {
+    "name": "Lokhande Prashant Sitaram",
+    "since": null,
+    "notes": "IAS; per Wikipedia (2025/2026 revision), not independently re-confirmed this session."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Board_of_Secondary_Education"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-commissioner-kvs",
+   "title": "Commissioner, KVS",
+   "orgId": "in-kvs",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-education",
+   "holder": {
+    "name": null,
+    "notes": "Current Commissioner not confirmed this session."
+   },
+   "vacant": false,
+   "sources": [
+    "https://kvsangathan.nic.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-commissioner-nvs",
+   "title": "Commissioner, NVS",
+   "orgId": "in-nvs",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-education",
+   "holder": {
+    "name": null,
+    "notes": "Current Commissioner not confirmed this session."
+   },
+   "vacant": false,
+   "sources": [
+    "https://navodaya.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-chairman-nios",
+   "title": "Chairman, NIOS",
+   "orgId": "in-nios",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-education",
+   "holder": {
+    "name": "Akhilesh Mishra",
+    "since": null,
+    "notes": "Per Wikipedia (2025/2026 revision); not independently re-confirmed this session."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Institute_of_Open_Schooling"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairman-ugc",
+   "title": "Chairman, UGC",
+   "orgId": "in-ugc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-education",
+   "holder": {
+    "name": "Deepti Gaur Mukerjee",
+    "since": "2026-08",
+    "acting": true,
+    "notes": "Higher Education Secretary holding ADDITIONAL CHARGE as UGC Chairperson since ~August 2026 (when she became Higher Education Secretary). This continues a chain of bureaucrats holding the post on additional charge: M. Jagadesh Kumar's term as UGC Chairman ended ~April 2025; Vineet Joshi (then Higher Education Secretary) held additional charge from April 2025 until his August 2026 transfer to the Panchayati Raj ministry; Mukerjee succeeded him in both roles. Academics and a former UGC secretary have publicly criticised this as violating UGC Act s.4, which bars serving government officers from the chairmanship. The Vice-Chairperson post is also vacant. Original entry (M. Jagadesh Kumar) was STALE by ~17 months as of the 2026-09-25 as-of date — he left in April 2025."
+   },
+   "sources": [
+    "https://web.archive.org/web/20260904194904/https://www.telegraphindia.com/india/govt-grip-on-ugc-bureaucrat-given-charge-again-academics-fear-threat-to-autonomy-prnt/cid/2178046",
+    "https://en.wikipedia.org/wiki/University_Grants_Commission_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-nta",
+   "title": "Director General, NTA",
+   "orgId": "in-nta",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-education",
+   "holder": {
+    "name": null,
+    "notes": "Current DG not confirmed this session (first DG was Vineet Joshi, 2017; several successors since — name not verified for 2025–2026)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.nta.ac.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-minister-women-and-child-development",
+   "title": "Minister of Women and Child Development",
+   "orgId": "in-min-women-and-child-development",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Annpurna Devi",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Kodarma, Jharkhand",
+    "wikipedia": "https://en.wikipedia.org/wiki/Annpurna_Devi"
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-women-and-child-development-1",
+   "title": "Minister of State for Women and Child Development",
+   "orgId": "in-min-women-and-child-development",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Savitri Thakur",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Dhar, Madhya Pradesh"
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-women-and-child-development",
+   "title": "Secretary, Ministry of Women and Child Development",
+   "orgId": "in-min-women-and-child-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cabinet-secretary",
+   "holder": {
+    "name": "Anil Malik",
+    "since": "2024-02-29",
+    "notes": "IAS, Haryana cadre (1991 batch)."
+   },
+   "sources": [
+    "https://www.sarkaritel.com/secretaries-to-government-of-india/",
+    "https://observenow.com/2024/02/anil-malik-appointed-secretary-of-ministry-of-women-and-child-development/",
+    "https://www.moneycontrol.com/technology/indian-government-to-roll-out-ai-based-growth-monitoring-of-children-to-track-malnutrition-anil-malik-secretary-women-and-child-development-article-13831539.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-social-justice-and-empowerment",
+   "title": "Minister of Social Justice and Empowerment",
+   "orgId": "in-min-social-justice-and-empowerment",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Virendra Kumar",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Tikamgarh, Madhya Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Virendra_Kumar_Khatik"
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-social-justice-and-empowerment-1",
+   "title": "Minister of State for Social Justice and Empowerment",
+   "orgId": "in-min-social-justice-and-empowerment",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ramdas Athawale",
+    "since": "2024-06-10",
+    "party": "Republican Party of India (Athawale)",
+    "house": "Rajya Sabha"
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-social-justice-and-empowerment-2",
+   "title": "Minister of State for Social Justice and Empowerment",
+   "orgId": "in-min-social-justice-and-empowerment",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "B. L. Verma",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "notes": "Also Minister of State, Consumer Affairs, Food and Public Distribution (outside this segment)."
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-social-justice-and-empowerment",
+   "title": "Secretary, Department of Social Justice and Empowerment",
+   "orgId": "in-dept-social-justice-and-empowerment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cabinet-secretary",
+   "holder": {
+    "name": "Sudhansh Pant",
+    "since": "2025-12-01",
+    "notes": "IAS, Rajasthan cadre (1991 batch); former Chief Secretary of Rajasthan (2024–2025) and former Union Health Secretary (Aug–Dec 2023). Also holds additional charge of Secretary, NCSC and Secretary, NCBC."
+   },
+   "sources": [
+    "https://www.sarkaritel.com/secretaries-to-government-of-india/",
+    "https://en.wikipedia.org/wiki/Sudhansh_Pant"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-empowerment-of-persons-with-disabilities",
+   "title": "Secretary, Department of Empowerment of Persons with Disabilities",
+   "orgId": "in-dept-empowerment-of-persons-with-disabilities",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cabinet-secretary",
+   "holder": {
+    "name": "V. Vidyavathi",
+    "since": null,
+    "notes": "IAS, Karnataka cadre (1991 batch). Sudhansh Pant (Secretary, Social Justice) held ADDITIONAL CHARGE of this post 2026-09-12 to 2026-10-04 while she was on leave."
+   },
+   "sources": [
+    "https://www.sarkaritel.com/secretaries-to-government-of-india/",
+    "https://apacnewsnetwork.com/2026/09/ias-sudhansh-pant-assigned-additional-charge-of-disability-empowerment-department/",
+    "https://www.msn.com/en-in/news/India/dr-srivatsa-krishna-appointed-secretary-ministry-of-tourism/ar-AA1R2IKM"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-ncsk",
+   "title": "Chairperson, National Commission for Safai Karamcharis",
+   "orgId": "in-ncsk",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Manhar Valjibhai Zala",
+    "since": null,
+    "notes": "Per Wikipedia (2025/2026 revision); not independently re-confirmed this session."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Commission_for_Safai_Karamcharis"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-ccpd",
+   "title": "Chief Commissioner for Persons with Disabilities",
+   "orgId": "in-ccpd",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "V. Vidyavathi",
+    "since": null,
+    "notes": "Post has historically been held ex officio by the sitting DEPwD Secretary; not independently re-confirmed for the current holder this session (an older Wikipedia revision names a prior DEPwD secretary, Rajesh Aggarwal, as holder — treat as stale)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Commissioner_for_Persons_with_Disabilities"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-minister-tribal-affairs",
+   "title": "Minister of Tribal Affairs",
+   "orgId": "in-min-tribal-affairs",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jual Oram",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Sundargarh, Odisha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jual_Oram"
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-tribal-affairs-1",
+   "title": "Minister of State for Tribal Affairs",
+   "orgId": "in-min-tribal-affairs",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Durgadas Uikey",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Betul, Madhya Pradesh"
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-tribal-affairs",
+   "title": "Secretary, Ministry of Tribal Affairs",
+   "orgId": "in-min-tribal-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cabinet-secretary",
+   "holder": {
+    "name": "Ranjana Chopra",
+    "since": null,
+    "notes": "IAS, Odisha cadre (1994 batch). Anil Malik (WCD Secretary) held brief additional charge of this post 16 June–1 July 2026 during her leave."
+   },
+   "sources": [
+    "https://www.sarkaritel.com/secretaries-to-government-of-india/",
+    "https://www.northblocksouthblock.com/ranjana-chopra-given-additional-charge-of-women-and-child-development-secretary/",
+    "https://www.aninews.in/news/national/general-news/first-regional-review-conference-on-implementation-of-forest-rights-act-held-in-bengaluru20260911012841/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-minority-affairs",
+   "title": "Minister of Minority Affairs",
+   "orgId": "in-min-minority-affairs",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Kiren Rijiju",
+    "since": "2024-06-11",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Arunachal West, Arunachal Pradesh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kiren_Rijiju",
+    "notes": "Also Minister of Parliamentary Affairs (outside this segment)."
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-minority-affairs",
+   "title": "Secretary, Ministry of Minority Affairs",
+   "orgId": "in-min-minority-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cabinet-secretary",
+   "holder": {
+    "name": "Srivatsa Krishna",
+    "since": null,
+    "notes": "IAS, Karnataka cadre (1994 batch)."
+   },
+   "sources": [
+    "https://www.sarkaritel.com/secretaries-to-government-of-india/",
+    "https://www.prokerala.com/news/articles/a1798395.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-labour-and-employment",
+   "title": "Minister of Labour and Employment",
+   "orgId": "in-min-labour-and-employment",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Mansukh Mandaviya",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mansukh_Mandaviya",
+    "notes": "Also Minister of Youth Affairs and Sports (outside this segment)."
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-labour-and-employment-1",
+   "title": "Minister of State for Labour and Employment",
+   "orgId": "in-min-labour-and-employment",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Shobha Karandlaje",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "constituency": "Bangalore North, Karnataka",
+    "notes": "Also Minister of State, Micro, Small and Medium Enterprises (outside this segment)."
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-labour-and-employment",
+   "title": "Secretary, Ministry of Labour and Employment",
+   "orgId": "in-min-labour-and-employment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cabinet-secretary",
+   "holder": {
+    "name": "Chandra Bhushan Kumar",
+    "since": null,
+    "notes": "IAS, UT (AGMUT) cadre (1995 batch)."
+   },
+   "sources": [
+    "https://www.sarkaritel.com/secretaries-to-government-of-india/",
+    "https://www.business-standard.com/india-news/all-states-uts-may-notify-labour-code-rules-by-oct-31-labour-secretary-126092401119_1.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cpfc-epfo",
+   "title": "Central Provident Fund Commissioner, EPFO",
+   "orgId": "in-epfo",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-labour-and-employment",
+   "holder": {
+    "name": null,
+    "notes": "Current CPFC not confirmed this session."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.epfindia.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-dg-esic",
+   "title": "Director General, ESIC",
+   "orgId": "in-esic",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-labour-and-employment",
+   "holder": {
+    "name": null,
+    "notes": "Current DG not confirmed this session."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.esic.gov.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-minister-skill-development-and-entrepreneurship",
+   "title": "Minister of State (Independent Charge) for Skill Development and Entrepreneurship",
+   "orgId": "in-min-skill-development-and-entrepreneurship",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jayant Chaudhary",
+    "since": "2024-06-10",
+    "party": "Rashtriya Lok Dal",
+    "house": "Rajya Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jayant_Chaudhary",
+    "notes": "Also Minister of State, Education — see in-pos-mos-education-1."
+   },
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-skill-development-and-entrepreneurship",
+   "title": "Secretary, Ministry of Skill Development and Entrepreneurship",
+   "orgId": "in-min-skill-development-and-entrepreneurship",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cabinet-secretary",
+   "holder": {
+    "name": "Debashree Mukherjee",
+    "since": "2025-09",
+    "notes": "IAS, AGMUT cadre (1991 batch); previously Secretary, Department of Water Resources (Jal Shakti). Also ex-officio Chairperson, NCVET."
+   },
+   "sources": [
+    "https://www.skillreporter.com/news/msde/msde-ministry-skill-development-secretary-ias-debashree-mukherjee/",
+    "https://www.sarkaritel.com/secretaries-to-government-of-india/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-ncvet",
+   "title": "Chairperson, NCVET",
+   "orgId": "in-ncvet",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-council-of-ministers",
+   "holder": {
+    "name": "Debashree Mukherjee",
+    "since": "2025-09",
+    "notes": "Ex officio as Secretary, Ministry of Skill Development and Entrepreneurship."
+   },
+   "sources": [
+    "https://www.skillreporter.com/news/msde/msde-ministry-skill-development-secretary-ias-debashree-mukherjee/"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-health-and-family-welfare",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-health-and-family-welfare-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-health-and-family-welfare-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-union-council-of-ministers",
+   "to": "in-lok-sabha",
+   "type": "accountable_to",
+   "basis": "Article 75(3)"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-dept-health-and-family-welfare",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-dept-health-research",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-icmr",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-cdsco",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-fssai",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-nmc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-nbems",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-nha",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-naco",
+   "type": "administers"
+  },
+  {
+   "from": "in-dghs",
+   "to": "in-ncdc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-cghs",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-hll-lifecare",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-nihfw",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-delhi",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-bhopal",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-bhubaneswar",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-jodhpur",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-patna",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-raipur",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-rishikesh",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-raebareli",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-mangalagiri",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-nagpur",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-kalyani",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-gorakhpur",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-bathinda",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-guwahati",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-jammu",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-bilaspur",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-madurai",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-darbhanga",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-awantipora",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-deoghar",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-rajkot",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-bibinagar",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-rewari",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-manipur",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-karnataka",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-kerala",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-health-and-family-welfare",
+   "to": "in-aiims-nagaki",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-ayush",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-min-ayush",
+   "to": "in-pcimh",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ayush",
+   "to": "in-ccras",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ayush",
+   "to": "in-ccrum",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ayush",
+   "to": "in-ccrh",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ayush",
+   "to": "in-ccryn",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ayush",
+   "to": "in-ccrs",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ayush",
+   "to": "in-ncism",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ayush",
+   "to": "in-nch",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-education",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-education-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-education-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-dept-school-education-and-literacy",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-dept-higher-education",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-ncert",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-ncte",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-cbse",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-kvs",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-nvs",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-nios",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-ugc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-aicte",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-nta",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-naac",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-nirf",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-iits",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-minister-education",
+   "to": "in-iits",
+   "type": "ex_officio",
+   "basis": "Chairs the IIT Council"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-iims",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-nits",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-education",
+   "to": "in-central-universities",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-women-and-child-development",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-women-and-child-development-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-min-women-and-child-development",
+   "to": "in-cara",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-women-and-child-development",
+   "to": "in-nipccd",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-women-and-child-development",
+   "to": "in-poshan-abhiyaan",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-women-and-child-development",
+   "to": "in-rashtriya-mahila-kosh",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-women-and-child-development",
+   "to": "in-ncw",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-women-and-child-development",
+   "to": "in-ncpcr",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-social-justice-and-empowerment",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-social-justice-and-empowerment-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-social-justice-and-empowerment-2",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-min-social-justice-and-empowerment",
+   "to": "in-dept-social-justice-and-empowerment",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-social-justice-and-empowerment",
+   "to": "in-dept-empowerment-of-persons-with-disabilities",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-social-justice-and-empowerment",
+   "to": "in-nsfdc",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-social-justice-and-empowerment",
+   "to": "in-nbcfdc",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-social-justice-and-empowerment",
+   "to": "in-nskfdc",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-social-justice-and-empowerment",
+   "to": "in-ncsk",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-social-justice-and-empowerment",
+   "to": "in-nisd",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-social-justice-and-empowerment",
+   "to": "in-ambedkar-foundation",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-empowerment-of-persons-with-disabilities",
+   "to": "in-ccpd",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-tribal-affairs",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-tribal-affairs-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-min-tribal-affairs",
+   "to": "in-nstfdc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-tribal-affairs",
+   "to": "in-trifed",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-tribal-affairs",
+   "to": "in-nests",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-tribal-affairs",
+   "to": "in-ntri",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-minority-affairs",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-min-minority-affairs",
+   "to": "in-nmdfc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-minority-affairs",
+   "to": "in-central-waqf-council",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-minority-affairs",
+   "to": "in-haj-committee",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-minority-affairs",
+   "to": "in-maef",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-labour-and-employment",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-mos-labour-and-employment-1",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-min-labour-and-employment",
+   "to": "in-epfo",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-labour-and-employment",
+   "to": "in-esic",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-labour-and-employment",
+   "to": "in-dge",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-labour-and-employment",
+   "to": "in-dgms",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-labour-and-employment",
+   "to": "in-clc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-labour-and-employment",
+   "to": "in-vvgnli",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-labour-and-employment",
+   "to": "in-labour-bureau",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-minister-skill-development-and-entrepreneurship",
+   "type": "advises_appointment",
+   "basis": "Article 75(1)"
+  },
+  {
+   "from": "in-min-skill-development-and-entrepreneurship",
+   "to": "in-nsdc",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-skill-development-and-entrepreneurship",
+   "to": "in-ncvet",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-skill-development-and-entrepreneurship",
+   "to": "in-dgt",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-skill-development-and-entrepreneurship",
+   "to": "in-niesbud",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-ayush",
+   "to": "in-nia-ayurveda",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-labour-and-employment",
+   "to": "in-cbwe",
+   "type": "administers"
+  },
+  {
+   "from": "in-min-skill-development-and-entrepreneurship",
+   "to": "in-indian-institutes-of-skills",
+   "type": "administers"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 41,
+  "corrections": [
+   "Schema fix: added missing \"sector\":\"executive\" to 27 AIIMS entities (in-aiims-*) that violated SCHEMA.md's required Entity.sector field.",
+   "MAJOR CORRECTION in-pos-chairman-ugc: holder was stale/wrong (\"M. Jagadesh Kumar\", who left the post around April 2025 to become IIM Calcutta BoG chairman in March 2026) -> corrected to Deepti Gaur Mukerjee (acting/additional charge, since ~2026-08), sourced to a dated (2026-09-03) Telegraph India report; confidence medium -> high.",
+   "Confidence upgrade in-pos-secretary-health-and-family-welfare: medium -> high (fresh Sept 2026 press (Harvard T.H. Chan School / UNGA appearance) confirms Punya Salila Srivastava as sitting Union Health Secretary).",
+   "Confidence upgrade in-pos-secretary-health-research: medium -> high (confirmed via 15-Aug-2026 (80th Independence Day) DHR/ICMR press coverage naming Rajiv Bahl as Secretary DHR & DG ICMR).",
+   "Confidence upgrade in-pos-ceo-fssai: medium -> high (confirmed via Business Standard report dated 2026-09-10 naming Rajit Punhani as FSSAI CEO).",
+   "Confidence upgrade in-pos-secretary-ayush: medium -> high (confirmed Vaidya Rajesh Kotecha received a fifth tenure extension (June 2026) as AYUSH Secretary, extending him to 28 June 2027).",
+   "Confidence upgrade in-pos-secretary-women-and-child-development: medium -> high (confirmed via recent Moneycontrol coverage naming Anil Malik as Secretary, WCD).",
+   "Confidence upgrade in-pos-secretary-empowerment-of-persons-with-disabilities: medium -> high (confirmed via the Nov-2025 reshuffle report itself, which states V. Vidyavathi moved from Tourism Secretary to Dept. of Empowerment of Persons with Disabilities).",
+   "Confidence upgrade in-pos-secretary-tribal-affairs: medium -> high (confirmed via ANI report dated 2026-09-11 naming Ranjana Chopra (1994-batch IAS, Odisha cadre) as Union Tribal Affairs Secretary).",
+   "Confidence upgrade in-pos-secretary-minority-affairs: low -> high (confirmed via dated (2026-08-09/10) report on a Jeddah Haj-arrangements meeting naming Srivatsa Krishna as Secretary, Ministry of Minority Affairs -- independent of the sarkaritel directory the original agent relied on).",
+   "Confidence upgrade in-pos-secretary-labour-and-employment: low -> high (confirmed via Business Standard report dated 2026-09-24 (one day before as-of date) naming Chandra Bhushan Kumar as Labour Secretary -- independent of the sarkaritel directory)."
+  ]
+ }
+}

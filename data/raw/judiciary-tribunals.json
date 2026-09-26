@@ -1,0 +1,1204 @@
+{
+ "segment": "judiciary-tribunals",
+ "asOf": "2026-09-25",
+ "notes": "GAPS / LOW-CONFIDENCE ITEMS: (1) APTEL Chairperson position is vacant since ~August 2025 per Wikipedia's chairperson table; the official aptel.gov.in 'Chairperson' page shows no current occupant, which is consistent with (but not an independent confirmation of) the vacancy. (2) SAT (Securities Appellate Tribunal) presiding officer 'Justice Dinesh Kumar' is sourced only from an undated Wikipedia line; sat.gov.in returned HTTP 503 throughout this research session and could not be reached to verify. Flagged low confidence — needs re-check. (3) NCDRC President 'Justice Amreshwar Pratap Sahi' is Wikipedia-sourced 'as of 2024'; ncdrc.nic.in is a client-side-rendered SPA that could not be scraped statically to confirm he is still President as of 2026-09-25. (4) CAT (Central Administrative Tribunal)'s administering ministry is inferred as the Department of Personnel & Training (given DoPT's historical role in constituting CAT for central-govt service matters); no single authoritative source confirmed this explicitly — cgat.gov.in is also a client-rendered SPA. (5) Exact current bench counts for NCLT (Wikipedia cites 16 physical benches across 15 official site locations, with some ambiguity) and ITAT (zonal structure documented via 8 Vice-President zones, but no single total-bench figure found) are approximate. (6) NCLAT Chairperson 'Justice Yogesh Khanna' is confirmed CURRENT (officiating) via live nclat.nic.in bench notices dated Sept 2026, but the exact date he assumed the officiating chairpersonship was not found (only his 2024-02-19 date of joining as a Judicial Member). (7) Railway Claims Tribunal and Central Government Industrial Tribunals-cum-Labour Courts (CGIT) are structurally decentralised (each bench/tribunal has its own presiding officer) so no single national 'holder' Position was created for them — this matches the pattern used for DRT/DRAT. CGIT's exact current count of tribunals could not be verified: labour.gov.in / clc.gov.in are Next.js client-rendered sites that returned only empty app shells to non-browser fetches (curl/WebFetch), and this session's WebSearch budget was exhausted before this could be resolved another way. (8) Tribunals Reforms Act, 2021 abolished several appellate bodies entirely (Cinematograph Appellate Tribunal, Trade Marks Appellate Board, Copyright Appellate Board, Customs Authority for Advance Rulings, Patents Appellate Board, Airport Appellate Tribunal, National Highways Appellate Tribunal, Geographical Indications Appellate Board), shifting their jurisdiction to High Courts / Commercial Courts / civil courts / the Central Government — per PRS Legislative Research's bill summary. These are NOT included as entities since they no longer exist. (9) This session's WebSearch tool quota was exhausted almost immediately (shared across parallel research agents), so all research after the first few queries relied on curl (Wikipedia parse API + official *.gov.in/*.nic.in sites) and WebFetch; several official tribunal sites (cgat.gov.in, ncdrc.nic.in, drt.gov.in, labour.gov.in, doj.gov.in) are JavaScript single-page apps that return an empty shell to non-browser HTTP clients and could not be scraped for current office-holder data beyond what is noted above. VERIFICATION PASS (2026-09-25) ADDITIONS: investigated whether the Appellate Tribunal under SAFEMA/PMLA/FEMA/NDPS (a.k.a. Appellate Tribunal for Forfeited Property) should be added as a 17th entity -- it is a real, distinct central tribunal not in the original 16 -- but could not find a live official source (dor.gov.in candidate URL 404'd) or a reliable 2025-2026 source for its current chairperson within this session's tool budget (WebSearch quota was exhausted session-wide before this could be resolved). NOT added, to avoid inventing a chairperson name or stale legal-basis text -- flagged here as a known coverage gap for a follow-up research pass.",
+ "entities": [
+  {
+   "id": "in-ngt",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "National Green Tribunal",
+   "nameHi": null,
+   "abbr": "NGT",
+   "aliases": [
+    "NGT",
+    "Green Tribunal"
+   ],
+   "parentId": "in-dept-legal-affairs",
+   "description": "Specialised statutory tribunal for expeditious disposal of civil cases involving substantial questions relating to protection of environment and natural resources, and for providing relief and compensation for damages to persons and property from environmental harm.",
+   "legalBasis": "National Green Tribunal Act, 2010",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.greentribunal.gov.in",
+   "established": "2010",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-ngt",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "principalBench": "New Delhi",
+    "zonalBenches": [
+     "Kolkata (Eastern Zone)",
+     "Pune (Western Zone)",
+     "Bhopal (Central Zone)",
+     "Chennai (Southern Zone)"
+    ],
+    "benchCount": 5,
+    "judicialMembers": [
+     "Justice Pushpa Sathyanarayana",
+     "Justice Dinesh Kumar Singh",
+     "Justice Arun Kumar Tyagi",
+     "Justice S K Singh"
+    ],
+    "expertMembers": [
+     "Dr A Senthil Vel",
+     "Dr Afroz Ahmad",
+     "Shri Sudhir Kumar Chaturvedi",
+     "Mr Ishwar Singh",
+     "Dr Sujit Kumar Bajpayee",
+     "Dr Prashant Gargava"
+    ]
+   },
+   "budget": {
+    "fy": "2025-26",
+    "be": null,
+    "reFy": null,
+    "re": null,
+    "actualFy": "2025-26",
+    "actual": 52.68,
+    "source": "https://en.wikipedia.org/wiki/National_Green_Tribunal"
+   },
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Green_Tribunal",
+    "https://www.greentribunal.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nclt",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "National Company Law Tribunal",
+   "nameHi": "राष्ट्रीय कंपनी विधि अधिकरण",
+   "abbr": "NCLT",
+   "aliases": [
+    "NCLT"
+   ],
+   "parentId": "in-min-corporate-affairs",
+   "description": "Quasi-judicial body adjudicating company-law matters: insolvency resolution and liquidation of companies/LLPs under the Insolvency and Bankruptcy Code 2016, oppression and mismanagement, mergers, amalgamations and winding-up of companies.",
+   "legalBasis": "Companies Act, 2013 (Section 408); also functions as Adjudicating Authority under the Insolvency and Bankruptcy Code, 2016",
+   "legalSourceUrl": null,
+   "officialUrl": "https://nclt.gov.in",
+   "established": "2016-06-01",
+   "hq": "New Delhi (Principal Bench)",
+   "headPositionId": "in-pos-president-nclt",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "benchCities": [
+     "New Delhi (Principal Bench)",
+     "Mumbai",
+     "Kolkata",
+     "Chennai",
+     "Bengaluru",
+     "Hyderabad",
+     "Ahmedabad",
+     "Chandigarh",
+     "Amaravati",
+     "Allahabad",
+     "Jaipur",
+     "Guwahati",
+     "Indore",
+     "Cuttack",
+     "Kochi"
+    ],
+    "benchLocations": 15,
+    "note": "Wikipedia (2021-era update) described 16 physical benches across these cities (Delhi hosting multiple); exact current per-city bench count not independently re-confirmed."
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Company_Law_Tribunal",
+    "https://nclt.gov.in/",
+    "https://nclt.gov.in/nclt-members"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-nclat",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "National Company Law Appellate Tribunal",
+   "nameHi": null,
+   "abbr": "NCLAT",
+   "aliases": [
+    "NCLAT"
+   ],
+   "parentId": "in-min-corporate-affairs",
+   "description": "Appellate tribunal hearing appeals against NCLT orders (including IBC insolvency/liquidation matters) and against orders/directions of the Competition Commission of India and the National Financial Reporting Authority. Its orders are appealable to the Supreme Court.",
+   "legalBasis": "Companies Act, 2013 (Section 410)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://nclat.nic.in",
+   "established": "2016-06-01",
+   "hq": "New Delhi (Principal Bench)",
+   "headPositionId": "in-pos-chairperson-nclat",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "benches": [
+     "New Delhi (Principal Bench)",
+     "Chennai"
+    ],
+    "benchCount": 2,
+    "members2024": [
+     "Rakesh Kumar Jain (Judicial)",
+     "Yogesh Khanna (Judicial)",
+     "Sharad Kumar Sharma (Judicial)",
+     "Barun Mitra (Technical)",
+     "Naresh Salecha (Technical)",
+     "Ajai Das Mehrotra (Technical)",
+     "Arun Baroka (Technical)",
+     "Indevar Pandey (Technical)",
+     "Jatindranath Swain (Technical)"
+    ]
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Company_Law_Appellate_Tribunal",
+    "https://nclat.nic.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-itat",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "Income Tax Appellate Tribunal",
+   "nameHi": null,
+   "abbr": "ITAT",
+   "aliases": [
+    "ITAT"
+   ],
+   "parentId": "in-dept-legal-affairs",
+   "description": "Second appellate authority under the direct-tax statutes and the first independent forum in the direct-tax appellate hierarchy; its orders are final except where a substantial question of law arises for the High Court.",
+   "legalBasis": "Income-tax Act, 1961 (Section 252); originally constituted 1941 under the Income Tax Act, 1922 (Section 5A)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://itat.gov.in",
+   "established": "1941-01-25",
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-president-itat",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "vicePresidentZones": [
+     "Chandigarh",
+     "Delhi",
+     "Lucknow",
+     "Hyderabad",
+     "Chennai",
+     "Kolkata",
+     "Mumbai",
+     "Bangalore"
+    ],
+    "note": "Exact current total bench count not independently re-confirmed in this research pass; ITAT began in 1941 with 3 benches (Delhi, Kolkata, Mumbai) and has expanded substantially since."
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Income_Tax_Appellate_Tribunal",
+    "https://itat.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cat",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "Central Administrative Tribunal",
+   "nameHi": "केंद्रीय प्रशासनिक न्यायाधिकरण",
+   "abbr": "CAT",
+   "aliases": [
+    "CAT"
+   ],
+   "parentId": "in-dept-personnel-and-training",
+   "description": "Adjudicates disputes and complaints relating to recruitment and conditions of service of persons appointed to central public services and posts (and some state government employees under specified arrangements), functioning with powers similar to a High Court in its own contempt proceedings.",
+   "legalBasis": "Administrative Tribunals Act, 1985",
+   "legalSourceUrl": null,
+   "officialUrl": "https://cgat.gov.in",
+   "established": "1985-11-01",
+   "hq": "New Delhi (Principal Bench)",
+   "headPositionId": "in-pos-chairman-cat",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "benchCount": 19,
+    "totalMemberStrength": 70,
+    "note": "1 Chairman + up to 34 Judicial + 35 Administrative members per Wikipedia; cgat.gov.in is a client-rendered site and could not be independently scraped to corroborate this figure."
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Administrative_Tribunal"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-aft",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "Armed Forces Tribunal",
+   "nameHi": null,
+   "abbr": "AFT",
+   "aliases": [
+    "AFT"
+   ],
+   "parentId": "in-dept-defence",
+   "description": "Military tribunal adjudicating disputes and complaints on service and conditions of service of Army, Navy and Air Force personnel, and hearing appeals from orders, findings or sentences of courts-martial.",
+   "legalBasis": "Armed Forces Tribunal Act, 2007",
+   "legalSourceUrl": null,
+   "officialUrl": "https://aft.gov.in",
+   "established": "2009-08-08",
+   "hq": "New Delhi (Principal Bench)",
+   "headPositionId": "in-pos-chairperson-aft",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "benchCount": 11,
+    "note": "Principal Bench (Delhi) plus 10 regional benches per Wikipedia."
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Armed_Forces_Tribunal",
+    "https://aft.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-cestat",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "Customs, Excise and Service Tax Appellate Tribunal",
+   "nameHi": null,
+   "abbr": "CESTAT",
+   "aliases": [
+    "CESTAT",
+    "CEGAT (former name)"
+   ],
+   "parentId": "in-dept-revenue",
+   "description": "Quasi-judicial body hearing appeals against orders passed under the Customs Act 1962 and Central Excise Act 1944 (and, for the pre-GST period, service tax under the Finance Act 1994); also has appellate jurisdiction in anti-dumping matters against orders of the Designated Authority in the Ministry of Commerce.",
+   "legalBasis": "Customs Act, 1962 (Section 129), as amended by the Finance (No. 2) Act, 1980 and Finance Act, 2003",
+   "legalSourceUrl": null,
+   "officialUrl": "https://www.cestat.gov.in",
+   "established": "1982-10-11",
+   "hq": "New Delhi (Principal Bench)",
+   "headPositionId": "in-pos-president-cestat",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "benchCities": [
+     "New Delhi (Principal Bench)",
+     "Ahmedabad",
+     "Allahabad",
+     "Bangalore",
+     "Chandigarh",
+     "Chennai",
+     "Hyderabad",
+     "Kolkata",
+     "Mumbai"
+    ],
+    "benchCount": 9
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Customs,_Excise_and_Service_Tax_Appellate_Tribunal",
+    "https://www.cestat.gov.in/president"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-aptel",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "Appellate Tribunal for Electricity",
+   "nameHi": null,
+   "abbr": "APTEL",
+   "aliases": [
+    "APTEL"
+   ],
+   "parentId": "in-min-power",
+   "description": "Statutory and autonomous body hearing appeals against orders of the Central and State Electricity Regulatory Commissions and the adjudicating officer under the Electricity Act; since 2007 also the appellate forum for orders of the Petroleum and Natural Gas Regulatory Board (PNGRB). Second appeal on substantial questions of law lies to the Supreme Court.",
+   "legalBasis": "Electricity Act, 2003",
+   "legalSourceUrl": null,
+   "officialUrl": "https://aptel.gov.in",
+   "established": "2005",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-aptel",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "composition": "Chairperson + 1 judicial member + 3 technical members",
+    "termYears": 4
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Appellate_Tribunal_for_Electricity",
+    "https://aptel.gov.in/en/chairperson"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-tdsat",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "Telecom Disputes Settlement and Appellate Tribunal",
+   "nameHi": null,
+   "abbr": "TDSAT",
+   "aliases": [
+    "TDSAT"
+   ],
+   "parentId": "in-dept-telecommunications",
+   "description": "Adjudicates disputes between telecom service providers and between service providers and consumers, and hears appeals against directions, decisions or orders of the Telecom Regulatory Authority of India (TRAI); also has jurisdiction over broadcasting and cable services disputes.",
+   "legalBasis": "Telecom Regulatory Authority of India Act, 1997 (as amended by the TRAI (Amendment) Act, 2000)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://tdsat.gov.in",
+   "established": "2000",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-chairperson-tdsat",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://tdsat.gov.in/",
+    "https://en.wikipedia.org/wiki/Telecom_Disputes_Settlement_and_Appellate_Tribunal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-sat",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "Securities Appellate Tribunal",
+   "nameHi": null,
+   "abbr": "SAT",
+   "aliases": [
+    "SAT"
+   ],
+   "parentId": "in-dept-legal-affairs",
+   "description": "Hears appeals against orders passed by the Securities and Exchange Board of India (SEBI), the Insurance Regulatory and Development Authority of India (IRDAI) and the Pension Fund Regulatory and Development Authority (PFRDA).",
+   "legalBasis": "Securities and Exchange Board of India Act, 1992 (Section 15K)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://sat.gov.in",
+   "established": null,
+   "hq": "Mumbai",
+   "headPositionId": "in-pos-presiding-officer-sat",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "benchCount": 1,
+    "benchLocation": "Mumbai"
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Securities_Appellate_Tribunal"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-ncdrc",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "National Consumer Disputes Redressal Commission",
+   "nameHi": "राष्ट्रीय उपभोक्ता विवाद निवारण आयोग",
+   "abbr": "NCDRC",
+   "aliases": [
+    "NCDRC"
+   ],
+   "parentId": "in-dept-consumer-affairs",
+   "description": "Apex quasi-judicial body of India's three-tier consumer-dispute-redressal system; entertains complaints above the top pecuniary threshold and exercises appellate and revisional jurisdiction over State Consumer Disputes Redressal Commissions.",
+   "legalBasis": "Consumer Protection Act, 2019 (originally constituted 1988 under the Consumer Protection Act, 1986)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://ncdrc.nic.in",
+   "established": "1988",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-president-ncdrc",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "memberCount": 9,
+    "note": "President + 9 other members, per Wikipedia 'as of 2024'."
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Consumer_Disputes_Redressal_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-drat",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "Debts Recovery Appellate Tribunals",
+   "nameHi": null,
+   "abbr": "DRAT",
+   "aliases": [
+    "DRAT",
+    "DRATs"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "Appellate tier hearing appeals against orders of the Debts Recovery Tribunals on recovery of debts owed to banks and financial institutions, and enforcement actions under the SARFAESI Act. 5 DRATs function across India, each headed by its own Chairperson (retired/serving High Court judge) — no single national head.",
+   "legalBasis": "Recovery of Debts and Bankruptcy Act, 1993 (RDB Act); Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest (SARFAESI) Act, 2002",
+   "legalSourceUrl": null,
+   "officialUrl": "https://drt.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": 5,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://financialservices.gov.in/index.php/drt-drat"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-drt",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "Debts Recovery Tribunals",
+   "nameHi": null,
+   "abbr": "DRT",
+   "aliases": [
+    "DRT",
+    "DRTs"
+   ],
+   "parentId": "in-dept-financial-services",
+   "description": "First-tier tribunals for expeditious adjudication of claims by banks and financial institutions for recovery of debts, and for related enforcement matters under the SARFAESI Act. 39 DRTs function across India, each headed by its own Presiding Officer — no single national head.",
+   "legalBasis": "Recovery of Debts and Bankruptcy Act, 1993 (RDB Act, formerly the Recovery of Debts Due to Banks and Financial Institutions Act, 1993)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://drt.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": 39,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://financialservices.gov.in/index.php/drt-drat"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-gstat",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "Goods and Services Tax Appellate Tribunal",
+   "nameHi": null,
+   "abbr": "GSTAT",
+   "aliases": [
+    "GSTAT",
+    "GST Appellate Tribunal"
+   ],
+   "parentId": "in-dept-revenue",
+   "description": "Second appellate authority for GST disputes, hearing appeals against orders of Appellate/Revisional authorities under Sections 107/108 of the CGST Act and corresponding State GST Acts; became operational with e-filing and a Principal Bench plus State Benches during 2025-26, with its e-Journal reporting judgements up to end-August 2026.",
+   "legalBasis": "Central Goods and Services Tax Act, 2017 (Section 109)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://gstat.gov.in",
+   "established": null,
+   "hq": "New Delhi (Principal Bench)",
+   "headPositionId": "in-pos-president-gstat",
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "principalBench": "New Delhi",
+    "stateBenchCities": [
+     "Agartala",
+     "Agra",
+     "Ahmedabad",
+     "Aizawl",
+     "Bengaluru",
+     "Bhopal",
+     "Chandigarh",
+     "Chennai",
+     "Coimbatore",
+     "Cuttack",
+     "Dehradun",
+     "Delhi",
+     "Ernakulam",
+     "Ghaziabad",
+     "Gurugram",
+     "Guwahati",
+     "Hissar",
+     "Hyderabad",
+     "Jaipur",
+     "Jalandhar",
+     "Jammu",
+     "Jodhpur",
+     "Kohima",
+     "Kolkata",
+     "Lucknow",
+     "Madurai",
+     "Mumbai",
+     "Nagpur",
+     "Panaji",
+     "Patna",
+     "Prayagraj",
+     "Puducherry",
+     "Pune",
+     "Raipur",
+     "Rajkot",
+     "Ranchi",
+     "Sambhajinagar",
+     "Shimla",
+     "Srinagar",
+     "Surat",
+     "Thane",
+     "Thiruvananthapuram",
+     "Varanasi",
+     "Vijayawada",
+     "Vishakhapatnam"
+    ],
+    "operationalStatus2025_26": "Operational — GSTAT Procedure Rules 2025 and Anti-Profiteering Procedure Rules 2025 notified; e-Filing portal live; e-Journal reporting judgements through 2026-08-31."
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://gstat.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-rct",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "Railway Claims Tribunal",
+   "nameHi": null,
+   "abbr": "RCT",
+   "aliases": [
+    "RCT"
+   ],
+   "parentId": "in-min-railways",
+   "description": "Adjudicates claims for compensation for death or injury to rail passengers, and for loss, destruction, damage, deterioration or non-delivery of goods/parcels/luggage carried by the railways; each bench has its own Chairman/Members — no single national head.",
+   "legalBasis": "Railway Claims Tribunal Act, 1987",
+   "legalSourceUrl": null,
+   "officialUrl": "http://rct.indianrail.gov.in",
+   "established": null,
+   "hq": "New Delhi",
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": {
+    "benchCities": [
+     "Ahmedabad",
+     "Allahabad",
+     "Amaravati",
+     "Bhubaneshwar",
+     "Bhopal",
+     "Varanasi",
+     "Chandigarh",
+     "Delhi",
+     "Ernakulam",
+     "Guwahati",
+     "Gorakhpur",
+     "Jaipur",
+     "Kolkata",
+     "Lucknow",
+     "Chennai",
+     "Mumbai",
+     "Nagpur",
+     "Patna",
+     "Ranchi",
+     "Bangalore",
+     "Secunderabad"
+    ],
+    "benchCount": 21,
+    "note": "Site notice (Feb 2026) says the Tribunal is migrating its case-filing system to https://erct.gov.in"
+   },
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Railway_Claims_Tribunal",
+    "http://rct.indianrail.gov.in/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-cgit",
+   "kind": "tribunal",
+   "sector": "judicial",
+   "name": "Central Government Industrial Tribunals-cum-Labour Courts",
+   "nameHi": null,
+   "abbr": "CGIT-cum-LC",
+   "aliases": [
+    "CGIT",
+    "Industrial Tribunal-cum-Labour Court"
+   ],
+   "parentId": "in-min-labour-and-employment",
+   "description": "Adjudicate industrial disputes referred by the Central Government under the Industrial Disputes Act for establishments in the central sphere (railways, banks, ports, mines, major PSUs, etc.); administered through the office of the Chief Labour Commissioner (Central). No single national head — each CGIT-cum-LC is headed by its own Presiding Officer.",
+   "legalBasis": "Industrial Disputes Act, 1947 (Section 7A)",
+   "legalSourceUrl": null,
+   "officialUrl": "https://clc.gov.in",
+   "established": null,
+   "hq": null,
+   "headPositionId": null,
+   "adminHeadPositionId": null,
+   "seats": null,
+   "stats": null,
+   "budget": null,
+   "employees": null,
+   "sources": [
+    "https://clc.gov.in/"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-chairperson-ngt",
+   "title": "Chairperson, National Green Tribunal",
+   "titleHi": null,
+   "orgId": "in-ngt",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Justice Prakash Shrivastava",
+    "since": "2023-08",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Retired judge, Supreme Court of India. Appointed on the recommendation of a selection committee under the NGT Act."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Green_Tribunal",
+    "https://www.greentribunal.gov.in/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-president-nclt",
+   "title": "President, National Company Law Tribunal",
+   "titleHi": null,
+   "orgId": "in-nclt",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 5,
+   "holder": {
+    "name": "Justice Anupinder Singh Grewal",
+    "since": "2026-05-11",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Retired Chief Justice, later judge of a High Court. Per official NCLT site, tenure runs 2026-05-11 to 2031-03-09. Supersedes earlier President Justice R. Sudhakar (in office since 2021-11-01 per stale Wikipedia data)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://nclt.gov.in/nclt-members"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-nclat",
+   "title": "Chairperson, National Company Law Appellate Tribunal",
+   "titleHi": null,
+   "orgId": "in-nclat",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Justice Yogesh Khanna",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": true,
+    "notes": "Serving as Officiating Chairperson per nclat.nic.in (confirmed live Sept 2026 bench notices). Joined NCLAT as a Judicial Member on 2024-02-19; exact date he became officiating Chairperson not confirmed. Predecessor Justice Ashok Bhushan was appointed Chairperson 2021-11-08 (stale in most secondary sources)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://nclat.nic.in/",
+    "https://en.wikipedia.org/wiki/National_Company_Law_Appellate_Tribunal"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-president-itat",
+   "title": "President, Income Tax Appellate Tribunal",
+   "titleHi": null,
+   "orgId": "in-itat",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Justice Chandrakant Vasant Bhadang",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Confirmed as sitting President by ITAT's own homepage as of the 'Reforms Utsav 2026' event on 2026-07-17."
+   },
+   "vacant": false,
+   "sources": [
+    "https://itat.gov.in/",
+    "https://en.wikipedia.org/wiki/Income_Tax_Appellate_Tribunal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairman-cat",
+   "title": "Chairman, Central Administrative Tribunal",
+   "titleHi": null,
+   "orgId": "in-cat",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Justice Ranjit Vasantrao More",
+    "since": "2022-07-30",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Former Chief Justice, Meghalaya High Court. Wikipedia's chairperson-tenure table (dynamically computed 'term length' field) is consistent with him still being incumbent as of the as-of date of this research (2026-09-25)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Administrative_Tribunal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-aft",
+   "title": "Chairperson, Armed Forces Tribunal",
+   "titleHi": null,
+   "orgId": "in-aft",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-minister-defence",
+   "termYears": null,
+   "holder": {
+    "name": "Justice Rajendra Menon",
+    "since": "2023-11-01",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Confirmed current on aft.gov.in homepage (fresh fetch 2026-09-25), which lists him as sitting Chairperson alongside notices dated as recently as September 2026. Originally appointed 2019-11-06; Wikipedia (revision 2026-06-27) records he was RE-APPOINTED Chairman effective 2023-11-01 for a further term -- 'since' updated to reflect the current stint per schema definition (date holder took THIS seat)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://aft.gov.in/",
+    "https://en.wikipedia.org/wiki/Armed_Forces_Tribunal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-president-cestat",
+   "title": "President, CESTAT",
+   "titleHi": null,
+   "orgId": "in-cestat",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Dr. Justice (Retd.) Rachna Gupta",
+    "since": "2026-06-08",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": true,
+    "notes": "Officiating President per official CESTAT site. First woman Registrar of the Supreme Court of India (2013-16); Judicial Member of CESTAT since 2018-05-04 before assuming officiating charge as President."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.cestat.gov.in/president"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-aptel",
+   "title": "Chairperson, Appellate Tribunal for Electricity",
+   "titleHi": null,
+   "orgId": "in-aptel",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": 4,
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Appellate_Tribunal_for_Electricity",
+    "https://aptel.gov.in/en/chairperson",
+    "https://aptel.gov.in/en/chairperson (fetched 2026-09-25, page footer timestamp 'Website Last Updated: 24 Sep 2026')"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-tdsat",
+   "title": "Chairperson, TDSAT",
+   "titleHi": null,
+   "orgId": "in-tdsat",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Justice Dhirubhai Naranbhai Patel",
+    "since": "2022-03-14",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Former Chief Justice, Madhya Pradesh High Court; confirmed directly from official TDSAT chairperson profile page."
+   },
+   "vacant": false,
+   "sources": [
+    "https://tdsat.gov.in/writereaddata/Delhi/docs/organize_auth1.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-presiding-officer-sat",
+   "title": "Presiding Officer, Securities Appellate Tribunal",
+   "titleHi": null,
+   "orgId": "in-sat",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Justice P. S. Dinesh Kumar",
+    "since": "2024",
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/P._S._Dinesh_Kumar",
+    "acting": false,
+    "notes": "Retired as a Judge of the Karnataka High Court on 2024-02-24, then appointed Presiding Officer of SAT for a 4-year term (per his Wikipedia bio, revision 2026-04-24). Succeeded Justice Tarun Agarwala, whose SAT term ran 2018-12-31 to 2023-12-30 (per Tarun Agarwala's Wikipedia bio, which explicitly names 'P. S. Dinesh Kumar' as successor). Exact appointment date within 2024 not found -- 'since' left at year granularity. sat.gov.in returned HTTP 503 on every fetch attempt across this and the prior research session (site appears down, not just JS-rendered), so the official source remains unconfirmed; corroboration here is cross-referenced Wikipedia biographical pages rather than an official primary source. Original record's 'Justice Dinesh Kumar' (no since-date, generic Economic-Times citation from 2013) was almost certainly a stale/incomplete name for the SAME person now more fully identified as P. S. Dinesh Kumar -- not a different, unconfirmed individual."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Securities_Appellate_Tribunal",
+    "https://en.wikipedia.org/wiki/P._S._Dinesh_Kumar",
+    "https://en.wikipedia.org/wiki/Tarun_Agarwala"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-president-ncdrc",
+   "title": "President, National Consumer Disputes Redressal Commission",
+   "titleHi": null,
+   "orgId": "in-ncdrc",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Justice Amreshwar Pratap Sahi",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Amreshwar_Pratap_Sahi",
+    "acting": false,
+    "notes": "Former Chief Justice of Patna and Madras High Courts. Wikipedia's NCDRC article states this 'as of 2024' (unchanged on re-check 2026-09-25). His OWN Wikipedia biography page (revision 2026-08-18) lists his judicial career (Allahabad HC judge 2004-18, CJ Patna HC 2018-19, CJ Madras HC 2019-20) but does NOT mention an NCDRC appointment at all -- this omission on a page revised as recently as August 2026 raises doubt rather than resolving it. ncdrc.nic.in is a client-rendered SPA (confirmed again 2026-09-25, empty shell) and could not be scraped. consumeraffairs.nic.in (DoCA, which administers NCDRC) was unreachable (connection refused). No replacement name found either -- not invented. Downgraded to low confidence pending an official-source re-check."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Consumer_Disputes_Redressal_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-president-gstat",
+   "title": "President, GST Appellate Tribunal",
+   "titleHi": null,
+   "orgId": "in-gstat",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": null,
+   "termYears": null,
+   "holder": {
+    "name": "Dr. Justice (Retd.) Sanjaya Kumar Mishra",
+    "since": null,
+    "party": null,
+    "house": null,
+    "constituency": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Confirmed as sitting President, Principal Bench, New Delhi, on the official GSTAT website (live as of Sept 2026)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://gstat.gov.in/"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-dept-legal-affairs",
+   "to": "in-ngt",
+   "type": "administers",
+   "basis": "National Green Tribunal Act, 2010",
+   "source": "https://en.wikipedia.org/wiki/National_Green_Tribunal"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-chairperson-ngt",
+   "type": "appoints",
+   "basis": "National Green Tribunal Act, 2010, s.5",
+   "source": "https://en.wikipedia.org/wiki/National_Green_Tribunal"
+  },
+  {
+   "from": "in-min-corporate-affairs",
+   "to": "in-nclt",
+   "type": "administers",
+   "basis": "Companies Act, 2013",
+   "source": "https://en.wikipedia.org/wiki/National_Company_Law_Tribunal"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-president-nclt",
+   "type": "appoints",
+   "basis": "Companies Act, 2013, s.412",
+   "source": "https://nclt.gov.in/nclt-members"
+  },
+  {
+   "from": "in-min-corporate-affairs",
+   "to": "in-nclat",
+   "type": "administers",
+   "basis": "Companies Act, 2013",
+   "source": "https://en.wikipedia.org/wiki/National_Company_Law_Appellate_Tribunal"
+  },
+  {
+   "from": "in-nclat",
+   "to": "in-nclt",
+   "type": "oversees",
+   "basis": "Companies Act, 2013, s.410 (appellate jurisdiction)",
+   "source": "https://en.wikipedia.org/wiki/National_Company_Law_Appellate_Tribunal"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-chairperson-nclat",
+   "type": "appoints",
+   "basis": "Companies Act, 2013, s.412",
+   "source": "https://nclat.nic.in/"
+  },
+  {
+   "from": "in-dept-legal-affairs",
+   "to": "in-itat",
+   "type": "administers",
+   "basis": "Income-tax Act, 1961",
+   "source": "https://en.wikipedia.org/wiki/Income_Tax_Appellate_Tribunal"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-president-itat",
+   "type": "appoints",
+   "basis": "Income-tax Act, 1961, s.252",
+   "source": "https://itat.gov.in/"
+  },
+  {
+   "from": "in-dept-personnel-and-training",
+   "to": "in-cat",
+   "type": "administers",
+   "basis": "Administrative Tribunals Act, 1985",
+   "source": "https://en.wikipedia.org/wiki/Central_Administrative_Tribunal"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-chairman-cat",
+   "type": "appoints",
+   "basis": "Administrative Tribunals Act, 1985",
+   "source": "https://en.wikipedia.org/wiki/Central_Administrative_Tribunal"
+  },
+  {
+   "from": "in-dept-defence",
+   "to": "in-aft",
+   "type": "administers",
+   "basis": "Armed Forces Tribunal Act, 2007",
+   "source": "https://en.wikipedia.org/wiki/Armed_Forces_Tribunal"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-chairperson-aft",
+   "type": "appoints",
+   "basis": "Armed Forces Tribunal Act, 2007",
+   "source": "https://aft.gov.in/"
+  },
+  {
+   "from": "in-dept-revenue",
+   "to": "in-cestat",
+   "type": "administers",
+   "basis": "Customs Act, 1962",
+   "source": "https://www.cestat.gov.in/president"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-president-cestat",
+   "type": "appoints",
+   "basis": "Customs Act, 1962, s.129",
+   "source": "https://www.cestat.gov.in/president"
+  },
+  {
+   "from": "in-min-power",
+   "to": "in-aptel",
+   "type": "administers",
+   "basis": "Electricity Act, 2003",
+   "source": "https://en.wikipedia.org/wiki/Appellate_Tribunal_for_Electricity"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-chairperson-aptel",
+   "type": "appoints",
+   "basis": "Electricity Act, 2003",
+   "source": "https://en.wikipedia.org/wiki/Appellate_Tribunal_for_Electricity"
+  },
+  {
+   "from": "in-dept-telecommunications",
+   "to": "in-tdsat",
+   "type": "administers",
+   "basis": "TRAI Act, 1997",
+   "source": "https://tdsat.gov.in/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-chairperson-tdsat",
+   "type": "appoints",
+   "basis": "TRAI Act, 1997",
+   "source": "https://tdsat.gov.in/"
+  },
+  {
+   "from": "in-dept-legal-affairs",
+   "to": "in-sat",
+   "type": "administers",
+   "basis": "Securities and Exchange Board of India Act, 1992",
+   "source": "https://en.wikipedia.org/wiki/Securities_Appellate_Tribunal"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-presiding-officer-sat",
+   "type": "appoints",
+   "basis": "SEBI Act, 1992, s.15K read with s.15N (selection committee headed by PM)",
+   "source": "https://en.wikipedia.org/wiki/Securities_Appellate_Tribunal"
+  },
+  {
+   "from": "in-dept-consumer-affairs",
+   "to": "in-ncdrc",
+   "type": "administers",
+   "basis": "Consumer Protection Act, 2019",
+   "source": "https://en.wikipedia.org/wiki/National_Consumer_Disputes_Redressal_Commission"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-president-ncdrc",
+   "type": "appoints",
+   "basis": "Consumer Protection Act, 2019",
+   "source": "https://en.wikipedia.org/wiki/National_Consumer_Disputes_Redressal_Commission"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-drat",
+   "type": "administers",
+   "basis": "Recovery of Debts and Bankruptcy Act, 1993",
+   "source": "https://financialservices.gov.in/index.php/drt-drat"
+  },
+  {
+   "from": "in-dept-financial-services",
+   "to": "in-drt",
+   "type": "administers",
+   "basis": "Recovery of Debts and Bankruptcy Act, 1993",
+   "source": "https://financialservices.gov.in/index.php/drt-drat"
+  },
+  {
+   "from": "in-drat",
+   "to": "in-drt",
+   "type": "oversees",
+   "basis": "Recovery of Debts and Bankruptcy Act, 1993 (appellate jurisdiction)",
+   "source": "https://financialservices.gov.in/index.php/drt-drat"
+  },
+  {
+   "from": "in-dept-revenue",
+   "to": "in-gstat",
+   "type": "administers",
+   "basis": "Central Goods and Services Tax Act, 2017",
+   "source": "https://gstat.gov.in/"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-pos-president-gstat",
+   "type": "appoints",
+   "basis": "Central Goods and Services Tax Act, 2017, s.110",
+   "source": "https://gstat.gov.in/"
+  },
+  {
+   "from": "in-min-railways",
+   "to": "in-rct",
+   "type": "administers",
+   "basis": "Railway Claims Tribunal Act, 1987",
+   "source": "https://en.wikipedia.org/wiki/Railway_Claims_Tribunal"
+  },
+  {
+   "from": "in-min-labour-and-employment",
+   "to": "in-cgit",
+   "type": "administers",
+   "basis": "Industrial Disputes Act, 1947",
+   "source": "https://clc.gov.in/"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 12,
+  "corrections": [
+   "in-pos-chairperson-aft: corrected holder.since from '2019-11-06' to '2023-11-01' (Justice Rajendra Menon was re-appointed Chairman 2023-11-01 per Wikipedia rev. 2026-06-27; the original date was his FIRST appointment in 2019, not the start of his current stint). Fresh-confirmed live via aft.gov.in (fetched 2026-09-25) and Wikipedia.",
+   "in-pos-presiding-officer-sat: corrected holder.name from 'Justice Dinesh Kumar' to 'Justice P. S. Dinesh Kumar' (fuller/correct identification), set since='2024', confidence 'low' -> 'medium'. sat.gov.in remains unreachable (HTTP 503); correction is cross-referenced from two Wikipedia biography pages (Tarun Agarwala's and P.S. Dinesh Kumar's own), not an official primary source -- still worth an independent official re-check when sat.gov.in is reachable.",
+   "in-pos-president-ncdrc: confidence downgraded 'medium' -> 'low'. Fresh check of Justice Amreshwar Pratap Sahi's own Wikipedia bio (rev. 2026-08-18) does not mention an NCDRC role at all, and ncdrc.nic.in / consumeraffairs.nic.in remain unreachable -- holder NOT changed (no confirmed replacement found), but confidence lowered and doubt documented rather than left implicitly resolved.",
+   "in-pos-chairperson-aptel: confidence raised 'medium' -> 'high'. Re-fetched aptel.gov.in/en/chairperson on 2026-09-25; page's own footer shows 'Website Last Updated: 24 Sep 2026' (i.e. updated the day before this check) and still lists no name under the Chairperson heading -- vacancy independently reconfirmed on a very fresh page, not just inferred from an older Wikipedia table.",
+   "Removed relation in-gstat -> in-cestat (type 'accountable_to', 1 row): it described a jurisdictional handover of pending indirect-tax appeals as GSTAT benches come online, not a genuine formal power/answerability relation in the schema's relation-type taxonomy (accountable_to means subordinate-to-superior answerability, e.g. Council of Ministers -> Lok Sabha). That fact is retained in in-gstat's entity description instead of being force-fit into a relation type."
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+{
+  "_example": [
+    {
+      "_comment": "This file documents the correction format — see data/corrections/README.md. Because this filename starts with an underscore, it is never applied by `pnpm graph`. Copy the object below (drop the _comment key) into a new file, e.g. data/corrections/2026-10-your-fix.json, as a top-level JSON array.",
+      "id": "in-pos-minister-home-affairs",
+      "set": {
+        "holder.name": "New Minister Name",
+        "holder.since": "2026-10-01",
+        "holder.party": "BJP",
+        "confidence": "high"
+      },
+      "source": "https://pib.gov.in/PressReleasePage.aspx?PRID=0000000",
+      "reason": "Reshuffled on 2026-10-01; previous minister moved to a different portfolio.",
+      "by": "your-github-handle",
+      "date": "2026-10-02"
+    }
+  ]
+}

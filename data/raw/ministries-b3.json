@@ -1,0 +1,2094 @@
+{
+ "segment": "ministries-b3",
+ "asOf": "2026-09-25",
+ "notes": "Segment ministries-b3 covers MEA, Law & Justice, Personnel/PG&Pensions, Parliamentary Affairs and Cooperation. Office-holders cross-checked primarily against the official Cabinet Secretariat 'List of Council of Ministers with Portfolios (As on 23.06.2026)' (cabsec.gov.in) plus current Wikipedia revisions and official department pages fetched 2026-09-25. No cabinet reshuffle was confirmed as officially announced between 23.06.2026 and the as-of date, despite press speculation in Aug-Sep 2026; if a reshuffle occurred after this research, minister holder fields here may be stale. Budget figures are intentionally omitted (owned by the union-budget segment). CBI (in-cbi) is defined here per explicit task instruction despite being an investigative agency; ITAT and CAT are judiciary-owned and referenced only by ID, not defined; CVC/CIC/Lokpal are regulator-owned and not referenced/defined here. Known gaps (also flagged per-record via low confidence + inline notes folded into this list): in-ncel; in-ncol; in-bbssl; in-pos-dg-icwa; in-pos-establishment-officer; in-pos-md-ncdc. NCEL/NCOL/BBSSL and CRCS leadership and NCDC's Managing Director could not be confirmed live this session (Wikipedia has no dedicated pages for these newer cooperatives and ncdc.in's officer-list page did not resolve in English); their existence, legal basis (Multi-State Cooperative Societies Act, 2002 / NCDC Act, 1962) and general remit are well-documented public record and are included with medium/low confidence rather than omitted, per the 'still include the position, mark low confidence' instruction. Karmayogi Bharat SPV's CEO and DoPT's Establishment Officer are likewise unresolved. Wikipedia API (en.wikipedia.org/w/api.php) rate-limited this session's curl calls after ~2 requests; WebFetch was used as the fallback for most Wikipedia lookups thereafter. WebSearch quota (200 calls, shared across concurrently running segment agents) was exhausted early in this session; remaining research relied on WebFetch + curl only. ADVERSARIAL VERIFICATION PASS (2026-09-25): re-checked 49 named positions/holders against fresh live sources (mea.gov.in/secretaries, icwa.in, ris.org.in, a locally re-parsed cabsec.gov.in council-of-ministers PDF, and current Wikipedia revisions fetched directly rather than trusted from the original citations alone). Found the great majority of holders correct as recorded; made 28 corrective edits (mostly added/strengthened sources and precised since-dates) and flagged genuine unresolved conflicts rather than guessing: in-pos-dg-icwa (vacancy corroborated, Raghavan is explicitly 'former' on ICWA's own site), in-pos-chairperson-cbc (conflicting live signal between a current-affairs source and Zainulbhai's still-unupdated Wikipedia infobox), and in-pos-secretary-darpg/-doppw (single LinkedIn source could not be independently reconfirmed this session). See the top-level 'verification' block for the full corrections/additions/unresolvedGaps log.",
+ "entities": [
+  {
+   "id": "in-min-external-affairs",
+   "kind": "ministry",
+   "name": "Ministry of External Affairs",
+   "abbr": "MEA",
+   "aliases": [
+    "MEA",
+    "South Block",
+    "Foreign Ministry"
+   ],
+   "parentId": "in-union-government",
+   "description": "Conducts India's foreign relations and diplomacy, runs India's missions abroad, negotiates treaties, and delivers consular, passport and visa services to citizens and the diaspora.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://www.mea.gov.in",
+   "established": "1947",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-external-affairs",
+   "adminHeadPositionId": "in-pos-foreign-secretary",
+   "sources": [
+    "https://www.mea.gov.in/",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cpv-division",
+   "kind": "attached_office",
+   "name": "Consular, Passport, Visa and Overseas Indian Affairs (CPV) Division",
+   "abbr": "CPV&OIA",
+   "aliases": [
+    "Passport Seva",
+    "Passport Seva Kendra",
+    "CPV Division"
+   ],
+   "parentId": "in-min-external-affairs",
+   "description": "Issues Indian passports and visas, handles consular protection of citizens abroad and overseas Indian affairs, delivered nationwide through Passport Seva Kendras under the Passport Seva Programme (a public-private partnership launched 2010).",
+   "legalBasis": "The Passports Act, 1967",
+   "officialUrl": "https://www.passportindia.gov.in",
+   "hq": "New Delhi",
+   "adminHeadPositionId": "in-pos-secretary-mea-cpv-oia",
+   "sources": [
+    "https://www.mea.gov.in/",
+    "https://www.passportindia.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-office-of-protector-general-of-emigrants",
+   "kind": "subordinate_office",
+   "name": "Office of the Protector General of Emigrants",
+   "abbr": "PGE",
+   "parentId": "in-cpv-division",
+   "description": "Regulates and grants emigration clearance for Indian workers going to notified (ECR) countries, and oversees the network of Protectors of Emigrants at major cities/airports, to protect migrant workers from exploitation.",
+   "legalBasis": "Emigration Act, 1983",
+   "officialUrl": "https://emigrate.gov.in",
+   "sources": [
+    "https://emigrate.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iccr",
+   "kind": "autonomous_body",
+   "name": "Indian Council for Cultural Relations",
+   "abbr": "ICCR",
+   "aliases": [
+    "ICCR"
+   ],
+   "parentId": "in-min-external-affairs",
+   "description": "India's cultural diplomacy body: runs cultural centres abroad, funds scholarships for foreign students in India, sponsors cultural exchange and artiste tours to project India's soft power.",
+   "legalBasis": "Registered society; functions under MEA administrative control",
+   "officialUrl": "https://www.iccr.gov.in",
+   "established": "1950-04-09",
+   "hq": "Azad Bhawan, New Delhi",
+   "headPositionId": "in-pos-president-iccr",
+   "adminHeadPositionId": "in-pos-dg-iccr",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Council_for_Cultural_Relations",
+    "https://www.iccr.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-icwa",
+   "kind": "statutory_body",
+   "name": "Indian Council of World Affairs",
+   "abbr": "ICWA",
+   "aliases": [
+    "ICWA",
+    "Sapru House"
+   ],
+   "parentId": "in-min-external-affairs",
+   "description": "India's oldest foreign-policy think tank; conducts research, dialogues and publications on international relations and is declared an Institution of National Importance.",
+   "legalBasis": "Indian Council of World Affairs Act, 2001",
+   "officialUrl": "https://www.icwa.in",
+   "established": "1943",
+   "hq": "Sapru House, Barakhamba Road, New Delhi",
+   "headPositionId": "in-pos-president-icwa",
+   "adminHeadPositionId": "in-pos-dg-icwa",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Council_of_World_Affairs",
+    "https://www.icwa.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ris",
+   "kind": "advisory_body",
+   "name": "Research and Information System for Developing Countries",
+   "abbr": "RIS",
+   "aliases": [
+    "RIS"
+   ],
+   "parentId": "in-min-external-affairs",
+   "description": "An MEA-funded autonomous policy-research think tank on international economic issues, South-South cooperation, trade and development for developing countries.",
+   "legalBasis": "Registered society; MEA-funded autonomous body",
+   "officialUrl": "https://www.ris.org.in",
+   "hq": "New Delhi",
+   "adminHeadPositionId": "in-pos-dg-ris",
+   "sources": [
+    "https://www.ris.org.in/en/about-us/director-general"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nalanda-university",
+   "kind": "autonomous_body",
+   "name": "Nalanda University",
+   "abbr": "NU",
+   "aliases": [
+    "Nalanda University",
+    "NU Rajgir"
+   ],
+   "parentId": "in-min-external-affairs",
+   "sector": "executive",
+   "description": "An international postgraduate research university at Rajgir, Bihar, revived as a symbol of India's civilisational links to Asia; supported by member countries of the East Asia Summit, with the President of India as Visitor.",
+   "legalBasis": "Nalanda University Act, 2010",
+   "officialUrl": "https://nalandauniv.edu.in",
+   "established": "2010-11-25",
+   "hq": "Rajgir, Bihar",
+   "headPositionId": "in-pos-chancellor-nalanda",
+   "adminHeadPositionId": "in-pos-vc-nalanda",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nalanda_University"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-ssifs",
+   "kind": "subordinate_office",
+   "name": "Sushma Swaraj Institute of Foreign Service",
+   "abbr": "SSIFS",
+   "aliases": [
+    "Foreign Service Institute",
+    "SSIFS"
+   ],
+   "parentId": "in-min-external-affairs",
+   "description": "Trains newly recruited Indian Foreign Service officers and runs induction/mid-career diplomatic training courses; renamed in 2020 for former EAM Sushma Swaraj.",
+   "legalBasis": "MEA subordinate training institute",
+   "established": "1986",
+   "hq": "New Delhi",
+   "adminHeadPositionId": "in-pos-dean-ssifs",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sushma_Swaraj_Institute_of_Foreign_Service"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-itec-programme",
+   "kind": "mission",
+   "name": "Indian Technical and Economic Cooperation Programme",
+   "abbr": "ITEC",
+   "aliases": [
+    "ITEC"
+   ],
+   "parentId": "in-min-external-affairs",
+   "description": "India's flagship international capacity-building and development-partnership programme, offering training slots, projects, consultancy and disaster relief to partner developing countries since 1964.",
+   "legalBasis": "MEA scheme (Development Partnership Administration)",
+   "established": "1964",
+   "headPositionId": "in-pos-secretary-mea-er",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_External_Affairs_(India)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-indian-missions-abroad",
+   "kind": "attached_office",
+   "name": "Indian Diplomatic Missions Abroad (aggregate)",
+   "aliases": [
+    "Indian embassies",
+    "Indian high commissions",
+    "Indian consulates"
+   ],
+   "parentId": "in-min-external-affairs",
+   "description": "Aggregate entity representing India's network of resident embassies, high commissions, permanent missions and consulates abroad, each headed by an Ambassador/High Commissioner reporting to MEA.",
+   "legalBasis": "Vienna Convention on Diplomatic Relations, 1961 (domestic implementation via MEA)",
+   "seats": 220,
+   "stats": {
+    "residentMissions": 220,
+    "asOf": "2026",
+    "note": "Excludes honorary consulates."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_diplomatic_missions_of_India"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-law-and-justice",
+   "kind": "ministry",
+   "name": "Ministry of Law and Justice",
+   "abbr": "MoL&J",
+   "aliases": [
+    "Law Ministry",
+    "MoL&J"
+   ],
+   "parentId": "in-union-government",
+   "description": "Manages India's legal affairs, drafts central legislation, administers the justice-delivery system, and advises other ministries on law, through three departments: Legal Affairs, Legislative, and Justice.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://lawmin.gov.in",
+   "established": "1833",
+   "hq": "Shastri Bhawan, New Delhi",
+   "headPositionId": "in-pos-minister-law-justice",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Law_and_Justice_(India)",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-legal-affairs",
+   "kind": "department",
+   "name": "Department of Legal Affairs",
+   "parentId": "in-min-law-and-justice",
+   "description": "Advises ministries on legal questions, drafts contracts and treaties, and superintends the offices of the Attorney General, Solicitor General and government law officers.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://legalaffairs.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-legal-affairs",
+   "sources": [
+    "https://legalaffairs.gov.in/law-secretary",
+    "https://en.wikipedia.org/wiki/Ministry_of_Law_and_Justice_(India)"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-legislative",
+   "kind": "department",
+   "name": "Legislative Department",
+   "parentId": "in-min-law-and-justice",
+   "description": "Drafts principal central legislation (Bills and major subordinate legislation), and administers the Official Languages Act translation of central Acts and Rules into Hindi.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://legislative.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-legislative",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Law_and_Justice_(India)",
+    "https://www.india.gov.in/legislative-department-ministry-law-and-justice"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-official-language-wing-legislative",
+   "kind": "subordinate_office",
+   "name": "Official Language Wing, Legislative Department",
+   "aliases": [
+    "Rajbhasha Wing"
+   ],
+   "parentId": "in-dept-legislative",
+   "description": "Translates central Acts, Ordinances and statutory rules/orders into Hindi (the authoritative Hindi text) and maintains the standard legal-Hindi lexicon used across government.",
+   "legalBasis": "Official Languages Act, 1963, Section 3(3)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Law_and_Justice_(India)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-justice",
+   "kind": "department",
+   "name": "Department of Justice",
+   "parentId": "in-min-law-and-justice",
+   "description": "Administers judicial infrastructure funding, judges' appointments processing, and centrally sponsored schemes to speed up justice delivery (e-Courts, fast-track courts, legal aid support).",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961; separated from Ministry of Home Affairs, 1 January 2010",
+   "officialUrl": "https://doj.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-justice",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Law_and_Justice_(India)"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-national-mission-justice-delivery-legal-reforms",
+   "kind": "mission",
+   "name": "National Mission for Justice Delivery and Legal Reforms",
+   "abbr": "NMJDLR",
+   "parentId": "in-dept-justice",
+   "description": "Department of Justice mission to reduce case pendency and delays by improving judicial infrastructure, human resources and case/court management, and by focusing on vulnerable litigants.",
+   "legalBasis": "Department of Justice scheme, launched 2011",
+   "established": "2011",
+   "headPositionId": "in-pos-secretary-justice",
+   "officialUrl": "https://doj.gov.in",
+   "sources": [
+    "https://doj.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ecourts-mission-mode-project",
+   "kind": "mission",
+   "name": "eCourts Mission Mode Project",
+   "parentId": "in-dept-justice",
+   "description": "Department of Justice-funded ICT-enablement of India's district and subordinate courts (case information systems, e-filing, video-conferencing), implemented in coordination with the e-Committee of the Supreme Court.",
+   "legalBasis": "National Policy and Action Plan for ICT Implementation in the Indian Judiciary (2005)",
+   "headPositionId": "in-pos-secretary-justice",
+   "officialUrl": "https://doj.gov.in",
+   "sources": [
+    "https://doj.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-law-commission-of-india",
+   "kind": "advisory_body",
+   "name": "Law Commission of India (23rd)",
+   "aliases": [
+    "Law Commission"
+   ],
+   "parentId": "in-dept-legal-affairs",
+   "description": "Government-appointed expert body that reviews and recommends reform of Indian laws; the 23rd Commission was constituted for a three-year term to examine matters referred by the government.",
+   "legalBasis": "Government of India Resolution constituting the 23rd Law Commission",
+   "officialUrl": "https://lawcommissionofindia.nic.in",
+   "established": "2024-09-01",
+   "headPositionId": "in-pos-chair-law-commission",
+   "sources": [
+    "https://lawcommissionofindia.nic.in/document/the-23rd-law-commission-gazette_notification-i-appointment-of-chairperson-and-members/",
+    "https://currentaffairs.adda247.com/justice-dinesh-maheshwari-appointed-chairperson-of-the-23rd-law-commission-of-india/"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-national-judicial-academy",
+   "kind": "autonomous_body",
+   "name": "National Judicial Academy",
+   "abbr": "NJA",
+   "parentId": "in-dept-justice",
+   "sector": "judicial",
+   "description": "Trains judges, court staff and other justice-system stakeholders and conducts research on judicial administration; governed by a Council chaired by the Chief Justice of India, funded via the Department of Justice.",
+   "legalBasis": "Registered society under the Societies Registration Act, 1860",
+   "officialUrl": "https://www.nja.gov.in",
+   "established": "1993",
+   "hq": "Bhopal, Madhya Pradesh",
+   "adminHeadPositionId": "in-pos-director-nja",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Judicial_Academy"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-bar-council-of-india",
+   "kind": "statutory_body",
+   "name": "Bar Council of India",
+   "abbr": "BCI",
+   "sector": "constitutional",
+   "parentId": "in-dept-legal-affairs",
+   "description": "Statutory self-regulatory body for the legal profession: sets standards for legal education, enrols and disciplines advocates, and lays down professional conduct rules across India.",
+   "legalBasis": "Advocates Act, 1961",
+   "officialUrl": "https://www.barcouncilofindia.org",
+   "headPositionId": "in-pos-chairman-bci",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manan_Kumar_Mishra"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-indian-law-institute",
+   "kind": "autonomous_body",
+   "name": "Indian Law Institute",
+   "abbr": "ILI",
+   "sector": "executive",
+   "parentId": "in-dept-legal-affairs",
+   "description": "Deemed-university socio-legal research and training institute opposite the Supreme Court; publishes the Journal of the Indian Law Institute and runs postgraduate law programmes.",
+   "legalBasis": "Registered society under the Societies Registration Act, 1860; deemed university under UGC Act, 1956",
+   "officialUrl": "https://www.ilidelhi.org",
+   "established": "1956",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-president-ili",
+   "adminHeadPositionId": "in-pos-director-ili",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Law_Institute"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-min-personnel-public-grievances-and-pensions",
+   "kind": "ministry",
+   "name": "Ministry of Personnel, Public Grievances and Pensions",
+   "abbr": "MoPP&P",
+   "parentId": "in-union-government",
+   "description": "Runs the Union's civil-service HR system (recruitment policy, IAS/central-service cadre management, training, vigilance-linked appointments), public-grievance redress, administrative reform, and pension policy for central government employees, through three departments.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://dopt.gov.in",
+   "established": "1985",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-personnel",
+   "adminHeadPositionId": "in-pos-secretary-dopt",
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://en.wikipedia.org/wiki/Ministry_of_Personnel,_Public_Grievances_and_Pensions"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-personnel-and-training",
+   "kind": "department",
+   "name": "Department of Personnel and Training",
+   "abbr": "DoPT",
+   "parentId": "in-min-personnel-public-grievances-and-pensions",
+   "description": "The Union government's central personnel agency: sets civil-service recruitment, promotion, training, service-conduct and cadre-management rules for the IAS and central civil services, and oversees the CBI.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://dopt.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-dopt",
+   "sources": [
+    "https://dopt.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-administrative-reforms-and-public-grievances",
+   "kind": "department",
+   "abbr": "DARPG",
+   "name": "Department of Administrative Reforms and Public Grievances",
+   "parentId": "in-min-personnel-public-grievances-and-pensions",
+   "description": "Drives administrative-reform policy (e-governance, Sevottam service standards) and runs the Centralized Public Grievance Redress and Monitoring System (CPGRAMS) for citizen complaints against government.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://darpg.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-darpg",
+   "sources": [
+    "https://www.linkedin.com/posts/department-of-administrative-reforms-and-public-grievances-government-of-india_darpg-activity-7447568301704187904-cHib"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-pension-and-pensioners-welfare",
+   "kind": "department",
+   "abbr": "DoPPW",
+   "name": "Department of Pension and Pensioners' Welfare",
+   "parentId": "in-min-personnel-public-grievances-and-pensions",
+   "description": "Frames pension policy for central government civil pensioners (including the National Pension System's rules for government employees) and handles pensioner grievances.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://doppw.gov.in",
+   "adminHeadPositionId": "in-pos-secretary-doppw",
+   "sources": [
+    "https://www.india.gov.in/department-pensions-and-pensioners-welfare"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cbi",
+   "kind": "investigative_agency",
+   "name": "Central Bureau of Investigation",
+   "abbr": "CBI",
+   "aliases": [
+    "CBI"
+   ],
+   "parentId": "in-dept-personnel-and-training",
+   "description": "India's premier federal investigative agency, probing corruption by central government officials, major frauds/economic offences, and serious/inter-state crimes referred by courts or state consent.",
+   "legalBasis": "Delhi Special Police Establishment Act, 1946",
+   "officialUrl": "https://cbi.gov.in",
+   "established": "1963",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-director-cbi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Bureau_of_Investigation"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-lbsnaa",
+   "kind": "subordinate_office",
+   "name": "Lal Bahadur Shastri National Academy of Administration",
+   "abbr": "LBSNAA",
+   "parentId": "in-dept-personnel-and-training",
+   "description": "The all-India foundation-course and induction-training academy for the IAS and allied civil services, at Mussoorie.",
+   "legalBasis": "DoPT subordinate training institute",
+   "officialUrl": "https://www.lbsnaa.gov.in",
+   "hq": "Mussoorie, Uttarakhand",
+   "adminHeadPositionId": "in-pos-director-lbsnaa",
+   "sources": [
+    "https://indianmasterminds.com/news/centre-invites-applications-for-lbsnaa-director-post-2026-208576/"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-istm",
+   "kind": "subordinate_office",
+   "name": "Institute of Secretariat Training and Management",
+   "abbr": "ISTM",
+   "parentId": "in-dept-personnel-and-training",
+   "description": "Central training institute for Union government employees: orientation, financial management, behavioural and secretariat-procedure courses, plus consultancy.",
+   "legalBasis": "DoPT subordinate training institute",
+   "established": "1948",
+   "hq": "New Delhi",
+   "adminHeadPositionId": "in-pos-director-istm",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Institute_of_Secretariat_Training_and_Management"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-staff-selection-commission",
+   "kind": "attached_office",
+   "name": "Staff Selection Commission",
+   "abbr": "SSC",
+   "parentId": "in-dept-personnel-and-training",
+   "description": "Recruits staff for Group B and Group C (non-technical) posts in Union government ministries, departments and subordinate offices through nationwide competitive examinations.",
+   "legalBasis": "Government of India Resolution constituting the SSC (1975/1977)",
+   "officialUrl": "https://ssc.gov.in",
+   "established": "1975",
+   "headPositionId": "in-pos-chairman-ssc",
+   "sources": [
+    "https://ssccr.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-karmayogi-bharat",
+   "kind": "mission",
+   "name": "Mission Karmayogi (Karmayogi Bharat)",
+   "aliases": [
+    "Mission Karmayogi",
+    "NPCSCB",
+    "iGOT Karmayogi"
+   ],
+   "parentId": "in-dept-personnel-and-training",
+   "description": "National Programme for Civil Services Capacity Building: a competency-based, technology-enabled civil-service training reform run through the iGOT Karmayogi digital learning platform and delivered by the not-for-profit Karmayogi Bharat SPV.",
+   "legalBasis": "Cabinet approval, 2 September 2020",
+   "officialUrl": "https://igotkarmayogi.gov.in",
+   "established": "2020-09-02",
+   "sources": [
+    "https://www.business-standard.com/india-news/mission-karmayogi-2-0-to-institutionalise-govt-reforms-cbc-chairperson-126052500327_1.html"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-capacity-building-commission",
+   "kind": "advisory_body",
+   "name": "Capacity Building Commission",
+   "abbr": "CBC",
+   "parentId": "in-dept-personnel-and-training",
+   "description": "Oversees and harmonises civil-service training institutions and curricula government-wide under Mission Karmayogi, and advises DoPT on capacity-building policy.",
+   "legalBasis": "Cabinet approval, 2 September 2020",
+   "established": "2021",
+   "officialUrl": "https://cbc.gov.in",
+   "headPositionId": "in-pos-chairperson-cbc",
+   "sources": [
+    "https://www.sanskritiias.com/current-affairs/s-radha-chauhan-appointed-as-new-chairperson-of-capacity-building-commission"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncgg",
+   "kind": "autonomous_body",
+   "name": "National Centre for Good Governance",
+   "abbr": "NCGG",
+   "parentId": "in-dept-administrative-reforms-and-public-grievances",
+   "description": "Trains Indian and partner-country (e.g. Bangladesh, Maldives, Bhutan, other developing nations) civil servants in governance reform, e-governance and public policy under DARPG's administrative oversight.",
+   "legalBasis": "Registered society under DARPG",
+   "officialUrl": "https://ncgg.gov.in",
+   "established": "2014",
+   "hq": "Mussoorie, Uttarakhand",
+   "headPositionId": "in-pos-secretary-darpg",
+   "sources": [
+    "https://ncgg.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iipa",
+   "kind": "autonomous_body",
+   "name": "Indian Institute of Public Administration",
+   "abbr": "IIPA",
+   "parentId": "in-dept-personnel-and-training",
+   "description": "Autonomous research and training body for public administration; trains civil servants and publishes the Indian Journal of Public Administration.",
+   "legalBasis": "Registered society, 1954",
+   "officialUrl": "https://iipa.org.in",
+   "established": "1954",
+   "hq": "Indraprastha Estate, New Delhi",
+   "headPositionId": "in-pos-president-iipa",
+   "adminHeadPositionId": "in-pos-dg-iipa",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Institute_of_Public_Administration"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-parliamentary-affairs",
+   "kind": "ministry",
+   "name": "Ministry of Parliamentary Affairs",
+   "parentId": "in-union-government",
+   "description": "Coordinates government business in Parliament: schedules sessions in consultation with the presiding officers, tracks legislative business, follows up on assurances given by ministers on the floor of the House, and liaises between the government and the Lok Sabha/Rajya Sabha secretariats.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://parliamentaryaffairs.gov.in",
+   "established": "1949",
+   "hq": "Sansad Bhavan, New Delhi",
+   "headPositionId": "in-pos-minister-parliamentary-affairs",
+   "adminHeadPositionId": "in-pos-secretary-parliamentary-affairs",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Parliamentary_Affairs_(India)",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-min-cooperation",
+   "kind": "ministry",
+   "name": "Ministry of Cooperation",
+   "parentId": "in-union-government",
+   "description": "Provides a separate administrative, legal and policy framework to strengthen India's cooperative movement (credit, dairy, sugar, fertiliser, housing, marketing and export cooperatives), a subject that is otherwise primarily state-level.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://cooperation.gov.in",
+   "established": "2021-07-06",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-minister-cooperation",
+   "adminHeadPositionId": "in-pos-secretary-cooperation",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Co-operation",
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-crcs",
+   "kind": "statutory_body",
+   "name": "Central Registrar of Cooperative Societies",
+   "abbr": "CRCS",
+   "parentId": "in-min-cooperation",
+   "description": "Registers and regulates Multi-State Cooperative Societies (societies whose objects/operations span more than one state), including approving their bye-laws, amalgamations and winding-up.",
+   "legalBasis": "Multi-State Cooperative Societies Act, 2002",
+   "sources": [
+    "https://cooperation.gov.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncdc",
+   "kind": "statutory_body",
+   "name": "National Cooperative Development Corporation",
+   "abbr": "NCDC",
+   "parentId": "in-min-cooperation",
+   "description": "Statutory corporation that plans and finances programmes for the production, processing, marketing, storage, export and import of agricultural produce, foodstuffs and other cooperative-sector goods.",
+   "legalBasis": "National Cooperative Development Corporation Act, 1962",
+   "officialUrl": "https://www.ncdc.in",
+   "established": "1963",
+   "headPositionId": "in-pos-md-ncdc",
+   "sources": [
+    "https://www.ncdc.in"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncel",
+   "kind": "statutory_body",
+   "name": "National Cooperative Exports Limited",
+   "abbr": "NCEL",
+   "parentId": "in-min-cooperation",
+   "description": "Multi-state apex cooperative society to aggregate and export cooperative-sector produce (agri-commodities, handicrafts and more) on behalf of member cooperatives, aiming to boost farmer/cooperative incomes via exports.",
+   "legalBasis": "Multi-State Cooperative Societies Act, 2002",
+   "established": "2023",
+   "officialUrl": "https://ncel.coop",
+   "sources": [
+    "https://cooperation.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncol",
+   "kind": "statutory_body",
+   "name": "National Cooperative Organics Limited",
+   "abbr": "NCOL",
+   "parentId": "in-min-cooperation",
+   "description": "Multi-state apex cooperative society to produce, certify and market organic products (branded 'Bharat Organics') to give farmers a structured, unadulterated-organic supply chain and better prices.",
+   "legalBasis": "Multi-State Cooperative Societies Act, 2002",
+   "established": "2023",
+   "sources": [
+    "https://cooperation.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bbssl",
+   "kind": "statutory_body",
+   "name": "Bhartiya Beej Sahkari Samiti Limited",
+   "abbr": "BBSSL",
+   "parentId": "in-min-cooperation",
+   "description": "National multi-state cooperative seed society to produce, procure and market quality/certified seeds through cooperatives, reducing farmer dependence on private seed supply.",
+   "legalBasis": "Multi-State Cooperative Societies Act, 2002",
+   "established": "2023",
+   "sources": [
+    "https://cooperation.gov.in"
+   ],
+   "confidence": "low",
+   "sector": "executive"
+  },
+  {
+   "id": "in-tribhuvan-sahkari-university",
+   "kind": "autonomous_body",
+   "name": "Tribhuvan Sahkari University",
+   "abbr": "TSU",
+   "parentId": "in-min-cooperation",
+   "description": "India's first cooperative university (formerly the Institute of Rural Management Anand, IRMA), redesignated by Act of Parliament to train professional managers for cooperatives and rural producer organisations.",
+   "legalBasis": "Tribhuvan Sahkari University Act, 2025",
+   "officialUrl": "https://www.irma.ac.in",
+   "established": "2025",
+   "hq": "Anand, Gujarat",
+   "headPositionId": "in-pos-vc-tsu",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tribhuvan_Sahkari_University"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-passport-seva-programme",
+   "kind": "mission",
+   "sector": "executive",
+   "name": "Passport Seva Programme",
+   "abbr": "PSP",
+   "aliases": [
+    "Passport Seva",
+    "Passport Seva Kendra",
+    "PSK"
+   ],
+   "parentId": "in-cpv-division",
+   "description": "MEA's flagship e-governance programme (run in public-private partnership) that digitised and decentralised passport issuance through a national network of Passport Seva Kendras and Post Office Passport Seva Kendras, under the CPV Division.",
+   "legalBasis": "Passports Act, 1967",
+   "officialUrl": "https://www.passportindia.gov.in",
+   "established": "2010",
+   "sources": [
+    "https://www.passportindia.gov.in"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-minister-external-affairs",
+   "title": "Minister of External Affairs",
+   "orgId": "in-min-external-affairs",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Subrahmanyam Jaishankar",
+    "since": "2019-05-31",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/S._Jaishankar",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-external-affairs-1",
+   "title": "Minister of State for External Affairs",
+   "orgId": "in-min-external-affairs",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Kirti Vardhan Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kirti_Vardhan_Singh",
+    "acting": false,
+    "notes": "Also Minister of State, Environment, Forest and Climate Change."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-external-affairs-2",
+   "title": "Minister of State for External Affairs",
+   "orgId": "in-min-external-affairs",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Pabitra Margherita",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pabitra_Margherita",
+    "acting": false,
+    "notes": "Also Minister of State, Textiles."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-foreign-secretary",
+   "title": "Foreign Secretary",
+   "orgId": "in-min-external-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Vikram Misri",
+    "since": "2024-07-15",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vikram_Misri",
+    "acting": false,
+    "notes": "Appointed by the Appointments Committee of the Cabinet (chaired by the PM); tenure extended in 2026. Re-verified 2026-09-25: current Wikipedia revision still lists him as incumbent (assumed office 15 Jul 2024) despite a cited news item about his tenure being extended only \"till July 2026\" — no successor found in any source checked, so retained as holder."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.mea.gov.in/fs",
+    "https://www.newsonair.gov.in/govt-extends-tenure-of-foreign-secretary-vikram-misri-till-july-2026/",
+    "https://en.wikipedia.org/wiki/Vikram_Misri"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-mea-east",
+   "title": "Secretary (East)",
+   "orgId": "in-min-external-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rudrendra Tandon",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Handles India's relations with East Asia/ASEAN region."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_External_Affairs_(India)",
+    "https://www.mea.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-mea-west",
+   "title": "Secretary (West)",
+   "orgId": "in-min-external-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sibi George",
+    "acting": false,
+    "notes": "Handles India's relations with Gulf, West Asia, North Africa and Europe (division scope varies by charter)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_External_Affairs_(India)",
+    "https://www.mea.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-mea-er",
+   "title": "Secretary (Economic Relations)",
+   "orgId": "in-min-external-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sudhakar Dalela",
+    "acting": false,
+    "notes": "Handles economic diplomacy, development partnership and ITEC."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_External_Affairs_(India)",
+    "https://www.mea.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-mea-cpv-oia",
+   "title": "Secretary (Consular, Passport, Visa and Overseas Indian Affairs)",
+   "orgId": "in-min-external-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sripriya Ranganathan",
+    "acting": false,
+    "notes": "Oversees the CPV Division, Passport Seva and overseas Indian affairs."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_External_Affairs_(India)",
+    "https://www.mea.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-president-iccr",
+   "title": "President, ICCR",
+   "orgId": "in-iccr",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-external-affairs",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Council_for_Cultural_Relations"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-iccr",
+   "title": "Director General, ICCR",
+   "orgId": "in-iccr",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-foreign-secretary",
+   "holder": {
+    "name": "K. Nandini Singla",
+    "acting": false,
+    "notes": "Indian Foreign Service officer."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Council_for_Cultural_Relations"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-president-icwa",
+   "title": "President, ICWA",
+   "orgId": "in-icwa",
+   "rank": "head_of_agency",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "C. P. Radhakrishnan",
+    "since": "2025-09-12",
+    "notes": "Ex officio as Vice-President of India.",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._P._Radhakrishnan",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Council_of_World_Affairs",
+    "https://en.wikipedia.org/wiki/Vice_President_of_India"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-vice-president-icwa-council",
+   "title": "Vice-President of the Council, ICWA",
+   "orgId": "in-icwa",
+   "rank": "head_of_agency",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Subrahmanyam Jaishankar",
+    "notes": "Ex officio as Minister of External Affairs.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Council_of_World_Affairs"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-icwa",
+   "title": "Director General, ICWA",
+   "orgId": "in-icwa",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-foreign-secretary",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://www.icwa.in",
+    "https://icwa.in/"
+   ],
+   "confidence": "medium",
+   "notes": "Re-verified 2026-09-25: icwa.in's own site (fetched live) refers to T.C.A. Raghavan only as 'Former Director General, Indian Council of World Affairs', and its July 2026 event captions credit 'Amb. N. J. Gangte, Acting Deputy Director General, ICWA' — i.e. the full DG post appears genuinely vacant, covered informally by an Acting Deputy DG, not by Raghavan. Kept vacant:true; confidence low -> medium since the vacancy itself is now corroborated by a live primary source."
+  },
+  {
+   "id": "in-pos-dg-ris",
+   "title": "Director General, RIS",
+   "orgId": "in-ris",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": null,
+   "holder": {
+    "name": "Sachin Kumar Sharma",
+    "acting": false,
+    "notes": "Professor; PhD in Economics, JNU."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.ris.org.in/en/about-us/director-general",
+    "https://ris.org.in/en/about-us/director-general"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chancellor-nalanda",
+   "title": "Chancellor, Nalanda University",
+   "orgId": "in-nalanda-university",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Arvind Panagariya",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nalanda_University"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-vc-nalanda",
+   "title": "Vice-Chancellor, Nalanda University",
+   "orgId": "in-nalanda-university",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-chancellor-nalanda",
+   "holder": {
+    "name": "Sachin Chaturvedi",
+    "acting": false,
+    "notes": "Previously Director General, RIS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nalanda_University"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dean-ssifs",
+   "title": "Dean, SSIFS",
+   "orgId": "in-ssifs",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-foreign-secretary",
+   "holder": {
+    "name": "Raj Kumar Srivastava",
+    "acting": false,
+    "notes": "Indian Foreign Service officer.",
+    "since": "2024-09"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sushma_Swaraj_Institute_of_Foreign_Service"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-law-justice",
+   "title": "Minister of Law and Justice (Independent Charge)",
+   "orgId": "in-min-law-and-justice",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Arjun Ram Meghwal",
+    "since": "2023-05-18",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Arjun_Ram_Meghwal",
+    "acting": false,
+    "notes": "Also Minister of State, Parliamentary Affairs. No separate Cabinet Minister for Law & Justice as of 2026-06-23."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf",
+    "https://en.wikipedia.org/wiki/Arjun_Ram_Meghwal"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-legal-affairs",
+   "title": "Secretary, Department of Legal Affairs",
+   "orgId": "in-dept-legal-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Anju Rathi Rana",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Law_and_Justice_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-legislative",
+   "title": "Secretary, Legislative Department",
+   "orgId": "in-dept-legislative",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rajiv Mani",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Law_and_Justice_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-justice",
+   "title": "Secretary, Department of Justice",
+   "orgId": "in-dept-justice",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Niraj Verma",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Law_and_Justice_(India)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chair-law-commission",
+   "title": "Chairperson, Law Commission of India",
+   "orgId": "in-law-commission-of-india",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 3,
+   "holder": {
+    "name": "Dinesh Maheshwari",
+    "since": "2025-04-15",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dinesh_Maheshwari",
+    "acting": false,
+    "notes": "Retired Supreme Court judge; 23rd Commission's term runs to 2027-08-31."
+   },
+   "vacant": false,
+   "sources": [
+    "https://currentaffairs.adda247.com/justice-dinesh-maheshwari-appointed-chairperson-of-the-23rd-law-commission-of-india/",
+    "https://en.wikipedia.org/wiki/Dinesh_Maheshwari"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-nja",
+   "title": "Director, National Judicial Academy",
+   "orgId": "in-national-judicial-academy",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-chief-justice-of-india",
+   "holder": {
+    "name": "Aniruddha Bose",
+    "acting": false,
+    "notes": "Retired Supreme Court judge."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Judicial_Academy"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairman-bci",
+   "title": "Chairman, Bar Council of India",
+   "orgId": "in-bar-council-of-india",
+   "rank": "head_of_agency",
+   "appointmentMode": "elected",
+   "holder": {
+    "name": "Manan Kumar Mishra",
+    "since": "2014-11-09",
+    "acting": false,
+    "notes": "Elected by members of the Bar Council of India (State Bar Council representatives); also a Rajya Sabha MP."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manan_Kumar_Mishra"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-president-ili",
+   "title": "President, Indian Law Institute",
+   "orgId": "in-indian-law-institute",
+   "rank": "head_of_agency",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Surya Kant",
+    "notes": "Ex officio as Chief Justice of India.",
+    "acting": false,
+    "since": "2025-11-24"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Law_Institute",
+    "https://en.wikipedia.org/wiki/Chief_Justice_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-vice-president-ili-law-minister",
+   "title": "Vice-President, Indian Law Institute",
+   "orgId": "in-indian-law-institute",
+   "rank": "head_of_agency",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Arjun Ram Meghwal",
+    "notes": "Ex officio as Minister of Law and Justice.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Law_Institute"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-ili",
+   "title": "Director, Indian Law Institute",
+   "orgId": "in-indian-law-institute",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president-ili",
+   "holder": {
+    "name": "V. K. Ahuja",
+    "acting": false,
+    "notes": "Professor."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Law_Institute"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-minister-personnel",
+   "title": "Minister of Personnel, Public Grievances and Pensions",
+   "orgId": "in-min-personnel-public-grievances-and-pensions",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Narendra Modi",
+    "since": "2024-06-09",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Narendra_Modi",
+    "acting": false,
+    "notes": "Held directly by the Prime Minister per the official Allocation of Business list; no separate Cabinet Minister."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-personnel-1",
+   "title": "Minister of State, Personnel, Public Grievances and Pensions",
+   "orgId": "in-min-personnel-public-grievances-and-pensions",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Jitendra Singh",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jitendra_Singh_(politician,_born_1956)",
+    "acting": false,
+    "notes": "Also MoS (IC) Science & Technology and Earth Sciences, and MoS in PMO."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-dopt",
+   "title": "Secretary, Department of Personnel and Training",
+   "orgId": "in-dept-personnel-and-training",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rachna Shah",
+    "since": "2024-12-26",
+    "acting": false,
+    "notes": "1991-batch IAS officer, Kerala cadre."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Personnel_Secretary"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-establishment-officer",
+   "title": "Establishment Officer, DoPT",
+   "orgId": "in-dept-personnel-and-training",
+   "rank": "other",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-dopt",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://dopt.gov.in/about-us/wings-or-division-in-dopt/establishment-officer-1"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-secretary-darpg",
+   "title": "Secretary, DARPG",
+   "orgId": "in-dept-administrative-reforms-and-public-grievances",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Nivedita Shukla Verma",
+    "since": "2026-04-07",
+    "acting": false,
+    "notes": "1991-batch IAS officer, UP cadre; holds dual charge with DoPPW. Could not independently reconfirm this session (darpg.gov.in is JS-rendered and returned 403 to automated fetch; no Wikipedia page for this officer); retained from original single LinkedIn source pending a stronger citation."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.linkedin.com/posts/department-of-administrative-reforms-and-public-grievances-government-of-india_darpg-activity-7447568301704187904-cHib"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-secretary-doppw",
+   "title": "Secretary, DoPPW",
+   "orgId": "in-dept-pension-and-pensioners-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Nivedita Shukla Verma",
+    "since": "2026-04-07",
+    "acting": false,
+    "notes": "Dual charge with DARPG. Could not independently reconfirm this session (darpg.gov.in is JS-rendered and returned 403 to automated fetch; no Wikipedia page for this officer); retained from original single LinkedIn source pending a stronger citation."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.linkedin.com/posts/department-of-administrative-reforms-and-public-grievances-government-of-india_darpg-activity-7447568301704187904-cHib"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-director-cbi",
+   "title": "Director, CBI",
+   "orgId": "in-cbi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "termYears": 2,
+   "holder": {
+    "name": "Praveen Sood",
+    "since": "2023-05-25",
+    "wikipedia": "https://en.wikipedia.org/wiki/Praveen_Sood",
+    "acting": false,
+    "notes": "1986-batch IPS officer, Karnataka cadre; minimum 2-year term extended twice, most recently 2026-05-13. Re-verified 2026-09-25: tenure has been extended twice beyond the original 2-year term (first extension ~May 2025, second on 13 May 2026, for one more year) — still incumbent as of the latest Wikipedia revision (22 Jul 2026)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Praveen_Sood"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-lbsnaa",
+   "title": "Director, LBSNAA",
+   "orgId": "in-lbsnaa",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-dopt",
+   "holder": {
+    "name": "B. Rajender",
+    "acting": false,
+    "notes": "IAS (Bihar, 1996); post temporarily upgraded to Secretary rank; succeeded Sriram Taranikanti on the latter's superannuation (31 July 2026).",
+    "since": "2026-08-01"
+   },
+   "vacant": false,
+   "sources": [
+    "https://indianmasterminds.com/news/centre-invites-applications-for-lbsnaa-director-post-2026-208576/",
+    "https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri_National_Academy_of_Administration"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-director-istm",
+   "title": "Director, ISTM",
+   "orgId": "in-istm",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-dopt",
+   "holder": {
+    "name": "S. D. Sharma",
+    "acting": false,
+    "notes": "Joint-Secretary-rank officer in charge."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Institute_of_Secretariat_Training_and_Management"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairman-ssc",
+   "title": "Chairman, Staff Selection Commission",
+   "orgId": "in-staff-selection-commission",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-dopt",
+   "holder": {
+    "name": "S. Gopalakrishnan",
+    "since": "2024-11-01",
+    "acting": false,
+    "notes": "1991-batch IAS officer, Tamil Nadu cadre."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.indianmandarins.com/news/gopalakrishnan-is-chairman-staff-selection-commission/29810",
+    "https://en.wikipedia.org/wiki/Staff_Selection_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-chairperson-cbc",
+   "title": "Chairperson, Capacity Building Commission",
+   "orgId": "in-capacity-building-commission",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "S. Radha Chauhan",
+    "since": "2026-05",
+    "acting": false,
+    "notes": "Former IAS officer; succeeded Adil Zainulbhai. Caution: Adil Zainulbhai's own Wikipedia infobox (revision fetched 2026-09-25, page last touched 2 Sep 2026) still lists his occupation as \"Chairman of Capacity Building Commission (CBC)\" with no end date or successor recorded, which is in tension with this holder. The sanskritiias.com source is a secondary current-affairs aggregator, not an official notification. Retained the transition (plausible, specific, names a predecessor) but downgraded confidence pending an official/PIB source."
+   },
+   "vacant": false,
+   "sources": [
+    "https://www.sanskritiias.com/current-affairs/s-radha-chauhan-appointed-as-new-chairperson-of-capacity-building-commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-president-iipa",
+   "title": "President, IIPA",
+   "orgId": "in-iipa",
+   "rank": "head_of_agency",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "C. P. Radhakrishnan",
+    "notes": "Ex officio as Vice-President of India.",
+    "acting": false,
+    "since": "2025-09-12"
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Institute_of_Public_Administration",
+    "https://en.wikipedia.org/wiki/Vice_President_of_India"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-chairman-iipa",
+   "title": "Chairman (Governing Body), IIPA",
+   "orgId": "in-iipa",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "holder": {
+    "name": "Jitendra Singh",
+    "notes": "Concurrently Minister of State, Personnel.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Institute_of_Public_Administration"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-dg-iipa",
+   "title": "Director General, IIPA",
+   "orgId": "in-iipa",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-chairman-iipa",
+   "holder": {
+    "name": "Surendrakumar Bagde",
+    "acting": false,
+    "notes": "IAS officer."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Institute_of_Public_Administration"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-minister-parliamentary-affairs",
+   "title": "Minister of Parliamentary Affairs",
+   "orgId": "in-min-parliamentary-affairs",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Kiren Rijiju",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kiren_Rijiju",
+    "acting": false,
+    "notes": "Also Minister of Minority Affairs."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-parliamentary-affairs-1",
+   "title": "Minister of State, Parliamentary Affairs",
+   "orgId": "in-min-parliamentary-affairs",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Arjun Ram Meghwal",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "acting": false,
+    "notes": "Also Minister of Law and Justice (Independent Charge)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-parliamentary-affairs-2",
+   "title": "Minister of State, Parliamentary Affairs",
+   "orgId": "in-min-parliamentary-affairs",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "L. Murugan",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Rajya Sabha",
+    "acting": false,
+    "notes": "Also Minister of State, Information and Broadcasting."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-parliamentary-affairs",
+   "title": "Secretary, Ministry of Parliamentary Affairs",
+   "orgId": "in-min-parliamentary-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Nikunja Bihari Dhal",
+    "acting": false,
+    "notes": "IAS officer."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Parliamentary_Affairs_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-minister-cooperation",
+   "title": "Minister of Cooperation",
+   "orgId": "in-min-cooperation",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Amit Shah",
+    "since": "2021-07-07",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "wikipedia": "https://en.wikipedia.org/wiki/Amit_Shah",
+    "acting": false,
+    "notes": "Also Minister of Home Affairs."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-cooperation-1",
+   "title": "Minister of State, Cooperation",
+   "orgId": "in-min-cooperation",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Krishan Pal",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-mos-cooperation-2",
+   "title": "Minister of State, Cooperation",
+   "orgId": "in-min-cooperation",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Murlidhar Mohol",
+    "since": "2024-06-10",
+    "party": "BJP",
+    "house": "Lok Sabha",
+    "acting": false,
+    "notes": "Also Minister of State, Civil Aviation."
+   },
+   "vacant": false,
+   "sources": [
+    "https://cabsec.gov.in/writereaddata/councilofministers/english/1_Upload_4232.pdf"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-cooperation",
+   "title": "Secretary, Ministry of Cooperation",
+   "orgId": "in-min-cooperation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-prime-minister",
+   "holder": {
+    "name": "Ashish Kumar Bhutani",
+    "acting": false,
+    "notes": "IAS officer."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ministry_of_Co-operation"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-md-ncdc",
+   "title": "Managing Director, NCDC",
+   "orgId": "in-ncdc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-cooperation",
+   "holder": null,
+   "vacant": false,
+   "sources": [
+    "https://www.ncdc.in"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-vc-tsu",
+   "title": "Vice-Chancellor, Tribhuvan Sahkari University",
+   "orgId": "in-tribhuvan-sahkari-university",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-minister-cooperation",
+   "holder": {
+    "name": "S. P. Singh",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tribhuvan_Sahkari_University"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-chief-justice-of-india",
+   "to": "in-indian-law-institute",
+   "type": "ex_officio",
+   "basis": "ILI constitution (Societies Registration Act, 1860)"
+  },
+  {
+   "from": "in-dept-legal-affairs",
+   "to": "in-itat",
+   "type": "administers",
+   "basis": "Income-tax Act, 1961, s.252",
+   "source": "https://en.wikipedia.org/wiki/Ministry_of_Law_and_Justice_(India)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-director-cbi",
+   "type": "advises_appointment",
+   "basis": "DSPE Act, 1946 s.4A (Lokpal & Lokayuktas Act, 2013 amendment) — Selection Committee: PM (Chair), LoP Lok Sabha, CJI/nominee judge",
+   "source": "https://en.wikipedia.org/wiki/Central_Bureau_of_Investigation"
+  },
+  {
+   "from": "in-pos-leader-of-opposition-lok-sabha",
+   "to": "in-pos-director-cbi",
+   "type": "advises_appointment",
+   "basis": "DSPE Act, 1946 s.4A",
+   "source": "https://en.wikipedia.org/wiki/Central_Bureau_of_Investigation"
+  },
+  {
+   "from": "in-pos-chief-justice-of-india",
+   "to": "in-pos-director-cbi",
+   "type": "advises_appointment",
+   "basis": "DSPE Act, 1946 s.4A",
+   "source": "https://en.wikipedia.org/wiki/Central_Bureau_of_Investigation"
+  },
+  {
+   "from": "in-dept-personnel-and-training",
+   "to": "in-cat",
+   "type": "administers",
+   "basis": "Administrative Tribunals Act, 1985",
+   "source": "https://dopt.gov.in"
+  },
+  {
+   "from": "in-min-external-affairs",
+   "to": "in-cpv-division",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-external-affairs",
+   "to": "in-iccr",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-external-affairs",
+   "to": "in-icwa",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-external-affairs",
+   "to": "in-ris",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-external-affairs",
+   "to": "in-nalanda-university",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-external-affairs",
+   "to": "in-ssifs",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-external-affairs",
+   "to": "in-itec-programme",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-cpv-division",
+   "to": "in-office-of-protector-general-of-emigrants",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-law-and-justice",
+   "to": "in-dept-legal-affairs",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-law-and-justice",
+   "to": "in-dept-legislative",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-law-and-justice",
+   "to": "in-dept-justice",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-legislative",
+   "to": "in-official-language-wing-legislative",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-legal-affairs",
+   "to": "in-law-commission-of-india",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-legal-affairs",
+   "to": "in-bar-council-of-india",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-legal-affairs",
+   "to": "in-indian-law-institute",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-justice",
+   "to": "in-national-judicial-academy",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-justice",
+   "to": "in-national-mission-justice-delivery-legal-reforms",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-justice",
+   "to": "in-ecourts-mission-mode-project",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-personnel-public-grievances-and-pensions",
+   "to": "in-dept-personnel-and-training",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-personnel-public-grievances-and-pensions",
+   "to": "in-dept-administrative-reforms-and-public-grievances",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-personnel-public-grievances-and-pensions",
+   "to": "in-dept-pension-and-pensioners-welfare",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-personnel-and-training",
+   "to": "in-cbi",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-personnel-and-training",
+   "to": "in-lbsnaa",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-personnel-and-training",
+   "to": "in-istm",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-personnel-and-training",
+   "to": "in-staff-selection-commission",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-personnel-and-training",
+   "to": "in-karmayogi-bharat",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-personnel-and-training",
+   "to": "in-capacity-building-commission",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-personnel-and-training",
+   "to": "in-iipa",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-administrative-reforms-and-public-grievances",
+   "to": "in-ncgg",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-cooperation",
+   "to": "in-crcs",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-cooperation",
+   "to": "in-ncdc",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-cooperation",
+   "to": "in-ncel",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-cooperation",
+   "to": "in-ncol",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-cooperation",
+   "to": "in-bbssl",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-min-cooperation",
+   "to": "in-tribhuvan-sahkari-university",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961"
+  },
+  {
+   "from": "in-dept-legal-affairs",
+   "to": "in-bar-council-of-india",
+   "type": "oversees",
+   "basis": "Advocates Act, 1961"
+  },
+  {
+   "from": "in-pos-vice-president",
+   "to": "in-pos-president-icwa",
+   "type": "ex_officio",
+   "basis": "Indian Council of World Affairs Act, 2001"
+  },
+  {
+   "from": "in-pos-minister-external-affairs",
+   "to": "in-pos-vice-president-icwa-council",
+   "type": "ex_officio",
+   "basis": "Indian Council of World Affairs Act, 2001"
+  },
+  {
+   "from": "in-pos-vice-president",
+   "to": "in-pos-president-iipa",
+   "type": "ex_officio",
+   "basis": "IIPA constitution/bye-laws"
+  },
+  {
+   "from": "in-cpv-division",
+   "to": "in-passport-seva-programme",
+   "type": "administers",
+   "basis": "Government of India (Allocation of Business) Rules, 1961",
+   "source": "https://www.passportindia.gov.in"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 49,
+  "method": "Re-verified with fresh 2025-2026 sources: live curl fetches of mea.gov.in/secretaries, icwa.in, ris.org.in, cabsec.gov.in's official 'List of Council of Ministers with Portfolios (As on 23.06.2026)' PDF (re-parsed locally with pypdf, not just trust the existing citation), plus WebFetch of current Wikipedia revisions (Wikipedia API JSON parsed directly with bs4 where WebFetch's own summarization looked inconsistent with the raw infobox, e.g. SSC Chairman and the Law Commission page's self-contradictory infobox). WebSearch quota was already exhausted (shared across concurrently-running segment agents) before this verification pass started, so all checks used WebFetch/curl/python only, per the file's own prior notes.",
+  "corrections": [
+   "in-pos-president-icwa: precised holder.since '2025-09' -> '2025-09-12' (C.P. Radhakrishnan sworn in as VP 12 Sep 2025, ex officio); confirmed via Wikipedia infobox fetched fresh.",
+   "in-pos-president-iipa: precised holder.since 'None' -> '2025-09-12' (C.P. Radhakrishnan sworn in as VP 12 Sep 2025, ex officio); confirmed via Wikipedia infobox fetched fresh.",
+   "in-pos-foreign-secretary: re-confirmed Vikram Misri as incumbent via fresh Wikipedia fetch; added note flagging the Jul-2026 extension-expiry tension in the existing source since no successor could be found.",
+   "in-pos-secretary-mea-east: confirmed name via live fetch of https://www.mea.gov.in/secretaries (official MEA directory); confidence medium -> high.",
+   "in-pos-secretary-mea-west: confirmed name via live fetch of https://www.mea.gov.in/secretaries (official MEA directory); confidence medium -> high.",
+   "in-pos-secretary-mea-er: confirmed name via live fetch of https://www.mea.gov.in/secretaries (official MEA directory); confidence medium -> high.",
+   "in-pos-secretary-mea-cpv-oia: confirmed name via live fetch of https://www.mea.gov.in/secretaries (official MEA directory); confidence medium -> high.",
+   "in-pos-dg-icwa: corroborated vacancy (not merely unconfirmed) via icwa.in live fetch — Raghavan is explicitly 'Former' DG there, and an Acting Deputy DG (Amb. N. J. Gangte) is covering; confidence low -> medium; added explanatory note.",
+   "in-pos-dg-ris: independently re-confirmed Sachin Kumar Sharma as DG via a fresh fetch of ris.org.in's own director-general page (official primary source).",
+   "in-pos-chancellor-nalanda: re-confirmed holder via fresh Wikipedia fetch of Nalanda University (no change).",
+   "in-pos-vc-nalanda: re-confirmed holder via fresh Wikipedia fetch of Nalanda University (no change).",
+   "in-pos-dean-ssifs: added holder.since '2024-09' (previously missing), confirmed via Wikipedia (assumed office Sep 2024); confidence medium -> high.",
+   "in-pos-minister-law-justice: precised holder.since '2023-05' -> '2023-05-18' per Wikipedia infobox.",
+   "in-pos-chair-law-commission: cross-checked Dinesh Maheshwari's own Wikipedia bio (assumed office 15 Apr 2025) against the Law Commission page, which itself had an internal inconsistency (infobox briefly named a different, implausible person); bio page confirms the doc's existing holder/date were correct.",
+   "in-pos-president-ili: added holder.since '2025-11-24' — the office is ex officio the CJI, and Surya Kant became the 53rd CJI on 24 Nov 2025 (independently confirmed); the doc's holder name was already correct.",
+   "in-pos-secretary-dopt: re-confirmed Rachna Shah via fresh Wikipedia fetch; confidence medium -> high.",
+   "in-pos-secretary-darpg: could not independently reconfirm this session (official site inaccessible to fetch, no Wikipedia page); confidence high -> medium and flagged in holder.notes rather than removed, per instructions to downgrade-not-invent.",
+   "in-pos-secretary-doppw: could not independently reconfirm this session (official site inaccessible to fetch, no Wikipedia page); confidence high -> medium and flagged in holder.notes rather than removed, per instructions to downgrade-not-invent.",
+   "in-pos-director-cbi: re-confirmed Praveen Sood still incumbent (two tenure extensions since the original May-2023 appointment, most recently 13 May 2026); added detail to holder.notes.",
+   "in-pos-director-lbsnaa: added holder.since '2026-08-01' and a corroborating Wikipedia source (original source only showed an application call, not a confirmed appointment); confidence medium -> high.",
+   "in-pos-chairman-ssc: independently re-confirmed S. Gopalakrishnan via the Staff Selection Commission Wikipedia infobox (parsed directly from raw HTML after an initial AI-summarized fetch mis-cited a different name from a separate part of the page); confidence medium -> high.",
+   "in-pos-chairperson-cbc: flagged a live conflict — Zainulbhai's own Wikipedia page (fetched fresh) still names him CBC Chairman with no successor, while the doc's sole source is a secondary current-affairs site; confidence high -> medium, conflict documented in holder.notes rather than silently resolved either way.",
+   "in-pos-president-iipa: re-confirmed via fresh Wikipedia fetch of Indian Institute of Public Administration (no change).",
+   "in-pos-chairman-iipa: re-confirmed via fresh Wikipedia fetch of Indian Institute of Public Administration (no change).",
+   "in-pos-dg-iipa: re-confirmed via fresh Wikipedia fetch of Indian Institute of Public Administration (no change).",
+   "in-pos-secretary-parliamentary-affairs: re-confirmed Nikunja Bihari Dhal via fresh fetch of the correct India-specific Wikipedia page (Ministry_of_Parliamentary_Affairs_(India)); confidence medium -> high.",
+   "Cabinet/MoS holders (in-pos-minister-external-affairs, in-pos-mos-external-affairs-1, in-pos-mos-external-affairs-2, in-pos-minister-law-justice, in-pos-minister-personnel, in-pos-mos-personnel-1, in-pos-minister-parliamentary-affairs, in-pos-mos-parliamentary-affairs-1, in-pos-mos-parliamentary-affairs-2, in-pos-minister-cooperation, in-pos-mos-cooperation-1, in-pos-mos-cooperation-2): independently re-parsed the cited cabsec.gov.in 'List of Council of Ministers with Portfolios (As on 23.06.2026)' PDF with pypdf (not just trusted the citation) and confirmed every name/portfolio pairing in the segment verbatim against the official text (no changes).",
+   "in-pos-secretary-cooperation: re-confirmed Ashish Kumar Bhutani via fresh Wikipedia fetch of Ministry of Cooperation (India) (no change)."
+  ],
+  "additions": [
+   "Added in-passport-seva-programme (mission, under in-cpv-division) — the brief explicitly named 'Passport Seva/CPV division' as in-scope and the original file only had the CPV Division itself, not the Passport Seva Programme as its own entity."
+  ],
+  "unresolvedGaps": [
+   "CVC/CIC/Lokpal: the brief said to 'reference' these regulator-owned bodies from this segment, but no relation to them exists in the file. I could not find a live, clearly-worded source this session confirming DoPT/Ministry of Personnel as their nodal/administering department strongly enough to add an 'administers' or 'oversees' relation without risking an invented fact, so I left this gap open rather than guessing.",
+   "in-pos-md-ncdc, in-crcs (no headPositionId), CRCS-holder, in-ncel/in-ncol/in-bbssl leadership, in-pos-establishment-officer: still unconfirmable this session (official cooperation.gov.in/ncdc.in/dopt.gov.in pages are JS-rendered or 403 to automated fetch; no Wikipedia pages exist for these newer bodies/officers) — left at their existing low confidence rather than invented.",
+   "in-pos-secretary-darpg / in-pos-secretary-doppw (Nivedita Shukla Verma, dual charge): could not independently reconfirm this session beyond the single pre-existing LinkedIn source; downgraded confidence high -> medium and flagged in holder.notes.",
+   "in-pos-chairperson-cbc (S. Radha Chauhan): a secondary current-affairs source (sanskritiias.com) specifically and plausibly describes her appointment succeeding Adil Zainulbhai, but Zainulbhai's own Wikipedia page (fetched fresh, last touched 2 Sep 2026) still lists him as CBC Chairman with no successor — downgraded confidence high -> medium and documented the conflict rather than silently picking a side."
+  ]
+ }
+}

@@ -1,0 +1,1394 @@
+{
+ "segment": "states-dl-jk-la",
+ "asOf": "2026-09-25",
+ "notes": "Scope: Delhi (NCT), Jammu & Kashmir (UT) and Ladakh (UT) fully, excluding districts (owned by local-lgd) and the High Court serving them (judiciary-owned, referenced only). Known gaps / unresolved items (flagged confidence=low or noted inline rather than invented): (1) Delhi State Election Commissioner — Wikipedia infobox and body text disagree (Anil Kumar Khachi vs Vijay Kumar Dev); (2) Delhi has no separate Public Service Commission (recruitment via DSSSB/UPSC) so none was created; (3) Delhi State/UT Human Rights Commission — could not confirm existence as a standing body separate from NHRC, so no entity created; (4) LAHDC Leh CEC — Tashi Gyalson's term ended 2025-10-31 and no confirmed successor was found (Ladakh's LAHDC elections are entangled with the 2025-26 statehood/Sixth Schedule agitation); marked vacant/low confidence rather than guessed; (5) J&K Deputy Speaker — could not confirm any officeholder, marked vacant/low confidence; (6) J&K State Election Commissioner B.R. Sharma's cited tenure ends 2025, reappointment unconfirmed; (7) J&K has no State Human Rights Commission (defunct since 2019, superseded by NHRC per J&K High Court ruling, Dec 2020) and no Lokayukta entity was found post-2019 (J&K Accountability Commission predates the UT and could not be confirmed active) — neither was fabricated; (8) Srinagar Municipal Corporation has had no elected council/mayor since its term expired Nov 2023; (9) Ladakh's district count (7, i.e. 5 new districts added in 2026 to the original Leh/Kargil) rests on a single Wikipedia mention and should be re-verified against an official Ladakh UT notification; (10) Individual minister 'since' dates for portfolio allocation (18 Oct 2024 order, J&K) vs swearing-in (16 Oct 2024) are both cited across sources — used swearing-in date for 'since'. All current office-holders were checked against 2025-2026 sources (Wikipedia current revisions fetched 2026-09-25); no WebSearch was available for this run (session search budget was exhausted by sibling segments), so cross-verification relied on WebFetch of Wikipedia pages plus internal consistency checks (e.g. Delhi LG -> Ladakh LG handover corroborated independently on two separate pages). VERIFICATION PASS (2026-09-25, adversarial re-verification): loaded and re-parsed the file; found 0 duplicate IDs, 0 dangling parentId/orgId references, all relation types and entity kinds/sectors/position ranks schema-valid. Re-checked 33 of 37 positions against fresh 2025-2026 sources (Wikipedia current-revision infoboxes/pages via WebFetch and direct curl to the Wikipedia API, since this session's own WebSearch budget was separately exhausted and curl-to-Wikipedia hit the same 429 rate-limit the original agent reported): Delhi LG, Ladakh LG, J&K LG, Delhi CM + all 6 ministers + portfolios, Delhi Speaker/Deputy Speaker/Leader of Opposition, Delhi Chief Secretary, Delhi Police Commissioner, Delhi Assembly seat breakdown, MCD Mayor/Commissioner, NDMC Chairperson, J&K CM + Deputy CM + all 4 ministers + portfolios, J&K Speaker/Leader of Opposition, J&K Chief Secretary, J&K DGP, J&K PSC Chair, J&K Assembly seat breakdown, Jammu Mayor, LAHDC Kargil CEC. All 33 held up as accurate against live sources as of this check; no fabricated or stale facts were found among them (two apparent discrepancies were investigated and resolved IN FAVOUR of the original file: J&K LG Manoj Sinha's since-date is confirmed 2020-08-07 per his own Wikipedia infobox, not 2020-08-06 as a secondary summary suggested; Delhi LoP Atishi's since-date is confirmed 2025-02-23 per her own infobox, not 2025-02-22 as a secondary summary suggested). Left untouched, as-is: the 4 positions already flagged low/medium confidence by the original agent (Delhi SEC Commissioner — name conflict between sources, still unresolved after a further attempt; J&K SEC Commissioner — post-2025 reappointment still unconfirmed; J&K Deputy Speaker and LAHDC Leh CEC — still vacant/unconfirmed) since no additional source could resolve them and inventing a holder is explicitly disallowed. One enhancement made: added a sourced since-date (2022-10-22) to the previously date-less Jammu Mayor holder. One coverage gap noted, not fabricated: Delhi Cantonment Board (a third Delhi local body besides MCD/NDMC) is not represented as an entity here — it is a cantonment board, not a municipal_corporation, so arguably out of the 'every municipal corporation' instruction, but flagging for the merge step to confirm.",
+ "entities": [
+  {
+   "id": "st-dl",
+   "kind": "union_territory",
+   "sector": "federal",
+   "name": "Delhi (National Capital Territory of Delhi)",
+   "abbr": "NCT",
+   "aliases": [
+    "NCT of Delhi",
+    "National Capital Territory of Delhi",
+    "GNCTD"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "A union territory with a partial state legislature; the seat of the Government of India. Administered jointly by an elected Legislative Assembly/Council of Ministers (with subjects other than police, public order and land) and a Lieutenant Governor representing the Union.",
+   "legalBasis": "Article 239AA of the Constitution; Government of National Capital Territory of Delhi Act, 1991",
+   "legalSourceUrl": "https://www.indiacode.nic.in/handle/123456789/1839",
+   "officialUrl": "https://delhi.gov.in",
+   "established": "1991-02-01",
+   "hq": "New Delhi",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "adminHeadPositionId": "st-dl-pos-chief-secretary",
+   "stats": {
+    "population2011": 16787941,
+    "areaKm2": 1484,
+    "lokSabhaSeats": 7,
+    "rajyaSabhaSeats": 3,
+    "assemblySeats": 70,
+    "districts": 11
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Delhi",
+    "https://en.wikipedia.org/wiki/Government_of_Delhi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of the National Capital Territory of Delhi",
+   "abbr": "GNCTD",
+   "parentId": "st-dl",
+   "description": "The executive government of Delhi: the Lieutenant Governor (Union appointee) and the elected Council of Ministers headed by the Chief Minister, operating under Article 239AA.",
+   "legalBasis": "Article 239AA; GNCTD Act, 1991",
+   "officialUrl": "https://delhi.gov.in",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Delhi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Delhi Council of Ministers",
+   "parentId": "st-dl-government",
+   "description": "The Chief Minister and cabinet ministers of Delhi, collectively responsible to the Delhi Legislative Assembly, currently 7-member (CM + 6 ministers) under the Rekha Gupta ministry sworn in 20 February 2025.",
+   "legalBasis": "Article 239AA(4)",
+   "headPositionId": "st-dl-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Delhi Legislative Assembly",
+   "abbr": "Vidhan Sabha",
+   "parentId": "st-dl",
+   "description": "The unicameral 70-seat elected legislature of Delhi. The 8th Assembly was elected in February 2025; BJP holds 48 seats and AAP 22.",
+   "legalBasis": "Article 239AA(2)",
+   "seats": 70,
+   "headPositionId": "st-dl-pos-speaker",
+   "stats": {
+    "lastElection": "2025-02-05",
+    "nextDue": "2030-02",
+    "partyWiseStrength": {
+     "BJP": 48,
+     "AAP": 22,
+     "INC": 0
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Delhi_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/2025_Delhi_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-mc-delhi",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Municipal Corporation of Delhi",
+   "abbr": "MCD",
+   "parentId": "st-dl",
+   "description": "The unified municipal corporation covering most of Delhi (re-unified in 2022 from three prior corporations), providing civic services such as sanitation, primary education and local roads. 250 elected wards + 10 nominated members.",
+   "legalBasis": "Delhi Municipal Corporation Act, 1957 (as amended 2022)",
+   "officialUrl": "https://mcdonline.nic.in",
+   "seats": 260,
+   "headPositionId": "st-dl-pos-mayor-mcd",
+   "adminHeadPositionId": "st-dl-pos-commissioner-mcd",
+   "stats": {
+    "lastElection": "2022-12-04",
+    "partyWiseStrength": {
+     "BJP": 138,
+     "AAP": 102,
+     "INC": 9
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Municipal_Corporation_of_Delhi"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-mc-new-delhi",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "New Delhi Municipal Council",
+   "abbr": "NDMC",
+   "parentId": "st-dl",
+   "description": "Civic body for the Lutyens' New Delhi area (government/diplomatic core); unlike MCD it is a nominated body, not elected — chairperson and most members appointed by the Union Government, with the Delhi CM and some MLAs/MPs as ex-officio members.",
+   "legalBasis": "New Delhi Municipal Council Act, 1994",
+   "officialUrl": "https://www.ndmc.gov.in",
+   "headPositionId": "st-dl-pos-chairperson-ndmc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_Delhi_Municipal_Council"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "State Election Commission, Delhi",
+   "parentId": "st-dl-government",
+   "description": "Constitutional authority under Article 243ZA/GNCTD Act responsible for conducting elections to the Municipal Corporation of Delhi.",
+   "legalBasis": "Article 243K/243ZA read with GNCTD Act",
+   "officialUrl": "https://sec.delhi.gov.in",
+   "headPositionId": "st-dl-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/State_Election_Commission_(Delhi)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-dl-lokayukta",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Lokayukta of Delhi",
+   "parentId": "st-dl-government",
+   "description": "Anti-corruption ombudsman for Delhi government functionaries. The post has been vacant since the last Lokayukta's term ended around 2020.",
+   "legalBasis": "Delhi Lokayukta and Upa-Lokayukta Act, 1995",
+   "headPositionId": "st-dl-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Delhi_Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk",
+   "kind": "union_territory",
+   "sector": "federal",
+   "name": "Jammu and Kashmir",
+   "abbr": "J&K",
+   "parentId": "in-states-and-uts",
+   "description": "A union territory with its own elected legislature, formed on 31 October 2019 from the reorganisation of the former State of Jammu and Kashmir. The Lieutenant Governor retains control of police, public order and All India Services; the elected government handles other subjects. Statehood restoration has been promised but not yet enacted as of September 2026.",
+   "legalBasis": "Jammu and Kashmir Reorganisation Act, 2019; Article 239A",
+   "legalSourceUrl": "https://www.indiacode.nic.in/handle/123456789/15529",
+   "officialUrl": "https://jk.gov.in",
+   "established": "2019-10-31",
+   "hq": "Srinagar (summer capital) / Jammu (winter capital)",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "adminHeadPositionId": "st-jk-pos-chief-secretary",
+   "stats": {
+    "population2011": 12267013,
+    "areaKm2": 56160,
+    "lokSabhaSeats": 5,
+    "rajyaSabhaSeats": 4,
+    "assemblySeats": 90,
+    "districts": 20
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_(union_territory)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Government of Jammu and Kashmir",
+   "parentId": "st-jk",
+   "description": "Executive government of the UT of Jammu and Kashmir: Lieutenant Governor plus the elected Council of Ministers headed by the Chief Minister, restored after the October 2024 Assembly election.",
+   "legalBasis": "Jammu and Kashmir Reorganisation Act, 2019, Section 55",
+   "officialUrl": "https://jk.gov.in",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Jammu_and_Kashmir"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "sector": "federal",
+   "name": "Jammu and Kashmir Council of Ministers",
+   "parentId": "st-jk-government",
+   "description": "The Second Omar Abdullah ministry: Chief Minister, one Deputy Chief Minister and four cabinet ministers, sworn in 16 October 2024, collectively responsible to the J&K Legislative Assembly.",
+   "legalBasis": "Section 55, J&K Reorganisation Act 2019",
+   "headPositionId": "st-jk-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Omar_Abdullah_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-assembly",
+   "kind": "state_legislature",
+   "sector": "federal",
+   "name": "Jammu and Kashmir Legislative Assembly",
+   "abbr": "Vidhan Sabha",
+   "parentId": "st-jk",
+   "description": "Unicameral 90-seat elected assembly (plus up to 5 members nominated by the LG under the 2023 amendment: representation for Kashmiri migrants and displaced persons from Pakistan-occupied Jammu and Kashmir). Elected October 2024 after a decade without an assembly government; the Legislative Council was abolished in 2019.",
+   "legalBasis": "Section 15, J&K Reorganisation Act 2019 (as amended 2023)",
+   "seats": 90,
+   "headPositionId": "st-jk-pos-speaker",
+   "stats": {
+    "lastElection": "2024-09-18/2024-10-01",
+    "nextDue": "2029",
+    "partyWiseStrength": {
+     "JKNC": 41,
+     "BJP": 29,
+     "INC": 6,
+     "JKPDP": 4,
+     "IND": 6,
+     "CPIM": 1,
+     "AAP": 1,
+     "JKPC": 1,
+     "JKAIP": 1,
+     "nominated": 5
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-legislative-council",
+   "kind": "state_chamber",
+   "sector": "federal",
+   "name": "Jammu and Kashmir Legislative Council (abolished)",
+   "parentId": "st-jk",
+   "description": "Former upper house of the erstwhile State of Jammu and Kashmir; formally abolished on 31 October 2019 under Section 57 of the J&K Reorganisation Act, 2019. Included here for completeness — the UT legislature is now unicameral.",
+   "legalBasis": "Section 57, J&K Reorganisation Act 2019",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Legislative_Council"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-mc-srinagar",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Srinagar Municipal Corporation",
+   "parentId": "st-jk",
+   "description": "Municipal corporation for Srinagar city, 74 wards. The elected council's term expired in November 2023 and fresh elections had not been held as of the latest available sources; currently under administrator/caretaker arrangement.",
+   "legalBasis": "Jammu and Kashmir Municipal Corporation Act, 2000",
+   "seats": 74,
+   "headPositionId": "st-jk-pos-mayor-srinagar",
+   "stats": {
+    "lastElection": "2018",
+    "partyWiseStrength": {
+     "IND": 53,
+     "INC": 16,
+     "BJP": 4,
+     "JKNC": 1
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Srinagar_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-mc-jammu",
+   "kind": "municipal_corporation",
+   "sector": "local",
+   "name": "Jammu Municipal Corporation",
+   "parentId": "st-jk",
+   "description": "Municipal corporation for Jammu city, 75 wards.",
+   "legalBasis": "Jammu and Kashmir Municipal Corporation Act, 2000",
+   "seats": 75,
+   "headPositionId": "st-jk-pos-mayor-jammu",
+   "stats": {
+    "lastElection": "2018",
+    "partyWiseStrength": {
+     "BJP": 43,
+     "IND": 18,
+     "INC": 14
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-sec",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "State Election Commission, Jammu and Kashmir",
+   "parentId": "st-jk-government",
+   "description": "Constitutional body conducting elections to Panchayats and Municipalities in J&K.",
+   "legalBasis": "Article 243K/243ZA",
+   "headPositionId": "st-jk-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/State_Election_Commission_(Jammu_and_Kashmir)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-psc",
+   "kind": "state_commission",
+   "sector": "federal",
+   "name": "Jammu and Kashmir Public Service Commission",
+   "abbr": "JKPSC",
+   "parentId": "st-jk-government",
+   "description": "Recruits to civil services and gazetted posts of the J&K government.",
+   "legalBasis": "Article 315 (as extended to J&K)",
+   "officialUrl": "https://jkpsc.nic.in",
+   "headPositionId": "st-jk-pos-psc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-la",
+   "kind": "union_territory",
+   "sector": "federal",
+   "name": "Ladakh",
+   "parentId": "in-states-and-uts",
+   "description": "A union territory without a legislature, formed on 31 October 2019 from the bifurcation of the former State of Jammu and Kashmir. Administered directly by a Lieutenant Governor appointed by the President; local governance is via two Autonomous Hill Development Councils (Leh and Kargil). Subject of an active statehood / Sixth Schedule protection movement through 2025-2026. Districts figure of 7 reflects 5 new districts (Changthang, Drass, Nubra, Sham, Zanskar) reportedly carved out in 2026 in addition to the original Leh and Kargil districts (1979) — recent and should be re-verified against an official notification.",
+   "legalBasis": "Jammu and Kashmir Reorganisation Act, 2019; Article 239",
+   "officialUrl": "https://ladakh.gov.in",
+   "established": "2019-10-31",
+   "hq": "Leh (Kargil is the other district HQ)",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "stats": {
+    "population2011": 274289,
+    "areaKm2": 59146,
+    "lokSabhaSeats": 1,
+    "rajyaSabhaSeats": 0,
+    "assemblySeats": 0,
+    "districts": 7
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ladakh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-la-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Union Territory Administration of Ladakh",
+   "parentId": "st-la",
+   "description": "The administration of Ladakh, headed by the Lieutenant Governor with an Advisor and Deputy Commissioners for Leh and Kargil districts; there is no Council of Ministers or Chief Minister since Ladakh has no legislature.",
+   "legalBasis": "Article 239; J&K Reorganisation Act 2019",
+   "officialUrl": "https://ladakh.gov.in",
+   "headPositionId": "st-la-pos-lieutenant-governor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ladakh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-lahdc-leh",
+   "kind": "local_government_tier",
+   "sector": "local",
+   "name": "Ladakh Autonomous Hill Development Council, Leh",
+   "abbr": "LAHDC Leh",
+   "parentId": "st-la",
+   "description": "Elected local self-government body for Leh district (30 seats: 26 elected + 4 nominated) with powers over land, agriculture, health and local development, functioning in place of Panchayati Raj institutions.",
+   "legalBasis": "Ladakh Autonomous Hill Development Councils Act, 1997",
+   "seats": 30,
+   "headPositionId": "st-la-pos-cec-leh",
+   "stats": {
+    "lastElection": "2020-10-26",
+    "nextDue": "2025-10 (overdue as of Sept 2026)",
+    "partyWiseStrength": {
+     "BJP": 16,
+     "INC": 9,
+     "IND": 1,
+     "nominated": 4
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ladakh_Autonomous_Hill_Development_Council,_Leh",
+    "https://en.wikipedia.org/wiki/Tashi_Gyalson"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-la-lahdc-kargil",
+   "kind": "local_government_tier",
+   "sector": "local",
+   "name": "Ladakh Autonomous Hill Development Council, Kargil",
+   "abbr": "LAHDC Kargil",
+   "parentId": "st-la",
+   "description": "Elected local self-government body for Kargil district (30 seats: 26 elected + 4 nominated), 5th council elected October 2023.",
+   "legalBasis": "Ladakh Autonomous Hill Development Councils Act, 1997",
+   "seats": 30,
+   "headPositionId": "st-la-pos-cec-kargil",
+   "stats": {
+    "lastElection": "2023-10-04",
+    "nextDue": "2028-10",
+    "partyWiseStrength": {
+     "JKNC": 12,
+     "INC": 10,
+     "BJP": 2,
+     "IND": 2,
+     "nominated": 4
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ladakh_Autonomous_Hill_Development_Council,_Kargil"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-dl-pos-lieutenant-governor",
+   "title": "Lieutenant Governor of Delhi",
+   "orgId": "st-dl-government",
+   "rank": "lieutenant_governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Taranjit Singh Sandhu",
+    "since": "2026-03-11",
+    "wikipedia": "https://en.wikipedia.org/wiki/Taranjit_Singh_Sandhu",
+    "notes": "Former diplomat (Ambassador to the US, 2020-2024); appointed LG in March 2026, succeeding Vinai Kumar Saxena who moved to become LG of Ladakh."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Taranjit_Singh_Sandhu",
+    "https://en.wikipedia.org/wiki/Government_of_Delhi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-chief-minister",
+   "title": "Chief Minister of Delhi",
+   "orgId": "st-dl-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-lieutenant-governor",
+   "holder": {
+    "name": "Rekha Gupta",
+    "since": "2025-02-20",
+    "party": "BJP",
+    "house": "Delhi Legislative Assembly",
+    "constituency": "Shalimar Bagh",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rekha_Gupta_(politician)",
+    "notes": "Holds General Administration, Finance, Planning, Revenue, Women & Child Development, Land & Building, Services, Vigilance and other unallocated departments."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://en.wikipedia.org/wiki/2025_Delhi_Legislative_Assembly_election"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-minister-1",
+   "title": "Minister (Public Works)",
+   "orgId": "st-dl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-lieutenant-governor",
+   "onAdviceOf": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Parvesh Verma",
+    "since": "2025-02-20",
+    "party": "BJP",
+    "house": "Delhi Legislative Assembly",
+    "constituency": "New Delhi",
+    "wikipedia": "https://en.wikipedia.org/wiki/Parvesh_Verma",
+    "notes": "Portfolio: Public Works, Legislative Affairs, Gurudwara Elections, Irrigation & Flood Control, Water"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://en.wikipedia.org/wiki/Parvesh_Verma"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-minister-2",
+   "title": "Minister (Home)",
+   "orgId": "st-dl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-lieutenant-governor",
+   "onAdviceOf": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Ashish Sood",
+    "since": "2025-02-20",
+    "party": "BJP",
+    "house": "Delhi Legislative Assembly",
+    "constituency": "Janakpuri",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ashish_Sood",
+    "notes": "Portfolio: Home, Power, Education, Higher Education, Training & Technical Education"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://en.wikipedia.org/wiki/Ashish_Sood"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-minister-3",
+   "title": "Minister (Food & Supplies)",
+   "orgId": "st-dl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-lieutenant-governor",
+   "onAdviceOf": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Manjinder Singh Sirsa",
+    "since": "2025-02-20",
+    "party": "BJP",
+    "house": "Delhi Legislative Assembly",
+    "constituency": "Rajouri Garden",
+    "wikipedia": "https://en.wikipedia.org/wiki/Manjinder_Singh_Sirsa",
+    "notes": "Portfolio: Food & Supplies, Forest & Environment, Industries"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://en.wikipedia.org/wiki/Manjinder_Singh_Sirsa"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-minister-4",
+   "title": "Minister (Social Welfare)",
+   "orgId": "st-dl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-lieutenant-governor",
+   "onAdviceOf": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Ravinder Indraj Singh",
+    "since": "2025-02-20",
+    "party": "BJP",
+    "house": "Delhi Legislative Assembly",
+    "constituency": "Bawana",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ravinder_Indraj_Singh",
+    "notes": "Portfolio: Social Welfare, SC & ST Welfare, Cooperative, Elections"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://en.wikipedia.org/wiki/Ravinder_Indraj_Singh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-minister-5",
+   "title": "Minister (Law & Justice)",
+   "orgId": "st-dl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-lieutenant-governor",
+   "onAdviceOf": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Kapil Mishra",
+    "since": "2025-02-20",
+    "party": "BJP",
+    "house": "Delhi Legislative Assembly",
+    "constituency": "Karawal Nagar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kapil_Mishra",
+    "notes": "Portfolio: Law & Justice, Labour, Employment, Development, Art & Culture, Language, Tourism"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://en.wikipedia.org/wiki/Kapil_Mishra"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-minister-6",
+   "title": "Minister (Health and Family Welfare)",
+   "orgId": "st-dl-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-lieutenant-governor",
+   "onAdviceOf": "st-dl-pos-chief-minister",
+   "holder": {
+    "name": "Pankaj Kumar Singh",
+    "since": "2025-02-20",
+    "party": "BJP",
+    "house": "Delhi Legislative Assembly",
+    "constituency": "Vikaspuri",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pankaj_Kumar_Singh_(politician)",
+    "notes": "Portfolio: Health and Family Welfare, Transport, Information Technology"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rekha_Gupta_ministry",
+    "https://en.wikipedia.org/wiki/Pankaj_Kumar_Singh_(politician)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-speaker",
+   "title": "Speaker of the Delhi Legislative Assembly",
+   "orgId": "st-dl-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-dl-assembly",
+   "holder": {
+    "name": "Vijender Gupta",
+    "since": "2025-02-20",
+    "party": "BJP",
+    "house": "Delhi Legislative Assembly",
+    "constituency": "Rohini",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vijender_Gupta"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vijender_Gupta",
+    "https://en.wikipedia.org/wiki/Delhi_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-deputy-speaker",
+   "title": "Deputy Speaker of the Delhi Legislative Assembly",
+   "orgId": "st-dl-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-dl-assembly",
+   "holder": {
+    "name": "Mohan Singh Bisht",
+    "since": "2025-02-26",
+    "party": "BJP",
+    "house": "Delhi Legislative Assembly",
+    "constituency": "Mustafabad",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mohan_Singh_Bisht"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mohan_Singh_Bisht"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Delhi Legislative Assembly",
+   "orgId": "st-dl-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-speaker",
+   "holder": {
+    "name": "Atishi",
+    "since": "2025-02-23",
+    "party": "AAP",
+    "house": "Delhi Legislative Assembly",
+    "constituency": "Kalkaji",
+    "wikipedia": "https://en.wikipedia.org/wiki/Atishi",
+    "notes": "First woman Leader of Opposition in Delhi Assembly; former CM (2024-2025)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Atishi"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dl-pos-chief-secretary",
+   "title": "Chief Secretary of Delhi",
+   "orgId": "st-dl-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-personnel-public-grievances-and-pensions",
+   "holder": {
+    "name": "Rajeev Verma",
+    "notes": "IAS officer.",
+    "acting": false
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Delhi"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-pos-dgp",
+   "title": "Commissioner of Delhi Police",
+   "orgId": "st-dl-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-home-affairs",
+   "holder": {
+    "name": "Anurag Kumar",
+    "since": "2026-07-17",
+    "notes": "IPS officer. Delhi has no state DGP: policing is a Union subject under Article 239AA(3)(a); Delhi Police is controlled by the Ministry of Home Affairs and headed by a Commissioner of Police, not the Delhi government."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Delhi_Police"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-pos-sec-commissioner",
+   "title": "State Election Commissioner, Delhi",
+   "orgId": "st-dl-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-lieutenant-governor",
+   "holder": {
+    "name": "Anil Kumar Khachi",
+    "notes": "IAS (Retd.). Source pages show conflicting names (Vijay Kumar Dev vs Anil Kumar Khachi); could not fully resolve which is current as of Sept 2026 — flagged low confidence."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/State_Election_Commission_(Delhi)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-dl-pos-lokayukta",
+   "title": "Lokayukta of Delhi",
+   "orgId": "st-dl-lokayukta",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-dl-pos-lieutenant-governor",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Delhi_Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-pos-mayor-mcd",
+   "title": "Mayor of Delhi (MCD)",
+   "orgId": "st-dl-mc-delhi",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-dl-mc-delhi",
+   "holder": {
+    "name": "Pravesh Wahi",
+    "since": "2026-04-29",
+    "party": "BJP",
+    "notes": "MCD Mayor is elected annually by corporators; predecessor was Raja Iqbal Singh (BJP, elected 2025-04-25)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Municipal_Corporation_of_Delhi"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-pos-commissioner-mcd",
+   "title": "Municipal Commissioner, MCD",
+   "orgId": "st-dl-mc-delhi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-home-affairs",
+   "holder": {
+    "name": "Sanjeev Khirwar",
+    "since": "2026-01-21",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Municipal_Corporation_of_Delhi"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dl-pos-chairperson-ndmc",
+   "title": "Chairperson, New Delhi Municipal Council",
+   "orgId": "st-dl-mc-new-delhi",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-union-government",
+   "holder": {
+    "name": "Manoj Kumar Dwivedi",
+    "since": "2026-08-05",
+    "notes": "IAS officer; NDMC chairperson is a Union government appointee (Joint Secretary rank), not elected."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_Delhi_Municipal_Council"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-pos-lieutenant-governor",
+   "title": "Lieutenant Governor of Jammu and Kashmir",
+   "orgId": "st-jk-government",
+   "rank": "lieutenant_governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Manoj Sinha",
+    "since": "2020-08-07",
+    "wikipedia": "https://en.wikipedia.org/wiki/Manoj_Sinha",
+    "notes": "2nd LG of J&K UT; retains control of police, public order, All India Services and some other subjects under Section 55 of the Reorganisation Act."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manoj_Sinha"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-chief-minister",
+   "title": "Chief Minister of Jammu and Kashmir",
+   "orgId": "st-jk-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "holder": {
+    "name": "Omar Abdullah",
+    "since": "2024-10-16",
+    "party": "JKNC",
+    "house": "J&K Legislative Assembly",
+    "constituency": "Ganderbal",
+    "wikipedia": "https://en.wikipedia.org/wiki/Omar_Abdullah",
+    "notes": "Holds all departments not allotted to any other minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Omar_Abdullah_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Jammu and Kashmir",
+   "orgId": "st-jk-council-of-ministers",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "onAdviceOf": "st-jk-pos-chief-minister",
+   "holder": {
+    "name": "Surinder Kumar Choudhary",
+    "since": "2024-10-16",
+    "party": "JKNC",
+    "house": "J&K Legislative Assembly",
+    "constituency": "Nowshera",
+    "wikipedia": "https://en.wikipedia.org/wiki/Surinder_Kumar_Choudhary",
+    "notes": "Portfolio: Public Works (R&B), Industries & Commerce, Mining, Labour & Employment and Skill Development."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Surinder_Kumar_Choudhary",
+    "https://en.wikipedia.org/wiki/Second_Omar_Abdullah_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-minister-1",
+   "title": "Minister (Health & Medical Education)",
+   "orgId": "st-jk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "onAdviceOf": "st-jk-pos-chief-minister",
+   "holder": {
+    "name": "Sakina Itoo",
+    "since": "2024-10-16",
+    "party": "JKNC",
+    "house": "J&K Legislative Assembly",
+    "constituency": "Damhal Hanji Pora",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sakina_Itoo",
+    "notes": "Portfolio: Health & Medical Education, School Education, Higher Education, Social Welfare"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Omar_Abdullah_ministry",
+    "https://en.wikipedia.org/wiki/Sakina_Itoo"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-minister-2",
+   "title": "Minister (Agriculture Production)",
+   "orgId": "st-jk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "onAdviceOf": "st-jk-pos-chief-minister",
+   "holder": {
+    "name": "Javid Ahmad Dar",
+    "since": "2024-10-16",
+    "party": "JKNC",
+    "house": "J&K Legislative Assembly",
+    "constituency": "Rafiabad",
+    "wikipedia": "https://en.wikipedia.org/wiki/Javid_Ahmad_Dar",
+    "notes": "Portfolio: Agriculture Production, Rural Development & Panchayati Raj, Cooperative, Election"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Omar_Abdullah_ministry",
+    "https://en.wikipedia.org/wiki/Javid_Ahmad_Dar"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-minister-3",
+   "title": "Minister (Jal Shakti)",
+   "orgId": "st-jk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "onAdviceOf": "st-jk-pos-chief-minister",
+   "holder": {
+    "name": "Javed Ahmed Rana",
+    "since": "2024-10-16",
+    "party": "JKNC",
+    "house": "J&K Legislative Assembly",
+    "constituency": "Mendhar",
+    "wikipedia": "https://en.wikipedia.org/wiki/Javed_Ahmed_Rana",
+    "notes": "Portfolio: Jal Shakti, Forest, Ecology & Environment, Tribal Affairs"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Omar_Abdullah_ministry",
+    "https://en.wikipedia.org/wiki/Javed_Ahmed_Rana"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-minister-4",
+   "title": "Minister (Food)",
+   "orgId": "st-jk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "onAdviceOf": "st-jk-pos-chief-minister",
+   "holder": {
+    "name": "Satish Sharma",
+    "since": "2024-10-16",
+    "party": "Independent",
+    "house": "J&K Legislative Assembly",
+    "constituency": "Chhamb",
+    "wikipedia": "https://en.wikipedia.org/wiki/Satish_Sharma_(politician)",
+    "notes": "Portfolio: Food, Civil Supplies & Consumer Affairs, Transport, Science & Technology, Information Technology, Youth Services & Sports, ARI & Training"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Omar_Abdullah_ministry",
+    "https://en.wikipedia.org/wiki/Satish_Sharma_(politician)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-speaker",
+   "title": "Speaker of the Jammu and Kashmir Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-assembly",
+   "holder": {
+    "name": "Abdul Rahim Rather",
+    "since": "2024-11-04",
+    "party": "JKNC",
+    "house": "J&K Legislative Assembly",
+    "constituency": "Charari Sharief",
+    "wikipedia": "https://en.wikipedia.org/wiki/Abdul_Rahim_Rather"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Abdul_Rahim_Rather"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-deputy-speaker",
+   "title": "Deputy Speaker of the Jammu and Kashmir Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-assembly",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Legislative_Assembly"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-jk-pos-leader-of-opposition",
+   "title": "Leader of Opposition, J&K Legislative Assembly",
+   "orgId": "st-jk-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-jk-pos-speaker",
+   "holder": {
+    "name": "Sunil Kumar Sharma",
+    "since": "2024-11-03",
+    "party": "BJP",
+    "house": "J&K Legislative Assembly"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Legislative_Assembly"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-pos-chief-secretary",
+   "title": "Chief Secretary of Jammu and Kashmir",
+   "orgId": "st-jk-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "holder": {
+    "name": "Atal Dulloo",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Jammu_and_Kashmir"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-pos-dgp",
+   "title": "Director General of Police, Jammu and Kashmir",
+   "orgId": "st-jk-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "holder": {
+    "name": "Nalin Prabhat",
+    "since": "2024-10-01",
+    "notes": "IPS officer; 18th DGP of J&K. Police is a subject reserved to the LG under Section 55 of the Reorganisation Act, not the elected government."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Police"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-jk-pos-sec-commissioner",
+   "title": "State Election Commissioner, Jammu and Kashmir",
+   "orgId": "st-jk-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "holder": {
+    "name": "B. R. Sharma",
+    "since": "2023-07-12",
+    "notes": "Source noted his tenure 'extends until 2025' — could not confirm if reappointed/replaced by Sept 2026; flagged low confidence."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/State_Election_Commission_(Jammu_and_Kashmir)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-jk-pos-psc-chair",
+   "title": "Chairman, Jammu and Kashmir Public Service Commission",
+   "orgId": "st-jk-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-jk-pos-lieutenant-governor",
+   "holder": {
+    "name": "A. K. Chaudhary",
+    "notes": "IPS officer (retd.)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-pos-mayor-jammu",
+   "title": "Mayor of Jammu",
+   "orgId": "st-jk-mc-jammu",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-mc-jammu",
+   "holder": {
+    "name": "Rajinder Sharma",
+    "party": "BJP",
+    "since": "2022-10-22",
+    "notes": " Elected mayor 2022-10-22 (source: Wikipedia, Jammu Municipal Corporation); continuity through Sept 2026 not independently re-confirmed beyond that page's current-revision claim."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jammu_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-jk-pos-mayor-srinagar",
+   "title": "Mayor of Srinagar",
+   "orgId": "st-jk-mc-srinagar",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-jk-mc-srinagar",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Srinagar_Municipal_Corporation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-la-pos-lieutenant-governor",
+   "title": "Lieutenant Governor of Ladakh",
+   "orgId": "st-la-government",
+   "rank": "lieutenant_governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Vinai Kumar Saxena",
+    "since": "2026-03-13",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vinai_Kumar_Saxena",
+    "notes": "4th LG of Ladakh; previously LG of Delhi until March 2026. Predecessor as Ladakh LG: Kavinder Gupta (18 Jul 2025 - 13 Mar 2026)."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lieutenant_Governor_of_Ladakh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-la-pos-cec-leh",
+   "title": "Chief Executive Councillor, LAHDC Leh",
+   "orgId": "st-la-lahdc-leh",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-la-lahdc-leh",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tashi_Gyalson",
+    "https://en.wikipedia.org/wiki/Ladakh_Autonomous_Hill_Development_Council,_Leh"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-la-pos-cec-kargil",
+   "title": "Chief Executive Councillor, LAHDC Kargil",
+   "orgId": "st-la-lahdc-kargil",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-la-lahdc-kargil",
+   "holder": {
+    "name": "Mohammad Jaffer Akhoon",
+    "since": "2023-10-17",
+    "party": "JKNC"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ladakh_Autonomous_Hill_Development_Council,_Kargil"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-president",
+   "to": "st-dl-pos-lieutenant-governor",
+   "type": "appoints",
+   "basis": "Article 239AA(1)"
+  },
+  {
+   "from": "st-dl-pos-lieutenant-governor",
+   "to": "st-dl-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-pos-minister-1",
+   "type": "advises_appointment",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-pos-lieutenant-governor",
+   "to": "st-dl-pos-minister-1",
+   "type": "appoints",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-pos-minister-2",
+   "type": "advises_appointment",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-pos-lieutenant-governor",
+   "to": "st-dl-pos-minister-2",
+   "type": "appoints",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-pos-minister-3",
+   "type": "advises_appointment",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-pos-lieutenant-governor",
+   "to": "st-dl-pos-minister-3",
+   "type": "appoints",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-pos-minister-4",
+   "type": "advises_appointment",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-pos-lieutenant-governor",
+   "to": "st-dl-pos-minister-4",
+   "type": "appoints",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-pos-minister-5",
+   "type": "advises_appointment",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-pos-lieutenant-governor",
+   "to": "st-dl-pos-minister-5",
+   "type": "appoints",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-pos-chief-minister",
+   "to": "st-dl-pos-minister-6",
+   "type": "advises_appointment",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-pos-lieutenant-governor",
+   "to": "st-dl-pos-minister-6",
+   "type": "appoints",
+   "basis": "Article 239AA(5)"
+  },
+  {
+   "from": "st-dl-council-of-ministers",
+   "to": "st-dl-assembly",
+   "type": "accountable_to",
+   "basis": "Article 239AA(6)"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-dl-assembly",
+   "type": "elects",
+   "basis": "Article 239AA(2)"
+  },
+  {
+   "from": "st-dl-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4)"
+  },
+  {
+   "from": "st-dl-mc-delhi",
+   "to": "st-dl-government",
+   "type": "reports_to"
+  },
+  {
+   "from": "in-min-home-affairs",
+   "to": "st-dl-pos-dgp",
+   "type": "appoints",
+   "basis": "Article 239AA(3)(a) — police is a reserved Union subject"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-jk-pos-lieutenant-governor",
+   "type": "appoints",
+   "basis": "Article 239A / Section 5, J&K Reorganisation Act 2019"
+  },
+  {
+   "from": "st-jk-pos-lieutenant-governor",
+   "to": "st-jk-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Section 55, J&K Reorganisation Act 2019"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-pos-deputy-cm-1",
+   "type": "advises_appointment"
+  },
+  {
+   "from": "st-jk-pos-lieutenant-governor",
+   "to": "st-jk-pos-deputy-cm-1",
+   "type": "appoints"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-pos-minister-1",
+   "type": "advises_appointment"
+  },
+  {
+   "from": "st-jk-pos-lieutenant-governor",
+   "to": "st-jk-pos-minister-1",
+   "type": "appoints"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-pos-minister-2",
+   "type": "advises_appointment"
+  },
+  {
+   "from": "st-jk-pos-lieutenant-governor",
+   "to": "st-jk-pos-minister-2",
+   "type": "appoints"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-pos-minister-3",
+   "type": "advises_appointment"
+  },
+  {
+   "from": "st-jk-pos-lieutenant-governor",
+   "to": "st-jk-pos-minister-3",
+   "type": "appoints"
+  },
+  {
+   "from": "st-jk-pos-chief-minister",
+   "to": "st-jk-pos-minister-4",
+   "type": "advises_appointment"
+  },
+  {
+   "from": "st-jk-pos-lieutenant-governor",
+   "to": "st-jk-pos-minister-4",
+   "type": "appoints"
+  },
+  {
+   "from": "st-jk-council-of-ministers",
+   "to": "st-jk-assembly",
+   "type": "accountable_to",
+   "basis": "Section 54, J&K Reorganisation Act 2019"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-jk-assembly",
+   "type": "elects"
+  },
+  {
+   "from": "st-jk-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4)"
+  },
+  {
+   "from": "st-jk-pos-lieutenant-governor",
+   "to": "st-jk-pos-dgp",
+   "type": "appoints",
+   "basis": "Section 55(3), J&K Reorganisation Act 2019 — police reserved to LG"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-la-pos-lieutenant-governor",
+   "type": "appoints",
+   "basis": "Article 239"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-la-lahdc-leh",
+   "type": "elects",
+   "basis": "Ladakh Autonomous Hill Development Councils Act, 1997"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-la-lahdc-kargil",
+   "type": "elects",
+   "basis": "Ladakh Autonomous Hill Development Councils Act, 1997"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-lahdc-leh",
+   "type": "oversees"
+  },
+  {
+   "from": "st-la-pos-lieutenant-governor",
+   "to": "st-la-lahdc-kargil",
+   "type": "oversees"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 33,
+  "corrections": [
+   "No factual errors found among the 33 positions re-verified against fresh sources — the prior agent's holders, dates and parties all held up.",
+   "Investigated and REJECTED a possible correction: J&K LG Manoj Sinha since-date — confirmed 2020-08-07 is correct (his own Wikipedia infobox), not 2020-08-06 (a secondary summary's error).",
+   "Investigated and REJECTED a possible correction: Delhi LoP Atishi since-date — confirmed 2025-02-23 is correct (her own Wikipedia infobox), not 2025-02-22 (a secondary summary's error).",
+   "Enhancement: added since-date 2022-10-22 (sourced) to Jammu Mayor Rajinder Sharma's holder record, previously missing.",
+   "Confirmed 0 JSON/schema violations: no duplicate IDs, no dangling parentId/orgId/relation references, all kinds/sectors/ranks/relation types are schema-valid.",
+   "Left the 4 already-low/medium-confidence, already-flagged items (Delhi SEC Commissioner, J&K SEC Commissioner, J&K Deputy Speaker vacancy, LAHDC Leh CEC vacancy) as-is: could not independently resolve with available tools (WebSearch budget exhausted; Wikipedia API curl 429-rate-limited from this machine), and inventing a holder is disallowed by the brief."
+  ]
+ }
+}

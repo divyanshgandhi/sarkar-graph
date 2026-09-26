@@ -1,0 +1,3503 @@
+{
+ "segment": "states-up-uk-hp",
+ "asOf": "2026-09-25",
+ "notes": "Segment covers Uttar Pradesh (st-up), Uttarakhand (st-uk), Himachal Pradesh (st-hp) completely except districts (owned by local-lgd; referenced only as st-<code>-dist-* where needed — none created here) and the High Courts serving them (owned by judiciary segment: in-hc-allahabad for UP, Uttarakhand High Court and Himachal Pradesh High Court for UK/HP — referenced, not defined).\n\nKnown gaps / low-confidence items flagged individually via confidence=\"low\" on the relevant position, but summarized here:\n- UP State Election Commissioner (Manoj Kumar, since Jan 2018) — source is a stale 2018 report; UP SEC commissioners serve up to 6 years, so this holder is very likely outdated by 2026. NOT independently re-verified.\n- UP Lokayukta (Sanjay Mishra, since Jan 2016) — same concern; a decade-long tenure is implausible for a role with a statutory term, likely stale on Wikipedia. NOT independently re-verified.\n- UP Public Service Commission chair (Sanjay Shrinet) — no appointment date found.\n- UP Legislative Council Deputy Chairman — not found in the source used; left unlisted rather than invented.\n- Himachal Pradesh Chief Secretary (Kamlesh Kumar Pant) and DGP (Ashok Tiwari, acting) — no appointment dates found; DGP explicitly marked \"acting\" per source.\n- Uttarakhand and Himachal Pradesh State Election Commissioners, Public Service Commission chairs, Lokayuktas and State Human Rights Commission chairs were NOT located within the research budget (heavy Wikipedia API rate-limiting from concurrent research agents constrained the number of lookups that could be completed) — omitted rather than invented. Should be filled in a follow-up pass.\n- Uttarakhand and Himachal Pradesh municipal corporation mayors were not verified (UP's are, from the same source table) — the schema permits omitting mayor/commissioner names when not easily verifiable; the corporation entities themselves and their counts (11 for UK, 8 for HP) are sourced.\n- UP's council of ministers list (60 seats total per the \"party strength of ministry\" table on Wikipedia) is reproduced here with 35 currently-serving individual portfolio-holders extracted (21 cabinet incl. CM+2 Deputy CMs, 16 MoS-Independent-Charge, 21 MoS — note the union of these three groups is 58; two additional entries referenced in the source table as having \"Made MoS(I/C)\" transitions were folded into their later MoS(I/C) row rather than duplicated). One vacancy is known and unresolved on Wikipedia: Jitin Prasada (PWD) left office 2024-06-11 with no listed successor in the source table — PWD portfolio holder after that date is unconfirmed.\n- All Governor/CM/Deputy-CM/Speaker/LoP holders were cross-checked against dedicated Wikipedia infobox/list pages as of the 2026-09-25 as-of date; the Himachal Pradesh Governor change (Kavinder Gupta, March 2026) has an additional dated press citation (The Hindu, 6-7 March 2026).\n- Population figures use Census of India 2011 final totals per the schema's `population2011` field (UP 199,812,341; Uttarakhand 10,086,292; Himachal Pradesh 6,864,602) rather than the larger 2021/2025 projected estimates shown on current Wikipedia infoboxes, per the schema's own field name.\n- Tooling note: the shared Wikipedia MediaWiki API was heavily rate-limited during this run (many concurrent research segments hitting it at once); WebFetch and paced/retried curl were used as workarounds, which slowed but did not block completion.\n\n\n--- Adversarial verification pass (2026-09-25) ---\nAdded Uttarakhand SEC (Sushil Kumar), Uttarakhand PSC (Gajendra Joshi), Uttarakhand Lokayukta (A P Subba), Himachal Pradesh SEC (Anil Kumar Khachi), Himachal Pradesh PSC (Rameshwar Singh Thakur, low confidence — citation looked stale), Uttar Pradesh SHRC (Bala Krishna Narayana), Uttarakhand SHRC (Akhilesh Chandra Sharma). Himachal Pradesh Lokayukta and Himachal Pradesh SHRC current holders could not be confirmed (English Wikipedia gives no name for either) and were left out rather than invented — a genuine open gap for a future pass with official-portal access. HP Chairman Rameshwar Singh Thakur is flagged low-confidence for the same reason.",
+ "entities": [
+  {
+   "id": "st-up",
+   "kind": "state",
+   "name": "Uttar Pradesh",
+   "nameHi": "उत्तर प्रदेश",
+   "abbr": "UP",
+   "aliases": [
+    "UP",
+    "U.P."
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "India's most populous state, in the Indo-Gangetic plain of north India; capital Lucknow. Sends the largest contingent to the Lok Sabha (80 seats) of any state.",
+   "legalBasis": "States Reorganisation Act, 1956 (as United Provinces renamed Uttar Pradesh in 1950)",
+   "officialUrl": "https://up.gov.in",
+   "established": "1950-01-24",
+   "hq": "Lucknow",
+   "stats": {
+    "population2011": 199812341,
+    "areaKm2": 243286,
+    "lokSabhaSeats": 80,
+    "rajyaSabhaSeats": 31,
+    "assemblySeats": 403,
+    "legislativeCouncilSeats": 100,
+    "districts": 75
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh",
+    "https://up.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-government",
+   "kind": "state_government",
+   "name": "Government of Uttar Pradesh",
+   "aliases": [
+    "UP Government",
+    "GoUP"
+   ],
+   "parentId": "st-up",
+   "description": "The executive government of Uttar Pradesh, headed by the Governor (nominal) and the Chief Minister with the Council of Ministers (real executive authority).",
+   "officialUrl": "https://up.gov.in",
+   "headPositionId": "st-up-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Uttar_Pradesh"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "name": "Uttar Pradesh Council of Ministers",
+   "parentId": "st-up-government",
+   "description": "The body of ministers, headed by the Chief Minister, that exercises the real executive power of the Uttar Pradesh government and is collectively responsible to the Legislative Assembly.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-assembly",
+   "kind": "state_chamber",
+   "name": "Uttar Pradesh Legislative Assembly",
+   "nameHi": "उत्तर प्रदेश विधान सभा",
+   "abbr": "Vidhan Sabha",
+   "parentId": "st-up",
+   "description": "The lower and directly-elected house of the bicameral Uttar Pradesh legislature; 403 members elected from single-member constituencies for 5-year terms.",
+   "seats": 403,
+   "headPositionId": "st-up-pos-speaker",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_Legislative_Assembly"
+   ],
+   "stats": {
+    "lastElection": "2022-02-10",
+    "nextElectionDue": "2027",
+    "partyStrength": {
+     "BJP": 257,
+     "SP": 100,
+     "Apna Dal (Sonelal)": 13,
+     "RLD": 9,
+     "SBSP": 6,
+     "NISHAD Party": 5,
+     "INC": 2,
+     "JD(L)": 2,
+     "Independent": 4,
+     "Vacant": 5
+    }
+   },
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-legislative-council",
+   "kind": "state_chamber",
+   "name": "Uttar Pradesh Legislative Council",
+   "nameHi": "उत्तर प्रदेश विधान परिषद",
+   "abbr": "Vidhan Parishad",
+   "parentId": "st-up",
+   "description": "The upper, permanent house of the Uttar Pradesh legislature; 100 members, partly elected by MLAs/local bodies/graduates/teachers and partly nominated by the Governor; one-third retire every two years.",
+   "seats": 100,
+   "headPositionId": "st-up-pos-chairman-legislative-council",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_Legislative_Council"
+   ],
+   "stats": {
+    "partyStrength": {
+     "BJP": 79,
+     "SP": 10,
+     "Apna Dal (Sonelal)": 1,
+     "NISHAD Party": 1,
+     "RLD": 1,
+     "SBSP": 1,
+     "Jansatta Dal (Loktantrik)": 1,
+     "Independent": 5,
+     "Vacant": 1
+    }
+   },
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-sec",
+   "kind": "state_commission",
+   "name": "Uttar Pradesh State Election Commission",
+   "abbr": "UPSEC",
+   "parentId": "st-up",
+   "description": "Constitutional body (Article 243K/243ZA) that conducts elections to the panchayats and municipalities of Uttar Pradesh.",
+   "legalBasis": "Article 243K, Constitution of India",
+   "headPositionId": "st-up-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_State_Election_Commission"
+   ],
+   "confidence": "low",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-psc",
+   "kind": "state_commission",
+   "name": "Uttar Pradesh Public Service Commission",
+   "abbr": "UPPSC",
+   "parentId": "st-up",
+   "description": "Constitutional body (Article 315) that recruits candidates for civil services and other posts under the Uttar Pradesh government through competitive examinations.",
+   "legalBasis": "Article 315, Constitution of India",
+   "officialUrl": "https://uppsc.up.nic.in",
+   "headPositionId": "st-up-pos-psc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_Public_Service_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-lokayukta",
+   "kind": "state_commission",
+   "name": "Lokayukta of Uttar Pradesh",
+   "parentId": "st-up",
+   "description": "Statutory anti-corruption ombudsman for Uttar Pradesh that investigates complaints of corruption and maladministration against public functionaries.",
+   "legalBasis": "Uttar Pradesh Lokayukta and Up-Lokayuktas Act, 1975",
+   "headPositionId": "st-up-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_Lokayukta"
+   ],
+   "confidence": "low",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-agra",
+   "kind": "municipal_corporation",
+   "name": "Agra Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Agra city, Agra district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-agra-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-aligarh",
+   "kind": "municipal_corporation",
+   "name": "Aligarh Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Aligarh city, Aligarh district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-aligarh-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-ayodhya",
+   "kind": "municipal_corporation",
+   "name": "Ayodhya Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Ayodhya city, Ayodhya district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-ayodhya-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-bareilly",
+   "kind": "municipal_corporation",
+   "name": "Bareilly Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Bareilly city, Bareilly district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-bareilly-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-firozabad",
+   "kind": "municipal_corporation",
+   "name": "Firozabad Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Firozabad city, Firozabad district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-firozabad-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-ghaziabad",
+   "kind": "municipal_corporation",
+   "name": "Ghaziabad Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Ghaziabad city, Ghaziabad district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-ghaziabad-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-gorakhpur",
+   "kind": "municipal_corporation",
+   "name": "Gorakhpur Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Gorakhpur city, Gorakhpur district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-gorakhpur-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-jhansi",
+   "kind": "municipal_corporation",
+   "name": "Jhansi Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Jhansi city, Jhansi district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-jhansi-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-kanpur",
+   "kind": "municipal_corporation",
+   "name": "Kanpur Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Kanpur city, Kanpur Nagar district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-kanpur-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-lucknow",
+   "kind": "municipal_corporation",
+   "name": "Lucknow Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Lucknow city, Lucknow district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-lucknow-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-meerut",
+   "kind": "municipal_corporation",
+   "name": "Meerut Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Meerut city, Meerut district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-meerut-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-moradabad",
+   "kind": "municipal_corporation",
+   "name": "Moradabad Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Moradabad city, Moradabad district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-moradabad-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-prayagraj",
+   "kind": "municipal_corporation",
+   "name": "Prayagraj Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Prayagraj city, Prayagraj district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-prayagraj-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-saharanpur",
+   "kind": "municipal_corporation",
+   "name": "Saharanpur Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Saharanpur city, Saharanpur district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-saharanpur-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-shahjahanpur",
+   "kind": "municipal_corporation",
+   "name": "Shahjahanpur Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Shahjahanpur city, Shahjahanpur district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-shahjahanpur-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-varanasi",
+   "kind": "municipal_corporation",
+   "name": "Varanasi Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Varanasi city, Varanasi district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-varanasi-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-up-mc-mathura-vrindavan",
+   "kind": "municipal_corporation",
+   "name": "Mathura-Vrindavan Municipal Corporation",
+   "parentId": "st-up",
+   "description": "Urban local body governing Mathura-Vrindavan city, Mathura district, Uttar Pradesh.",
+   "legalBasis": "Uttar Pradesh Municipal Corporation Act, 1959",
+   "headPositionId": "st-up-mc-mathura-vrindavan-pos-mayor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk",
+   "kind": "state",
+   "name": "Uttarakhand",
+   "nameHi": "उत्तराखण्ड",
+   "abbr": "UK",
+   "aliases": [
+    "Uttaranchal (former name, till 2007)"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "Himalayan state carved out of Uttar Pradesh in 2000; legislative capital Bhararisain (Gairsain), seat of government at Dehradun. Known as 'Devbhoomi' for its Hindu pilgrimage sites.",
+   "legalBasis": "Uttar Pradesh Reorganisation Act, 2000",
+   "officialUrl": "https://uk.gov.in",
+   "established": "2000-11-09",
+   "hq": "Dehradun",
+   "stats": {
+    "population2011": 10086292,
+    "areaKm2": 53483,
+    "lokSabhaSeats": 5,
+    "rajyaSabhaSeats": 3,
+    "assemblySeats": 70,
+    "districts": 13
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-government",
+   "kind": "state_government",
+   "name": "Government of Uttarakhand",
+   "parentId": "st-uk",
+   "description": "The executive government of Uttarakhand, headed by the Governor (nominal) and the Chief Minister with the Council of Ministers (real executive authority).",
+   "officialUrl": "https://uk.gov.in",
+   "headPositionId": "st-uk-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Uttarakhand"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "name": "Uttarakhand Council of Ministers",
+   "parentId": "st-uk-government",
+   "description": "The body of ministers, headed by the Chief Minister, that exercises the real executive power of the Uttarakhand government.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Dhami_ministry"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-assembly",
+   "kind": "state_chamber",
+   "name": "Uttarakhand Legislative Assembly",
+   "nameHi": "उत्तराखण्ड विधान सभा",
+   "parentId": "st-uk",
+   "description": "Unicameral legislature of Uttarakhand; 70 members elected for 5-year terms.",
+   "seats": 70,
+   "headPositionId": "st-uk-pos-speaker",
+   "stats": {
+    "lastElection": "2022-02-14",
+    "nextElectionDue": "2027",
+    "partyStrength": {
+     "BJP": 47,
+     "INC": 20,
+     "BSP": 1,
+     "Independent": 2
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-mc-dehradun",
+   "kind": "municipal_corporation",
+   "name": "Dehradun Municipal Corporation (Nagar Nigam)",
+   "parentId": "st-uk",
+   "description": "Urban local body governing Dehradun city, Uttarakhand.",
+   "legalBasis": "Uttarakhand Municipal Corporation Act, 1959 (as adapted from UP)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Uttarakhand"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-mc-haridwar",
+   "kind": "municipal_corporation",
+   "name": "Haridwar Municipal Corporation (Nagar Nigam)",
+   "parentId": "st-uk",
+   "description": "Urban local body governing Haridwar city, Uttarakhand.",
+   "legalBasis": "Uttarakhand Municipal Corporation Act, 1959 (as adapted from UP)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Uttarakhand"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-mc-haldwani",
+   "kind": "municipal_corporation",
+   "name": "Haldwani Municipal Corporation (Nagar Nigam)",
+   "parentId": "st-uk",
+   "description": "Urban local body governing Haldwani city, Uttarakhand.",
+   "legalBasis": "Uttarakhand Municipal Corporation Act, 1959 (as adapted from UP)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Uttarakhand"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-mc-roorkee",
+   "kind": "municipal_corporation",
+   "name": "Roorkee Municipal Corporation (Nagar Nigam)",
+   "parentId": "st-uk",
+   "description": "Urban local body governing Roorkee city, Uttarakhand.",
+   "legalBasis": "Uttarakhand Municipal Corporation Act, 1959 (as adapted from UP)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Uttarakhand"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-mc-kashipur",
+   "kind": "municipal_corporation",
+   "name": "Kashipur Municipal Corporation (Nagar Nigam)",
+   "parentId": "st-uk",
+   "description": "Urban local body governing Kashipur city, Uttarakhand.",
+   "legalBasis": "Uttarakhand Municipal Corporation Act, 1959 (as adapted from UP)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Uttarakhand"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-mc-rudrapur",
+   "kind": "municipal_corporation",
+   "name": "Rudrapur Municipal Corporation (Nagar Nigam)",
+   "parentId": "st-uk",
+   "description": "Urban local body governing Rudrapur city, Uttarakhand.",
+   "legalBasis": "Uttarakhand Municipal Corporation Act, 1959 (as adapted from UP)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Uttarakhand"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-mc-kotdwar",
+   "kind": "municipal_corporation",
+   "name": "Kotdwar Municipal Corporation (Nagar Nigam)",
+   "parentId": "st-uk",
+   "description": "Urban local body governing Kotdwar city, Uttarakhand.",
+   "legalBasis": "Uttarakhand Municipal Corporation Act, 1959 (as adapted from UP)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Uttarakhand"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-mc-rishikesh",
+   "kind": "municipal_corporation",
+   "name": "Rishikesh Municipal Corporation (Nagar Nigam)",
+   "parentId": "st-uk",
+   "description": "Urban local body governing Rishikesh city, Uttarakhand.",
+   "legalBasis": "Uttarakhand Municipal Corporation Act, 1959 (as adapted from UP)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Uttarakhand"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-mc-srinagar",
+   "kind": "municipal_corporation",
+   "name": "Srinagar Municipal Corporation (Nagar Nigam)",
+   "parentId": "st-uk",
+   "description": "Urban local body governing Srinagar city, Uttarakhand.",
+   "legalBasis": "Uttarakhand Municipal Corporation Act, 1959 (as adapted from UP)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Uttarakhand"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-mc-almora",
+   "kind": "municipal_corporation",
+   "name": "Almora Municipal Corporation (Nagar Nigam)",
+   "parentId": "st-uk",
+   "description": "Urban local body governing Almora city, Uttarakhand.",
+   "legalBasis": "Uttarakhand Municipal Corporation Act, 1959 (as adapted from UP)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Uttarakhand"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-mc-pithoragarh",
+   "kind": "municipal_corporation",
+   "name": "Pithoragarh Municipal Corporation (Nagar Nigam)",
+   "parentId": "st-uk",
+   "description": "Urban local body governing Pithoragarh city, Uttarakhand.",
+   "legalBasis": "Uttarakhand Municipal Corporation Act, 1959 (as adapted from UP)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_Uttarakhand"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp",
+   "kind": "state",
+   "name": "Himachal Pradesh",
+   "nameHi": "हिमाचल प्रदेश",
+   "abbr": "HP",
+   "parentId": "in-states-and-uts",
+   "description": "Himalayan state in north India; capital Shimla (summer), winter capital Dharamshala. Full statehood in 1971.",
+   "legalBasis": "State of Himachal Pradesh Act, 1970",
+   "officialUrl": "https://himachal.nic.in",
+   "established": "1971-01-25",
+   "hq": "Shimla",
+   "stats": {
+    "population2011": 6864602,
+    "areaKm2": 55673,
+    "lokSabhaSeats": 4,
+    "rajyaSabhaSeats": 3,
+    "assemblySeats": 68,
+    "districts": 12
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Himachal_Pradesh"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp-government",
+   "kind": "state_government",
+   "name": "Government of Himachal Pradesh",
+   "parentId": "st-hp",
+   "description": "The executive government of Himachal Pradesh, headed by the Governor (nominal) and the Chief Minister with the Council of Ministers (real executive authority).",
+   "officialUrl": "https://himachal.nic.in",
+   "headPositionId": "st-hp-pos-chief-minister",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Himachal_Pradesh"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "name": "Himachal Pradesh Council of Ministers",
+   "parentId": "st-hp-government",
+   "description": "The body of ministers, headed by the Chief Minister, that exercises the real executive power of the Himachal Pradesh government.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sukhu_ministry"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp-assembly",
+   "kind": "state_chamber",
+   "name": "Himachal Pradesh Legislative Assembly",
+   "nameHi": "हिमाचल प्रदेश विधान सभा",
+   "parentId": "st-hp",
+   "description": "Unicameral legislature of Himachal Pradesh; 68 members elected for 5-year terms.",
+   "seats": 68,
+   "headPositionId": "st-hp-pos-speaker",
+   "stats": {
+    "lastElection": "2022-11-12",
+    "nextElectionDue": "2027",
+    "partyStrength": {
+     "INC": 40,
+     "BJP": 28
+    }
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Himachal_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp-mc-shimla",
+   "kind": "municipal_corporation",
+   "name": "Shimla Municipal Corporation",
+   "parentId": "st-hp",
+   "description": "Urban local body governing Shimla city, Himachal Pradesh.",
+   "legalBasis": "Himachal Pradesh Municipal Corporation Act, 1994",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp-mc-dharamshala",
+   "kind": "municipal_corporation",
+   "name": "Dharamshala Municipal Corporation",
+   "parentId": "st-hp",
+   "description": "Urban local body governing Dharamshala city, Himachal Pradesh.",
+   "legalBasis": "Himachal Pradesh Municipal Corporation Act, 1994",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp-mc-palampur",
+   "kind": "municipal_corporation",
+   "name": "Palampur Municipal Corporation",
+   "parentId": "st-hp",
+   "description": "Urban local body governing Palampur city, Himachal Pradesh.",
+   "legalBasis": "Himachal Pradesh Municipal Corporation Act, 1994",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp-mc-solan",
+   "kind": "municipal_corporation",
+   "name": "Solan Municipal Corporation",
+   "parentId": "st-hp",
+   "description": "Urban local body governing Solan city, Himachal Pradesh.",
+   "legalBasis": "Himachal Pradesh Municipal Corporation Act, 1994",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp-mc-mandi",
+   "kind": "municipal_corporation",
+   "name": "Mandi Municipal Corporation",
+   "parentId": "st-hp",
+   "description": "Urban local body governing Mandi city, Himachal Pradesh.",
+   "legalBasis": "Himachal Pradesh Municipal Corporation Act, 1994",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp-mc-baddi",
+   "kind": "municipal_corporation",
+   "name": "Baddi Municipal Corporation",
+   "parentId": "st-hp",
+   "description": "Urban local body governing Baddi city, Himachal Pradesh.",
+   "legalBasis": "Himachal Pradesh Municipal Corporation Act, 1994",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp-mc-hamirpur",
+   "kind": "municipal_corporation",
+   "name": "Hamirpur Municipal Corporation",
+   "parentId": "st-hp",
+   "description": "Urban local body governing Hamirpur city, Himachal Pradesh.",
+   "legalBasis": "Himachal Pradesh Municipal Corporation Act, 1994",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp-mc-una",
+   "kind": "municipal_corporation",
+   "name": "Una Municipal Corporation",
+   "parentId": "st-hp",
+   "description": "Urban local body governing Una city, Himachal Pradesh.",
+   "legalBasis": "Himachal Pradesh Municipal Corporation Act, 1994",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-uk-sec",
+   "kind": "state_commission",
+   "name": "Uttarakhand State Election Commission",
+   "parentId": "st-uk",
+   "description": "Constitutional body (Article 243K/243ZA) that conducts elections to the panchayats and municipalities of Uttarakhand.",
+   "legalBasis": "Article 243K, Constitution of India",
+   "headPositionId": "st-uk-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_State_Election_Commission"
+   ],
+   "confidence": "high",
+   "sector": "federal",
+   "abbr": "UKSEC"
+  },
+  {
+   "id": "st-uk-psc",
+   "kind": "state_commission",
+   "name": "Uttarakhand Public Service Commission",
+   "parentId": "st-uk",
+   "description": "Constitutional body (Article 315) that recruits candidates for civil services and other posts under the Uttarakhand government through competitive examinations.",
+   "legalBasis": "Article 315, Constitution of India",
+   "headPositionId": "st-uk-pos-psc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_Public_Service_Commission"
+   ],
+   "confidence": "high",
+   "sector": "federal",
+   "abbr": "UKPSC"
+  },
+  {
+   "id": "st-uk-lokayukta",
+   "kind": "state_commission",
+   "name": "Lokayukta of Uttarakhand",
+   "parentId": "st-uk",
+   "description": "Statutory anti-corruption ombudsman for Uttarakhand that investigates complaints of corruption and maladministration against public functionaries.",
+   "legalBasis": "Uttarakhand Lokayukta Act",
+   "headPositionId": "st-uk-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_Lokayukta"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-hp-sec",
+   "kind": "state_commission",
+   "name": "Himachal Pradesh State Election Commission",
+   "parentId": "st-hp",
+   "description": "Constitutional body (Article 243K/243ZA) that conducts elections to the panchayats and municipalities of Himachal Pradesh.",
+   "legalBasis": "Article 243K, Constitution of India",
+   "headPositionId": "st-hp-pos-sec-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Himachal_Pradesh_State_Election_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal",
+   "abbr": "HPSEC"
+  },
+  {
+   "id": "st-hp-psc",
+   "kind": "state_commission",
+   "name": "Himachal Pradesh Public Service Commission",
+   "parentId": "st-hp",
+   "description": "Constitutional body (Article 315) that recruits candidates for civil services and other posts under the Himachal Pradesh government through competitive examinations.",
+   "legalBasis": "Article 315, Constitution of India",
+   "headPositionId": "st-hp-pos-psc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Himachal_Pradesh_Public_Service_Commission"
+   ],
+   "confidence": "low",
+   "sector": "federal",
+   "abbr": "HPPSC"
+  },
+  {
+   "id": "st-up-shrc",
+   "kind": "state_commission",
+   "name": "Uttar Pradesh State Human Rights Commission",
+   "parentId": "st-up",
+   "description": "Statutory body under the Protection of Human Rights Act, 1993 that investigates complaints of human-rights violations in Uttar Pradesh.",
+   "legalBasis": "Protection of Human Rights Act, 1993",
+   "headPositionId": "st-up-pos-shrc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_Human_Rights_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal",
+   "abbr": "UPSHRC"
+  },
+  {
+   "id": "st-uk-shrc",
+   "kind": "state_commission",
+   "name": "Uttarakhand State Human Rights Commission",
+   "parentId": "st-uk",
+   "description": "Statutory body under the Protection of Human Rights Act, 1993 that investigates complaints of human-rights violations in Uttarakhand.",
+   "legalBasis": "Protection of Human Rights Act, 1993",
+   "headPositionId": "st-uk-pos-shrc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_Human_Rights_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal",
+   "abbr": "UKSHRC"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-up-pos-governor",
+   "title": "Governor of Uttar Pradesh",
+   "orgId": "st-up-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Anandiben Patel",
+    "since": "2019-07-29",
+    "party": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Anandiben_Patel"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_governors_of_Uttar_Pradesh",
+    "https://en.wikipedia.org/wiki/Anandiben_Patel"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-chief-minister",
+   "title": "Chief Minister of Uttar Pradesh",
+   "orgId": "st-up-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "holder": {
+    "name": "Yogi Adityanath",
+    "since": "2017-03-19",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Gorakhpur Urban",
+    "wikipedia": "https://en.wikipedia.org/wiki/Yogi_Adityanath",
+    "notes": "Serving second consecutive term; also holds Home, General Administration and several other departments."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yogi_Adityanath"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Uttar Pradesh",
+   "orgId": "st-up-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Keshav Prasad Maurya",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Keshav_Prasad_Maurya",
+    "notes": "Also Minister of Rural Development, Food Processing, Entertainment Tax."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-deputy-cm-2",
+   "title": "Deputy Chief Minister of Uttar Pradesh",
+   "orgId": "st-up-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Brajesh Pathak",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Brajesh_Pathak",
+    "notes": "Also Minister of Health & Family Welfare, Medical Education, Maternity & Child Welfare."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-speaker",
+   "title": "Speaker, Uttar Pradesh Legislative Assembly",
+   "orgId": "st-up-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-assembly",
+   "holder": {
+    "name": "Satish Mahana",
+    "since": "2022-03-29",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Satish_Mahana"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Uttar Pradesh Legislative Assembly",
+   "orgId": "st-up-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Mata Prasad Pandey",
+    "since": "2024-07-28",
+    "party": "SP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mata_Prasad_Pandey"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-chairman-legislative-council",
+   "title": "Chairman, Uttar Pradesh Legislative Council",
+   "orgId": "st-up-legislative-council",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-legislative-council",
+   "holder": {
+    "name": "Kunwar Manvendra Singh",
+    "since": "2021-01-31",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_Legislative_Council"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-pos-chief-secretary",
+   "title": "Chief Secretary of Uttar Pradesh",
+   "orgId": "st-up-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Manoj Kumar Singh",
+    "since": "2024-06-30",
+    "acting": false,
+    "notes": "1997-batch PCS officer promoted to 2012-batch IAS (UP cadre) in 2019."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manoj_Kumar_Singh_(civil_servant)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-dgp",
+   "title": "Director General of Police, Uttar Pradesh",
+   "orgId": "st-up-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-government",
+   "holder": {
+    "name": "Rajeev Krishna",
+    "since": "2025-05-31",
+    "notes": "1991-batch IPS officer, UP cadre."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rajeev_Krishna"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-sec-commissioner",
+   "title": "State Election Commissioner, Uttar Pradesh",
+   "orgId": "st-up-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "holder": {
+    "name": "Manoj Kumar",
+    "since": "2018-01",
+    "notes": "Retired IAS officer; took charge Jan 2018. Re-checked 2026-09-25 against the Uttar Pradesh State Election Commission Wikipedia page (revision dated 2026-07-09), which still lists him as the incumbent Commissioner — so this is not stale on Wikipedia, though the office nominally has a 6-year/age-68 term limit which makes an 8-year tenure unusual; flagged for a follow-up official-gazette check."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-pos-psc-chair",
+   "title": "Chairman, Uttar Pradesh Public Service Commission",
+   "orgId": "st-up-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "holder": {
+    "name": "Sanjay Shrinet",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-pos-lokayukta",
+   "title": "Lokayukta of Uttar Pradesh",
+   "orgId": "st-up-lokayukta",
+   "rank": "other",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "holder": {
+    "name": "Sanjay Mishra",
+    "since": "2016-01-31",
+    "notes": "Former Allahabad HC judge, appointed 31 Jan 2016. Re-checked 2026-09-25: still listed as incumbent Lokayukta on Wikipedia. Statutory term length for this office is unclear to us, so the multi-year tenure is flagged rather than treated as confirmed-fresh; no contrary source found."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-pos-minister-1",
+   "title": "Minister of Finance; Parliamentary Affairs",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Suresh Kumar Khanna",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Finance; Parliamentary Affairs"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-2",
+   "title": "Minister of Agriculture; Agricultural Education & Research",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Surya Pratap Shahi",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Agriculture; Agricultural Education & Research"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-3",
+   "title": "Minister of Jal Shakti; Disaster Management",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Swatantra Dev Singh",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Jal Shakti; Disaster Management"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-4",
+   "title": "Minister of Women Development; Child Development & Nutrition",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Baby Rani Maurya",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Women Development; Child Development & Nutrition"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-5",
+   "title": "Minister of Sugarcane Development & Sugar Mills",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Laxmi Narayan Chaudhary",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Sugarcane Development & Sugar Mills"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-6",
+   "title": "Minister of Tourism; Culture",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Jaiveer Singh",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Tourism; Culture"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-7",
+   "title": "Minister of Animal Husbandry & Dairying; Political Pension",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Dharmpal Singh",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Animal Husbandry & Dairying; Political Pension"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-8",
+   "title": "Minister of Minority Welfare; Haj & Wakf",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Om Prakash Rajbhar",
+    "since": "2024-03-05",
+    "party": "SBSP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Minority Welfare; Haj & Wakf"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-9",
+   "title": "Minister of Industrial Development; Export Promotion; NRI & Investment Promotion",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Nand Gopal Gupta",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Industrial Development; Export Promotion; NRI & Investment Promotion"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-11",
+   "title": "Minister of Labour & Employment",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Anil Rajbhar",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Labour & Employment"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-12",
+   "title": "Minister of Khadi & Village Industries; Sericulture; Textiles & Handlooms",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Rakesh Sachan",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Khadi & Village Industries; Sericulture; Textiles & Handlooms"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-13",
+   "title": "Minister of Urban Development; Urban Employment & Poverty Alleviation; Energy",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "A. K. Sharma",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Urban Development; Urban Employment & Poverty Alleviation; Energy"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-14",
+   "title": "Minister of Higher Education",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Yogendra Upadhyaya",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Higher Education"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-15",
+   "title": "Minister of Electronics & Information Technology",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Sunil Sharma",
+    "since": "2024-03-05",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Electronics & Information Technology"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-16",
+   "title": "Minister of Science & Technology",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Anil Kumar",
+    "since": "2024-03-05",
+    "party": "RLD",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Science & Technology"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-17",
+   "title": "Minister of Technical Education; Consumer Protection",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Ashish Patel",
+    "since": "2022-03-25",
+    "party": "AD(S)",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Technical Education; Consumer Protection"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-18",
+   "title": "Minister of Fisheries",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Sanjay Nishad",
+    "since": "2022-03-25",
+    "party": "NISHAD",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Fisheries"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-19",
+   "title": "Minister of Prisons",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Dara Singh Chauhan",
+    "since": "2024-03-05",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Prisons"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-20",
+   "title": "Minister of Micro Small and Medium Enterprises",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Bhupendra Chaudhary",
+    "since": "2026-05-10",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Micro Small and Medium Enterprises"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-21",
+   "title": "Minister of Food and Logistics, Civil Supplies",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Manoj Kumar Pandey",
+    "since": "2022-05-10",
+    "party": "Independent",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Food and Logistics, Civil Supplies"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-22",
+   "title": "Minister of Excise & Liquor Prohibition",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Nitin Agrawal",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Excise & Liquor Prohibition"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-23",
+   "title": "Minister of Vocational Education & Skill Development",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Kapil Dev Agarwal",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Vocational Education & Skill Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-24",
+   "title": "Minister of Stamp, Court Fees & Registration",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Ravindra Jaiswal",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Stamp, Court Fees & Registration"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-25",
+   "title": "Minister of Basic Education",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Sandeep Singh",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Basic Education"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-26",
+   "title": "Minister of Secondary Education",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Gulabo Devi",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Secondary Education"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-27",
+   "title": "Minister of Sports & Youth Affairs",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Girish Yadav",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Sports & Youth Affairs"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-28",
+   "title": "Minister of Civil Defence & Home Guards",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Dharmveer Prajapati",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Civil Defence & Home Guards"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-29",
+   "title": "Minister of Social Welfare; SC/ST Welfare",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Asim Arun",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Social Welfare; SC/ST Welfare"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-30",
+   "title": "Minister of Co-operation",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Jayendra Pratap Singh Rathore",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Co-operation"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-31",
+   "title": "Minister of Transport",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Daya Shankar Singh",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Transport"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-32",
+   "title": "Minister of Backward Classes Welfare; Disabled Empowerment",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Narendra Kumar Kashyap",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Backward Classes Welfare; Disabled Empowerment"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-33",
+   "title": "Minister of Horticulture; Agricultural Exports, Marketing & Foreign Trade",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Dinesh Pratap Singh",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Horticulture; Agricultural Exports, Marketing & Foreign Trade"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-34",
+   "title": "Minister of Environment & Forest; Zoological Garden & Climate Change",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Arun Saxena",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Environment & Forest; Zoological Garden & Climate Change"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-35",
+   "title": "Minister of AYUSH",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Daya Shankar Mishra",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of AYUSH"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-36",
+   "title": "Minister of Food Security and Drug Administration",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Ajit Singh Pal",
+    "since": "2026-05-10",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Food Security and Drug Administration"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-37",
+   "title": "Minister of Political Pension, Sainik Welfare and P.R.D.",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "mos_independent_charge",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Somendra Tomar",
+    "since": "2026-05-10",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of Political Pension, Sainik Welfare and P.R.D."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-38",
+   "title": "Minister of State for Parliamentary Affairs; Medical Education; Health & Family Welfare",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Mayankeshwar Singh",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Parliamentary Affairs; Medical Education; Health & Family Welfare"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-39",
+   "title": "Minister of State for Jal Shakti",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Dinesh Khatik",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Jal Shakti"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-40",
+   "title": "Minister of State for Social Welfare; SC/ST Welfare",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Sanjiv Gond",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Social Welfare; SC/ST Welfare"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-41",
+   "title": "Minister of State for Agriculture; Agricultural Education & Research",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Baldev Singh Aulakh",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Agriculture; Agricultural Education & Research"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-42",
+   "title": "Minister of State for Parliamentary Affairs; Industrial Development",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Jaswant Saini",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Parliamentary Affairs; Industrial Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-43",
+   "title": "Minister of State for Jal Shakti",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Ramakesh Nishad",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Jal Shakti"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-44",
+   "title": "Minister of State for Labour & Employment",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Manohar Lal Panth",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Labour & Employment"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-45",
+   "title": "Minister of State for Sugarcane Development & Sugar Mills",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Sanjay Singh Gangwar",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Sugarcane Development & Sugar Mills"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-46",
+   "title": "Minister of State for Public Works Department",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Brijesh Singh",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Public Works Department"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-47",
+   "title": "Minister of State for Environment & Forest; Zoological Garden & Climate Change",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Krishnapal Malik",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Environment & Forest; Zoological Garden & Climate Change"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-48",
+   "title": "Minister of State for Prisons",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Suresh Rahi",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Prisons"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-49",
+   "title": "Minister of State for Women & Child Development",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Pratibha Shukla",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Women & Child Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-50",
+   "title": "Minister of State for Urban Development; Urban Employment & Poverty Alleviation",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Rakesh Rathour",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Urban Development; Urban Employment & Poverty Alleviation"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-51",
+   "title": "Minister of State for Higher Education",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Rajani Tiwari",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Higher Education"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-52",
+   "title": "Minister of State for Food & Civil Supplies",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Satish Chandra Sharma",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Food & Civil Supplies"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-53",
+   "title": "Minister of State for Minority Affairs; Haj & Wakf",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Danish Azad Ansari",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Minority Affairs; Haj & Wakf"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-54",
+   "title": "Minister of State for Rural Development",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Vijay Laxmi Gautam",
+    "since": "2022-03-25",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Rural Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-55",
+   "title": "Minister of State for Animal Husbandry and Dairy Development",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Krishna Paswan",
+    "since": "2026-05-10",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Animal Husbandry and Dairy Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-56",
+   "title": "Minister of State for Energy, Additional Sources of Energy",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Kailash Singh Rajput",
+    "since": "2026-05-10",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Energy, Additional Sources of Energy"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-57",
+   "title": "Minister of State for Revenue",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Surender Diler",
+    "since": "2026-05-10",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Revenue"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-pos-minister-58",
+   "title": "Minister of State for Micro, Small & Medium Enterprises",
+   "orgId": "st-up-council-of-ministers",
+   "rank": "minister_of_state",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "onAdviceOf": "st-up-pos-chief-minister",
+   "holder": {
+    "name": "Hans Raj Vishwakarma",
+    "since": "2026-05-10",
+    "party": "BJP",
+    "house": "Legislative Assembly or Council",
+    "notes": "Minister of State for Micro, Small & Medium Enterprises"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Yogi_Adityanath_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-up-mc-agra-pos-mayor",
+   "title": "Mayor of Agra",
+   "orgId": "st-up-mc-agra",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-agra",
+   "holder": {
+    "name": "Hemalata Diwakar",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-aligarh-pos-mayor",
+   "title": "Mayor of Aligarh",
+   "orgId": "st-up-mc-aligarh",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-aligarh",
+   "holder": {
+    "name": "Prashant Singhal",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-ayodhya-pos-mayor",
+   "title": "Mayor of Ayodhya",
+   "orgId": "st-up-mc-ayodhya",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-ayodhya",
+   "holder": {
+    "name": "Girishpati Tripathi",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-bareilly-pos-mayor",
+   "title": "Mayor of Bareilly",
+   "orgId": "st-up-mc-bareilly",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-bareilly",
+   "holder": {
+    "name": "Umesh Gautam",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-firozabad-pos-mayor",
+   "title": "Mayor of Firozabad",
+   "orgId": "st-up-mc-firozabad",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-firozabad",
+   "holder": {
+    "name": "Surendra Singh Rathore",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-ghaziabad-pos-mayor",
+   "title": "Mayor of Ghaziabad",
+   "orgId": "st-up-mc-ghaziabad",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-ghaziabad",
+   "holder": {
+    "name": "Sunita Dayal",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-gorakhpur-pos-mayor",
+   "title": "Mayor of Gorakhpur",
+   "orgId": "st-up-mc-gorakhpur",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-gorakhpur",
+   "holder": {
+    "name": "Manglesh Srivastava",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-jhansi-pos-mayor",
+   "title": "Mayor of Jhansi",
+   "orgId": "st-up-mc-jhansi",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-jhansi",
+   "holder": {
+    "name": "Biharilal Verma",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-kanpur-pos-mayor",
+   "title": "Mayor of Kanpur",
+   "orgId": "st-up-mc-kanpur",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-kanpur",
+   "holder": {
+    "name": "Pramila Pandey",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-lucknow-pos-mayor",
+   "title": "Mayor of Lucknow",
+   "orgId": "st-up-mc-lucknow",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-lucknow",
+   "holder": {
+    "name": "Sushma Kharkwal",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-meerut-pos-mayor",
+   "title": "Mayor of Meerut",
+   "orgId": "st-up-mc-meerut",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-meerut",
+   "holder": {
+    "name": "Harikant Ahluwalia",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-moradabad-pos-mayor",
+   "title": "Mayor of Moradabad",
+   "orgId": "st-up-mc-moradabad",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-moradabad",
+   "holder": {
+    "name": "Vinod Agrawal",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-prayagraj-pos-mayor",
+   "title": "Mayor of Prayagraj",
+   "orgId": "st-up-mc-prayagraj",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-prayagraj",
+   "holder": {
+    "name": "Ganesh Kesarwani",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-saharanpur-pos-mayor",
+   "title": "Mayor of Saharanpur",
+   "orgId": "st-up-mc-saharanpur",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-saharanpur",
+   "holder": {
+    "name": "Ajay Kumar",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-shahjahanpur-pos-mayor",
+   "title": "Mayor of Shahjahanpur",
+   "orgId": "st-up-mc-shahjahanpur",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-shahjahanpur",
+   "holder": {
+    "name": "Archana Verma",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-varanasi-pos-mayor",
+   "title": "Mayor of Varanasi",
+   "orgId": "st-up-mc-varanasi",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-varanasi",
+   "holder": {
+    "name": "Ashok Tiwari",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-up-mc-mathura-vrindavan-pos-mayor",
+   "title": "Mayor of Mathura-Vrindavan",
+   "orgId": "st-up-mc-mathura-vrindavan",
+   "rank": "other",
+   "appointmentMode": "elected",
+   "appointedBy": "st-up-mc-mathura-vrindavan",
+   "holder": {
+    "name": "Vinod Sharma",
+    "since": "2023",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_urban_local_bodies_in_Uttar_Pradesh"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-uk-pos-governor",
+   "title": "Governor of Uttarakhand",
+   "orgId": "st-uk-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Gurmit Singh",
+    "since": "2021-09-15",
+    "notes": "Retired Lieutenant General, Indian Army.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gurmit_Singh_(general)"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_governors_of_Uttarakhand"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-chief-minister",
+   "title": "Chief Minister of Uttarakhand",
+   "orgId": "st-uk-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "holder": {
+    "name": "Pushkar Singh Dhami",
+    "since": "2021-07-04",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "constituency": "Champawat",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pushkar_Singh_Dhami",
+    "notes": "Longest-serving CM of Uttarakhand; also holds Finance (since 2025-03-17) and several other departments. Uttarakhand currently has no Deputy Chief Minister."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pushkar_Singh_Dhami"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-speaker",
+   "title": "Speaker, Uttarakhand Legislative Assembly",
+   "orgId": "st-uk-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-uk-assembly",
+   "holder": {
+    "name": "Ritu Khanduri Bhushan",
+    "since": "2022-03-26",
+    "party": "BJP"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-deputy-speaker",
+   "title": "Deputy Speaker, Uttarakhand Legislative Assembly",
+   "orgId": "st-uk-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-uk-assembly",
+   "vacant": true,
+   "holder": {
+    "name": null,
+    "since": "2022-03-10",
+    "notes": "Vacant since 10 March 2022 per Uttarakhand Legislative Assembly Wikipedia article."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Uttarakhand Legislative Assembly",
+   "orgId": "st-uk-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Yashpal Arya",
+    "since": "2022-04-10",
+    "party": "INC"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-chief-secretary",
+   "title": "Chief Secretary of Uttarakhand",
+   "orgId": "st-uk-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-chief-minister",
+   "holder": {
+    "name": "Anand Bardhan",
+    "since": "2025-04-01",
+    "notes": "Name reconfirmed 2026-09-25 via Wikipedia's Uttarakhand Council of Ministers article ('Anand Bardhan takes charge as chief secretary of Uttarakhand', ET Government); exact since-date not independently found."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chief_Secretary_of_Uttarakhand"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-uk-pos-dgp",
+   "title": "Director General of Police, Uttarakhand",
+   "orgId": "st-uk-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-government",
+   "holder": {
+    "name": "Deepam Seth",
+    "since": "2024-11-25"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_Police",
+    "https://uttarakhandpolice.uk.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-minister-1",
+   "title": "Minister of Public Works Department; Panchayati Raj and Rural Construction; Irrigation; Tourism, Religious Affairs and Culture; Watershed Management",
+   "orgId": "st-uk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "onAdviceOf": "st-uk-pos-chief-minister",
+   "holder": {
+    "name": "Satpal Maharaj",
+    "since": "2022-03-23",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Public Works Department; Panchayati Raj and Rural Construction; Irrigation; Tourism, Religious Affairs and Culture; Watershed Management"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Dhami_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-minister-2",
+   "title": "Minister of Agriculture; Rural Development",
+   "orgId": "st-uk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "onAdviceOf": "st-uk-pos-chief-minister",
+   "holder": {
+    "name": "Ganesh Joshi",
+    "since": "2022-03-23",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Agriculture; Rural Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Dhami_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-minister-3",
+   "title": "Minister of Basic and Secondary Education; Higher Education; Co-operation; Health and Medical Education",
+   "orgId": "st-uk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "onAdviceOf": "st-uk-pos-chief-minister",
+   "holder": {
+    "name": "Dhan Singh Rawat",
+    "since": "2022-03-23",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Basic and Secondary Education; Higher Education; Co-operation; Health and Medical Education"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Dhami_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-minister-4",
+   "title": "Minister of Forest; Parliamentary Affairs; Election; Technical Education",
+   "orgId": "st-uk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "onAdviceOf": "st-uk-pos-chief-minister",
+   "holder": {
+    "name": "Subodh Uniyal",
+    "since": "2022-03-23",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Forest; Parliamentary Affairs; Election; Technical Education"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Dhami_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-minister-5",
+   "title": "Minister of Women and Child Development; Food, Civil Supplies and Consumer Affairs; Sports and Youth Affairs",
+   "orgId": "st-uk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "onAdviceOf": "st-uk-pos-chief-minister",
+   "holder": {
+    "name": "Rekha Arya",
+    "since": "2022-03-23",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Women and Child Development; Food, Civil Supplies and Consumer Affairs; Sports and Youth Affairs"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Dhami_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-minister-6",
+   "title": "Minister of Animal Husbandry, Dairying and Fisheries; Sugarcane Development and Sugar Industries; Protocol; Skill Development",
+   "orgId": "st-uk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "onAdviceOf": "st-uk-pos-chief-minister",
+   "holder": {
+    "name": "Saurabh Bahuguna",
+    "since": "2022-03-23",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Animal Husbandry, Dairying and Fisheries; Sugarcane Development and Sugar Industries; Protocol; Skill Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Dhami_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-minister-7",
+   "title": "Minister of Disaster Management and Rehabilitation; Ayush and Ayush Education; Reorganization; Census",
+   "orgId": "st-uk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "onAdviceOf": "st-uk-pos-chief-minister",
+   "holder": {
+    "name": "Madan Kaushik",
+    "since": "2026-03-20",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Disaster Management and Rehabilitation; Ayush and Ayush Education; Reorganization; Census"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Dhami_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-minister-8",
+   "title": "Minister of Rural Development; Small and Micro-Medium Enterprises; Khadi and Village Industries; Language",
+   "orgId": "st-uk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "onAdviceOf": "st-uk-pos-chief-minister",
+   "holder": {
+    "name": "Bharat Singh Chaudhary",
+    "since": "2026-03-20",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Rural Development; Small and Micro-Medium Enterprises; Khadi and Village Industries; Language"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Dhami_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-minister-9",
+   "title": "Minister of Transportation; Information Technology and Good Governance; Science and Technology; Biotechnology",
+   "orgId": "st-uk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "onAdviceOf": "st-uk-pos-chief-minister",
+   "holder": {
+    "name": "Pradip Batra",
+    "since": "2026-03-20",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Transportation; Information Technology and Good Governance; Science and Technology; Biotechnology"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Dhami_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-minister-10",
+   "title": "Minister of Social Welfare; Minority Welfare; Student Welfare; Languages",
+   "orgId": "st-uk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "onAdviceOf": "st-uk-pos-chief-minister",
+   "holder": {
+    "name": "Khajan Dass",
+    "since": "2026-03-20",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Social Welfare; Minority Welfare; Student Welfare; Languages"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Dhami_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-minister-11",
+   "title": "Minister of Urban Development; Environmental Protection and Climate Change; Watershed Management",
+   "orgId": "st-uk-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "onAdviceOf": "st-uk-pos-chief-minister",
+   "holder": {
+    "name": "Ram Singh Kaira",
+    "since": "2026-03-20",
+    "party": "BJP",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Urban Development; Environmental Protection and Climate Change; Watershed Management"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Dhami_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-governor",
+   "title": "Governor of Himachal Pradesh",
+   "orgId": "st-hp-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Kavinder Gupta",
+    "since": "2026-03-11",
+    "party": null,
+    "notes": "Immediately prior Lieutenant Governor of Ladakh (2025-07 to 2026-03); succeeded Shiv Pratap Shukla as HP Governor. (List-of-governors infobox gives 2026-03-10; his own biography page gives 2026-03-11.)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kavinder_Gupta"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_governors_of_Himachal_Pradesh",
+    "https://en.wikipedia.org/wiki/Kavinder_Gupta",
+    "https://www.thehindu.com/news/national/himachal-pradesh/kavinder-gupta-new-governor-of-himachal-pradesh-bjp-leader-lieutenant-governor-of-ladakh/article70710436.ece"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-chief-minister",
+   "title": "Chief Minister of Himachal Pradesh",
+   "orgId": "st-hp-government",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "holder": {
+    "name": "Sukhvinder Singh Sukhu",
+    "since": "2022-12-11",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "constituency": "Nadaun",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sukhvinder_Singh_Sukhu",
+    "notes": "7th Chief Minister of Himachal Pradesh; also holds Finance, General Administration, Home, Planning, Personnel."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sukhvinder_Singh_Sukhu"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Himachal Pradesh",
+   "orgId": "st-hp-government",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "onAdviceOf": "st-hp-pos-chief-minister",
+   "holder": {
+    "name": "Mukesh Agnihotri",
+    "since": "2022-12-11",
+    "party": "INC",
+    "notes": "Also holds Jal Shakti, Transport, Language/Arts & Culture, Cooperation."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sukhu_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-speaker",
+   "title": "Speaker, Himachal Pradesh Legislative Assembly",
+   "orgId": "st-hp-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-hp-assembly",
+   "holder": {
+    "name": "Kuldeep Singh Pathania",
+    "since": "2023-01-05",
+    "party": "INC"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Himachal_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-deputy-speaker",
+   "title": "Deputy Speaker, Himachal Pradesh Legislative Assembly",
+   "orgId": "st-hp-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-hp-assembly",
+   "vacant": true,
+   "holder": {
+    "name": null,
+    "since": "2025-11-22",
+    "notes": "Vacant since 22 November 2025; previous holder Vinay Kumar served 2023-12-19 to 2025-11-22."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Himachal_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Himachal Pradesh Legislative Assembly",
+   "orgId": "st-hp-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "ex_officio",
+   "holder": {
+    "name": "Jai Ram Thakur",
+    "since": "2022-12-25",
+    "party": "BJP",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jai_Ram_Thakur"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Himachal_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-chief-secretary",
+   "title": "Chief Secretary of Himachal Pradesh",
+   "orgId": "st-hp-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-chief-minister",
+   "holder": {
+    "name": "Kamlesh Kumar Pant",
+    "since": null,
+    "notes": "IAS. Exact appointment date not verified; flagged for confirmation."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Himachal_Pradesh",
+    "https://himachal.nic.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-dgp",
+   "title": "Director General of Police, Himachal Pradesh",
+   "orgId": "st-hp-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-government",
+   "holder": {
+    "name": "Ashok Tiwari",
+    "since": null,
+    "acting": true
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Himachal_Pradesh_Police"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hp-pos-minister-1",
+   "title": "Minister of Health & Family Welfare; Social Justice & Empowerment; Sainik Welfare",
+   "orgId": "st-hp-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "onAdviceOf": "st-hp-pos-chief-minister",
+   "holder": {
+    "name": "Dhani Ram Shandil",
+    "since": "2023-01-08",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Health & Family Welfare; Social Justice & Empowerment; Sainik Welfare"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sukhu_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-minister-2",
+   "title": "Minister of Agriculture; Animal Husbandry",
+   "orgId": "st-hp-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "onAdviceOf": "st-hp-pos-chief-minister",
+   "holder": {
+    "name": "Chander Kumar",
+    "since": "2023-01-08",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Agriculture; Animal Husbandry"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sukhu_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-minister-3",
+   "title": "Minister of Industries; Parliamentary Affairs; Labour & Employment",
+   "orgId": "st-hp-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "onAdviceOf": "st-hp-pos-chief-minister",
+   "holder": {
+    "name": "Harshwardhan Chauhan",
+    "since": "2023-01-08",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Industries; Parliamentary Affairs; Labour & Employment"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sukhu_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-minister-4",
+   "title": "Minister of Revenue; Horticulture; Tribal Development; Redressal of Public Grievances",
+   "orgId": "st-hp-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "onAdviceOf": "st-hp-pos-chief-minister",
+   "holder": {
+    "name": "Jagat Singh Negi",
+    "since": "2023-01-08",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Revenue; Horticulture; Tribal Development; Redressal of Public Grievances"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sukhu_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-minister-5",
+   "title": "Minister of Higher Education & Elementary Education; Printing & Stationery",
+   "orgId": "st-hp-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "onAdviceOf": "st-hp-pos-chief-minister",
+   "holder": {
+    "name": "Rohit Thakur",
+    "since": "2023-01-08",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Higher Education & Elementary Education; Printing & Stationery"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sukhu_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-minister-6",
+   "title": "Minister of Rural Development & Panchayati Raj",
+   "orgId": "st-hp-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "onAdviceOf": "st-hp-pos-chief-minister",
+   "holder": {
+    "name": "Anirudh Singh",
+    "since": "2023-01-08",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Rural Development & Panchayati Raj"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sukhu_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-minister-7",
+   "title": "Minister of Public Works; Urban Development",
+   "orgId": "st-hp-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "onAdviceOf": "st-hp-pos-chief-minister",
+   "holder": {
+    "name": "Vikramaditya Singh",
+    "since": "2023-01-08",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Public Works; Urban Development"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sukhu_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-minister-8",
+   "title": "Minister of Technical Education; Vocational & Industrial Training; Town & Country Planning; Housing",
+   "orgId": "st-hp-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "onAdviceOf": "st-hp-pos-chief-minister",
+   "holder": {
+    "name": "Rajesh Dharmani",
+    "since": "2023-12-12",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Technical Education; Vocational & Industrial Training; Town & Country Planning; Housing"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sukhu_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-hp-pos-minister-9",
+   "title": "Minister of Ayush; Youth Services & Sports; Law & Legal Remembrance",
+   "orgId": "st-hp-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "onAdviceOf": "st-hp-pos-chief-minister",
+   "holder": {
+    "name": "Yadvinder Goma",
+    "since": "2023-12-12",
+    "party": "INC",
+    "house": "Legislative Assembly",
+    "notes": "Minister of Ayush; Youth Services & Sports; Law & Legal Remembrance"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sukhu_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-sec-commissioner",
+   "title": "State Election Commissioner, Uttarakhand",
+   "orgId": "st-uk-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "holder": {
+    "name": "Sushil Kumar",
+    "since": "2024-08-29",
+    "notes": "IAS (Retd.). Found 2026-09-25 during verification pass; was missing from the original segment file."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_State_Election_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-psc-chair",
+   "title": "Chairperson, Uttarakhand Public Service Commission",
+   "orgId": "st-uk-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "holder": {
+    "name": "Gajendra Joshi",
+    "since": "2026-07-15",
+    "notes": "Lt. Gen. (Retd.). Found 2026-09-25 during verification pass; was missing from the original segment file."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_Public_Service_Commission"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-uk-pos-lokayukta",
+   "title": "Lokayukta of Uttarakhand",
+   "orgId": "st-uk-lokayukta",
+   "rank": "other",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "holder": {
+    "name": "A P Subba",
+    "since": null,
+    "notes": "Justice (Retd.). Since-date not found. Found 2026-09-25 during verification pass; was missing from the original segment file."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hp-pos-sec-commissioner",
+   "title": "State Election Commissioner, Himachal Pradesh",
+   "orgId": "st-hp-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "holder": {
+    "name": "Anil Kumar Khachi",
+    "since": null,
+    "notes": "IAS (Retd.). Term is 5 years or age 65, whichever is earlier, per the commission's own page. Since-date not found. Found 2026-09-25 during verification pass; was missing from the original segment file."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Himachal_Pradesh_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-hp-pos-psc-chair",
+   "title": "Chairman, Himachal Pradesh Public Service Commission",
+   "orgId": "st-hp-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-hp-pos-governor",
+   "holder": {
+    "name": "Rameshwar Singh Thakur",
+    "since": null,
+    "notes": "Capt., IPS (Retd.). Wikipedia's only citation for this near this fact dates to 2017, so this holder is treated cautiously and could be stale (not independently re-verified against an official/dated 2025-2026 source). Found 2026-09-25 during verification pass; was missing from the original segment file."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Himachal_Pradesh_Public_Service_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-up-pos-shrc-chair",
+   "title": "Chairperson, Uttar Pradesh State Human Rights Commission",
+   "orgId": "st-up-shrc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-up-pos-governor",
+   "holder": {
+    "name": "Bala Krishna Narayana",
+    "since": null,
+    "notes": "Justice (Retd.). Since-date not found. Found 2026-09-25 during verification pass; was missing from the original segment file."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttar_Pradesh_Human_Rights_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-uk-pos-shrc-chair",
+   "title": "Chairperson, Uttarakhand State Human Rights Commission",
+   "orgId": "st-uk-shrc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-uk-pos-governor",
+   "holder": {
+    "name": "Akhilesh Chandra Sharma",
+    "since": null,
+    "notes": "Justice (Retd.). Since-date not found. Found 2026-09-25 during verification pass; was missing from the original segment file."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uttarakhand_Human_Rights_Commission"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-president",
+   "to": "st-up-pos-governor",
+   "type": "appoints",
+   "source": "https://en.wikipedia.org/wiki/List_of_governors_of_Uttar_Pradesh"
+  },
+  {
+   "from": "st-up-pos-governor",
+   "to": "st-up-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164"
+  },
+  {
+   "from": "st-up-pos-chief-minister",
+   "to": "st-up-council-of-ministers",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-up-council-of-ministers",
+   "to": "st-up-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-up-assembly",
+   "type": "elects",
+   "source": "https://en.wikipedia.org/wiki/Uttar_Pradesh_Legislative_Assembly"
+  },
+  {
+   "from": "st-up-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80"
+  },
+  {
+   "from": "st-up-assembly",
+   "to": "st-up-legislative-council",
+   "type": "indirectly_elects",
+   "basis": "Article 171 (partial, via MLAs)"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-uk-pos-governor",
+   "type": "appoints",
+   "source": "https://en.wikipedia.org/wiki/List_of_governors_of_Uttarakhand"
+  },
+  {
+   "from": "st-uk-pos-governor",
+   "to": "st-uk-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164"
+  },
+  {
+   "from": "st-uk-pos-chief-minister",
+   "to": "st-uk-council-of-ministers",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-uk-council-of-ministers",
+   "to": "st-uk-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-uk-assembly",
+   "type": "elects",
+   "source": "https://en.wikipedia.org/wiki/Uttarakhand_Legislative_Assembly"
+  },
+  {
+   "from": "st-uk-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-hp-pos-governor",
+   "type": "appoints",
+   "source": "https://www.thehindu.com/news/national/himachal-pradesh/kavinder-gupta-new-governor-of-himachal-pradesh-bjp-leader-lieutenant-governor-of-ladakh/article70710436.ece"
+  },
+  {
+   "from": "st-hp-pos-governor",
+   "to": "st-hp-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164"
+  },
+  {
+   "from": "st-hp-pos-chief-minister",
+   "to": "st-hp-council-of-ministers",
+   "type": "advises_appointment",
+   "basis": "Article 164(1)"
+  },
+  {
+   "from": "st-hp-council-of-ministers",
+   "to": "st-hp-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2)"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-hp-assembly",
+   "type": "elects",
+   "source": "https://en.wikipedia.org/wiki/Himachal_Pradesh_Legislative_Assembly"
+  },
+  {
+   "from": "st-hp-assembly",
+   "to": "in-rajya-sabha",
+   "type": "indirectly_elects",
+   "basis": "Article 80"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 42,
+  "corrections": [
+   "Removed st-up-pos-minister-10: falsely attributed 'Minister of Panchayati Raj' to Om Prakash Rajbhar, duplicating him as a second Council of Ministers member. Confirmed via the Second Yogi Adityanath ministry Wikipedia page that his only portfolio since 2024-03-05 is Minority Welfare; Haj & Wakf (kept as st-up-pos-minister-8). UP minister count corrected 58 -> 57; the true current holder of Panchayati Raj could not be confirmed and was not invented.",
+   "st-up-pos-sec-commissioner (Manoj Kumar): re-verified still listed as incumbent UPSEC on a 2026-07-09 Wikipedia revision; confidence low -> medium (a >8-year tenure against a nominal 6-year/age-68 term limit is still flagged as unusual).",
+   "st-up-pos-lokayukta (Sanjay Mishra): re-verified still listed as incumbent; confidence low -> medium (term-length caveat retained).",
+   "st-up-pos-psc-chair (Sanjay Shrinet): name reconfirmed via fresh fetch; confidence low -> medium (since-date still unavailable).",
+   "st-hp-pos-chief-secretary (Kamlesh Kumar Pant): confirmed via the official himachal.nic.in homepage; confidence low -> high.",
+   "st-hp-pos-dgp (Ashok Tiwari, acting): reconfirmed acting status via the Himachal Pradesh Police Wikipedia article; confidence low -> medium.",
+   "st-up-pos-dgp (Rajeev Krishna): exact since-date 2025-05-31 reconfirmed via 'List of DGPs of Uttar Pradesh'; confidence medium -> high.",
+   "st-up-pos-chief-secretary (Manoj Kumar Singh): reconfirmed current via fresh Wikipedia fetch; confidence medium -> high.",
+   "st-uk-pos-dgp (Deepam Seth): confirmed via the official Uttarakhand Police website; confidence medium -> high.",
+   "st-uk-pos-chief-secretary (Anand Bardhan): name reconfirmed via a secondary Wikipedia reference; confidence kept medium (since-date still unconfirmed).",
+   "st-hp-pos-deputy-speaker: confirmed vacant since 2025-11-22 (predecessor Vinay Kumar, 2023-12-19 to 2025-11-22) via the Himachal Pradesh Legislative Assembly Wikipedia article; confidence medium -> high.",
+   "st-uk-pos-deputy-speaker: confirmed vacant since 2022-03-10 via the Uttarakhand Legislative Assembly Wikipedia article; confidence medium -> high.",
+   "Added 7 previously-missing entities+positions flagged as gaps in the original file: Uttarakhand SEC (Sushil Kumar, since 2024-08-29, high confidence), Uttarakhand PSC (Gajendra Joshi, since 2026-07-15, high confidence), Uttarakhand Lokayukta (A P Subba, medium confidence), Himachal Pradesh SEC (Anil Kumar Khachi, medium confidence), Himachal Pradesh PSC (Rameshwar Singh Thakur, low confidence -- source looked stale), Uttar Pradesh SHRC (Bala Krishna Narayana, medium confidence), Uttarakhand SHRC (Akhilesh Chandra Sharma, medium confidence).",
+   "Himachal Pradesh Lokayukta and Himachal Pradesh SHRC current holders could not be confirmed (no name found in English Wikipedia; HP Lokayukta page lists 'agency executive: NA') -- left unadded rather than invented; remains an open gap.",
+   "All governor since-dates (UP 2019-07-29, UK 2021-09-15, HP 2026-03-11), all three CM/Deputy-CM/Speaker/Leader-of-Opposition since-dates, and the May 2026 UP cabinet-expansion additions (Bhupendra Chaudhary, Ajit Singh Pal, Somendra Tomar) were independently re-verified against dedicated Wikipedia infobox pages and found accurate as already recorded -- no change needed."
+  ]
+ }
+}

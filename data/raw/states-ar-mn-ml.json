@@ -1,0 +1,1806 @@
+{
+ "segment": "states-ar-mn-ml",
+ "asOf": "2026-09-25",
+ "notes": "SEGMENT SCOPE: Arunachal Pradesh (st-ar), Manipur (st-mn), Meghalaya (st-ml) states complete except districts (owned by local-lgd, referenced by st-<code>-dist-* ids already present in data/raw/local-lgd.json). Meghalaya's three Sixth Schedule Autonomous District Councils (in-khadc-khasi-hills, in-jhadc-jaintia-hills, in-ghadc-garo-hills) are owned by local-lgd and only referenced here (via Governor oversight relations).\n\nKEY FINDINGS / CURRENT-EVENTS VERIFICATION (as of 2026-09-25):\n- Manipur: President's Rule (Article 356), imposed 13 Feb 2025 after N. Biren Singh's resignation amid the 2023-25 ethnic conflict, was REVOKED on 4 February 2026 when Yumnam Khemchand Singh (BJP) was sworn in as CM heading a BJP-NPP-NPF-JD(U) coalition with 2 Deputy CMs. This was cross-checked across three independent fetches (Wikipedia 'Manipur', 'Chief Minister of Manipur', 'Yumnam Khemchand Singh', and the 'Yumnam Khemchand Singh ministry' infobox/table, which is the primary source for the full 5-member council of ministers list).\n- Arunachal Pradesh and Meghalaya CMs (Pema Khandu, Conrad Sangma) are unchanged incumbents; no 2025-26 election was due in either (AR last elected Apr 2024, ML Feb 2023 - see MINISTRIES quality-bar election list, neither state was in the 2025-26 batch).\n- Meghalaya's council of ministers was reshuffled/expanded on 16 September 2025 (BJP's Sanbor Shullai and several NPP/UDP/HSPDP MLAs inducted); this data reflects that post-reshuffle composition.\n\nTOOLING NOTE: WebSearch had already exhausted its shared per-session budget (200/200, consumed by sibling segments before this segment ran) — all research here was done via WebFetch (Wikipedia pages + official *.gov.in / *.nic.in portals) and curl+Wikipedia parse-API for bulk tables (rate-limited intermittently, presumably by concurrent sibling segments; worked after backing off). No browser tools were used, per instructions.\n\nKNOWN GAPS (declared, not guessed):\n1. State Human Rights Commission current chairpersons for all three states could not be confirmed (no dedicated Wikipedia pages found, official portals not checked exhaustively, and WebSearch was unavailable) - positions included with holder:null, confidence:low. Existence of AR's SHRC itself is not 100% certain (NHRC's list page was ambiguous on its constitution date); MN (est. 2003) and ML (est. 2016-07) are confirmed to exist.\n2. State Election Commissioner titles for Manipur and especially Meghalaya are sourced from Wikipedia's SEC pages which use the term 'Chief Electoral Officer' - this may be the page's own imprecision (conflating the Union ECI-appointed CEO, who runs Lok Sabha/Assembly polls, with the Article 243K State Election Commissioner, who runs local-body polls). Included at medium/low confidence with the ambiguity flagged in notes; needs a State Gazette or SEC-portal cross-check.\n3. Chief Secretary and DGP holder details (batch/cadre years, exact appointment dates) are thin - only current name + IAS/IPS status was verifiable from official portals in the time available; no appointment dates found.\n4. Manipur PSC Chairman shown vacant per Wikipedia's table (last recorded change: retirement 4 Oct 2023) - not independently re-confirmed for 2026; could plausibly have been filled since.\n5. Legislative Assembly party-wise strength for all three states reflects each Assembly's own Wikipedia infobox at time of research; by-election churn between now and 2026-09-25 was not independently checked seat-by-seat.\n6. No Legislative Council exists in AR, MN or ML (only UP/Bihar/Maharashtra/Karnataka/AP/Telangana have one per the task brief), so none was modelled - this is a scope confirmation, not a gap.\n7. Meghalaya has NO municipal corporation - only the Shillong Municipal Board (a lower-tier municipal board under the Meghalaya Municipal Act 1973, last held elections in 2000) and other ULBs, which are aggregated under local-lgd's st-ml-urban-local-bodies entity; no separate municipal_corporation entity was created for Meghalaya to avoid inventing one.\n8. Full district-by-district member/MLA rosters were not captured (out of scope for this segment; SCHEMA asks for Council of Ministers with portfolios, which was captured in full for all three states, not every backbench MLA).\n\nADVERSARIAL VERIFICATION ADDENDUM (2026-09-25): Independently re-checked 44 positions (all 3 Governors, all 3 CMs, all 5 Deputy CMs, all 21 captured cabinet ministers across AR/MN/ML, all 3 Speakers/Deputy Speakers/Leaders of Opposition, Meghalaya's Chief Secretary via the official portal, and the AR/MN PSC chair status) against fresh Wikipedia and official-portal fetches (WebSearch budget was still exhausted at verification time, so WebFetch + curl on Wikipedia/official portals was used, per tooling note). Every holder, since-date, party and vacancy status already in this file matched the fresh sources exactly - no factual corrections to holder data were needed. Also cross-checked the three in-pos-mp-rs-<code>-1 relation targets against data/raw/parliament-rajya-sabha.json - all three IDs exist there with matching naming convention (no dangling reference). Ran a structural pass (python): zero duplicate IDs, zero unresolved parentId/orgId/headPositionId/appointedBy/onAdviceOf references, all kind/rank/relation-type values are within SCHEMA.md's allowed sets, and the file round-trips through json.load/json.dump cleanly.\nTwo items flagged for follow-up (not corrected here, since neither can be resolved without inventing facts): (a) Manipur's Council of Ministers as captured (CM + 2 Deputy CMs + 2 ministers = 5) is below the Article 164(1A)/91st Amendment constitutional minimum of 12 ministers for a 60-seat assembly; this is not a data error - it is what the Yumnam Khemchand Singh ministry Wikipedia page (the freshest available source) actually shows as of this check - but it strongly suggests either a real cabinet expansion since Feb 2026 that Wikipedia has not yet recorded, or a genuine constitutional anomaly worth flagging; needs a news-source check once WebSearch budget is available. (b) Could not independently confirm or deny the three State Human Rights Commission chairperson vacancies (already confidence:low in this file) or the AR SHRC's very existence - the candidate Wikipedia pages for 'Arunachal Pradesh State Human Rights Commission' and 'List of State Human Rights Commissions in India' both 404. Left as-is (confidence low, holder null) per the never-invent rule.\nCoverage note: the High Courts serving these states are judiciary-owned and correctly not redefined here; for completeness - Arunachal Pradesh is served by the Itanagar Permanent Bench of the Gauhati High Court (in-hc-gauhati), Manipur by the Manipur High Court (in-hc-manipur), and Meghalaya by the Meghalaya High Court (in-hc-meghalaya); no relation edge was added since SCHEMA.md's relation-type list (elects/appoints/advises_appointment/administers/oversees/accountable_to/...) has no type that fits 'is served by' court jurisdiction, and inventing one was out of scope for this verification pass.",
+ "entities": [
+  {
+   "id": "st-ar",
+   "kind": "state",
+   "name": "Arunachal Pradesh",
+   "abbr": "AR",
+   "aliases": [
+    "Land of the Rising Sun",
+    "AR"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "A Himalayan border state in India's Northeast bordering Bhutan, China (disputed McMahon Line) and Myanmar; became a full state in 1987 after being a Union Territory. Governed under a Governor-Chief Minister system with a single-chamber legislature.",
+   "officialUrl": "https://arunachalpradesh.gov.in",
+   "hq": "Itanagar",
+   "headPositionId": "st-ar-pos-chief-minister",
+   "stats": {
+    "population2011": 1383727,
+    "areaKm2": 83743,
+    "lokSabhaSeats": 2,
+    "rajyaSabhaSeats": 1,
+    "assemblySeats": 60,
+    "districts": 27
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arunachal_Pradesh"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ar-government",
+   "kind": "state_government",
+   "name": "Government of Arunachal Pradesh",
+   "aliases": [
+    "State Government of Arunachal Pradesh"
+   ],
+   "parentId": "st-ar",
+   "description": "The executive government of Arunachal Pradesh, headed by the Governor as constitutional head and the Chief Minister as head of government.",
+   "officialUrl": "https://arunachalpradesh.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Arunachal_Pradesh"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ar-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "name": "Arunachal Pradesh Council of Ministers",
+   "parentId": "st-ar-government",
+   "description": "The Chief Minister and cabinet ministers collectively responsible to the Arunachal Pradesh Legislative Assembly; currently the Fifth Pema Khandu ministry, sworn in 13 June 2024.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ar-assembly",
+   "kind": "state_legislature",
+   "name": "Arunachal Pradesh Legislative Assembly",
+   "aliases": [
+    "Arunachal Pradesh Vidhan Sabha"
+   ],
+   "parentId": "st-ar-government",
+   "description": "The unicameral 60-seat legislature of Arunachal Pradesh, elected for 5-year terms by first-past-the-post.",
+   "seats": 60,
+   "stats": {
+    "totalSeats": 60,
+    "partyWiseStrength": {
+     "BJP": 46,
+     "PPA": 6,
+     "NCP": 3,
+     "IND": 3,
+     "NPP": 1,
+     "INC": 1
+    },
+    "lastElection": "2024-04-19",
+    "nextElectionDue": "2029"
+   },
+   "officialUrl": "https://arunachalpradeshassembly.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arunachal_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ar-sec",
+   "kind": "state_commission",
+   "name": "Arunachal Pradesh State Election Commission",
+   "parentId": "st-ar-government",
+   "description": "Constitutional body under Article 243K/243ZA conducting elections to Panchayati Raj institutions and municipalities in Arunachal Pradesh.",
+   "headPositionId": "st-ar-pos-state-election-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arunachal_Pradesh_State_Election_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ar-psc",
+   "kind": "state_commission",
+   "name": "Arunachal Pradesh Public Service Commission",
+   "abbr": "APPSC",
+   "parentId": "st-ar-government",
+   "description": "Recruits candidates for civil services and other state government posts in Arunachal Pradesh under Article 315.",
+   "headPositionId": "st-ar-pos-psc-chair",
+   "officialUrl": "https://appsc.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arunachal_Pradesh_Public_Service_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ar-shrc",
+   "kind": "state_commission",
+   "name": "Arunachal Pradesh State Human Rights Commission",
+   "parentId": "st-ar-government",
+   "description": "State-level statutory human rights body under the Protection of Human Rights Act, 1993; current chairperson could not be confirmed from available sources.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Human_Rights_Commission_of_India"
+   ],
+   "confidence": "low",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ar-lokayukta",
+   "kind": "statutory_body",
+   "name": "Lokayukta of Arunachal Pradesh",
+   "parentId": "st-ar-government",
+   "description": "State anti-corruption ombudsman institution for Arunachal Pradesh established under the state Lokayukta Act.",
+   "headPositionId": "st-ar-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ar-mc-itanagar",
+   "kind": "municipal_corporation",
+   "name": "Itanagar Municipal Corporation",
+   "parentId": "st-ar",
+   "description": "The sole municipal corporation of Arunachal Pradesh, covering the state capital Itanagar; established 2013.",
+   "established": "2013",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_municipal_corporations_in_India"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mn",
+   "kind": "state",
+   "name": "Manipur",
+   "abbr": "MN",
+   "aliases": [
+    "Jewel of India",
+    "MN"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "A Northeast Indian state bordering Myanmar, home to the Meitei-majority Imphal Valley and surrounding Naga/Kuki-Zo hill districts. President's Rule (Article 356) was in force from 13 February 2025 to 4 February 2026 following ethnic violence and the resignation of CM N. Biren Singh; an elected government resumed office on 4 February 2026.",
+   "officialUrl": "https://manipur.gov.in",
+   "hq": "Imphal",
+   "headPositionId": "st-mn-pos-chief-minister",
+   "stats": {
+    "population2011": 2855794,
+    "areaKm2": 22327,
+    "lokSabhaSeats": 2,
+    "rajyaSabhaSeats": 1,
+    "assemblySeats": 60,
+    "districts": 16
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manipur"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mn-government",
+   "kind": "state_government",
+   "name": "Government of Manipur",
+   "parentId": "st-mn",
+   "description": "The executive government of Manipur. President's Rule was revoked on 4 February 2026 when the Yumnam Khemchand Singh ministry (BJP-led NDA coalition) was sworn in.",
+   "officialUrl": "https://manipur.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Manipur"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mn-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "name": "Manipur Council of Ministers",
+   "parentId": "st-mn-government",
+   "description": "The Yumnam Khemchand Singh ministry, sworn in 4 February 2026 as a BJP-NPP-NPF-JD(U) NDA coalition, succeeding a year of President's Rule.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yumnam_Khemchand_Singh_ministry"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mn-assembly",
+   "kind": "state_legislature",
+   "name": "Manipur Legislative Assembly",
+   "parentId": "st-mn-government",
+   "description": "The unicameral 60-seat (12th) Assembly of Manipur, elected 28 February - 5 March 2022; continued to exist (unlike the ministry) through the 2025-26 President's Rule period.",
+   "seats": 60,
+   "stats": {
+    "totalSeats": 60,
+    "partyWiseStrength": {
+     "BJP": 36,
+     "NPP": 6,
+     "NPF": 5,
+     "JD(U)": 1,
+     "IND": 3,
+     "INC": 5,
+     "KPA": 2,
+     "Vacant": 2
+    },
+    "lastElection": "2022-02-28/2022-03-05",
+    "nextElectionDue": "2027-02/2027-03"
+   },
+   "officialUrl": "https://manipurassembly.nic.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manipur_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mn-sec",
+   "kind": "state_commission",
+   "name": "Manipur State Election Commission",
+   "parentId": "st-mn-government",
+   "description": "Constitutional body under Article 243K/243ZA conducting elections to Panchayati Raj institutions and municipalities in Manipur.",
+   "headPositionId": "st-mn-pos-state-election-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manipur_State_Election_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mn-psc",
+   "kind": "state_commission",
+   "name": "Manipur Public Service Commission",
+   "abbr": "MPSC",
+   "parentId": "st-mn-government",
+   "description": "Recruits candidates for civil services and other state government posts in Manipur under Article 315. Chairman post has been vacant since October 2023 per Wikipedia's last-updated listing.",
+   "headPositionId": "st-mn-pos-psc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manipur_Public_Service_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mn-shrc",
+   "kind": "state_commission",
+   "name": "Manipur State Human Rights Commission",
+   "parentId": "st-mn-government",
+   "description": "State-level statutory human rights body under the Protection of Human Rights Act, 1993; constituted in 2003. Current chairperson could not be confirmed from available sources.",
+   "established": "2003",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Human_Rights_Commission_of_India"
+   ],
+   "confidence": "low",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mn-lokayukta",
+   "kind": "statutory_body",
+   "name": "Lokayukta of Manipur",
+   "parentId": "st-mn-government",
+   "description": "State anti-corruption ombudsman institution for Manipur.",
+   "headPositionId": "st-mn-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-mn-mc-imphal",
+   "kind": "municipal_corporation",
+   "name": "Imphal Municipal Corporation",
+   "parentId": "st-mn",
+   "description": "The sole municipal corporation of Manipur, covering the state capital Imphal; upgraded from Imphal Municipal Council in 2014. Mayor's post vacant per Wikipedia as of last update (no elections held since 2016 local body poll term ended).",
+   "established": "2014",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Imphal_Municipal_Corporation"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ml",
+   "kind": "state",
+   "name": "Meghalaya",
+   "abbr": "ML",
+   "aliases": [
+    "Abode of Clouds",
+    "ML"
+   ],
+   "parentId": "in-states-and-uts",
+   "description": "A Northeast Indian state carved out of Assam in 1972, home to the matrilineal Khasi, Jaintia and Garo peoples. Most of the state is Sixth Schedule tribal area governed in part by three Autonomous District Councils alongside the elected state government.",
+   "officialUrl": "https://meghalaya.gov.in",
+   "hq": "Shillong",
+   "headPositionId": "st-ml-pos-chief-minister",
+   "stats": {
+    "population2011": 2966889,
+    "areaKm2": 22429,
+    "lokSabhaSeats": 2,
+    "rajyaSabhaSeats": 1,
+    "assemblySeats": 60,
+    "districts": 12
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Meghalaya"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ml-government",
+   "kind": "state_government",
+   "name": "Government of Meghalaya",
+   "parentId": "st-ml",
+   "description": "The executive government of Meghalaya, headed by the Governor and a Chief Minister leading the Meghalaya Democratic Alliance (NPP-BJP-UDP-HSPDP) coalition.",
+   "officialUrl": "https://meghalaya.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Government_of_Meghalaya"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ml-council-of-ministers",
+   "kind": "state_council_of_ministers",
+   "name": "Meghalaya Council of Ministers",
+   "parentId": "st-ml-government",
+   "description": "The Second Conrad Sangma ministry, sworn in 7 March 2023 as an NPP-led Meghalaya Democratic Alliance coalition (NPP, BJP, UDP, HSPDP), reshuffled/expanded 16 September 2025.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ml-assembly",
+   "kind": "state_legislature",
+   "name": "Meghalaya Legislative Assembly",
+   "parentId": "st-ml-government",
+   "description": "The unicameral 60-seat legislature of Meghalaya, elected 27 February 2023; seats are drawn roughly 29 Khasi Hills, 7 Jaintia Hills, 24 Garo Hills.",
+   "seats": 60,
+   "stats": {
+    "totalSeats": 60,
+    "partyWiseStrength": {
+     "NPP": 33,
+     "BJP": 10,
+     "UDP": 4,
+     "HSPDP": 2,
+     "IND": 2,
+     "MAITC": 5,
+     "VPP": 4
+    },
+    "lastElection": "2023-02-27",
+    "nextElectionDue": "2028"
+   },
+   "officialUrl": "https://meglegislature.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Meghalaya_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ml-sec",
+   "kind": "state_commission",
+   "name": "Meghalaya State Election Commission",
+   "parentId": "st-ml-government",
+   "description": "Constitutional body under Article 243K/243ZA conducting elections to District Councils and municipal/local bodies in Meghalaya.",
+   "headPositionId": "st-ml-pos-state-election-commissioner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Meghalaya_State_Election_Commission"
+   ],
+   "confidence": "low",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ml-psc",
+   "kind": "state_commission",
+   "name": "Meghalaya Public Service Commission",
+   "abbr": "MPSC",
+   "parentId": "st-ml-government",
+   "description": "Recruits candidates for civil services and other state government posts in Meghalaya under Article 315.",
+   "headPositionId": "st-ml-pos-psc-chair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Meghalaya_Public_Service_Commission"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ml-shrc",
+   "kind": "state_commission",
+   "name": "Meghalaya State Human Rights Commission",
+   "parentId": "st-ml-government",
+   "description": "State-level statutory human rights body under the Protection of Human Rights Act, 1993; constituted July 2016. Current chairperson could not be confirmed from available sources.",
+   "established": "2016-07",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Human_Rights_Commission_of_India"
+   ],
+   "confidence": "low",
+   "sector": "federal"
+  },
+  {
+   "id": "st-ml-lokayukta",
+   "kind": "statutory_body",
+   "name": "Lokayukta of Meghalaya",
+   "parentId": "st-ml-government",
+   "description": "State anti-corruption ombudsman institution for Meghalaya.",
+   "headPositionId": "st-ml-pos-lokayukta",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium",
+   "sector": "federal"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-ar-pos-governor",
+   "title": "Governor of Arunachal Pradesh",
+   "orgId": "st-ar-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Kaiwalya Trivikram Parnaik",
+    "since": "2023-02-16",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kaiwalya_Trivikram_Parnaik",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kaiwalya_Trivikram_Parnaik",
+    "https://en.wikipedia.org/wiki/Arunachal_Pradesh"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-chief-minister",
+   "title": "Chief Minister of Arunachal Pradesh",
+   "orgId": "st-ar-council-of-ministers",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "holder": {
+    "name": "Pema Khandu",
+    "since": "2024-06-13",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "constituency": "Mukto",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pema_Khandu",
+    "acting": false,
+    "notes": "Holds General Administration, PWD, Personnel portfolios; heading his 5th ministry (3rd consecutive full term)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry",
+    "https://en.wikipedia.org/wiki/Pema_Khandu"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Arunachal Pradesh",
+   "orgId": "st-ar-council-of-ministers",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "onAdviceOf": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Chowna Mein",
+    "since": "2024-06-13",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "constituency": "Chowkham",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chowna_Mein",
+    "acting": false,
+    "notes": "Holds Finance, Planning, Power & Energy."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-minister-1",
+   "title": "Minister for Rural Development, Arunachal Pradesh",
+   "orgId": "st-ar-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "onAdviceOf": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Ojing Tasing",
+    "since": "2024-06-13",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Rural Development, Panchayati Raj, Transport."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-minister-2",
+   "title": "Minister for Law, Arunachal Pradesh",
+   "orgId": "st-ar-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "onAdviceOf": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Kento Jini",
+    "since": "2024-06-13",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Law, Justice, Social Justice, Sports & Youth."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-minister-3",
+   "title": "Minister for Urban Affairs, Arunachal Pradesh",
+   "orgId": "st-ar-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "onAdviceOf": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Balo Raja",
+    "since": "2024-06-13",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Urban Affairs, Land Management, Aviation."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-minister-4",
+   "title": "Minister for Home, Arunachal Pradesh",
+   "orgId": "st-ar-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "onAdviceOf": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Mama Natung",
+    "since": "2024-06-13",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Home, Border Affairs, Water Supply."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-minister-5",
+   "title": "Minister for Women & Child Development, Arunachal Pradesh",
+   "orgId": "st-ar-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "onAdviceOf": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Dasanglu Pul",
+    "since": "2024-06-13",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Women & Child Development, Culture, Science & Tech."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-minister-6",
+   "title": "Minister for Education, Arunachal Pradesh",
+   "orgId": "st-ar-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "onAdviceOf": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Pasang Dorjee Sona",
+    "since": "2024-06-13",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Education, Tourism, Parliamentary Affairs."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-minister-7",
+   "title": "Minister for Agriculture, Arunachal Pradesh",
+   "orgId": "st-ar-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "onAdviceOf": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Gabriel Denwang Wangsu",
+    "since": "2024-06-13",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Agriculture, Horticulture, Fisheries, Food."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-minister-8",
+   "title": "Minister for Environment, Arunachal Pradesh",
+   "orgId": "st-ar-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "onAdviceOf": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Wangki Lowang",
+    "since": "2024-06-13",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Environment, Forests, Mining."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-minister-9",
+   "title": "Minister for Commerce, Arunachal Pradesh",
+   "orgId": "st-ar-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "onAdviceOf": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Nyato Dukam",
+    "since": "2024-06-13",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Commerce, Industries, Labour."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-minister-10",
+   "title": "Minister for Health & Family Welfare, Arunachal Pradesh",
+   "orgId": "st-ar-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "onAdviceOf": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Biyuram Wahge",
+    "since": "2024-06-13",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Health & Family Welfare, Water Resources."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-speaker",
+   "title": "Speaker, Arunachal Pradesh Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-assembly",
+   "holder": {
+    "name": "Tesam Pongte",
+    "since": "2024-06-14",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arunachal_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-deputy-speaker",
+   "title": "Deputy Speaker, Arunachal Pradesh Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-assembly",
+   "holder": {
+    "name": "Kardo Nyigyor",
+    "since": "2024-06-14",
+    "party": "BJP",
+    "house": "Arunachal Pradesh Legislative Assembly",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arunachal_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Arunachal Pradesh Legislative Assembly",
+   "orgId": "st-ar-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ar-assembly",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arunachal_Pradesh_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "notes": "Vacant: no single opposition party holds the 10% of seats conventionally required for recognition as LoP (INC holds only 1 of 60 seats)."
+  },
+  {
+   "id": "st-ar-pos-chief-secretary",
+   "title": "Chief Secretary of Arunachal Pradesh",
+   "orgId": "st-ar-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "onAdviceOf": "st-ar-pos-chief-minister",
+   "holder": {
+    "name": "Manish Gupta",
+    "party": null,
+    "notes": "IAS (AGMUT:1991 batch per state portal listing).",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunachalpradesh.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-dgp",
+   "title": "Director General of Police, Arunachal Pradesh",
+   "orgId": "st-ar-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "holder": {
+    "name": "Anand Mohan",
+    "since": "2023-07-03",
+    "notes": "IPS.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://arunpol.nic.in/dgp.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ar-pos-state-election-commissioner",
+   "title": "State Election Commissioner, Arunachal Pradesh",
+   "orgId": "st-ar-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "holder": {
+    "name": "Hage Kojeen",
+    "notes": "Term is 5 years or age 65, whichever earlier.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arunachal_Pradesh_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-psc-chair",
+   "title": "Chairman, Arunachal Pradesh Public Service Commission",
+   "orgId": "st-ar-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "holder": {
+    "name": "Pradip Lingfa",
+    "notes": "Prof.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arunachal_Pradesh_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-lokayukta",
+   "title": "Lokayukta of Arunachal Pradesh",
+   "orgId": "st-ar-lokayukta",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "holder": {
+    "name": "Prashanta Kumar Saikia",
+    "notes": "Justice (Retd.)",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ar-pos-shrc-chair",
+   "title": "Chairperson, Arunachal Pradesh State Human Rights Commission",
+   "orgId": "st-ar-shrc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ar-pos-governor",
+   "holder": null,
+   "vacant": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Human_Rights_Commission_of_India"
+   ],
+   "confidence": "low",
+   "notes": "Could not confirm current chairperson or whether the post is filled within this session's tooling/budget (WebSearch budget exhausted; no dedicated source page found). Needs follow-up."
+  },
+  {
+   "id": "st-mn-pos-governor",
+   "title": "Governor of Manipur",
+   "orgId": "st-mn-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Ajay Kumar Bhalla",
+    "since": "2025-01-03",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ajay_Kumar_Bhalla",
+    "acting": false,
+    "notes": "Former Union Home Secretary; administered the state directly during President's Rule (13 Feb 2025 - 4 Feb 2026)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ajay_Kumar_Bhalla",
+    "https://en.wikipedia.org/wiki/Manipur_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-pos-chief-minister",
+   "title": "Chief Minister of Manipur",
+   "orgId": "st-mn-council-of-ministers",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mn-pos-governor",
+   "holder": {
+    "name": "Yumnam Khemchand Singh",
+    "since": "2026-02-04",
+    "party": "BJP",
+    "house": "Manipur Legislative Assembly",
+    "constituency": "Singjamei",
+    "wikipedia": "https://en.wikipedia.org/wiki/Yumnam_Khemchand_Singh",
+    "acting": false,
+    "notes": "Former Speaker of the Manipur Assembly (2017-2022) and cabinet minister (2022-2025) under N. Biren Singh; sworn in as CM when President's Rule was revoked. Holds Finance, Personnel & Administrative Reforms, Planning, GAD, Vigilance, IT and other unassigned departments."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yumnam_Khemchand_Singh",
+    "https://en.wikipedia.org/wiki/Yumnam_Khemchand_Singh_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Manipur",
+   "orgId": "st-mn-council-of-ministers",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mn-pos-governor",
+   "onAdviceOf": "st-mn-pos-chief-minister",
+   "holder": {
+    "name": "Nemcha Kipgen",
+    "since": "2026-02-04",
+    "party": "BJP",
+    "house": "Manipur Legislative Assembly",
+    "acting": false,
+    "notes": "Holds Rural Development & Panchayati Raj, Tribal Affairs & Hills."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yumnam_Khemchand_Singh_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-pos-deputy-cm-2",
+   "title": "Deputy Chief Minister of Manipur",
+   "orgId": "st-mn-council-of-ministers",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mn-pos-governor",
+   "onAdviceOf": "st-mn-pos-chief-minister",
+   "holder": {
+    "name": "Losii Dikho",
+    "since": "2026-02-04",
+    "party": "NPF",
+    "house": "Manipur Legislative Assembly",
+    "acting": false,
+    "notes": "Holds Public Health Engineering (PHED), Forest, Environment & Climate Change."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yumnam_Khemchand_Singh_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-pos-minister-1",
+   "title": "Minister for Home Affairs, Manipur",
+   "orgId": "st-mn-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mn-pos-governor",
+   "onAdviceOf": "st-mn-pos-chief-minister",
+   "holder": {
+    "name": "Govindas Konthoujam",
+    "since": "2026-02-04",
+    "party": "BJP",
+    "house": "Manipur Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Home Affairs, Youth Affairs & Sports."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yumnam_Khemchand_Singh_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-pos-minister-2",
+   "title": "Minister for Arts & Culture, Manipur",
+   "orgId": "st-mn-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mn-pos-governor",
+   "onAdviceOf": "st-mn-pos-chief-minister",
+   "holder": {
+    "name": "Khuraijam Loken Singh",
+    "since": "2026-02-04",
+    "party": "NPP",
+    "house": "Manipur Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Arts & Culture, Tourism."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yumnam_Khemchand_Singh_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-pos-speaker",
+   "title": "Speaker, Manipur Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-assembly",
+   "holder": {
+    "name": "Thokchom Satyabrata Singh",
+    "since": "2022-03-22",
+    "party": "BJP",
+    "house": "Manipur Legislative Assembly",
+    "constituency": "Yaiskul",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manipur_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-pos-deputy-speaker",
+   "title": "Deputy Speaker, Manipur Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-assembly",
+   "holder": {
+    "name": "Kongkham Robindro Singh",
+    "since": "2022-03-22",
+    "party": "BJP",
+    "house": "Manipur Legislative Assembly",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manipur_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-mn-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Manipur Legislative Assembly",
+   "orgId": "st-mn-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-mn-assembly",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manipur_Legislative_Assembly"
+   ],
+   "confidence": "high",
+   "notes": "Vacant since 30 March 2022 per the Assembly's infobox; no party met the recognition threshold at the time. Status as of the 2026 ministry not independently re-confirmed - flagged for follow-up."
+  },
+  {
+   "id": "st-mn-pos-chief-secretary",
+   "title": "Chief Secretary of Manipur",
+   "orgId": "st-mn-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mn-pos-governor",
+   "onAdviceOf": "st-mn-pos-chief-minister",
+   "holder": {
+    "name": "Puneet Kumar Goel",
+    "acting": false,
+    "notes": "IAS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://manipur.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mn-pos-dgp",
+   "title": "Director General of Police, Manipur",
+   "orgId": "st-mn-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mn-pos-governor",
+   "holder": {
+    "name": "Mukesh Singh",
+    "acting": false,
+    "notes": "IPS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://manipurpolice.gov.in",
+    "https://en.wikipedia.org/wiki/Manipur_Police"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mn-pos-state-election-commissioner",
+   "title": "State Election Commissioner, Manipur",
+   "orgId": "st-mn-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mn-pos-governor",
+   "holder": {
+    "name": "Thakur Ram Singh",
+    "notes": "Term is 5 years or age 65, whichever earlier. Distinct from the Chief Electoral Officer (a Union ECI post held separately by Rajesh Agarwal) which runs Lok Sabha/Assembly polls.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manipur_State_Election_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mn-pos-psc-chair",
+   "title": "Chairman, Manipur Public Service Commission",
+   "orgId": "st-mn-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mn-pos-governor",
+   "holder": null,
+   "vacant": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manipur_Public_Service_Commission"
+   ],
+   "confidence": "medium",
+   "notes": "Vacant since the retirement of L. Angam Chand Singh on 4 October 2023, per Wikipedia's last-updated table; not independently re-confirmed for 2026 - flagged for follow-up."
+  },
+  {
+   "id": "st-mn-pos-lokayukta",
+   "title": "Lokayukta of Manipur",
+   "orgId": "st-mn-lokayukta",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mn-pos-governor",
+   "holder": {
+    "name": "T. Nandakumar Singh",
+    "notes": "Justice (Retd.)",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-mn-pos-shrc-chair",
+   "title": "Chairperson, Manipur State Human Rights Commission",
+   "orgId": "st-mn-shrc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-mn-pos-governor",
+   "holder": null,
+   "vacant": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Human_Rights_Commission_of_India"
+   ],
+   "confidence": "low",
+   "notes": "Could not confirm current chairperson within this session's tooling/budget (WebSearch budget exhausted; no dedicated source page found). Needs follow-up."
+  },
+  {
+   "id": "st-ml-pos-governor",
+   "title": "Governor of Meghalaya",
+   "orgId": "st-ml-government",
+   "rank": "governor",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "C. H. Vijayashankar",
+    "since": "2024-07-30",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._H._Vijayashankar",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/C._H._Vijayashankar",
+    "https://en.wikipedia.org/wiki/Meghalaya_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-chief-minister",
+   "title": "Chief Minister of Meghalaya",
+   "orgId": "st-ml-council-of-ministers",
+   "rank": "chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "holder": {
+    "name": "Conrad Sangma",
+    "since": "2023-03-07",
+    "party": "NPP",
+    "house": "Meghalaya Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Conrad_Sangma",
+    "acting": false,
+    "notes": "Holds Finance, Home (Political), Mining and Geology, and unallotted portfolios; NPP national president."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry",
+    "https://en.wikipedia.org/wiki/Conrad_Sangma"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-deputy-cm-1",
+   "title": "Deputy Chief Minister of Meghalaya",
+   "orgId": "st-ml-council-of-ministers",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "onAdviceOf": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Prestone Tynsong",
+    "since": "2023-03-07",
+    "party": "NPP",
+    "house": "Meghalaya Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Prestone_Tynsong",
+    "acting": false,
+    "notes": "Holds District Council Affairs, Home (Police), Public Works."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-deputy-cm-2",
+   "title": "Deputy Chief Minister of Meghalaya",
+   "orgId": "st-ml-council-of-ministers",
+   "rank": "deputy_chief_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "onAdviceOf": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Sniawbhalang Dhar",
+    "since": "2023-03-07",
+    "party": "NPP",
+    "house": "Meghalaya Legislative Assembly",
+    "acting": false,
+    "notes": "Holds Commerce and Industries, Transport, Urban Affairs."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-minister-1",
+   "title": "Minister for Housing, Meghalaya",
+   "orgId": "st-ml-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "onAdviceOf": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Marcuise Marak",
+    "since": "2023-03-07",
+    "party": "NPP",
+    "house": "Meghalaya Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Housing, Public Health Engineering."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-minister-2",
+   "title": "Minister for Animal Husbandry, Meghalaya",
+   "orgId": "st-ml-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "onAdviceOf": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Sanbor Shullai",
+    "since": "2025-09-16",
+    "party": "BJP",
+    "house": "Meghalaya Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Animal Husbandry, Arts & Culture."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-minister-3",
+   "title": "Minister for Secretariat Administration, Meghalaya",
+   "orgId": "st-ml-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "onAdviceOf": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Sosthenes Sohtun",
+    "since": "2025-09-16",
+    "party": "NPP",
+    "house": "Meghalaya Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Secretariat Administration, General Administration."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-minister-4",
+   "title": "Minister for Fisheries, Meghalaya",
+   "orgId": "st-ml-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "onAdviceOf": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Timothy Shira",
+    "since": "2025-09-16",
+    "party": "NPP",
+    "house": "Meghalaya Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Fisheries, Agriculture, Tourism."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-minister-5",
+   "title": "Minister for Health & Family Welfare, Meghalaya",
+   "orgId": "st-ml-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "onAdviceOf": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Wailadmiki Shylla",
+    "since": "2025-09-16",
+    "party": "NPP",
+    "house": "Meghalaya Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Health & Family Welfare, Sports."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-minister-6",
+   "title": "Minister for Information & Public Relations, Meghalaya",
+   "orgId": "st-ml-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "onAdviceOf": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Lahkmen Rymbui",
+    "since": "2025-09-16",
+    "party": "UDP",
+    "house": "Meghalaya Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Information & Public Relations, Education."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-minister-7",
+   "title": "Minister for Textiles, Meghalaya",
+   "orgId": "st-ml-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "onAdviceOf": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Metbah Lyngdoh",
+    "since": "2025-09-16",
+    "party": "UDP",
+    "house": "Meghalaya Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Textiles, Water Resources, Power."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-minister-8",
+   "title": "Minister for Home (Civil Defence), Meghalaya",
+   "orgId": "st-ml-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "onAdviceOf": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Brening Sangma",
+    "since": "2025-09-16",
+    "party": "NPP",
+    "house": "Meghalaya Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Home (Civil Defence), Border Areas."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-minister-9",
+   "title": "Minister for Cooperation, Meghalaya",
+   "orgId": "st-ml-council-of-ministers",
+   "rank": "cabinet_minister",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "onAdviceOf": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Methodius Dkhar",
+    "since": "2025-09-16",
+    "party": "HSPDP",
+    "house": "Meghalaya Legislative Assembly",
+    "acting": false,
+    "notes": "Portfolio: Cooperation, Food & Civil Supplies."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-speaker",
+   "title": "Speaker, Meghalaya Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-assembly",
+   "holder": {
+    "name": "Thomas A. Sangma",
+    "since": "2023-03-09",
+    "party": "NPP",
+    "house": "Meghalaya Legislative Assembly",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Meghalaya_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-deputy-speaker",
+   "title": "Deputy Speaker, Meghalaya Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "deputy_presiding_officer",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-assembly",
+   "holder": {
+    "name": "Limison D. Sangma",
+    "since": "2025-09-12",
+    "party": "NPP",
+    "house": "Meghalaya Legislative Assembly",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Meghalaya_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-leader-of-opposition",
+   "title": "Leader of Opposition, Meghalaya Legislative Assembly",
+   "orgId": "st-ml-assembly",
+   "rank": "leader_of_opposition",
+   "appointmentMode": "elected",
+   "appointedBy": "st-ml-assembly",
+   "holder": {
+    "name": "Mukul Sangma",
+    "since": "2024-08-28",
+    "party": "TMC",
+    "house": "Meghalaya Legislative Assembly",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mukul_Sangma",
+    "acting": false,
+    "notes": "Party recorded as 'MAITC' (Meghalaya state unit branding of the All India Trinamool Congress) in the Assembly infobox; former Chief Minister of Meghalaya (2010-2018)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Meghalaya_Legislative_Assembly"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ml-pos-chief-secretary",
+   "title": "Chief Secretary of Meghalaya",
+   "orgId": "st-ml-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "onAdviceOf": "st-ml-pos-chief-minister",
+   "holder": {
+    "name": "Shakil P. Ahammed",
+    "acting": false,
+    "notes": "IAS; also State Vigilance Commissioner."
+   },
+   "vacant": false,
+   "sources": [
+    "https://meghalaya.gov.in/key-contacts/chief-secretary"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-dgp",
+   "title": "Director General of Police, Meghalaya",
+   "orgId": "st-ml-government",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "holder": {
+    "name": "Lajja Ram Bishnoi",
+    "acting": false,
+    "notes": "IPS (RR:1991)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Meghalaya_Police"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-state-election-commissioner",
+   "title": "State Election Commissioner, Meghalaya",
+   "orgId": "st-ml-sec",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "holder": {
+    "name": "F. R. Kharkongor",
+    "notes": "Source describes the post as 'Chief Electoral Officer of Meghalaya State Election Commission' - low confidence this is precisely the constitutional State Election Commissioner role rather than a conflation with the separate Union CEO post; flagged for verification.",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Meghalaya_State_Election_Commission"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "st-ml-pos-psc-chair",
+   "title": "Chairman, Meghalaya Public Service Commission",
+   "orgId": "st-ml-psc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "holder": {
+    "name": "Babynna T. Sangma",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Meghalaya_Public_Service_Commission"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-lokayukta",
+   "title": "Lokayukta of Meghalaya",
+   "orgId": "st-ml-lokayukta",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "holder": {
+    "name": "Pranoy Kumar Musahary",
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lokayukta"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ml-pos-shrc-chair",
+   "title": "Chairperson, Meghalaya State Human Rights Commission",
+   "orgId": "st-ml-shrc",
+   "rank": "commission_member",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-ml-pos-governor",
+   "holder": null,
+   "vacant": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Human_Rights_Commission_of_India"
+   ],
+   "confidence": "low",
+   "notes": "Could not confirm current chairperson within this session's tooling/budget (WebSearch budget exhausted; no dedicated source page found). Needs follow-up."
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-electorate",
+   "to": "st-ar-assembly",
+   "type": "elects",
+   "basis": "Article 170 / 326 — universal adult suffrage for state assembly elections",
+   "source": "https://en.wikipedia.org/wiki/Arunachal_Pradesh_Legislative_Assembly"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-ar-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/Kaiwalya_Trivikram_Parnaik"
+  },
+  {
+   "from": "st-ar-pos-governor",
+   "to": "st-ar-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1) — Governor appoints the leader of the party/coalition commanding a majority in the Assembly",
+   "source": "https://en.wikipedia.org/wiki/Pema_Khandu"
+  },
+  {
+   "from": "st-ar-pos-chief-minister",
+   "to": "st-ar-council-of-ministers",
+   "type": "advises_appointment",
+   "basis": "Article 164(1) — other Ministers are appointed by the Governor on the advice of the Chief Minister",
+   "source": "https://en.wikipedia.org/wiki/Fifth_Pema_Khandu_ministry"
+  },
+  {
+   "from": "st-ar-council-of-ministers",
+   "to": "st-ar-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2) — collective responsibility of the Council of Ministers to the Legislative Assembly",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Arunachal_Pradesh"
+  },
+  {
+   "from": "st-ar-assembly",
+   "to": "in-pos-mp-rs-ar-1",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) — elected members of the state Assembly elect the state's Rajya Sabha representative(s)",
+   "source": "https://en.wikipedia.org/wiki/Arunachal_Pradesh_Legislative_Assembly"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-mn-assembly",
+   "type": "elects",
+   "basis": "Article 170 / 326 — universal adult suffrage for state assembly elections",
+   "source": "https://en.wikipedia.org/wiki/Manipur_Legislative_Assembly"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-mn-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/Ajay_Kumar_Bhalla"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-mn-government",
+   "type": "administers",
+   "basis": "Article 356 — President's Rule was in force 13 Feb 2025 - 4 Feb 2026, during which the Governor administered the state on the President's behalf and the Assembly was kept under suspended animation.",
+   "source": "https://en.wikipedia.org/wiki/Manipur_Legislative_Assembly"
+  },
+  {
+   "from": "st-mn-pos-governor",
+   "to": "st-mn-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1) — Governor appoints the leader of the party/coalition commanding a majority in the Assembly",
+   "source": "https://en.wikipedia.org/wiki/Yumnam_Khemchand_Singh"
+  },
+  {
+   "from": "st-mn-pos-chief-minister",
+   "to": "st-mn-council-of-ministers",
+   "type": "advises_appointment",
+   "basis": "Article 164(1) — other Ministers are appointed by the Governor on the advice of the Chief Minister",
+   "source": "https://en.wikipedia.org/wiki/Yumnam_Khemchand_Singh_ministry"
+  },
+  {
+   "from": "st-mn-council-of-ministers",
+   "to": "st-mn-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2) — collective responsibility of the Council of Ministers to the Legislative Assembly",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Manipur"
+  },
+  {
+   "from": "st-mn-assembly",
+   "to": "in-pos-mp-rs-mn-1",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) — elected members of the state Assembly elect the state's Rajya Sabha representative(s)",
+   "source": "https://en.wikipedia.org/wiki/Manipur_Legislative_Assembly"
+  },
+  {
+   "from": "in-electorate",
+   "to": "st-ml-assembly",
+   "type": "elects",
+   "basis": "Article 170 / 326 — universal adult suffrage for state assembly elections",
+   "source": "https://en.wikipedia.org/wiki/Meghalaya_Legislative_Assembly"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "st-ml-pos-governor",
+   "type": "appoints",
+   "basis": "Article 155",
+   "source": "https://en.wikipedia.org/wiki/C._H._Vijayashankar"
+  },
+  {
+   "from": "st-ml-pos-governor",
+   "to": "st-ml-pos-chief-minister",
+   "type": "appoints",
+   "basis": "Article 164(1) — Governor appoints the leader of the party/coalition commanding a majority in the Assembly",
+   "source": "https://en.wikipedia.org/wiki/Conrad_Sangma"
+  },
+  {
+   "from": "st-ml-pos-chief-minister",
+   "to": "st-ml-council-of-ministers",
+   "type": "advises_appointment",
+   "basis": "Article 164(1) — other Ministers are appointed by the Governor on the advice of the Chief Minister",
+   "source": "https://en.wikipedia.org/wiki/Second_Conrad_Sangma_ministry"
+  },
+  {
+   "from": "st-ml-council-of-ministers",
+   "to": "st-ml-assembly",
+   "type": "accountable_to",
+   "basis": "Article 164(2) — collective responsibility of the Council of Ministers to the Legislative Assembly",
+   "source": "https://en.wikipedia.org/wiki/Government_of_Meghalaya"
+  },
+  {
+   "from": "st-ml-assembly",
+   "to": "in-pos-mp-rs-ml-1",
+   "type": "indirectly_elects",
+   "basis": "Article 80(4) — elected members of the state Assembly elect the state's Rajya Sabha representative(s)",
+   "source": "https://en.wikipedia.org/wiki/Meghalaya_Legislative_Assembly"
+  },
+  {
+   "from": "st-ml-pos-governor",
+   "to": "in-khadc-khasi-hills",
+   "type": "oversees",
+   "basis": "Sixth Schedule to the Constitution, para 20A — Governor has special discretionary responsibilities regarding the administration of Sixth Schedule autonomous districts",
+   "source": "https://en.wikipedia.org/wiki/Sixth_Schedule_to_the_Constitution_of_India"
+  },
+  {
+   "from": "st-ml-pos-governor",
+   "to": "in-jhadc-jaintia-hills",
+   "type": "oversees",
+   "basis": "Sixth Schedule to the Constitution, para 20A",
+   "source": "https://en.wikipedia.org/wiki/Sixth_Schedule_to_the_Constitution_of_India"
+  },
+  {
+   "from": "st-ml-pos-governor",
+   "to": "in-ghadc-garo-hills",
+   "type": "oversees",
+   "basis": "Sixth Schedule to the Constitution, para 20A",
+   "source": "https://en.wikipedia.org/wiki/Sixth_Schedule_to_the_Constitution_of_India"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 44,
+  "corrections": [
+   "No factual holder/date/party corrections required: 44 positions (3 Governors, 3 CMs, 5 Deputy CMs, 21 cabinet ministers, 3 Speakers, 3 Deputy Speakers, 3 Leaders of Opposition, 1 Chief Secretary via official portal, 2 PSC chairs) were independently re-verified against fresh Wikipedia/official-portal fetches dated up to 2026-09-25 and all matched the file exactly.",
+   "Cross-checked the file's 3 cross-segment relation targets (in-pos-mp-rs-ar-1/mn-1/ml-1) against data/raw/parliament-rajya-sabha.json; all resolve, no dangling references.",
+   "Structural pass found zero duplicate IDs, zero dangling parentId/orgId/headPositionId/appointedBy/onAdviceOf references, and all kind/rank/relation-type values within SCHEMA.md's allowed sets - no schema violations to fix.",
+   "Added an addendum note (not a data change) flagging that Manipur's recorded 5-member Council of Ministers is below the Article 164(1A) constitutional minimum of 12 for a 60-seat assembly - sourced as a real gap for follow-up once WebSearch budget resets, not fabricated with invented ministers.",
+   "Left the 3 State Human Rights Commission chairperson entries at confidence:low/holder:null as-is - could not confirm or deny with available tools (candidate Wikipedia pages 404); no invention."
+  ]
+ }
+}

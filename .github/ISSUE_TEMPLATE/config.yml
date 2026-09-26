@@ -1,0 +1,5 @@
+# Before filing: docs/SOURCING_POLICY.md covers the source hierarchy, verification tiers, and personal-data
+# rules for data issues; CONTRIBUTING.md covers the contributor workflow. Neither of the three typed templates
+# fit? Blank issues stay enabled below for anything else (general questions, proposals, discussion).
+blank_issues_enabled: true
+contact_links: []

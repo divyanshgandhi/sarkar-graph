@@ -1,0 +1,1889 @@
+{
+ "segment": "union-budget",
+ "asOf": "2026-09-25",
+ "fy": "2026-27",
+ "notes": "Ministry/department 'lines' and 'departments' figures are sourced from the official Demand for Grants (dgsum.pdf, gross Voted+Charged totals), which for a handful of demands (esp. Demand 40 'Repayment of Debt' ~Rs 95.3 lakh crore, and to a lesser extent Demand 85 Railways and Demand 1 Agriculture) include large gross debt-rollover / recoverable-loan / internal-financing flows that are netted out of the headline 'Total Expenditure' figure in Budget at a Glance -- so summing all 'lines'/'departments' BE figures will NOT equal totals.totalExpenditureBE, by design and consistent with the source documents' own reconciliation notes. A cross-check against sumsbe.pdf (net of receipts/recoveries) shows, e.g., Ministry of Defence BE 2026-27 gross (this file) = Rs 8,35,714.74 cr vs Rs 7,84,678.28 cr net in sumsbe.pdf. Demands 39 (Interest Payments), 40 (Repayment of Debt) and 42 (Transfers to States, a residual/miscellaneous demand distinct from tax devolution and Finance Commission grants which are captured in totals.transfersToStates and stateTransfers[].taxDevolution) are not owned by a single ministry so entityId is null with the raw demand name. Demands 49 (Ministry of Home Affairs) and 51 (Police, i.e. CAPFs/IB funded through MHA) are merged into one in-min-home-affairs line. Demands 65 (Law and Justice), 74 (Personnel, Public Grievances and Pensions) and 102 (Youth Affairs and Sports) are single combined Demands for Grants that Parliament votes on ministry-wide -- the Demand for Grants documents do not split them by MINISTRIES.md's constituent department, so they appear only as ministry-level lines, not further split into departments. Demand 19 'Ministry of Defence (Civil)' and Demand 21 'Capital Outlay on Defence Services' are both attributed to in-dept-defence (civilian HQ + capital acquisition); Demand 20 'Defence Services (Revenue)' to in-dept-military-affairs; Demand 22 'Defence Pensions' to in-dept-ex-servicemen-welfare. UT administrations without a canonical ministries-* owner (Demands 52-59: Andaman & Nicobar Islands, Chandigarh, Dadra & Nagar Haveli and Daman & Diu, Ladakh, Lakshadweep, and Transfers to Delhi/Jammu & Kashmir/Puducherry) are referenced as st-<code>-government per SCHEMA.md's ID convention; these are owned by the states-* segments, not defined here. totals.defence (Rs 5,94,585 cr) and totals.subsidies (Rs 4,10,495 cr = Fertiliser 1,70,781 + Food 2,27,629 + Petroleum 12,085) are taken from Budget at a Glance's 'Expenditure of Major Items' functional table, which differs from the Demand-for-Grants-based Ministry of Defence total in 'lines' (that includes defence pensions and non-major-item spending; the two are not directly comparable). 'schemes' combines Statement 4A (Centrally Sponsored Schemes) and Statement 4B (Central Sector Schemes), ranked by BE 2026-27 descending; two pure railway accounting/inventory heads ('Manufacturing Suspense', 'Stores Suspense') were excluded as not citizen-facing schemes. Some top Central Sector 'schemes' are really capital work categories (e.g. Railways 'Road Works' under Demand 86 NHAI/roads, 'Rolling Stock'/'New Lines'/'Track Renewals' under Demand 85 Railways, 'Aircraft and Aero Engines'/'Naval Fleet' under Demand 21 defence capital acquisition) rather than named public programmes, but are included as-is because that is how the official Statement 4B classifies them. stateTransfers[].taxDevolution is exact and sourced from Receipts Budget Annex-4 (all 28 states, sums to Rs 15,26,254.58 cr matching totals within rounding; 16th Finance Commission fixed the states' share at 41% of net proceeds of shareable Central taxes for the 2026-31 award period). stateTransfers[].totalTransfers (devolution + all grants: Finance Commission grants, Centrally Sponsored Schemes, Central Sector Schemes, capital transfers, etc.) is deliberately left null for every state: indiabudget.gov.in does not publish a single state-wise table of the ~Rs 10.94 lakh crore in BE 2026-27 non-devolution transfers (Statement 18 gives only the national aggregate); computing it would require aggregating scheme-wise state-level releases from PFMS/individual ministry accounts, which was out of scope for this pass. This is a known, explicit gap rather than an invented number.",
+ "totals": {
+  "totalExpenditureBE": 5347315,
+  "capitalExpenditureBE": 1221821,
+  "revenueExpenditureBE": 4125494,
+  "fiscalDeficitPctGDP": 4.3,
+  "grossTaxRevenueBE": 4404086.45,
+  "transfersToStates": 2543769,
+  "interestPayments": 1403972,
+  "defence": 594585,
+  "subsidies": 410495
+ },
+ "prior": {
+  "fy": "2025-26",
+  "totalExpenditureRE": 4964842,
+  "totalExpenditureBE": 5065345
+ },
+ "receipts": [
+  {
+   "label": "Total Receipts (= Total Expenditure)",
+   "amountBE": 5347315
+  },
+  {
+   "label": "Revenue Receipts",
+   "amountBE": 3533149.87
+  },
+  {
+   "label": "Tax Revenue (Net to Centre)",
+   "amountBE": 2866921.87
+  },
+  {
+   "label": "Non-Tax Revenue",
+   "amountBE": 666228.0
+  },
+  {
+   "label": "Capital Receipts",
+   "amountBE": 1814165.0
+  },
+  {
+   "label": "Recovery of Loans and Advances",
+   "amountBE": 38397.23
+  },
+  {
+   "label": "Miscellaneous Capital Receipts (incl. disinvestment/asset monetisation)",
+   "amountBE": 80000.0
+  },
+  {
+   "label": "Borrowings and Other Liabilities (fiscal deficit financing)",
+   "amountBE": 1695768.0
+  },
+  {
+   "label": "Gross Tax Revenue",
+   "amountBE": 4404086.45
+  },
+  {
+   "label": "Gross Tax Revenue - Corporation Tax",
+   "amountBE": 1231000.0
+  },
+  {
+   "label": "Gross Tax Revenue - Taxes on Income (Personal Income Tax)",
+   "amountBE": 1466000.0
+  },
+  {
+   "label": "Gross Tax Revenue - Goods and Services Tax (GST)",
+   "amountBE": 1019020.0
+  },
+  {
+   "label": "Gross Tax Revenue - Customs",
+   "amountBE": 271200.0
+  },
+  {
+   "label": "Gross Tax Revenue - Union Excise Duties",
+   "amountBE": 388910.0
+  },
+  {
+   "label": "Gross Tax Revenue - Other Taxes and Duties (incl. UT taxes)",
+   "amountBE": 27956.45
+  },
+  {
+   "label": "Less: Devolution of States' share in taxes",
+   "amountBE": 1526254.58
+  }
+ ],
+ "lines": [
+  {
+   "entityId": "in-min-agriculture-and-farmers-welfare",
+   "name": "Ministry of Agriculture and Farmers Welfare",
+   "demandNos": [
+    1,
+    2
+   ],
+   "be": 242528.78,
+   "re": 230370.13,
+   "actual": 242186.77,
+   "capital": 112.21
+  },
+  {
+   "entityId": "in-dept-atomic-energy",
+   "name": "Department of Atomic Energy",
+   "demandNos": [
+    3
+   ],
+   "be": 38422.71,
+   "re": 37181.72,
+   "actual": 36616.6,
+   "capital": 12793.41
+  },
+  {
+   "entityId": "in-min-ayush",
+   "name": "Ministry of Ayush",
+   "demandNos": [
+    4
+   ],
+   "be": 4408.93,
+   "re": 3671.82,
+   "actual": 3468.63,
+   "capital": 27.07
+  },
+  {
+   "entityId": "in-min-chemicals-and-fertilizers",
+   "name": "Ministry of Chemicals and Fertilizers",
+   "demandNos": [
+    5,
+    6,
+    7
+   ],
+   "be": 193279.47,
+   "re": 219703.9,
+   "actual": 196450.72,
+   "capital": 11.71
+  },
+  {
+   "entityId": "in-min-civil-aviation",
+   "name": "Ministry of Civil Aviation",
+   "demandNos": [
+    8
+   ],
+   "be": 2102.87,
+   "re": 2055.49,
+   "actual": 2606.2,
+   "capital": 45.0
+  },
+  {
+   "entityId": "in-min-coal",
+   "name": "Ministry of Coal",
+   "demandNos": [
+    9
+   ],
+   "be": 4390.32,
+   "re": 1240.96,
+   "actual": 850.88,
+   "capital": 2.2
+  },
+  {
+   "entityId": "in-min-commerce-and-industry",
+   "name": "Ministry of Commerce and Industry",
+   "demandNos": [
+    10,
+    11
+   ],
+   "be": 17843.9,
+   "re": 15222.17,
+   "actual": 13440.99,
+   "capital": 5166.44
+  },
+  {
+   "entityId": "in-min-communications",
+   "name": "Ministry of Communications",
+   "demandNos": [
+    12,
+    13
+   ],
+   "be": 140840.95,
+   "re": 142209.77,
+   "actual": 170578.45,
+   "capital": 68524.44
+  },
+  {
+   "entityId": "in-min-consumer-affairs-food-and-public-distribution",
+   "name": "Ministry of Consumer Affairs, Food and Public Distribution",
+   "demandNos": [
+    14,
+    15
+   ],
+   "be": 289544.57,
+   "re": 288465.67,
+   "actual": 239508.69,
+   "capital": 50116.04
+  },
+  {
+   "entityId": "in-min-cooperation",
+   "name": "Ministry of Cooperation",
+   "demandNos": [
+    16
+   ],
+   "be": 1744.74,
+   "re": 981.31,
+   "actual": 738.0,
+   "capital": 1.9
+  },
+  {
+   "entityId": "in-min-corporate-affairs",
+   "name": "Ministry of Corporate Affairs",
+   "demandNos": [
+    17
+   ],
+   "be": 6561.86,
+   "re": 8969.43,
+   "actual": 710.48,
+   "capital": 55.62
+  },
+  {
+   "entityId": "in-min-culture",
+   "name": "Ministry of Culture",
+   "demandNos": [
+    18
+   ],
+   "be": 3416.63,
+   "re": 3550.09,
+   "actual": 3260.0,
+   "capital": 200.0
+  },
+  {
+   "entityId": "in-min-defence",
+   "name": "Ministry of Defence",
+   "demandNos": [
+    19,
+    20,
+    21,
+    22
+   ],
+   "be": 835714.74,
+   "re": 774911.46,
+   "actual": 675856.33,
+   "capital": 231129.72
+  },
+  {
+   "entityId": "in-min-development-of-north-eastern-region",
+   "name": "Ministry of Development of North Eastern Region",
+   "demandNos": [
+    23
+   ],
+   "be": 6812.3,
+   "re": 4479.2,
+   "actual": 3447.71,
+   "capital": 4564.6
+  },
+  {
+   "entityId": "in-min-earth-sciences",
+   "name": "Ministry of Earth Sciences",
+   "demandNos": [
+    24
+   ],
+   "be": 3798.23,
+   "re": 3388.27,
+   "actual": 3386.73,
+   "capital": 716.04
+  },
+  {
+   "entityId": "in-min-education",
+   "name": "Ministry of Education",
+   "demandNos": [
+    25,
+    26
+   ],
+   "be": 228789.48,
+   "re": 199820.07,
+   "actual": 179740.37,
+   "capital": 3.53
+  },
+  {
+   "entityId": "in-min-electronics-and-information-technology",
+   "name": "Ministry of Electronics and Information Technology",
+   "demandNos": [
+    27
+   ],
+   "be": 21632.96,
+   "re": 20232.95,
+   "actual": 13670.52,
+   "capital": 398.81
+  },
+  {
+   "entityId": "in-min-environment-forest-and-climate-change",
+   "name": "Ministry of Environment, Forest and Climate Change",
+   "demandNos": [
+    28
+   ],
+   "be": 4413.36,
+   "re": 4017.31,
+   "actual": 2684.92,
+   "capital": 222.8
+  },
+  {
+   "entityId": "in-min-external-affairs",
+   "name": "Ministry of External Affairs",
+   "demandNos": [
+    29
+   ],
+   "be": 22123.98,
+   "re": 21752.25,
+   "actual": 27824.25,
+   "capital": 1412.78
+  },
+  {
+   "entityId": "in-min-finance",
+   "name": "Ministry of Finance",
+   "demandNos": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+   ],
+   "be": 181795.9,
+   "re": 219564.13,
+   "actual": 269713.57,
+   "capital": 133624.07
+  },
+  {
+   "entityId": "in-cag",
+   "name": "Indian Audit and Accounts Department (CAG establishment)",
+   "demandNos": [
+    38
+   ],
+   "be": 6834.28,
+   "re": 7073.72,
+   "actual": 6587.4,
+   "capital": 168.97
+  },
+  {
+   "entityId": null,
+   "name": "Interest Payments",
+   "demandNos": [
+    39
+   ],
+   "be": 1443971.79,
+   "re": 1352307.49,
+   "actual": 1164271.06,
+   "capital": 0.0
+  },
+  {
+   "entityId": null,
+   "name": "Repayment of Debt",
+   "demandNos": [
+    40
+   ],
+   "be": 9534445.88,
+   "re": 8177058.62,
+   "actual": 8500778.9,
+   "capital": 9534445.88
+  },
+  {
+   "entityId": null,
+   "name": "Transfers to States (Demand 42 - miscellaneous, excl. tax devolution & Finance Commission grants captured in stateTransfers)",
+   "demandNos": [
+    42
+   ],
+   "be": 441674.61,
+   "re": 399692.01,
+   "actual": 331961.16,
+   "capital": 247853.0
+  },
+  {
+   "entityId": "in-min-fisheries-animal-husbandry-and-dairying",
+   "name": "Ministry of Fisheries, Animal Husbandry and Dairying",
+   "demandNos": [
+    43,
+    44
+   ],
+   "be": 9125.26,
+   "re": 7215.78,
+   "actual": 4777.17,
+   "capital": 477.04
+  },
+  {
+   "entityId": "in-min-food-processing-industries",
+   "name": "Ministry of Food Processing Industries",
+   "demandNos": [
+    45
+   ],
+   "be": 4979.16,
+   "re": 4221.57,
+   "actual": 2866.82,
+   "capital": 2.73
+  },
+  {
+   "entityId": "in-min-health-and-family-welfare",
+   "name": "Ministry of Health and Family Welfare",
+   "demandNos": [
+    46,
+    47
+   ],
+   "be": 145584.76,
+   "re": 130575.43,
+   "actual": 109506.77,
+   "capital": 2930.11
+  },
+  {
+   "entityId": "in-min-heavy-industries",
+   "name": "Ministry of Heavy Industries",
+   "demandNos": [
+    48
+   ],
+   "be": 7939.9,
+   "re": 5293.85,
+   "actual": 2686.55,
+   "capital": 2.82
+  },
+  {
+   "entityId": "in-min-home-affairs",
+   "name": "Ministry of Home Affairs",
+   "demandNos": [
+    49,
+    51
+   ],
+   "be": 185260.98,
+   "re": 170684.8,
+   "actual": 153674.47,
+   "capital": 21781.31
+  },
+  {
+   "entityId": "in-cabinet-secretariat",
+   "name": "Cabinet (Cabinet Secretariat)",
+   "demandNos": [
+    50
+   ],
+   "be": 5217.12,
+   "re": 7116.46,
+   "actual": 5630.11,
+   "capital": 4224.8
+  },
+  {
+   "entityId": "st-an-government",
+   "name": "Andaman and Nicobar Islands (UT administration)",
+   "demandNos": [
+    52
+   ],
+   "be": 6735.94,
+   "re": 7442.89,
+   "actual": 5999.14,
+   "capital": 597.86
+  },
+  {
+   "entityId": "st-ch-government",
+   "name": "Chandigarh (UT administration)",
+   "demandNos": [
+    53
+   ],
+   "be": 6545.52,
+   "re": 6465.77,
+   "actual": 6598.19,
+   "capital": 606.0
+  },
+  {
+   "entityId": "st-dh-government",
+   "name": "Dadra and Nagar Haveli and Daman and Diu (UT administration)",
+   "demandNos": [
+    54
+   ],
+   "be": 2835.2,
+   "re": 2743.14,
+   "actual": 2651.25,
+   "capital": 1100.0
+  },
+  {
+   "entityId": "st-la-government",
+   "name": "Ladakh (UT administration)",
+   "demandNos": [
+    55
+   ],
+   "be": 4879.56,
+   "re": 7390.68,
+   "actual": 4894.62,
+   "capital": 2327.05
+  },
+  {
+   "entityId": "st-ld-government",
+   "name": "Lakshadweep (UT administration)",
+   "demandNos": [
+    56
+   ],
+   "be": 1709.1,
+   "re": 1607.85,
+   "actual": 1627.77,
+   "capital": 346.11
+  },
+  {
+   "entityId": "st-dl-government",
+   "name": "Transfers to Delhi (NCT of Delhi)",
+   "demandNos": [
+    57
+   ],
+   "be": 1348.01,
+   "re": 1242.0,
+   "actual": 1108.0,
+   "capital": 380.0
+  },
+  {
+   "entityId": "st-jk-government",
+   "name": "Transfers to Jammu and Kashmir (UT)",
+   "demandNos": [
+    58
+   ],
+   "be": 43290.29,
+   "re": 41340.22,
+   "actual": 46000.06,
+   "capital": 0.0
+  },
+  {
+   "entityId": "st-py-government",
+   "name": "Transfers to Puducherry (UT administration)",
+   "demandNos": [
+    59
+   ],
+   "be": 3517.88,
+   "re": 3517.88,
+   "actual": 3302.36,
+   "capital": 0.01
+  },
+  {
+   "entityId": "in-min-housing-and-urban-affairs",
+   "name": "Ministry of Housing and Urban Affairs",
+   "demandNos": [
+    60
+   ],
+   "be": 89760.19,
+   "re": 63302.92,
+   "actual": 59143.75,
+   "capital": 38876.88
+  },
+  {
+   "entityId": "in-min-information-and-broadcasting",
+   "name": "Ministry of Information and Broadcasting",
+   "demandNos": [
+    61
+   ],
+   "be": 4551.94,
+   "re": 6103.02,
+   "actual": 4306.77,
+   "capital": 57.38
+  },
+  {
+   "entityId": "in-min-jal-shakti",
+   "name": "Ministry of Jal Shakti",
+   "demandNos": [
+    62,
+    63
+   ],
+   "be": 101552.84,
+   "re": 47270.63,
+   "actual": 52870.26,
+   "capital": 476.86
+  },
+  {
+   "entityId": "in-min-labour-and-employment",
+   "name": "Ministry of Labour and Employment",
+   "demandNos": [
+    64
+   ],
+   "be": 32666.31,
+   "re": 12688.05,
+   "actual": 11436.49,
+   "capital": 40.98
+  },
+  {
+   "entityId": "in-min-law-and-justice",
+   "name": "Ministry of Law and Justice",
+   "demandNos": [
+    65
+   ],
+   "be": 4709.06,
+   "re": 5389.87,
+   "actual": 7411.97,
+   "capital": 249.47
+  },
+  {
+   "entityId": "in-eci",
+   "name": "Election Commission",
+   "demandNos": [
+    66
+   ],
+   "be": 382.22,
+   "re": 373.29,
+   "actual": 350.49,
+   "capital": 14.53
+  },
+  {
+   "entityId": "in-supreme-court",
+   "name": "Supreme Court of India",
+   "demandNos": [
+    67
+   ],
+   "be": 622.11,
+   "re": 633.13,
+   "actual": 598.55,
+   "capital": 55.92
+  },
+  {
+   "entityId": "in-min-micro-small-and-medium-enterprises",
+   "name": "Ministry of Micro, Small and Medium Enterprises",
+   "demandNos": [
+    68
+   ],
+   "be": 24566.27,
+   "re": 12095.98,
+   "actual": 9700.34,
+   "capital": 1919.01
+  },
+  {
+   "entityId": "in-min-mines",
+   "name": "Ministry of Mines",
+   "demandNos": [
+    69
+   ],
+   "be": 4716.45,
+   "re": 3515.14,
+   "actual": 3507.26,
+   "capital": 163.65
+  },
+  {
+   "entityId": "in-min-minority-affairs",
+   "name": "Ministry of Minority Affairs",
+   "demandNos": [
+    70
+   ],
+   "be": 3400.0,
+   "re": 2160.45,
+   "actual": 1396.01,
+   "capital": 4.38
+  },
+  {
+   "entityId": "in-min-new-and-renewable-energy",
+   "name": "Ministry of New and Renewable Energy",
+   "demandNos": [
+    71
+   ],
+   "be": 44614.67,
+   "re": 27801.22,
+   "actual": 23299.19,
+   "capital": 3.53
+  },
+  {
+   "entityId": "in-min-panchayati-raj",
+   "name": "Ministry of Panchayati Raj",
+   "demandNos": [
+    72
+   ],
+   "be": 1190.16,
+   "re": 965.96,
+   "actual": 850.3,
+   "capital": 3.28
+  },
+  {
+   "entityId": "in-min-parliamentary-affairs",
+   "name": "Ministry of Parliamentary Affairs",
+   "demandNos": [
+    73
+   ],
+   "be": 68.45,
+   "re": 66.31,
+   "actual": 63.02,
+   "capital": 7.27
+  },
+  {
+   "entityId": "in-cvc",
+   "name": "Central Vigilance Commission",
+   "demandNos": [
+    75
+   ],
+   "be": 54.56,
+   "re": 50.66,
+   "actual": 48.44,
+   "capital": 1.71
+  },
+  {
+   "entityId": "in-min-petroleum-and-natural-gas",
+   "name": "Ministry of Petroleum and Natural Gas",
+   "demandNos": [
+    76
+   ],
+   "be": 37653.22,
+   "re": 32934.47,
+   "actual": 19887.49,
+   "capital": 238.45
+  },
+  {
+   "entityId": "in-min-planning",
+   "name": "Ministry of Planning",
+   "demandNos": [
+    77
+   ],
+   "be": 1232.16,
+   "re": 848.24,
+   "actual": 282.61,
+   "capital": 28.78
+  },
+  {
+   "entityId": "in-min-ports-shipping-and-waterways",
+   "name": "Ministry of Ports, Shipping and Waterways",
+   "demandNos": [
+    78
+   ],
+   "be": 5764.8,
+   "re": 3464.11,
+   "actual": 3378.27,
+   "capital": 1299.92
+  },
+  {
+   "entityId": "in-min-power",
+   "name": "Ministry of Power",
+   "demandNos": [
+    79
+   ],
+   "be": 31214.47,
+   "re": 22797.24,
+   "actual": 22532.94,
+   "capital": 361.02
+  },
+  {
+   "entityId": "in-presidents-secretariat",
+   "name": "Staff, Household and Allowances of the President",
+   "demandNos": [
+    80
+   ],
+   "be": 137.2,
+   "re": 141.83,
+   "actual": 124.31,
+   "capital": 4.1
+  },
+  {
+   "entityId": "in-lok-sabha",
+   "name": "Lok Sabha",
+   "demandNos": [
+    81
+   ],
+   "be": 1009.0,
+   "re": 923.0,
+   "actual": 696.46,
+   "capital": 30.83
+  },
+  {
+   "entityId": "in-rajya-sabha",
+   "name": "Rajya Sabha",
+   "demandNos": [
+    82
+   ],
+   "be": 482.99,
+   "re": 481.33,
+   "actual": 412.06,
+   "capital": 11.67
+  },
+  {
+   "entityId": "in-vice-presidents-secretariat",
+   "name": "Secretariat of the Vice-President",
+   "demandNos": [
+    83
+   ],
+   "be": 11.7,
+   "re": 12.14,
+   "actual": 10.98,
+   "capital": 0.31
+  },
+  {
+   "entityId": "in-upsc",
+   "name": "Union Public Service Commission",
+   "demandNos": [
+    84
+   ],
+   "be": 442.94,
+   "re": 432.89,
+   "actual": 427.09,
+   "capital": 21.85
+  },
+  {
+   "entityId": "in-min-railways",
+   "name": "Ministry of Railways",
+   "demandNos": [
+    85
+   ],
+   "be": 884995.3,
+   "re": 793160.6,
+   "actual": 764346.5,
+   "capital": 499261.97
+  },
+  {
+   "entityId": "in-min-road-transport-and-highways",
+   "name": "Ministry of Road Transport and Highways",
+   "demandNos": [
+    86
+   ],
+   "be": 409303.46,
+   "re": 380018.87,
+   "actual": 369216.91,
+   "capital": 378027.0
+  },
+  {
+   "entityId": "in-min-rural-development",
+   "name": "Ministry of Rural Development",
+   "demandNos": [
+    87,
+    88
+   ],
+   "be": 245905.14,
+   "re": 289240.65,
+   "actual": 273771.1,
+   "capital": 5.63
+  },
+  {
+   "entityId": "in-min-science-and-technology",
+   "name": "Ministry of Science and Technology",
+   "demandNos": [
+    89,
+    90,
+    91
+   ],
+   "be": 38260.94,
+   "re": 21185.19,
+   "actual": 13391.29,
+   "capital": 20090.71
+  },
+  {
+   "entityId": "in-min-skill-development-and-entrepreneurship",
+   "name": "Ministry of Skill Development and Entrepreneurship",
+   "demandNos": [
+    92
+   ],
+   "be": 12685.8,
+   "re": 4703.54,
+   "actual": 5253.98,
+   "capital": 126.29
+  },
+  {
+   "entityId": "in-min-social-justice-and-empowerment",
+   "name": "Ministry of Social Justice and Empowerment",
+   "demandNos": [
+    93,
+    94
+   ],
+   "be": 16097.31,
+   "re": 13214.03,
+   "actual": 11521.61,
+   "capital": 10.94
+  },
+  {
+   "entityId": "in-dept-space",
+   "name": "Department of Space",
+   "demandNos": [
+    95
+   ],
+   "be": 13705.63,
+   "re": 12448.6,
+   "actual": 11518.65,
+   "capital": 6375.92
+  },
+  {
+   "entityId": "in-min-statistics-and-programme-implementation",
+   "name": "Ministry of Statistics and Programme Implementation",
+   "demandNos": [
+    96
+   ],
+   "be": 5502.89,
+   "re": 5551.29,
+   "actual": 4020.74,
+   "capital": 45.14
+  },
+  {
+   "entityId": "in-min-steel",
+   "name": "Ministry of Steel",
+   "demandNos": [
+    97
+   ],
+   "be": 443.18,
+   "re": 4857.44,
+   "actual": 8539.07,
+   "capital": 3.34
+  },
+  {
+   "entityId": "in-min-textiles",
+   "name": "Ministry of Textiles",
+   "demandNos": [
+    98
+   ],
+   "be": 5279.01,
+   "re": 5766.68,
+   "actual": 2998.47,
+   "capital": 9.49
+  },
+  {
+   "entityId": "in-min-tourism",
+   "name": "Ministry of Tourism",
+   "demandNos": [
+    99
+   ],
+   "be": 2438.41,
+   "re": 1310.3,
+   "actual": 457.35,
+   "capital": 4.53
+  },
+  {
+   "entityId": "in-min-tribal-affairs",
+   "name": "Ministry of Tribal Affairs",
+   "demandNos": [
+    100
+   ],
+   "be": 15421.97,
+   "re": 10824.18,
+   "actual": 10173.22,
+   "capital": 32.43
+  },
+  {
+   "entityId": "in-min-women-and-child-development",
+   "name": "Ministry of Women and Child Development",
+   "demandNos": [
+    101
+   ],
+   "be": 28638.06,
+   "re": 24651.91,
+   "actual": 25029.49,
+   "capital": 5.64
+  },
+  {
+   "entityId": "in-min-youth-affairs-and-sports",
+   "name": "Ministry of Youth Affairs and Sports",
+   "demandNos": [
+    102
+   ],
+   "be": 4479.88,
+   "re": 3346.54,
+   "actual": 2833.06,
+   "capital": 18.37
+  },
+  {
+   "entityId": "in-min-personnel-public-grievances-and-pensions",
+   "name": "Ministry of Personnel, Public Grievances and Pensions",
+   "demandNos": [
+    41,
+    74
+   ],
+   "be": 104107.45,
+   "re": 97281.07,
+   "actual": 95870.58,
+   "capital": 153.08
+  }
+ ],
+ "departments": [
+  {
+   "entityId": "in-dept-agriculture-and-farmers-welfare",
+   "name": "Department of Agriculture and Farmers Welfare",
+   "demandNos": [
+    1
+   ],
+   "be": 232561.38,
+   "re": 220089.3,
+   "actual": 232153.21,
+   "capital": 109.76
+  },
+  {
+   "entityId": "in-dept-agricultural-research-and-education",
+   "name": "Department of Agricultural Research and Education",
+   "demandNos": [
+    2
+   ],
+   "be": 9967.4,
+   "re": 10280.83,
+   "actual": 10033.56,
+   "capital": 2.45
+  },
+  {
+   "entityId": "in-dept-atomic-energy",
+   "name": "Department of Atomic Energy",
+   "demandNos": [
+    3
+   ],
+   "be": 38422.71,
+   "re": 37181.72,
+   "actual": 36616.6,
+   "capital": 12793.41
+  },
+  {
+   "entityId": "in-dept-chemicals-and-petrochemicals",
+   "name": "Department of Chemicals and Petrochemicals",
+   "demandNos": [
+    5
+   ],
+   "be": 185.72,
+   "re": 185.57,
+   "actual": 1607.75,
+   "capital": 1.02
+  },
+  {
+   "entityId": "in-dept-fertilizers",
+   "name": "Department of Fertilisers",
+   "demandNos": [
+    6
+   ],
+   "be": 187162.53,
+   "re": 215148.63,
+   "actual": 191824.18,
+   "capital": 8.89
+  },
+  {
+   "entityId": "in-dept-pharmaceuticals",
+   "name": "Department of Pharmaceuticals",
+   "demandNos": [
+    7
+   ],
+   "be": 5931.22,
+   "re": 4369.7,
+   "actual": 3018.79,
+   "capital": 1.8
+  },
+  {
+   "entityId": "in-dept-commerce",
+   "name": "Department of Commerce",
+   "demandNos": [
+    10
+   ],
+   "be": 5873.07,
+   "re": 6606.02,
+   "actual": 5538.93,
+   "capital": 47.31
+  },
+  {
+   "entityId": "in-dept-promotion-of-industry-and-internal-trade",
+   "name": "Department for Promotion of Industry and Internal Trade",
+   "demandNos": [
+    11
+   ],
+   "be": 11970.83,
+   "re": 8616.15,
+   "actual": 7902.06,
+   "capital": 5119.13
+  },
+  {
+   "entityId": "in-dept-posts",
+   "name": "Department of Posts",
+   "demandNos": [
+    12
+   ],
+   "be": 42850.0,
+   "re": 40382.11,
+   "actual": 38718.98,
+   "capital": 1249.51
+  },
+  {
+   "entityId": "in-dept-telecommunications",
+   "name": "Department of Telecommunications",
+   "demandNos": [
+    13
+   ],
+   "be": 97990.95,
+   "re": 101827.66,
+   "actual": 131859.47,
+   "capital": 67274.93
+  },
+  {
+   "entityId": "in-dept-consumer-affairs",
+   "name": "Department of Consumer Affairs",
+   "demandNos": [
+    14
+   ],
+   "be": 4497.37,
+   "re": 3418.02,
+   "actual": 7356.77,
+   "capital": 93.42
+  },
+  {
+   "entityId": "in-dept-food-and-public-distribution",
+   "name": "Department of Food and Public Distribution",
+   "demandNos": [
+    15
+   ],
+   "be": 285047.2,
+   "re": 285047.65,
+   "actual": 232151.92,
+   "capital": 50022.62
+  },
+  {
+   "entityId": "in-dept-defence",
+   "name": "Department of Defence (incl. civil establishment & capital outlay on defence services)",
+   "demandNos": [
+    19,
+    21
+   ],
+   "be": 283121.08,
+   "re": 246717.32,
+   "actual": 217082.14,
+   "capital": 231129.72
+  },
+  {
+   "entityId": "in-dept-military-affairs",
+   "name": "Department of Military Affairs (Defence Services Revenue)",
+   "demandNos": [
+    20
+   ],
+   "be": 373255.44,
+   "re": 359007.64,
+   "actual": 301120.54,
+   "capital": 0.0
+  },
+  {
+   "entityId": "in-dept-ex-servicemen-welfare",
+   "name": "Department of Ex-Servicemen Welfare (Defence Pensions)",
+   "demandNos": [
+    22
+   ],
+   "be": 179338.22,
+   "re": 169186.5,
+   "actual": 157653.65,
+   "capital": 0.0
+  },
+  {
+   "entityId": "in-dept-school-education-and-literacy",
+   "name": "Department of School Education and Literacy",
+   "demandNos": [
+    25
+   ],
+   "be": 150293.26,
+   "re": 129541.14,
+   "actual": 117984.44,
+   "capital": 0.85
+  },
+  {
+   "entityId": "in-dept-higher-education",
+   "name": "Department of Higher Education",
+   "demandNos": [
+    26
+   ],
+   "be": 78496.22,
+   "re": 70278.93,
+   "actual": 61755.93,
+   "capital": 2.68
+  },
+  {
+   "entityId": "in-dept-economic-affairs",
+   "name": "Department of Economic Affairs",
+   "demandNos": [
+    30
+   ],
+   "be": 131327.37,
+   "re": 140024.14,
+   "actual": 54946.01,
+   "capital": 126297.48
+  },
+  {
+   "entityId": "in-dept-expenditure",
+   "name": "Department of Expenditure",
+   "demandNos": [
+    31
+   ],
+   "be": 525.53,
+   "re": 510.87,
+   "actual": 487.07,
+   "capital": 74.13
+  },
+  {
+   "entityId": "in-dept-financial-services",
+   "name": "Department of Financial Services",
+   "demandNos": [
+    32
+   ],
+   "be": 3746.96,
+   "re": 3696.63,
+   "actual": 4031.3,
+   "capital": 59.97
+  },
+  {
+   "entityId": "in-dept-public-enterprises",
+   "name": "Department of Public Enterprises",
+   "demandNos": [
+    33
+   ],
+   "be": 29.6,
+   "re": 27.26,
+   "actual": 22.02,
+   "capital": 0.66
+  },
+  {
+   "entityId": "in-dept-investment-and-public-asset-management",
+   "name": "Department of Investment and Public Asset Management (DIPAM)",
+   "demandNos": [
+    34
+   ],
+   "be": 55.92,
+   "re": 33.71,
+   "actual": 45.61,
+   "capital": 1.67
+  },
+  {
+   "entityId": "in-dept-revenue",
+   "name": "Department of Revenue (incl. Direct Taxes/CBDT and Indirect Taxes/CBIC demands)",
+   "demandNos": [
+    35,
+    36,
+    37
+   ],
+   "be": 46110.52,
+   "re": 75271.52,
+   "actual": 210181.56,
+   "capital": 7190.16
+  },
+  {
+   "entityId": "in-dept-pension-and-pensioners-welfare",
+   "name": "Department of Pension and Pensioners' Welfare (Pensions demand)",
+   "demandNos": [
+    41
+   ],
+   "be": 101500.0,
+   "re": 94756.0,
+   "actual": 93361.15,
+   "capital": 0.0
+  },
+  {
+   "entityId": "in-dept-fisheries",
+   "name": "Department of Fisheries",
+   "demandNos": [
+    43
+   ],
+   "be": 2761.8,
+   "re": 1732.95,
+   "actual": 1127.92,
+   "capital": 29.53
+  },
+  {
+   "entityId": "in-dept-animal-husbandry-and-dairying",
+   "name": "Department of Animal Husbandry and Dairying",
+   "demandNos": [
+    44
+   ],
+   "be": 6363.46,
+   "re": 5482.83,
+   "actual": 3649.25,
+   "capital": 447.51
+  },
+  {
+   "entityId": "in-dept-health-and-family-welfare",
+   "name": "Department of Health and Family Welfare",
+   "demandNos": [
+    46
+   ],
+   "be": 140763.55,
+   "re": 126647.79,
+   "actual": 106122.84,
+   "capital": 2928.3
+  },
+  {
+   "entityId": "in-dept-health-research",
+   "name": "Department of Health Research",
+   "demandNos": [
+    47
+   ],
+   "be": 4821.21,
+   "re": 3927.64,
+   "actual": 3383.93,
+   "capital": 1.81
+  },
+  {
+   "entityId": "in-dept-water-resources-river-development-and-ganga-rejuvenation",
+   "name": "Department of Water Resources, River Development and Ganga Rejuvenation",
+   "demandNos": [
+    62
+   ],
+   "be": 26657.98,
+   "re": 24239.55,
+   "actual": 26611.6,
+   "capital": 475.66
+  },
+  {
+   "entityId": "in-dept-drinking-water-and-sanitation",
+   "name": "Department of Drinking Water and Sanitation",
+   "demandNos": [
+    63
+   ],
+   "be": 74894.86,
+   "re": 23031.08,
+   "actual": 26258.66,
+   "capital": 1.2
+  },
+  {
+   "entityId": "in-dept-rural-development",
+   "name": "Department of Rural Development",
+   "demandNos": [
+    87
+   ],
+   "be": 240768.81,
+   "re": 285995.61,
+   "actual": 270048.83,
+   "capital": 4.63
+  },
+  {
+   "entityId": "in-dept-land-resources",
+   "name": "Department of Land Resources",
+   "demandNos": [
+    88
+   ],
+   "be": 5136.33,
+   "re": 3245.04,
+   "actual": 3722.27,
+   "capital": 1.0
+  },
+  {
+   "entityId": "in-dept-science-and-technology",
+   "name": "Department of Science and Technology",
+   "demandNos": [
+    89
+   ],
+   "be": 28049.32,
+   "re": 11921.58,
+   "actual": 5122.35,
+   "capital": 20085.38
+  },
+  {
+   "entityId": "in-dept-biotechnology",
+   "name": "Department of Biotechnology",
+   "demandNos": [
+    90
+   ],
+   "be": 3446.0,
+   "re": 2830.45,
+   "actual": 1998.0,
+   "capital": 0.0
+  },
+  {
+   "entityId": "in-dept-scientific-and-industrial-research",
+   "name": "Department of Scientific and Industrial Research (CSIR)",
+   "demandNos": [
+    91
+   ],
+   "be": 6765.62,
+   "re": 6433.16,
+   "actual": 6270.94,
+   "capital": 5.33
+  },
+  {
+   "entityId": "in-dept-social-justice-and-empowerment",
+   "name": "Department of Social Justice and Empowerment",
+   "demandNos": [
+    93
+   ],
+   "be": 14427.59,
+   "re": 11922.43,
+   "actual": 10409.0,
+   "capital": 9.57
+  },
+  {
+   "entityId": "in-dept-empowerment-of-persons-with-disabilities",
+   "name": "Department of Empowerment of Persons with Disabilities",
+   "demandNos": [
+    94
+   ],
+   "be": 1669.72,
+   "re": 1291.6,
+   "actual": 1112.61,
+   "capital": 1.37
+  },
+  {
+   "entityId": "in-dept-space",
+   "name": "Department of Space",
+   "demandNos": [
+    95
+   ],
+   "be": 13705.63,
+   "re": 12448.6,
+   "actual": 11518.65,
+   "capital": 6375.92
+  }
+ ],
+ "schemes": [
+  {
+   "name": "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)",
+   "entityId": "in-min-consumer-affairs-food-and-public-distribution",
+   "be": 227429.0,
+   "re": 227753.65,
+   "demandNo": 15,
+   "kind": "central_sector"
+  },
+  {
+   "name": "National Highways Authority of India",
+   "entityId": "in-min-road-transport-and-highways",
+   "be": 187293.16,
+   "re": 170266.0,
+   "demandNo": 86,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Road Works",
+   "entityId": "in-min-road-transport-and-highways",
+   "be": 121998.61,
+   "re": 116337.14,
+   "demandNo": 86,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Urea Subsidy",
+   "entityId": "in-min-chemicals-and-fertilizers",
+   "be": 116805.0,
+   "re": 126475.4,
+   "demandNo": 6,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Viksit Bharat-Guarantee for Rozgar and Ajeevika Mission (Gramin)-VB-G RAM G Scheme",
+   "entityId": "in-min-rural-development",
+   "be": 95692.31,
+   "re": 0.0,
+   "demandNo": 87,
+   "kind": "centrally_sponsored"
+  },
+  {
+   "name": "Other Equipments",
+   "entityId": "in-min-defence",
+   "be": 82217.82,
+   "re": 50760.27,
+   "demandNo": 21,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Jal Jeevan Mission (JJM) / National Rural Drinking Water Mission",
+   "entityId": "in-min-jal-shakti",
+   "be": 67670.0,
+   "re": 17000.0,
+   "demandNo": 63,
+   "kind": "centrally_sponsored"
+  },
+  {
+   "name": "Aircraft and Aero Engines",
+   "entityId": "in-min-defence",
+   "be": 63733.94,
+   "re": 72780.15,
+   "demandNo": 21,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Pradhan Mantri Kisan Samman Nidhi (PM-Kisan)",
+   "entityId": "in-min-agriculture-and-farmers-welfare",
+   "be": 63500.0,
+   "re": 63500.0,
+   "demandNo": 1,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Pradhan Mantri Awas Yojna (PMAY)- Rural",
+   "entityId": "in-min-rural-development",
+   "be": 54916.7,
+   "re": 32500.01,
+   "demandNo": 87,
+   "kind": "centrally_sponsored"
+  },
+  {
+   "name": "Nutrient Based Subsidy",
+   "entityId": "in-min-chemicals-and-fertilizers",
+   "be": 54000.0,
+   "re": 60000.0,
+   "demandNo": 6,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Rolling Stock",
+   "entityId": "in-min-railways",
+   "be": 52108.73,
+   "re": 50007.77,
+   "demandNo": 85,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Transfer to Railway Safety Fund",
+   "entityId": "in-min-railways",
+   "be": 45000.0,
+   "re": 45000.0,
+   "demandNo": 85,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Samagra Shiksha",
+   "entityId": "in-min-education",
+   "be": 42100.02,
+   "re": 38000.02,
+   "demandNo": 25,
+   "kind": "centrally_sponsored"
+  },
+  {
+   "name": "Leased assets - Payment of Capital Component",
+   "entityId": "in-min-railways",
+   "be": 39650.0,
+   "re": 28157.13,
+   "demandNo": 85,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Doubling",
+   "entityId": "in-min-railways",
+   "be": 37750.0,
+   "re": 29026.0,
+   "demandNo": 85,
+   "kind": "central_sector"
+  },
+  {
+   "name": "New Lines",
+   "entityId": "in-min-railways",
+   "be": 36721.55,
+   "re": 30631.5,
+   "demandNo": 85,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Flexible Pool for RCH & Health System Strengthening, National Health Programme and National Urban Health Mission",
+   "entityId": "in-min-health-and-family-welfare",
+   "be": 31820.0,
+   "re": 29867.26,
+   "demandNo": 46,
+   "kind": "centrally_sponsored"
+  },
+  {
+   "name": "Transfer to National Investment Fund",
+   "entityId": "in-min-railways",
+   "be": 31639.0,
+   "re": 10000.0,
+   "demandNo": 85,
+   "kind": "central_sector"
+  },
+  {
+   "name": "MGNREGA-Programme Component",
+   "entityId": "in-min-rural-development",
+   "be": 30000.0,
+   "re": 88000.0,
+   "demandNo": 87,
+   "kind": "centrally_sponsored"
+  },
+  {
+   "name": "Metro Projects",
+   "entityId": "in-min-housing-and-urban-affairs",
+   "be": 28740.0,
+   "re": 27450.0,
+   "demandNo": 60,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Naval Fleet",
+   "entityId": "in-min-defence",
+   "be": 25023.63,
+   "re": 21396.81,
+   "demandNo": 21,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Compensation to Service Providers for creation and augmentation of telecom infrastructure",
+   "entityId": "in-min-communications",
+   "be": 24000.0,
+   "re": 9650.0,
+   "demandNo": 13,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Saksham Anganwadi and POSHAN 2.0 (Umbrella ICDS - Anganwadi Services, Poshan Abhiyan, Scheme for Adolescent Girls)",
+   "entityId": "in-min-women-and-child-development",
+   "be": 23100.0,
+   "re": 20949.47,
+   "demandNo": 101,
+   "kind": "centrally_sponsored"
+  },
+  {
+   "name": "Track Renewals",
+   "entityId": "in-min-railways",
+   "be": 22853.0,
+   "re": 25166.45,
+   "demandNo": 85,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Modified Interest Subvention Scheme (MISS)",
+   "entityId": "in-min-agriculture-and-farmers-welfare",
+   "be": 22600.0,
+   "re": 22600.0,
+   "demandNo": 1,
+   "kind": "central_sector"
+  },
+  {
+   "name": "PM Surya Ghar Muft Bijli Yojana",
+   "entityId": "in-min-new-and-renewable-energy",
+   "be": 22000.0,
+   "re": 17000.0,
+   "demandNo": 71,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Pradhan Mantri Viksit Bharat Rozgar Yojana",
+   "entityId": "in-min-labour-and-employment",
+   "be": 20082.7,
+   "re": 0.0,
+   "demandNo": 64,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Research, Development and Innovation (RDI) scheme",
+   "entityId": "in-min-science-and-technology",
+   "be": 20000.0,
+   "re": 3000.0,
+   "demandNo": 89,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Deendayal Antyodaya Yojana-National Rural Livelihoods Mission (DAY-NRLM)",
+   "entityId": "in-min-rural-development",
+   "be": 19200.0,
+   "re": 16000.0,
+   "demandNo": 87,
+   "kind": "centrally_sponsored"
+  },
+  {
+   "name": "Pradhan Mantri Gram Sadak Yojna",
+   "entityId": "in-min-rural-development",
+   "be": 19000.0,
+   "re": 11000.0,
+   "demandNo": 87,
+   "kind": "centrally_sponsored"
+  },
+  {
+   "name": "PMAY-Urban",
+   "entityId": "in-min-housing-and-urban-affairs",
+   "be": 18625.05,
+   "re": 7500.0,
+   "demandNo": 60,
+   "kind": "centrally_sponsored"
+  },
+  {
+   "name": "Reform Linked Distribution Scheme",
+   "entityId": "in-min-power",
+   "be": 18000.0,
+   "re": 15671.0,
+   "demandNo": 79,
+   "kind": "central_sector"
+  },
+  {
+   "name": "One-time Grant to PSU OMCs for under recoveries in Domestic LPG",
+   "entityId": "in-min-petroleum-and-natural-gas",
+   "be": 17500.0,
+   "re": 12500.0,
+   "demandNo": 76,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Investment in PSU/JV/SPV etc.",
+   "entityId": "in-min-railways",
+   "be": 17251.0,
+   "re": 21598.4,
+   "demandNo": 85,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Research and Development",
+   "entityId": "in-min-defence",
+   "be": 17250.25,
+   "re": 15343.82,
+   "demandNo": 21,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Sovereign Green Fund",
+   "entityId": "in-min-railways",
+   "be": 15000.0,
+   "re": 15000.0,
+   "demandNo": 85,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Transfer to Central Road and Infrastructure Fund",
+   "entityId": "in-min-railways",
+   "be": 13000.0,
+   "re": 13000.0,
+   "demandNo": 85,
+   "kind": "central_sector"
+  },
+  {
+   "name": "Pradhan Mantri Poshan Shakti Nirman (PM POSHAN)",
+   "entityId": "in-min-education",
+   "be": 12750.0,
+   "re": 10600.0,
+   "demandNo": 25,
+   "kind": "centrally_sponsored"
+  },
+  {
+   "name": "Crop Insurance Scheme",
+   "entityId": "in-min-agriculture-and-farmers-welfare",
+   "be": 12200.0,
+   "re": 12267.0,
+   "demandNo": 1,
+   "kind": "central_sector"
+  }
+ ],
+ "stateTransfers": [
+  {
+   "stateId": "st-ap",
+   "stateName": "Andhra Pradesh",
+   "taxDevolution": 64362.16,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-ar",
+   "stateName": "Arunachal Pradesh",
+   "taxDevolution": 20665.48,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-as",
+   "stateName": "Assam",
+   "taxDevolution": 49725.37,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-br",
+   "stateName": "Bihar",
+   "taxDevolution": 151831.8,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-cg",
+   "stateName": "Chhattisgarh",
+   "taxDevolution": 50427.45,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-ga",
+   "stateName": "Goa",
+   "taxDevolution": 5570.83,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-gj",
+   "stateName": "Gujarat",
+   "taxDevolution": 57310.86,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-hp",
+   "stateName": "Himachal Pradesh",
+   "taxDevolution": 13949.97,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-hr",
+   "stateName": "Haryana",
+   "taxDevolution": 20772.32,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-jh",
+   "stateName": "Jharkhand",
+   "taxDevolution": 51236.37,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-ka",
+   "stateName": "Karnataka",
+   "taxDevolution": 63049.58,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-kl",
+   "stateName": "Kerala",
+   "taxDevolution": 36355.39,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-mh",
+   "stateName": "Maharashtra",
+   "taxDevolution": 98306.06,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-ml",
+   "stateName": "Meghalaya",
+   "taxDevolution": 9630.67,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-mn",
+   "stateName": "Manipur",
+   "taxDevolution": 9554.36,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-mp",
+   "stateName": "Madhya Pradesh",
+   "taxDevolution": 112133.93,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-mz",
+   "stateName": "Mizoram",
+   "taxDevolution": 8608.08,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-nl",
+   "stateName": "Nagaland",
+   "taxDevolution": 7341.28,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-od",
+   "stateName": "Odisha",
+   "taxDevolution": 67460.46,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-pb",
+   "stateName": "Punjab",
+   "taxDevolution": 30464.05,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-rj",
+   "stateName": "Rajasthan",
+   "taxDevolution": 90445.85,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-sk",
+   "stateName": "Sikkim",
+   "taxDevolution": 5112.95,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-tg",
+   "stateName": "Telangana",
+   "taxDevolution": 33180.78,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-tn",
+   "stateName": "Tamil Nadu",
+   "taxDevolution": 62530.65,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-tr",
+   "stateName": "Tripura",
+   "taxDevolution": 9783.28,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-uk",
+   "stateName": "Uttarakhand",
+   "taxDevolution": 17414.57,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-up",
+   "stateName": "Uttar Pradesh",
+   "taxDevolution": 268910.76,
+   "totalTransfers": null
+  },
+  {
+   "stateId": "st-wb",
+   "stateName": "West Bengal",
+   "taxDevolution": 110119.27,
+   "totalTransfers": null
+  }
+ ],
+ "sources": [
+  "https://www.indiabudget.gov.in/index.php (Union Budget 2026-2027 portal, Ministry of Finance, Govt of India; verified budget presented 1 Feb 2026 by FM Nirmala Sitharaman)",
+  "https://www.indiabudget.gov.in/doc/Budget_at_Glance/budget_at_a_glance.pdf (Budget at a Glance 2026-2027 - totals, deficits, transfer of resources to States/UTs)",
+  "https://www.indiabudget.gov.in/doc/Budget_Speech.pdf (Budget Speech 2026-2027, 1 Feb 2026)",
+  "https://www.indiabudget.gov.in/doc/eb/dgsum.pdf (Summary of Demands for Grants 2026-2027 - demand-wise Revenue/Capital/Total, Actuals 2024-25, BE & RE 2025-26, BE 2026-27)",
+  "https://www.indiabudget.gov.in/doc/eb/sumsbe.pdf (Ministry-wise Summary of Budget Provisions net of receipts/recoveries, cross-check)",
+  "https://www.indiabudget.gov.in/doc/eb/stat18.pdf (Expenditure Profile Statement 18 - Total Transfer of Resources to States and UTs with Legislature)",
+  "https://www.indiabudget.gov.in/doc/rec/ar.pdf (Receipt Budget - Abstract of Receipts 2026-2027, gross tax revenue break-up)",
+  "https://www.indiabudget.gov.in/doc/rec/annex4.pdf (Receipt Budget Annex-4 - Statement showing State-wise Distribution of Net Proceeds of Union Taxes and Duties for BE 2026-2027)",
+  "https://www.indiabudget.gov.in/doc/eb/stat4a.pdf (Expenditure Profile Statement 4A - Centrally Sponsored Schemes)",
+  "https://www.indiabudget.gov.in/doc/eb/stat4b.pdf (Expenditure Profile Statement 4B - Central Sector Schemes)",
+  "https://www.indiabudget.gov.in/doc/eb/stat7.pdf (Expenditure Profile Statement 7 - Subsidies)"
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 45,
+  "corrections": [
+   "lines: merged two entries for in-min-personnel-public-grievances-and-pensions (Demand 41 'Pensions' mislabeled as the ministry, and Demand 74 whose name field literally contained the string 'in-min-personnel-public-grievances-and-pensions' instead of the ministry name) into one ministry-level rollup, demandNos [41,74], be=104107.45 re=97281.07 actual=95870.58 capital=153.08 (consistent with the rollup pattern used for every other multi-demand ministry in this file, e.g. Ministry of Agriculture, Ministry of Defence). Verified against live-fetched indiabudget.gov.in/doc/eb/dgsum.pdf Demand 41 and Demand 74 totals; the pre-existing `departments` entry for in-dept-pension-and-pensioners-welfare (Demand 41) was already correct and unchanged.",
+   "totals.transfersToStates: corrected 2620769 -> 2543769. Verified live against indiabudget.gov.in/doc/Budget_at_Glance/budget_at_a_glance.pdf p.3, which states verbatim: 'Total resources being transferred to the States including the devolution of State's share, Grants/Loans and releases under Centrally Sponsored Schemes, etc. in BE 2026-27 is Rs 25,43,769 crore' (=2,543,769 cr). The prior value (2,620,769) was tax devolution (1,526,254.58, itself verified correct against rec/annex4.pdf) + the FULL Grand Total of eb/stat18.pdf (1,094,513.94), which also includes Section IV 'Transfer to Delhi, Puducherry and Jammu & Kashmir' (76,999.80 cr, ~= the 76,999.52 discrepancy) -- i.e. it wrongly included transfers to UTs-with-legislature in a field meant to represent transfers to States only. stat18.pdf Sections I+II+III (279110.01+129396.60+609007.53=1,017,514.14) + devolution (1,526,254.58) = 2,543,768.72 ~= 2,543,769, confirming the correct figure."
+  ],
+  "method": "Adversarial re-verification pass, 2026-09-25. This segment has no entities/positions/relations (office-holder re-verification from the brief template does not apply); verification instead re-derived 45 numeric facts and structural checks by curl-fetching indiabudget.gov.in source PDFs fresh (desktop Chrome UA) and parsing with pypdf, independent of the original agent's run: Budget_at_Glance/budget_at_a_glance.pdf (9 totals figures, 8 receipts figures, prior-year BE/RE, defence/subsidy major-items table, GDP note), eb/dgsum.pdf (9 ministry/department demand BE/RE/Actual figures: Agriculture x2, Atomic Energy, Defence x3, Home Affairs combined, Personnel demands 41 & 74), eb/stat18.pdf (states-vs-UTs transfer scope), rec/annex4.pdf (6 state-wise tax devolution figures + the 28-state total), plus indiabudget.gov.in/index.php (FM Nirmala Sitharaman presenting; Feb 2026 presentation). All 6 remaining source PDFs in `sources` confirmed reachable (HTTP 200). Also ran full structural checks: every entityId in lines/departments/schemes against MINISTRIES.md's canonical in-min-*/in-dept-* list (10 references to other segments' canonical IDs, e.g. in-cag/in-eci/in-supreme-court, are legitimate cross-segment references, not violations); duplicate-key scan across lines/departments/stateTransfers/schemes; stateTransfers coverage (28/28 states correctly present, 7 UTs correctly absent since UTs do not receive Finance Commission tax devolution); demand-number coverage 1-102 with no unintended overlaps."
+ }
+}

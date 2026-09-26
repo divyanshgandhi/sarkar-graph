@@ -1,0 +1,43 @@
+name: "Missing data"
+description: "Something is absent from the graph entirely — a seat, a body, a whole layer (e.g. a district head, a municipal corporation, a department)."
+title: "[missing] "
+labels: ["data", "missing-data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check `docs/DATA_COVERAGE.md` and `exports/gaps.csv` first — the gap you've spotted may already be
+        tracked there with a `gap_id` you can reference or pick up directly.
+  - type: input
+    id: gap_id
+    attributes:
+      label: "Existing gap_id (if any)"
+      description: "If this gap is already listed in exports/gaps.csv, paste its gap_id here (e.g. G01234). Leave blank if it isn't tracked yet."
+      placeholder: "G01234"
+  - type: textarea
+    id: what
+    attributes:
+      label: "What's missing"
+      description: "Be specific: which government, which body/seat/layer, and what exactly isn't there (e.g. \"no District Magistrate listed for any district in Kerala\")."
+    validations:
+      required: true
+  - type: input
+    id: government
+    attributes:
+      label: "Government"
+      description: "Union, or which State/UT."
+      placeholder: "Union / Maharashtra / ..."
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: "Where to find it (if you know)"
+      description: "A pointer to where this data lives officially, even if you haven't compiled it yourself — e.g. a state portal's org chart, a gazette notification, an official directory."
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: "Are you able to help fill this in yourself?"
+      options:
+        - label: "I'd like to try adding this data myself (see CONTRIBUTING.md for the workflow)."
+          required: false

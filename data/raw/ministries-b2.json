@@ -1,0 +1,2439 @@
+{
+ "segment": "ministries-b2",
+ "asOf": "2026-09-25",
+ "notes": "Gaps/low-confidence items remaining after 2026-09-25 adversarial re-verification pass (see verification.corrections for what was fixed): (1) Secretary (Defence Production) Sanjeev Kumar's exact start date still not found (confirmed current via official ddpmod.gov.in). (2) Engineer-in-Chief MES (Lt Gen Arvind Walia) and DG BRO (Lt Gen Harpal Singh) dates of assumption not found; both reconfirmed as current incumbents. (3) Seven Ordnance-Factory successor DPSUs: current CMD names found for AVNL only (A. N. Srivastava, IOFS, low confidence, no since-date); AWEIL, MIL, YIL, IOL, GIL, TCL CMDs still not found — left undefined rather than invented. (4) HSL (Hindustan Shipyard) current CMD still not confirmed — Wikipedia's infobox entry (Cdre Hemant Khatri) is marked '(retd.)' ambiguously and could not be confirmed as the sitting CMD. (5) Cantonment Boards count (58) is from 2024 reporting; the number is actively shrinking due to a 2024-2026 civil-administration handover to municipalities, so treat as approximate. (6) GOC-in-C since-dates for Northern, Western Command remain unconfirmed (names reconfirmed 2026-09-25); ARTRAC is now marked vacant (predecessor superannuated 2026-08-31, no successor confirmed — see verification.corrections). (7) FOC-in-C Southern Naval Command since-date (2025-11-01) is from a Wikipedia table that conflicts with the article's own prose (2023-12-31) — flagged medium confidence. Budget figures intentionally omitted — owned by the union-budget segment. Armed Forces Tribunal is owned by the judiciary segment and only referenced here by its canonical id (in-aft), not defined. Also noted but NOT added (out of brief scope for this segment): a distinct 'Secretary (Defence Finance)' post (currently Vishvajit Sahay per Wikipedia) exists in the Department of Defence finance division but was not requested in the segment brief and has not been independently source-checked; flagging for a future pass.",
+ "entities": [
+  {
+   "id": "in-min-defence",
+   "kind": "ministry",
+   "name": "Ministry of Defence",
+   "abbr": "MoD",
+   "aliases": [
+    "Raksha Mantralaya",
+    "MoD"
+   ],
+   "parentId": "in-union-government",
+   "description": "Union ministry responsible for the defence of India and its armed forces: the Army, Navy, Air Force, Coast Guard, and all defence production and research bodies. Works through five departments.",
+   "legalBasis": "Government of India (Allocation of Business) Rules, 1961",
+   "officialUrl": "https://mod.gov.in",
+   "established": "1947",
+   "hq": "South Block, New Delhi",
+   "headPositionId": "in-pos-minister-defence",
+   "adminHeadPositionId": "in-pos-secretary-defence",
+   "sources": [
+    "https://mod.gov.in/en"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-defence",
+   "kind": "department",
+   "name": "Department of Defence",
+   "abbr": "DoD",
+   "parentId": "in-min-defence",
+   "description": "The senior department of the Ministry of Defence; deals with policy for Defence and defence estates, cantonments, National Cadet Corps, Coast Guard and inter-service organisations, and coordinates the ministry as a whole.",
+   "officialUrl": "https://mod.gov.in",
+   "established": "1947",
+   "hq": "South Block, New Delhi",
+   "headPositionId": "in-pos-secretary-defence",
+   "sources": [
+    "https://mod.gov.in/en"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-military-affairs",
+   "kind": "department",
+   "name": "Department of Military Affairs",
+   "abbr": "DMA",
+   "parentId": "in-min-defence",
+   "description": "Created in 2020 to bring the Army, Navy and Air Force, and the Territorial Army under a single department; headed by the Chief of Defence Staff as ex-officio Secretary, and drives jointness/theaterisation and service-specific (non-capital) procurement.",
+   "officialUrl": "https://mod.gov.in/en/designation/department-military-affairs",
+   "established": "2019-12-24",
+   "hq": "South Block, New Delhi",
+   "headPositionId": "in-pos-cds",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Military_Affairs"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-defence-production",
+   "kind": "department",
+   "name": "Department of Defence Production",
+   "abbr": "DDP",
+   "parentId": "in-min-defence",
+   "description": "Handles indigenous production of defence equipment, oversight of the Defence Public Sector Undertakings (DPSUs) and Ordnance Factory successor companies, and defence exports/self-reliance (Atmanirbhar Bharat) policy.",
+   "officialUrl": "https://www.ddpmod.gov.in/en",
+   "established": "1962",
+   "hq": "South Block, New Delhi",
+   "headPositionId": "in-pos-secretary-defence-production",
+   "sources": [
+    "https://www.ddpmod.gov.in/en"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-defence-research-and-development",
+   "kind": "department",
+   "name": "Department of Defence Research and Development",
+   "abbr": "DDR&D",
+   "parentId": "in-min-defence",
+   "description": "Runs India's defence research and development through DRDO; its Secretary is ex-officio Chairman of DRDO.",
+   "officialUrl": "https://drdo.gov.in",
+   "established": "1958",
+   "hq": "DRDO Bhawan, New Delhi",
+   "headPositionId": "in-pos-secretary-ddrd-chairman-drdo",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Defence_Research_and_Development_Organisation"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dept-ex-servicemen-welfare",
+   "kind": "department",
+   "name": "Department of Ex-Servicemen Welfare",
+   "abbr": "DESW",
+   "parentId": "in-min-defence",
+   "description": "Deals with the welfare, resettlement and pension policy of ex-servicemen and their dependants, through bodies such as the Kendriya Sainik Board and the Directorate General of Resettlement.",
+   "officialUrl": "https://desw.gov.in",
+   "established": "2004",
+   "hq": "South Block, New Delhi",
+   "headPositionId": "in-pos-secretary-ex-servicemen-welfare",
+   "sources": [
+    "https://desw.gov.in"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-army",
+   "kind": "armed_force",
+   "name": "Indian Army",
+   "abbr": "IA",
+   "parentId": "in-dept-military-affairs",
+   "description": "India's land warfare service; the largest of the three armed forces, organised into seven operational/training Commands plus tri-service formations.",
+   "legalBasis": "Army Act, 1950",
+   "officialUrl": "https://indianarmy.nic.in",
+   "established": "1895-04-01 (current republic-era force since 1950-01-26)",
+   "hq": "Integrated Defence Staff HQ / Army HQ, New Delhi",
+   "headPositionId": "in-pos-coas",
+   "stats": {
+    "activePersonnel": 1248000,
+    "reservePersonnel": 900000
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Army"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-navy",
+   "kind": "armed_force",
+   "name": "Indian Navy",
+   "abbr": "IN",
+   "parentId": "in-dept-military-affairs",
+   "description": "India's maritime warfare service, responsible for the Arabian Sea, Bay of Bengal and wider Indian Ocean; organised into three Commands.",
+   "legalBasis": "Navy Act, 1957",
+   "officialUrl": "https://indiannavy.nic.in",
+   "established": "1612 (Bombay Marine); current form since 1950-01-26",
+   "hq": "Nausena Bhawan, New Delhi",
+   "headPositionId": "in-pos-cns",
+   "stats": {
+    "activePersonnel": 73869
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Navy"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iaf",
+   "kind": "armed_force",
+   "name": "Indian Air Force",
+   "abbr": "IAF",
+   "parentId": "in-dept-military-affairs",
+   "description": "India's aerial warfare service, organised into five operational and two functional (Training, Maintenance) Commands.",
+   "legalBasis": "Air Force Act, 1950",
+   "officialUrl": "https://indianairforce.nic.in",
+   "established": "1932-10-08 (as Royal Indian Air Force); current form since 1950-01-26",
+   "hq": "Vayu Sena Bhawan, New Delhi",
+   "headPositionId": "in-pos-cas",
+   "stats": {
+    "activePersonnel": 149000,
+    "reservePersonnel": 140000
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-hq-ids",
+   "kind": "attached_office",
+   "name": "Headquarters Integrated Defence Staff",
+   "abbr": "HQ IDS",
+   "parentId": "in-dept-military-affairs",
+   "description": "Tri-service planning and coordination staff supporting the Chief of Defence Staff/Chairman of the Chiefs of Staff Committee; runs joint doctrine, force development, intelligence and administration for tri-service commands and agencies.",
+   "officialUrl": "https://mod.gov.in",
+   "established": "2001",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Integrated_Defence_Staff"
+   ],
+   "confidence": "medium",
+   "headPositionId": "in-pos-cisc",
+   "sector": "executive"
+  },
+  {
+   "id": "in-andaman-nicobar-command",
+   "kind": "subordinate_office",
+   "name": "Andaman and Nicobar Command",
+   "abbr": "ANC",
+   "parentId": "in-hq-ids",
+   "description": "India's first tri-service unified command, guarding the Andaman & Nicobar Islands and the eastern approaches to the Malacca Strait.",
+   "officialUrl": "https://mod.gov.in",
+   "established": "2001",
+   "hq": "Port Blair",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Command"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-strategic-forces-command",
+   "kind": "subordinate_office",
+   "name": "Strategic Forces Command",
+   "abbr": "SFC",
+   "parentId": "in-hq-ids",
+   "description": "Tri-service command that manages and administers India's strategic (nuclear-capable) missile and air assets under the Nuclear Command Authority.",
+   "officialUrl": "https://mod.gov.in",
+   "established": "2003",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Strategic_Forces_Command"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-defence-cyber-agency",
+   "kind": "subordinate_office",
+   "name": "Defence Cyber Agency",
+   "abbr": "DCyA",
+   "parentId": "in-hq-ids",
+   "description": "Tri-service agency for military cyber-security and cyber-warfare, drawing officers from the Army, Navy and Air Force.",
+   "officialUrl": "https://mod.gov.in",
+   "established": "2019",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Integrated_Defence_Staff"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-defence-space-agency",
+   "kind": "subordinate_office",
+   "name": "Defence Space Agency",
+   "abbr": "DSA",
+   "parentId": "in-hq-ids",
+   "description": "Tri-service agency responsible for operating space-related military assets and coordinating with ISRO on defence space needs.",
+   "officialUrl": "https://mod.gov.in",
+   "established": "2019",
+   "hq": "Bengaluru",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Integrated_Defence_Staff"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-defence-intelligence-agency",
+   "kind": "intelligence_agency",
+   "name": "Defence Intelligence Agency",
+   "abbr": "DIA",
+   "parentId": "in-hq-ids",
+   "description": "India's primary military intelligence agency, coordinating intelligence for and from the three Services and tasking tri-service assets such as the Defence Image Processing and Analysis Centre.",
+   "officialUrl": "https://mod.gov.in",
+   "established": "2002",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Defence_Intelligence_Agency_(India)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-territorial-army",
+   "kind": "subordinate_office",
+   "name": "Territorial Army",
+   "abbr": "TA",
+   "parentId": "in-dept-military-affairs",
+   "description": "A volunteer reserve force that supports the regular Army, mostly with part-time citizen soldiers who retain civilian jobs.",
+   "legalBasis": "Territorial Army Act, 1948",
+   "officialUrl": "https://indianarmy.nic.in",
+   "established": "1949-10-09",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Territorial_Army_(India)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-army-northern-command",
+   "kind": "subordinate_office",
+   "name": "Northern Command",
+   "parentId": "in-army",
+   "description": "One of the Indian Army's operational/training commands, headquartered at Udhampur.",
+   "officialUrl": "https://indianarmy.nic.in",
+   "hq": "Udhampur, Jammu & Kashmir",
+   "headPositionId": "in-pos-goc-in-c-northern-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Command_(Indian_Army)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-army-western-command",
+   "kind": "subordinate_office",
+   "name": "Western Command",
+   "parentId": "in-army",
+   "description": "One of the Indian Army's operational/training commands, headquartered at Chandimandir.",
+   "officialUrl": "https://indianarmy.nic.in",
+   "hq": "Chandimandir, Haryana",
+   "headPositionId": "in-pos-goc-in-c-western-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Command_(Indian_Army)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-army-eastern-command",
+   "kind": "subordinate_office",
+   "name": "Eastern Command",
+   "parentId": "in-army",
+   "description": "One of the Indian Army's operational/training commands, headquartered at Kolkata.",
+   "officialUrl": "https://indianarmy.nic.in",
+   "hq": "Kolkata, West Bengal",
+   "headPositionId": "in-pos-goc-in-c-eastern-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Command_(Indian_Army)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-army-southern-command",
+   "kind": "subordinate_office",
+   "name": "Southern Command",
+   "parentId": "in-army",
+   "description": "One of the Indian Army's operational/training commands, headquartered at Pune.",
+   "officialUrl": "https://indianarmy.nic.in",
+   "hq": "Pune, Maharashtra",
+   "headPositionId": "in-pos-goc-in-c-southern-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Command_(Indian_Army)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-army-south-western-command",
+   "kind": "subordinate_office",
+   "name": "South Western Command",
+   "parentId": "in-army",
+   "description": "One of the Indian Army's operational/training commands, headquartered at Jaipur.",
+   "officialUrl": "https://indianarmy.nic.in",
+   "hq": "Jaipur, Rajasthan",
+   "headPositionId": "in-pos-goc-in-c-south-western-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Command_(Indian_Army)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-army-central-command",
+   "kind": "subordinate_office",
+   "name": "Central Command",
+   "parentId": "in-army",
+   "description": "One of the Indian Army's operational/training commands, headquartered at Lucknow.",
+   "officialUrl": "https://indianarmy.nic.in",
+   "hq": "Lucknow, Uttar Pradesh",
+   "headPositionId": "in-pos-goc-in-c-central-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Command_(Indian_Army)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-army-training-command",
+   "kind": "subordinate_office",
+   "name": "Army Training Command (ARTRAC)",
+   "parentId": "in-army",
+   "description": "One of the Indian Army's operational/training commands, headquartered at Shimla.",
+   "officialUrl": "https://indianarmy.nic.in",
+   "hq": "Shimla, Himachal Pradesh",
+   "headPositionId": "in-pos-goc-in-c-artrac",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Command_(Indian_Army)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-navy-western-naval-command",
+   "kind": "subordinate_office",
+   "name": "Western Naval Command",
+   "parentId": "in-navy",
+   "description": "One of the Indian Navy's three area commands, headquartered at Mumbai.",
+   "officialUrl": "https://indiannavy.nic.in",
+   "hq": "Mumbai, Maharashtra",
+   "headPositionId": "in-pos-foc-in-c-western-naval-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Navy"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-navy-eastern-naval-command",
+   "kind": "subordinate_office",
+   "name": "Eastern Naval Command",
+   "parentId": "in-navy",
+   "description": "One of the Indian Navy's three area commands, headquartered at Visakhapatnam.",
+   "officialUrl": "https://indiannavy.nic.in",
+   "hq": "Visakhapatnam, Andhra Pradesh",
+   "headPositionId": "in-pos-foc-in-c-eastern-naval-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Navy"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-navy-southern-naval-command",
+   "kind": "subordinate_office",
+   "name": "Southern Naval Command",
+   "parentId": "in-navy",
+   "description": "One of the Indian Navy's three area commands, headquartered at Kochi.",
+   "officialUrl": "https://indiannavy.nic.in",
+   "hq": "Kochi, Kerala",
+   "headPositionId": "in-pos-foc-in-c-southern-naval-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Navy"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iaf-western-air-command",
+   "kind": "subordinate_office",
+   "name": "Western Air Command",
+   "parentId": "in-iaf",
+   "description": "One of the Indian Air Force's operational/functional commands, headquartered at New Delhi.",
+   "officialUrl": "https://indianairforce.nic.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-aoc-in-c-western-air-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iaf-eastern-air-command",
+   "kind": "subordinate_office",
+   "name": "Eastern Air Command",
+   "parentId": "in-iaf",
+   "description": "One of the Indian Air Force's operational/functional commands, headquartered at Shillong.",
+   "officialUrl": "https://indianairforce.nic.in",
+   "hq": "Shillong, Meghalaya",
+   "headPositionId": "in-pos-aoc-in-c-eastern-air-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iaf-central-air-command",
+   "kind": "subordinate_office",
+   "name": "Central Air Command",
+   "parentId": "in-iaf",
+   "description": "One of the Indian Air Force's operational/functional commands, headquartered at Prayagraj.",
+   "officialUrl": "https://indianairforce.nic.in",
+   "hq": "Prayagraj, Uttar Pradesh",
+   "headPositionId": "in-pos-aoc-in-c-central-air-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iaf-southern-air-command",
+   "kind": "subordinate_office",
+   "name": "Southern Air Command",
+   "parentId": "in-iaf",
+   "description": "One of the Indian Air Force's operational/functional commands, headquartered at Thiruvananthapuram.",
+   "officialUrl": "https://indianairforce.nic.in",
+   "hq": "Thiruvananthapuram, Kerala",
+   "headPositionId": "in-pos-aoc-in-c-southern-air-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iaf-south-western-air-command",
+   "kind": "subordinate_office",
+   "name": "South Western Air Command",
+   "parentId": "in-iaf",
+   "description": "One of the Indian Air Force's operational/functional commands, headquartered at Gandhinagar.",
+   "officialUrl": "https://indianairforce.nic.in",
+   "hq": "Gandhinagar, Gujarat",
+   "headPositionId": "in-pos-aoc-in-c-south-western-air-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iaf-training-command",
+   "kind": "subordinate_office",
+   "name": "Training Command",
+   "parentId": "in-iaf",
+   "description": "One of the Indian Air Force's operational/functional commands, headquartered at Bengaluru.",
+   "officialUrl": "https://indianairforce.nic.in",
+   "hq": "Bengaluru, Karnataka",
+   "headPositionId": "in-pos-aoc-in-c-training-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iaf-maintenance-command",
+   "kind": "subordinate_office",
+   "name": "Maintenance Command",
+   "parentId": "in-iaf",
+   "description": "One of the Indian Air Force's operational/functional commands, headquartered at Nagpur.",
+   "officialUrl": "https://indianairforce.nic.in",
+   "hq": "Nagpur, Maharashtra",
+   "headPositionId": "in-pos-aoc-in-c-maintenance-command",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-coast-guard",
+   "kind": "armed_force",
+   "name": "Indian Coast Guard",
+   "abbr": "ICG",
+   "parentId": "in-dept-defence",
+   "description": "Multi-mission maritime force responsible for coastal and offshore security, search-and-rescue, marine environment protection and anti-smuggling in Indian waters; distinct from the Navy, under the Ministry of Defence.",
+   "legalBasis": "Coast Guard Act, 1978",
+   "officialUrl": "https://indiancoastguard.gov.in",
+   "established": "1978-08-18 (afloat from 1977-02-01)",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-coast-guard",
+   "stats": {
+    "ships": 182,
+    "aircraft": 78,
+    "asOf": "2024-11"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Coast_Guard"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bro",
+   "kind": "attached_office",
+   "name": "Border Roads Organisation",
+   "abbr": "BRO",
+   "parentId": "in-dept-defence",
+   "description": "Builds and maintains roads, bridges, airfields and other infrastructure in India's border regions, mostly through the General Reserve Engineer Force (GREF), for both military and civilian use.",
+   "officialUrl": "https://bro.gov.in",
+   "established": "1960-05-07",
+   "hq": "Seema Sadak Bhawan, New Delhi",
+   "headPositionId": "in-pos-dg-bro",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Border_Roads_Organisation"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dgde",
+   "kind": "attached_office",
+   "name": "Directorate General Defence Estates",
+   "abbr": "DGDE",
+   "parentId": "in-dept-defence",
+   "description": "Manages defence land and cantonments across India, and administers the network of Cantonment Boards.",
+   "officialUrl": "https://dgde.gov.in",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cantonment_board"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-cantonment-boards",
+   "kind": "local_government_tier",
+   "name": "Cantonment Boards",
+   "abbr": "CB",
+   "parentId": "in-dgde",
+   "description": "Aggregate of India's Defence-administered local self-government bodies for military garrison towns (cantonments); civic administration in many cantonments is being progressively handed over to neighbouring municipalities since 2024, shrinking the count.",
+   "legalBasis": "Cantonments Act, 2006 (earlier 1924)",
+   "seats": 58,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cantonment_board"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-drdo",
+   "kind": "attached_office",
+   "name": "Defence Research and Development Organisation",
+   "abbr": "DRDO",
+   "parentId": "in-dept-defence-research-and-development",
+   "description": "India's central defence R&D agency; designs and develops missiles, aircraft avionics, armaments, radars, electronic-warfare systems and other military technology through a network of laboratories organised into technology clusters.",
+   "officialUrl": "https://drdo.gov.in",
+   "established": "1958-01-01",
+   "hq": "DRDO Bhawan, New Delhi",
+   "headPositionId": "in-pos-secretary-ddrd-chairman-drdo",
+   "stats": {
+    "laboratories": 52,
+    "scientists": 5000,
+    "totalStaff": 30000
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Defence_Research_and_Development_Organisation"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-drdo-cluster-aero",
+   "kind": "attached_office",
+   "name": "Aeronautical Systems Cluster",
+   "abbr": "Aero",
+   "parentId": "in-drdo",
+   "description": "Unmanned air vehicles, aero gas-turbine engines and airborne surveillance systems.",
+   "officialUrl": "https://drdo.gov.in/drdo/en/organisation/technology-cluster",
+   "sources": [
+    "https://drdo.gov.in/drdo/en/organisation/technology-cluster"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-drdo-cluster-ace",
+   "kind": "attached_office",
+   "name": "Armament & Combat Engineering Systems Cluster",
+   "abbr": "ACE",
+   "parentId": "in-drdo",
+   "description": "Armaments, explosives and land-combat/engineering vehicles.",
+   "officialUrl": "https://drdo.gov.in/drdo/en/organisation/technology-cluster",
+   "sources": [
+    "https://drdo.gov.in/drdo/en/organisation/technology-cluster"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-drdo-cluster-ecs",
+   "kind": "attached_office",
+   "name": "Electronics & Communication Systems Cluster",
+   "abbr": "ECS",
+   "parentId": "in-drdo",
+   "description": "Electronic, electro-optical and laser-based sensors, radars and communication systems.",
+   "officialUrl": "https://drdo.gov.in/drdo/en/organisation/technology-cluster",
+   "sources": [
+    "https://drdo.gov.in/drdo/en/organisation/technology-cluster"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-drdo-cluster-mcc",
+   "kind": "attached_office",
+   "name": "Micro Electronic Devices, Computational Systems & Cyber Security Cluster",
+   "abbr": "MCC",
+   "parentId": "in-drdo",
+   "description": "Microelectronics, computational systems and cyber-security.",
+   "officialUrl": "https://drdo.gov.in/drdo/en/organisation/technology-cluster",
+   "sources": [
+    "https://drdo.gov.in/drdo/en/organisation/technology-cluster"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-drdo-cluster-mss",
+   "kind": "attached_office",
+   "name": "Missiles & Strategic Systems Cluster",
+   "abbr": "MSS",
+   "parentId": "in-drdo",
+   "description": "Missile and strategic-systems development (e.g. Agni, Akash, BrahMos-linked work).",
+   "officialUrl": "https://drdo.gov.in/drdo/en/organisation/technology-cluster",
+   "sources": [
+    "https://drdo.gov.in/drdo/en/organisation/technology-cluster"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-drdo-cluster-nsm",
+   "kind": "attached_office",
+   "name": "Naval Systems & Materials Cluster",
+   "abbr": "NS&M",
+   "parentId": "in-drdo",
+   "description": "Six naval laboratories including NPOL and NSTL, plus materials research.",
+   "officialUrl": "https://drdo.gov.in/drdo/en/organisation/technology-cluster",
+   "sources": [
+    "https://drdo.gov.in/drdo/en/organisation/technology-cluster"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-drdo-cluster-sss",
+   "kind": "attached_office",
+   "name": "Soldier Support Systems Cluster",
+   "abbr": "SSS",
+   "parentId": "in-drdo",
+   "description": "Soldier equipment, life sciences and high-altitude/extreme-environment support.",
+   "officialUrl": "https://drdo.gov.in/drdo/en/organisation/technology-cluster",
+   "sources": [
+    "https://drdo.gov.in/drdo/en/organisation/technology-cluster"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-mes",
+   "kind": "attached_office",
+   "name": "Military Engineer Services",
+   "abbr": "MES",
+   "parentId": "in-dept-defence",
+   "description": "Inter-service engineering organisation that builds and maintains infrastructure (barracks, airfields, hospitals, roads, dockyards) for the Army, Navy and Air Force, combining military Engineer officers with civilian engineering cadres.",
+   "officialUrl": "https://mes.gov.in",
+   "established": "1923-09-26",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-engineer-in-chief-mes",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Military_Engineer_Services_(India)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-afms",
+   "kind": "attached_office",
+   "name": "Armed Forces Medical Services",
+   "abbr": "AFMS",
+   "parentId": "in-dept-defence",
+   "description": "Tri-service medical corps providing healthcare to the Army, Navy and Air Force and their families, including battlefield medicine and military hospitals.",
+   "officialUrl": "https://mod.gov.in",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dgafms",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Armed_Forces_Medical_Services"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-afmc",
+   "kind": "subordinate_office",
+   "name": "Armed Forces Medical College",
+   "abbr": "AFMC",
+   "parentId": "in-afms",
+   "description": "Premier tri-service medical training institution, established 1948, that trains doctors and nurses for the Armed Forces Medical Services.",
+   "officialUrl": "https://afmc.nic.in",
+   "established": "1948-05",
+   "hq": "Pune, Maharashtra",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Armed_Forces_Medical_Services"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dad",
+   "kind": "attached_office",
+   "name": "Defence Accounts Department",
+   "abbr": "DAD",
+   "parentId": "in-dept-defence",
+   "description": "Financial-advice, payment and accounting organisation for the Ministry of Defence and armed forces, headed by the Controller General of Defence Accounts (CGDA), who is the Principal Accounting Officer for defence expenditure.",
+   "officialUrl": "https://cgda.nic.in",
+   "established": "1951-10-01",
+   "hq": "Ulan Batar Road, Delhi Cantonment",
+   "headPositionId": "in-pos-cgda",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Controller_General_of_Defence_Accounts"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ncc",
+   "kind": "statutory_body",
+   "name": "National Cadet Corps",
+   "abbr": "NCC",
+   "parentId": "in-dept-military-affairs",
+   "description": "Tri-service youth voluntary organisation that gives school and college students basic military training and a sense of discipline and national service; not a reserve of the armed forces.",
+   "legalBasis": "National Cadet Corps Act, 1948",
+   "officialUrl": "https://www.indiancc.mkcl.org",
+   "established": "1948-07-16",
+   "hq": "New Delhi",
+   "headPositionId": "in-pos-dg-ncc",
+   "stats": {
+    "directorates": 17,
+    "groupHQs": 96
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Cadet_Corps_(India)"
+   ],
+   "confidence": "high",
+   "sector": "executive"
+  },
+  {
+   "id": "in-sainik-schools-society",
+   "kind": "autonomous_body",
+   "name": "Sainik Schools Society",
+   "abbr": "SSS",
+   "parentId": "in-dept-military-affairs",
+   "description": "Registered society under the Ministry of Defence that runs the Sainik Schools network (co-run with state governments), preparing students for entry to the National Defence Academy and other officer-training institutes.",
+   "officialUrl": "https://sainikschool.ncog.gov.in",
+   "established": "1961",
+   "hq": "New Delhi",
+   "stats": {
+    "sainikSchools": 33,
+    "asOf": "2021"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sainik_School"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-nda",
+   "kind": "subordinate_office",
+   "name": "National Defence Academy",
+   "abbr": "NDA",
+   "parentId": "in-dept-military-affairs",
+   "description": "Tri-service pre-commissioning training academy for cadets of the Army, Navy and Air Force before they proceed to their respective service academies.",
+   "officialUrl": "https://www.nda.nic.in",
+   "established": "1954-12-07",
+   "hq": "Khadakwasla, Pune",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Defence_Academy_(India)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ima",
+   "kind": "subordinate_office",
+   "name": "Indian Military Academy",
+   "abbr": "IMA",
+   "parentId": "in-army",
+   "description": "Premier officer-training academy of the Indian Army, commissioning permanent-commission officers into the Army.",
+   "officialUrl": "https://www.ima.gov.in",
+   "established": "1932-10-01",
+   "hq": "Dehradun, Uttarakhand",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Military_Academy"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dssc",
+   "kind": "subordinate_office",
+   "name": "Defence Services Staff College",
+   "abbr": "DSSC",
+   "parentId": "in-dept-military-affairs",
+   "description": "Tri-service staff college that trains mid-career officers of the Army, Navy, Air Force and friendly foreign militaries in staff duties and joint operations.",
+   "officialUrl": "https://dssc.gov.in",
+   "established": "1905 (present form 1947)",
+   "hq": "Wellington, Tamil Nadu",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Defence_Services_Staff_College"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-national-defence-college",
+   "kind": "subordinate_office",
+   "name": "National Defence College",
+   "abbr": "NDC",
+   "parentId": "in-dept-military-affairs",
+   "description": "India's highest seat of strategic studies, training senior defence-service and civil-service officers (and friendly foreign officers) for top-level strategic leadership roles.",
+   "officialUrl": "https://ndc.gov.in",
+   "established": "1960-04-27",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Defence_College_(India)"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-idsa",
+   "kind": "autonomous_body",
+   "name": "Manohar Parrikar Institute for Defence Studies and Analyses",
+   "abbr": "MP-IDSA",
+   "parentId": "in-dept-defence",
+   "description": "Government-funded autonomous think tank conducting research on strategic, defence and security affairs and training civilian, military and police officers.",
+   "officialUrl": "https://www.idsa.in",
+   "established": "1965-11-11",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manohar_Parrikar_Institute_for_Defence_Studies_and_Analyses"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-ksb",
+   "kind": "attached_office",
+   "name": "Kendriya Sainik Board",
+   "abbr": "KSB",
+   "parentId": "in-dept-ex-servicemen-welfare",
+   "description": "Apex central body (with State/District Sainik Boards under it) for welfare and resettlement of ex-servicemen, war widows and their dependants.",
+   "officialUrl": "https://www.ksb.gov.in",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Ex-servicemen_Welfare"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-dgr",
+   "kind": "attached_office",
+   "name": "Directorate General of Resettlement",
+   "abbr": "DGR",
+   "parentId": "in-dept-ex-servicemen-welfare",
+   "description": "Runs resettlement, re-employment training and placement programmes for retiring and retired defence personnel.",
+   "officialUrl": "https://www.dgrindia.gov.in",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Ex-servicemen_Welfare"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-echs",
+   "kind": "attached_office",
+   "name": "Ex-Servicemen Contributory Health Scheme Organisation",
+   "abbr": "ECHS",
+   "parentId": "in-dept-ex-servicemen-welfare",
+   "description": "Runs the contributory health scheme providing medical care to ex-servicemen pensioners and their dependants through polyclinics and empanelled hospitals.",
+   "officialUrl": "https://echs.gov.in",
+   "established": "2003",
+   "hq": "New Delhi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Department_of_Ex-servicemen_Welfare"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-hal",
+   "kind": "cpse",
+   "name": "Hindustan Aeronautics Limited",
+   "abbr": "HAL",
+   "parentId": "in-dept-defence-production",
+   "description": "Aerospace and defence PSU designing, manufacturing and overhauling combat aircraft, helicopters, UAVs, engines and avionics; Maharatna status (Oct 2024).",
+   "officialUrl": "https://hal-india.co.in",
+   "established": "1940-12-23",
+   "hq": "Bengaluru, Karnataka",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hindustan_Aeronautics_Limited"
+   ],
+   "confidence": "medium",
+   "adminHeadPositionId": "in-pos-cmd-hal",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bel",
+   "kind": "cpse",
+   "name": "Bharat Electronics Limited",
+   "abbr": "BEL",
+   "parentId": "in-dept-defence-production",
+   "description": "Defence electronics and aerospace PSU making radars, communication systems, missile electronics, naval systems and avionics; Navratna status.",
+   "officialUrl": "https://www.bel-india.in",
+   "established": "1954",
+   "hq": "Bengaluru, Karnataka",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bharat_Electronics_Limited"
+   ],
+   "confidence": "medium",
+   "adminHeadPositionId": "in-pos-cmd-bel",
+   "sector": "executive"
+  },
+  {
+   "id": "in-bdl",
+   "kind": "cpse",
+   "name": "Bharat Dynamics Limited",
+   "abbr": "BDL",
+   "parentId": "in-dept-defence-production",
+   "description": "Prime production agency for India's guided-missile programmes (Akash, Prithvi variants, anti-tank guided missiles, torpedoes) built in partnership with DRDO.",
+   "officialUrl": "https://bdl-india.in",
+   "established": "1970",
+   "hq": "Hyderabad, Telangana",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bharat_Dynamics_Limited"
+   ],
+   "confidence": "medium",
+   "adminHeadPositionId": "in-pos-cmd-bdl",
+   "sector": "executive"
+  },
+  {
+   "id": "in-beml",
+   "kind": "cpse",
+   "name": "BEML Limited",
+   "abbr": "BEML",
+   "parentId": "in-dept-defence-production",
+   "description": "Heavy-equipment PSU (earthmoving, rail & metro, defence & aerospace); historically a defence PSU, now administratively a multi-ministry enterprise with close defence-production ties. Government holding ~54%.",
+   "officialUrl": "https://www.bemlindia.in",
+   "established": "1964-05",
+   "hq": "Bengaluru, Karnataka",
+   "sources": [
+    "https://en.wikipedia.org/wiki/BEML_Limited"
+   ],
+   "confidence": "medium",
+   "adminHeadPositionId": "in-pos-cmd-beml",
+   "sector": "executive"
+  },
+  {
+   "id": "in-mdl",
+   "kind": "cpse",
+   "name": "Mazagon Dock Shipbuilders Limited",
+   "abbr": "MDL",
+   "parentId": "in-dept-defence-production",
+   "description": "India's premier warship and submarine builder for the Indian Navy (destroyers, frigates, corvettes, diesel-electric submarines); Navratna status.",
+   "officialUrl": "https://www.mazagondock.in",
+   "established": "1934",
+   "hq": "Mumbai, Maharashtra",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mazagon_Dock_Shipbuilders_Limited"
+   ],
+   "confidence": "medium",
+   "adminHeadPositionId": "in-pos-cmd-mdl",
+   "sector": "executive"
+  },
+  {
+   "id": "in-grse",
+   "kind": "cpse",
+   "name": "Garden Reach Shipbuilders & Engineers Limited",
+   "abbr": "GRSE",
+   "parentId": "in-dept-defence-production",
+   "description": "Kolkata-based defence shipyard building and repairing naval and commercial vessels; granted Navratna status June 2026.",
+   "officialUrl": "https://www.grse.in",
+   "established": "1960-04-22",
+   "hq": "Kolkata, West Bengal",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Garden_Reach_Shipbuilders_&_Engineers_Limited"
+   ],
+   "confidence": "medium",
+   "adminHeadPositionId": "in-pos-cmd-grse",
+   "sector": "executive"
+  },
+  {
+   "id": "in-gsl",
+   "kind": "cpse",
+   "name": "Goa Shipyard Limited",
+   "abbr": "GSL",
+   "parentId": "in-dept-defence-production",
+   "description": "Builds frigates, offshore patrol vessels and patrol boats for the Navy and Coast Guard; capacity limited to vessels under 15,000 DWT.",
+   "officialUrl": "https://www.goashipyard.in",
+   "established": "1957",
+   "hq": "Vasco da Gama, Goa",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Shipyard_Limited"
+   ],
+   "confidence": "medium",
+   "adminHeadPositionId": "in-pos-cmd-gsl",
+   "sector": "executive"
+  },
+  {
+   "id": "in-hsl",
+   "kind": "cpse",
+   "name": "Hindustan Shipyard Limited",
+   "abbr": "HSL",
+   "parentId": "in-dept-defence-production",
+   "description": "India's second-largest shipyard; ship building/repair and submarine construction and refits; transferred from the Ministry of Shipping to the Ministry of Defence in 2010.",
+   "officialUrl": "https://hslvizag.in",
+   "established": "1941-06-21",
+   "hq": "Visakhapatnam, Andhra Pradesh",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hindustan_Shipyard_Limited"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-midhani",
+   "kind": "cpse",
+   "name": "Mishra Dhatu Nigam Limited",
+   "abbr": "MIDHANI",
+   "parentId": "in-dept-defence-production",
+   "description": "Manufactures superalloys, titanium and special steels for aerospace, defence and atomic-energy use, including materials for Chandrayaan-3 and Gaganyaan.",
+   "officialUrl": "https://www.midhani.com",
+   "established": "1973",
+   "hq": "Hyderabad, Telangana",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mishra_Dhatu_Nigam_Limited"
+   ],
+   "confidence": "medium",
+   "adminHeadPositionId": "in-pos-cmd-midhani",
+   "sector": "executive"
+  },
+  {
+   "id": "in-aweil",
+   "kind": "cpse",
+   "name": "Advanced Weapons and Equipment India Limited",
+   "abbr": "AWEIL",
+   "parentId": "in-dept-defence-production",
+   "description": "Ordnance Factory Board successor company (est. 2021) making field guns, gun carriages, small arms and artillery; runs the former Field Gun, Gun Carriage, Gun & Shell, Rifle and Small Arms Factories.",
+   "officialUrl": "https://aweil.aweil.co.in",
+   "established": "2021-10-15",
+   "hq": "Kanpur, Uttar Pradesh",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Advanced_Weapons_and_Equipment_India_Limited"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-avnl",
+   "kind": "cpse",
+   "name": "Armoured Vehicles Nigam Limited",
+   "abbr": "AVNL",
+   "parentId": "in-dept-defence-production",
+   "description": "Ordnance Factory Board successor company making tanks, armoured vehicles and tank engines; runs the former Heavy Vehicles Factory, Engine Factory Avadi, Vehicle Factory Jabalpur and Ordnance Factory Medak.",
+   "officialUrl": "https://avnl.co.in",
+   "established": "2021-10-15",
+   "hq": "Chennai, Tamil Nadu",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Armoured_Vehicles_Nigam_Limited"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-mil",
+   "kind": "cpse",
+   "name": "Munitions India Limited",
+   "abbr": "MIL",
+   "parentId": "in-dept-defence-production",
+   "description": "Ordnance Factory Board successor company making ammunition, explosives, propellants and cordite; runs the former Ammunition Factory Khadki and Cordite Factory Aruvankadu among others.",
+   "officialUrl": "https://mil.co.in",
+   "established": "2021-10-15",
+   "hq": "Pune, Maharashtra",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Munitions_India_Limited"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-yil",
+   "kind": "cpse",
+   "name": "Yantra India Limited",
+   "abbr": "YIL",
+   "parentId": "in-dept-defence-production",
+   "description": "Ordnance Factory Board successor company making machine tools, metal/steel components and foundry items; runs former Metal & Steel Factory and Grey Iron Foundry sites.",
+   "officialUrl": "https://yil.co.in",
+   "established": "2021-10-15",
+   "hq": "Kolkata, West Bengal",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yantra_India_Limited"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-iol",
+   "kind": "cpse",
+   "name": "India Optel Limited",
+   "abbr": "IOL",
+   "parentId": "in-dept-defence-production",
+   "description": "Ordnance Factory Board successor company making optoelectronic devices and precision optical instruments; runs the former Opto Electronics Factory Dehradun.",
+   "officialUrl": "https://indiaoptel.co.in",
+   "established": "2021-10-15",
+   "hq": "Dehradun, Uttarakhand",
+   "sources": [
+    "https://en.wikipedia.org/wiki/India_Optel_Limited"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-gil",
+   "kind": "cpse",
+   "name": "Gliders India Limited",
+   "abbr": "GIL",
+   "parentId": "in-dept-defence-production",
+   "description": "Smallest Ordnance Factory Board successor company, making parachutes and related aircrew support equipment, from the former Ordnance Parachute Factory Kanpur.",
+   "officialUrl": "https://glidersindia.co.in",
+   "established": "2021-10-15",
+   "hq": "Kanpur, Uttar Pradesh",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gliders_India_Limited"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  },
+  {
+   "id": "in-tcl",
+   "kind": "cpse",
+   "name": "Troop Comforts Limited",
+   "abbr": "TCL",
+   "parentId": "in-dept-defence-production",
+   "description": "Ordnance Factory Board successor company making military uniforms, clothing and combat gear; runs the former Ordnance Clothing and Ordnance Equipment Factories.",
+   "officialUrl": "https://tcl.co.in",
+   "established": "2021-10-15",
+   "hq": "Kanpur, Uttar Pradesh",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Troop_Comforts_Limited"
+   ],
+   "confidence": "medium",
+   "sector": "executive"
+  }
+ ],
+ "positions": [
+  {
+   "id": "in-pos-secretary-defence",
+   "title": "Defence Secretary",
+   "orgId": "in-dept-defence",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rajesh Kumar Singh",
+    "since": "2024-11-01",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rajesh_Kumar_Singh_(civil_servant)",
+    "notes": "1989-batch IAS officer, Kerala cadre; 40th Defence Secretary; tenure reported to run to 2026-10-31 or until further orders."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Defence_Secretary_(India)",
+    "https://en.wikipedia.org/wiki/Rajesh_Kumar_Singh_(civil_servant)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-defence-production",
+   "title": "Secretary, Department of Defence Production",
+   "orgId": "in-dept-defence-production",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sanjeev Kumar",
+    "since": null,
+    "notes": "Confirmed in office as Secretary (Defence Production) as of September 2026 via the Department of Defence Production's own website; exact start date not found."
+   },
+   "sources": [
+    "https://www.ddpmod.gov.in/en",
+    "https://www.ddpmod.gov.in/en/ministry/our-team"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-ddrd-chairman-drdo",
+   "title": "Secretary, Department of Defence R&D and Chairman, DRDO",
+   "orgId": "in-dept-defence-research-and-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Rajesh Kumar Singh",
+    "since": "2026-05-31",
+    "acting": true,
+    "notes": "Post fell vacant when Dr Samir V. Kamat retired 2026-05-31; Defence Secretary Rajesh Kumar Singh holds it as additional charge. DRDO re-advertised the Chairman post in Aug-Sep 2026 (applications closed 2026-09-16); no regular appointee confirmed as of 2026-09-25."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Samir_V._Kamat",
+    "https://www.indiastrategic.in/defence-secretary-rajesh-kumar-singh-given-additional-charge-as-drdo-chief-following-samir-kamats-exit/",
+    "https://mod.gov.in/dod/whos-who"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-secretary-ex-servicemen-welfare",
+   "title": "Secretary, Department of Ex-Servicemen Welfare",
+   "orgId": "in-dept-ex-servicemen-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Sukriti Likhi",
+    "since": null,
+    "notes": "Full name/style: Smt. Sukriti Likhi. Assumption date not published on official page; prior holder listed in the 2022 PIB release (Vijoy Kumar Singh) has since been superseded."
+   },
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1860557&reg=48&lang=2",
+    "https://desw.gov.in/en/about-us/whos_who"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cds",
+   "title": "Chief of Defence Staff",
+   "orgId": "in-dept-military-affairs",
+   "rank": "chief_of_staff",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "General N. S. Raja Subramani",
+    "since": "2026-05-31",
+    "wikipedia": "https://en.wikipedia.org/wiki/N._S._Raja_Subramani",
+    "notes": "3rd CDS; also ex-officio Secretary, Department of Military Affairs, and Permanent Chairman, Chiefs of Staff Committee. Formerly Vice Chief of Army Staff."
+   },
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2259242&reg=3&lang=1",
+    "https://en.wikipedia.org/wiki/N._S._Raja_Subramani",
+    "https://en.wikipedia.org/wiki/Chief_of_Defence_Staff_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cisc",
+   "title": "Chief of Integrated Defence Staff to the Chairman, Chiefs of Staff Committee",
+   "orgId": "in-hq-ids",
+   "rank": "chief_of_staff",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cds",
+   "holder": {
+    "name": "Air Marshal Tejinder Singh",
+    "since": "2026-07-01",
+    "acting": null,
+    "notes": "Wikipedia's Integrated Defence Staff article lists him as CISC, but other 2026 sources also place an officer of the same name as AOC-in-C of South Western Air Command / Training Command in the same period — the two claims conflict and could not be reconciled from available sources. Treat holder as unverified."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Integrated_Defence_Staff",
+    "https://en.wikipedia.org/wiki/Chief_of_Integrated_Defence_Staff"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-coas",
+   "title": "Chief of the Army Staff",
+   "orgId": "in-army",
+   "rank": "chief_of_staff",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "General Dhiraj Seth",
+    "since": "2026-06-30",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dhiraj_Seth",
+    "notes": "31st Chief of the Army Staff."
+   },
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2279326&reg=3&lang=1",
+    "https://en.wikipedia.org/wiki/Dhiraj_Seth",
+    "https://en.wikipedia.org/wiki/Chief_of_the_Army_Staff_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-vcoas",
+   "title": "Vice Chief of the Army Staff",
+   "orgId": "in-army",
+   "rank": "chief_of_staff",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Lieutenant General Sandeep Jain",
+    "since": "2026-07-01",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sandeep_Jain"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sandeep_Jain",
+    "https://en.wikipedia.org/wiki/Indian_Army",
+    "https://en.wikipedia.org/wiki/Vice_Chief_of_the_Army_Staff"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cns",
+   "title": "Chief of the Naval Staff",
+   "orgId": "in-navy",
+   "rank": "chief_of_staff",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Admiral Krishna Swaminathan",
+    "since": "2026-05-31",
+    "wikipedia": "https://en.wikipedia.org/wiki/Krishna_Swaminathan",
+    "notes": "27th Chief of the Naval Staff."
+   },
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2267227&reg=3&lang=1",
+    "https://en.wikipedia.org/wiki/Krishna_Swaminathan",
+    "https://en.wikipedia.org/wiki/Chief_of_the_Naval_Staff_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-vcns",
+   "title": "Vice Chief of the Naval Staff",
+   "orgId": "in-navy",
+   "rank": "chief_of_staff",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Vice Admiral Ajay Kochhar",
+    "since": "2026-05-29",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ajay_Kochhar"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ajay_Kochhar",
+    "https://en.wikipedia.org/wiki/Indian_Navy",
+    "https://en.wikipedia.org/wiki/Vice_Chief_of_Naval_Staff_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cas",
+   "title": "Chief of the Air Staff",
+   "orgId": "in-iaf",
+   "rank": "chief_of_staff",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "onAdviceOf": "in-pos-prime-minister",
+   "holder": {
+    "name": "Air Chief Marshal Amar Preet Singh",
+    "since": "2024-09-30",
+    "notes": "26th Chief of the Air Staff."
+   },
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2060477&reg=48&lang=2",
+    "https://en.wikipedia.org/wiki/Chief_of_the_Air_Staff_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-vcas",
+   "title": "Vice Chief of the Air Staff",
+   "orgId": "in-iaf",
+   "rank": "chief_of_staff",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Air Marshal Ashutosh Dixit",
+    "since": "2026-07-01",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ashutosh_Dixit"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ashutosh_Dixit",
+    "https://en.wikipedia.org/wiki/Indian_Air_Force",
+    "https://en.wikipedia.org/wiki/Vice_Chief_of_the_Air_Staff_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-coast-guard",
+   "title": "Director General, Indian Coast Guard",
+   "orgId": "in-coast-guard",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Paramesh Sivamani",
+    "since": "2024-10-14",
+    "notes": "26th Director General, Indian Coast Guard; rank equivalent to Vice Admiral."
+   },
+   "sources": [
+    "https://indiancoastguard.gov.in/cghq/director-general-indian-coast-guard",
+    "https://en.wikipedia.org/wiki/Indian_Coast_Guard"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-bro",
+   "title": "Director General Border Roads",
+   "orgId": "in-bro",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Lieutenant General Harpal Singh",
+    "since": null,
+    "notes": "29th DG Border Roads per press reports; exact assumption-of-charge date not confirmed from an available 2025-2026 dated source."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Border_Roads_Organisation"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-cgda",
+   "title": "Controller General of Defence Accounts",
+   "orgId": "in-dad",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-defence",
+   "holder": {
+    "name": "Alka Nangia Arora",
+    "since": "2026-08-01",
+    "notes": "IDAS officer; succeeded A. N. Das (in office from 2026-05-08)."
+   },
+   "sources": [
+    "https://cgda.nic.in/",
+    "https://en.wikipedia.org/wiki/Controller_General_of_Defence_Accounts"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dg-ncc",
+   "title": "Director General, National Cadet Corps",
+   "orgId": "in-ncc",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cds",
+   "holder": {
+    "name": "Lieutenant General Virendra Vats",
+    "since": "2025-08-14"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Cadet_Corps_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-dgafms",
+   "title": "Director General, Armed Forces Medical Services",
+   "orgId": "in-afms",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Air Marshal Sandeep Thareja",
+    "since": "2026-09-01"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Armed_Forces_Medical_Services"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-engineer-in-chief-mes",
+   "title": "Engineer-in-Chief, Military Engineer Services",
+   "orgId": "in-mes",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Lieutenant General Arvind Walia",
+    "since": null,
+    "notes": "Named as Engineer-in-Chief by Wikipedia's MES (India) article; exact assumption-of-charge date not found."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Military_Engineer_Services_(India)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "in-pos-goc-in-c-northern-command",
+   "title": "General Officer Commanding-in-Chief",
+   "orgId": "in-army-northern-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-coas",
+   "holder": {
+    "name": "Lieutenant General Pratik Sharma",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Command_(Indian_Army)",
+    "https://en.wikipedia.org/wiki/List_of_serving_generals_of_the_Indian_Army"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-goc-in-c-western-command",
+   "title": "General Officer Commanding-in-Chief",
+   "orgId": "in-army-western-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-coas",
+   "holder": {
+    "name": "Lieutenant General Pushpendra Pal Singh",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Command_(Indian_Army)",
+    "https://en.wikipedia.org/wiki/List_of_serving_generals_of_the_Indian_Army"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-goc-in-c-eastern-command",
+   "title": "General Officer Commanding-in-Chief",
+   "orgId": "in-army-eastern-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-coas",
+   "holder": {
+    "name": "Lieutenant General V. M. Bhuvana Krishnan",
+    "since": "2026-04-01"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/V._M._Bhuvana_Krishnan",
+    "https://en.wikipedia.org/wiki/List_of_serving_generals_of_the_Indian_Army"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-goc-in-c-southern-command",
+   "title": "General Officer Commanding-in-Chief",
+   "orgId": "in-army-southern-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-coas",
+   "holder": {
+    "name": "Lieutenant General Rajesh Pushkar",
+    "since": "2026-07-01"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Southern_Command_(India)",
+    "https://en.wikipedia.org/wiki/List_of_serving_generals_of_the_Indian_Army"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-goc-in-c-south-western-command",
+   "title": "General Officer Commanding-in-Chief",
+   "orgId": "in-army-south-western-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-coas",
+   "holder": {
+    "name": "Lieutenant General Mohit Malhotra",
+    "since": "2026-07-01"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/South_Western_Command_(India)",
+    "https://en.wikipedia.org/wiki/List_of_serving_generals_of_the_Indian_Army"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-goc-in-c-central-command",
+   "title": "General Officer Commanding-in-Chief",
+   "orgId": "in-army-central-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-coas",
+   "holder": {
+    "name": "Lieutenant General Anindya Sengupta",
+    "since": "2024-07-01"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_Command_(India)",
+    "https://en.wikipedia.org/wiki/List_of_serving_generals_of_the_Indian_Army"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-goc-in-c-artrac",
+   "title": "General Officer Commanding-in-Chief",
+   "orgId": "in-army-training-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-coas",
+   "holder": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Army_Training_Command",
+    "https://en.wikipedia.org/wiki/Devendra_Sharma_(general)"
+   ],
+   "confidence": "low",
+   "vacant": true
+  },
+  {
+   "id": "in-pos-foc-in-c-western-naval-command",
+   "title": "Flag Officer Commanding-in-Chief",
+   "orgId": "in-navy-western-naval-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cns",
+   "holder": {
+    "name": "Vice Admiral Sanjay Vatsayan",
+    "since": "2026-05-30"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sanjay_Vatsayan",
+    "https://en.wikipedia.org/wiki/Western_Naval_Command"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-foc-in-c-eastern-naval-command",
+   "title": "Flag Officer Commanding-in-Chief",
+   "orgId": "in-navy-eastern-naval-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cns",
+   "holder": {
+    "name": "Vice Admiral Sanjay Bhalla",
+    "since": "2025-10-31"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Eastern_Naval_Command"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-foc-in-c-southern-naval-command",
+   "title": "Flag Officer Commanding-in-Chief",
+   "orgId": "in-navy-southern-naval-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cns",
+   "holder": {
+    "name": "Vice Admiral Sameer Saxena",
+    "since": "2025-11-01",
+    "notes": "Source has an internal inconsistency (prose says \"took over 31 December 2023\"; commanders table says \"1 November 2025\") — used the table date as more likely current/maintained; flagged medium confidence pending a primary-source check."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Southern_Naval_Command"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "in-pos-aoc-in-c-eastern-air-command",
+   "title": "Air Officer Commanding-in-Chief",
+   "orgId": "in-iaf-eastern-air-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cas",
+   "holder": {
+    "name": "Air Marshal Inderpal Singh Walia",
+    "since": "2026-02-01"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force",
+    "https://en.wikipedia.org/wiki/Eastern_Air_Command_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-aoc-in-c-western-air-command",
+   "title": "Air Officer Commanding-in-Chief",
+   "orgId": "in-iaf-western-air-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cas",
+   "holder": {
+    "name": "Air Marshal George Thomas",
+    "since": "2026-05-01",
+    "notes": "Source states this officer 'served until 30 April 2026'; no successor identified from available sources, so current holder as of 2026-09-25 is unconfirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force",
+    "https://en.wikipedia.org/wiki/Western_Air_Command_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-aoc-in-c-southern-air-command",
+   "title": "Air Officer Commanding-in-Chief",
+   "orgId": "in-iaf-southern-air-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cas",
+   "holder": {
+    "name": "Air Marshal Jasvir Singh Mann",
+    "since": "2026-07-01",
+    "notes": "Reported tenure (1 Jun 2025 - 30 Jun 2026) appears to have already ended before the as-of date; successor not confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force",
+    "https://en.wikipedia.org/wiki/Southern_Air_Command_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-aoc-in-c-central-air-command",
+   "title": "Air Officer Commanding-in-Chief",
+   "orgId": "in-iaf-central-air-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cas",
+   "holder": {
+    "name": "Air Marshal Tarun Chaudhry",
+    "since": "2026-06-01",
+    "notes": "Reported tenure (1 May 2025 - 31 May 2026) appears to have already ended before the as-of date; successor not confirmed."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force",
+    "https://en.wikipedia.org/wiki/Central_Air_Command_(India)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-aoc-in-c-south-western-air-command",
+   "title": "Air Officer Commanding-in-Chief",
+   "orgId": "in-iaf-south-western-air-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cas",
+   "holder": {
+    "name": "Air Marshal P. V. Shivanand",
+    "since": "2026-07-01",
+    "notes": "Reported tenure (1 Jan - 30 Jun 2026) appears to have already ended before the as-of date; successor not confirmed. Same name also linked to the CISC post and to Training Command in other snippets — likely reflects a sequence of postings that could not be fully reconciled."
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force",
+    "https://en.wikipedia.org/wiki/South_Western_Air_Command"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-aoc-in-c-training-command",
+   "title": "Air Officer Commanding-in-Chief",
+   "orgId": "in-iaf-training-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cas",
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force",
+    "https://en.wikipedia.org/wiki/Training_Command_(India)"
+   ],
+   "confidence": "medium",
+   "holder": {
+    "name": "Air Marshal Seethepalli Shrinivas",
+    "since": "2026-01-01",
+    "acting": false
+   }
+  },
+  {
+   "id": "in-pos-aoc-in-c-maintenance-command",
+   "title": "Air Officer Commanding-in-Chief",
+   "orgId": "in-iaf-maintenance-command",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-cas",
+   "holder": {
+    "name": "Air Marshal Yalla Umesh",
+    "since": "2025-12-01"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indian_Air_Force",
+    "https://en.wikipedia.org/wiki/Maintenance_Command"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cmd-hal",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-hal",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-defence-production",
+   "holder": {
+    "name": "D. K. Sunil",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hindustan_Aeronautics_Limited"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cmd-bel",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-bel",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-defence-production",
+   "holder": {
+    "name": "Manoj Jain",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bharat_Electronics"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cmd-bdl",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-bdl",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-defence-production",
+   "holder": {
+    "name": "Commodore A. Madhavarao (Retd)",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bharat_Dynamics"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cmd-beml",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-beml",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-defence-production",
+   "holder": {
+    "name": "Shantanu Roy",
+    "since": "2023-08-01"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/BEML_Limited"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cmd-mdl",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-mdl",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-defence-production",
+   "holder": {
+    "name": "Captain Jagmohan (Retd)",
+    "since": "2025-04-21"
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mazagon_Dock_Shipbuilders"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cmd-grse",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-grse",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-defence-production",
+   "holder": {
+    "name": "Commodore P. R. Hari (Retd)",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Garden_Reach_Shipbuilders_%26_Engineers"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cmd-gsl",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-gsl",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-defence-production",
+   "holder": {
+    "name": "Brajesh Kumar Upadhyay",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_Shipyard",
+    "https://en.wikipedia.org/wiki/Goa_Shipyard_Limited"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cmd-midhani",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-midhani",
+   "rank": "head_of_agency",
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-secretary-defence-production",
+   "holder": {
+    "name": "Dr S. V. S. Narayana Murty",
+    "since": null
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mishra_Dhatu_Nigam"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "in-pos-cmd-avnl",
+   "title": "Chairman and Managing Director",
+   "orgId": "in-avnl",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": null,
+   "holder": {
+    "name": "A. N. Srivastava, IOFS",
+    "since": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Armoured_Vehicles_Nigam_Limited"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "relations": [
+  {
+   "from": "in-pos-president",
+   "to": "in-army",
+   "type": "ex_officio",
+   "basis": "Constitution of India, Article 53(2) — Supreme Command of the Armed Forces vests in the President",
+   "source": "https://en.wikipedia.org/wiki/President_of_India"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-navy",
+   "type": "ex_officio",
+   "basis": "Constitution of India, Article 53(2)"
+  },
+  {
+   "from": "in-pos-president",
+   "to": "in-iaf",
+   "type": "ex_officio",
+   "basis": "Constitution of India, Article 53(2)"
+  },
+  {
+   "from": "in-pos-prime-minister",
+   "to": "in-pos-secretary-defence",
+   "type": "advises_appointment",
+   "basis": "Article 75/77 — civil service appointments made on advice of the Council of Ministers"
+  },
+  {
+   "from": "in-pos-secretary-defence",
+   "to": "in-pos-secretary-ddrd-chairman-drdo",
+   "type": "ex_officio",
+   "basis": "Additional charge assigned by the Appointments Committee of the Cabinet, 2026-05-31"
+  },
+  {
+   "from": "in-dept-military-affairs",
+   "to": "in-army",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-military-affairs",
+   "to": "in-navy",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-military-affairs",
+   "to": "in-iaf",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence",
+   "to": "in-coast-guard",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence",
+   "to": "in-bro",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence",
+   "to": "in-mes",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence",
+   "to": "in-afms",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence",
+   "to": "in-dad",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence",
+   "to": "in-dgde",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-hal",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-bel",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-bdl",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-beml",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-mdl",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-grse",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-gsl",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-hsl",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-midhani",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-aweil",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-avnl",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-mil",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-yil",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-iol",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-gil",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-production",
+   "to": "in-tcl",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence-research-and-development",
+   "to": "in-drdo",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-cds",
+   "to": "in-hq-ids",
+   "type": "oversees",
+   "basis": "CDS is Permanent Chairman, Chiefs of Staff Committee, which HQ IDS supports"
+  },
+  {
+   "from": "in-hq-ids",
+   "to": "in-andaman-nicobar-command",
+   "type": "oversees"
+  },
+  {
+   "from": "in-hq-ids",
+   "to": "in-strategic-forces-command",
+   "type": "oversees"
+  },
+  {
+   "from": "in-hq-ids",
+   "to": "in-defence-cyber-agency",
+   "type": "oversees"
+  },
+  {
+   "from": "in-hq-ids",
+   "to": "in-defence-space-agency",
+   "type": "oversees"
+  },
+  {
+   "from": "in-hq-ids",
+   "to": "in-defence-intelligence-agency",
+   "type": "oversees"
+  },
+  {
+   "from": "in-army",
+   "to": "in-army-northern-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-army",
+   "to": "in-army-western-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-army",
+   "to": "in-army-eastern-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-army",
+   "to": "in-army-southern-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-army",
+   "to": "in-army-south-western-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-army",
+   "to": "in-army-central-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-army",
+   "to": "in-army-training-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-army",
+   "to": "in-ima",
+   "type": "administers"
+  },
+  {
+   "from": "in-army",
+   "to": "in-territorial-army",
+   "type": "administers"
+  },
+  {
+   "from": "in-navy",
+   "to": "in-navy-western-naval-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-navy",
+   "to": "in-navy-eastern-naval-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-navy",
+   "to": "in-navy-southern-naval-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-iaf",
+   "to": "in-iaf-western-air-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-iaf",
+   "to": "in-iaf-eastern-air-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-iaf",
+   "to": "in-iaf-central-air-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-iaf",
+   "to": "in-iaf-southern-air-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-iaf",
+   "to": "in-iaf-south-western-air-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-iaf",
+   "to": "in-iaf-training-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-iaf",
+   "to": "in-iaf-maintenance-command",
+   "type": "administers"
+  },
+  {
+   "from": "in-drdo",
+   "to": "in-drdo-cluster-aero",
+   "type": "administers"
+  },
+  {
+   "from": "in-drdo",
+   "to": "in-drdo-cluster-ace",
+   "type": "administers"
+  },
+  {
+   "from": "in-drdo",
+   "to": "in-drdo-cluster-ecs",
+   "type": "administers"
+  },
+  {
+   "from": "in-drdo",
+   "to": "in-drdo-cluster-mcc",
+   "type": "administers"
+  },
+  {
+   "from": "in-drdo",
+   "to": "in-drdo-cluster-mss",
+   "type": "administers"
+  },
+  {
+   "from": "in-drdo",
+   "to": "in-drdo-cluster-nsm",
+   "type": "administers"
+  },
+  {
+   "from": "in-drdo",
+   "to": "in-drdo-cluster-sss",
+   "type": "administers"
+  },
+  {
+   "from": "in-afms",
+   "to": "in-afmc",
+   "type": "administers"
+  },
+  {
+   "from": "in-dgde",
+   "to": "in-cantonment-boards",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-military-affairs",
+   "to": "in-ncc",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-military-affairs",
+   "to": "in-sainik-schools-society",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-military-affairs",
+   "to": "in-nda",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-military-affairs",
+   "to": "in-dssc",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-military-affairs",
+   "to": "in-national-defence-college",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-defence",
+   "to": "in-idsa",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-ex-servicemen-welfare",
+   "to": "in-ksb",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-ex-servicemen-welfare",
+   "to": "in-dgr",
+   "type": "administers"
+  },
+  {
+   "from": "in-dept-ex-servicemen-welfare",
+   "to": "in-echs",
+   "type": "administers"
+  },
+  {
+   "from": "in-pos-coas",
+   "to": "in-army",
+   "type": "ex_officio"
+  },
+  {
+   "from": "in-pos-cns",
+   "to": "in-navy",
+   "type": "ex_officio"
+  },
+  {
+   "from": "in-pos-cas",
+   "to": "in-iaf",
+   "type": "ex_officio"
+  },
+  {
+   "from": "in-army",
+   "to": "in-aft",
+   "type": "accountable_to",
+   "basis": "Armed Forces Tribunal Act, 2007 — service disputes/appeals",
+   "source": "https://en.wikipedia.org/wiki/Armed_Forces_Tribunal"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 43,
+  "corrections": [
+   "Secretary (Defence Production) Sanjeev Kumar: reconfirmed via official ddpmod.gov.in 'Our Team' page fetched 2026-09-25 ('SECRETARY(DP) Shri Sanjeev Kumar, IAS'); confidence medium->high.",
+   "Secretary DDR&D/Chairman DRDO Rajesh Kumar Singh (additional charge): reconfirmed via official mod.gov.in Department of Defence 'Who's Who' page fetched 2026-09-25 ('रक्षा सचिव, सचिव डीडीआर एवं डी और अध्यक्ष डीआरडीओ (अतिरिक्त प्रभार)' = Defence Secretary, Secretary DDR&D and Chairman DRDO (additional charge) — Shri Rajesh Kumar Singh IAS); confidence medium->high. Prior 'vacant, no appointee named' framing in notes was outdated — post is held on additional charge, not vacant.",
+   "Secretary (ESW): CORRECTED — file held stale name 'Vijoy Kumar Singh' (since 2022-09-19, sourced only to a 2022 PIB release) but the official desw.gov.in 'Who's Who' page (fetched 2026-09-25) lists the current Secretary (ESW) as Smt. Sukriti Likhi. Since-date not published; confidence low->medium.",
+   "CISC Air Marshal Tejinder Singh: added since-date 2026-07-01 (Wikipedia, current revision). This resolves the original file's flagged 'conflicting simultaneous post' issue — he was AOC-in-C South Western Air Command 2026-01-01 to 2026-06-30, then moved to CISC on 2026-07-01 (sequential, not simultaneous). Confidence low->high.",
+   "DG Coast Guard Paramesh Sivamani: since-date corrected from 2024-10-15 to 2024-10-14 (Wikipedia: appointed 14 October 2024).",
+   "GOC-in-C Army Training Command (ARTRAC): CORRECTED — Lieutenant General Devendra Sharma superannuated (retired) on 2026-08-31 per his Wikipedia page, i.e. before the 2026-09-25 as-of date. No successor could be confirmed from available sources (one Wikipedia list page misattributed the post to Lt Gen Dinesh Singh Rana, who is actually C-in-C Strategic Forces Command since 2025-10-01 — that claim was checked and rejected as an error in the source, not used). Marked vacant/unconfirmed rather than invented; confidence low.",
+   "FOC-in-C Western Naval Command VAdm Sanjay Vatsayan: since-date CORRECTED from 2025-05-30 to 2026-05-30 (Wikipedia: 'Takes Over ... on 30 May 2026' — original file had the year wrong, 2025 instead of 2026; the date is consistent with the wider May-2026 flag-rank reshuffle alongside CNS/VCNS/CDS changes).",
+   "FOC-in-C Southern Naval Command VAdm Sameer Saxena: since-date added (2025-11-01, medium confidence — source has an internal date inconsistency, noted).",
+   "AOC-in-C Western Air Command: CORRECTED — file had stale holder 'Air Marshal Jeetendra Mishra' (no since-date); Jeetendra Mishra's tenure actually ran 2025-01-01 to 2026-04-30. Current holder per Wikipedia is Air Marshal George Thomas since 2026-05-01.",
+   "AOC-in-C Southern Air Command: CORRECTED — file had stale holder 'Air Marshal Manish Khanna' (since 2025-06-01). Current holder per Wikipedia is Air Marshal Jasvir Singh Mann since 2026-07-01.",
+   "AOC-in-C Central Air Command: CORRECTED — file had stale holder 'Air Marshal Balakrishnan Manikantan' (since 2025-05-01). Current holder per Wikipedia is Air Marshal Tarun Chaudhry since 2026-06-01.",
+   "AOC-in-C South Western Air Command: CORRECTED — file had 'Air Marshal Tejinder Singh' (since 2026-01-01), but he moved on to become CISC on 2026-07-01 (see CISC correction above). Successor per Wikipedia is Air Marshal P. V. Shivanand since 2026-07-01.",
+   "AOC-in-C Training Command: CORRECTED — file incorrectly marked this post vacant. Current holder per Wikipedia is Air Marshal Seethepalli Shrinivas since 2026-01-01.",
+   "ADDED missing position in-pos-cmd-avnl (CMD, Armoured Vehicles Nigam Limited) — A. N. Srivastava, IOFS, per Wikipedia (single source, no since-date found; confidence low). Original file defined the AVNL entity but had no position/holder for it."
+  ]
+ }
+}

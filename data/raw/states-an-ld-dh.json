@@ -1,0 +1,501 @@
+{
+ "segment": "states-an-ld-dh",
+ "asOf": "2026-09-25",
+ "notes": "All three UTs in this segment (Andaman & Nicobar Islands, Lakshadweep, Dadra and Nagar Haveli and Daman and Diu) are Union Territories WITHOUT a legislature (Article 239) — no Chief Minister, Council of Ministers, Legislative Assembly, Speaker, Leader of Opposition, State Election Commission, State Public Service Commission, Lokayukta or State Human Rights Commission exists for any of them, so those SCHEMA fields/entities are intentionally omitted rather than invented. Districts (st-an-dist-*, st-ld-dist-*, st-dh-dist-*) and local-government tiers (Gram/Zila Panchayats, Urban Local Bodies) are owned and already defined by the local-lgd segment — referenced here, not redefined. No separate municipal_corporation entities were created: none of the three UTs has a body of that scale; their urban areas are covered by the local-lgd 'Urban Local Bodies' aggregate entities. The High Courts serving these UTs (Calcutta HC for A&N, Kerala HC for Lakshadweep, Bombay HC for DNH&DD) are owned by the judiciary segment and referenced only by canonical ID, not redefined. Known gaps: (1) exact swearing-in date for A&N Lieutenant Governor Prof. (Dr.) Dinesh Sharma could not be confirmed — the official portal's dedicated LG profile page (andamannicobar.gov.in/lieutenant-governor/) returned a redirect/error and this session's WebSearch budget was exhausted (shared across parallel research agents) before a news source could be checked; the holder identity itself is corroborated by two independent sources (official portal + Wikipedia). (2) A&N DGP Ravinder Yadav, IPS is sourced only from Wikipedia's current infobox for Andaman and Nicobar Police, with no confirmable appointment date. (3) The current DGP/SP of Dadra and Nagar Haveli and Daman and Diu Police could not be identified from the official portal (ddd.gov.in) or reachable secondary sources; the position is recorded vacant:false with holder omitted and confidence low rather than invented. (4) Population/area figures are 2011 Census (per SCHEMA); no newer official headcount exists for these UTs as of the as-of date.",
+ "entities": [
+  {
+   "id": "st-an",
+   "kind": "union_territory",
+   "sector": "federal",
+   "name": "Andaman and Nicobar Islands",
+   "abbr": "A&N",
+   "aliases": [
+    "A&N Islands",
+    "ANI",
+    "Andamans"
+   ],
+   "parentId": "in-states-and-uts",
+   "capital": "Port Blair (renamed Sri Vijaya Puram, September 2024)",
+   "hq": "Port Blair (Sri Vijaya Puram)",
+   "description": "An archipelago Union Territory in the Bay of Bengal comprising the Andaman and Nicobar island groups; administered directly by the Union through a Lieutenant Governor, with no state legislature. Home to protected tribal groups (Sentinelese, Jarawa, Onge, Shompen) under the Andaman and Nicobar Islands (Protection of Aboriginal Tribes) Regulation.",
+   "legalBasis": "Article 239 of the Constitution (UT without legislature); Andaman and Nicobar Islands (Panchayats) Regulation, 1994 for local bodies",
+   "officialUrl": "https://andamannicobar.gov.in",
+   "established": "1956 (as a Union Territory)",
+   "stats": {
+    "population2011": 380581,
+    "areaKm2": 8249,
+    "lokSabhaSeats": 1,
+    "rajyaSabhaSeats": 0,
+    "districts": 3,
+    "assemblySeats": 0
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands",
+    "https://andamannicobar.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Andaman and Nicobar Islands Administration",
+   "aliases": [
+    "A&N Administration",
+    "UT Administration of Andaman and Nicobar Islands"
+   ],
+   "parentId": "st-an",
+   "description": "The Union Territory administration of Andaman and Nicobar Islands, headed by a Lieutenant Governor appointed by the President; there is no elected Council of Ministers or Legislative Assembly. Day-to-day civil administration runs through the Chief Secretary and Secretariat departments, with district administration under three Deputy Commissioners.",
+   "headPositionId": "st-an-pos-lieutenant-governor",
+   "adminHeadPositionId": "st-an-pos-chief-secretary",
+   "officialUrl": "https://andamannicobar.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands",
+    "https://andamannicobar.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld",
+   "kind": "union_territory",
+   "sector": "federal",
+   "name": "Lakshadweep",
+   "aliases": [
+    "UT of Lakshadweep",
+    "Lakshadweep Islands"
+   ],
+   "parentId": "in-states-and-uts",
+   "capital": "Kavaratti",
+   "hq": "Kavaratti",
+   "description": "India's smallest Union Territory, a chain of coral atolls in the Arabian Sea off the Kerala coast; administered directly by the Union through an Administrator, with no state legislature. Almost entirely populated by Scheduled Tribes; its sole Lok Sabha seat is ST-reserved.",
+   "legalBasis": "Article 239 of the Constitution (UT without legislature)",
+   "officialUrl": "https://lakshadweep.gov.in",
+   "established": "1956 (as a Union Territory; formerly Laccadive, Minicoy and Amindivi Islands)",
+   "stats": {
+    "population2011": 64473,
+    "areaKm2": 32.62,
+    "lokSabhaSeats": 1,
+    "rajyaSabhaSeats": 0,
+    "districts": 1,
+    "assemblySeats": 0
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lakshadweep",
+    "https://lakshadweep.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Lakshadweep Administration",
+   "aliases": [
+    "UT Administration of Lakshadweep"
+   ],
+   "parentId": "st-ld",
+   "description": "The Union Territory administration of Lakshadweep, headed by an Administrator appointed by the President (held on additional charge alongside Dadra and Nagar Haveli and Daman and Diu since December 2020); there is no elected Council of Ministers or Legislative Assembly. The Administrator holds ex-officio charge as Inspector General of Police; day-to-day civil administration runs through an Advisor to the Administrator and the Collector-cum-District Magistrate.",
+   "headPositionId": "st-ld-pos-administrator",
+   "adminHeadPositionId": "st-ld-pos-chief-secretary",
+   "officialUrl": "https://lakshadweep.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lakshadweep",
+    "https://lakshadweep.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh",
+   "kind": "union_territory",
+   "sector": "federal",
+   "name": "Dadra and Nagar Haveli and Daman and Diu",
+   "abbr": "DNH&DD",
+   "aliases": [
+    "DNH and DD",
+    "DNHDD",
+    "Daman and Diu",
+    "Dadra and Nagar Haveli"
+   ],
+   "parentId": "in-states-and-uts",
+   "capital": "Daman",
+   "hq": "Daman",
+   "description": "A Union Territory on India's west coast formed on 26 January 2020 by merging the former UTs of Dadra and Nagar Haveli and of Daman and Diu; administered directly by the Union through an Administrator, with no state legislature. Silvassa is the largest city; the territory elects two Lok Sabha members from separate Dadra and Nagar Haveli and Daman and Diu constituencies.",
+   "legalBasis": "Dadra and Nagar Haveli and Daman and Diu (Merger of Union Territories) Act, 2019; Article 239 of the Constitution",
+   "officialUrl": "https://ddd.gov.in",
+   "established": "2020-01-26",
+   "stats": {
+    "population2011": 585764,
+    "areaKm2": 603,
+    "lokSabhaSeats": 2,
+    "rajyaSabhaSeats": 0,
+    "districts": 3,
+    "assemblySeats": 0
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu",
+    "https://ddd.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-government",
+   "kind": "state_government",
+   "sector": "federal",
+   "name": "Dadra and Nagar Haveli and Daman and Diu Administration",
+   "aliases": [
+    "DNH&DD Administration",
+    "UT Administration of Dadra and Nagar Haveli and Daman and Diu"
+   ],
+   "parentId": "st-dh",
+   "description": "The Union Territory administration of Dadra and Nagar Haveli and Daman and Diu, headed by an Administrator appointed by the President; there is no elected Council of Ministers or Legislative Assembly. Day-to-day civil administration runs through an Advisor to the Administrator and the Secretariat, with district administration under three Collectorates.",
+   "headPositionId": "st-dh-pos-administrator",
+   "adminHeadPositionId": "st-dh-pos-chief-secretary",
+   "officialUrl": "https://ddd.gov.in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu",
+    "https://ddd.gov.in"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-an-pos-lieutenant-governor",
+   "title": "Lieutenant Governor of Andaman and Nicobar Islands",
+   "orgId": "st-an-government",
+   "rank": "lieutenant_governor",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Prof. (Dr.) Dinesh Sharma",
+    "since": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "Sworn in as the 14th Lieutenant Governor of Andaman and Nicobar Islands per the official portal (andamannicobar.gov.in) and Wikipedia's current infobox; exact swearing-in date could not be confirmed from the sources reachable in this research pass (no WebSearch budget remained; official LG biography page returned a redirect error). Cross-checked against two independent 2026 sources naming him as the sitting LG."
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands",
+    "https://andamannicobar.gov.in"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-an-pos-chief-secretary",
+   "title": "Chief Secretary, Andaman and Nicobar Islands",
+   "orgId": "st-an-government",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-personnel-public-grievances-and-pensions",
+   "holder": {
+    "name": "Gyanesh Bharti",
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS officer; listed as Chief Secretary on the official A&N Islands administration portal."
+   },
+   "vacant": false,
+   "sources": [
+    "https://andamannicobar.gov.in"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-an-pos-dgp",
+   "title": "Director General of Police, Andaman and Nicobar Islands",
+   "orgId": "st-an-government",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-home-affairs",
+   "holder": {
+    "name": "Ravinder Yadav",
+    "notes": "IPS officer; listed as DGP, Andaman and Nicobar Police on Wikipedia's current infobox for the force. Exact date of appointment not confirmed from the sources reachable in this research pass.",
+    "wikipedia": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Police"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-ld-pos-administrator",
+   "title": "Administrator of Lakshadweep",
+   "orgId": "st-ld-government",
+   "rank": "administrator",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Praful Khoda Patel",
+    "since": "2020-12-05",
+    "party": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Praful_Khoda_Patel",
+    "acting": false,
+    "notes": "Holds Lakshadweep on additional charge while serving as full-time Administrator of Dadra and Nagar Haveli and Daman and Diu (in office there since 26 January 2020, the UT's formation date). Succeeded Dineshwar Sharma (3 Nov 2019 – 4 Dec 2020)."
+   },
+   "vacant": false,
+   "sources": [
+    "https://lakshadweep.gov.in",
+    "https://en.wikipedia.org/wiki/Administrator_of_Lakshadweep"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-chief-secretary",
+   "title": "Advisor to the Administrator, Lakshadweep",
+   "orgId": "st-ld-government",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-personnel-public-grievances-and-pensions",
+   "holder": {
+    "name": "S. B. Deepak Kumar",
+    "since": "2025-06-25",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS officer; per lakshadweep.gov.in, doubles as Principal Secretary (Home & Vigilance). Functions as the top civil-service official under the Administrator (the UT has no separate Chief Secretary post); the Collector-cum-District Magistrate is Shivam Chandra, IAS."
+   },
+   "vacant": false,
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-ld-pos-dgp",
+   "title": "Superintendent of Police, Lakshadweep",
+   "orgId": "st-ld-government",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-home-affairs",
+   "holder": {
+    "name": "Utkarsha",
+    "notes": "IPS officer; Superintendent of Police, Lakshadweep Police, also holding additional charge as Chief Fire Officer and Jail Commandant per lakshadweep.gov.in. The Administrator holds ex-officio charge as Inspector General of Police over the ~349-strong force; B. Shanker Jaiswal, IPS is listed as Additional Director General of Police for Lakshadweep.",
+    "wikipedia": null,
+    "acting": false
+   },
+   "vacant": false,
+   "sources": [
+    "https://lakshadweep.gov.in/lakshadweep-administration/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-dh-pos-administrator",
+   "title": "Administrator of Dadra and Nagar Haveli and Daman and Diu",
+   "orgId": "st-dh-government",
+   "rank": "administrator",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-pos-president",
+   "holder": {
+    "name": "Praful Khoda Patel",
+    "since": "2020-01-26",
+    "party": null,
+    "wikipedia": "https://en.wikipedia.org/wiki/Praful_Khoda_Patel",
+    "acting": false,
+    "notes": "Administrator of the merged UT since its 26 January 2020 formation; had separately administered Daman and Diu from 29 August 2016 and Dadra and Nagar Haveli from 30 December 2016 before the merger. Also holds Lakshadweep on additional charge since 5 December 2020."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ddd.gov.in/honble-administrator-2/",
+    "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-chief-secretary",
+   "title": "Advisor to the Administrator, Dadra and Nagar Haveli and Daman and Diu",
+   "orgId": "st-dh-government",
+   "rank": "secretary",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-personnel-public-grievances-and-pensions",
+   "holder": {
+    "name": "Ankur Garg",
+    "since": "2026-01-05",
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IAS officer; functions as the top civil-service official under the Administrator (the UT has no separate Chief Secretary post). Contact listed as devcom-dd[at]nic[dot]in, indicating he also holds Development Commissioner charge."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ddd.gov.in/advisor-to-honbleadministrator/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-dh-pos-dgp",
+   "title": "DGP / Superintendent of Police, Dadra and Nagar Haveli and Daman and Diu",
+   "orgId": "st-dh-government",
+   "rank": "head_of_agency",
+   "seat": null,
+   "appointmentMode": "appointed",
+   "appointedBy": "in-min-home-affairs",
+   "holder": {
+    "name": "Santosh Kumar Meena",
+    "since": null,
+    "party": null,
+    "wikipedia": null,
+    "acting": false,
+    "notes": "IPS (AGMUT:2010). No single DGP or unified Superintendent-of-Police post exists for DNH&DD; per the official portal's current IPS officer roster (ddd.gov.in/ips/, order dated 14 Aug 2025, page last updated 15 Sept 2026) he is the senior-most police officer, holding Deputy Inspector General of Police, DNH&DD plus additional charge as DIG (Prisons) and DIG (Anti-Corruption Unit). Separate area SPs (HQ, Daman, Dadra & Nagar Haveli, Diu) report within the same force. Exact date he assumed the DIG charge not stated on the source page."
+   },
+   "vacant": false,
+   "sources": [
+    "https://ddd.gov.in",
+    "https://ddd.gov.in/ips/"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "relations": [
+  {
+   "to": "st-an-pos-lieutenant-governor",
+   "type": "appoints",
+   "basis": "Article 239 — Administrators/Lieutenant Governors of Union Territories are appointed by the President",
+   "source": "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "st-an-government",
+   "type": "administers",
+   "basis": "Article 239",
+   "source": "https://andamannicobar.gov.in",
+   "from": "st-an-pos-lieutenant-governor"
+  },
+  {
+   "to": "st-an-pos-chief-secretary",
+   "type": "appoints",
+   "basis": "AGMUT/Central deputation cadre posting",
+   "source": "https://andamannicobar.gov.in",
+   "from": "in-min-personnel-public-grievances-and-pensions"
+  },
+  {
+   "to": "st-an-pos-lieutenant-governor",
+   "type": "reports_to",
+   "source": "https://andamannicobar.gov.in",
+   "from": "st-an-pos-chief-secretary"
+  },
+  {
+   "to": "st-an-pos-dgp",
+   "type": "appoints",
+   "basis": "Central deputation cadre posting",
+   "source": "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Police",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "st-an-pos-lieutenant-governor",
+   "type": "reports_to",
+   "source": "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Police",
+   "from": "st-an-pos-dgp"
+  },
+  {
+   "to": "st-ld-pos-administrator",
+   "type": "appoints",
+   "basis": "Article 239",
+   "source": "https://en.wikipedia.org/wiki/Lakshadweep",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "st-ld-government",
+   "type": "administers",
+   "basis": "Article 239",
+   "source": "https://lakshadweep.gov.in",
+   "from": "st-ld-pos-administrator"
+  },
+  {
+   "to": "st-ld-pos-chief-secretary",
+   "type": "appoints",
+   "basis": "Central deputation cadre posting",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/",
+   "from": "in-min-personnel-public-grievances-and-pensions"
+  },
+  {
+   "to": "st-ld-pos-administrator",
+   "type": "reports_to",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/",
+   "from": "st-ld-pos-chief-secretary"
+  },
+  {
+   "to": "st-ld-pos-dgp",
+   "type": "appoints",
+   "basis": "Central deputation cadre posting",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "st-ld-pos-administrator",
+   "type": "reports_to",
+   "source": "https://lakshadweep.gov.in/lakshadweep-administration/",
+   "from": "st-ld-pos-dgp"
+  },
+  {
+   "to": "st-dh-pos-administrator",
+   "type": "appoints",
+   "basis": "Article 239",
+   "source": "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu",
+   "from": "in-pos-president"
+  },
+  {
+   "to": "st-dh-government",
+   "type": "administers",
+   "basis": "Article 239",
+   "source": "https://ddd.gov.in",
+   "from": "st-dh-pos-administrator"
+  },
+  {
+   "to": "st-dh-pos-chief-secretary",
+   "type": "appoints",
+   "basis": "Central deputation cadre posting",
+   "source": "https://ddd.gov.in/advisor-to-honbleadministrator/",
+   "from": "in-min-personnel-public-grievances-and-pensions"
+  },
+  {
+   "to": "st-dh-pos-administrator",
+   "type": "reports_to",
+   "source": "https://ddd.gov.in/advisor-to-honbleadministrator/",
+   "from": "st-dh-pos-chief-secretary"
+  },
+  {
+   "to": "st-dh-pos-dgp",
+   "type": "appoints",
+   "basis": "Central deputation cadre posting",
+   "source": "https://ddd.gov.in",
+   "from": "in-min-home-affairs"
+  },
+  {
+   "to": "st-dh-pos-administrator",
+   "type": "reports_to",
+   "source": "https://ddd.gov.in",
+   "from": "st-dh-pos-dgp"
+  }
+ ],
+ "verification": {
+  "at": "2026-09-25",
+  "checked": 9,
+  "corrections": [
+   "Added missing stats.assemblySeats=0 to st-an (brief-required field; UT has no legislature)",
+   "Added missing stats.assemblySeats=0 to st-ld (brief-required field; UT has no legislature)",
+   "Added missing stats.assemblySeats=0 to st-dh (brief-required field; UT has no legislature)",
+   "Fixed st-an-pos-chief-secretary.appointedBy: 'in-union-government' (an entity id, not a position id — schema violation) -> 'in-min-personnel-public-grievances-and-pensions' (DoPT posts IAS cadre officers; matches states-dl-jk-la.json convention)",
+   "Fixed st-an-pos-dgp.appointedBy: 'in-union-government' (an entity id, not a position id — schema violation) -> 'in-min-home-affairs' (MHA administers UT police as a reserved Union subject; matches states-dl-jk-la.json's st-dl-pos-dgp convention)",
+   "Fixed st-ld-pos-chief-secretary.appointedBy: 'in-union-government' (an entity id, not a position id — schema violation) -> 'in-min-personnel-public-grievances-and-pensions' (DoPT posts IAS cadre officers; matches states-dl-jk-la.json convention)",
+   "Fixed st-ld-pos-dgp.appointedBy: 'in-union-government' (an entity id, not a position id — schema violation) -> 'in-min-home-affairs' (MHA administers UT police as a reserved Union subject; matches states-dl-jk-la.json's st-dl-pos-dgp convention)",
+   "Fixed st-dh-pos-chief-secretary.appointedBy: 'in-union-government' (an entity id, not a position id — schema violation) -> 'in-min-personnel-public-grievances-and-pensions' (DoPT posts IAS cadre officers; matches states-dl-jk-la.json convention)",
+   "Fixed st-dh-pos-dgp.appointedBy: 'in-union-government' (an entity id, not a position id — schema violation) -> 'in-min-home-affairs' (MHA administers UT police as a reserved Union subject; matches states-dl-jk-la.json's st-dl-pos-dgp convention)",
+   "Fixed relation appoints -> st-an-pos-chief-secretary: from 'in-union-government' to 'in-min-personnel-public-grievances-and-pensions'",
+   "Fixed relation appoints -> st-an-pos-dgp: from 'in-union-government' to 'in-min-home-affairs'",
+   "Fixed relation appoints -> st-ld-pos-chief-secretary: from 'in-union-government' to 'in-min-personnel-public-grievances-and-pensions'",
+   "Fixed relation appoints -> st-ld-pos-dgp: from 'in-union-government' to 'in-min-home-affairs'",
+   "Fixed relation appoints -> st-dh-pos-chief-secretary: from 'in-union-government' to 'in-min-personnel-public-grievances-and-pensions'",
+   "Fixed relation appoints -> st-dh-pos-dgp: from 'in-union-government' to 'in-min-home-affairs'",
+   "Filled st-dh-pos-dgp.holder (previously null/low-confidence): Santosh Kumar Meena, IPS, Deputy Inspector General of Police DNH&DD (senior-most officer per ddd.gov.in/ips/ roster) — confidence raised low -> medium; title mismatch (DIG, not DGP/SP) noted in holder.notes"
+  ]
+ }
+}

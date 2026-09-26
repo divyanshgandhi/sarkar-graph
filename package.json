@@ -1,0 +1,40 @@
+{
+  "name": "sarkar-graph",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sarkar Graph — a live, systems map of the Government of India",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --port 5190",
+    "build": "next build",
+    "start": "next start --port 5190",
+    "lint": "tsc --noEmit",
+    "graph": "node --experimental-strip-types scripts/build-graph.ts",
+    "ingest": "node --experimental-strip-types scripts/ingest-news.ts",
+    "images": "node --experimental-strip-types scripts/fetch-images.ts",
+    "check:layout": "node --experimental-strip-types scripts/check-layout.ts",
+    "coverage": "node --experimental-strip-types scripts/coverage.ts",
+    "export": "node --experimental-strip-types scripts/export.ts",
+    "shoot": "node scripts/shoot.mjs",
+    "press": "node scripts/press.mjs"
+  },
+  "dependencies": {
+    "d3-shape": "3.2.0",
+    "fast-xml-parser": "^5.2.0",
+    "lucide-react": "^1.0.0",
+    "motion": "^13.0.0",
+    "next": "^16.3.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/d3-shape": "^3.1.6",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tailwindcss": "^4.3.0",
+    "typescript": "6.0.3"
+  },
+  "packageManager": "pnpm@11.1.0"
+}

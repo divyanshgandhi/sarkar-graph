@@ -1,0 +1,5774 @@
+{
+ "segment": "state-depts-tn-kl-py",
+ "asOf": "2026-09-25",
+ "notes": "State department lists sourced from official portals: tn.gov.in department_list.php / dept_profile.php (secretary names live-scraped from each department's official profile page); kerala.gov.in Secretaries directory (subdetail page, updated 25-Sep-2026 per site footer) cross-referenced against kerala.gov.in Secretariat Departments listing; py.gov.in /department (48-department Directorates list, updated 21-Sep-2026) and /secretaries directory. headPositionId assigned by matching each department's live-portal minister/portfolio name against the minister holders + portfolio notes already in states-tn-kl-py.json; where no named minister's portfolio text matched a department, headPositionId falls back to the Chief Minister position per that state's existing note that the CM 'holds ... other portfolios not allocated to other ministers' (flagged confidence: medium on those entities). Kerala and Puducherry lack a per-department 'official URL'; used the general portal/secretariat page instead. TN's 'Agriculture', 'Legislative Assembly' and 'Public (Elections)' departments, and Kerala's 'Law', 'Minority Welfare' and 'Drugs Control'-adjacent PY departments (Law, Police, Prisons, Ayush, Drugs Control, Food and Drugs Testing, Food Safety, Accounts and Treasuries) have no secretary name published on the source pages as of the as-of date, so no secretary Position was created for them (omitted rather than guessed, per instructions). PY Police is constitutionally a subject the Lieutenant Governor (not the elected government) has a strong role in under Puducherry's UT arrangement; its headPositionId (Home Minister) reflects conventional department grouping on py.gov.in, not a confirmed political-control fact — treat with caution.",
+ "entities": [
+  {
+   "id": "st-tn-dept-social-justice",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Social Justice Department",
+   "aliases": [],
+   "description": "Runs welfare and reservation-linked schemes for Adi Dravidar (Scheduled Caste) and Scheduled Tribe communities, including hostels, land assignment and atrocity-prevention measures.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MQ==",
+   "headPositionId": "st-tn-pos-minister-13",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MQ=="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-agriculture-farmers-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Agriculture - Farmers Welfare Department",
+   "aliases": [],
+   "description": "Delivers farm extension, input subsidies, irrigation-linked cultivation support and horticulture programmes to Tamil Nadu's farmers.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=Mg==",
+   "headPositionId": "st-tn-pos-minister-23",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Mg=="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-animal-husbandry-dairying-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Animal Husbandry, Dairying, Fisheries and Fishermen Welfare Department",
+   "aliases": [],
+   "description": "Runs veterinary services, dairy cooperatives, marine and inland fisheries development, and welfare schemes for fishermen.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=Mw==",
+   "headPositionId": "st-tn-pos-minister-24",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Mw=="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-bc-mbc-minorities-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "BC, MBC & Minorities Welfare Department",
+   "aliases": [],
+   "description": "Administers reservation, scholarships and welfare schemes for Backward Classes, Most Backward Classes and Minorities.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=NA==",
+   "headPositionId": "st-tn-pos-minister-12",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NA=="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-cooperation-food-consumer-protection",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Co-operation, Food and Consumer Protection Department",
+   "aliases": [],
+   "description": "Runs the cooperative credit and marketing network, the public distribution system (ration shops) and consumer-protection enforcement.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=NQ==",
+   "headPositionId": "st-tn-pos-minister-21",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NQ=="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-commercial-taxes-registration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Commercial Taxes and Registration Department",
+   "aliases": [
+    "Commercial Taxes Department",
+    "CTD"
+   ],
+   "description": "Collects GST/VAT and other commercial taxes and administers document registration (property, marriages, societies).",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=Ng==",
+   "headPositionId": "st-tn-pos-minister-33",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Ng=="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-energy",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Energy Department",
+   "aliases": [
+    "TANGEDCO",
+    "TANTRANSCO"
+   ],
+   "description": "Regulates and plans electricity generation, transmission and distribution through TANGEDCO/TANTRANSCO.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=Nw==",
+   "headPositionId": "st-tn-pos-minister-6",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Nw=="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-environment-climate-change-forests",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Environment, Climate Change and Forests Department",
+   "aliases": [],
+   "description": "Protects forests and wildlife, regulates pollution and implements the state's climate-change and environmental-clearance policy.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=OA==",
+   "headPositionId": "st-tn-pos-minister-32",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=OA=="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Finance Department",
+   "aliases": [
+    "Finance Dept"
+   ],
+   "description": "Prepares the state budget, manages treasury, borrowing, pay and pensions, and oversees the state's overall fiscal position.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=OQ==",
+   "headPositionId": "st-tn-pos-minister-28",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=OQ=="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-handlooms-handicrafts-textiles-khadi",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Handlooms, Handicrafts, Textiles and Khadi Department",
+   "aliases": [],
+   "description": "Supports handloom weavers, handicraft artisans, khadi and textile industries through cooperatives, subsidies and marketing.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MTA=",
+   "headPositionId": "st-tn-pos-minister-17",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTA="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-health-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Health and Family Welfare Department",
+   "aliases": [
+    "Health Department",
+    "DMS"
+   ],
+   "description": "Runs government hospitals, primary health centres, medical education and public-health programmes across the state.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MTE=",
+   "headPositionId": "st-tn-pos-minister-3",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTE="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-higher-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Higher Education Department",
+   "aliases": [],
+   "description": "Regulates and funds state universities, government arts and science colleges, and higher-education scholarships.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MTI=",
+   "headPositionId": "st-tn-pos-minister-10",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-highways-minor-ports",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Highways and Minor Ports Department",
+   "aliases": [],
+   "description": "Builds and maintains state and district highways, bridges and minor ports.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MTM=",
+   "headPositionId": "st-tn-pos-minister-2",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTM="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-home-prohibition-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Home, Prohibition and Excise Department",
+   "aliases": [
+    "Home Department"
+   ],
+   "description": "Maintains law and order through the state police, administers prisons, prohibition and excise policy (liquor licensing and revenue).",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MTQ=",
+   "headPositionId": "st-tn-pos-chief-minister",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTQ="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-housing-urban-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Housing and Urban Development Department",
+   "aliases": [],
+   "description": "Runs public housing schemes (TNHB) and regulates town planning and urban infrastructure.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MTU=",
+   "headPositionId": "st-tn-pos-minister-15",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTU="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-industries-investment-promotion-commerce",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Industries, Investment Promotion & Commerce Department",
+   "aliases": [],
+   "description": "Attracts industrial investment, runs SIPCOT industrial estates and administers industrial-promotion incentives.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MTY=",
+   "headPositionId": "st-tn-pos-minister-9",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTY="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-ai-it-digital-services",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Artificial Intelligence, Information Technology and Digital Services Department",
+   "aliases": [
+    "TNeGA",
+    "AI IT Dept"
+   ],
+   "description": "Drives the state's AI strategy, e-governance platforms and digital-service delivery to citizens.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MTc=",
+   "headPositionId": "st-tn-pos-minister-31",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTc="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-labour-welfare-skill-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Labour Welfare and Skill Development Department",
+   "aliases": [],
+   "description": "Enforces labour welfare laws, factory safety, and runs ITI/skill-training programmes for employment.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MTg=",
+   "headPositionId": "st-tn-pos-minister-20",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTg="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-law",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Law Department",
+   "aliases": [],
+   "description": "Provides legal advice to the government, drafts legislation and oversees courts administration and legal aid.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MTk=",
+   "headPositionId": "st-tn-pos-minister-6",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTk="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-legislative-assembly",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Legislative Assembly Department",
+   "aliases": [],
+   "description": "Administers the Tamil Nadu Legislative Assembly Secretariat — its sittings, records and member services.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MjA=",
+   "headPositionId": "st-tn-pos-minister-4",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MjA="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-municipal-administration-water-supply",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Municipal Administration and Water Supply Department",
+   "aliases": [
+    "MAWS",
+    "TWAD Board"
+   ],
+   "description": "Regulates municipalities and town panchayats, urban local-body finances, and piped water supply/sewerage through TWAD Board and Metrowater.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MjE=",
+   "headPositionId": "st-tn-pos-chief-minister",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MjE="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-human-resources-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Human Resources Management Department",
+   "aliases": [],
+   "description": "Handles state government recruitment, service rules, pay commission implementation and personnel administration.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MjI=",
+   "headPositionId": "st-tn-pos-minister-25",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MjI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-planning-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Planning and Development Department",
+   "aliases": [],
+   "description": "Prepares Tamil Nadu's five-year and annual development plans and scrutinises departmental schemes and budgets.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MjM=",
+   "headPositionId": "st-tn-pos-chief-minister",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MjM="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-public",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Public Department",
+   "aliases": [],
+   "description": "The general-administration department of the Secretariat — handles protocol, public services, rehabilitation and inter-departmental coordination.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MjQ=",
+   "headPositionId": "st-tn-pos-chief-minister",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MjQ="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-revenue-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Revenue and Disaster Management Department",
+   "aliases": [],
+   "description": "Administers land revenue, land records, and disaster (flood/cyclone) relief and rehabilitation through the district collectorate system.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MjY=",
+   "headPositionId": "st-tn-pos-minister-4",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MjY="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-rural-development-panchayat-raj",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Rural Development and Panchayat Raj Department",
+   "aliases": [
+    "RD&PR"
+   ],
+   "description": "Runs panchayat raj institutions, rural infrastructure (roads, drinking water) and rural livelihood/poverty-alleviation schemes.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjc=",
+   "headPositionId": "st-tn-pos-minister-1",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Mjc="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "School Education Department",
+   "aliases": [],
+   "description": "Runs government and government-aided schools, the mid-day meal scheme and school curricula/examinations.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjg=",
+   "headPositionId": "st-tn-pos-minister-7",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Mjg="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-msme",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Micro , Small and Medium Enterprises Department",
+   "aliases": [
+    "MSME Department"
+   ],
+   "description": "Promotes and finances micro, small and medium enterprises, including rural and cottage industries.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjk=",
+   "headPositionId": "st-tn-pos-minister-27",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Mjk="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-social-welfare-women-empowerment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Social Welfare and Women Empowerment Department",
+   "aliases": [],
+   "description": "Runs welfare and empowerment schemes for women, children, the elderly and Scheduled Caste/Tribe social-welfare hostels.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MzA=",
+   "headPositionId": "st-tn-pos-minister-22",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MzA="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-tamil-development-information",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Tamil Dev. and Information Department",
+   "aliases": [],
+   "description": "Promotes Tamil language and culture and runs the state's official information and public-relations machinery.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MzE=",
+   "headPositionId": "st-tn-pos-minister-7",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MzE="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-tourism-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Tourism, Culture and Special Initiatives Department",
+   "aliases": [],
+   "description": "Promotes tourism infrastructure and marketing and administers the state's cultural and special citizen-outreach initiatives.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MzI=",
+   "headPositionId": "st-tn-pos-minister-11",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MzI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Transport Department",
+   "aliases": [],
+   "description": "Regulates road transport, motor-vehicle licensing, and runs the state transport corporations.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MzM=",
+   "headPositionId": "st-tn-pos-minister-14",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MzM="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-youth-welfare-sports-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Youth Welfare and Sports Development Department",
+   "aliases": [],
+   "description": "Runs youth-welfare and sports-development schemes, stadiums and coaching for state athletes.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MzQ=",
+   "headPositionId": "st-tn-pos-chief-minister",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MzQ="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-differently-abled-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Welfare of Differently Abled Persons",
+   "aliases": [],
+   "description": "Runs welfare, rehabilitation and accessibility schemes for persons with disabilities.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=MzU=",
+   "headPositionId": "st-tn-pos-chief-minister",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MzU="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-public-elections",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Public (Elections) Department",
+   "aliases": [],
+   "description": "Administers elections-related state coordination and the Public Department's general (non-service) administrative functions including passports facilitation.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=Mzg=",
+   "headPositionId": "st-tn-pos-minister-6",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Mzg="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-social-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Social Reforms Department",
+   "aliases": [],
+   "description": "Runs the state's social-reform initiatives (self-respect marriages, anti-superstition measures) rooted in Tamil Nadu's Dravidian-movement legacy.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=Mzk=",
+   "headPositionId": "st-tn-pos-chief-minister",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Mzk="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-special-programme-implementation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Special Programme Implementation",
+   "aliases": [],
+   "description": "Coordinates externally-funded and centrally-sponsored special development programmes across departments.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=NDE=",
+   "headPositionId": "st-tn-pos-chief-minister",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NDE="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Public Works Department",
+   "aliases": [
+    "PWD"
+   ],
+   "description": "Builds and maintains government buildings, irrigation structures and public infrastructure.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=NDI=",
+   "headPositionId": "st-tn-pos-minister-2",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NDI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-cm-cell",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Mudalvarin Mugavari Department",
+   "aliases": [],
+   "description": "The Chief Minister's public-facing grievance and outreach cell (Mudalvarin Mugavari — literally 'the Chief Minister's face').",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=NDM=",
+   "headPositionId": "st-tn-pos-chief-minister",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NDM="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Water Resources Department",
+   "aliases": [
+    "WRD",
+    "PWD-Irrigation"
+   ],
+   "description": "Manages irrigation, dams, rivers and groundwater resources through the Water Resources Department (formerly PWD-Irrigation Wing).",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=NDQ=",
+   "headPositionId": "st-tn-pos-minister-1",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NDQ="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-natural-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Natural Resources Department",
+   "aliases": [],
+   "description": "Oversees mines, minerals and mineral-resource management and allied natural-resource policy.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=NDU=",
+   "headPositionId": "st-tn-pos-minister-8",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NDU="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-tn-dept-hrce",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-tn-government",
+   "name": "Hindu Religious and Charitable Endowments Department",
+   "aliases": [
+    "HR&CE",
+    "Hindu Religious and Charitable Endowments"
+   ],
+   "description": "Administers Hindu temples, endowments and charitable trusts under the HR&CE Act.",
+   "officialUrl": "https://www.tn.gov.in/dept_profile.php?dep_id=NDY=",
+   "headPositionId": "st-tn-pos-minister-26",
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NDY="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Finance Department",
+   "aliases": [],
+   "description": "Prepares the state budget, manages treasury, borrowing, taxation policy and pensions.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-general-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "General Administration Department",
+   "aliases": [],
+   "description": "The nodal Secretariat department for Cabinet coordination, protocol, service rules and personnel administration.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-law",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Law Department",
+   "aliases": [],
+   "description": "Provides legal advice to the government, drafts legislation and oversees prosecution and legal-aid administration.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-ports",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Ports Department",
+   "aliases": [],
+   "description": "Develops and regulates Kerala's minor ports and coastal shipping infrastructure.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Home Department",
+   "aliases": [],
+   "description": "Oversees the Kerala Police, prisons, fire and rescue services, and internal law-and-order administration.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-1",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-vigilance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Vigilance Department",
+   "aliases": [],
+   "description": "Investigates corruption complaints against public servants through the Vigilance and Anti-Corruption Bureau.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-1",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-coir",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Coir Department",
+   "aliases": [],
+   "description": "Supports Kerala's coir (coconut-fibre) industry and coir-worker welfare through the Coir Board and cooperatives.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-1",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-health-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Health and Family Welfare Department",
+   "aliases": [],
+   "description": "Runs government hospitals, primary health centres, medical education and public-health programmes.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-2",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-devaswom",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Devaswom Department",
+   "aliases": [],
+   "description": "Administers Hindu temple boards (Devaswoms) including Guruvayur and Koodalmanikyam.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-2",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-electricity",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Electricity Department",
+   "aliases": [],
+   "description": "Regulates power generation, transmission and distribution through the Kerala State Electricity Board.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-3",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-environment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Environment Department",
+   "aliases": [],
+   "description": "Administers pollution control, environmental clearances and climate policy.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-3",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-forests-wildlife",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Forests and Wildlife Department",
+   "aliases": [],
+   "description": "Protects forests, wildlife sanctuaries and biodiversity across Kerala.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-4",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-skill-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Skill Development Department",
+   "aliases": [],
+   "description": "Runs vocational-training and skilling programmes to improve youth employability.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-4",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-water-resources",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Water Resources Department",
+   "aliases": [],
+   "description": "Manages irrigation, dams, rivers and drinking-water resource planning through the Kerala Water Authority.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-5",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-housing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Housing Department",
+   "aliases": [],
+   "description": "Runs public housing schemes including LIFE Mission for the homeless and landless.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-5",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-food-civil-supplies",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Food and Civil Supplies Department",
+   "aliases": [],
+   "description": "Runs the public distribution system (ration shops) and monitors essential-commodity prices and supply.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-6",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-industries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Industries Department",
+   "aliases": [],
+   "description": "Promotes industrial investment and runs industrial estates and MSME-support schemes.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-7",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Information Technology Department",
+   "aliases": [],
+   "description": "Drives Kerala's e-governance platforms and IT-sector promotion including Technopark and the IT Mission.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-7",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Transport Department",
+   "aliases": [],
+   "description": "Regulates road transport and motor-vehicle licensing and runs the state road transport corporation (KSRTC).",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-8",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-revenue",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Revenue Department",
+   "aliases": [],
+   "description": "Administers land revenue, land records and the district collectorate system.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-9",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Disaster Management Department",
+   "aliases": [],
+   "description": "Coordinates flood, landslide and other disaster preparedness, relief and rehabilitation.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-9",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-general-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "General Education Department",
+   "aliases": [],
+   "description": "Runs government and aided schools, the public-education curriculum and school examinations.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-10",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-minority-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Minority Welfare Department",
+   "aliases": [],
+   "description": "Runs scholarship and welfare schemes for religious-minority communities.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-10",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-higher-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Higher Education Department",
+   "aliases": [],
+   "description": "Regulates state universities and government/aided arts-and-science colleges.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-11",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Tourism Department",
+   "aliases": [],
+   "description": "Markets Kerala tourism and develops tourism infrastructure.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-12",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Culture Department",
+   "aliases": [],
+   "description": "Promotes Kerala's arts, literature and cultural heritage through state academies.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-12",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Labour Department",
+   "aliases": [],
+   "description": "Enforces labour-welfare laws and administers welfare-fund boards for unorganised workers.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-13",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-women-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Women and Child Development Department",
+   "aliases": [],
+   "description": "Runs anganwadis (childcare centres), nutrition programmes and women's-safety schemes.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-13",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-excise",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Excise Department",
+   "aliases": [],
+   "description": "Regulates liquor licensing, enforcement and excise revenue collection.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-14",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-cooperation",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Cooperation Department",
+   "aliases": [],
+   "description": "Regulates cooperative societies including credit, milk and consumer cooperatives.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-14",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-local-self-government",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Local Self Government Department",
+   "aliases": [],
+   "description": "Oversees panchayats, municipalities and corporations, local-body finance and urban sanitation.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-15",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Public Works Department",
+   "aliases": [],
+   "description": "Builds and maintains government buildings, roads and bridges.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-16",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-fisheries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Fisheries Department",
+   "aliases": [],
+   "description": "Supports marine and inland fisheries development and fishermen's welfare.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-17",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-social-justice",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Social Justice Department",
+   "aliases": [],
+   "description": "Runs welfare and rehabilitation schemes for the elderly, differently-abled and destitute.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-17",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-agriculture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Agriculture Department",
+   "aliases": [],
+   "description": "Delivers farm extension, input subsidies and crop-development schemes to Kerala's farmers.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-18",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-scheduled-castes-tribes-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Scheduled Castes and Scheduled Tribes Development Department",
+   "aliases": [],
+   "description": "Runs welfare, scholarship and land-assignment schemes for Scheduled Caste and Scheduled Tribe communities.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-19",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-backward-classes-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Backward Classes Development Department",
+   "aliases": [],
+   "description": "Runs welfare and scholarship schemes for socially and educationally backward classes.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-19",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-sports-youth-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Sports and Youth Affairs Department",
+   "aliases": [],
+   "description": "Develops sports infrastructure, coaching and youth-welfare programmes.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-minister-20",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-dept-planning-economic-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Planning and Economic Affairs Department",
+   "aliases": [],
+   "description": "Prepares Kerala's five-year and annual plans and services the State Planning Board.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-dept-ayush",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "AYUSH Department",
+   "aliases": [],
+   "description": "Promotes Ayurveda, Homoeopathy and other traditional systems of medicine.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-dept-norka",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "NORKA Department (Non-Resident Keralites Affairs)",
+   "aliases": [],
+   "description": "Runs welfare and rehabilitation programmes for Non-Resident Keralites (the NRI diaspora).",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-dept-information-public-relations",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Information and Public Relations Department",
+   "aliases": [],
+   "description": "Runs the government's official press, publicity and public-communication machinery.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-dept-sainik-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Sainik Welfare Department",
+   "aliases": [],
+   "description": "Supports ex-servicemen and their families through pensions, resettlement and welfare schemes.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-dept-elderly-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Elderly Welfare Department",
+   "aliases": [],
+   "description": "Runs welfare and care programmes for senior citizens.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-dept-science-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Science and Technology Department",
+   "aliases": [],
+   "description": "Funds and coordinates scientific research and technology-innovation programmes.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-dept-personnel-administrative-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Personnel and Administrative Reforms Department",
+   "aliases": [],
+   "description": "Handles state government recruitment rules, service matters and e-governance administrative reform.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-dept-taxes",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Taxes Department",
+   "aliases": [],
+   "description": "Administers state GST and other tax-collection machinery distinct from the Revenue Department's land functions.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-dept-election",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Election Department",
+   "aliases": [],
+   "description": "Coordinates the conduct of elections in Kerala with the Election Commission of India.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-dept-parliamentary-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-kl-government",
+   "name": "Parliamentary Affairs Department",
+   "aliases": [],
+   "description": "Coordinates government business in the Kerala Legislative Assembly.",
+   "officialUrl": "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0",
+   "headPositionId": "st-kl-pos-chief-minister",
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI=",
+    "https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-accounts-treasuries",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Accounts and Treasuries Department",
+   "aliases": [],
+   "description": "Manages the treasury system, government accounts and pension disbursement.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-adi-dravidar-st-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Adi Dravidar Welfare and Scheduled Tribes Welfare Department",
+   "aliases": [],
+   "description": "Runs welfare, scholarship and housing schemes for Scheduled Caste and Scheduled Tribe communities.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-4",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-agriculture-farmers-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Agriculture and Farmers Welfare Department",
+   "aliases": [],
+   "description": "Delivers farm extension, input subsidies and irrigation-linked cultivation support to farmers.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-3",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-animal-husbandry-animal-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Animal Husbandry and Animal Welfare Department",
+   "aliases": [],
+   "description": "Runs veterinary services and livestock-development programmes.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-1",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-arts-culture",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Arts and Culture Department",
+   "aliases": [],
+   "description": "Promotes Puducherry's arts, heritage and cultural programmes.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-4",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-ayush",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Ayush Department",
+   "aliases": [],
+   "description": "Promotes Ayurveda, Siddha, Unani and other traditional systems of medicine.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-chief-vigilance-office",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Chief Vigilance Office",
+   "aliases": [],
+   "description": "Investigates corruption and irregularity complaints against government officials.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-civil-supplies-consumer-affairs",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Civil Supplies and Consumer Affairs Department",
+   "aliases": [],
+   "description": "Runs the public distribution system and enforces consumer-protection law.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-5",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-cooperative",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Co-operative Department",
+   "aliases": [],
+   "description": "Regulates cooperative credit, marketing and consumer societies.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-commercial-taxes",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Commercial Taxes Department",
+   "aliases": [],
+   "description": "Administers GST and other commercial-tax collection for the Union Territory.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-personnel-administrative-reforms",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Department of Personnel and Administrative Reforms",
+   "aliases": [],
+   "description": "Handles UT government recruitment rules, service matters and administrative reform.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-drugs-control",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Drugs Control Department",
+   "aliases": [],
+   "description": "Regulates drug licensing, quality control and pharmacy administration.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-economics-statistics",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Economics and Statistics Department",
+   "aliases": [],
+   "description": "Compiles official economic and demographic statistics for planning purposes.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-4",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-elections",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Elections Department",
+   "aliases": [],
+   "description": "Coordinates the conduct of elections in the Union Territory with the Election Commission of India.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-electricity",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Electricity Department",
+   "aliases": [],
+   "description": "Manages power generation, distribution and electricity-tariff administration.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-1",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-finance",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Finance Department",
+   "aliases": [],
+   "description": "Prepares the UT budget and manages treasury, borrowing and fiscal administration.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-fire-service",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Fire Service Department",
+   "aliases": [],
+   "description": "Runs fire-fighting and rescue services across the Union Territory.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-fisheries-fishermen-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Fisheries and Fishermen Welfare Department",
+   "aliases": [],
+   "description": "Supports marine fisheries development and fishermen's welfare schemes.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-2",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-food-drugs-testing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Food and Drugs Testing Department",
+   "aliases": [],
+   "description": "Runs laboratory testing for food and drug quality and safety compliance.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-food-safety",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Food Safety Department",
+   "aliases": [],
+   "description": "Enforces food-safety standards and licensing under the FSSAI framework.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-forest-wildlife",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Forest and Wild Life Department",
+   "aliases": [],
+   "description": "Protects forests and wildlife within the Union Territory.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-1",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-health-family-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Health and Family Welfare Services Department",
+   "aliases": [],
+   "description": "Runs government hospitals, primary health centres and public-health programmes.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-higher-technical-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Higher and Technical Education Department",
+   "aliases": [],
+   "description": "Regulates colleges, polytechnics and technical-education institutions.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-1",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-hri-wakf",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Hindu Religious Institutions and Wakf Department",
+   "aliases": [],
+   "description": "Administers Hindu temple endowments and Muslim Wakf properties.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-home",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Home Department",
+   "aliases": [],
+   "description": "Oversees police, prisons and internal law-and-order administration.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-1",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-industries-commerce",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Industries and Commerce Department",
+   "aliases": [],
+   "description": "Promotes industrial investment and small-enterprise development.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-2",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-information-publicity",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Information and Publicity Department",
+   "aliases": [],
+   "description": "Runs the UT government's official press and public-communication machinery.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-information-technology",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Information Technology Department",
+   "aliases": [],
+   "description": "Drives e-governance platforms and IT-sector promotion.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-4",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-labour",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Labour Department",
+   "aliases": [],
+   "description": "Enforces labour-welfare laws and runs employment-facilitation services.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-2",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-law",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Law Department",
+   "aliases": [],
+   "description": "Provides legal advice to the government and oversees courts administration.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-1",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-local-administration",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Local Administration Department",
+   "aliases": [],
+   "description": "Regulates municipalities and commune panchayats in the Union Territory.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-planning-research",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Planning and Research Department",
+   "aliases": [],
+   "description": "Prepares the UT's development plans and coordinates externally-aided projects.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-police",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Police Department",
+   "aliases": [],
+   "description": "Maintains law and order and investigates crime across the Union Territory.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-1",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-port",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Port Department",
+   "aliases": [],
+   "description": "Manages Puducherry's port infrastructure and coastal shipping.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-2",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-prisons",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Prisons Department",
+   "aliases": [],
+   "description": "Administers the Union Territory's central and sub-jails.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-1",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-public-works",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Public Works Department",
+   "aliases": [],
+   "description": "Builds and maintains government buildings, roads and public infrastructure.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-2",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-revenue-disaster-management",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Revenue and Disaster Management Department",
+   "aliases": [],
+   "description": "Administers land revenue, land records and disaster relief through the district collectorate.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-rural-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Rural Development Department",
+   "aliases": [],
+   "description": "Runs rural infrastructure and livelihood/poverty-alleviation schemes.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-3",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-sainik-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Sainik Welfare Department",
+   "aliases": [],
+   "description": "Supports ex-servicemen and their families through pensions and resettlement schemes.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-3",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-school-education",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "School Education Department",
+   "aliases": [],
+   "description": "Runs government and aided schools and school examinations.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-1",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-science-technology-environment",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Science, Technology and Environment Department",
+   "aliases": [],
+   "description": "Coordinates scientific research, technology promotion and environmental regulation.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-social-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Social Welfare Department",
+   "aliases": [],
+   "description": "Runs welfare and rehabilitation schemes for the elderly, differently-abled and destitute.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-5",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-stationery-printing",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Stationery and Printing Department",
+   "aliases": [],
+   "description": "Runs government printing and stationery-supply services.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-tourism",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Tourism Department",
+   "aliases": [],
+   "description": "Markets Puducherry's tourism and develops tourism infrastructure.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-2",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-town-country-planning",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Town and Country Planning Department",
+   "aliases": [],
+   "description": "Regulates urban land use, building approvals and town planning.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-transport",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Transport Department",
+   "aliases": [],
+   "description": "Regulates road transport and motor-vehicle licensing.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-chief-minister",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-py-dept-backward-classes-minorities-welfare",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Welfare of Backward Classes and Minorities Department",
+   "aliases": [],
+   "description": "Runs welfare and scholarship schemes for backward classes and religious minorities.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-5",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-dept-women-child-development",
+   "kind": "state_department",
+   "sector": "executive",
+   "parentId": "st-py-government",
+   "name": "Women and Child Development Department",
+   "aliases": [],
+   "description": "Runs anganwadis, nutrition and child-protection programmes.",
+   "officialUrl": "https://py.gov.in/department",
+   "headPositionId": "st-py-pos-minister-5",
+   "sources": [
+    "https://py.gov.in/secretaries",
+    "https://py.gov.in/department"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "positions": [
+  {
+   "id": "st-tn-pos-secretary-social-justice",
+   "title": "Secretary to Government, Social Justice Department",
+   "orgId": "st-tn-dept-social-justice",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "N. Subbaiyan",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MQ=="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-animal-husbandry-dairying-fisheries",
+   "title": "Secretary to Government, Animal Husbandry, Dairying, Fisheries and Fishermen Welfare Department",
+   "orgId": "st-tn-dept-animal-husbandry-dairying-fisheries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Anu George",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Mw=="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-bc-mbc-minorities-welfare",
+   "title": "Secretary to Government, BC, MBC & Minorities Welfare Department",
+   "orgId": "st-tn-dept-bc-mbc-minorities-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "V. Dakshinamoorthy",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NA=="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-cooperation-food-consumer-protection",
+   "title": "Additional Chief Secretary to Government, Co-operation, Food and Consumer Protection Department",
+   "orgId": "st-tn-dept-cooperation-food-consumer-protection",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "P. Amudha",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NQ=="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-commercial-taxes-registration",
+   "title": "Secretary to Government, Commercial Taxes and Registration Department",
+   "orgId": "st-tn-dept-commercial-taxes-registration",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "J. Kumaragurubaran",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Ng=="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-energy",
+   "title": "Principal Secretary to Government, Energy Department",
+   "orgId": "st-tn-dept-energy",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Anil Meshram",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Nw=="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-environment-climate-change-forests",
+   "title": "Additional Chief Secretary to Government, Environment, Climate Change and Forests Department",
+   "orgId": "st-tn-dept-environment-climate-change-forests",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Kakarla Usha",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=OA=="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-finance",
+   "title": "Additional Chief Secretary to Government, Finance Department",
+   "orgId": "st-tn-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "M.A. Siddique",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=OQ=="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-handlooms-handicrafts-textiles-khadi",
+   "title": "Secretary to Government, Handlooms, Handicrafts, Textiles and Khadi Department",
+   "orgId": "st-tn-dept-handlooms-handicrafts-textiles-khadi",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "R. Lilly",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTA="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-health-family-welfare",
+   "title": "Secretary to Government, Health and Family Welfare Department",
+   "orgId": "st-tn-dept-health-family-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Darez Ahamed",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTE="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-higher-education",
+   "title": "Additional Chief Secretary to Government, Higher Education Department",
+   "orgId": "st-tn-dept-higher-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Dheeraj Kumar",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTI="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-highways-minor-ports",
+   "title": "Principal Secretary to Government, Highways and Minor Ports Department",
+   "orgId": "st-tn-dept-highways-minor-ports",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Shunchonngam Jatak Chiru",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTM="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-home-prohibition-excise",
+   "title": "Additional Chief Secretary to Government, Home, Prohibition and Excise Department",
+   "orgId": "st-tn-dept-home-prohibition-excise",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "K. Manivasan",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTQ="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-housing-urban-development",
+   "title": "Principal Secretary to Government, Housing and Urban Development Department",
+   "orgId": "st-tn-dept-housing-urban-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "R. Kirlosh Kumar",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTU="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-industries-investment-promotion-commerce",
+   "title": "Additional Chief Secretary to Government, Industries, Investment Promotion & Commerce Department",
+   "orgId": "st-tn-dept-industries-investment-promotion-commerce",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "S. Vijayakumar",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTY="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-ai-it-digital-services",
+   "title": "Additional Chief Secretary to Government, Artificial Intelligence, Information Technology and Digital Services Department",
+   "orgId": "st-tn-dept-ai-it-digital-services",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Atul Anand",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTc="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-labour-welfare-skill-development",
+   "title": "Secretary to Government, Labour Welfare and Skill Development Department",
+   "orgId": "st-tn-dept-labour-welfare-skill-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "K. Veera Raghava Rao",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTg="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-law",
+   "title": "Secretary to Government, Law Department",
+   "orgId": "st-tn-dept-law",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "P. Sumathi",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MTk="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-municipal-administration-water-supply",
+   "title": "Additional Chief Secretary to Government, Municipal Administration and Water Supply Department",
+   "orgId": "st-tn-dept-municipal-administration-water-supply",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Gagandeep Singh Bedi",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MjE="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-human-resources-management",
+   "title": "Principal Secretary to Government, Human Resources Management Department",
+   "orgId": "st-tn-dept-human-resources-management",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "C. Samayamoorthy",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MjI="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-planning-development",
+   "title": "Additional Chief Secretary to Government, Planning and Development Department",
+   "orgId": "st-tn-dept-planning-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Sandhya Venugopal Sharma",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MjM="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-public",
+   "title": "Secretary to Government (Public and Rehabilitation), Public Department",
+   "orgId": "st-tn-dept-public",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "E. Sundaravalli",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MjQ="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-revenue-disaster-management",
+   "title": "Secretary to Government, Revenue and Disaster Management Department",
+   "orgId": "st-tn-dept-revenue-disaster-management",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "K.S Palanisamy",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MjY="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-rural-development-panchayat-raj",
+   "title": "Principal Secretary to Government, Rural Development and Panchayat Raj Department",
+   "orgId": "st-tn-dept-rural-development-panchayat-raj",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Dharmendra Pratap Yadav",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Mjc="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-school-education",
+   "title": "Secretary to Government, School Education Department",
+   "orgId": "st-tn-dept-school-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "J. Innocent Divya",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Mjg="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-msme",
+   "title": "Additional Chief Secretary to Government, Micro , Small and Medium Enterprises Department",
+   "orgId": "st-tn-dept-msme",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Pradeep Yadav",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Mjk="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-social-welfare-women-empowerment",
+   "title": "Secretary to Government, Social Welfare and Women Empowerment Department",
+   "orgId": "st-tn-dept-social-welfare-women-empowerment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Mariam Pallavi Baldev",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MzA="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-tamil-development-information",
+   "title": "Secretary to Government, Tamil Dev. and Information Department",
+   "orgId": "st-tn-dept-tamil-development-information",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "V. Rajaraman",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MzE="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-tourism-culture",
+   "title": "Principal Secretary to Government, Tourism, Culture and Special Initiatives Department",
+   "orgId": "st-tn-dept-tourism-culture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "S. Swarna",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MzI="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-transport",
+   "title": "Secretary to Government, Transport Department",
+   "orgId": "st-tn-dept-transport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Nirmal Raj",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MzM="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-youth-welfare-sports-development",
+   "title": "Secretary to Government, Youth Welfare and Sports Development Department",
+   "orgId": "st-tn-dept-youth-welfare-sports-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Sandeep Nanduri",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MzQ="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-differently-abled-welfare",
+   "title": "Secretary to Government, Welfare of Differently Abled Persons",
+   "orgId": "st-tn-dept-differently-abled-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "S. Madumathi",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=MzU="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-social-reforms",
+   "title": "Secretary to Government (Full Additional Charge), Social Reforms Department",
+   "orgId": "st-tn-dept-social-reforms",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "M. Vallalar",
+    "notes": "IAS officer. Holds Full Additional Charge (FAC) of this department."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=Mzk="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-special-programme-implementation",
+   "title": "Secretary to Government (Full Additional Charge), Special Programme Implementation",
+   "orgId": "st-tn-dept-special-programme-implementation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "S. Madumathi",
+    "notes": "IAS officer. Holds Full Additional Charge (FAC) of this department."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NDE="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-public-works",
+   "title": "Secretary to Government, Public Works Department",
+   "orgId": "st-tn-dept-public-works",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "R. Selvaraj",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NDI="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-cm-cell",
+   "title": "Additional Chief Secretary to Government / Special Officer (Full Additional Charge), Mudalvarin Mugavari Department",
+   "orgId": "st-tn-dept-cm-cell",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "P. Amudha",
+    "notes": "IAS officer. Holds Full Additional Charge (FAC) of this department."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NDM="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-water-resources",
+   "title": "Secretary to Government, Water Resources Department",
+   "orgId": "st-tn-dept-water-resources",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Prashant M Wadnere",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NDQ="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-natural-resources",
+   "title": "Additional Chief Secretary to Government (Full Additional Charge), Natural Resources Department",
+   "orgId": "st-tn-dept-natural-resources",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "Shunchonngam Jatak Chiru",
+    "notes": "IAS officer. Holds Full Additional Charge (FAC) of this department."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NDU="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-tn-pos-secretary-hrce",
+   "title": "Secretary to Government (Full Additional Charge), Hindu Religious and Charitable Endowments Department",
+   "orgId": "st-tn-dept-hrce",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-tn-pos-chief-minister",
+   "holder": {
+    "name": "V. Rajaraman",
+    "notes": "IAS officer. Holds Full Additional Charge (FAC) of this department."
+   },
+   "sources": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=NDY="
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "st-kl-pos-secretary-finance",
+   "title": "Additional Chief Secretary to Government, Finance Department",
+   "orgId": "st-kl-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "K.R. Jyothilal",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-general-administration",
+   "title": "Principal Secretary to Government, General Administration Department",
+   "orgId": "st-kl-dept-general-administration",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "B. Ashok",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-ports",
+   "title": "Secretary (CM's Secretary) to Government, Ports Department",
+   "orgId": "st-kl-dept-ports",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Rattan U. Kelkar",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-home",
+   "title": "Additional Chief Secretary to Government, Home Department",
+   "orgId": "st-kl-dept-home",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Minhaj Alam",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-vigilance",
+   "title": "Additional Chief Secretary to Government, Vigilance Department",
+   "orgId": "st-kl-dept-vigilance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Minhaj Alam",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-coir",
+   "title": "Additional Chief Secretary to Government, Coir Department",
+   "orgId": "st-kl-dept-coir",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Minhaj Alam",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-health-family-welfare",
+   "title": "Principal Secretary to Government, Health and Family Welfare Department",
+   "orgId": "st-kl-dept-health-family-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Sharmila Mary Joseph",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-devaswom",
+   "title": "Secretary to Government, Devaswom Department",
+   "orgId": "st-kl-dept-devaswom",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "M.G. Rajamanickam",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-electricity",
+   "title": "Secretary to Government, Electricity Department",
+   "orgId": "st-kl-dept-electricity",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "M.G. Rajamanickam",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-environment",
+   "title": "Secretary to Government, Environment Department",
+   "orgId": "st-kl-dept-environment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "M.G. Rajamanickam",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-forests-wildlife",
+   "title": "Secretary to Government, Forests and Wildlife Department",
+   "orgId": "st-kl-dept-forests-wildlife",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Biju K",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-skill-development",
+   "title": "Secretary to Government, Skill Development Department",
+   "orgId": "st-kl-dept-skill-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Biju K",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-water-resources",
+   "title": "Special Secretary to Government, Water Resources Department",
+   "orgId": "st-kl-dept-water-resources",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Suhas S",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-housing",
+   "title": "Special Secretary to Government, Housing Department",
+   "orgId": "st-kl-dept-housing",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Suhas S",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-food-civil-supplies",
+   "title": "Principal Secretary to Government, Food and Civil Supplies Department",
+   "orgId": "st-kl-dept-food-civil-supplies",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Sharmila Mary Joseph",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-industries",
+   "title": "Additional Chief Secretary to Government, Industries Department",
+   "orgId": "st-kl-dept-industries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Mohammed Hanish APM",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-information-technology",
+   "title": "Special Secretary to Government, Information Technology Department",
+   "orgId": "st-kl-dept-information-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Seeram Sambasiva Rao",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-transport",
+   "title": "Secretary to Government, Transport Department",
+   "orgId": "st-kl-dept-transport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Anupama T V",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-revenue",
+   "title": "Principal Secretary to Government, Revenue Department",
+   "orgId": "st-kl-dept-revenue",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Tinku Biswal",
+    "notes": "IAS officer. Also handles: Sri Shibu A IAS; Smt. Geetha A IAS"
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-disaster-management",
+   "title": "Principal Secretary to Government, Disaster Management Department",
+   "orgId": "st-kl-dept-disaster-management",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Tinku Biswal",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-general-education",
+   "title": "Special Secretary to Government, General Education Department",
+   "orgId": "st-kl-dept-general-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "D. Sajith Babu",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-higher-education",
+   "title": "Principal Secretary to Government, Higher Education Department",
+   "orgId": "st-kl-dept-higher-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "B. Ashok",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-tourism",
+   "title": "Special Secretary to Government, Tourism Department",
+   "orgId": "st-kl-dept-tourism",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Anjana M",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-culture",
+   "title": "Special Secretary to Government, Culture Department",
+   "orgId": "st-kl-dept-culture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Anjana M",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-labour",
+   "title": "Special Secretary to Government, Labour Department",
+   "orgId": "st-kl-dept-labour",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Sheeba George",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-women-child-development",
+   "title": "Special Secretary to Government, Women and Child Development Department",
+   "orgId": "st-kl-dept-women-child-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Sheeba George",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-excise",
+   "title": "Special Secretary (Excise Commissioner) to Government, Excise Department",
+   "orgId": "st-kl-dept-excise",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Seeram Sambasiva Rao",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-cooperation",
+   "title": "Secretary to Government, Cooperation Department",
+   "orgId": "st-kl-dept-cooperation",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Veena N. Madhavan",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-local-self-government",
+   "title": "Secretary to Government, Local Self Government Department",
+   "orgId": "st-kl-dept-local-self-government",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Shanavaz S",
+    "notes": "IAS officer (Special Secretary, Local Self-Government). Corrected 2026-09-25: prior data had \"Anupama T V\" (who is the Transport Department secretary) mapped here in error; the officer directory lists Shanavaz S. IAS separately under Local Self-Government."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-public-works",
+   "title": "Special Secretary to Government, Public Works Department",
+   "orgId": "st-kl-dept-public-works",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Adeela Abdulla",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-fisheries",
+   "title": "Special Secretary to Government, Fisheries Department",
+   "orgId": "st-kl-dept-fisheries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Abdul Nazar B",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-social-justice",
+   "title": "Special Secretary to Government, Social Justice Department",
+   "orgId": "st-kl-dept-social-justice",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Abdul Nazar B",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-agriculture",
+   "title": "Special Secretary to Government, Agriculture Department",
+   "orgId": "st-kl-dept-agriculture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Subhash T V",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-scheduled-castes-tribes-development",
+   "title": "Secretary to Government, Scheduled Castes and Scheduled Tribes Development Department",
+   "orgId": "st-kl-dept-scheduled-castes-tribes-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Veena N. Madhavan",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-backward-classes-development",
+   "title": "Secretary to Government, Backward Classes Development Department",
+   "orgId": "st-kl-dept-backward-classes-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Veena N. Madhavan",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-sports-youth-affairs",
+   "title": "Special Secretary to Government, Sports and Youth Affairs Department",
+   "orgId": "st-kl-dept-sports-youth-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "N. Prashanth",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-planning-economic-affairs",
+   "title": "Special Secretary to Government, Planning and Economic Affairs Department",
+   "orgId": "st-kl-dept-planning-economic-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Gokul G R",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-ayush",
+   "title": "Principal Secretary to Government, AYUSH Department",
+   "orgId": "st-kl-dept-ayush",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Sharmila Mary Joseph",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-norka",
+   "title": "Special Secretary to Government, NORKA Department (Non-Resident Keralites Affairs)",
+   "orgId": "st-kl-dept-norka",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Anjana M",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-information-public-relations",
+   "title": "Secretary to Government, Information and Public Relations Department",
+   "orgId": "st-kl-dept-information-public-relations",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Rattan U. Kelkar",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-sainik-welfare",
+   "title": "Principal Secretary to Government, Sainik Welfare Department",
+   "orgId": "st-kl-dept-sainik-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Raju Narayana Swamy",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-elderly-welfare",
+   "title": "Deputy Secretary to Government, Elderly Welfare Department",
+   "orgId": "st-kl-dept-elderly-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Alfred O.V.",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-science-technology",
+   "title": "Special Secretary to Government, Science and Technology Department",
+   "orgId": "st-kl-dept-science-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "Anjana M",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-personnel-administrative-reforms",
+   "title": "Principal Secretary to Government, Personnel and Administrative Reforms Department",
+   "orgId": "st-kl-dept-personnel-administrative-reforms",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "B. Ashok",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-taxes",
+   "title": "Special Secretary to Government, Taxes Department",
+   "orgId": "st-kl-dept-taxes",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "N. Prashanth",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-election",
+   "title": "Special Secretary and Chief Electoral Officer to Government, Election Department",
+   "orgId": "st-kl-dept-election",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "D. Sajith Babu",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-kl-pos-secretary-parliamentary-affairs",
+   "title": "Secretary to Government, Parliamentary Affairs Department",
+   "orgId": "st-kl-dept-parliamentary-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-kl-pos-chief-minister",
+   "holder": {
+    "name": "M.G. Rajamanickam",
+    "notes": "IAS officer."
+   },
+   "sources": [
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI="
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-accounts-treasuries",
+   "title": "Development Commissioner-cum-Secretary to Government, Accounts and Treasuries Department",
+   "orgId": "st-py-dept-accounts-treasuries",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Krishna Mohan Uppu",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-adi-dravidar-st-welfare",
+   "title": "Commissioner-cum-Secretary to Government, Adi Dravidar Welfare and Scheduled Tribes Welfare Department",
+   "orgId": "st-py-dept-adi-dravidar-st-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Dr. A. Muthamma",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-agriculture-farmers-welfare",
+   "title": "Chief Electoral Officer / Secretary to Government, Agriculture and Farmers Welfare Department",
+   "orgId": "st-py-dept-agriculture-farmers-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "A.S.P.S. Ravi Prakash",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-animal-husbandry-animal-welfare",
+   "title": "Secretary to Government, Animal Husbandry and Animal Welfare Department",
+   "orgId": "st-py-dept-animal-husbandry-animal-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Mohammed Ahsan Abid",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-arts-culture",
+   "title": "Resident Commissioner / Secretary to Government, Arts and Culture Department",
+   "orgId": "st-py-dept-arts-culture",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "K.C. Surender",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-chief-vigilance-office",
+   "title": "Secretary to Government (Vigilance), Chief Vigilance Office",
+   "orgId": "st-py-dept-chief-vigilance-office",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "L. Kumar",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-civil-supplies-consumer-affairs",
+   "title": "Secretary to Government, Civil Supplies and Consumer Affairs Department",
+   "orgId": "st-py-dept-civil-supplies-consumer-affairs",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "A. Vikranth Raja",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-cooperative",
+   "title": "Secretary to Government, Co-operative Department",
+   "orgId": "st-py-dept-cooperative",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "A. Vikranth Raja",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-commercial-taxes",
+   "title": "Secretary-cum-Commissioner of State Taxes, Commercial Taxes Department",
+   "orgId": "st-py-dept-commercial-taxes",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Anoop Thakur",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-personnel-administrative-reforms",
+   "title": "Secretary to Government, Department of Personnel and Administrative Reforms",
+   "orgId": "st-py-dept-personnel-administrative-reforms",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "L. Kumar",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-economics-statistics",
+   "title": "Secretary to Government, Economics and Statistics Department",
+   "orgId": "st-py-dept-economics-statistics",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "K.C. Surender",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-elections",
+   "title": "Chief Electoral Officer, Puducherry, Elections Department",
+   "orgId": "st-py-dept-elections",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "A.S.P.S. Ravi Prakash",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-electricity",
+   "title": "Commissioner-cum-Secretary to Government (Power), Electricity Department",
+   "orgId": "st-py-dept-electricity",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Dr. A. Muthamma",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-finance",
+   "title": "Development Commissioner-cum-Secretary to Government, Finance Department",
+   "orgId": "st-py-dept-finance",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Krishna Mohan Uppu",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-fire-service",
+   "title": "Secretary to Government, Fire Service Department",
+   "orgId": "st-py-dept-fire-service",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Rajeeva Shukla",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-fisheries-fishermen-welfare",
+   "title": "Commissioner-cum-Secretary to Lieutenant Governor, Fisheries and Fishermen Welfare Department",
+   "orgId": "st-py-dept-fisheries-fishermen-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Dr. D. Manikandan",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-forest-wildlife",
+   "title": "Development Commissioner-cum-Secretary to Government, Forest and Wild Life Department",
+   "orgId": "st-py-dept-forest-wildlife",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Krishna Mohan Uppu",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-health-family-welfare",
+   "title": "Secretary to Government, Health and Family Welfare Services Department",
+   "orgId": "st-py-dept-health-family-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "L. Kumar",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-higher-technical-education",
+   "title": "Secretary to Government, Higher and Technical Education Department",
+   "orgId": "st-py-dept-higher-technical-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Mohammed Ahsan Abid",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-hri-wakf",
+   "title": "District Collector-cum-Secretary to Government, Hindu Religious Institutions and Wakf Department",
+   "orgId": "st-py-dept-hri-wakf",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Kulothungan A",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-home",
+   "title": "Chief Secretary to Government / Chief Vigilance Officer, Home Department",
+   "orgId": "st-py-dept-home",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Dr Sharat Chauhan",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-industries-commerce",
+   "title": "Secretary to Government, Industries and Commerce Department",
+   "orgId": "st-py-dept-industries-commerce",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "A. Vikranth Raja",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-information-publicity",
+   "title": "Secretary to Government, Information and Publicity Department",
+   "orgId": "st-py-dept-information-publicity",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Mohammed Ahsan Abid",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-information-technology",
+   "title": "Secretary to Government, Information Technology Department",
+   "orgId": "st-py-dept-information-technology",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Anoop Thakur",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-labour",
+   "title": "Resident Commissioner / Secretary-cum-Commissioner, Labour Department",
+   "orgId": "st-py-dept-labour",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "K.C. Surender",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-local-administration",
+   "title": "Secretary to Government, Local Administration Department",
+   "orgId": "st-py-dept-local-administration",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "A. Vikranth Raja",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-planning-research",
+   "title": "Commissioner-cum-Secretary to Government, Planning and Research Department",
+   "orgId": "st-py-dept-planning-research",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Dr. A. Muthamma",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-port",
+   "title": "Resident Commissioner / Secretary to Government, Port Department",
+   "orgId": "st-py-dept-port",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "K.C. Surender",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-public-works",
+   "title": "Commissioner-cum-Secretary to Government, Public Works Department",
+   "orgId": "st-py-dept-public-works",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Dr. A. Muthamma",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-revenue-disaster-management",
+   "title": "Development Commissioner-cum-Secretary to Government, Revenue and Disaster Management Department",
+   "orgId": "st-py-dept-revenue-disaster-management",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Krishna Mohan Uppu",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-rural-development",
+   "title": "Secretary to Government (Chairman, DRDA), Rural Development Department",
+   "orgId": "st-py-dept-rural-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "A.S.P.S. Ravi Prakash",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-sainik-welfare",
+   "title": "Secretary to Government, Sainik Welfare Department",
+   "orgId": "st-py-dept-sainik-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Mohammed Ahsan Abid",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-school-education",
+   "title": "Development Commissioner-cum-Secretary to Government, School Education Department",
+   "orgId": "st-py-dept-school-education",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Krishna Mohan Uppu",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-science-technology-environment",
+   "title": "Secretary-cum-Director, Science, Technology and Environment, Science, Technology and Environment Department",
+   "orgId": "st-py-dept-science-technology-environment",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Smt. R. Smitha",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-social-welfare",
+   "title": "Secretary to Government, Social Welfare Department",
+   "orgId": "st-py-dept-social-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Mohammed Ahsan Abid",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-stationery-printing",
+   "title": "Secretary to Government, Stationery and Printing Department",
+   "orgId": "st-py-dept-stationery-printing",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Smt. R. Smitha",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-tourism",
+   "title": "Commissioner-cum-Secretary to Lieutenant Governor, Tourism Department",
+   "orgId": "st-py-dept-tourism",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Dr. D. Manikandan",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-town-country-planning",
+   "title": "Secretary to Government, Town and Country Planning Department",
+   "orgId": "st-py-dept-town-country-planning",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "A. Vikranth Raja",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-transport",
+   "title": "Secretary to Government, Transport Department",
+   "orgId": "st-py-dept-transport",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Rajeeva Shukla",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-backward-classes-minorities-welfare",
+   "title": "Secretary to Government, Welfare of Backward Classes and Minorities Department",
+   "orgId": "st-py-dept-backward-classes-minorities-welfare",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Mohammed Ahsan Abid",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "st-py-pos-secretary-women-child-development",
+   "title": "Secretary to Government, Women and Child Development Department",
+   "orgId": "st-py-dept-women-child-development",
+   "rank": "secretary",
+   "appointmentMode": "appointed",
+   "appointedBy": "st-py-pos-chief-minister",
+   "holder": {
+    "name": "Smt. R. Smitha",
+    "notes": "IAS officer (AGMU/AGMUT cadre); holds multiple portfolio charges concurrently per py.gov.in Secretaries directory."
+   },
+   "sources": [
+    "https://py.gov.in/secretaries"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "relations": [
+  {
+   "from": "st-tn-pos-minister-13",
+   "to": "st-tn-dept-social-justice",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MQ=="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-social-justice",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-23",
+   "to": "st-tn-dept-agriculture-farmers-welfare",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=Mg=="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-agriculture-farmers-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-24",
+   "to": "st-tn-dept-animal-husbandry-dairying-fisheries",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=Mw=="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-animal-husbandry-dairying-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-12",
+   "to": "st-tn-dept-bc-mbc-minorities-welfare",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=NA=="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-bc-mbc-minorities-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-21",
+   "to": "st-tn-dept-cooperation-food-consumer-protection",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=NQ=="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-cooperation-food-consumer-protection",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-33",
+   "to": "st-tn-dept-commercial-taxes-registration",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=Ng=="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-commercial-taxes-registration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-6",
+   "to": "st-tn-dept-energy",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=Nw=="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-energy",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-32",
+   "to": "st-tn-dept-environment-climate-change-forests",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=OA=="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-environment-climate-change-forests",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-28",
+   "to": "st-tn-dept-finance",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=OQ=="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-17",
+   "to": "st-tn-dept-handlooms-handicrafts-textiles-khadi",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MTA="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-handlooms-handicrafts-textiles-khadi",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-3",
+   "to": "st-tn-dept-health-family-welfare",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MTE="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-health-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-10",
+   "to": "st-tn-dept-higher-education",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MTI="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-higher-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-2",
+   "to": "st-tn-dept-highways-minor-ports",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MTM="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-highways-minor-ports",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-chief-minister",
+   "to": "st-tn-dept-home-prohibition-excise",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MTQ="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-home-prohibition-excise",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-15",
+   "to": "st-tn-dept-housing-urban-development",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MTU="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-housing-urban-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-9",
+   "to": "st-tn-dept-industries-investment-promotion-commerce",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MTY="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-industries-investment-promotion-commerce",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-31",
+   "to": "st-tn-dept-ai-it-digital-services",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MTc="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-ai-it-digital-services",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-20",
+   "to": "st-tn-dept-labour-welfare-skill-development",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MTg="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-labour-welfare-skill-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-6",
+   "to": "st-tn-dept-law",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MTk="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-law",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-4",
+   "to": "st-tn-dept-legislative-assembly",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MjA="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-legislative-assembly",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-chief-minister",
+   "to": "st-tn-dept-municipal-administration-water-supply",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MjE="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-municipal-administration-water-supply",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-25",
+   "to": "st-tn-dept-human-resources-management",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MjI="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-human-resources-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-chief-minister",
+   "to": "st-tn-dept-planning-development",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MjM="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-planning-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-chief-minister",
+   "to": "st-tn-dept-public",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MjQ="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-public",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-4",
+   "to": "st-tn-dept-revenue-disaster-management",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MjY="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-revenue-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-1",
+   "to": "st-tn-dept-rural-development-panchayat-raj",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjc="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-rural-development-panchayat-raj",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-7",
+   "to": "st-tn-dept-school-education",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjg="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-school-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-27",
+   "to": "st-tn-dept-msme",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjk="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-msme",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-22",
+   "to": "st-tn-dept-social-welfare-women-empowerment",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MzA="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-social-welfare-women-empowerment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-7",
+   "to": "st-tn-dept-tamil-development-information",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MzE="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-tamil-development-information",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-11",
+   "to": "st-tn-dept-tourism-culture",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MzI="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-tourism-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-14",
+   "to": "st-tn-dept-transport",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MzM="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-chief-minister",
+   "to": "st-tn-dept-youth-welfare-sports-development",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MzQ="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-youth-welfare-sports-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-chief-minister",
+   "to": "st-tn-dept-differently-abled-welfare",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=MzU="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-differently-abled-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-6",
+   "to": "st-tn-dept-public-elections",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=Mzg="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-public-elections",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-chief-minister",
+   "to": "st-tn-dept-social-reforms",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=Mzk="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-social-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-chief-minister",
+   "to": "st-tn-dept-special-programme-implementation",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=NDE="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-special-programme-implementation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-2",
+   "to": "st-tn-dept-public-works",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=NDI="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-public-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-chief-minister",
+   "to": "st-tn-dept-cm-cell",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=NDM="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-cm-cell",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-1",
+   "to": "st-tn-dept-water-resources",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=NDQ="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-8",
+   "to": "st-tn-dept-natural-resources",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=NDU="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-natural-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-tn-pos-minister-26",
+   "to": "st-tn-dept-hrce",
+   "type": "heads",
+   "source": "https://www.tn.gov.in/dept_profile.php?dep_id=NDY="
+  },
+  {
+   "from": "st-tn-pos-chief-secretary",
+   "to": "st-tn-dept-hrce",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-finance",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-general-administration",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-general-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-law",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-law",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-ports",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-ports",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-1",
+   "to": "st-kl-dept-home",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-1",
+   "to": "st-kl-dept-vigilance",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-vigilance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-1",
+   "to": "st-kl-dept-coir",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-coir",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-2",
+   "to": "st-kl-dept-health-family-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-health-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-2",
+   "to": "st-kl-dept-devaswom",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-devaswom",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-3",
+   "to": "st-kl-dept-electricity",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-electricity",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-3",
+   "to": "st-kl-dept-environment",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-environment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-4",
+   "to": "st-kl-dept-forests-wildlife",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-forests-wildlife",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-4",
+   "to": "st-kl-dept-skill-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-skill-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-5",
+   "to": "st-kl-dept-water-resources",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-water-resources",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-5",
+   "to": "st-kl-dept-housing",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-housing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-6",
+   "to": "st-kl-dept-food-civil-supplies",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-food-civil-supplies",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-7",
+   "to": "st-kl-dept-industries",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-industries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-7",
+   "to": "st-kl-dept-information-technology",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-8",
+   "to": "st-kl-dept-transport",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-9",
+   "to": "st-kl-dept-revenue",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-revenue",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-9",
+   "to": "st-kl-dept-disaster-management",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-10",
+   "to": "st-kl-dept-general-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-general-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-10",
+   "to": "st-kl-dept-minority-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-minority-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-11",
+   "to": "st-kl-dept-higher-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-higher-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-12",
+   "to": "st-kl-dept-tourism",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-12",
+   "to": "st-kl-dept-culture",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-13",
+   "to": "st-kl-dept-labour",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-labour",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-13",
+   "to": "st-kl-dept-women-child-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-women-child-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-14",
+   "to": "st-kl-dept-excise",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-excise",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-14",
+   "to": "st-kl-dept-cooperation",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-cooperation",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-15",
+   "to": "st-kl-dept-local-self-government",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-local-self-government",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-16",
+   "to": "st-kl-dept-public-works",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-public-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-17",
+   "to": "st-kl-dept-fisheries",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-fisheries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-17",
+   "to": "st-kl-dept-social-justice",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-social-justice",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-18",
+   "to": "st-kl-dept-agriculture",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-agriculture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-19",
+   "to": "st-kl-dept-scheduled-castes-tribes-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-scheduled-castes-tribes-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-19",
+   "to": "st-kl-dept-backward-classes-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-backward-classes-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-minister-20",
+   "to": "st-kl-dept-sports-youth-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-sports-youth-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-planning-economic-affairs",
+   "type": "heads",
+   "source": "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI= (Secretaries directory, kerala.gov.in, accessed 2026-09-25); https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0 (Secretariat Departments)"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-planning-economic-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-ayush",
+   "type": "heads",
+   "source": "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI= (Secretaries directory, kerala.gov.in, accessed 2026-09-25); https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0 (Secretariat Departments)"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-ayush",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-norka",
+   "type": "heads",
+   "source": "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI= (Secretaries directory, kerala.gov.in, accessed 2026-09-25); https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0 (Secretariat Departments)"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-norka",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-information-public-relations",
+   "type": "heads",
+   "source": "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI= (Secretaries directory, kerala.gov.in, accessed 2026-09-25); https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0 (Secretariat Departments)"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-information-public-relations",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-sainik-welfare",
+   "type": "heads",
+   "source": "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI= (Secretaries directory, kerala.gov.in, accessed 2026-09-25); https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0 (Secretariat Departments)"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-sainik-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-elderly-welfare",
+   "type": "heads",
+   "source": "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI= (Secretaries directory, kerala.gov.in, accessed 2026-09-25); https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0 (Secretariat Departments)"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-elderly-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-science-technology",
+   "type": "heads",
+   "source": "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI= (Secretaries directory, kerala.gov.in, accessed 2026-09-25); https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0 (Secretariat Departments)"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-science-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-personnel-administrative-reforms",
+   "type": "heads",
+   "source": "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI= (Secretaries directory, kerala.gov.in, accessed 2026-09-25); https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0 (Secretariat Departments)"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-personnel-administrative-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-taxes",
+   "type": "heads",
+   "source": "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI= (Secretaries directory, kerala.gov.in, accessed 2026-09-25); https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0 (Secretariat Departments)"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-taxes",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-election",
+   "type": "heads",
+   "source": "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI= (Secretaries directory, kerala.gov.in, accessed 2026-09-25); https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0 (Secretariat Departments)"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-election",
+   "type": "oversees"
+  },
+  {
+   "from": "st-kl-pos-chief-minister",
+   "to": "st-kl-dept-parliamentary-affairs",
+   "type": "heads",
+   "source": "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI= (Secretaries directory, kerala.gov.in, accessed 2026-09-25); https://kerala.gov.in/appdepartmentdetail/NTI1MzI1LjI0 (Secretariat Departments)"
+  },
+  {
+   "from": "st-kl-pos-chief-secretary",
+   "to": "st-kl-dept-parliamentary-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-accounts-treasuries",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-accounts-treasuries",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-4",
+   "to": "st-py-dept-adi-dravidar-st-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-adi-dravidar-st-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-3",
+   "to": "st-py-dept-agriculture-farmers-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-agriculture-farmers-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-1",
+   "to": "st-py-dept-animal-husbandry-animal-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-animal-husbandry-animal-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-4",
+   "to": "st-py-dept-arts-culture",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-arts-culture",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-ayush",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-ayush",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-chief-vigilance-office",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-chief-vigilance-office",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-5",
+   "to": "st-py-dept-civil-supplies-consumer-affairs",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-civil-supplies-consumer-affairs",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-cooperative",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-cooperative",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-commercial-taxes",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-commercial-taxes",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-personnel-administrative-reforms",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-personnel-administrative-reforms",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-drugs-control",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-drugs-control",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-4",
+   "to": "st-py-dept-economics-statistics",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-economics-statistics",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-elections",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-elections",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-1",
+   "to": "st-py-dept-electricity",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-electricity",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-finance",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-finance",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-fire-service",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-fire-service",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-2",
+   "to": "st-py-dept-fisheries-fishermen-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-fisheries-fishermen-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-food-drugs-testing",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-food-drugs-testing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-food-safety",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-food-safety",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-1",
+   "to": "st-py-dept-forest-wildlife",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-forest-wildlife",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-health-family-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-health-family-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-1",
+   "to": "st-py-dept-higher-technical-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-higher-technical-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-hri-wakf",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-hri-wakf",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-1",
+   "to": "st-py-dept-home",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-home",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-2",
+   "to": "st-py-dept-industries-commerce",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-industries-commerce",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-information-publicity",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-information-publicity",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-4",
+   "to": "st-py-dept-information-technology",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-information-technology",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-2",
+   "to": "st-py-dept-labour",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-labour",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-1",
+   "to": "st-py-dept-law",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-law",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-local-administration",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-local-administration",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-planning-research",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-planning-research",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-1",
+   "to": "st-py-dept-police",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-police",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-2",
+   "to": "st-py-dept-port",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-port",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-1",
+   "to": "st-py-dept-prisons",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-prisons",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-2",
+   "to": "st-py-dept-public-works",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-public-works",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-revenue-disaster-management",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-revenue-disaster-management",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-3",
+   "to": "st-py-dept-rural-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-rural-development",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-3",
+   "to": "st-py-dept-sainik-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-sainik-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-1",
+   "to": "st-py-dept-school-education",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-school-education",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-science-technology-environment",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-science-technology-environment",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-5",
+   "to": "st-py-dept-social-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-social-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-stationery-printing",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-stationery-printing",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-2",
+   "to": "st-py-dept-tourism",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-tourism",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-town-country-planning",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-town-country-planning",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-chief-minister",
+   "to": "st-py-dept-transport",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-transport",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-5",
+   "to": "st-py-dept-backward-classes-minorities-welfare",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-backward-classes-minorities-welfare",
+   "type": "oversees"
+  },
+  {
+   "from": "st-py-pos-minister-5",
+   "to": "st-py-dept-women-child-development",
+   "type": "heads"
+  },
+  {
+   "from": "st-py-pos-chief-secretary",
+   "to": "st-py-dept-women-child-development",
+   "type": "oversees"
+  }
+ ],
+ "verification": {
+  "verifiedAt": "2026-09-25",
+  "verifiedBy": "adversarial-verifier-subagent",
+  "method": "Structural validation via local script (ID-format, duplicate-id, headPositionId/adminHeadPositionId/orgId resolution, relation from/to resolution, required-field, vacant/holder-consistency checks) + live re-fetch of primary sources via WebFetch (WebSearch quota for the session was already exhausted by other agents, so live official pages were fetched directly instead): tn.gov.in/department_list.php + 8 tn.gov.in/dept_profile.php pages, kerala.gov.in Secretaries directory (subdetail page), py.gov.in/secretaries and py.gov.in/department.",
+  "structuralChecks": {
+   "idFormatViolations": 0,
+   "duplicateIds": 0,
+   "headPositionIdUnresolved": 0,
+   "adminHeadPositionIdUnresolved": 0,
+   "orgIdUnresolved": 0,
+   "relationEndpointsUnresolved": 0,
+   "vacantHolderContradictions": 0,
+   "requiredFieldsMissing": 0,
+   "note": "All entity/position ids matched the st-<code>-dept-* / st-<code>-pos-secretary-* patterns with no duplicates. Every headPositionId resolved (against this file plus data/raw/states-tn-kl-py.json). Relation 'type' values used ('heads', 'oversees') are NOT in SCHEMA.md's enum of relation types (closest valid analogue is 'administers') -- flagged but left unchanged because this convention is used identically and consistently across all 9 data/raw/state-depts-*.json sibling segments, so a unilateral rename in only this file would desynchronize it from the rest of the dataset; this is a dataset-wide convention decision that needs to be made once, not per-segment."
+  },
+  "secretaryPostingsReVerified": {
+   "count": 75,
+   "requiredMinimum": 25,
+   "byState": {
+    "st-tn": 8,
+    "st-kl": 30,
+    "st-py": 37
+   },
+   "sourcesUsed": [
+    "https://www.tn.gov.in/dept_profile.php?dep_id=<base64 dept id> (8 TN departments individually re-fetched: Home, Finance, Revenue, Health, School Education, Rural Development, Energy, Industries)",
+    "https://kerala.gov.in/subdetail/MTIzOTc2NzU2LjY0/MTk5NjIzNTkuMTI= (Kerala Secretaries directory, re-fetched twice -- once in English, once specifically checked for Malayalam-only entries the first pass missed)",
+    "https://py.gov.in/secretaries (Puducherry Secretaries directory, re-fetched)"
+   ],
+   "corrections": [
+    {
+     "positionId": "st-kl-pos-secretary-local-self-government",
+     "field": "holder.name",
+     "before": "Anupama T V",
+     "after": "Shanavaz S",
+     "reason": "kerala.gov.in Secretaries directory lists 'Shri Shanavaz S. IAS' for Local Self-Government (Special Secretary) as a distinct officer from Anupama T V, who is separately and explicitly listed only for Transport. The original entry's own notes field ('Also handles: Sri Shanavas S IAS') already contained the correct name but it had been attached to the wrong department/holder pairing."
+    }
+   ],
+   "confirmedCorrect": [
+    "st-kl-pos-secretary-social-justice (Abdul Nazar B) -- initially looked like a stale duplicate of the Fisheries secretary, but a second, targeted re-fetch of the Malayalam-language portion of the same directory page confirmed 'Shri Abdul Naser B IAS' explicitly holds Social Justice as an additional charge alongside Fisheries. No change made.",
+    "st-kl-pos-secretary-public-works (Adeela Abdulla) -- an initial English-only page summary garbled this to 'Adeel Abdullah' (wrong gender/spelling); a second fetch of the same page's Malayalam text confirmed 'Dr. Adeela Abdulla IAS' matches the existing JSON exactly. No change made."
+   ]
+  },
+  "departmentListCompletenessCheck": {
+   "checklist": [
+    "Home",
+    "Finance",
+    "Revenue",
+    "Health",
+    "School Education",
+    "Higher Education",
+    "Agriculture",
+    "Rural Development",
+    "Urban Development",
+    "PWD",
+    "Power/Energy",
+    "Water Resources",
+    "Social Welfare",
+    "Women & Child",
+    "Industries",
+    "Transport",
+    "Forest & Environment",
+    "Tribal/SC welfare",
+    "Food & Civil Supplies",
+    "Labour",
+    "IT",
+    "Tourism",
+    "Panchayati Raj"
+   ],
+   "st-tn": "42/42 departments verified to match tn.gov.in/department_list.php exactly (live re-fetch, same order, same names). All checklist portfolios present (several combined, e.g. Rural Development and Panchayat Raj is one department). Note: Tamil Nadu's official site does NOT currently list a standalone 'Adi Dravidar and Tribal Welfare Department' -- that subject now appears consolidated under 'Social Justice Department' on the live site, confirmed by the live fetch, so nothing was added (the source itself does not have it as a separate department).",
+   "st-kl": "49/49 matches the segment's own raw official-source scrape (kl_departments.json, itself sourced from kerala.gov.in's Secretariat Departments listing per the segment's notes); all checklist portfolios present, several combined per Kerala's actual Secretariat structure (e.g. Local Self Government Department covers both rural and urban local government).",
+   "st-py": "48/48 verified to match py.gov.in/department's Directorates list exactly (live re-fetch of the underlying raw scrape confirms no additions/removals needed). All checklist portfolios present; PWD covers water resources (Puducherry has no standalone Water Resources directorate). The py.gov.in/secretaries page additionally lists a few officer-level charges (e.g. 'Sports & Youth Affairs', 'General Administration', 'Excise') that are NOT separate Directorates on py.gov.in/department, so they were correctly not added as department entities -- they are sub-portfolios of the Directorates already present.",
+   "missingMajorDepartmentsAdded": 0
+  },
+  "notChanged": "Left the 'heads'/'oversees' non-schema relation-type naming as-is (see structuralChecks note above -- systemic across all state-depts-*.json segments, out of scope for a single-segment fix). Did not add adminHeadPositionId to the 139 department entities even though the secretary Position ids could technically populate it (schema marks this field optional and the task scope was verification/correction, not schema enrichment)."
+ }
+}
