@@ -1,3 +1,4 @@
+# Runs on GitHub Actions; see README "How it works".
 # Keeps the news archive (Latest news + Power map) growing between deploys.
 # "Git scraping": fetch feeds every 30 minutes and commit the archive when it changes.
 name: ingest-news
