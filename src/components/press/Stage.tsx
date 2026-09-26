@@ -32,11 +32,11 @@ export function springAt(from: number, to: number, elapsed: number) {
   return x;
 }
 
-/** Rotation that brings `id` to 6 o'clock, taking the short way round from `from`. */
-export function restAngle(L: WheelLayout, id: string, from: number) {
+/** Rotation that brings `id` to `at` degrees (90 = 6 o'clock, -90 = 12 o'clock), the short way round from `from`. */
+export function restAngle(L: WheelLayout, id: string, from: number, at = 90) {
   const p = L.nodes.get(id);
   if (!p || p.r === 0) return from;
-  let target = 90 - p.a * DEG;
+  const target = at - p.a * DEG;
   let d = (((target - from) % 360) + 360) % 360;
   if (d > 180) d -= 360;
   return from + d;

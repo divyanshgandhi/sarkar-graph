@@ -1,6 +1,7 @@
 // Render press assets from the running dev server over the Chrome DevTools Protocol (no npm deps).
 //   node scripts/press.mjs banner                → docs/img/banner.png + docs/img/banner-dark.png (2560×1280)
 //   node scripts/press.mjs film [--from=0 --to=60] → press/sarkar-graph-launch.mp4 (1920×1080, 30 fps)
+//   node scripts/press.mjs film --portrait         → press/sarkar-graph-launch-9x16.mp4 (1080×1920, Instagram Stories)
 // Frames are sought, never recorded: the film page renders any instant exactly (window.__seek),
 // so the video is identical on every run and frame-perfect regardless of machine speed.
 import { spawn, spawnSync } from "node:child_process";
@@ -77,10 +78,13 @@ if (mode === "banner") {
   }
 } else if (mode === "film") {
   const FPS = 30;
+  const portrait = args.includes("--portrait");
+  const [FW, FH] = portrait ? [1080, 1920] : [1920, 1080];
+  const suffix = portrait ? "-9x16" : "";
   const from = opt("from", 0),
     to = opt("to", 60);
   const workers = opt("workers", 4);
-  const dir = join(ROOT, "press/frames");
+  const dir = join(ROOT, `press/frames${suffix}`);
   if (from === 0) rmSync(dir, { recursive: true, force: true });
   mkdirSync(dir, { recursive: true });
   const frames = [];
@@ -90,7 +94,7 @@ if (mode === "banner") {
   await Promise.all(
     Array.from({ length: workers }, async (_, w) => {
       const mine = frames.filter((_, i) => i % workers === w);
-      const b = await open(`${BASE}/press/film`, 1920, 1080, 1);
+      const b = await open(`${BASE}/press/film${portrait ? "?format=portrait" : ""}`, FW, FH, 1);
       for (const f of mine) {
         await b.evaluate(`window.__seek(${f / FPS})`);
         await shot(b, join(dir, `${String(f).padStart(5, "0")}.jpg`), "jpeg");
@@ -102,7 +106,7 @@ if (mode === "banner") {
   console.log(`\n${frames.length} frames → ${dir}`);
   if (from === 0 && to >= 60) {
     mkdirSync(join(ROOT, "press"), { recursive: true });
-    const out = join(ROOT, "press/sarkar-graph-launch.mp4");
+    const out = join(ROOT, `press/sarkar-graph-launch${suffix}.mp4`);
     const r = spawnSync(
       "ffmpeg",
       ["-y", "-loglevel", "error", "-framerate", String(FPS), "-i", join(dir, "%05d.jpg"), "-c:v", "libx264", "-preset", "slow", "-crf", "14", "-pix_fmt", "yuv420p", "-profile:v", "high", "-movflags", "+faststart", out],
@@ -113,8 +117,9 @@ if (mode === "banner") {
 } else if (mode === "still") {
   // node scripts/press.mjs still <t> [out] — one film frame, for review
   const t = Number(args[0] ?? 0);
-  const out = args[1] ?? join(ROOT, `.impeccable/review/film-${t}.png`);
-  const b = await open(`${BASE}/press/film`, 1920, 1080, 1);
+  const portrait = args.includes("--portrait");
+  const out = args[1] && !args[1].startsWith("--") ? args[1] : join(ROOT, `.impeccable/review/film-${t}.png`);
+  const b = await open(`${BASE}/press/film${portrait ? "?format=portrait" : ""}`, portrait ? 1080 : 1920, portrait ? 1920 : 1080, 1);
   await b.evaluate(`window.__seek(${t})`);
   await shot(b, out);
   b.close();

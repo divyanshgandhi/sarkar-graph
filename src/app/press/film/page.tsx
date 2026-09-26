@@ -5,7 +5,8 @@ import { pressStats } from "@/components/press/stats";
 // The launch film, one frame at a time: scripts/press.mjs seeks window.__seek(t) and captures.
 export const dynamic = "force-dynamic";
 
-export default function FilmPage() {
+export default async function FilmPage({ searchParams }: { searchParams: Promise<{ format?: string }> }) {
   if (process.env.NODE_ENV === "production") notFound();
-  return <Film stats={pressStats()} />;
+  const { format } = await searchParams;
+  return <Film stats={pressStats()} portrait={format === "portrait"} />;
 }

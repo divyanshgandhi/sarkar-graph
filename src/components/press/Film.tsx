@@ -20,8 +20,31 @@ import type { GovGraph } from "@/lib/types";
 import { WheelStage, easeInOut, easeOut, restAngle, seg, springAt } from "./Stage";
 import type { PressStats } from "./stats";
 
-const W = 1920,
-  H = 1080;
+// Two frames share one timeline: 16:9 for X, 9:16 for Instagram Stories. In portrait everything
+// that must be read sits between Instagram's top bar (~230px) and reply bar (~1700px), type is
+// set larger for a phone, and each answer turns to 12 o'clock so its chain rises toward the words.
+type Geo = ReturnType<typeof geometry>;
+function geometry(portrait: boolean) {
+  return portrait
+    ? {
+        W: 1080, H: 1920, pad: 72, textW: 936,
+        seal: { x: 540, y: 820, r: 190 }, census: { x: 540, y: 1310, r: 420 }, ask: { x: 540, y: 1390, r: 390 }, end: { x: 540, y: 760 },
+        restAt: -90,
+        top: { seal: 1110, census: 370, atlas: 370, ask: 450, q: 370, know: 370, end: 1030, mark: 290 },
+        atlas: { cols: 6, cell: 128, gap: 44, x: (1080 - 6 * 128) / 2, y: 720, label: 16 },
+        fs: { seal: 96, sealSub: 40, stmt: 56, tally: 124, tallyLabel: 36, ask: 92, q: 76, cap: 36, name: 46, title: 28, avatar: 110, know: 76, knowNum: 64, knowNumW: 200, knowLabel: 34, close: 36, endName: 116, endHi: 44, endLine: 38, mark: 30, markHi: 24, chakra: 36 },
+        atlasInline: true,
+      }
+    : {
+        W: 1920, H: 1080, pad: 96, textW: 640,
+        seal: { x: 960, y: 540, r: 150 }, census: { x: 1262, y: 540, r: 492 }, ask: { x: 1262, y: 540, r: 492 }, end: { x: 960, y: 450 },
+        restAt: 90,
+        top: { seal: 760, census: 300, atlas: 300, ask: 430, q: 196, know: 260, end: 690, mark: 72 },
+        atlas: { cols: 9, cell: 136, gap: 30, x: 1920 - 80 - 9 * 136, y: 540 - (4 * (136 + 30)) / 2, label: 13.5 },
+        fs: { seal: 76, sealSub: 32, stmt: 46, tally: 96, tallyLabel: 28, ask: 76, q: 68, cap: 28, name: 38, title: 22, avatar: 92, know: 68, knowNum: 54, knowNumW: 150, knowLabel: 30, close: 30, endName: 92, endHi: 34, endLine: 30, mark: 22, markHi: 18, chakra: 28 },
+        atlasInline: false,
+      };
+}
 const fmt = (n: number) => Math.round(n).toLocaleString("en-IN");
 const lerp = (a: number, b: number, x: number) => a + (b - a) * x;
 
@@ -69,6 +92,15 @@ const Q0 = 17.5,
   QLEN = 7,
   HOP = 0.72;
 
+/** Split a name onto two lines when it is too long for a narrow grid cell. */
+function labelLines(name: string, max: number): string[] {
+  if (name.length <= max || !name.includes(" ")) return [name];
+  const words = name.split(" ");
+  let best = 1;
+  for (let i = 1; i < words.length; i++) if (Math.abs(words.slice(0, i).join(" ").length - name.length / 2) < Math.abs(words.slice(0, best).join(" ").length - name.length / 2)) best = i;
+  return [words.slice(0, best).join(" "), words.slice(best).join(" ")];
+}
+
 type Loaded = { g: GovGraph; L: ReturnType<typeof layoutWheel>; seats: number };
 
 function seatsOf(g: GovGraph) {
@@ -94,7 +126,9 @@ function Words({ text, t, at, step = 0.055, className, style }: { text: string; 
   );
 }
 
-export function Film({ stats }: { stats: PressStats }) {
+export function Film({ stats, portrait = false }: { stats: PressStats; portrait?: boolean }) {
+  const G: Geo = geometry(portrait);
+  const { W, H } = G;
   const [t, setT] = useState(0);
   const [data, setData] = useState<Record<string, Loaded> | null>(null);
 
@@ -148,17 +182,17 @@ export function Film({ stats }: { stats: PressStats }) {
     let cur = 0;
     return QUESTIONS.map((q) => {
       const from = q.gov === "in" ? cur : 0;
-      const to = restAngle(data[q.gov].L, q.target, from);
+      const to = restAngle(data[q.gov].L, q.target, from, G.restAt);
       if (q.gov === "in") cur = to;
       return { from, to };
     });
-  }, [data]);
+  }, [data, G.restAt]);
 
   if (!data) return <div className="press bg-paper" style={{ width: W, height: H }} />;
 
   const U = data.in;
-  const kFull = 492 / U.L.extent;
-  const kSeal = 150 / (U.L.seal + 26);
+  const kOf = (r: number) => r / U.L.extent;
+  const kSeal = G.seal.r / (U.L.seal + 26);
 
   // ── the Union wheel's camera ─────────────────────────────────────────────
   const qi = Math.min(3, Math.max(0, Math.floor((t - Q0) / QLEN)));
@@ -166,18 +200,22 @@ export function Film({ stats }: { stats: PressStats }) {
   const qs = Q0 + qi * QLEN; // current question start
   const q = QUESTIONS[qi];
 
-  let cx = 960,
-    cy = 540,
-    k = kSeal;
+  // camera: seal → census → question framing → back to the seal
   const toCensus = easeInOut(seg(t, 3.4, 4.8));
-  cx = lerp(960, 1262, toCensus);
-  k = lerp(kSeal, kFull, toCensus);
-  // the end: back to the seal, centred
+  let cx = lerp(G.seal.x, G.census.x, toCensus),
+    cy = lerp(G.seal.y, G.census.y, toCensus),
+    k = lerp(kSeal, kOf(G.census.r), toCensus);
+  if (t >= 15.4) {
+    const a = easeInOut(seg(t, 15.4, 16.6));
+    cx = lerp(G.census.x, G.ask.x, a);
+    cy = lerp(G.census.y, G.ask.y, a);
+    k = lerp(kOf(G.census.r), kOf(G.ask.r), a);
+  }
   const toEnd = easeInOut(seg(t, 53.5, 55));
   if (t >= 53.5) {
-    cx = lerp(1262, 960, toEnd);
-    cy = lerp(540, 450, toEnd);
-    k = lerp(kFull, kSeal, toEnd);
+    cx = lerp(G.ask.x, G.end.x, toEnd);
+    cy = lerp(G.ask.y, G.end.y, toEnd);
+    k = lerp(kOf(G.ask.r), kSeal, toEnd);
   }
 
   // Union rotation: questions 1–3 turn it; afterwards it springs home
@@ -215,16 +253,16 @@ export function Film({ stats }: { stats: PressStats }) {
   const upStart = Q0 + QLEN * 3;
   const upOn = t >= upStart - 0.4 && t < upStart + QLEN + 0.3;
   const upFade = seg(t, upStart - 0.3, upStart + 0.2) * (1 - seg(t, upStart + QLEN - 0.3, upStart + QLEN + 0.2));
-  const kUP = 492 / UP.L.extent;
+  const kUP = G.ask.r / UP.L.extent;
   const rotUP = t >= upStart ? springAt(0, rests[3]?.to ?? 0, t - (upStart + 0.35)) : 0;
 
   // ── atlas: 36 States and UTs ─────────────────────────────────────────────
   const atlasOn = t >= 9.8 && t < 16.2;
   const atlasFade = seg(t, 10.1, 10.6) * (1 - seg(t, 15.4, 16));
-  const COLS = 9,
-    CELL = 136,
-    GX = W - 80 - COLS * CELL,
-    GY = 540 - (4 * (CELL + 30)) / 2;
+  const COLS = G.atlas.cols,
+    CELL = G.atlas.cell,
+    GX = G.atlas.x,
+    GY = G.atlas.y;
 
   // the running census
   const unionSeats = U.seats;
@@ -258,7 +296,7 @@ export function Film({ stats }: { stats: PressStats }) {
           </g>
         )}
         {upOn && (
-          <g opacity={upFade} transform={`translate(1262 540) scale(${kUP.toFixed(5)})`}>
+          <g opacity={upFade} transform={`translate(${G.ask.x} ${G.ask.y}) scale(${kUP.toFixed(5)})`}>
             <WheelStage g={UP.g} L={UP.L} uid="up" rot={rotUP} reveal={seg(t, upStart - 0.2, upStart + 0.9)} chain={qi === 3 ? chains[3] : []} chainT={qi === 3 ? chainT : 0} dim={qi === 3 ? dimQ : 0} labels={0} chainWidth={4.4} />
           </g>
         )}
@@ -270,7 +308,7 @@ export function Film({ stats }: { stats: PressStats }) {
               const col = i % COLS,
                 row = Math.floor(i / COLS);
               const x = GX + col * CELL + CELL / 2,
-                y = GY + row * (CELL + 30) + CELL / 2;
+                y = GY + row * (CELL + G.atlas.gap) + CELL / 2;
               const s0 = 10.5 + i * 0.075;
               const kk = (CELL / 2 - 8) / d.L.extent;
               return (
@@ -278,8 +316,12 @@ export function Film({ stats }: { stats: PressStats }) {
                   <g transform={`scale(${kk.toFixed(5)})`}>
                     <WheelStage g={d.g} L={d.L} uid={`atlas-${s.code}`} reveal={seg(t, s0, s0 + 0.5)} count={seg(t, s0 + 0.2, s0 + 1.3)} labels={0} seal={0} />
                   </g>
-                  <text y={CELL / 2 + 16} textAnchor="middle" fill="var(--ink-3)" style={{ fontSize: 13.5, fontWeight: 520, opacity: seg(t, s0 + 0.3, s0 + 0.8) }}>
-                    {SHORT[s.name] ?? s.name.replace(/ and /g, " & ")}
+                  <text y={CELL / 2 + G.atlas.label + 2} textAnchor="middle" fill="var(--ink-3)" style={{ fontSize: G.atlas.label, fontWeight: 520, opacity: seg(t, s0 + 0.3, s0 + 0.8) }}>
+                    {labelLines(SHORT[s.name] ?? s.name.replace(/ and /g, " & "), portrait ? 11 : 99).map((line, j) => (
+                      <tspan key={j} x={0} dy={j ? "1.15em" : 0}>
+                        {line}
+                      </tspan>
+                    ))}
                   </text>
                 </g>
               );
@@ -289,57 +331,57 @@ export function Film({ stats }: { stats: PressStats }) {
       </svg>
 
       {/* standing wordmark */}
-      <div className="absolute left-[96px] top-[72px] flex items-baseline gap-3" style={{ opacity: seg(t, 4, 4.8) * (1 - seg(t, 53.2, 53.6)) }}>
-        <svg width="28" height="28" viewBox="-15 -15 30 30" className="self-center" aria-hidden>
+      <div className="absolute flex items-baseline gap-3" style={{ left: G.pad, top: G.top.mark, opacity: seg(t, 4, 4.8) * (1 - seg(t, 53.2, 53.6)) }}>
+        <svg width={G.fs.chakra} height={G.fs.chakra} viewBox="-15 -15 30 30" className="self-center" aria-hidden>
           <circle r="14.5" fill="var(--saffron-wash)" />
           <Chakra r={11} ink="var(--navy)" />
         </svg>
-        <span className="text-[22px] font-[620] tracking-[-0.01em]">Sarkar Graph</span>
-        <span className="deva text-[18px] font-[560] text-ink-3">सरकार ग्राफ़</span>
+        <span className="font-[620] tracking-[-0.01em]" style={{ fontSize: G.fs.mark }}>Sarkar Graph</span>
+        <span className="deva font-[560] text-ink-3" style={{ fontSize: G.fs.markHi }}>सरकार ग्राफ़</span>
       </div>
 
       {/* 0 — the People */}
       {t < 4 && (
-        <div className="absolute inset-x-0 top-[760px] text-center" style={{ opacity: 1 - seg(t, 3.2, 3.6) }}>
-          <Words text="Who runs India?" t={t} at={0.5} className="block text-[76px] font-[630] leading-none tracking-[-0.026em]" style={{ fontStretch: "94%" }} />
-          <Words text="It starts with the people." t={t} at={1.7} className="mt-5 block text-[32px] text-ink-3" />
+        <div className="absolute inset-x-0 text-center" style={{ top: G.top.seal, opacity: 1 - seg(t, 3.2, 3.6) }}>
+          <Words text="Who runs India?" t={t} at={0.5} className="block font-[630] leading-none tracking-[-0.026em]" style={{ fontStretch: "94%", fontSize: G.fs.seal }} />
+          <Words text="It starts with the people." t={t} at={1.7} className="mt-5 block text-ink-3" style={{ fontSize: G.fs.sealSub }} />
         </div>
       )}
 
       {/* 1 — the Union, counted */}
       {t >= 3.8 && t < 10.8 && (
-        <div className="absolute left-[96px] top-[300px] w-[640px]" style={{ opacity: 1 - seg(t, 10, 10.5) }}>
-          <Words text="The Government of India, drawn outward from the people who elect it." t={t} at={3.9} className="block text-[46px] font-[600] leading-[1.08] tracking-[-0.02em]" style={{ fontStretch: "94%" }} />
+        <div className="absolute" style={{ left: G.pad, top: G.top.census, width: G.textW, opacity: 1 - seg(t, 10, 10.5) }}>
+          <Words text="The Government of India, drawn outward from the people who elect it." t={t} at={3.9} className="block font-[600] leading-[1.08] tracking-[-0.02em]" style={{ fontStretch: "94%", fontSize: G.fs.stmt }} />
           <p className="mt-12 flex items-baseline gap-4" style={{ opacity: seg(t, 4.3, 4.8) }}>
-            <span className="text-[96px] font-[640] leading-none tabular-nums tracking-[-0.03em]">{fmt(tally)}</span>
-            <span className="text-[28px] text-ink-3">seats in the Union</span>
+            <span className="font-[640] leading-none tabular-nums tracking-[-0.03em]" style={{ fontSize: G.fs.tally }}>{fmt(tally)}</span>
+            <span className="text-ink-3" style={{ fontSize: G.fs.tallyLabel }}>seats in the Union</span>
           </p>
         </div>
       )}
 
       {/* 2 — the States, counted */}
       {t >= 10.3 && t < 16 && (
-        <div className="absolute left-[96px] top-[300px] w-[470px]" style={{ opacity: 1 - seg(t, 15.3, 15.8) }}>
-          <Words text="Plus every State and Union Territory, each with its own wheel." t={t} at={10.4} className="block text-[46px] font-[600] leading-[1.08] tracking-[-0.02em]" style={{ fontStretch: "94%" }} />
-          <p className="mt-12 flex flex-col gap-2" style={{ opacity: seg(t, 10.6, 11.1) }}>
-            <span className="text-[96px] font-[640] leading-none tabular-nums tracking-[-0.03em]">{fmt(tally)}</span>
-            <span className="text-[28px] text-ink-3">seats across {stats.governments} governments</span>
+        <div className="absolute" style={{ left: G.pad, top: G.top.atlas, width: portrait ? G.textW : 470, opacity: 1 - seg(t, 15.3, 15.8) }}>
+          <Words text="Plus every State and Union Territory, each with its own wheel." t={t} at={10.4} className="block font-[600] leading-[1.08] tracking-[-0.02em]" style={{ fontStretch: "94%", fontSize: portrait ? 48 : G.fs.stmt }} />
+          <p className={`flex ${G.atlasInline ? "mt-6 items-baseline gap-4" : "mt-12 flex-col gap-2"}`} style={{ opacity: seg(t, 10.6, 11.1) }}>
+            <span className="font-[640] leading-none tabular-nums tracking-[-0.03em]" style={{ fontSize: portrait ? 96 : G.fs.tally }}>{fmt(tally)}</span>
+            <span className="text-ink-3" style={{ fontSize: G.fs.tallyLabel }}>seats across {stats.governments} governments</span>
           </p>
         </div>
       )}
 
       {/* 3 — the turn */}
       {t >= 15.6 && t < Q0 + 0.4 && (
-        <div className="absolute left-[96px] top-[430px] w-[640px]" style={{ opacity: 1 - seg(t, Q0 - 0.3, Q0 + 0.1) }}>
-          <Words text="Now ask it something." t={t} at={15.9} className="block text-[76px] font-[630] leading-none tracking-[-0.026em]" style={{ fontStretch: "94%" }} />
+        <div className="absolute" style={{ left: G.pad, top: G.top.ask, width: G.textW, opacity: 1 - seg(t, Q0 - 0.3, Q0 + 0.1) }}>
+          <Words text="Now ask it something." t={t} at={15.9} className="block font-[630] leading-none tracking-[-0.026em]" style={{ fontStretch: "94%", fontSize: G.fs.ask }} />
         </div>
       )}
 
       {/* 4 — the questions */}
       {inQ && (
-        <div className="absolute left-[96px] top-[196px] w-[660px]" style={{ opacity: qOut }}>
-          <Words key={qi} text={q.q} t={qt} at={0} className="block text-[68px] font-[630] leading-[1.02] tracking-[-0.026em]" style={{ fontStretch: "94%" }} />
-          <ol className="mt-12 space-y-4">
+        <div className="absolute" style={{ left: G.pad, top: G.top.q, width: portrait ? G.textW : 660, opacity: qOut }}>
+          <Words key={qi} text={q.q} t={qt} at={0} className="block font-[630] leading-[1.02] tracking-[-0.026em]" style={{ fontStretch: "94%", fontSize: G.fs.q }} />
+          <ol className={portrait ? "mt-9 space-y-3" : "mt-12 space-y-4"}>
             {q.lines.map((line, i) => {
               const at = 1.6 + i * HOP;
               const p = easeOut(seg(qt, at, at + 0.4));
@@ -347,8 +389,8 @@ export function Film({ stats }: { stats: PressStats }) {
               return (
                 <li
                   key={i}
-                  className="flex gap-4 text-[28px] leading-[1.28]"
-                  style={{ opacity: p * (current ? 1 : 0.55), transform: `translateX(${(1 - p) * 18}px)` }}
+                  className="flex gap-4 leading-[1.28]"
+                  style={{ fontSize: G.fs.cap, opacity: p * (current ? 1 : 0.55), transform: `translateX(${(1 - p) * 18}px)` }}
                 >
                   <span className="mt-[0.5em] h-[9px] w-[9px] shrink-0 rounded-full" style={{ background: "var(--saffron)", opacity: current ? 1 : 0.5 }} />
                   <span className={current ? "text-ink-1" : "text-ink-2"}>{line}</span>
@@ -357,8 +399,8 @@ export function Film({ stats }: { stats: PressStats }) {
             })}
           </ol>
           {holder && (
-            <div className="mt-12 flex items-center gap-5" style={{ opacity: easeOut(seg(qt, answerAt, answerAt + 0.5)), transform: `translateY(${(1 - easeOut(seg(qt, answerAt, answerAt + 0.5))) * 16}px)` }}>
-              <span className="grid h-[92px] w-[92px] shrink-0 place-items-center overflow-hidden rounded-full bg-well" style={{ boxShadow: `0 0 0 3px var(--paper), 0 0 0 6px ${partyInk(holder.party)}` }}>
+            <div className={`${portrait ? "mt-9" : "mt-12"} flex items-center gap-5`} style={{ opacity: easeOut(seg(qt, answerAt, answerAt + 0.5)), transform: `translateY(${(1 - easeOut(seg(qt, answerAt, answerAt + 0.5))) * 16}px)` }}>
+              <span className="grid shrink-0 place-items-center overflow-hidden rounded-full bg-well" style={{ width: G.fs.avatar, height: G.fs.avatar, boxShadow: `0 0 0 3px var(--paper), 0 0 0 6px ${partyInk(holder.party)}` }}>
                 {holder.image ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={holder.image} alt="" className="h-full w-full object-cover object-top" />
@@ -367,8 +409,8 @@ export function Film({ stats }: { stats: PressStats }) {
                 )}
               </span>
               <span>
-                <span className="block text-[38px] font-[630] leading-[1.05] tracking-[-0.02em]">{holder.name.replace(/\s*\(.*\)$/, "")}</span>
-                <span className="mt-1 block text-[22px] text-ink-3">{answerNode?.title ?? answerNode?.name}</span>
+                <span className="block font-[630] leading-[1.05] tracking-[-0.02em]" style={{ fontSize: G.fs.name }}>{holder.name.replace(/\s*\(.*\)$/, "")}</span>
+                <span className="mt-1 block text-ink-3" style={{ fontSize: G.fs.title }}>{answerNode?.title ?? answerNode?.name}</span>
               </span>
             </div>
           )}
@@ -377,9 +419,9 @@ export function Film({ stats }: { stats: PressStats }) {
 
       {/* 5 — what we know, and what we don't */}
       {t >= 45.6 && t < 53.8 && (
-        <div className="absolute left-[96px] top-[260px] w-[680px]" style={{ opacity: 1 - seg(t, 53.1, 53.6) }}>
-          <Words text="What we know, and what we don’t." t={t} at={45.9} className="block text-[68px] font-[630] leading-[1.02] tracking-[-0.026em]" style={{ fontStretch: "94%" }} />
-          <dl className="mt-14 space-y-6 text-[30px] leading-[1.25] text-ink-3">
+        <div className="absolute" style={{ left: G.pad, top: G.top.know, width: portrait ? G.textW : 680, opacity: 1 - seg(t, 53.1, 53.6) }}>
+          <Words text="What we know, and what we don’t." t={t} at={45.9} className="block font-[630] leading-[1.02] tracking-[-0.026em]" style={{ fontStretch: "94%", fontSize: G.fs.know }} />
+          <dl className={`${portrait ? "mt-10 space-y-5" : "mt-14 space-y-6"} leading-[1.25] text-ink-3`} style={{ fontSize: G.fs.knowLabel }}>
             {[
               [stats.held, "seats have a named holder, each with its sources", "text-ink-1"],
               [stats.seats - stats.held, "are vacant or still unnamed", "text-ink-1"],
@@ -389,24 +431,24 @@ export function Film({ stats }: { stats: PressStats }) {
               const p = easeOut(seg(t, at, at + 0.5));
               return (
                 <div key={i} className="flex items-baseline gap-5" style={{ opacity: p, transform: `translateY(${(1 - p) * 14}px)` }}>
-                  <dt className={`w-[150px] shrink-0 text-right text-[54px] font-[640] leading-none tabular-nums tracking-[-0.02em] ${ink}`}>{fmt(n as number)}</dt>
+                  <dt className={`shrink-0 text-right font-[640] leading-none tabular-nums tracking-[-0.02em] ${ink}`} style={{ width: G.fs.knowNumW, fontSize: G.fs.knowNum }}>{fmt(n as number)}</dt>
                   <dd>{label as string}</dd>
                 </div>
               );
             })}
           </dl>
-          <Words text="Every fact carries its source. Help us check them." t={t} at={50.6} className="mt-14 block text-[30px] text-ink-2" />
+          <Words text="Every fact carries its source. Help us check them." t={t} at={50.6} className={`${portrait ? "mt-10" : "mt-14"} block text-ink-2`} style={{ fontSize: G.fs.close }} />
         </div>
       )}
 
       {/* 6 — the name */}
       {t >= 54.4 && (
-        <div className="absolute inset-x-0 top-[690px] text-center">
-          <Words text="Sarkar Graph" t={t} at={54.6} step={0.12} className="block text-[92px] font-[640] leading-none tracking-[-0.03em]" style={{ fontStretch: "94%" }} />
-          <span className="deva mt-3 block text-[34px] font-[560] text-ink-3" style={{ opacity: easeOut(seg(t, 55.2, 55.8)) }}>
+        <div className="absolute inset-x-0 px-[72px] text-center" style={{ top: G.top.end }}>
+          <Words text="Sarkar Graph" t={t} at={54.6} step={0.12} className="block font-[640] leading-none tracking-[-0.03em]" style={{ fontStretch: "94%", fontSize: G.fs.endName }} />
+          <span className="deva mt-3 block font-[560] text-ink-3" style={{ fontSize: G.fs.endHi, opacity: easeOut(seg(t, 55.2, 55.8)) }}>
             सरकार ग्राफ़
           </span>
-          <Words text="Every seat of power in India. Open source. Help map the rest." t={t} at={56} className="mt-9 block text-[30px] text-ink-2" />
+          <Words text="Every seat of power in India. Open source. Help map the rest." t={t} at={56} className="mt-9 block text-balance text-ink-2" style={{ fontSize: G.fs.endLine }} />
         </div>
       )}
       <div className="pointer-events-none absolute inset-0 bg-paper" style={{ opacity: seg(t, 59.5, 60) }} />
