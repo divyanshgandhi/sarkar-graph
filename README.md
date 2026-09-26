@@ -5,7 +5,9 @@
 
 # Sarkar Graph
 
-**Every seat of power in India, traced back to the voter.** An open, live map of the Government of India: the Union, Parliament, the courts, constitutional bodies and regulators, and all 36 States and Union Territories — who holds each seat, who put them there, whom they answer to, and what changed this week.
+**Every seat of power in India, traced back to the voter.** → **[sarkargraph.vercel.app](https://sarkargraph.vercel.app)** · [launch film](https://github.com/divyanshgandhi/sarkar-graph/releases/tag/v0.1.0)
+
+An open, live map of the Government of India: the Union, Parliament, the courts, constitutional bodies and regulators, and all 36 States and Union Territories — who holds each seat, who put them there, whom they answer to, and what changed this week.
 
 ![The Union wheel with the Ministry of Railways selected](docs/img/sarkar-graph-selected.png)
 
