@@ -72,6 +72,10 @@ Stack: Next.js 16, React 19, Motion 13, Tailwind 4, TypeScript. Type: Anek Latin
 
 We need data stewards for every State, source adapters, verifiers, translators for Indian languages, designers and engineers. Start with [`CONTRIBUTING.md`](CONTRIBUTING.md), pick a gap from [`exports/gaps.csv`](exports/gaps.csv), and read the direction in [`docs/VISION.md`](docs/VISION.md) and [`docs/ROADMAP.md`](docs/ROADMAP.md).
 
+## Privacy
+
+Visitor counts come from Vercel Web Analytics: cookieless, no personal data, no tracking across sites.
+
 ## Licence
 
 Code: [MIT](LICENSE). Data: [CC BY 4.0](LICENSE-DATA) — reuse it freely with credit. Details in [`LICENSING.md`](LICENSING.md).

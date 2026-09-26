@@ -58,6 +58,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {themeScript}
         </Script>
         {children}
+        {/* Vercel Web Analytics: cookieless page views, no personal data; only on the deployed site */}
+        {process.env.VERCEL && (
+          <>
+            <Script id="va-init" strategy="afterInteractive">
+              {`window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}`}
+            </Script>
+            <Script src="/_vercel/insights/script.js" strategy="afterInteractive" />
+          </>
+        )}
       </body>
     </html>
   );
